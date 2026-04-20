@@ -1,0 +1,28 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-grid>
+      <wd-row>
+        <wd-cell [width]="6" [offset]="3">
+          <wd-card actions="main/frm10/oslte24" title="main/frm10">
+            <wr-content for="content">
+              <wd-grid>
+                <wd-row>
+                  <wd-cell [width]="6" [offset]="3">
+                    <wd-select appearance="outline" context="main/frm10/sfld5"></wd-select>
+                  </wd-cell>
+                </wd-row>
+              </wd-grid>
+              <wd-container></wd-container>
+            </wr-content>
+            <wr-content for="action[oslte24]">
+              <wd-button color="success"></wd-button>
+            </wr-content>
+            <wr-content for="title[frm10]">
+              {{ labelOf('.') | wrLocalize }}
+            </wr-content>
+          </wd-card>
+        </wd-cell>
+      </wd-row>
+    </wd-grid>
+  </wr-content>
+</wr-page>

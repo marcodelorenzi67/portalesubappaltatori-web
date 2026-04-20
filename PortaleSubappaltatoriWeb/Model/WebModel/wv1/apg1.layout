@@ -1,0 +1,31 @@
+<wr-page>
+  <wr-content for="enviroment">
+    <div *ngIf="valueOf('main/msg8/messages') && valueOf('main/msg8/messages')[0] != 'prod'" class="alert-enviroment">{{ 'testEnv' | wrLocalize }}</div>
+  </wr-content>
+  <wr-content for="presentation">
+    <cm-carousel rows="value:valueOf('main/frm5/sfld3/options')" [autoplay]="true" [loading]="valueOf('main/frm5/updating')" [navigation]="true" [clickablePagination]="true" [loop]="true" [dynamicPagination]="true" effect="cards" paginationType="progressbar" [rewind]="true" [pagination]="true" class="carousel" [autoplayDelay]="2500">
+      <wr-content for="slide">
+        <img [src]="valueOf('main/frm5/sfld3/options/label', row)">
+      </wr-content>
+    </cm-carousel>
+  </wr-content>
+  <wr-content for="footer">
+    <div class="footer-left">
+      {{'Realizzato con ' | wrLocalize }}
+      <a href="https://www.webratio.com" target="_blank">
+        {{'WebRatio' | wrLocalize }}
+      </a>
+    </div>
+    <div class="footer-right">
+      {{'Versione' | wrLocalize }} {{ valueOf("app/version") }}
+    </div>
+  </wr-content>
+  <wr-content for="logo">
+    <wd-image id="login-logo" staticImage="assets/PortaleSubappaltatoriStyle/logo-gallli-italo.png"></wd-image>
+    <h2 id="login-title">{{'Portale Subappaltatori' | wrLocalize }}</h2>
+  </wr-content>
+  <wr-content for="message">
+    <wd-alert [localized]="true" [messages]="valueOf('main/msg6/messages')" color="success"></wd-alert>
+    <wd-alert [localized]="true" [messages]="valueOf('main/msg7/messages')" color="warn"></wd-alert>
+  </wr-content>
+</wr-page>

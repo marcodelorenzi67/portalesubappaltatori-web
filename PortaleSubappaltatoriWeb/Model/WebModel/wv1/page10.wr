@@ -1,0 +1,28 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="80" gr:y="395" id="wv1#page10" name="Verifica OTP">
+  <ViewComponents>
+    <Form gr:x="0" gr:y="0" id="wv1#page10#frm8" name="Inserisci OTP">
+      <Field id="wv1#page10#frm8#fld19" type="string" modifiable="true" name="OTP" validationOrder="wv1#page10#frm8#fld19#mnd15">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page10#frm8#fld19#mnd15" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Field id="wv1#page10#frm8#fld20" type="string" modifiable="false" name="username"/>
+      <Field id="wv1#page10#frm8#fld21" name="password" type="string" modifiable="true"/>
+      <Events>
+        <OnSelectEvent id="wv1#page10#frm8#oslte12" name="Verifica" validate="true" gr:pinned="true" gr:side="1" gr:pos="0">
+          <NavigationFlow id="wv1#page10#frm8#oslte12#nf30" to="wv1#act18">
+            <ParameterBinding id="wv1#page10#frm8#oslte12#nf30#par72" source="{wv1#page10#frm8#fld19}value" target="wv1#act18.tlads0#ad4#ipd4#pdp10" name="OTP - OTP"/>
+            <ParameterBinding id="wv1#page10#frm8#oslte12#nf30#par73" source="{wv1#page10#frm8#fld21}value" target="wv1#act18.tlads0#ad4#ipd4#pdp11" name="password - Password"/>
+            <ParameterBinding id="wv1#page10#frm8#oslte12#nf30#par74" source="{wv1#page10#frm8#fld20}value" target="wv1#act18.tlads0#ad4#ipd4#pdp12" name="username - userID"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv1#page10#frm8#oslte13" name="Invia di nuovo" validate="false" gr:pinned="true" gr:side="3" gr:pos="0">
+          <NavigationFlow id="wv1#page10#frm8#oslte13#nf29" to="wv1#act15">
+            <ParameterBinding id="wv1#page10#frm8#oslte13#nf29#par59" source="{wv1#page10#frm8#fld21}value" target="wv1#act15.PortaleSubappaltatoriDataservice$pdp42" name="password - password"/>
+            <ParameterBinding id="wv1#page10#frm8#oslte13#nf29#par60" source="{wv1#page10#frm8#fld20}value" target="wv1#act15.PortaleSubappaltatoriDataservice$pdp41" name="username - userID"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </Form>
+  </ViewComponents>
+</Page>

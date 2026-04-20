@@ -1,0 +1,15 @@
+<wr-page>
+  <wr-content for="content">
+    <wd-alert [messages]="valueOf('main/msg2/messages')" [localized]="true" color="warning"></wd-alert>
+    <wd-card title="main/frm1" elevation="3">
+      <wr-content for="content">
+        <form>
+	        <wd-password context="main/frm1/fld1" floatLabel="auto" appearance="outline"></wd-password>
+	        <wd-password context="main/frm1/fld2" floatLabel="auto" appearance="outline"></wd-password>
+	        <wd-password context="main/frm1/fld3" floatLabel="auto" appearance="outline"></wd-password>
+					<wd-button context="main/frm1/oslte1" type="submit"></wd-button>
+	    </form>
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wr-page>

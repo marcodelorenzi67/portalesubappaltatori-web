@@ -1,0 +1,55 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="710" gr:y="355" id="wv1#page6" name="Attivazione utente">
+  <ViewComponents>
+    <Form gr:x="0" gr:y="0" id="wv1#page6#frm4" name="Configurazione password">
+      <DataBinding actionServiceRes="PortaleSubappaltatoriDataservice$adf2"/>
+      <Field id="wv1#page6#frm4#fld10" modifiable="false" name="Cognome" type="string">
+        <ValueAttribute actionServiceOutput="PortaleSubappaltatoriDataservice$pdp16"/>
+      </Field>
+      <Field id="wv1#page6#frm4#fld11" modifiable="false" name="Nome" type="string">
+        <ValueAttribute actionServiceOutput="PortaleSubappaltatoriDataservice$pdp15"/>
+      </Field>
+      <Field id="wv1#page6#frm4#fld12" modifiable="true" name="is token valido" type="boolean">
+        <VRules/>
+        <ValueAttribute actionServiceOutput="PortaleSubappaltatoriDataservice$pdp18"/>
+      </Field>
+      <Field id="wv1#page6#frm4#fld13" modifiable="false" name="Email" type="string" validationOrder="wv1#page6#frm4#fld13#email1 wv1#page6#frm4#fld13#mnd10">
+        <VRules>
+          <EMailValidationRule id="wv1#page6#frm4#fld13#email1" name="EMail"/>
+          <MandatoryValidationRule id="wv1#page6#frm4#fld13#mnd10" name="Mandatory"/>
+        </VRules>
+        <ValueAttribute actionServiceOutput="PortaleSubappaltatoriDataservice$pdp17"/>
+      </Field>
+      <Field id="wv1#page6#frm4#fld14" type="password" modifiable="true" name="Nuova password" validationOrder="wv1#page6#frm4#fld14#mnd8 wv1#page6#frm4#fld14#psvr4">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page6#frm4#fld14#mnd8" name="Mandatory"/>
+          <PasswordStrengthValidationRule id="wv1#page6#frm4#fld14#psvr4" name="Password Strength" securityLevel="medium"/>
+        </VRules>
+      </Field>
+      <Field id="wv1#page6#frm4#fld15" name="Conferma nuova password" type="password" modifiable="true" validationOrder="wv1#page6#frm4#fld15#mnd9 wv1#page6#frm4#fld15#cmp3">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page6#frm4#fld15#mnd9" name="Mandatory"/>
+          <CompareValidationRule id="wv1#page6#frm4#fld15#cmp3" name="Compare" predicate="eq" valueField="wv1#page6#frm4#fld14"/>
+        </VRules>
+      </Field>
+      <Events>
+        <OnSelectEvent id="wv1#page6#frm4#oslte6" name="Attiva utenza" validate="true">
+          <NavigationFlow id="wv1#page6#frm4#oslte6#nf13" to="wv1#act5">
+            <ParameterBinding id="wv1#page6#frm4#oslte6#nf13#par26" sourceParameter="wv1#page6#prd1" target="wv1#act5.PortaleSubappaltatoriDataservice$pdp19" name="token - token"/>
+            <ParameterBinding id="wv1#page6#frm4#oslte6#nf13#par27" source="{wv1#page6#frm4#fld14}value" target="wv1#act5.PortaleSubappaltatoriDataservice$pdp28" name="Nuova password - Password"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </Form>
+    <ViewComponent gr:x="70" gr:y="140" id="wv1#page6#gctu3" name="Token">
+      <DataFlow id="wv1#page6#gctu3#df1" to="wv1#page6#frm4">
+        <ParameterBinding id="wv1#page6#gctu3#df1#par24" sourceParameter="wv1#page6#prd1" target="_be_pdp14" name="token - token"/>
+      </DataFlow>
+    </ViewComponent>
+    <Message gr:x="230" gr:y="80" id="wv1#page6#msg4" name="Token scaduto"/>
+    <Message gr:x="235" gr:y="0" id="wv1#page6#msg5" name="Attivazione scaduta"/>
+  </ViewComponents>
+  <Parameters>
+    <Parameter id="wv1#page6#prd1" name="token" type="string" preserve="false"/>
+  </Parameters>
+  <PathFragment parameter="wv1#page6#prd1"/>
+</Page>

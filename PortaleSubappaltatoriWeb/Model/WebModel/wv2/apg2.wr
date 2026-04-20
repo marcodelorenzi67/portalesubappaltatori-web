@@ -1,0 +1,61 @@
+<AbstractPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#apg2" name="Main Abstract Page" gr:x="1580" gr:y="80">
+  <ViewComponents>
+    <Message id="wv2#apg2#msg10" name="ENV" gr:x="10" gr:y="80"/>
+    <Message id="wv2#apg2#msg11" name="Success message" gr:x="0" gr:y="170">
+      <DataFlow id="wv2#apg2#msg11#df8" to="wv2#apg2#gctu6" gr:bendpoints="58,-37,-37,58">
+        <ParameterBinding id="wv2#apg2#msg11#df8#par51" sourceValue="$$NULL$$" targetParameter="wv2#prd6" name="NULL - success message"/>
+      </DataFlow>
+    </Message>
+    <ViewComponent id="wv2#apg2#gctu6" name="propaga" gr:x="120" gr:y="75">
+      <DataFlow id="wv2#apg2#gctu6#df9" to="wv2#apg2#msg11">
+        <ParameterBinding id="wv2#apg2#gctu6#df9#par47" name="success message - Shown Messages" target="messages" sourceParameter="wv2#prd6"/>
+      </DataFlow>
+      <DataFlow id="wv2#apg2#gctu6#df10" to="wv2#apg2#msg12">
+        <ParameterBinding id="wv2#apg2#gctu6#df10#par48" name="error message - Shown Messages" target="messages" sourceParameter="wv2#prd5"/>
+      </DataFlow>
+      <DataFlow id="wv2#apg2#gctu6#df11" to="wv2#apg2#msg10">
+        <ParameterBinding id="wv2#apg2#gctu6#df11#par49" name="&quot;${env}&quot; - Shown Messages" sourceValue="${env}" target="messages"/>
+      </DataFlow>
+    </ViewComponent>
+    <Message id="wv2#apg2#msg12" name="Error message" gr:x="185" gr:y="180">
+      <DataFlow id="wv2#apg2#msg12#df12" to="wv2#apg2#gctu6" gr:bendpoints="-52,-35,28,55">
+        <ParameterBinding id="wv2#apg2#msg12#df12#par52" sourceValue="$$NULL$$" targetParameter="wv2#prd5" name="NULL - error message"/>
+      </DataFlow>
+    </Message>
+    <MyProfile gr:x="245" gr:y="80" id="wv2#apg2#myp2"/>
+    <ViewComponent gr:x="355" gr:y="165" id="wv2#apg2#gctu7" name="BTN">
+      <Events>
+        <OnSelectEvent id="wv2#apg2#gctu7#oslte11" name="Logout">
+          <NavigationFlow id="wv2#apg2#gctu7#oslte11#nf26" to="wv2#act14" automaticCoupling="true"/>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv2#apg2#gctu7#oslte25" name="Cambia Tenant">
+          <NavigationFlow id="wv2#apg2#gctu7#oslte25#nf52" to="wv2#apg2#dpg2#frm12" automaticCoupling="true"/>
+        </OnSelectEvent>
+      </Events>
+    </ViewComponent>
+    <Details gr:x="480" gr:y="0" id="wv2#apg2#dtl2">
+      <DataBinding actionServiceRes="PortaleSubappaltatoriDataservice$adf7"/>
+      <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp66"/>
+    </Details>
+  </ViewComponents>
+  <DialogPage gr:x="480" gr:y="120" id="wv2#apg2#dpg2" name="Cambia Tenant">
+    <ViewComponents>
+      <Form id="wv2#apg2#dpg2#frm12" name="Scegli Tenant" gr:x="0" gr:y="0">
+        <SelectionField id="wv2#apg2#dpg2#frm12#sfld7" name="Tenant" optionsDistinct="false" emptyOption="true" validationOrder="wv2#apg2#dpg2#frm12#sfld7#mnd16">
+          <OptionsDataBinding actionServiceRes="PortaleSubappaltatoriDataservice$adf7"/>
+          <OptionsAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp68"/>
+          <VRules>
+            <MandatoryValidationRule id="wv2#apg2#dpg2#frm12#sfld7#mnd16" name="Mandatory"/>
+          </VRules>
+        </SelectionField>
+        <Events>
+          <OnSelectEvent id="wv2#apg2#dpg2#frm12#oslte29" name="Procedi" validate="true">
+            <NavigationFlow id="wv2#apg2#dpg2#frm12#oslte29#nf55" to="wv2#area3#page18">
+              <ParameterBinding id="wv2#apg2#dpg2#frm12#oslte29#nf55#par121" source="{wv2#apg2#dpg2#frm12#sfld7}value._be_pdp67" targetParameter="wv2#prd8" name="Tenant [oid] - Tenant"/>
+            </NavigationFlow>
+          </OnSelectEvent>
+        </Events>
+      </Form>
+    </ViewComponents>
+  </DialogPage>
+</AbstractPage>

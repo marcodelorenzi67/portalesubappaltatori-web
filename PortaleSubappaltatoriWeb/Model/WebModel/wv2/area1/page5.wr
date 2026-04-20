@@ -1,0 +1,44 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="275" gr:y="315" id="wv2#area1#page5" name="Nuovo utente interno">
+  <ViewComponents>
+    <Form gr:x="0" gr:y="0" id="wv2#area1#page5#frm3" name="Nuovo utente">
+      <Field id="wv2#area1#page5#frm3#fld7" modifiable="true" name="Cognome" type="string">
+        <VRules/>
+      </Field>
+      <Field id="wv2#area1#page5#frm3#fld8" modifiable="true" name="Email" type="string" validationOrder="wv2#area1#page5#frm3#fld8#mnd7">
+        <VRules>
+          <MandatoryValidationRule id="wv2#area1#page5#frm3#fld8#mnd7" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Field id="wv2#area1#page5#frm3#fld9" modifiable="true" name="Nome" type="string">
+        <VRules/>
+      </Field>
+      <SelectionField id="wv2#area1#page5#frm3#sfld1" name="Tenant" multiselection="true" validationOrder="wv2#area1#page5#frm3#sfld1#mnd6">
+        <VRules>
+          <MandatoryValidationRule id="wv2#area1#page5#frm3#sfld1#mnd6" name="Mandatory"/>
+        </VRules>
+        <OptionsDataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls1"/>
+        <OptionsAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att2"/>
+        <OptionsSortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att2" order="ascending"/>
+      </SelectionField>
+      <SelectionField id="wv2#area1#page5#frm3#sfld2" optionsDistinct="false" emptyOption="true" name="Ruoli" multiselection="true" validationOrder="wv2#area1#page5#frm3#sfld2#mnd14">
+        <OptionsDataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls12"/>
+        <OptionsAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att60"/>
+        <OptionsSortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att60" order="ascending"/>
+        <VRules>
+          <MandatoryValidationRule id="wv2#area1#page5#frm3#sfld2#mnd14" name="Mandatory"/>
+        </VRules>
+      </SelectionField>
+      <Events>
+        <OnSelectEvent id="wv2#area1#page5#frm3#oslte5" name="Invita" validate="true">
+          <NavigationFlow id="wv2#area1#page5#frm3#oslte5#nf11" to="wv2#area1#act4">
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par20" source="{wv2#area1#page5#frm3#fld7}value" target="wv2#area1#act4.PortaleSubappaltatoriDataservice$pdp6" name="Cognome - Cognome"/>
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par21" source="{wv2#area1#page5#frm3#fld8}value" target="wv2#area1#act4.PortaleSubappaltatoriDataservice$pdp5" name="Email - Email"/>
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par22" source="{wv2#area1#page5#frm3#fld9}value" target="wv2#area1#act4.PortaleSubappaltatoriDataservice$pdp7" name="Nome - Nome"/>
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par23" source="{wv2#area1#page5#frm3#sfld1}value._be_att1" target="wv2#area1#act4.PortaleSubappaltatoriDataservice$pdp8" name="Tenant [oid] - tenant"/>
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par25" source="{wv2#area1#page5#frm3#sfld2}value._be_att59" target="wv2#area1#act4.PortaleSubappaltatoriDataservice$pdp20" name="Ruoli [oid] - oid Ruoli"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </Form>
+  </ViewComponents>
+</Page>

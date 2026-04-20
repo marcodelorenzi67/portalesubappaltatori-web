@@ -1,0 +1,94 @@
+<wr-page>
+  <wr-content for="content">
+    <wd-grid>
+      <wd-row>
+        <wd-cell [width]="12">
+          <ng-container *ngIf="!valueOf('main/frm4/updating') && (valueOf('main/frm4/fld13/value') === null || valueOf('main/frm4/fld13/value') === undefined)">
+          	<wd-alert [localized]="true" [messages]="valueOf('main/msg5/messages')" color="warn"></wd-alert>
+          </ng-container>
+        </wd-cell>
+      </wd-row>
+      <wd-row>
+        <wd-cell [width]="12">
+          <ng-container *ngIf="!valueOf('main/frm4/updating') && valueOf('main/frm4/fld12/value') === false">
+          	<wd-alert [localized]="true" [messages]="valueOf('main/msg4/messages')" color="warn"></wd-alert>
+          </ng-container>
+        </wd-cell>
+      </wd-row>
+      <wd-row>
+        <wd-cell [width]="12" *ngIf="!valueOf('main/frm4/updating')">
+          <ng-container *ngIf="valueOf('main/frm4/fld12/value') === false">
+            <wd-card elevation="0" [loading]="valueOf('main/frm4/updating')">
+              <wr-content for="content">
+                <form>
+                  <wd-grid>
+                    <wd-row>
+                      <wd-cell [width]="6">
+                        <wd-input appearance="outline" context="main/frm4/fld11"></wd-input>
+                      </wd-cell>
+                      <wd-cell [width]="6">
+                        <wd-input context="main/frm4/fld10" appearance="outline"></wd-input>
+                      </wd-cell>
+                    </wd-row>
+                    <wd-row>
+                      <wd-cell [width]="12">
+                        <wd-input context="main/frm4/fld13" type="email" appearance="outline"></wd-input>
+                      </wd-cell>
+                    </wd-row>
+                    <wd-row>
+                      <wd-cell [width]="12">
+                        <wd-button context=""></wd-button>
+                      </wd-cell>
+                    </wd-row>
+                  </wd-grid>
+                </form>
+              </wr-content>
+            </wd-card>
+          </ng-container>
+        </wd-cell>
+      </wd-row>
+      <wd-row>
+        <wd-cell [width]="12">
+          <ng-container *ngIf="valueOf('main/frm4/fld12/value') === true">
+            <wd-card elevation="0">
+              <wr-content for="content">
+                <form>
+                  <wd-grid>
+                    <wd-row>
+                      <wd-cell [width]="6">
+                        <wd-input appearance="outline" context="main/frm4/fld11"></wd-input>
+                      </wd-cell>
+                      <wd-cell [width]="6">
+                        <wd-input context="main/frm4/fld10" appearance="outline"></wd-input>
+                      </wd-cell>
+                    </wd-row>
+                    <wd-row>
+                      <wd-cell [width]="12">
+                        <wd-input context="main/frm4/fld13" type="email" appearance="outline"></wd-input>
+                      </wd-cell>
+                    </wd-row>
+                    <wd-row>
+                      <wd-cell [width]="12">
+                        <wd-password context="main/frm4/fld14" appearance="outline"></wd-password>
+                      </wd-cell>
+                    </wd-row>
+                    <wd-row>
+                      <wd-cell [width]="12">
+                        <wd-password context="main/frm4/fld15" appearance="outline"></wd-password>
+                      </wd-cell>
+                    </wd-row>
+                    <wd-row>
+                      <wd-cell [width]="12">
+                        <wd-button context="main/frm4/oslte6"></wd-button>
+                      </wd-cell>
+                    </wd-row>
+                  </wd-grid>
+                </form>
+              </wr-content>
+            </wd-card>
+          </ng-container>
+        </wd-cell>
+      </wd-row>
+    </wd-grid>
+  </wr-content>
+</wr-page>

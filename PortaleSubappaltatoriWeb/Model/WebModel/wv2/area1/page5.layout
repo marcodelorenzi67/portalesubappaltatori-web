@@ -1,0 +1,33 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-button context="backEvent" iconText="arrow_back" color="primary"></wd-button>
+    <wd-card actions="main/frm3/oslte5">
+      <wr-content for="content">
+        <wd-grid>
+          <wd-row>
+            <wd-cell [width]="4">
+              <wd-input type="text" [showLabel]="true" appearance="outline" context="main/frm3/fld9"></wd-input>
+            </wd-cell>
+            <wd-cell [width]="4">
+              <wd-input type="text" [showLabel]="true" appearance="outline" context="main/frm3/fld7"></wd-input>
+            </wd-cell>
+            <wd-cell [width]="4">
+              <wd-input type="text" [showLabel]="true" appearance="outline" context="main/frm3/fld8"></wd-input>
+            </wd-cell>
+          </wd-row>
+          <wd-row>
+            <wd-cell [width]="6">
+              <wd-select-multiple appearance="outline" context="main/frm3/sfld2"></wd-select-multiple>
+            </wd-cell>
+            <wd-cell [width]="6">
+              <wd-select-multiple appearance="outline" context="main/frm3/sfld1"></wd-select-multiple>
+            </wd-cell>
+          </wd-row>
+        </wd-grid>
+      </wr-content>
+      <wr-content for="action[oslte5]">
+        <wd-button color="success"></wd-button>
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wr-page>

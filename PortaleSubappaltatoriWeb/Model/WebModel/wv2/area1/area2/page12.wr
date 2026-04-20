@@ -1,0 +1,15 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="355" gr:y="0" id="wv2#area1#area2#page12" name="Tipologie azienda" landmark="true">
+  <ViewComponents>
+    <List gr:x="0" gr:y="0" id="wv2#area1#area2#page12#lst4" checkable="false" distinct="false">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls10"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att46"/>
+      <Events>
+        <OnSelectEvent id="wv2#area1#area2#page12#lst4#oslte18" name="Elenco tipologie" validate="true">
+          <NavigationFlow id="wv2#area1#area2#page12#lst4#oslte18#nf41" to="wv2#area1#area2#page16">
+            <ParameterBinding id="wv2#area1#area2#page12#lst4#oslte18#nf41#par103" source="data._be_att45" targetParameter="wv2#area1#area2#page16#prd7" name="oid - oid tipo azienda"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </List>
+  </ViewComponents>
+</Page>

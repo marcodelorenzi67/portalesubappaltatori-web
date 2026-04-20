@@ -1,0 +1,22 @@
+<wr-page>
+  <wr-content for="brand">
+    <wd-image staticImage="assets/PortaleSubappaltatoriStyle/logo-gallli-italo.png"></wd-image>
+  </wr-content>
+  <wr-content for="menu">
+    <wd-menu menu="landmarks/area1">
+      <wr-content for="menu-item[area1]">
+        <wd-menu-item menuItem="." [hasSubMenu]="true" color="primary" submenu="page4 | area2/page11 | area2/page12">
+          <wr-content for="menu-item[page4]">
+            <wd-menu-item></wd-menu-item>
+          </wr-content>
+          <wr-content for="menu-item[page11]">
+            <wd-menu-item></wd-menu-item>
+          </wr-content>
+          <wr-content for="menu-item[page12]">
+            <wd-menu-item></wd-menu-item>
+          </wr-content>
+        </wd-menu-item>
+      </wr-content>
+    </wd-menu>
+  </wr-content>
+</wr-page>

@@ -1,0 +1,33 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv1#page3" name="Accedi" gr:x="5" gr:y="0">
+  <ViewComponents>
+    <Form id="wv1#page3#frm2" name="Sign in" gr:x="5" gr:y="85">
+      <Events>
+        <OnSelectEvent id="wv1#page3#frm2#oslte2" name="Sign in" validate="true">
+          <NavigationFlow id="wv1#page3#frm2#oslte2#nf6" to="wv1#act15">
+            <ParameterBinding id="wv1#page3#frm2#oslte2#nf6#par55" source="{wv1#page3#frm2#fld5}value" target="wv1#act15.PortaleSubappaltatoriDataservice$pdp42" name="Password - password"/>
+            <ParameterBinding id="wv1#page3#frm2#oslte2#nf6#par56" source="{wv1#page3#frm2#fld4}value" target="wv1#act15.PortaleSubappaltatoriDataservice$pdp41" name="Email - userID"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv1#page3#frm2#oslte7" name="Password dimenticata" validate="true" gr:pinned="true" gr:side="1" gr:pos="1">
+          <NavigationFlow id="wv1#page3#frm2#oslte7#nf20" to="wv1#page7#frm6">
+            <ParameterBinding id="wv1#page3#frm2#oslte7#nf20#par39" source="{wv1#page3#frm2#fld4}value" target="{wv1#page7#frm6#fld16}value" name="Email - Inserisci email"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <Field id="wv1#page3#frm2#fld4" name="Email" type="string" modifiable="true" validationOrder="wv1#page3#frm2#fld4#mnd4">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page3#frm2#fld4#mnd4" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Field id="wv1#page3#frm2#fld5" name="Password" type="password" modifiable="true" validationOrder="wv1#page3#frm2#fld5#mnd5">
+        <VRules>
+          <MandatoryValidationRule id="wv1#page3#frm2#fld5#mnd5" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Field id="wv1#page3#frm2#fld6" name="Remember Me" type="boolean" modifiable="true">
+        <VRules/>
+      </Field>
+    </Form>
+    <ViewComponent gr:x="0" gr:y="0" id="wv1#page3#gctu4" name="ViewComponent 4"/>
+  </ViewComponents>
+</Page>

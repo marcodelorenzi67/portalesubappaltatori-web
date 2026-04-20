@@ -1,0 +1,35 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="275" gr:y="0" id="wv2#area1#page4" name="Gestione utenti interni" landmark="true">
+  <ViewComponents>
+    <List gr:x="0" gr:y="0" id="wv2#area1#page4#lst1" checkable="false" distinct="false" name="Utenti registrati" pageSize="5">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$User"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att3"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att4"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att5"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$userName"/>
+      <ConditionalExpression id="wv2#area1#page4#lst1#sc1" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="wv2#area1#page4#lst1#sc1#acond1" name="Backoffice" predicate="eq" booleanOperator="or" implied="false" value="true">
+          <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att49"/>
+        </AttributesCondition>
+      </ConditionalExpression>
+    </List>
+    <ViewComponent gr:x="180" gr:y="140" id="wv2#area1#page4#gctu2" name="btn">
+      <Events>
+        <OnSelectEvent id="wv2#area1#page4#gctu2#oslte4" name="Nuovo utente">
+          <NavigationFlow id="wv2#area1#page4#gctu2#oslte4#nf10" to="wv2#area1#page5" automaticCoupling="true"/>
+        </OnSelectEvent>
+      </Events>
+    </ViewComponent>
+    <List gr:x="0" gr:y="115" id="wv2#area1#page4#lst2" checkable="false" distinct="false" pageSize="10" name="Utenti invitati">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls4"/>
+      <ConditionalExpression id="wv2#area1#page4#lst2#sc3" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="wv2#area1#page4#lst2#sc3#acond2" name="backoffice" predicate="eq" booleanOperator="or" implied="false" value="true">
+          <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att50"/>
+        </AttributesCondition>
+      </ConditionalExpression>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att18"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att19"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att20"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att62"/>
+    </List>
+  </ViewComponents>
+</Page>

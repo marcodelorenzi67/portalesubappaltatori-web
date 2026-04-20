@@ -1,0 +1,23 @@
+<wr-page>
+<wr-content for="content">
+    <wd-grid>
+      <wd-row>
+        <wd-cell [width]="12">
+          <wd-button color="primary" iconText="arrow_back" context="backEvent"></wd-button>
+        </wd-cell>
+      </wd-row>
+      <wd-row>
+        <wd-cell [width]="12">
+          <wd-card elevation="3">
+            <wr-content for="content">
+              <form>
+                <wd-input appearance="outline" context="main/frm6/fld16"></wd-input>
+              	<wd-button context="main/frm6/oslte9" type="submit"></wd-button>
+              </form>
+            </wr-content>
+          </wd-card>
+        </wd-cell>
+      </wd-row>
+    </wd-grid>
+  </wr-content>
+</wr-page>

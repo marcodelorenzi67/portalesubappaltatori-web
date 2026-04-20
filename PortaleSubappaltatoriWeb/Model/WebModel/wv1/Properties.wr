@@ -1,0 +1,122 @@
+<WebView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="wv1" name="Public" home="wv1#page3" default="wv1#page1" login="wv1#page3" layout:pageTemplate="PortaleSubappaltatoriStyle/login">
+  <Action id="wv1#act1" gr:x="750" gr:y="205" definition="tlads0#ad1">
+    <Events>
+      <SuccessEvent id="wv1#act1#scce1" definition="tlads0#ad1#spd1"/>
+      <ErrorEvent id="wv1#act1#erre1" definition="tlads0#ad1#epd1">
+        <NavigationFlow id="wv1#act1#erre1#nf2" to="wv1#page2">
+          <ParameterBinding id="wv1#act1#erre1#nf2#par38" source="tlads0#ad1#epd1#pdp3" targetParameter="wv1#prd3" name="Error Message - error message"/>
+        </NavigationFlow>
+      </ErrorEvent>
+    </Events>
+  </Action>
+  <Action id="wv1#act2" gr:x="290" gr:y="175" definition="tlads0#ad2">
+    <Events>
+      <SuccessEvent id="wv1#act2#scce2" definition="tlads0#ad2#spd2"/>
+      <ErrorEvent id="wv1#act2#erre2" definition="tlads0#ad2#epd2">
+        <NavigationFlow id="wv1#act2#erre2#nf5" to="wv1#page2#msg2">
+          <ParameterBinding id="wv1#act2#erre2#nf5#par14" sourceValue="PASSWORD_EXPIRED" target="messages" name="&quot;PASSWORD_EXPIRED&quot; - Shown Messages"/>
+        </NavigationFlow>
+      </ErrorEvent>
+      <ErrorEvent id="wv1#act2#erre3" definition="tlads0#ad2#epd4">
+        <NavigationFlow id="wv1#act2#erre3#nf8" to="wv1#page3#gctu4">
+          <ParameterBinding id="wv1#act2#erre3#nf8#par34" source="tlads0#ad2#epd4#pdp9" targetParameter="wv1#prd3" name="Error Message - error message"/>
+        </NavigationFlow>
+      </ErrorEvent>
+      <ErrorEvent id="wv1#act2#erre4" definition="tlads0#ad2#epd3">
+        <NavigationFlow id="wv1#act2#erre4#nf7" to="wv1#page3#gctu4">
+          <ParameterBinding id="wv1#act2#erre4#nf7#par33" source="tlads0#ad2#epd3#pdp8" targetParameter="wv1#prd3" name="Error Message - error message"/>
+        </NavigationFlow>
+      </ErrorEvent>
+      <SuccessEvent id="wv1#act2#scce7" definition="tlads0#ad2#spd4"/>
+    </Events>
+  </Action>
+  <Action id="wv1#act5" gr:x="490" gr:y="420" actionServiceRes="PortaleSubappaltatoriDataservice$ada4">
+    <Events>
+      <SuccessEvent id="wv1#act5#scce5">
+        <NavigationFlow id="wv1#act5#scce5#nf18" to="wv1#page3">
+          <ParameterBinding id="wv1#act5#scce5#nf18#par36" sourceValue="attivazioneAccount.OK" targetParameter="wv1#prd2" name="&quot;message.utenzaAttivata&quot; - success message"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#act5#erre11">
+        <NavigationFlow id="wv1#act5#erre11#nf19" to="wv1#page6">
+          <ParameterBinding id="wv1#act5#erre11#nf19#par37" sourceValue="attivazioneAccount.KO" targetParameter="wv1#prd3" name="&quot;attivazioneAccount.KO&quot; - error message"/>
+        </NavigationFlow>
+      </ErrorEvent>
+    </Events>
+  </Action>
+  <Parameters>
+    <Parameter id="wv1#prd2" name="success message" type="string"/>
+    <Parameter id="wv1#prd3" name="error message" type="string"/>
+  </Parameters>
+  <Action id="wv1#act10" gr:x="500" gr:y="-65" actionServiceRes="PortaleSubappaltatoriDataservice$ada7">
+    <Events>
+      <SuccessEvent id="wv1#act10#scce8">
+        <NavigationFlow id="wv1#act10#scce8#nf22" to="wv1#page3">
+          <ParameterBinding id="wv1#act10#scce8#nf22#par40" sourceValue="operazione.OK" targetParameter="wv1#prd2" name="&quot;operazione.OK&quot; - success message"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#act10#erre13"/>
+    </Events>
+  </Action>
+  <Action id="wv1#act13" gr:x="745" gr:y="-20" actionServiceRes="PortaleSubappaltatoriDataservice$ada8">
+    <Events>
+      <ErrorEvent id="wv1#act13#erre16">
+        <NavigationFlow id="wv1#act13#erre16#nf24" to="wv1#page8">
+          <ParameterBinding id="wv1#act13#erre16#nf24#par44" sourceValue="operazione.KO" targetParameter="wv1#prd3" name="&quot;operazione.KO&quot; - error message"/>
+        </NavigationFlow>
+      </ErrorEvent>
+      <SuccessEvent id="wv1#act13#scce12">
+        <NavigationFlow id="wv1#act13#scce12#nf25" to="wv1#page3">
+          <ParameterBinding id="wv1#act13#scce12#nf25#par45" sourceValue="operazione.OK" targetParameter="wv1#prd2" name="&quot;operazione.OK&quot; - success message"/>
+        </NavigationFlow>
+      </SuccessEvent>
+    </Events>
+  </Action>
+  <Action id="wv1#act15" gr:x="95" gr:y="285" actionServiceRes="PortaleSubappaltatoriDataservice$ada9">
+    <Events>
+      <SuccessEvent id="wv1#act15#scce14">
+        <NavigationFlow id="wv1#act15#scce14#nf28" to="wv1#page10#frm8">
+          <ParameterBinding id="wv1#act15#scce14#nf28#par57" source="PortaleSubappaltatoriDataservice$pdp45" target="{wv1#page10#frm8#fld21}value" name="password - password"/>
+          <ParameterBinding id="wv1#act15#scce14#nf28#par58" source="PortaleSubappaltatoriDataservice$pdp44" target="{wv1#page10#frm8#fld20}value" name="userID - username"/>
+          <ParameterBinding id="wv1#act15#scce14#nf28#par61" sourceValue="message.otpInviato" targetParameter="wv1#prd2" name="&quot;message.otpInviato&quot; - success message"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#act15#erre19">
+        <NavigationFlow id="wv1#act15#erre19#nf35" to="wv1#page3#gctu4">
+          <ParameterBinding id="wv1#act15#erre19#nf35#par87" sourceValue="BAD_CREDENTIALS " targetParameter="wv1#prd3" name="&quot;BAD_CREDENTIALS &quot; - error message"/>
+        </NavigationFlow>
+      </ErrorEvent>
+    </Events>
+  </Action>
+  <Action id="wv1#act18" gr:x="310" gr:y="530" definition="tlads0#ad4">
+    <Events>
+      <SuccessEvent id="wv1#act18#scce17" definition="tlads0#ad4#spd6">
+        <NavigationFlow id="wv1#act18#scce17#nf31" to="wv1#page10#frm8">
+          <ParameterBinding id="wv1#act18#scce17#nf31#par75" source="tlads0#ad4#spd6#pdp18" target="{wv1#page10#frm8#fld19}value" name="OTP - OTP"/>
+          <ParameterBinding id="wv1#act18#scce17#nf31#par76" source="tlads0#ad4#spd6#pdp17" target="{wv1#page10#frm8#fld21}value" name="Password - password"/>
+          <ParameterBinding id="wv1#act18#scce17#nf31#par77" source="tlads0#ad4#spd6#pdp16" target="{wv1#page10#frm8#fld20}value" name="userID - username"/>
+          <ParameterBinding id="wv1#act18#scce17#nf31#par78" sourceValue="message.otpNonValido" targetParameter="wv1#prd3" name="&quot;message.otpNonValido&quot; - error message"/>
+          <ParameterBinding id="wv1#act18#scce17#nf31#par79" sourceValue="message.otpInviato" targetParameter="wv1#prd2" name="&quot;message.otpInviato&quot; - success message"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#act18#erre21" definition="tlads0#ad4#epd6"/>
+      <ErrorEvent id="wv1#act18#erre25" definition="tlads0#ad4#epd7">
+        <NavigationFlow id="wv1#act18#erre25#nf32" to="wv1#page2#msg2">
+          <ParameterBinding id="wv1#act18#erre25#nf32#par84" sourceValue="PASSWORD_EXPIRED" target="messages" name="&quot;PASSWORD_EXPIRED&quot; - Shown Messages"/>
+        </NavigationFlow>
+      </ErrorEvent>
+      <ErrorEvent id="wv1#act18#erre26" definition="tlads0#ad4#epd8">
+        <NavigationFlow id="wv1#act18#erre26#nf34" to="wv1#page3#gctu4">
+          <ParameterBinding id="wv1#act18#erre26#nf34#par86" source="tlads0#ad4#epd8#pdp19" targetParameter="wv1#prd3" name="Error Message - error message"/>
+        </NavigationFlow>
+      </ErrorEvent>
+      <ErrorEvent id="wv1#act18#erre27" definition="tlads0#ad4#epd9">
+        <NavigationFlow id="wv1#act18#erre27#nf33" to="wv1#page3#gctu4">
+          <ParameterBinding id="wv1#act18#erre27#nf33#par85" source="tlads0#ad4#epd9#pdp20" targetParameter="wv1#prd3" name="Error Message - error message"/>
+        </NavigationFlow>
+      </ErrorEvent>
+      <SuccessEvent id="wv1#act18#scce20" definition="tlads0#ad4#spd7"/>
+      <SuccessEvent id="wv1#act18#scce21" definition="tlads0#ad4#spd8"/>
+    </Events>
+  </Action>
+</WebView>

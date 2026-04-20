@@ -1,0 +1,14 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="965" gr:y="-140" id="wv1#page8" name="Ripristino password">
+  <ViewComponents>
+    <Details gr:x="190" gr:y="0" id="wv1#page8#dtl1">
+      <DataBinding actionServiceRes="PortaleSubappaltatoriDataservice$adf6"/>
+      <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp38"/>
+    </Details>
+    <ViewComponent gr:x="110" gr:y="120" id="wv1#page8#gctu5" name="token">
+      <DataFlow id="wv1#page8#gctu5#df7" to="wv1#page8#dtl1">
+        <ParameterBinding id="wv1#page8#gctu5#df7#par41" sourceParameter="wv1#page8#prd4" target="_be_pdp37" name="Token - token [string]"/>
+      </DataFlow>
+    </ViewComponent>
+    <Message gr:x="10" gr:y="200" id="wv1#page8#msg9" name="Token scaduto o inesistente">
+      <Message xml:space="preserve">ripristinoPsw.tokenInvalido
+</Message>    </Message>    <Form gr:x="0" gr:y="25" id="wv1#page8#frm7" name="Reset password">      <Field id="wv1#page8#frm7#fld17" name="Nuova password" type="password" modifiable="true" validationOrder="wv1#page8#frm7#fld17#mnd12 wv1#page8#frm7#fld17#psvr6">        <VRules>          <MandatoryValidationRule id="wv1#page8#frm7#fld17#mnd12" name="mandatory"/>          <PasswordStrengthValidationRule id="wv1#page8#frm7#fld17#psvr6" name="password strength" securityLevel="medium"/>        </VRules>      </Field>      <Field id="wv1#page8#frm7#fld18" name="Conferma nuova password" type="password" modifiable="true" validationOrder="wv1#page8#frm7#fld18#mnd13 wv1#page8#frm7#fld18#psvr7 wv1#page8#frm7#fld18#cmp5">        <VRules>          <MandatoryValidationRule id="wv1#page8#frm7#fld18#mnd13" name="mandatory"/>          <PasswordStrengthValidationRule id="wv1#page8#frm7#fld18#psvr7" name="password strength" securityLevel="medium"/>          <CompareValidationRule id="wv1#page8#frm7#fld18#cmp5" name="equal to new password" predicate="eq" valueField="wv1#page8#frm7#fld17"/>        </VRules>      </Field>      <Events>        <OnSelectEvent id="wv1#page8#frm7#oslte10" name="Ripristina password" validate="true" gr:pinned="true" gr:side="3" gr:pos="1">          <NavigationFlow id="wv1#page8#frm7#oslte10#nf23" to="wv1#act13">            <ParameterBinding id="wv1#page8#frm7#oslte10#nf23#par42" source="{wv1#page8#frm7#fld17}value" target="wv1#act13.PortaleSubappaltatoriDataservice$pdp39" name="Nuova password - Nuova password"/>            <ParameterBinding id="wv1#page8#frm7#oslte10#nf23#par43" sourceParameter="wv1#page8#prd4" target="wv1#act13.PortaleSubappaltatoriDataservice$pdp40" name="Token - Token"/>          </NavigationFlow>        </OnSelectEvent>      </Events>    </Form>  </ViewComponents>  <Parameters>    <Parameter id="wv1#page8#prd4" name="Token" type="string"/>  </Parameters>  <PathFragment parameter="wv1#page8#prd4"/></Page>

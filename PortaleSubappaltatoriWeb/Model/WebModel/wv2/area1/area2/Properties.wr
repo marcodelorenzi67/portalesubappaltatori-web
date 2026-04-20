@@ -1,0 +1,32 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="610" gr:y="0" id="wv2#area1#area2" name="Tabelle di governo" landmark="true" default="wv2#area1#area2#page11" landmarks="wv2#area1#area2#page11 wv2#area1#area2#page12">
+  <Action id="wv2#area1#area2#act20" gr:x="30" gr:y="385" actionServiceRes="PortaleSubappaltatoriDataservice$ada11">
+    <Events>
+      <SuccessEvent id="wv2#area1#area2#act20#scce22">
+        <NavigationFlow id="wv2#area1#area2#act20#scce22#nf39" to="wv2#area1#area2#page11">
+          <ParameterBinding id="wv2#area1#area2#act20#scce22#nf39#par101" sourceValue="operazione.OK" targetParameter="wv2#prd6" name="&quot;operazione.OK&quot; - success message"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area1#area2#act20#erre29"/>
+    </Events>
+  </Action>
+  <Action id="wv2#area1#area2#act21" gr:x="615" gr:y="65" actionServiceRes="PortaleSubappaltatoriDataservice$ada12">
+    <Events>
+      <SuccessEvent id="wv2#area1#area2#act21#scce24">
+        <NavigationFlow id="wv2#area1#area2#act21#scce24#nf44" to="wv2#area1#area2#page16">
+          <ParameterBinding id="wv2#area1#area2#act21#scce24#nf44#par108" source="PortaleSubappaltatoriDataservice$pdp62" targetParameter="wv2#area1#area2#page16#prd7" name="oid Tipologia Azienda - oid tipo azienda"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area1#area2#act21#erre32"/>
+    </Events>
+  </Action>
+  <Action id="wv2#area1#area2#act22" gr:x="370" gr:y="495" actionServiceRes="PortaleSubappaltatoriDataservice$ad1">
+    <Events>
+      <SuccessEvent id="wv2#area1#area2#act22#scce25">
+        <NavigationFlow id="wv2#area1#area2#act22#scce25#nf46" to="wv2#area1#area2#page16">
+          <ParameterBinding id="wv2#area1#area2#act22#scce25#nf46#par111" source="PortaleSubappaltatoriDataservice$pdp63" targetParameter="wv2#area1#area2#page16#prd7" name="oid Tipologia Azienda - oid tipo azienda"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area1#area2#act22#erre34"/>
+    </Events>
+  </Action>
+</Area>

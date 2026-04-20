@@ -1,0 +1,21 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1665" gr:y="585" id="wv2#page17" name="Scegli Tenant">
+  <ViewComponents>
+    <Form gr:x="0" gr:y="0" id="wv2#page17#frm10" name="Scegli Tenant">
+      <SelectionField id="wv2#page17#frm10#sfld5" optionsDistinct="false" emptyOption="true" name="Tenant" validationOrder="wv2#page17#frm10#sfld5#mnd17">
+        <OptionsDataBinding actionServiceRes="PortaleSubappaltatoriDataservice$adf7"/>
+        <OptionsAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp68"/>
+        <VRules>
+          <MandatoryValidationRule id="wv2#page17#frm10#sfld5#mnd17" name="Mandatory"/>
+        </VRules>
+      </SelectionField>
+      <Events>
+        <OnSelectEvent id="wv2#page17#frm10#oslte24" name="Procedi" validate="true">
+          <NavigationFlow id="wv2#page17#frm10#oslte24#nf50" to="wv2#area3#page18">
+            <ParameterBinding id="wv2#page17#frm10#oslte24#nf50#par118" source="{wv2#page17#frm10#sfld5}value._be_pdp67" targetParameter="wv2#prd8" name="Tenant [oid] - Tenant"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <VRules/>
+    </Form>
+  </ViewComponents>
+</Page>

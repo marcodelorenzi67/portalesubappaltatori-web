@@ -1,0 +1,29 @@
+<AbstractPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv1#apg1" name="Common Content" gr:x="20" gr:y="625">
+  <ViewComponents>
+    <ViewComponent id="wv1#apg1#gctu1" name="propaga" gr:x="120" gr:y="0">
+      <DataFlow id="wv1#apg1#gctu1#df2" to="wv1#apg1#msg6">
+        <ParameterBinding id="wv1#apg1#gctu1#df2#par28" sourceParameter="wv1#prd2" target="messages" name="success message - Shown Messages"/>
+      </DataFlow>
+      <DataFlow id="wv1#apg1#gctu1#df4" to="wv1#apg1#msg7">
+        <ParameterBinding id="wv1#apg1#gctu1#df4#par30" sourceParameter="wv1#prd3" target="messages" name="error message - Shown Messages"/>
+      </DataFlow>
+      <DataFlow id="wv1#apg1#gctu1#df6" to="wv1#apg1#msg8">
+        <ParameterBinding id="wv1#apg1#gctu1#df6#par32" sourceValue="${env}" target="messages" name="&quot;${env}&quot; - Shown Messages"/>
+      </DataFlow>
+    </ViewComponent>
+    <Message gr:x="0" gr:y="95" id="wv1#apg1#msg6" name="Success message">
+      <DataFlow id="wv1#apg1#msg6#df3" to="wv1#apg1#gctu1" gr:bendpoints="58,-37,-37,58">
+        <ParameterBinding id="wv1#apg1#msg6#df3#par29" sourceValue="$$NULL$$" targetParameter="wv1#prd2" name="NULL - success message"/>
+      </DataFlow>
+    </Message>
+    <Message gr:x="185" gr:y="105" id="wv1#apg1#msg7" name="Error message">
+      <DataFlow id="wv1#apg1#msg7#df5" to="wv1#apg1#gctu1" gr:bendpoints="-52,-35,28,55">
+        <ParameterBinding id="wv1#apg1#msg7#df5#par31" sourceValue="$$NULL$$" targetParameter="wv1#prd3" name="NULL - error message"/>
+      </DataFlow>
+    </Message>
+    <Message gr:x="10" gr:y="5" id="wv1#apg1#msg8" name="ENV"/>
+    <Form gr:x="235" gr:y="10" id="wv1#apg1#frm5" name="static slideshow">
+      <SelectionField id="wv1#apg1#frm5#sfld3" optionsDistinct="false" emptyOption="true" name="imgs" optionsValues="assets/PortaleSubappaltatoriStyle/slideshow/slide_1.png,assets/PortaleSubappaltatoriStyle/slideshow/slide_2.png,assets/PortaleSubappaltatoriStyle/slideshow/slide_3.png,assets/PortaleSubappaltatoriStyle/slideshow/slide_4.png,assets/PortaleSubappaltatoriStyle/slideshow/slide_5.png,assets/PortaleSubappaltatoriStyle/slideshow/slide_6.png,assets/PortaleSubappaltatoriStyle/slideshow/slide_7.png,assets/PortaleSubappaltatoriStyle/slideshow/slide_8.png,assets/PortaleSubappaltatoriStyle/slideshow/slide_9.png,assets/PortaleSubappaltatoriStyle/slideshow/slide_10.png"/>
+    </Form>
+  </ViewComponents>
+</AbstractPage>

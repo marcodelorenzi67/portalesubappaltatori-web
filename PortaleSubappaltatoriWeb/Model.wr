@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?webml version="9.3.0.4"?>
+
+<WebProject xmlns:bpm="http://www.webratio.com/2009/WebML/BPM" xmlns:gr="http://www.webratio.com/2006/WebML/Graph" outputPath="${webclientapps_loc}/${project_name}" gr:showUnitContent="true" gr:showTooltip="true" enableProjectDependencies="true" toolVersion="9.3.1">
+  <ReferencedProject name="Common" natureId="com.webratio.ide.styles.clientstylenature"/>
+  <ReferencedProject name="WebDefault" natureId="com.webratio.ide.styles.webstylenature"/>
+  <Roles>
+    <Role id="rl6" name="Responsabile"/>
+    <Role id="rl7" name="Consultazione"/>
+    <Role id="rl8" name="Amministratore"/>
+    <Role id="rl9" name="Gestione"/>
+    <Role id="rl10" name="Fornitore"/>
+    <Role id="rl16" name="password_change"/>
+  </Roles>
+  <ServiceDataProviders>
+    <IdentityProvider/>
+  </ServiceDataProviders>
+  <bpm:BpmProjects/>
+  <BundleKey name="ACCOUNT_DISABLED"/>
+  <BundleKey name="BAD_CREDENTIALS"/>
+  <BundleKey name="BAD_REQUEST"/>
+  <BundleKey name="INTERNAL_ERROR"/>
+  <BundleKey name="MAX_LOGIN_ATTEMPTS_REACHED"/>
+  <BundleKey name="PASSWORD_EXPIRED"/>
+  <BundleKey name="UNAUTHORIZED"/>
+  <BundleKey name="VALIDATION_FAILED"/>
+  <ReferencedProject name="PortaleSubappaltatoriDataservice" natureId="com.webratio.ide.DataServiceNature" pid="PortaleSubappaltatoriDataservice"/>
+  <ReferencedProject name="PortaleSubappaltatoriStyle" natureId="com.webratio.ide.styles.webstylenature"/>
+  <BundleKey name="attivazioneAccount.KO"/>
+  <BundleKey name="attivazioneAccount.OK"/>
+  <BundleKey name="operazione.KO"/>
+  <BundleKey name="operazione.OK"/>
+  <BundleKey name="ripristinoPsw.tokenInvalido "/>
+  <BundleKey name="message.otpInviato"/>
+  <BundleKey name="message.otpNonValido"/>
+</WebProject>

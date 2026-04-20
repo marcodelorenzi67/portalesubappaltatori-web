@@ -1,0 +1,28 @@
+<wr-page>
+<wr-content for="content">
+    <wd-grid>
+      <wd-row>
+        <wd-cell [width]="12">
+          <ng-container *ngIf="valueOf('main/dtl1/data/_be_pdp38') === null || valueOf('main/dtl1/data/_be_pdp38') === undefined || valueOf('main/dtl1/data/_be_pdp38') !== true">
+            <wd-alert [localized]="true" [messages]="valueOf('main/msg9/messages')" color="warn"></wd-alert>
+          </ng-container>
+        </wd-cell>
+      </wd-row>
+      <wd-row>
+        <wd-cell [width]="12">
+          <ng-container *ngIf="valueOf('main/dtl1/data/_be_pdp38') === true">
+            <wd-card elevation="3">
+              <wr-content for="content">
+                <form>
+                  <wd-password appearance="outline" context="main/frm7/fld17"></wd-password>
+                  <wd-password appearance="outline" context="main/frm7/fld18"></wd-password>
+                  <wd-button context="main/frm7/oslte10"></wd-button>
+                </form>
+              </wr-content>
+            </wd-card>
+          </ng-container>
+        </wd-cell>
+      </wd-row>
+    </wd-grid>
+  </wr-content>
+</wr-page>

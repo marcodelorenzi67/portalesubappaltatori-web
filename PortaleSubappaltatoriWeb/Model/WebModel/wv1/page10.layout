@@ -1,0 +1,16 @@
+<wr-page>
+  <wr-content for="content">
+    <wd-card actions="main/frm8/oslte12" title="main/frm8">
+      <wr-content for="content">
+        <form>
+          <wd-input type="text" [showLabel]="true" appearance="outline" floatLabel="auto" context="main/frm8/fld19"></wd-input>
+          <wd-button color="accent" context="main/frm8/oslte12"></wd-button>
+        </form>
+        <wd-button variant="mat-button" color="primary" context="main/frm8/oslte13" type="button"></wd-button>
+      </wr-content>
+      <wr-content for="title[frm8]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wr-page>

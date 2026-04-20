@@ -1,0 +1,66 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="235" gr:y="0" id="wv2#area3#page18" name="Elenco Fornitori" landmark="true">
+  <ViewComponents>
+    <List gr:x="0" gr:y="110" id="wv2#area3#page18#lst8" checkable="false" distinct="false" pageSize="20">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls2"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att10"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att12"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att7"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att8"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att9"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att66"/>
+      <ConditionalExpression id="wv2#area3#page18#lst8#sc9" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="wv2#area3#page18#lst8#sc9#acond3" name="PIVA" predicate="contains" booleanOperator="or" implied="false" ignoreCase="true">
+          <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att8"/>
+        </AttributesCondition>
+        <AttributesCondition id="wv2#area3#page18#lst8#sc9#acond4" name="Ragione sociale" predicate="contains" booleanOperator="or" implied="false" ignoreCase="true">
+          <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att7"/>
+        </AttributesCondition>
+        <AttributesCondition id="wv2#area3#page18#lst8#sc9#acond5" name="nome" predicate="contains" booleanOperator="or" implied="false" ignoreCase="true">
+          <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att9"/>
+        </AttributesCondition>
+        <AttributesCondition id="wv2#area3#page18#lst8#sc9#acond6" name="email" predicate="contains" booleanOperator="or" implied="false" ignoreCase="true">
+          <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att12"/>
+        </AttributesCondition>
+        <AttributesCondition id="wv2#area3#page18#lst8#sc9#acond7" name="cognome" predicate="contains" booleanOperator="or" implied="false" ignoreCase="true">
+          <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att10"/>
+        </AttributesCondition>
+        <AssociationRoleCondition id="wv2#area3#page18#lst8#sc9#rcond4" name="stato registrazione" predicate="in" implied="false">
+          <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role5"/>
+        </AssociationRoleCondition>
+      </ConditionalExpression>
+    </List>
+    <Form gr:x="105" gr:y="0" id="wv2#area3#page18#frm13" name="Cerca">
+      <Field id="wv2#area3#page18#frm13#fld27" modifiable="true" name="Nome Referente" type="string">
+        <VRules/>
+      </Field>
+      <Field id="wv2#area3#page18#frm13#fld28" modifiable="true" name="Ragione Sociale" type="string">
+        <VRules/>
+      </Field>
+      <Field id="wv2#area3#page18#frm13#fld29" modifiable="true" name="Partita IVA" type="string">
+        <VRules/>
+      </Field>
+      <Field id="wv2#area3#page18#frm13#fld31" modifiable="true" name="Cognome Referente" type="string">
+        <VRules/>
+      </Field>
+      <Field id="wv2#area3#page18#frm13#fld32" modifiable="true" name="Email" type="string">
+        <VRules/>
+      </Field>
+      <SelectionField id="wv2#area3#page18#frm13#sfld8" optionsDistinct="false" emptyOption="true" name="Stato Registrazione">
+        <OptionsDataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls3"/>
+        <OptionsAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att14"/>
+      </SelectionField>
+      <Events>
+        <OnSelectEvent id="wv2#area3#page18#frm13#oslte30" name="Cerca" validate="true">
+          <NavigationFlow id="wv2#area3#page18#frm13#oslte30#nf56" to="wv2#area3#page18#lst8">
+            <ParameterBinding id="wv2#area3#page18#frm13#oslte30#nf56#par122" source="{wv2#area3#page18#frm13#fld31}value" target="wv2#area3#page18#lst8#sc9#acond7" name="Cognome Referente - cognome"/>
+            <ParameterBinding id="wv2#area3#page18#frm13#oslte30#nf56#par123" source="{wv2#area3#page18#frm13#fld32}value" target="wv2#area3#page18#lst8#sc9#acond6" name="Email - email"/>
+            <ParameterBinding id="wv2#area3#page18#frm13#oslte30#nf56#par124" source="{wv2#area3#page18#frm13#fld27}value" target="wv2#area3#page18#lst8#sc9#acond5" name="Nome Referente - nome"/>
+            <ParameterBinding id="wv2#area3#page18#frm13#oslte30#nf56#par125" source="{wv2#area3#page18#frm13#fld29}value" target="wv2#area3#page18#lst8#sc9#acond3" name="Partita IVA - PIVA"/>
+            <ParameterBinding id="wv2#area3#page18#frm13#oslte30#nf56#par126" source="{wv2#area3#page18#frm13#fld28}value" target="wv2#area3#page18#lst8#sc9#acond4" name="Ragione Sociale - Ragione sociale"/>
+            <ParameterBinding id="wv2#area3#page18#frm13#oslte30#nf56#par127" source="{wv2#area3#page18#frm13#sfld8}value._be_att13" target="wv2#area3#page18#lst8#sc9#rcond4._be_att13" name="Stato Registrazione [oid] - stato registrazione [oid]"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </Form>
+  </ViewComponents>
+</Page>

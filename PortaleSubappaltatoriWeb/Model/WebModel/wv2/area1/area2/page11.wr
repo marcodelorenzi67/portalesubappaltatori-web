@@ -1,0 +1,73 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="wv2#area1#area2#page11" name="Tipologia allegati" landmark="true">
+  <ViewComponents>
+    <List gr:x="0" gr:y="0" id="wv2#area1#area2#page11#lst3" checkable="false" distinct="false" pageSize="10">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls8"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att37" order="ascending"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att38"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att39"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att40"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att64"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att65"/>
+      <Events>
+        <OnSelectEvent id="wv2#area1#area2#page11#lst3#oslte14" name="Modifica" validate="true">
+          <NavigationFlow id="wv2#area1#area2#page11#lst3#oslte14#nf36" to="wv2#area1#area2#page11#dpg1#frm9">
+            <ParameterBinding id="wv2#area1#area2#page11#lst3#oslte14#nf36#par88" source="data._be_att38" target="{wv2#area1#area2#page11#dpg1#frm9#fld23}value" name="condiviso - Condiviso"/>
+            <ParameterBinding id="wv2#area1#area2#page11#lst3#oslte14#nf36#par89" source="data._be_att64" target="{wv2#area1#area2#page11#dpg1#frm9#fld25}value" name="descrizione - Descrizione"/>
+            <ParameterBinding id="wv2#area1#area2#page11#lst3#oslte14#nf36#par90" source="data._be_att39" target="{wv2#area1#area2#page11#dpg1#frm9#fld22}value" name="giorniDurata - Giorni Durata"/>
+            <ParameterBinding id="wv2#area1#area2#page11#lst3#oslte14#nf36#par92" source="data._be_att37" target="{wv2#area1#area2#page11#dpg1#frm9#fld24}value" name="oid - oid"/>
+            <ParameterBinding id="wv2#area1#area2#page11#lst3#oslte14#nf36#par93" source="data._be_att40" target="{wv2#area1#area2#page11#dpg1#frm9#fld26}value" name="patternNome - Pattern nome"/>
+            <ParameterBinding id="wv2#area1#area2#page11#lst3#oslte14#nf36#par94" source="data._be_role23$_be_att41" target="{wv2#area1#area2#page11#dpg1#frm9#sfld4}presel._be_att41" name="tipologiaAllegatiToMacroTipologia - Macro-tipologia [oid] - Preselection"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </List>
+    <ViewComponent gr:x="205" gr:y="0" id="wv2#area1#area2#page11#gctu8" name="New">
+      <Events>
+        <OnSelectEvent id="wv2#area1#area2#page11#gctu8#oslte15" name="Nuova tipologia">
+          <NavigationFlow id="wv2#area1#area2#page11#gctu8#oslte15#nf37" to="wv2#area1#area2#page11#dpg1#frm9" automaticCoupling="true"/>
+        </OnSelectEvent>
+      </Events>
+    </ViewComponent>
+  </ViewComponents>
+  <DialogPage gr:x="0" gr:y="115" id="wv2#area1#area2#page11#dpg1" name="Modifica tipologia allegati">
+    <ViewComponents>
+      <Form gr:x="0" gr:y="0" id="wv2#area1#area2#page11#dpg1#frm9" name="Modifica">
+        <ConditionalExpression id="wv2#area1#area2#page11#dpg1#frm9#sc5" defaultPolicy="emptyAlwaysApplied" booleanOperator="and">
+          <KeyCondition id="wv2#area1#area2#page11#dpg1#frm9#sc5#kcond3" name="KeyCondition3" predicate="in" implied="false"/>
+        </ConditionalExpression>
+        <Field id="wv2#area1#area2#page11#dpg1#frm9#fld22" modifiable="true" name="Giorni Durata" type="integer">
+          <VRules/>
+        </Field>
+        <Field id="wv2#area1#area2#page11#dpg1#frm9#fld23" modifiable="true" name="Condiviso" type="boolean">
+          <VRules/>
+        </Field>
+        <Field id="wv2#area1#area2#page11#dpg1#frm9#fld24" modifiable="true" name="oid" type="integer">
+          <VRules/>
+        </Field>
+        <Field id="wv2#area1#area2#page11#dpg1#frm9#fld25" modifiable="true" name="Descrizione" type="string">
+          <VRules/>
+        </Field>
+        <Field id="wv2#area1#area2#page11#dpg1#frm9#fld26" modifiable="true" name="Pattern nome" type="string">
+          <VRules/>
+        </Field>
+        <SelectionField id="wv2#area1#area2#page11#dpg1#frm9#sfld4" name="Macro-tipologia">
+          <VRules/>
+          <OptionsDataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls9"/>
+          <OptionsAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att42"/>
+        </SelectionField>
+        <Events>
+          <OnSelectEvent id="wv2#area1#area2#page11#dpg1#frm9#oslte16" name="Salva" validate="true">
+            <NavigationFlow id="wv2#area1#area2#page11#dpg1#frm9#oslte16#nf38" to="wv2#area1#area2#act20">
+              <ParameterBinding id="wv2#area1#area2#page11#dpg1#frm9#oslte16#nf38#par95" source="{wv2#area1#area2#page11#dpg1#frm9#fld23}value" target="wv2#area1#area2#act20.PortaleSubappaltatoriDataservice$pdp56" name="Condiviso - Condiviso"/>
+              <ParameterBinding id="wv2#area1#area2#page11#dpg1#frm9#oslte16#nf38#par96" source="{wv2#area1#area2#page11#dpg1#frm9#fld25}value" target="wv2#area1#area2#act20.PortaleSubappaltatoriDataservice$pdp54" name="Descrizione - Descrizione"/>
+              <ParameterBinding id="wv2#area1#area2#page11#dpg1#frm9#oslte16#nf38#par97" source="{wv2#area1#area2#page11#dpg1#frm9#fld22}value" target="wv2#area1#area2#act20.PortaleSubappaltatoriDataservice$pdp57" name="Giorni Durata - Giorni Durata"/>
+              <ParameterBinding id="wv2#area1#area2#page11#dpg1#frm9#oslte16#nf38#par98" source="{wv2#area1#area2#page11#dpg1#frm9#fld24}value" target="wv2#area1#area2#act20.PortaleSubappaltatoriDataservice$pdp55" name="oid - KeyCondition26 [oid]"/>
+              <ParameterBinding id="wv2#area1#area2#page11#dpg1#frm9#oslte16#nf38#par99" source="{wv2#area1#area2#page11#dpg1#frm9#sfld4}value._be_att41" target="wv2#area1#area2#act20.PortaleSubappaltatoriDataservice$pdp52" name="Macro-tipologia [oid] - Macro-tipologia oid"/>
+              <ParameterBinding id="wv2#area1#area2#page11#dpg1#frm9#oslte16#nf38#par100" source="{wv2#area1#area2#page11#dpg1#frm9#fld26}value" target="wv2#area1#area2#act20.PortaleSubappaltatoriDataservice$pdp53" name="Pattern nome - Pattern nome"/>
+            </NavigationFlow>
+          </OnSelectEvent>
+        </Events>
+      </Form>
+    </ViewComponents>
+  </DialogPage>
+</Page>

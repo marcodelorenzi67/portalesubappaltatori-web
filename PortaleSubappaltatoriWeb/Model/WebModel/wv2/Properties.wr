@@ -1,0 +1,26 @@
+<WebView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2" name="BackOffice" protected="true" roles="rl6 rl7 rl8 rl9" home="wv2#act25" landmarks="wv2#area1 wv2#area3">
+  <Action id="wv2#act14" gr:x="1930" gr:y="435" definition="tlads0#ad3">
+    <Events>
+      <SuccessEvent id="wv2#act14#scce13" definition="tlads0#ad3#spd3"/>
+      <ErrorEvent id="wv2#act14#erre17" definition="tlads0#ad3#epd5"/>
+    </Events>
+  </Action>
+  <Parameters>
+    <Parameter id="wv2#prd5" name="error message" type="string"/>
+    <Parameter id="wv2#prd6" name="success message" type="string"/>
+    <Parameter id="wv2#prd8" name="Tenant" type="integer"/>
+  </Parameters>
+  <Action id="wv2#act25" gr:x="1690" gr:y="830" definition="tlads0#ad5">
+    <Events>
+      <ErrorEvent id="wv2#act25#erre36" definition="tlads0#ad5#epd10"/>
+      <SuccessEvent id="wv2#act25#scce28" definition="tlads0#ad5#spd9">
+        <NavigationFlow id="wv2#act25#scce28#nf51" to="wv2#area3#page18">
+          <ParameterBinding id="wv2#act25#scce28#nf51#par119" source="tlads0#ad5#spd9#pdp21" targetParameter="wv2#prd8" name="Oid tenant - Tenant"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <SuccessEvent id="wv2#act25#scce29" definition="tlads0#ad5#spd10">
+        <NavigationFlow id="wv2#act25#scce29#nf49" to="wv2#page17#frm10" automaticCoupling="true"/>
+      </SuccessEvent>
+    </Events>
+  </Action>
+</WebView>

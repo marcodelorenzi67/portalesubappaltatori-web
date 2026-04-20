@@ -1,0 +1,69 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area1#area2#page16" name="Gestisci tipologia documenti per tipo azienda" gr:x="355" gr:y="175">
+  <ViewComponents>
+    <List id="wv2#area1#area2#page16#lst6" gr:x="0" gr:y="0" checkable="true" distinct="false" pageSize="10" name="Tipologia allegati azienda">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls8"/>
+      <ConditionalExpression id="wv2#area1#area2#page16#lst6#sc7" defaultPolicy="fill" booleanOperator="and">
+        <AssociationRoleCondition id="wv2#area1#area2#page16#lst6#sc7#rcond2" name="tipo azienda" predicate="in" implied="false">
+          <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role28"/>
+        </AssociationRoleCondition>
+      </ConditionalExpression>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att64"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att65"/>
+      <Events>
+        <OnSelectEvent id="wv2#area1#area2#page16#lst6#oslte21" name="Rimuovi" validate="true">
+          <NavigationFlow id="wv2#area1#area2#page16#lst6#oslte21#nf45" to="wv2#area1#area2#act22">
+            <ParameterBinding id="wv2#area1#area2#page16#lst6#oslte21#nf45#par109" source="data._be_att37" target="wv2#area1#area2#act22.PortaleSubappaltatoriDataservice$pdp61" name="oid - oid Tipologia Allegati"/>
+            <ParameterBinding id="wv2#area1#area2#page16#lst6#oslte21#nf45#par110" sourceParameter="wv2#area1#area2#page16#prd7" target="wv2#area1#area2#act22.PortaleSubappaltatoriDataservice$pdp60" name="oid tipo azienda - oid Tipologia Azienda"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <DataFlow id="wv2#area1#area2#page16#lst6#df18" to="wv2#area1#area2#act22" gr:bendpoints="36,131,16,-104">
+        <ParameterBinding id="wv2#area1#area2#page16#lst6#df18#par112" source="checkedKeys" target="wv2#area1#area2#act22.PortaleSubappaltatoriDataservice$pdp61" name="Checked Keys - oid Tipologia Allegati"/>
+      </DataFlow>
+    </List>
+    <List id="wv2#area1#area2#page16#lst7" gr:x="280" gr:y="0" checkable="true" distinct="false" pageSize="10" name="Tipologia allegati">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls8"/>
+      <ConditionalExpression id="wv2#area1#area2#page16#lst7#sc8" defaultPolicy="fill" booleanOperator="and">
+        <AssociationRoleCondition id="wv2#area1#area2#page16#lst7#sc8#rcond3" name="tipo azienda" predicate="notIn" implied="false">
+          <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role28"/>
+        </AssociationRoleCondition>
+      </ConditionalExpression>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att64"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att65"/>
+      <Events>
+        <OnSelectEvent id="wv2#area1#area2#page16#lst7#oslte20" name="Aggiungi" validate="true" gr:pinned="true" gr:side="0" gr:pos="2">
+          <NavigationFlow id="wv2#area1#area2#page16#lst7#oslte20#nf43" to="wv2#area1#area2#act21">
+            <ParameterBinding id="wv2#area1#area2#page16#lst7#oslte20#nf43#par106" source="data._be_att37" target="wv2#area1#area2#act21.PortaleSubappaltatoriDataservice$pdp59" name="oid - oid Tipologia Allegati"/>
+            <ParameterBinding id="wv2#area1#area2#page16#lst7#oslte20#nf43#par107" sourceParameter="wv2#area1#area2#page16#prd7" target="wv2#area1#area2#act21.PortaleSubappaltatoriDataservice$pdp58" name="oid tipo azienda - oid Tipologia Azienda"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <DataFlow id="wv2#area1#area2#page16#lst7#df19" to="wv2#area1#area2#act21">
+        <ParameterBinding id="wv2#area1#area2#page16#lst7#df19#par114" source="checkedKeys" target="wv2#area1#area2#act21.PortaleSubappaltatoriDataservice$pdp59" name="Checked Keys - oid Tipologia Allegati"/>
+      </DataFlow>
+    </List>
+    <ViewComponent gr:x="230" gr:y="140" id="wv2#area1#area2#page16#gctu9" name="Propaga">
+      <DataFlow id="wv2#area1#area2#page16#gctu9#df16" to="wv2#area1#area2#page16#lst6">
+        <ParameterBinding id="wv2#area1#area2#page16#gctu9#df16#par104" sourceParameter="wv2#area1#area2#page16#prd7" target="wv2#area1#area2#page16#lst6#sc7#rcond2._be_att45" name="oid tipo azienda - tipo azienda [oid]"/>
+      </DataFlow>
+      <DataFlow id="wv2#area1#area2#page16#gctu9#df17" to="wv2#area1#area2#page16#lst7">
+        <ParameterBinding id="wv2#area1#area2#page16#gctu9#df17#par105" sourceParameter="wv2#area1#area2#page16#prd7" target="wv2#area1#area2#page16#lst7#sc8#rcond3._be_att45" name="oid tipo azienda - tipo azienda [oid]"/>
+      </DataFlow>
+      <Events>
+        <OnSelectEvent id="wv2#area1#area2#page16#gctu9#oslte22" name="Rimuovi Selezionati">
+          <NavigationFlow id="wv2#area1#area2#page16#gctu9#oslte22#nf47" to="wv2#area1#area2#act22">
+            <ParameterBinding id="wv2#area1#area2#page16#gctu9#oslte22#nf47#par113" sourceParameter="wv2#area1#area2#page16#prd7" target="wv2#area1#area2#act22.PortaleSubappaltatoriDataservice$pdp60" name="oid tipo azienda - oid Tipologia Azienda"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv2#area1#area2#page16#gctu9#oslte23" name="Aggiungi selezionati">
+          <NavigationFlow id="wv2#area1#area2#page16#gctu9#oslte23#nf48" to="wv2#area1#area2#act21">
+            <ParameterBinding id="wv2#area1#area2#page16#gctu9#oslte23#nf48#par115" sourceParameter="wv2#area1#area2#page16#prd7" target="wv2#area1#area2#act21.PortaleSubappaltatoriDataservice$pdp58" name="oid tipo azienda - oid Tipologia Azienda"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </ViewComponent>
+  </ViewComponents>
+  <Parameters>
+    <Parameter id="wv2#area1#area2#page16#prd7" name="oid tipo azienda" type="integer"/>
+  </Parameters>
+</Page>

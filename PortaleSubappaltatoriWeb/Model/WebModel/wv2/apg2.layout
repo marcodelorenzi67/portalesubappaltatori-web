@@ -1,0 +1,45 @@
+<wr-page>
+  <wr-content for="enviroment">
+    <div *ngIf="valueOf('main/msg10/messages') &amp;&amp; valueOf('main/msg10/messages')[0] != 'prod'" class="alert-enviroment">
+      {{ 'testEnv' | wrLocalize }}
+    </div>
+  </wr-content>
+  <wr-content for="breadcrumb">
+    <wd-alert [localized]="true" [messages]="valueOf('main/msg11/messages')" color="success"></wd-alert>
+    <wd-alert color="warn" [localized]="true" [messages]="valueOf('main/msg12/messages')"></wd-alert>
+  </wr-content>
+  <wr-content for="user">
+    <wd-popover matchPopoverOverlayWidth iconText="person" [buttonText]="valueOf('main/myp2/data/_identity__me_$firstName') | wrLocalize" color="primary">
+      <wd-menu-item context="main/gctu7/oslte11" iconText="logout"></wd-menu-item>
+      <div class="version-info-container">
+        <span class="grassetto">
+          Versione:
+        </span>
+        {{ valueOf("app/version") }}
+      </div>
+    </wd-popover>
+    <wd-button context="main/gctu7/oslte25" iconText="loop" variant="mat-icon-button" color="primary" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/dtl2/data/_be_pdp66') != 1"></wd-button>
+  </wr-content>
+</wr-page>
+<wd-dialog title="." actions="frm12/oslte29">
+  <wr-content for="content">
+    <wd-card elevation="0">
+      <wr-content for="content">
+        <wd-grid>
+          <wd-row>
+            <wd-cell [width]="12">
+              <wd-select appearance="outline"></wd-select>
+            </wd-cell>
+          </wd-row>
+        </wd-grid>
+        <wd-container></wd-container>
+      </wr-content>
+    </wd-card>
+  </wr-content>
+  <wr-content for="title[dpg2]">
+    {{ labelOf('.') | wrLocalize }}
+  </wr-content>
+  <wr-content for="action[oslte29]">
+    <wd-button color="success"></wd-button>
+  </wr-content>
+</wd-dialog>
