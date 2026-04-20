@@ -1,0 +1,63 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-button context="backEvent" iconText="arrow_back"></wd-button>
+    <wd-card title="main">
+      <wr-content for="content">
+        <wd-grid>
+          <wd-row>
+            <wd-cell [width]="12">
+              <wd-card elevation="0" title="main/frm14p">
+                <wr-content for="content">
+                  <wd-grid>
+                    <wd-row>
+            <wd-cell [width]="3">
+              <wd-input appearance="outline" context="main/frm14p/fld34p"></wd-input>
+            </wd-cell>
+            <wd-cell [width]="3">
+              <wd-input appearance="outline" context="main/frm14p/fld35p"></wd-input>
+            </wd-cell>
+            <wd-cell [width]="3">
+              <wd-select appearance="outline" context="main/frm14p/sfld9p"></wd-select>
+            </wd-cell>
+            <wd-cell [width]="3">
+              <wd-select-multiple appearance="outline" context="main/frm14p/sfld10p"></wd-select-multiple>
+            </wd-cell>          
+          </wd-row>
+                  </wd-grid>
+                </wr-content>
+                <wr-content for="title[frm14p]">
+                  {{ 'Dati Fornitore' | wrLocalize }}
+                </wr-content>
+              </wd-card>
+            </wd-cell>
+          </wd-row>
+          <wd-row><wd-cell [width]="12">
+            <wd-card elevation="0" title="main/frm14p">
+              <wr-content for="content">
+                <wd-grid>
+                  <wd-row>
+                    <wd-cell [width]="4">
+                      <wd-input appearance="outline" context="main/frm14p/fld33p"></wd-input>
+                    </wd-cell>
+                    <wd-cell [width]="4">
+                      <wd-input context="main/frm14p/fld36p" appearance="outline"></wd-input>
+                    </wd-cell>
+                    <wd-cell [width]="4">
+                      <wd-input appearance="outline" context="main/frm14p/fld37p"></wd-input>
+                    </wd-cell>
+                  </wd-row>
+                </wd-grid>
+              </wr-content>
+              <wr-content for="title[frm14p]">
+                {{ labelOf('.') | wrLocalize }}
+              </wr-content>
+            </wd-card>
+          </wd-cell></wd-row>
+        </wd-grid>
+      </wr-content>
+      <wr-content for="title[main]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wr-page>

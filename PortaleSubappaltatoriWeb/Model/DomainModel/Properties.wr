@@ -381,13 +381,15 @@
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp61" refModelId="mpkg1#ad1#ipd19#pdp61" pid="PortaleSubappaltatoriDataservice" serverProperty="oidTipologiaAllegati" name="oid Tipologia Allegati" type="integer" location="body" cardinality="N"/>
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp63" refModelId="mpkg1#ad1#spd19#pdp63" pid="PortaleSubappaltatoriDataservice" serverProperty="oidTipologiaAzienda" name="oid Tipologia Azienda" type="integer" location="body" cardinality="1"/>
     </srs:ActionService>
-    <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada1" refModelId="mpkg1#ada1" pid="PortaleSubappaltatoriDataservice" name="Invita utente interno" defaultSuccessPortDefinition="mpkg1#ada1#spd1" defaultErrorPortDefinition="mpkg1#ada1#epd1" serverResourceName="actions/invitaUtenteInterno" method="create">
+    <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada1" refModelId="mpkg1#ada1" pid="PortaleSubappaltatoriDataservice" name="Invita utente" defaultSuccessPortDefinition="mpkg1#ada1#spd1" defaultErrorPortDefinition="mpkg1#ada1#epd1" serverResourceName="actions/invitaUtente" method="create">
       <srs:ServiceScope name="Amministratore" method="create"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp20" refModelId="mpkg1#ada1#ipd1#pdp20" pid="PortaleSubappaltatoriDataservice" serverProperty="oidRuoli" name="oid Ruoli" type="integer" location="body" cardinality="N"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp5" refModelId="mpkg1#ada1#ipd1#pdp5" pid="PortaleSubappaltatoriDataservice" serverProperty="email" name="Email" type="string" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp6" refModelId="mpkg1#ada1#ipd1#pdp6" pid="PortaleSubappaltatoriDataservice" serverProperty="cognome" name="Cognome" type="string" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp7" refModelId="mpkg1#ada1#ipd1#pdp7" pid="PortaleSubappaltatoriDataservice" serverProperty="nome" name="Nome" type="string" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp8" refModelId="mpkg1#ada1#ipd1#pdp8" pid="PortaleSubappaltatoriDataservice" serverProperty="tenant" name="tenant" type="integer" location="body" cardinality="N"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp85o" refModelId="mpkg1#ada1#ipd1#pdp85o" pid="PortaleSubappaltatoriDataservice" serverProperty="backoffice" name="Backoffice" type="boolean" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp87o" refModelId="mpkg1#ada1#ipd1#pdp87o" pid="PortaleSubappaltatoriDataservice" serverProperty="oidFornitore" name="oid Fornitore" type="integer" location="body" cardinality="1"/>
     </srs:ActionService>
     <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada11" refModelId="mpkg1#ada11" pid="PortaleSubappaltatoriDataservice" name="Nuovo/modifica tipologia allegati" defaultSuccessPortDefinition="mpkg1#ada11#spd17" defaultErrorPortDefinition="mpkg1#ada11#epd17" serverResourceName="actions/nuovoModificaTipologiaAllegati" method="create">
       <srs:ServiceScope name="Amministratore" method="create"/>
@@ -451,6 +453,32 @@
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp37" refModelId="mpkg3#adf6#ipd13#pdp37" pid="PortaleSubappaltatoriDataservice" serverProperty="token" name="token" type="string" location="query" cardinality="1"/>
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp38" refModelId="mpkg3#adf6#spd13#pdp38" pid="PortaleSubappaltatoriDataservice" serverProperty="isValido" name="is valido" type="boolean" location="body" cardinality="1"/>
     </srs:ActionService>
+    <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada16o" refModelId="mpkg5o#ada16o" pid="PortaleSubappaltatoriDataservice" name="Salva Fornitore" defaultSuccessPortDefinition="mpkg5o#ada16o#spd24o" defaultErrorPortDefinition="mpkg5o#ada16o#epd24o" serverResourceName="actions/salvaFornitore" method="create">
+      <srs:ServiceScope name="Gestione" method="create"/>
+      <srs:ServiceScope name="Responsabile" method="create"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp71o" refModelId="mpkg5o#ada16o#ipd24o#pdp71o" pid="PortaleSubappaltatoriDataservice" serverProperty="nomeReferente" name="Nome Referente" type="string" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp72o" refModelId="mpkg5o#ada16o#ipd24o#pdp72o" pid="PortaleSubappaltatoriDataservice" serverProperty="partitaIVA" name="Partita IVA" type="string" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp73o" refModelId="mpkg5o#ada16o#ipd24o#pdp73o" pid="PortaleSubappaltatoriDataservice" serverProperty="oid" name="oid" type="integer" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp74o" refModelId="mpkg5o#ada16o#ipd24o#pdp74o" pid="PortaleSubappaltatoriDataservice" serverProperty="ragioneSociale" name="Ragione Sociale" type="string" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp75o" refModelId="mpkg5o#ada16o#ipd24o#pdp75o" pid="PortaleSubappaltatoriDataservice" serverProperty="cognomeReferente" name="Cognome Referente" type="string" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp76o" refModelId="mpkg5o#ada16o#ipd24o#pdp76o" pid="PortaleSubappaltatoriDataservice" serverProperty="email" name="Email" type="string" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp77o" refModelId="mpkg5o#ada16o#ipd24o#pdp77o" pid="PortaleSubappaltatoriDataservice" serverProperty="tenant" name="tenant" type="integer" location="body" cardinality="N"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp88o" refModelId="mpkg5o#ada16o#ipd24o#pdp88o" pid="PortaleSubappaltatoriDataservice" serverProperty="tipologiaAziendaOid" name="Tipologia Azienda oid" type="integer" location="body" cardinality="1"/>
+      <srs:Output ref="PortaleSubappaltatoriDataservice$pdp86o" refModelId="mpkg5o#ada16o#spd24o#pdp86o" pid="PortaleSubappaltatoriDataservice" serverProperty="oid" name="oid" type="integer" location="body" cardinality="1"/>
+    </srs:ActionService>
+    <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada18o" refModelId="mpkg5o#ada18o" pid="PortaleSubappaltatoriDataservice" name="Invita Fornitore" defaultSuccessPortDefinition="mpkg5o#ada18o#spd26o" defaultErrorPortDefinition="mpkg5o#ada18o#epd26o" serverResourceName="actions/invitaFornitore" method="create">
+      <srs:ServiceScope name="Amministratore" method="create"/>
+      <srs:ServiceScope name="Gestione" method="create"/>
+      <srs:ServiceScope name="Responsabile" method="create"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp78o" refModelId="mpkg5o#ada18o#ipd26o#pdp78o" pid="PortaleSubappaltatoriDataservice" serverProperty="ragioneSociale" name="Ragione Sociale" type="string" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp79o" refModelId="mpkg5o#ada18o#ipd26o#pdp79o" pid="PortaleSubappaltatoriDataservice" serverProperty="nomeReferente" name="Nome Referente" type="string" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp80o" refModelId="mpkg5o#ada18o#ipd26o#pdp80o" pid="PortaleSubappaltatoriDataservice" serverProperty="cognomeReferente" name="Cognome Referente" type="string" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp81o" refModelId="mpkg5o#ada18o#ipd26o#pdp81o" pid="PortaleSubappaltatoriDataservice" serverProperty="partitaIVA" name="Partita IVA" type="string" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp82o" refModelId="mpkg5o#ada18o#ipd26o#pdp82o" pid="PortaleSubappaltatoriDataservice" serverProperty="oid" name="oid" type="integer" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp83o" refModelId="mpkg5o#ada18o#ipd26o#pdp83o" pid="PortaleSubappaltatoriDataservice" serverProperty="email" name="Email" type="string" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp84o" refModelId="mpkg5o#ada18o#ipd26o#pdp84o" pid="PortaleSubappaltatoriDataservice" serverProperty="tenant" name="tenant" type="integer" location="body" cardinality="N"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp89o" refModelId="mpkg5o#ada18o#ipd26o#pdp89o" pid="PortaleSubappaltatoriDataservice" serverProperty="tipologiaAziendaOid" name="Tipologia Azienda oid" type="integer" location="body" cardinality="1"/>
+    </srs:ActionService>
     <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada13" refModelId="tlads0#ada13" pid="PortaleSubappaltatoriDataservice" name="Verifica Tenant" defaultSuccessPortDefinition="tlads0#ada13#spd20" defaultErrorPortDefinition="tlads0#ada13#epd20" serverResourceName="actions/verificaTenant" method="create">
       <srs:ServiceScope authenticated="true" method="create"/>
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp64" refModelId="tlads0#ada13#spd20#pdp64" pid="PortaleSubappaltatoriDataservice" serverProperty="numeroTenant" name="Numero tenant" type="integer" location="body" cardinality="1"/>
@@ -476,8 +504,12 @@
     </srs:ClassService>
     <srs:ClassService ref="PortaleSubappaltatoriDataservice$cls1" refModelId="cls1" pid="PortaleSubappaltatoriDataservice" serverResourceName="data/Tenant" name="Tenant">
       <srs:ServiceScope name="Amministratore" method="read"/>
+      <srs:ServiceScope name="Consultazione" method="read"/>
+      <srs:ServiceScope name="Gestione" method="read"/>
+      <srs:ServiceScope name="Responsabile" method="read"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att1" refModelId="cls1#att1" pid="PortaleSubappaltatoriDataservice" serverProperty="oid" name="oid" type="integer" key="true"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att2" refModelId="cls1#att2" pid="PortaleSubappaltatoriDataservice" serverProperty="nome" name="Nome" type="string"/>
+      <srs:Attribute ref="PortaleSubappaltatoriDataservice$att67o" refModelId="cls1#att67o" pid="PortaleSubappaltatoriDataservice" serverProperty="master" name="Master" type="boolean"/>
     </srs:ClassService>
     <srs:ClassService ref="PortaleSubappaltatoriDataservice$cls10" refModelId="cls10" pid="PortaleSubappaltatoriDataservice" serverResourceName="data/TipologiaAzienda" name="Tipologia Azienda">
       <srs:ServiceScope authenticated="true" method="read"/>
@@ -509,6 +541,7 @@
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att8" refModelId="cls2#att8" pid="PortaleSubappaltatoriDataservice" serverProperty="partitaIVA" name="Partita IVA" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att9" refModelId="cls2#att9" pid="PortaleSubappaltatoriDataservice" serverProperty="nomeReferente" name="Nome Referente" type="string"/>
       <srs:Role ref="PortaleSubappaltatoriDataservice$role5" refModelId="as3#role5" pid="PortaleSubappaltatoriDataservice" serverProperty="fornitoreToStatoRegistrazione" name="FornitoreToStato Registrazione" maxCard="1" maxCardInv="N" aRef="PortaleSubappaltatoriDataservice$as3" tRef="PortaleSubappaltatoriDataservice$cls3"/>
+      <srs:Role ref="PortaleSubappaltatoriDataservice$role9" refModelId="as5#role9" pid="PortaleSubappaltatoriDataservice" serverProperty="fornitoreToTenant" name="FornitoreToTenant" maxCard="N" maxCardInv="N" aRef="PortaleSubappaltatoriDataservice$as5" tRef="PortaleSubappaltatoriDataservice$cls1"/>
     </srs:ClassService>
     <srs:ClassService ref="PortaleSubappaltatoriDataservice$cls3" refModelId="cls3" pid="PortaleSubappaltatoriDataservice" serverResourceName="data/StatoRegistrazione" name="Stato Registrazione">
       <srs:ServiceScope name="Amministratore" method="read"/>

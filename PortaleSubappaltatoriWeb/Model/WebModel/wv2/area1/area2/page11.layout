@@ -3,47 +3,51 @@
     <wd-grid>
       <wd-row>
         <wd-cell [width]="12">
-          <wd-data-grid elevation="0" title="main" cols="main/lst3/data/_be_att64 | main/lst3/data/_be_att65 | main/lst3/data/_be_att39 | main/lst3/data/_be_att40 | main/lst3/data/_be_att38" [rows]="valueOf('main/lst3/data')" events="main/lst3/data/oslte14" paginator="main/lst3/paging">
+          <wd-card title="main">
+            <wr-content for="content">
+              <wd-data-grid elevation="0" cols="main/lst3/data/_be_att64 | main/lst3/data/_be_att65 | main/lst3/data/_be_att39 | main/lst3/data/_be_att40 | main/lst3/data/_be_att38" [rows]="valueOf('main/lst3/data')" events="main/lst3/data/oslte14" paginator="main/lst3/paging">
+                <wr-content for="header[_be_att64]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att64]">
+                  {{ valueOf('.', row) }}
+                </wr-content>
+                <wr-content for="header[_be_att65]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att65]">
+                  {{ valueOf('.', row) }}
+                </wr-content>
+                <wr-content for="header[_be_att39]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att39]">
+                  {{ valueOf('.', row) | number:'wr-integer' }}
+                </wr-content>
+                <wr-content for="header[_be_att40]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att40]">
+                  {{ valueOf('.', row) }}
+                </wr-content>
+                <wr-content for="header[_be_att38]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att38]">
+                  {{ valueOf('.', row) | wrLocalize }}
+                </wr-content>
+                <wr-content for="event[oslte14]">
+                  <wd-button variant="mat-icon-button" color="primary" iconText="create"></wd-button>
+                </wr-content>
+                <wr-content for="header-actions">
+                  <wd-button context="main/gctu8/oslte15" iconText="add"></wd-button>
+                </wr-content>
+              </wd-data-grid>
+            </wr-content>
             <wr-content for="title[main]">
               {{ labelOf('.') | wrLocalize }}
             </wr-content>
-            <wr-content for="header[_be_att64]">
-              {{ labelOf('.') | wrLocalize }}
-            </wr-content>
-            <wr-content for="data[_be_att64]">
-              {{ valueOf('.', row) }}
-            </wr-content>
-            <wr-content for="header[_be_att65]">
-              {{ labelOf('.') | wrLocalize }}
-            </wr-content>
-            <wr-content for="data[_be_att65]">
-              {{ valueOf('.', row) }}
-            </wr-content>
-            <wr-content for="header[_be_att39]">
-              {{ labelOf('.') | wrLocalize }}
-            </wr-content>
-            <wr-content for="data[_be_att39]">
-              {{ valueOf('.', row) | number:'wr-integer' }}
-            </wr-content>
-            <wr-content for="header[_be_att40]">
-              {{ labelOf('.') | wrLocalize }}
-            </wr-content>
-            <wr-content for="data[_be_att40]">
-              {{ valueOf('.', row) }}
-            </wr-content>
-            <wr-content for="header[_be_att38]">
-              {{ labelOf('.') | wrLocalize }}
-            </wr-content>
-            <wr-content for="data[_be_att38]">
-              {{ valueOf('.', row) | wrLocalize }}
-            </wr-content>
-            <wr-content for="event[oslte14]">
-              <wd-button variant="mat-icon-button" color="primary" iconText="create"></wd-button>
-            </wr-content>
-            <wr-content for="header-actions">
-              <wd-button context="main/gctu8/oslte15" iconText="add"></wd-button>
-            </wr-content>
-          </wd-data-grid>
+          </wd-card>
         </wd-cell>
       </wd-row>
     </wd-grid>

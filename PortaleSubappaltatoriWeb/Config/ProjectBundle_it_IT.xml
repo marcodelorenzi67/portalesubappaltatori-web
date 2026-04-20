@@ -4,7 +4,8 @@
   <Entry key="attivazioneAccount.KO">Errore durante l'attivazione account, riprovare!</Entry>
   <Entry key="attivazioneAccount.OK">Utenza attivata con successo!</Entry>
   <Entry key="cognome">Cognome</Entry>
-  <Entry key="condiviso">Condiviso</Entry>
+  <Entry key="cognomeReferente">Cognome Referente
+</Entry>  <Entry key="condiviso">Condiviso</Entry>
   <Entry key="descrizione">Descrizione</Entry>
   <Entry key="email">Email</Entry>
   <Entry key="giorniDurata">Giorni Durata</Entry>
@@ -12,10 +13,14 @@
   <Entry key="message.otpInviato">Codice otp inviato, controllare la casella di posta</Entry>
   <Entry key="message.otpNonValido">OTP non valido riprovare.</Entry>
   <Entry key="nome">Nome</Entry>
-  <Entry key="operazione.KO">Errore nell'esecuzione dell'operazione!</Entry>
+  <Entry key="nomeReferente">Nome Referente
+</Entry>  <Entry key="operazione.KO">Errore nell'esecuzione dell'operazione!</Entry>
   <Entry key="operazione.OK">Operazione eseguita con successo!</Entry>
-  <Entry key="patternNome">Pattern Nome</Entry>
-  <Entry key="ripristinoPsw.tokenInvalido ">Il token per ripristinare la password non &#232; piu valido. Ripetere procedura di "Password dimenticata"</Entry>
+  <Entry key="partitaIVA">Partita IVA
+</Entry>  <Entry key="patternNome">Pattern Nome</Entry>
+  <Entry key="ragioneSociale">Ragione Sociale
+</Entry>  <Entry key="ripristinoPsw.tokenInvalido ">Il token per ripristinare la password non &#232; piu valido. Ripetere procedura di "Password dimenticata"</Entry>
   <Entry key="ruoli">Ruoli</Entry>
-  <Entry key="testEnv">Attenzione! Si sta navigando un ambiente di sviluppo</Entry>
+  <Entry key="statoRegistrazione">Stato Registrazione
+</Entry>  <Entry key="testEnv">Attenzione! Si sta navigando un ambiente di sviluppo</Entry>
 </Bundle>

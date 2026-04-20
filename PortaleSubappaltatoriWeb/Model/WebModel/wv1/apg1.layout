@@ -3,7 +3,7 @@
     <div *ngIf="valueOf('main/msg8/messages') && valueOf('main/msg8/messages')[0] != 'prod'" class="alert-enviroment">{{ 'testEnv' | wrLocalize }}</div>
   </wr-content>
   <wr-content for="presentation">
-    <cm-carousel rows="value:valueOf('main/frm5/sfld3/options')" [autoplay]="true" [loading]="valueOf('main/frm5/updating')" [navigation]="true" [clickablePagination]="true" [loop]="true" [dynamicPagination]="true" effect="cards" paginationType="progressbar" [rewind]="true" [pagination]="true" class="carousel" [autoplayDelay]="2500">
+    <cm-carousel rows="value:valueOf('main/frm5/sfld3/options')" [autoplay]="true" [loading]="valueOf('main/frm5/updating')" [navigation]="true" [clickablePagination]="true" [loop]="true" [dynamicPagination]="true" effect="slide" paginationType="progressbar" [rewind]="true" [pagination]="true" class="carousel" [autoplayDelay]="2500">
       <wr-content for="slide">
         <img [src]="valueOf('main/frm5/sfld3/options/label', row)">
       </wr-content>

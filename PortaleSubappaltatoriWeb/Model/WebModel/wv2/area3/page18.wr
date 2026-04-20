@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="235" gr:y="0" id="wv2#area3#page18" name="Elenco Fornitori" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="515" gr:y="0" id="wv2#area3#page18" name="Elenco Fornitori" landmark="true">
   <ViewComponents>
     <List gr:x="0" gr:y="110" id="wv2#area3#page18#lst8" checkable="false" distinct="false" pageSize="20">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls2"/>
@@ -9,23 +9,26 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att9"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att66"/>
       <ConditionalExpression id="wv2#area3#page18#lst8#sc9" defaultPolicy="fill" booleanOperator="and">
-        <AttributesCondition id="wv2#area3#page18#lst8#sc9#acond3" name="PIVA" predicate="contains" booleanOperator="or" implied="false" ignoreCase="true">
+        <AttributesCondition id="wv2#area3#page18#lst8#sc9#acond3" name="PIVA" predicate="contains" booleanOperator="or" implied="true" ignoreCase="true">
           <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att8"/>
         </AttributesCondition>
-        <AttributesCondition id="wv2#area3#page18#lst8#sc9#acond4" name="Ragione sociale" predicate="contains" booleanOperator="or" implied="false" ignoreCase="true">
+        <AttributesCondition id="wv2#area3#page18#lst8#sc9#acond4" name="Ragione sociale" predicate="contains" booleanOperator="or" implied="true" ignoreCase="true">
           <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att7"/>
         </AttributesCondition>
-        <AttributesCondition id="wv2#area3#page18#lst8#sc9#acond5" name="nome" predicate="contains" booleanOperator="or" implied="false" ignoreCase="true">
+        <AttributesCondition id="wv2#area3#page18#lst8#sc9#acond5" name="nome" predicate="contains" booleanOperator="or" implied="true" ignoreCase="true">
           <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att9"/>
         </AttributesCondition>
-        <AttributesCondition id="wv2#area3#page18#lst8#sc9#acond6" name="email" predicate="contains" booleanOperator="or" implied="false" ignoreCase="true">
+        <AttributesCondition id="wv2#area3#page18#lst8#sc9#acond6" name="email" predicate="contains" booleanOperator="or" implied="true" ignoreCase="true">
           <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att12"/>
         </AttributesCondition>
-        <AttributesCondition id="wv2#area3#page18#lst8#sc9#acond7" name="cognome" predicate="contains" booleanOperator="or" implied="false" ignoreCase="true">
+        <AttributesCondition id="wv2#area3#page18#lst8#sc9#acond7" name="cognome" predicate="contains" booleanOperator="or" implied="true" ignoreCase="true">
           <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att10"/>
         </AttributesCondition>
         <AssociationRoleCondition id="wv2#area3#page18#lst8#sc9#rcond4" name="stato registrazione" predicate="in" implied="false">
           <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role5"/>
+        </AssociationRoleCondition>
+        <AssociationRoleCondition id="wv2#area3#page18#lst8#sc9#rcond5p" name="tenant" predicate="in" implied="false">
+          <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role9"/>
         </AssociationRoleCondition>
       </ConditionalExpression>
     </List>
@@ -50,7 +53,7 @@
         <OptionsAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att14"/>
       </SelectionField>
       <Events>
-        <OnSelectEvent id="wv2#area3#page18#frm13#oslte30" name="Cerca" validate="true">
+        <OnSelectEvent id="wv2#area3#page18#frm13#oslte30" name="Cerca" validate="false">
           <NavigationFlow id="wv2#area3#page18#frm13#oslte30#nf56" to="wv2#area3#page18#lst8">
             <ParameterBinding id="wv2#area3#page18#frm13#oslte30#nf56#par122" source="{wv2#area3#page18#frm13#fld31}value" target="wv2#area3#page18#lst8#sc9#acond7" name="Cognome Referente - cognome"/>
             <ParameterBinding id="wv2#area3#page18#frm13#oslte30#nf56#par123" source="{wv2#area3#page18#frm13#fld32}value" target="wv2#area3#page18#lst8#sc9#acond6" name="Email - email"/>
@@ -62,5 +65,15 @@
         </OnSelectEvent>
       </Events>
     </Form>
+    <ViewComponent gr:x="15" gr:y="0" id="wv2#area3#page18#gctu10p" name="New">
+      <Events>
+        <OnSelectEvent id="wv2#area3#page18#gctu10p#oslte31p" name="Aggiungi Fornitore" gr:pinned="true" gr:side="2" gr:pos="1">
+          <NavigationFlow id="wv2#area3#page18#gctu10p#oslte31p#nf57p" to="wv2#area3#page19p" automaticCoupling="true"/>
+        </OnSelectEvent>
+      </Events>
+      <DataFlow id="wv2#area3#page18#gctu10p#df21p" to="wv2#area3#page18#lst8">
+        <ParameterBinding id="wv2#area3#page18#gctu10p#df21p#par137p" sourceParameter="wv2#prd8" target="wv2#area3#page18#lst8#sc9#rcond5p._be_att1" name="Tenant - tenant [oid]"/>
+      </DataFlow>
+    </ViewComponent>
   </ViewComponents>
 </Page>

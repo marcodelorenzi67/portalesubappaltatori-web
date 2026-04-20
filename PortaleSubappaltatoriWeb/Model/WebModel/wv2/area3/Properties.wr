@@ -1,2 +1,30 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area3" name="Gestione Fornitori" gr:x="930" gr:y="855" landmark="true" default="wv2#area3#page18" landmarks="wv2#area3#page18">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area3" name="Gestione Fornitori" gr:x="650" gr:y="855" landmark="true" default="wv2#area3#page18" landmarks="wv2#area3#page18">
+  <Action id="wv2#area3#act27p" gr:x="300" gr:y="370" actionServiceRes="PortaleSubappaltatoriDataservice$ada16o">
+    <Events>
+      <SuccessEvent id="wv2#area3#act27p#scce30p">
+        <NavigationFlow id="wv2#area3#act27p#scce30p#nf59p" to="wv2#area3#page18">
+          <ParameterBinding id="wv2#area3#act27p#scce30p#nf59p#par128p" sourceValue="operazione.OK" targetParameter="wv2#prd6" name="&quot;operazione.OK&quot; - success message"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area3#act27p#erre38p">
+        <NavigationFlow id="wv2#area3#act27p#erre38p#nf60p" to="wv2#area3#page19p">
+          <ParameterBinding id="wv2#area3#act27p#erre38p#nf60p#par129p" sourceValue="operazione.KO" targetParameter="wv2#prd5" name="&quot;operazione.KO&quot; - error message"/>
+        </NavigationFlow>
+      </ErrorEvent>
+    </Events>
+  </Action>
+  <Action id="wv2#area3#act28p" gr:x="300" gr:y="35" actionServiceRes="PortaleSubappaltatoriDataservice$ada18o">
+    <Events>
+      <SuccessEvent id="wv2#area3#act28p#scce31p">
+        <NavigationFlow id="wv2#area3#act28p#scce31p#nf62p" to="wv2#area3#page18">
+          <ParameterBinding id="wv2#area3#act28p#scce31p#nf62p#par148p" sourceValue="operazione.OK" targetParameter="wv2#prd6" name="&quot;operazione.OK&quot; - success message"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area3#act28p#erre40p">
+        <NavigationFlow id="wv2#area3#act28p#erre40p#nf63p" to="wv2#area3#page19p">
+          <ParameterBinding id="wv2#area3#act28p#erre40p#nf63p#par149p" sourceValue="operazione.KO" targetParameter="wv2#prd5" name="&quot;operazione.KO&quot; - error message"/>
+        </NavigationFlow>
+      </ErrorEvent>
+    </Events>
+  </Action>
 </Area>

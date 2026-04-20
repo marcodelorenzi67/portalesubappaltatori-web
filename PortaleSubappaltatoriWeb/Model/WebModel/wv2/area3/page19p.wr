@@ -1,0 +1,73 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="290" gr:y="165" id="wv2#area3#page19p" name="Nuovo Fornitore">
+  <ViewComponents>
+    <Form gr:x="0" gr:y="0" id="wv2#area3#page19p#frm14p" name="Dati Referente">
+      <Field id="wv2#area3#page19p#frm14p#fld33p" modifiable="true" name="Nome Referente" type="string" validationOrder="wv2#area3#page19p#frm14p#fld33p#mnd22p">
+        <VRules>
+          <MandatoryValidationRule id="wv2#area3#page19p#frm14p#fld33p#mnd22p" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Field id="wv2#area3#page19p#frm14p#fld34p" modifiable="true" name="Ragione Sociale" type="string" validationOrder="wv2#area3#page19p#frm14p#fld34p#mnd20p">
+        <VRules>
+          <MandatoryValidationRule id="wv2#area3#page19p#frm14p#fld34p#mnd20p" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Field id="wv2#area3#page19p#frm14p#fld35p" modifiable="true" name="Partita IVA" type="string" validationOrder="wv2#area3#page19p#frm14p#fld35p#mnd21p">
+        <VRules>
+          <MandatoryValidationRule id="wv2#area3#page19p#frm14p#fld35p#mnd21p" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Field id="wv2#area3#page19p#frm14p#fld36p" modifiable="true" name="Cognome Referente" type="string" validationOrder="wv2#area3#page19p#frm14p#fld36p#mnd24p">
+        <VRules>
+          <MandatoryValidationRule id="wv2#area3#page19p#frm14p#fld36p#mnd24p" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Field id="wv2#area3#page19p#frm14p#fld37p" modifiable="true" name="Email" type="string" validationOrder="wv2#area3#page19p#frm14p#fld37p#mnd23p">
+        <VRules>
+          <MandatoryValidationRule id="wv2#area3#page19p#frm14p#fld37p#mnd23p" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <SelectionField id="wv2#area3#page19p#frm14p#sfld9p" optionsDistinct="false" emptyOption="true" name="Tipologia Azienda" validationOrder="wv2#area3#page19p#frm14p#sfld9p#mnd19p">
+        <VRules>
+          <MandatoryValidationRule id="wv2#area3#page19p#frm14p#sfld9p#mnd19p" name="Mandatory"/>
+        </VRules>
+        <OptionsDataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls10"/>
+        <OptionsAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att46"/>
+      </SelectionField>
+      <SelectionField id="wv2#area3#page19p#frm14p#sfld10p" name="Tenant" multiselection="true" validationOrder="wv2#area3#page19p#frm14p#sfld10p#mnd18p">
+        <VRules>
+          <MandatoryValidationRule id="wv2#area3#page19p#frm14p#sfld10p#mnd18p" name="Mandatory"/>
+        </VRules>
+        <OptionsDataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls1"/>
+        <OptionsAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att2"/>
+        <OptionsSortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att2" order="ascending"/>
+      </SelectionField>
+      <Field id="wv2#area3#page19p#frm14p#fld38p" type="integer" modifiable="true" name="oid"/>
+      <Events>
+        <OnSelectEvent id="wv2#area3#page19p#frm14p#oslte32p" name="Salva" validate="true">
+          <NavigationFlow id="wv2#area3#page19p#frm14p#oslte32p#nf58p" to="wv2#area3#act27p">
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par130p" source="{wv2#area3#page19p#frm14p#fld36p}value" target="wv2#area3#act27p.PortaleSubappaltatoriDataservice$pdp75o" name="Cognome Referente - Cognome Referente"/>
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par131p" source="{wv2#area3#page19p#frm14p#fld37p}value" target="wv2#area3#act27p.PortaleSubappaltatoriDataservice$pdp76o" name="Email - Email"/>
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par132p" source="{wv2#area3#page19p#frm14p#fld33p}value" target="wv2#area3#act27p.PortaleSubappaltatoriDataservice$pdp71o" name="Nome Referente - Nome Referente"/>
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par133p" source="{wv2#area3#page19p#frm14p#fld38p}value" target="wv2#area3#act27p.PortaleSubappaltatoriDataservice$pdp73o" name="oid - oid"/>
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par134p" source="{wv2#area3#page19p#frm14p#fld35p}value" target="wv2#area3#act27p.PortaleSubappaltatoriDataservice$pdp72o" name="Partita IVA - Partita IVA"/>
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par135p" source="{wv2#area3#page19p#frm14p#fld34p}value" target="wv2#area3#act27p.PortaleSubappaltatoriDataservice$pdp74o" name="Ragione Sociale - Ragione Sociale"/>
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par136p" source="{wv2#area3#page19p#frm14p#sfld10p}value._be_att1" target="wv2#area3#act27p.PortaleSubappaltatoriDataservice$pdp77o" name="Tenant [oid] - tenant"/>
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par146p" source="{wv2#area3#page19p#frm14p#sfld9p}value._be_att45" target="wv2#area3#act27p.PortaleSubappaltatoriDataservice$pdp88o" name="Tipologia Azienda - Tipologia Azienda oid"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page19p#frm14p#oslte33p" name="Invita Fornitore" validate="true">
+          <NavigationFlow id="wv2#area3#page19p#frm14p#oslte33p#nf61p" to="wv2#area3#act28p">
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par139p" source="{wv2#area3#page19p#frm14p#fld36p}value" target="wv2#area3#act28p.PortaleSubappaltatoriDataservice$pdp80o" name="Cognome Referente - Cognome Referente"/>
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par140p" source="{wv2#area3#page19p#frm14p#fld37p}value" target="wv2#area3#act28p.PortaleSubappaltatoriDataservice$pdp83o" name="Email - Email"/>
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par141p" source="{wv2#area3#page19p#frm14p#fld33p}value" target="wv2#area3#act28p.PortaleSubappaltatoriDataservice$pdp79o" name="Nome Referente - Nome Referente"/>
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par142p" source="{wv2#area3#page19p#frm14p#fld38p}value" target="wv2#area3#act28p.PortaleSubappaltatoriDataservice$pdp82o" name="oid - oid"/>
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par143p" source="{wv2#area3#page19p#frm14p#fld35p}value" target="wv2#area3#act28p.PortaleSubappaltatoriDataservice$pdp81o" name="Partita IVA - Partita IVA"/>
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par144p" source="{wv2#area3#page19p#frm14p#fld34p}value" target="wv2#area3#act28p.PortaleSubappaltatoriDataservice$pdp78o" name="Ragione Sociale - Ragione Sociale"/>
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par145p" source="{wv2#area3#page19p#frm14p#sfld10p}value._be_att1" target="wv2#area3#act28p.PortaleSubappaltatoriDataservice$pdp84o" name="Tenant [oid] - tenant"/>
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par147p" source="{wv2#area3#page19p#frm14p#sfld9p}value._be_att45" target="wv2#area3#act28p.PortaleSubappaltatoriDataservice$pdp89o" name="Tipologia Azienda [oid] - Tipologia Azienda oid"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </Form>
+  </ViewComponents>
+</Page>
