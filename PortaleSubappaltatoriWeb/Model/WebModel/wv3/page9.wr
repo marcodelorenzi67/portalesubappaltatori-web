@@ -1,3 +1,60 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="185" gr:y="70" id="wv3#page9" name="Page 9">
-  <ViewComponents/>
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="270" gr:y="-15" id="wv3#page9" name="La mia Area Privata">
+  <ViewComponents>
+    <Details gr:x="30" gr:y="0" id="wv3#page9#dtl5p" name="Dati Anagrafici">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls2"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att10"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att12"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att66"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att7"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att8"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att9"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att72o"/>
+      <ConditionalExpression id="wv3#page9#dtl5p#sc14p" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="wv3#page9#dtl5p#sc14p#kcond8p" name="KeyCondition" predicate="in" implied="false"/>
+      </ConditionalExpression>
+      <DataFlow id="wv3#page9#dtl5p#df32p" to="wv3#page9#lst9p" automaticCoupling="true"/>
+    </Details>
+    <List gr:x="0" gr:y="150" id="wv3#page9#lst9p" checkable="false" distinct="false">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls14o"/>
+      <ConditionalExpression id="wv3#page9#lst9p#sc15p" defaultPolicy="fill" booleanOperator="and">
+        <AssociationRoleCondition id="wv3#page9#lst9p#sc15p#rcond6p" name="Fornitore" predicate="in" implied="false">
+          <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role45o"/>
+        </AssociationRoleCondition>
+      </ConditionalExpression>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att74o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att75o"/>
+    </List>
+    <ViewComponent gr:x="50" gr:y="280" id="wv3#page9#gctu13p" name="BTN">
+      <Events>
+        <OnSelectEvent id="wv3#page9#gctu13p#oslte41p" name="Nuova comunicazione" gr:pinned="true" gr:side="1" gr:pos="0">
+          <NavigationFlow id="wv3#page9#gctu13p#oslte41p#nf71p" to="wv3#page9#dpg4p" automaticCoupling="true"/>
+        </OnSelectEvent>
+      </Events>
+    </ViewComponent>
+  </ViewComponents>
+  <DialogPage gr:x="225" gr:y="240" id="wv3#page9#dpg4p" name="Inserisci comunicazione">
+    <ViewComponents>
+      <Form gr:x="0" gr:y="0" id="wv3#page9#dpg4p#frm17p" name="Nuova comunicazione">
+        <Field id="wv3#page9#dpg4p#frm17p#fld39p" type="string" modifiable="true" name="Oggetto" validationOrder="wv3#page9#dpg4p#frm17p#fld39p#mnd28p">
+          <VRules>
+            <MandatoryValidationRule id="wv3#page9#dpg4p#frm17p#fld39p#mnd28p" name="Mandatory"/>
+          </VRules>
+        </Field>
+        <Field id="wv3#page9#dpg4p#frm17p#fld40p" name="Note" type="text" modifiable="true" validationOrder="wv3#page9#dpg4p#frm17p#fld40p#mnd27p">
+          <VRules>
+            <MandatoryValidationRule id="wv3#page9#dpg4p#frm17p#fld40p#mnd27p" name="Mandatory"/>
+          </VRules>
+        </Field>
+        <Events>
+          <OnSelectEvent id="wv3#page9#dpg4p#frm17p#oslte42p" name="Salva" validate="true">
+            <NavigationFlow id="wv3#page9#dpg4p#frm17p#oslte42p#nf72p" to="wv3#act34p">
+              <ParameterBinding id="wv3#page9#dpg4p#frm17p#oslte42p#nf72p#par179p" sourceParameter="wv3#prd10p" target="wv3#act34p.PortaleSubappaltatoriDataservice$pdp101o" name="oid Fornitore - fornitore"/>
+              <ParameterBinding id="wv3#page9#dpg4p#frm17p#oslte42p#nf72p#par180p" source="{wv3#page9#dpg4p#frm17p#fld40p}value" target="wv3#act34p.PortaleSubappaltatoriDataservice$pdp102o" name="Note - Note"/>
+              <ParameterBinding id="wv3#page9#dpg4p#frm17p#oslte42p#nf72p#par181p" source="{wv3#page9#dpg4p#frm17p#fld39p}value" target="wv3#act34p.PortaleSubappaltatoriDataservice$pdp104o" name="Oggetto - Oggetto"/>
+            </NavigationFlow>
+          </OnSelectEvent>
+        </Events>
+      </Form>
+    </ViewComponents>
+  </DialogPage>
 </Page>

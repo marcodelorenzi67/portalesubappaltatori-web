@@ -1,0 +1,47 @@
+<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ad7p" name="Verifica Tenant" defaultSuccessPortDefinition="tlads0#ad7p#spd13p" defaultErrorPortDefinition="tlads0#ad7p#epd12p">
+  <Operations>
+    <Switch id="tlads0#ad7p#switch5p" name="data size" gr:x="610" gr:y="160">
+      <Case value="1"/>
+      <SuccessFlow id="tlads0#ad7p#switch5p#sf24p" to="tlads0#ad7p#spd13p" automaticCoupling="true" code="1"/>
+      <SuccessFlow id="tlads0#ad7p#switch5p#sf25p" to="tlads0#ad7p#spd14p" automaticCoupling="true"/>
+    </Switch>
+  </Operations>
+  <InputPortDefinition id="tlads0#ad7p#ipd7p" gr:x="0" gr:y="30">
+    <SuccessFlow id="tlads0#ad7p#ipd7p#sf26p" to="tlads0#ad7p#act33p" automaticCoupling="true"/>
+  </InputPortDefinition>
+  <SuccessPortDefinition id="tlads0#ad7p#spd13p" name="Singolo Tenant" gr:x="0" gr:y="30">
+    <PortDefinitionParameter id="tlads0#ad7p#spd13p#pdp23p" name="Oid tenant" array="false"/>
+    <PortDefinitionParameter id="tlads0#ad7p#spd13p#pdp24p" array="false" name="oid fornitore"/>
+  </SuccessPortDefinition>
+  <ErrorPortDefinition id="tlads0#ad7p#epd12p" name="Error Port" gr:x="0" gr:y="300"/>
+  <Action id="tlads0#ad7p#act32p" actionServiceRes="PortaleSubappaltatoriDataservice$ada13" gr:x="370" gr:y="110">
+    <Events>
+      <SuccessEvent id="tlads0#ad7p#act32p#scce36p">
+        <SuccessFlow id="tlads0#ad7p#act32p#scce36p#sf27p" to="tlads0#ad7p#switch5p">
+          <ParameterBinding id="tlads0#ad7p#act32p#scce36p#sf27p#par173p" name="Numero tenant - Switch" source="PortaleSubappaltatoriDataservice$pdp64" target="switch"/>
+        </SuccessFlow>
+        <DataFlow id="tlads0#ad7p#act32p#scce36p#df29p" to="tlads0#ad7p#spd13p" gr:bendpoints="26.0 -64.0">
+          <ParameterBinding id="tlads0#ad7p#act32p#scce36p#df29p#par174p" name="Oid tenant - Oid tenant" source="PortaleSubappaltatoriDataservice$pdp65" target="tlads0#ad7p#spd13p#pdp23p"/>
+        </DataFlow>
+      </SuccessEvent>
+      <ErrorEvent id="tlads0#ad7p#act32p#erre46p"/>
+    </Events>
+  </Action>
+  <SuccessPortDefinition id="tlads0#ad7p#spd14p" name="Scegli Tenant" gr:x="795" gr:y="190">
+    <PortDefinitionParameter id="tlads0#ad7p#spd14p#pdp25p" array="false" name="oid fornitore"/>
+  </SuccessPortDefinition>
+  <Action id="tlads0#ad7p#act33p" gr:x="105" gr:y="85" actionServiceRes="PortaleSubappaltatoriDataservice$adf8o">
+    <Events>
+      <SuccessEvent id="tlads0#ad7p#act33p#scce37p">
+        <SuccessFlow id="tlads0#ad7p#act33p#scce37p#sf28p" to="tlads0#ad7p#act32p" automaticCoupling="true"/>
+        <DataFlow id="tlads0#ad7p#act33p#scce37p#df30p" to="tlads0#ad7p#spd13p">
+          <ParameterBinding id="tlads0#ad7p#act33p#scce37p#df30p#par175p" source="PortaleSubappaltatoriDataservice$pdp98o" target="tlads0#ad7p#spd13p#pdp24p" name="oid - oid"/>
+        </DataFlow>
+        <DataFlow id="tlads0#ad7p#act33p#scce37p#df31p" to="tlads0#ad7p#spd14p">
+          <ParameterBinding id="tlads0#ad7p#act33p#scce37p#df31p#par176p" source="PortaleSubappaltatoriDataservice$pdp98o" target="tlads0#ad7p#spd14p#pdp25p" name="oid - oid"/>
+        </DataFlow>
+      </SuccessEvent>
+      <ErrorEvent id="tlads0#ad7p#act33p#erre47p"/>
+    </Events>
+  </Action>
+</ActionDefinition>

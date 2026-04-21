@@ -21,9 +21,10 @@
           <MandatoryValidationRule id="wv2#area3#page19p#frm14p#fld36p#mnd24p" name="Mandatory"/>
         </VRules>
       </Field>
-      <Field id="wv2#area3#page19p#frm14p#fld37p" modifiable="true" name="Email" type="string" validationOrder="wv2#area3#page19p#frm14p#fld37p#mnd23p">
+      <Field id="wv2#area3#page19p#frm14p#fld37p" modifiable="true" name="Email" type="string" validationOrder="wv2#area3#page19p#frm14p#fld37p#mnd23p wv2#area3#page19p#frm14p#fld37p#email4p">
         <VRules>
           <MandatoryValidationRule id="wv2#area3#page19p#frm14p#fld37p#mnd23p" name="Mandatory"/>
+          <EMailValidationRule id="wv2#area3#page19p#frm14p#fld37p#email4p" name="EMail"/>
         </VRules>
       </Field>
       <SelectionField id="wv2#area3#page19p#frm14p#sfld9p" optionsDistinct="false" emptyOption="true" name="Tipologia Azienda" validationOrder="wv2#area3#page19p#frm14p#sfld9p#mnd19p">

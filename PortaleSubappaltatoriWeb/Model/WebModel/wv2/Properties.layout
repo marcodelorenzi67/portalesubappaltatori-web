@@ -3,7 +3,7 @@
     <wd-image staticImage="assets/PortaleSubappaltatoriStyle/logo-gallli-italo.png"></wd-image>
   </wr-content>
   <wr-content for="menu">
-    <wd-menu menu="landmarks/area1">
+    <wd-menu menu="landmarks/area1 | landmarks/area3 | landmarks/area4p">
       <wr-content for="menu-item[area1]">
         <wd-menu-item menuItem="." [hasSubMenu]="true" color="primary" submenu="page4 | area2/page11 | area2/page12">
           <wr-content for="menu-item[page4]">
@@ -16,6 +16,16 @@
             <wd-menu-item></wd-menu-item>
           </wr-content>
         </wd-menu-item>
+      </wr-content>
+      <wr-content for="menu-item[area3]">
+        <wd-menu-item menuItem="." submenu="./{Landmark}*" [hasSubMenu]="true" color="primary">
+          <wr-content for="menu-item[page18]">
+            <wd-menu-item></wd-menu-item>
+          </wr-content>
+        </wd-menu-item>
+      </wr-content>
+      <wr-content for="menu-item[area4p]">
+        <wd-menu-item color="primary"></wd-menu-item>
       </wr-content>
     </wd-menu>
   </wr-content>

@@ -13,7 +13,7 @@
       </ErrorEvent>
     </Events>
   </Action>
-  <Action id="wv2#area3#act28p" gr:x="300" gr:y="35" actionServiceRes="PortaleSubappaltatoriDataservice$ada18o">
+  <Action id="wv2#area3#act28p" gr:x="320" gr:y="35" actionServiceRes="PortaleSubappaltatoriDataservice$ada18o">
     <Events>
       <SuccessEvent id="wv2#area3#act28p#scce31p">
         <NavigationFlow id="wv2#area3#act28p#scce31p#nf62p" to="wv2#area3#page18">
@@ -25,6 +25,27 @@
           <ParameterBinding id="wv2#area3#act28p#erre40p#nf63p#par149p" sourceValue="operazione.KO" targetParameter="wv2#prd5" name="&quot;operazione.KO&quot; - error message"/>
         </NavigationFlow>
       </ErrorEvent>
+    </Events>
+  </Action>
+  <Action id="wv2#area3#act35p" gr:x="680" gr:y="940" actionServiceRes="PortaleSubappaltatoriDataservice$ad2o">
+    <Events>
+      <SuccessEvent id="wv2#area3#act35p#scce39p">
+        <NavigationFlow id="wv2#area3#act35p#scce39p#nf77p" to="wv2#area3#page22p#lst11p">
+          <ParameterBinding id="wv2#area3#act35p#scce39p#nf77p#par188p" source="PortaleSubappaltatoriDataservice$pdp108o" target="wv2#area3#page22p#lst11p#sc17p#rcond7p._be_att6" name="fornitore - Fornitore [oid]"/>
+          <ParameterBinding id="wv2#area3#act35p#scce39p#nf77p#par189p" source="PortaleSubappaltatoriDataservice$pdp108o" targetParameter="wv2#area3#page22p#prd13p" name="fornitore - oid fornitore"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area3#act35p#erre51p"/>
+    </Events>
+  </Action>
+  <Action id="wv2#area3#act36p" gr:x="890" gr:y="350" actionServiceRes="PortaleSubappaltatoriDataservice$ada23o">
+    <Events>
+      <SuccessEvent id="wv2#area3#act36p#scce40p">
+        <NavigationFlow id="wv2#area3#act36p#scce40p#nf84p" to="wv2#area3#page22p">
+          <ParameterBinding id="wv2#area3#act36p#scce40p#nf84p#par230p" sourceValue="false" targetParameter="wv2#area3#page22p#prd14p" name="&quot;false&quot; - edit"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area3#act36p#erre53p"/>
     </Events>
   </Action>
 </Area>

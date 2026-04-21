@@ -1,0 +1,66 @@
+<AbstractPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv3#apg6p" name="Main Abstract Page" gr:x="890" gr:y="-40">
+  <ViewComponents>
+    <Message id="wv3#apg6p#msg13p" name="ENV" gr:x="10" gr:y="120"/>
+    <Message id="wv3#apg6p#msg14p" name="Success message" gr:x="0" gr:y="210">
+      <DataFlow id="wv3#apg6p#msg14p#df22p" to="wv3#apg6p#gctu11p" gr:bendpoints="58,-37,-37,58">
+        <ParameterBinding id="wv3#apg6p#msg14p#df22p#par168p" sourceValue="$$NULL$$" targetParameter="wv3#prd12p" name="NULL - success message"/>
+      </DataFlow>
+    </Message>
+    <ViewComponent id="wv3#apg6p#gctu11p" name="propaga" gr:x="120" gr:y="115">
+      <DataFlow id="wv3#apg6p#gctu11p#df23p" to="wv3#apg6p#msg14p">
+        <ParameterBinding id="wv3#apg6p#gctu11p#df23p#par158p" name="success message - Shown Messages" target="messages" sourceParameter="wv3#prd12p"/>
+      </DataFlow>
+      <DataFlow id="wv3#apg6p#gctu11p#df24p" to="wv3#apg6p#msg15p">
+        <ParameterBinding id="wv3#apg6p#gctu11p#df24p#par159p" name="error message - Shown Messages" target="messages" sourceParameter="wv3#prd11p"/>
+      </DataFlow>
+      <DataFlow id="wv3#apg6p#gctu11p#df25p" to="wv3#apg6p#msg13p">
+        <ParameterBinding id="wv3#apg6p#gctu11p#df25p#par160p" name="&quot;${env}&quot; - Shown Messages" sourceValue="${env}" target="messages"/>
+      </DataFlow>
+    </ViewComponent>
+    <Message id="wv3#apg6p#msg15p" name="Error message" gr:x="185" gr:y="220">
+      <DataFlow id="wv3#apg6p#msg15p#df26p" to="wv3#apg6p#gctu11p" gr:bendpoints="-52,-35,28,55">
+        <ParameterBinding id="wv3#apg6p#msg15p#df26p#par167p" sourceValue="$$NULL$$" targetParameter="wv3#prd11p" name="NULL - error message"/>
+      </DataFlow>
+    </Message>
+    <MyProfile id="wv3#apg6p#myp3p" gr:x="245" gr:y="120"/>
+    <ViewComponent id="wv3#apg6p#gctu12p" name="BTN" gr:x="355" gr:y="205">
+      <Events>
+        <OnSelectEvent id="wv3#apg6p#gctu12p#oslte35p" name="Logout">
+          <NavigationFlow id="wv3#apg6p#gctu12p#oslte35p#nf65p" to="wv3#act29p" automaticCoupling="true"/>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv3#apg6p#gctu12p#oslte36p" name="Cambia Tenant">
+          <NavigationFlow id="wv3#apg6p#gctu12p#oslte36p#nf66p" to="wv3#apg6p#dpg3p#frm15p" automaticCoupling="true"/>
+        </OnSelectEvent>
+      </Events>
+    </ViewComponent>
+    <Details id="wv3#apg6p#dtl3p" gr:x="510" gr:y="40">
+      <DataBinding actionServiceRes="PortaleSubappaltatoriDataservice$adf7"/>
+      <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp66"/>
+    </Details>
+    <Details gr:x="255" gr:y="0" id="wv3#apg6p#dtl4p">
+      <DataBinding actionServiceRes="PortaleSubappaltatoriDataservice$adf8o"/>
+      <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp97o"/>
+    </Details>
+  </ViewComponents>
+  <DialogPage id="wv3#apg6p#dpg3p" name="Cambia Tenant" gr:x="480" gr:y="160">
+    <ViewComponents>
+      <Form id="wv3#apg6p#dpg3p#frm15p" name="Scegli Tenant" gr:x="0" gr:y="0">
+        <SelectionField id="wv3#apg6p#dpg3p#frm15p#sfld11p" name="Tenant" optionsDistinct="false" emptyOption="true" validationOrder="wv3#apg6p#dpg3p#frm15p#sfld11p#mnd25p">
+          <OptionsDataBinding actionServiceRes="PortaleSubappaltatoriDataservice$adf7"/>
+          <OptionsAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp68"/>
+          <VRules>
+            <MandatoryValidationRule id="wv3#apg6p#dpg3p#frm15p#sfld11p#mnd25p" name="Mandatory"/>
+          </VRules>
+        </SelectionField>
+        <Events>
+          <OnSelectEvent id="wv3#apg6p#dpg3p#frm15p#oslte39p" name="Procedi" validate="true">
+            <NavigationFlow id="wv3#apg6p#dpg3p#frm15p#oslte39p#nf68p" to="wv3#page9#dtl5p">
+              <ParameterBinding id="wv3#apg6p#dpg3p#frm15p#oslte39p#nf68p#par163p" source="{wv3#apg6p#dpg3p#frm15p#sfld11p}value._be_pdp67" targetParameter="wv3#prd9p" name="Tenant [oid] - Tenant"/>
+              <ParameterBinding id="wv3#apg6p#dpg3p#frm15p#oslte39p#nf68p#par170p" sourceParameter="wv3#prd10p" target="wv3#page9#dtl5p#sc14p#kcond8p._be_att6" name="oid Fornitore - KeyCondition"/>
+            </NavigationFlow>
+          </OnSelectEvent>
+        </Events>
+      </Form>
+    </ViewComponents>
+  </DialogPage>
+</AbstractPage>

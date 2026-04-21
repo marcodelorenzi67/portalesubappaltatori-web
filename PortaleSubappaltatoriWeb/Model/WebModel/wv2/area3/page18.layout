@@ -6,38 +6,47 @@
           <wd-card title="main">
             <wr-content for="content">
               <wd-grid>
-                <wd-row><wd-cell [width]="12">
-                  <wd-card elevation="0" actions="main/frm13/oslte30 | main/frm13/clear">
-                    <wr-content for="content">
-                      <wd-grid>
-                        <wd-row>
-                          <wd-cell [width]="4">
-                            <wd-input appearance="outline" context="main/frm13/fld28"></wd-input>
-                          </wd-cell>
-                          <wd-cell [width]="4">
-                            <wd-input appearance="outline" context="main/frm13/fld27"></wd-input>
-                          </wd-cell>
-                          <wd-cell [width]="4"><wd-input appearance="outline" context="main/frm13/fld31"></wd-input></wd-cell>
-                        </wd-row>
-                        <wd-row>
-                          <wd-cell [width]="4"><wd-input appearance="outline" context="main/frm13/fld29"></wd-input></wd-cell>
-                          <wd-cell [width]="4"><wd-input appearance="outline" context="main/frm13/fld32"></wd-input></wd-cell>
-                          <wd-cell [width]="4">
-                            <wd-select appearance="outline" context="main/frm13/sfld8"></wd-select>
-                          </wd-cell>
-                        </wd-row>
-                      </wd-grid>
-                    </wr-content>
-                    <wr-content for="action[oslte30]">
-                      <wd-button color="primary" iconText="search"></wd-button>
-                    </wr-content>
-                    <wr-content for="action[clear]">
-                      <wd-button></wd-button>
-                    </wr-content>
-                  </wd-card>
-                </wd-cell></wd-row><wd-row>
+                <wd-row>
                   <wd-cell [width]="12">
-                    <wd-data-grid elevation="0" cols="main/lst8/data/_be_att7 | main/lst8/data/_be_att8 | main/lst8/data/_be_att9 | main/lst8/data/_be_att10 | main/lst8/data/_be_att12 | main/lst8/data/_be_att66" [rows]="valueOf('main/lst8/data')">
+                    <wd-card elevation="0" actions="main/frm13/oslte30 | main/frm13/clear">
+                      <wr-content for="content">
+                        <wd-grid>
+                          <wd-row>
+                            <wd-cell [width]="4">
+                              <wd-input appearance="outline" context="main/frm13/fld28"></wd-input>
+                            </wd-cell>
+                            <wd-cell [width]="4">
+                              <wd-input appearance="outline" context="main/frm13/fld27"></wd-input>
+                            </wd-cell>
+                            <wd-cell [width]="4">
+                              <wd-input appearance="outline" context="main/frm13/fld31"></wd-input>
+                            </wd-cell>
+                          </wd-row>
+                          <wd-row>
+                            <wd-cell [width]="4">
+                              <wd-input appearance="outline" context="main/frm13/fld29"></wd-input>
+                            </wd-cell>
+                            <wd-cell [width]="4">
+                              <wd-input appearance="outline" context="main/frm13/fld32"></wd-input>
+                            </wd-cell>
+                            <wd-cell [width]="4">
+                              <wd-select appearance="outline" context="main/frm13/sfld8"></wd-select>
+                            </wd-cell>
+                          </wd-row>
+                        </wd-grid>
+                      </wr-content>
+                      <wr-content for="action[oslte30]">
+                        <wd-button color="primary" iconText="search"></wd-button>
+                      </wr-content>
+                      <wr-content for="action[clear]">
+                        <wd-button></wd-button>
+                      </wr-content>
+                    </wd-card>
+                  </wd-cell>
+                </wd-row>
+                <wd-row>
+                  <wd-cell [width]="12">
+                    <wd-data-grid elevation="0" cols="main/lst8/data/_be_att7 | main/lst8/data/_be_att8 | main/lst8/data/_be_att9 | main/lst8/data/_be_att10 | main/lst8/data/_be_att12 | main/lst8/data/_be_att66" [rows]="valueOf('main/lst8/data')" events="main/lst8/data/oslte34p | main/lst8/data/oslte45p">
                       <wr-content for="header[_be_att7]">
                         {{ labelOf('.') | wrLocalize }}
                       </wr-content>
@@ -77,11 +86,16 @@
                       <wr-content for="header-actions">
                         <wd-button context="main/gctu10p/oslte31p" iconText="add"></wd-button>
                       </wr-content>
+                      <wr-content for="event[oslte34p]">
+                        <wd-button variant="mat-icon-button" color="primary" iconText="edit"></wd-button>
+                      </wr-content>
+                      <wr-content for="event[oslte45p]">
+                        <wd-button variant="mat-icon-button" color="primary" iconText="info_outline"></wd-button>
+                      </wr-content>
                     </wd-data-grid>
                   </wd-cell>
                 </wd-row>
               </wd-grid>
-              <wd-container></wd-container>
             </wr-content>
             <wr-content for="title[main]">
               {{ labelOf('.') | wrLocalize }}

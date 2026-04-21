@@ -1,4 +1,4 @@
-<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ad5" name="Verifica Tenant" defaultSuccessPortDefinition="tlads0#ad5#spd9" defaultErrorPortDefinition="tlads0#ad5#epd10">
+<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ad5" name="Verifica Tenant BO" defaultSuccessPortDefinition="tlads0#ad5#spd9" defaultErrorPortDefinition="tlads0#ad5#epd10">
   <Operations>
     <Switch gr:x="610" gr:y="160" id="tlads0#ad5#switch3" name="data size">
       <Case value="1"/>
@@ -19,7 +19,7 @@
         <SuccessFlow id="tlads0#ad5#act26#scce26#sf17" to="tlads0#ad5#switch3">
           <ParameterBinding id="tlads0#ad5#act26#scce26#sf17#par116" source="PortaleSubappaltatoriDataservice$pdp64" target="switch" name="Numero tenant - Switch"/>
         </SuccessFlow>
-        <DataFlow id="tlads0#ad5#act26#scce26#df20" to="tlads0#ad5#spd9">
+        <DataFlow id="tlads0#ad5#act26#scce26#df20" to="tlads0#ad5#spd9" gr:bendpoints="26.0 -64.0">
           <ParameterBinding id="tlads0#ad5#act26#scce26#df20#par117" source="PortaleSubappaltatoriDataservice$pdp65" target="tlads0#ad5#spd9#pdp21" name="Oid tenant - Oid tenant"/>
         </DataFlow>
       </SuccessEvent>

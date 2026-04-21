@@ -4,9 +4,10 @@
       <Field id="wv2#area1#page5#frm3#fld7" modifiable="true" name="Cognome" type="string">
         <VRules/>
       </Field>
-      <Field id="wv2#area1#page5#frm3#fld8" modifiable="true" name="Email" type="string" validationOrder="wv2#area1#page5#frm3#fld8#mnd7">
+      <Field id="wv2#area1#page5#frm3#fld8" modifiable="true" name="Email" type="string" validationOrder="wv2#area1#page5#frm3#fld8#mnd7 wv2#area1#page5#frm3#fld8#email3p">
         <VRules>
           <MandatoryValidationRule id="wv2#area1#page5#frm3#fld8#mnd7" name="Mandatory"/>
+          <EMailValidationRule id="wv2#area1#page5#frm3#fld8#email3p" name="EMail"/>
         </VRules>
       </Field>
       <Field id="wv2#area1#page5#frm3#fld9" modifiable="true" name="Nome" type="string">

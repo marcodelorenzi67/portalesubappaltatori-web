@@ -1,2 +1,40 @@
-<WebView id="wv3" name="Fornitori" home="wv3#page9">
+<WebView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv3" name="Fornitori" home="wv3#act30p">
+  <Action id="wv3#act29p" definition="tlads0#ad3" gr:x="1240" gr:y="380">
+    <Events>
+      <SuccessEvent id="wv3#act29p#scce32p" definition="tlads0#ad3#spd3"/>
+      <ErrorEvent id="wv3#act29p#erre41p" definition="tlads0#ad3#epd5"/>
+    </Events>
+  </Action>
+  <Parameters>
+    <Parameter id="wv3#prd9p" name="Tenant" type="string"/>
+    <Parameter id="wv3#prd10p" name="oid Fornitore" type="integer"/>
+    <Parameter id="wv3#prd11p" name="error message" type="string"/>
+    <Parameter id="wv3#prd12p" name="success message" type="string"/>
+  </Parameters>
+  <Action id="wv3#act30p" definition="tlads0#ad7p" gr:x="55" gr:y="200">
+    <Events>
+      <ErrorEvent id="wv3#act30p#erre42p" definition="tlads0#ad7p#epd12p"/>
+      <SuccessEvent id="wv3#act30p#scce33p" definition="tlads0#ad7p#spd13p">
+        <NavigationFlow id="wv3#act30p#scce33p#nf70p" to="wv3#page9#dtl5p">
+          <ParameterBinding id="wv3#act30p#scce33p#nf70p#par172p" target="wv3#page9#dtl5p#sc14p#kcond8p._be_att6" name="oid Fornitore - KeyCondition" source="tlads0#ad7p#spd13p#pdp24p"/>
+          <ParameterBinding id="wv3#act30p#scce33p#nf70p#par177p" targetParameter="wv3#prd10p" name="oid Fornitore - oid Fornitore" source="tlads0#ad7p#spd13p#pdp24p"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <SuccessEvent id="wv3#act30p#scce34p" definition="tlads0#ad7p#spd14p">
+        <NavigationFlow id="wv3#act30p#scce34p#nf67p" to="wv3#page20p#frm16p">
+          <ParameterBinding id="wv3#act30p#scce34p#nf67p#par178p" source="tlads0#ad7p#spd14p#pdp25p" targetParameter="wv3#prd10p" name="oid fornitore - oid Fornitore"/>
+        </NavigationFlow>
+      </SuccessEvent>
+    </Events>
+  </Action>
+  <Action id="wv3#act34p" gr:x="445" gr:y="480" actionServiceRes="PortaleSubappaltatoriDataservice$ada21o">
+    <Events>
+      <SuccessEvent id="wv3#act34p#scce38p">
+        <NavigationFlow id="wv3#act34p#scce38p#nf73p" to="wv3#page9#dtl5p">
+          <ParameterBinding id="wv3#act34p#scce38p#nf73p#par182p" sourceParameter="wv3#prd10p" target="wv3#page9#dtl5p#sc14p#kcond8p._be_att6" name="oid Fornitore - KeyCondition"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv3#act34p#erre49p"/>
+    </Events>
+  </Action>
 </WebView>

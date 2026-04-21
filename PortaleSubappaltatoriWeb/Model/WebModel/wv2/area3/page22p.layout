@@ -1,0 +1,240 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-button context="backEvent" iconText="arrow_back"></wd-button>
+    <wd-card title="main">
+      <wr-content for="content">
+        <wd-grid>
+          <wd-row>
+            <wd-cell [width]="12">
+              <mat-tab-group>
+                <mat-tab [label]="'Anagrafica' | wrLocalize">
+                  <wd-grid>
+                    <wd-row>
+                      <wd-cell [width]="12">
+                        <wd-card elevation="0" *ngIf="!valueOf('/main/prd14p')">
+                          <wr-content for="content">
+                            <wd-grid>
+                              <wd-row>
+                                <wd-cell [width]="3">
+                                  <h2>
+                                    Anagrafica Azienda
+                                  </h2>
+                                </wd-cell>
+                              </wd-row>
+                              <wd-row>
+                                <wd-cell [width]="3">
+                                  <span>
+                                    <span class="header">
+                                      {{ labelOf('main/dtl6p/data/_be_att7') | wrLocalize }}
+                                    </span>
+                                    <span class="value">
+                                      {{ valueOf('main/dtl6p/data/_be_att7') }}
+                                    </span>
+                                  </span>
+                                </wd-cell>
+                                <wd-cell [width]="3">
+                                  <span>
+                                    <span class="header">
+                                      {{ labelOf('main/dtl6p/data/_be_att8') | wrLocalize }}
+                                    </span>
+                                    <span class="value">
+                                      {{ valueOf('main/dtl6p/data/_be_att8') }}
+                                    </span>
+                                  </span>
+                                </wd-cell>
+                                <wd-cell [width]="3">
+                                  <span>
+                                    <span class="header">
+                                      {{ labelOf('main/dtl6p/data/_be_att72o') | wrLocalize }}
+                                    </span>
+                                    <span class="value">
+                                      {{ valueOf('main/dtl6p/data/_be_att72o') }}
+                                    </span>
+                                  </span>
+                                </wd-cell>
+                                <wd-cell [width]="3">
+                                  <span>
+                                    <span class="header">
+                                      {{ labelOf('main/dtl6p/data/_be_att66') | wrLocalize }}
+                                    </span>
+                                    <span class="value">
+                                      {{ valueOf('main/dtl6p/data/_be_att66') }}
+                                    </span>
+                                  </span>
+                                </wd-cell>
+                              </wd-row>
+                              <wd-row>
+                                <wd-cell [width]="3">
+                                  <h2>
+                                    Anagrafica Referente
+                                  </h2>
+                                </wd-cell>
+                              </wd-row>
+                              <wd-row>
+                                <wd-cell [width]="3">
+                                  <span>
+                                    <span class="header">
+                                      {{ labelOf('main/dtl6p/data/_be_att9') | wrLocalize }}
+                                    </span>
+                                    <span class="value">
+                                      {{ valueOf('main/dtl6p/data/_be_att9') }}
+                                    </span>
+                                  </span>
+                                </wd-cell>
+                                <wd-cell [width]="3">
+                                  <span>
+                                    <span class="header">
+                                      {{ labelOf('main/dtl6p/data/_be_att10') | wrLocalize }}
+                                    </span>
+                                    <span class="value">
+                                      {{ valueOf('main/dtl6p/data/_be_att10') }}
+                                    </span>
+                                  </span>
+                                </wd-cell>
+                                <wd-cell [width]="3">
+                                  <span>
+                                    <span class="header">
+                                      {{ labelOf('main/dtl6p/data/_be_att12') | wrLocalize }}
+                                    </span>
+                                    <span class="value">
+                                      {{ valueOf('main/dtl6p/data/_be_att12') }}
+                                    </span>
+                                  </span>
+                                </wd-cell>
+                              </wd-row>
+                            </wd-grid>
+                          </wr-content>
+                          <wr-content for="header-actions">
+                            <wd-button context="main/gctu14p/oslte47p" iconText="border_color" color="accent"></wd-button>
+                          </wr-content>
+                        </wd-card>
+                      </wd-cell>
+                    </wd-row>
+                    <wd-row>
+                      <wd-cell [width]="12">
+                        <wd-card elevation="0" actions="main/frm20p/oslte54p" *ngIf="valueOf('/main/prd14p')">
+                          <wr-content for="content">
+                            <wd-grid>
+                              <wd-row>
+                                <wd-cell [width]="3">
+                                  <h2>
+                                    Anagrafica Azienda
+                                  </h2>
+                                </wd-cell>
+                              </wd-row>
+                              <wd-row>
+                                <wd-cell [width]="3">
+                                  <wd-input appearance="outline" context="main/frm20p/fld50p"></wd-input>
+                                </wd-cell>
+                                <wd-cell [width]="3">
+                                  <wd-input context="main/frm20p/fld51p" appearance="outline"></wd-input>
+                                </wd-cell>
+                                <wd-cell [width]="3">
+                                  <wd-select context="main/frm20p/sfld15p" appearance="outline"></wd-select>
+                                </wd-cell>
+                                <wd-cell [width]="3"></wd-cell>
+                              </wd-row>
+                              <wd-row>
+                                <wd-cell [width]="3">
+                                  <h2>
+                                    Anagrafica Referente
+                                  </h2>
+                                </wd-cell>
+                              </wd-row>
+                              <wd-row>
+                                <wd-cell [width]="3">
+                                  <wd-input appearance="outline" context="main/frm20p/fld49p"></wd-input>
+                                </wd-cell>
+                                <wd-cell [width]="3">
+                                  <wd-input appearance="outline" context="main/frm20p/fld52p"></wd-input>
+                                </wd-cell>
+                                <wd-cell [width]="3">
+                                  <wd-input appearance="outline" context="main/frm20p/fld53p"></wd-input>
+                                </wd-cell>
+                                <wd-cell [width]="3"></wd-cell>
+                              </wd-row>
+                            </wd-grid>
+                          </wr-content>
+                          <wr-content for="header-actions">
+                            <wd-button context="main/gctu14p/oslte48p" color="accent" iconText="close"></wd-button>
+                          </wr-content>
+                          <wr-content for="action[oslte54p]">
+                            <wd-button color="success" iconText="save"></wd-button>
+                          </wr-content>
+                        </wd-card>
+                      </wd-cell>
+                    </wd-row>
+                  </wd-grid>
+                </mat-tab>
+                <mat-tab [label]="'Documentazione per il supappalto' | wrLocalize"></mat-tab>
+                <mat-tab [label]="'Documentazione aggiuntiva' | wrLocalize"></mat-tab>
+                <mat-tab [label]="'Comunicazioni' | wrLocalize">
+                  <wd-grid>
+                    <wd-row>
+                      <wd-cell [width]="12">
+                        <wd-data-grid elevation="0" cols="main/lst11p/data/_be_att74o" [expandable]="true" [detailRow]="true" [rows]="valueOf('main/lst11p/data')">
+                          <wr-content for="header[_be_att74o]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att74o]">
+                            {{ valueOf('.', row) }}
+                          </wr-content>
+                          <wr-content for="header-actions">
+                            <wd-button iconText="add" context="main/gctu14p/oslte43p" variant="mat-icon-button"></wd-button>
+                          </wr-content>
+                          <wr-content for="detail">
+                            <wd-card elevation="0">
+                              <wr-content for="content">
+                                <wd-container elements="main/lst11p/data/_be_att75o">
+                                  <wr-content for="element[_be_att75o]">
+                                    <span>
+                                      <span class="header">
+                                        {{ labelOf('.') | wrLocalize }}
+                                      </span>
+                                      <span class="value">
+                                        {{ valueOf('.', row) }}
+                                      </span>
+                                    </span>
+                                  </wr-content>
+                                </wd-container>
+                              </wr-content>
+                            </wd-card>
+                          </wr-content>
+                        </wd-data-grid>
+                      </wd-cell>
+                    </wd-row>
+                  </wd-grid>
+                </mat-tab>
+              </mat-tab-group>
+            </wd-cell>
+          </wd-row>
+        </wd-grid>
+      </wr-content>
+      <wr-content for="title[main]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wr-page>
+<wd-dialog context="main/dpg5p" title="." actions="frm18p/oslte46p">
+  <wr-content for="title[dpg5p]">
+    {{ labelOf('.') | wrLocalize }}
+  </wr-content>
+  <wr-content for="content">
+    <wd-card elevation="0">
+      <wr-content for="content">
+        <wd-container elements="frm18p/fld41p | frm18p/fld42p">
+          <wr-content for="element[fld41p]">
+            <wd-input type="text" [showLabel]="true" appearance="outline"></wd-input>
+          </wr-content>
+          <wr-content for="element[fld42p]">
+            <wd-textarea appearance="outline"></wd-textarea>
+          </wr-content>
+        </wd-container>
+      </wr-content>
+    </wd-card>
+  </wr-content>
+  <wr-content for="action[oslte46p]">
+    <wd-button color="success" iconText="save"></wd-button>
+  </wr-content>
+</wd-dialog>

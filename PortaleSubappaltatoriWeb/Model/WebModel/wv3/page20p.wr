@@ -1,0 +1,21 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv3#page20p" name="Scegli Tenant Fornitore" gr:x="30" gr:y="5">
+  <ViewComponents>
+    <Form id="wv3#page20p#frm16p" name="Scegli Tenant" gr:x="0" gr:y="0">
+      <SelectionField id="wv3#page20p#frm16p#sfld12p" name="Tenant" optionsDistinct="false" emptyOption="true" validationOrder="wv3#page20p#frm16p#sfld12p#mnd26p">
+        <OptionsDataBinding actionServiceRes="PortaleSubappaltatoriDataservice$adf7"/>
+        <OptionsAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp68"/>
+        <VRules>
+          <MandatoryValidationRule id="wv3#page20p#frm16p#sfld12p#mnd26p" name="Mandatory"/>
+        </VRules>
+      </SelectionField>
+      <Events>
+        <OnSelectEvent id="wv3#page20p#frm16p#oslte40p" name="Procedi" validate="true">
+          <NavigationFlow id="wv3#page20p#frm16p#oslte40p#nf69p" to="wv3#page9#dtl5p">
+            <ParameterBinding id="wv3#page20p#frm16p#oslte40p#nf69p#par162p" source="{wv3#page20p#frm16p#sfld12p}value._be_pdp67" targetParameter="wv3#prd9p" name="Tenant [oid] - Tenant"/>
+            <ParameterBinding id="wv3#page20p#frm16p#oslte40p#nf69p#par171p" sourceParameter="wv3#prd10p" target="wv3#page9#dtl5p#sc14p#kcond8p._be_att6" name="oid Fornitore - KeyCondition"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </Form>
+  </ViewComponents>
+</Page>
