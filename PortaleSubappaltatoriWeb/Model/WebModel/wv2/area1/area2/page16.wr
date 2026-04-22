@@ -66,4 +66,9 @@
   <Parameters>
     <Parameter id="wv2#area1#area2#page16#prd7" name="oid tipo azienda" type="integer"/>
   </Parameters>
+  <Events>
+    <BackEvent id="wv2#area1#area2#page16#bke2p" gr:pinned="true" gr:side="0" gr:pos="13">
+      <NavigationFlow id="wv2#area1#area2#page16#bke2p#nf93p" to="wv2#area1#area2#page12" automaticCoupling="true"/>
+    </BackEvent>
+  </Events>
 </Page>

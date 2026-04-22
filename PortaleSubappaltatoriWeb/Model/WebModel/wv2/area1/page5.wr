@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="275" gr:y="315" id="wv2#area1#page5" name="Nuovo utente interno">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="245" gr:y="315" id="wv2#area1#page5" name="Nuovo utente interno">
   <ViewComponents>
     <Form gr:x="0" gr:y="0" id="wv2#area1#page5#frm3" name="Nuovo utente">
       <Field id="wv2#area1#page5#frm3#fld7" modifiable="true" name="Cognome" type="string">

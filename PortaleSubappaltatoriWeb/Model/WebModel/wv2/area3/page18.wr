@@ -2,12 +2,6 @@
   <ViewComponents>
     <List gr:x="0" gr:y="110" id="wv2#area3#page18#lst8" checkable="false" distinct="false" pageSize="20">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls2"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att10"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att12"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att7"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att8"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att9"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att66"/>
       <ConditionalExpression id="wv2#area3#page18#lst8#sc9" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="wv2#area3#page18#lst8#sc9#acond3" name="PIVA" predicate="contains" booleanOperator="or" implied="true" ignoreCase="true">
           <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att8"/>
@@ -33,14 +27,9 @@
       </ConditionalExpression>
       <Events>
         <OnSelectEvent id="wv2#area3#page18#lst8#oslte34p" name="Modifica" validate="true">
-          <NavigationFlow id="wv2#area3#page18#lst8#oslte34p#nf64p" to="wv2#area3#page19p#frm14p">
-            <ParameterBinding id="wv2#area3#page18#lst8#oslte34p#nf64p#par150p" source="data._be_att10" target="{wv2#area3#page19p#frm14p#fld36p}value" name="cognomeReferente - Cognome Referente"/>
-            <ParameterBinding id="wv2#area3#page18#lst8#oslte34p#nf64p#par151p" source="data._be_att12" target="{wv2#area3#page19p#frm14p#fld37p}value" name="email - Email"/>
-            <ParameterBinding id="wv2#area3#page18#lst8#oslte34p#nf64p#par152p" source="data._be_att9" target="{wv2#area3#page19p#frm14p#fld33p}value" name="nomeReferente - Nome Referente"/>
-            <ParameterBinding id="wv2#area3#page18#lst8#oslte34p#nf64p#par153p" source="data._be_att6" target="{wv2#area3#page19p#frm14p#fld38p}value" name="oid - oid"/>
-            <ParameterBinding id="wv2#area3#page18#lst8#oslte34p#nf64p#par154p" source="data._be_att8" target="{wv2#area3#page19p#frm14p#fld35p}value" name="partitaIVA - Partita IVA"/>
-            <ParameterBinding id="wv2#area3#page18#lst8#oslte34p#nf64p#par155p" source="data._be_att7" target="{wv2#area3#page19p#frm14p#fld34p}value" name="ragioneSociale - Ragione Sociale"/>
-            <ParameterBinding id="wv2#area3#page18#lst8#oslte34p#nf64p#par156p" source="data._be_role25$_be_att45" target="{wv2#area3#page19p#frm14p#sfld9p}presel._be_att45" name="fornitoreToTipologiaAzienda - Tipologia Azienda [oid] - Preselection"/>
+          <NavigationFlow id="wv2#area3#page18#lst8#oslte34p#nf64p" to="wv2#area3#act38p">
+            <ParameterBinding id="wv2#area3#page18#lst8#oslte34p#nf64p#par234p" source="data._be_att66" target="wv2#area3#act38p.tlads0#ad8p#ipd8p#pdp26p" name="statoregistrazioneCodice - Codice stato"/>
+            <ParameterBinding id="wv2#area3#page18#lst8#oslte34p#nf64p#par235p" source="data._be_att6" target="wv2#area3#act38p.tlads0#ad8p#ipd8p#pdp27p" name="oid - oid Fornitore"/>
           </NavigationFlow>
         </OnSelectEvent>
         <OnSelectEvent id="wv2#area3#page18#lst8#oslte45p" name="Dettaglio" validate="true">
@@ -50,6 +39,13 @@
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att10"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att12"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att7"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att8"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att9"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att66"/>
+      <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role5.PortaleSubappaltatoriDataservice$att15" alias="statoregistrazioneCodice"/>
     </List>
     <Form gr:x="105" gr:y="0" id="wv2#area3#page18#frm13" name="Cerca">
       <Field id="wv2#area3#page18#frm13#fld27" modifiable="true" name="Nome Referente" type="string">

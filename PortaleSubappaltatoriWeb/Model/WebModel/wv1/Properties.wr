@@ -9,28 +9,7 @@
       </ErrorEvent>
     </Events>
   </Action>
-  <Action id="wv1#act2" gr:x="290" gr:y="175" definition="tlads0#ad2">
-    <Events>
-      <SuccessEvent id="wv1#act2#scce2" definition="tlads0#ad2#spd2"/>
-      <ErrorEvent id="wv1#act2#erre2" definition="tlads0#ad2#epd2">
-        <NavigationFlow id="wv1#act2#erre2#nf5" to="wv1#page2#msg2">
-          <ParameterBinding id="wv1#act2#erre2#nf5#par14" sourceValue="PASSWORD_EXPIRED" target="messages" name="&quot;PASSWORD_EXPIRED&quot; - Shown Messages"/>
-        </NavigationFlow>
-      </ErrorEvent>
-      <ErrorEvent id="wv1#act2#erre3" definition="tlads0#ad2#epd4">
-        <NavigationFlow id="wv1#act2#erre3#nf8" to="wv1#page3#gctu4">
-          <ParameterBinding id="wv1#act2#erre3#nf8#par34" source="tlads0#ad2#epd4#pdp9" targetParameter="wv1#prd3" name="Error Message - error message"/>
-        </NavigationFlow>
-      </ErrorEvent>
-      <ErrorEvent id="wv1#act2#erre4" definition="tlads0#ad2#epd3">
-        <NavigationFlow id="wv1#act2#erre4#nf7" to="wv1#page3#gctu4">
-          <ParameterBinding id="wv1#act2#erre4#nf7#par33" source="tlads0#ad2#epd3#pdp8" targetParameter="wv1#prd3" name="Error Message - error message"/>
-        </NavigationFlow>
-      </ErrorEvent>
-      <SuccessEvent id="wv1#act2#scce7" definition="tlads0#ad2#spd4"/>
-    </Events>
-  </Action>
-  <Action id="wv1#act5" gr:x="490" gr:y="420" actionServiceRes="PortaleSubappaltatoriDataservice$ada4">
+  <Action id="wv1#act5" gr:x="435" gr:y="430" actionServiceRes="PortaleSubappaltatoriDataservice$ada4">
     <Events>
       <SuccessEvent id="wv1#act5#scce5">
         <NavigationFlow id="wv1#act5#scce5#nf18" to="wv1#page3">

@@ -5,8 +5,6 @@
     </div>
   </wr-content>
   <wr-content for="breadcrumb">
-    <wd-alert [localized]="true" [messages]="valueOf('main/msg11/messages')" color="success"></wd-alert>
-    <wd-alert color="warn" [localized]="true" [messages]="valueOf('main/msg12/messages')"></wd-alert>
   </wr-content>
   <wr-content for="user">
     <wd-popover matchPopoverOverlayWidth iconText="person" [buttonText]="valueOf('main/myp2/data/_identity__me_$firstName') | wrLocalize" color="primary">
@@ -43,3 +41,5 @@
     <wd-button color="success"></wd-button>
   </wr-content>
 </wd-dialog>
+<wd-snackbar [localized]="true" color="success" [message]="valueOf('main/msg11/messages')"></wd-snackbar>
+<wd-snackbar [localized]="true" color="warn" [message]="valueOf('main/msg12/messages')"></wd-snackbar>

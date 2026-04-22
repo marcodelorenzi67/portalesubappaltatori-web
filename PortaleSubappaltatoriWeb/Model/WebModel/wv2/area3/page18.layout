@@ -90,7 +90,7 @@
                         <wd-button variant="mat-icon-button" color="primary" iconText="edit"></wd-button>
                       </wr-content>
                       <wr-content for="event[oslte45p]">
-                        <wd-button variant="mat-icon-button" color="primary" iconText="info_outline"></wd-button>
+                        <wd-button variant="mat-icon-button" color="primary" iconText="info_outline" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst8/data/statoregistrazioneCodice', row) != 'B'"></wd-button>
                       </wr-content>
                     </wd-data-grid>
                   </wd-cell>

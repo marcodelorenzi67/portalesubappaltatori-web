@@ -6,11 +6,15 @@
   <Entry key="cognome">Cognome</Entry>
   <Entry key="cognomeReferente">Cognome Referente
 </Entry>  <Entry key="condiviso">Condiviso</Entry>
+  <Entry key="corrente">Corrente</Entry>
+  <Entry key="createdAt">Creato il</Entry>
   <Entry key="descrizione">Descrizione</Entry>
+  <Entry key="documento">Documento</Entry>
   <Entry key="email">Email</Entry>
   <Entry key="fornitore">Fornitore</Entry>
   <Entry key="giorniDurata">Giorni Durata</Entry>
   <Entry key="macrotipologia">Macrotipologia</Entry>
+  <Entry key="macroTipologia">Macro Tipologia</Entry>
   <Entry key="message.otpInviato">Codice otp inviato, controllare la casella di posta</Entry>
   <Entry key="message.otpNonValido">OTP non valido riprovare.</Entry>
   <Entry key="nome">Nome</Entry>
@@ -24,10 +28,12 @@
   <Entry key="ragioneSociale">Ragione Sociale
 </Entry>  <Entry key="ripristinoPsw.tokenInvalido ">Il token per ripristinare la password non &#232; piu valido. Ripetere procedura di "Password dimenticata"</Entry>
   <Entry key="ruoli">Ruoli</Entry>
+  <Entry key="stato">Stato</Entry>
   <Entry key="statoRegistrazione">Stato Registrazione
 </Entry>  <Entry key="testEnv">Attenzione! Si sta navigando un ambiente di sviluppo</Entry>
   <Entry key="timestampLog">Data e Ora</Entry>
   <Entry key="tipoAzione">Azione</Entry>
+  <Entry key="tipologia">Tipologia</Entry>
   <Entry key="tipologiaAzienda">Tipologia Azienda</Entry>
   <Entry key="utente">Utente</Entry>
 </Bundle>

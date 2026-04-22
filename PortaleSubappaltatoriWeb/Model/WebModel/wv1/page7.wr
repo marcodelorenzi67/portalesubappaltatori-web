@@ -9,7 +9,9 @@
       </Field>
       <Events>
         <OnSelectEvent id="wv1#page7#frm6#oslte9" name="Invia email di recupero password" validate="true" gr:pinned="true" gr:side="1" gr:pos="0">
-          <NavigationFlow id="wv1#page7#frm6#oslte9#nf21" to="wv1#act10" automaticCoupling="true"/>
+          <NavigationFlow id="wv1#page7#frm6#oslte9#nf21" to="wv1#act10">
+            <ParameterBinding id="wv1#page7#frm6#oslte9#nf21#par259p" source="{wv1#page7#frm6#fld16}value" target="wv1#act10.PortaleSubappaltatoriDataservice$pdp30" name="Inserisci email - email"/>
+          </NavigationFlow>
         </OnSelectEvent>
       </Events>
     </Form>

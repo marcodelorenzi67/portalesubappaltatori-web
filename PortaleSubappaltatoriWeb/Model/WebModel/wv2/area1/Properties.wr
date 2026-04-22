@@ -1,5 +1,5 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area1" name="Amministrazione" gr:x="-120" gr:y="80" protected="true" roles="rl8" default="wv2#area1#page4" landmarks="wv2#area1#area2 wv2#area1#page4" landmark="true">
-  <Action id="wv2#area1#act4" gr:x="0" gr:y="200" actionServiceRes="PortaleSubappaltatoriDataservice$ada1">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area1" name="Amministrazione" gr:x="-90" gr:y="80" protected="true" roles="rl8" default="wv2#area1#page4" landmarks="wv2#area1#area2 wv2#area1#page4" landmark="true">
+  <Action id="wv2#area1#act4" gr:x="10" gr:y="200" actionServiceRes="PortaleSubappaltatoriDataservice$ada1">
     <Events>
       <SuccessEvent id="wv2#area1#act4#scce4">
         <NavigationFlow id="wv2#area1#act4#scce4#nf12" to="wv2#area1#page4">

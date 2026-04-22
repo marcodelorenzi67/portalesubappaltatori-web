@@ -63,4 +63,7 @@
       </wr-content>
     </wd-card>
   </wr-content>
+  <wr-content for="breadcrumb">
+    <wd-button context="backEvent" iconText="arrow_back"></wd-button>
+  </wr-content>
 </wr-page>

@@ -41,7 +41,7 @@
     <PortDefinitionParameter id="tlads0#ad4#spd6#pdp17" array="false" name="Password"/>
     <PortDefinitionParameter id="tlads0#ad4#spd6#pdp18" name="OTP" array="false"/>
   </SuccessPortDefinition>
-  <Action id="tlads0#ad4#act19" gr:x="530" gr:y="370" definition="tlads0#ad2">
+  <Action id="tlads0#ad4#act19" gr:x="525" gr:y="370" definition="tlads0#ad2">
     <Events>
       <SuccessEvent id="tlads0#ad4#act19#scce18" definition="tlads0#ad2#spd2" gr:pinned="true" gr:side="4" gr:pos="1">
         <SuccessFlow id="tlads0#ad4#act19#scce18#sf15" to="tlads0#ad4#spd7" automaticCoupling="true"/>

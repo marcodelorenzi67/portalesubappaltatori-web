@@ -1,5 +1,5 @@
 <WebView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv3" name="Fornitori" home="wv3#act30p">
-  <Action id="wv3#act29p" definition="tlads0#ad3" gr:x="1240" gr:y="380">
+  <Action id="wv3#act29p" definition="tlads0#ad3" gr:x="1330" gr:y="390">
     <Events>
       <SuccessEvent id="wv3#act29p#scce32p" definition="tlads0#ad3#spd3"/>
       <ErrorEvent id="wv3#act29p#erre41p" definition="tlads0#ad3#epd5"/>
@@ -35,6 +35,16 @@
         </NavigationFlow>
       </SuccessEvent>
       <ErrorEvent id="wv3#act34p#erre49p"/>
+    </Events>
+  </Action>
+  <Action id="wv3#act44p" gr:x="730" gr:y="-95" actionServiceRes="PortaleSubappaltatoriDataservice$ada27o">
+    <Events>
+      <SuccessEvent id="wv3#act44p#scce50p">
+        <NavigationFlow id="wv3#act44p#scce50p#nf106p" to="wv3#page9#dtl5p">
+          <ParameterBinding id="wv3#act44p#scce50p#nf106p#par300p" sourceParameter="wv3#prd10p" target="wv3#page9#dtl5p#sc14p#kcond8p._be_att6" name="oid Fornitore - KeyCondition"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv3#act44p#erre67p"/>
     </Events>
   </Action>
 </WebView>
