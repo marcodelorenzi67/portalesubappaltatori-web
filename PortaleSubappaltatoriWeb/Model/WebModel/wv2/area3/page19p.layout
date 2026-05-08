@@ -10,19 +10,22 @@
                 <wr-content for="content">
                   <wd-grid>
                     <wd-row>
-                      <wd-cell [width]="3">
+                      <wd-cell [width]="4">
                         <wd-input appearance="outline" context="main/frm14p/fld34p"></wd-input>
                       </wd-cell>
-                      <wd-cell [width]="3">
+                      <wd-cell [width]="4">
                         <wd-input appearance="outline" context="main/frm14p/fld35p"></wd-input>
                       </wd-cell>
-                      <wd-cell [width]="3">
+                      <wd-cell [width]="4">
                         <wd-select appearance="outline" context="main/frm14p/sfld9p"></wd-select>
                       </wd-cell>
-                      <wd-cell [width]="3">
-                        <wd-select-multiple appearance="outline" context="main/frm14p/sfld10p"></wd-select-multiple>
-                      </wd-cell>
-                    </wd-row>
+                    </wd-row><wd-row><wd-cell [width]="4">
+                      <wd-toggle context="main/frm14p/fld61p"></wd-toggle>
+                    </wd-cell><wd-cell [width]="4">
+                      <wd-toggle context="main/frm14p/fld60p"></wd-toggle>
+                    </wd-cell><wd-cell [width]="4">
+                      <wd-toggle context="main/frm14p/fld62p"></wd-toggle>
+                    </wd-cell></wd-row>
                   </wd-grid>
                 </wr-content>
                 <wr-content for="title[frm14p]">
@@ -37,13 +40,16 @@
                 <wr-content for="content">
                   <wd-grid>
                     <wd-row>
-                      <wd-cell [width]="4">
+                      <wd-cell [width]="3">
                         <wd-input appearance="outline" context="main/frm14p/fld33p"></wd-input>
                       </wd-cell>
-                      <wd-cell [width]="4">
+                      <wd-cell [width]="3">
                         <wd-input context="main/frm14p/fld36p" appearance="outline"></wd-input>
                       </wd-cell>
-                      <wd-cell [width]="4">
+                      <wd-cell [width]="3">
+                        <wd-input appearance="outline" context="main/frm14p/fld66p"></wd-input>
+                      </wd-cell>
+                      <wd-cell [width]="3">
                         <wd-input appearance="outline" context="main/frm14p/fld37p"></wd-input>
                       </wd-cell>
                     </wd-row>

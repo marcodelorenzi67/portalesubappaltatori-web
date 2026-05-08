@@ -26,13 +26,13 @@
     <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp32p" array="false" name="Cognome Referente"/>
     <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp33p" array="true" name="oid tenant"/>
     <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp34p" array="false" name="Attrezzature"/>
-    <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp35p" array="false" name="Prodotti"/>
     <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp36p" array="false" name="Tipologia Azienda.oid"/>
     <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp37p" array="false" name="Sostanze chimiche"/>
     <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp38p" array="false" name="oid fornitore"/>
     <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp39p" array="false" name="Nome Referente"/>
     <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp40p" array="false" name="Partita IVA"/>
     <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp41p" array="false" name="Mezzi"/>
+    <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp42p" array="false" name="Username"/>
   </SuccessPortDefinition>
   <ErrorPortDefinition id="tlads0#ad8p#epd13p" name="Error Port" gr:x="0" gr:y="495"/>
   <SuccessPortDefinition id="tlads0#ad8p#spd16p" name="Modifica" gr:x="0" gr:y="380">
@@ -47,13 +47,13 @@
           <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par241p" source="PortaleSubappaltatoriDataservice$pdp124o" target="tlads0#ad8p#spd15p#pdp32p" name="Cognome Referente - Cognome Referente"/>
           <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par242p" source="PortaleSubappaltatoriDataservice$pdp127o" target="tlads0#ad8p#spd15p#pdp33p" name="oid tenant - oid tenant"/>
           <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par243p" source="PortaleSubappaltatoriDataservice$pdp119o" target="tlads0#ad8p#spd15p#pdp34p" name="Attrezzature - Attrezzature"/>
-          <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par244p" source="PortaleSubappaltatoriDataservice$pdp120o" target="tlads0#ad8p#spd15p#pdp35p" name="Prodotti - Prodotti"/>
           <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par245p" source="PortaleSubappaltatoriDataservice$pdp125o" target="tlads0#ad8p#spd15p#pdp36p" name="Tipologia Azienda.oid - Tipologia Azienda.oid"/>
           <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par246p" source="PortaleSubappaltatoriDataservice$pdp117o" target="tlads0#ad8p#spd15p#pdp37p" name="Sostanze chimiche - Sostanze chimiche"/>
           <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par247p" source="PortaleSubappaltatoriDataservice$pdp128o" target="tlads0#ad8p#spd15p#pdp38p" name="oid fornitore - oid fornitore"/>
           <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par248p" source="PortaleSubappaltatoriDataservice$pdp118o" target="tlads0#ad8p#spd15p#pdp39p" name="Nome Referente - Nome Referente"/>
           <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par249p" source="PortaleSubappaltatoriDataservice$pdp122o" target="tlads0#ad8p#spd15p#pdp40p" name="Partita IVA - Partita IVA"/>
           <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par250p" source="PortaleSubappaltatoriDataservice$pdp123o" target="tlads0#ad8p#spd15p#pdp41p" name="Mezzi - Mezzi"/>
+          <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par320p" source="PortaleSubappaltatoriDataservice$pdp168o" target="tlads0#ad8p#spd15p#pdp42p" name="Username - Username"/>
         </SuccessFlow>
       </SuccessEvent>
       <ErrorEvent id="tlads0#ad8p#act39p#erre57p"/>

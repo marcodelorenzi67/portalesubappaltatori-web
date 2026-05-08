@@ -14,7 +14,7 @@
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
-      <Field id="wv1#page3#frm2#fld4" name="Email" type="string" modifiable="true" validationOrder="wv1#page3#frm2#fld4#mnd4">
+      <Field id="wv1#page3#frm2#fld4" name="Username" type="string" modifiable="true" validationOrder="wv1#page3#frm2#fld4#mnd4">
         <VRules>
           <MandatoryValidationRule id="wv1#page3#frm2#fld4#mnd4" name="Mandatory"/>
         </VRules>

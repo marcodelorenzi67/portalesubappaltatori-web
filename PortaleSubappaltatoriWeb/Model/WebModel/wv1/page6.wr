@@ -12,9 +12,8 @@
         <VRules/>
         <ValueAttribute actionServiceOutput="PortaleSubappaltatoriDataservice$pdp18"/>
       </Field>
-      <Field id="wv1#page6#frm4#fld13" modifiable="false" name="Email" type="string" validationOrder="wv1#page6#frm4#fld13#email1 wv1#page6#frm4#fld13#mnd10">
+      <Field id="wv1#page6#frm4#fld13" modifiable="false" name="Username" type="string" validationOrder="wv1#page6#frm4#fld13#mnd10">
         <VRules>
-          <EMailValidationRule id="wv1#page6#frm4#fld13#email1" name="EMail"/>
           <MandatoryValidationRule id="wv1#page6#frm4#fld13#mnd10" name="Mandatory"/>
         </VRules>
         <ValueAttribute actionServiceOutput="PortaleSubappaltatoriDataservice$pdp17"/>

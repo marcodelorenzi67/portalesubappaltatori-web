@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area1#area2#page16" name="Gestisci tipologia documenti per tipo azienda" gr:x="355" gr:y="175">
   <ViewComponents>
-    <List id="wv2#area1#area2#page16#lst6" gr:x="0" gr:y="0" checkable="true" distinct="false" pageSize="10" name="Tipologia allegati azienda">
+    <List id="wv2#area1#area2#page16#lst6" gr:x="0" gr:y="0" checkable="true" distinct="false" pageSize="10" name="Tipologia documenti azienda">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls8"/>
       <ConditionalExpression id="wv2#area1#area2#page16#lst6#sc7" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv2#area1#area2#page16#lst6#sc7#rcond2" name="tipo azienda" predicate="in" implied="false">

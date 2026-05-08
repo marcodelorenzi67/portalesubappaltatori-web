@@ -269,7 +269,7 @@
 </wd-dialog>
 <wd-dialog context="main/dpg8p" actions="frm22p/oslte71p">
   <wr-content for="action[oslte71p]">
-    <wd-button color="success"></wd-button>
+    <wd-button color="success" [confirm]="true"></wd-button>
   </wr-content>
   <wr-content for="content">
     <wd-card elevation="0">

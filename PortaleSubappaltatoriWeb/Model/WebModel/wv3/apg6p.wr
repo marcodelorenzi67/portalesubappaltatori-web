@@ -1,4 +1,4 @@
-<AbstractPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv3#apg6p" name="Main Abstract Page" gr:x="1040" gr:y="-40">
+<AbstractPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv3#apg6p" name="Main Abstract Page" gr:x="1110" gr:y="-35">
   <ViewComponents>
     <Message id="wv3#apg6p#msg13p" name="ENV" gr:x="10" gr:y="120"/>
     <Message id="wv3#apg6p#msg14p" name="Success message" gr:x="0" gr:y="210">

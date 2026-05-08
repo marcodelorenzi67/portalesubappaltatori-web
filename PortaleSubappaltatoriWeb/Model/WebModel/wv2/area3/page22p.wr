@@ -58,7 +58,8 @@
         </OnSelectEvent>
         <OnSelectEvent id="wv2#area3#page22p#gctu14p#oslte56p" name="Aggiungi Tipo allegato">
           <NavigationFlow id="wv2#area3#page22p#gctu14p#oslte56p#nf89p" to="wv2#area3#page22p#dpg6p#lst13p">
-            <ParameterBinding id="wv2#area3#page22p#gctu14p#oslte56p#nf89p#par262p" sourceParameter="wv2#area3#page22p#prd13p" target="wv2#area3#page22p#dpg6p#lst13p#sc19p#rcond10p._be_att6" name="oid fornitore - fornitore [oid]"/>
+            <ParameterBinding id="wv2#area3#page22p#gctu14p#oslte56p#nf89p#par307p" sourceParameter="wv2#area3#page22p#prd13p" target="_be_pdp148o" name="oid fornitore - fornitoreOid [integer]"/>
+            <ParameterBinding id="wv2#area3#page22p#gctu14p#oslte56p#nf89p#par308p" sourceParameter="wv2#prd8" target="_be_pdp149o" name="Tenant - tenantOid [integer]"/>
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
@@ -120,8 +121,11 @@
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
+      <Field id="wv2#area3#page22p#frm20p#fld63p" name="Attrezzature" modifiable="true" type="boolean"/>
+      <Field id="wv2#area3#page22p#frm20p#fld64p" name="Mezzi" modifiable="true" type="boolean"/>
+      <Field id="wv2#area3#page22p#frm20p#fld65p" name="Prodotti e Sostanze chimiche" modifiable="true" type="boolean"/>
     </Form>
-    <List gr:x="530" gr:y="300" id="wv2#area3#page22p#lst12p" checkable="false" distinct="false" name="Allegati" pageSize="15">
+    <List gr:x="530" gr:y="300" id="wv2#area3#page22p#lst12p" checkable="false" distinct="false" name="Documenti richiesti" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
       <ConditionalExpression id="wv2#area3#page22p#lst12p#sc18p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv2#area3#page22p#lst12p#sc18p#rcond8p" name="Fornitore" predicate="in" implied="false">
@@ -169,7 +173,7 @@
       <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statoallegatoCodice"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
     </List>
-    <List id="wv2#area3#page22p#lst15p" name="Storico allegati" gr:x="315" gr:y="390" checkable="false" distinct="false" pageSize="15">
+    <List id="wv2#area3#page22p#lst15p" name="Storico documenti" gr:x="315" gr:y="390" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
       <ConditionalExpression id="wv2#area3#page22p#lst15p#sc21p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv2#area3#page22p#lst15p#sc21p#rcond13p" name="Fornitore" predicate="in" implied="false">
@@ -231,20 +235,12 @@
   <DialogPage gr:x="445" gr:y="0" id="wv2#area3#page22p#dpg6p" name="Aggiungi tipo allegato">
     <ViewComponents>
       <List gr:x="0" gr:y="0" id="wv2#area3#page22p#dpg6p#lst13p" checkable="true" distinct="false" pageSize="10">
-        <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls8"/>
-        <ConditionalExpression id="wv2#area3#page22p#dpg6p#lst13p#sc19p" defaultPolicy="fill" booleanOperator="and">
-          <AssociationRoleCondition id="wv2#area3#page22p#dpg6p#lst13p#sc19p#rcond10p" name="fornitore" predicate="notIn" implied="false">
-            <AssociationRoleConditionRole classServiceRoleExpr="PortaleSubappaltatoriDataservice$role22.PortaleSubappaltatoriDataservice$role11"/>
-          </AssociationRoleCondition>
-        </ConditionalExpression>
-        <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att64"/>
-        <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att65"/>
         <Events>
           <OnSelectEvent id="wv2#area3#page22p#dpg6p#lst13p#oslte57p" name="Aggiungi" validate="true">
             <NavigationFlow id="wv2#area3#page22p#dpg6p#lst13p#oslte57p#nf90p" to="wv2#area3#act40p">
               <ParameterBinding id="wv2#area3#page22p#dpg6p#lst13p#oslte57p#nf90p#par263p" sourceParameter="wv2#area3#page22p#prd13p" target="wv2#area3#act40p.PortaleSubappaltatoriDataservice$pdp131o" name="oid fornitore - Fornitore.oid"/>
               <ParameterBinding id="wv2#area3#page22p#dpg6p#lst13p#oslte57p#nf90p#par264p" sourceParameter="wv2#prd8" target="wv2#area3#act40p.PortaleSubappaltatoriDataservice$pdp129o" name="Tenant - Tenant"/>
-              <ParameterBinding id="wv2#area3#page22p#dpg6p#lst13p#oslte57p#nf90p#par265p" source="data._be_att37" target="wv2#area3#act40p.PortaleSubappaltatoriDataservice$pdp130o" name="oid - Tipologia Allegati.oid(AllegatiToTipologia Allegati)"/>
+              <ParameterBinding id="wv2#area3#page22p#dpg6p#lst13p#oslte57p#nf90p#par265p" source="data._be_pdp155o" target="wv2#area3#act40p.PortaleSubappaltatoriDataservice$pdp130o" name="oid - Tipologia Allegati.oid(AllegatiToTipologia Allegati)"/>
               <ParameterBinding id="wv2#area3#page22p#dpg6p#lst13p#oslte57p#nf90p#par277p" sourceValue="false" target="wv2#area3#act40p.PortaleSubappaltatoriDataservice$pdp136o" name="&quot;false&quot; - Mandatory"/>
             </NavigationFlow>
           </OnSelectEvent>
@@ -252,6 +248,13 @@
         <DataFlow id="wv2#area3#page22p#dpg6p#lst13p#df40p" to="wv2#area3#act40p">
           <ParameterBinding id="wv2#area3#page22p#dpg6p#lst13p#df40p#par272p" source="checkedKeys" target="wv2#area3#act40p.PortaleSubappaltatoriDataservice$pdp130o" name="Checked Keys - Tipologia Allegati.oid(AllegatiToTipologia Allegati)"/>
         </DataFlow>
+        <DataBinding actionServiceRes="PortaleSubappaltatoriDataservice$adf11o"/>
+        <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp150o"/>
+        <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp151o"/>
+        <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp152o"/>
+        <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp153o"/>
+        <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp154o"/>
+        <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp155o"/>
       </List>
       <ViewComponent gr:x="150" gr:y="125" id="wv2#area3#page22p#dpg6p#gctu16p" name="BTN">
         <Events>

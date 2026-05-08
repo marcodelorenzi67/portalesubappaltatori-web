@@ -222,43 +222,45 @@
                         </wd-data-grid>
                       </wd-cell>
                     </wd-row>
-                    <wd-row><wd-cell [width]="12">
-            <wd-data-grid elevation="0" cols="main/lst15p/data/_be_att23 | main/lst15p/data/_be_att24 | main/lst15p/data/_be_att88o | main/lst15p/data/_be_att89o | main/lst15p/data/_be_att25" [rows]="valueOf('main/lst15p/data')" title="main/lst15p" paginator="main/lst15p/paging" [useExcelLikeFilter]="true">
-              <wr-content for="header[_be_att23]">
-                {{ labelOf('.') | wrLocalize }}
-              </wr-content>
-              <wr-content for="data[_be_att23]">
-                <wd-anchor type="file"></wd-anchor>
-              </wr-content>
-              <wr-content for="header[_be_att24]">
-                {{ labelOf('.') | wrLocalize }}
-              </wr-content>
-              <wr-content for="data[_be_att24]">
-                {{ valueOf('.', row) }}
-              </wr-content>
-              <wr-content for="header[_be_att88o]">
-                {{ labelOf('.') | wrLocalize }}
-              </wr-content>
-              <wr-content for="data[_be_att88o]">
-                {{ valueOf('.', row) }}
-              </wr-content>
-              <wr-content for="header[_be_att89o]">
-                {{ labelOf('.') | wrLocalize }}
-              </wr-content>
-              <wr-content for="data[_be_att89o]">
-                {{ valueOf('.', row) }}
-              </wr-content>
-              <wr-content for="header[_be_att25]">
-                {{ labelOf('.') | wrLocalize }}
-              </wr-content>
-              <wr-content for="data[_be_att25]">
-                {{ valueOf('.', row) }}
-              </wr-content>
-              <wr-content for="title[lst15p]">
-                {{ labelOf('.') | wrLocalize }}
-              </wr-content>
-            </wd-data-grid>
-          </wd-cell></wd-row>
+                    <wd-row>
+                      <wd-cell [width]="12">
+                        <wd-data-grid elevation="0" cols="main/lst15p/data/_be_att23 | main/lst15p/data/_be_att24 | main/lst15p/data/_be_att88o | main/lst15p/data/_be_att89o | main/lst15p/data/_be_att25" [rows]="valueOf('main/lst15p/data')" title="main/lst15p" paginator="main/lst15p/paging" [useExcelLikeFilter]="true">
+                          <wr-content for="header[_be_att23]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att23]">
+                            <wd-anchor type="file"></wd-anchor>
+                          </wr-content>
+                          <wr-content for="header[_be_att24]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att24]">
+                            {{ valueOf('.', row) }}
+                          </wr-content>
+                          <wr-content for="header[_be_att88o]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att88o]">
+                            {{ valueOf('.', row) }}
+                          </wr-content>
+                          <wr-content for="header[_be_att89o]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att89o]">
+                            {{ valueOf('.', row) }}
+                          </wr-content>
+                          <wr-content for="header[_be_att25]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att25]">
+                            {{ valueOf('.', row) }}
+                          </wr-content>
+                          <wr-content for="title[lst15p]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                        </wd-data-grid>
+                      </wd-cell>
+                    </wd-row>
                   </wd-grid>
                 </mat-tab>
                 <mat-tab [label]="'Documentazione aggiuntiva' | wrLocalize"></mat-tab>
@@ -334,24 +336,24 @@
 </wd-dialog>
 <wd-dialog context="main/dpg6p">
   <wr-content for="content">
-    <wd-data-grid elevation="0" cols="lst13p/data/_be_att64 | lst13p/data/_be_att65" checkField="lst13p/data/_checked" events="lst13p/data/oslte57p" paginator="lst13p/paging" [useExcelLikeFilter]="true" color="primary" [rows]="valueOf('lst13p/data')" headerColor="primary">
-      <wr-content for="header[_be_att64]">
-        {{ labelOf('.') | wrLocalize }}
-      </wr-content>
-      <wr-content for="data[_be_att64]">
-        {{ valueOf('.', row) }}
-      </wr-content>
-      <wr-content for="header[_be_att65]">
-        {{ labelOf('.') | wrLocalize }}
-      </wr-content>
-      <wr-content for="data[_be_att65]">
-        {{ valueOf('.', row) }}
-      </wr-content>
+    <wd-data-grid elevation="0" cols="lst13p/data/_be_pdp151o | lst13p/data/_be_pdp150o" checkField="lst13p/data/_checked" events="lst13p/data/oslte57p" paginator="lst13p/paging" [useExcelLikeFilter]="true" color="primary" [rows]="valueOf('lst13p/data')" headerColor="primary">
       <wr-content for="event[oslte57p]">
-        <wd-button variant="mat-button" color="primary"></wd-button>
+        <wd-button variant="mat-icon-button" color="primary" iconText="add"></wd-button>
       </wr-content>
       <wr-content for="header-actions">
         <wd-button context="gctu16p/oslte58p" color="success" iconText="add"></wd-button>
+      </wr-content>
+      <wr-content for="header[_be_pdp151o]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_pdp151o]">
+        {{ valueOf('.', row) }}
+      </wr-content>
+      <wr-content for="header[_be_pdp150o]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_pdp150o]">
+        {{ valueOf('.', row) }}
       </wr-content>
     </wd-data-grid>
   </wr-content>

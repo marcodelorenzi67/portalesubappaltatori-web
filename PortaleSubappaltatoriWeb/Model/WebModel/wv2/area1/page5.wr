@@ -38,6 +38,7 @@
             <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par23" source="{wv2#area1#page5#frm3#sfld1}value._be_att1" target="wv2#area1#act4.PortaleSubappaltatoriDataservice$pdp8" name="Tenant [oid] - tenant"/>
             <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par25" source="{wv2#area1#page5#frm3#sfld2}value._be_att59" target="wv2#area1#act4.PortaleSubappaltatoriDataservice$pdp20" name="Ruoli [oid] - oid Ruoli"/>
             <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par138p" sourceValue="true" target="wv2#area1#act4.PortaleSubappaltatoriDataservice$pdp85o" name="&quot;true&quot; - Backoffice"/>
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par318p" source="{wv2#area1#page5#frm3#fld8}value" target="wv2#area1#act4.PortaleSubappaltatoriDataservice$pdp165o" name="Email - username"/>
           </NavigationFlow>
         </OnSelectEvent>
       </Events>

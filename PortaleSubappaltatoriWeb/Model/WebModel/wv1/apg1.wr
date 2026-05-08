@@ -23,7 +23,7 @@
     </Message>
     <Message gr:x="10" gr:y="5" id="wv1#apg1#msg8" name="ENV"/>
     <Form gr:x="235" gr:y="10" id="wv1#apg1#frm5" name="static slideshow">
-      <SelectionField id="wv1#apg1#frm5#sfld3" optionsDistinct="false" emptyOption="false" name="imgs" optionsValues="assets/PortaleSubappaltatoriStyle/slideshow/slide_1.png,assets/PortaleSubappaltatoriStyle/slideshow/slide_2.png,assets/PortaleSubappaltatoriStyle/slideshow/slide_3.png,assets/PortaleSubappaltatoriStyle/slideshow/slide_4.png,assets/PortaleSubappaltatoriStyle/slideshow/slide_5.png,assets/PortaleSubappaltatoriStyle/slideshow/slide_6.png,assets/PortaleSubappaltatoriStyle/slideshow/slide_7.png,assets/PortaleSubappaltatoriStyle/slideshow/slide_8.png,assets/PortaleSubappaltatoriStyle/slideshow/slide_9.png,assets/PortaleSubappaltatoriStyle/slideshow/slide_10.png"/>
+      <SelectionField id="wv1#apg1#frm5#sfld3" optionsDistinct="false" emptyOption="false" name="imgs" optionsValues="assets/PortaleSubappaltatoriStyle/slideshow/slide_1.png,assets/PortaleSubappaltatoriStyle/slideshow/slide_2.png"/>
     </Form>
   </ViewComponents>
 </AbstractPage>

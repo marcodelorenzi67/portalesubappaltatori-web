@@ -1,7 +1,7 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="270" gr:y="-115" id="wv1#page7" name="Password dimenticata">
   <ViewComponents>
     <Form gr:x="0" gr:y="0" id="wv1#page7#frm6">
-      <Field id="wv1#page7#frm6#fld16" type="string" modifiable="true" name="Inserisci email" validationOrder="wv1#page7#frm6#fld16#mnd11 wv1#page7#frm6#fld16#email2">
+      <Field id="wv1#page7#frm6#fld16" type="string" modifiable="true" name="Inserisci username" validationOrder="wv1#page7#frm6#fld16#mnd11 wv1#page7#frm6#fld16#email2">
         <VRules>
           <MandatoryValidationRule id="wv1#page7#frm6#fld16#mnd11" name="Mandatory"/>
           <EMailValidationRule id="wv1#page7#frm6#fld16#email2" name="EMail"/>

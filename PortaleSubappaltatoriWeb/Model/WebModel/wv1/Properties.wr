@@ -17,7 +17,7 @@
         </NavigationFlow>
       </SuccessEvent>
       <ErrorEvent id="wv1#act5#erre11">
-        <NavigationFlow id="wv1#act5#erre11#nf19" to="wv1#page6">
+        <NavigationFlow id="wv1#act5#erre11#nf19" to="wv1#page6" gr:bendpoints="72,-20,-273,-55">
           <ParameterBinding id="wv1#act5#erre11#nf19#par37" sourceValue="attivazioneAccount.KO" targetParameter="wv1#prd3" name="&quot;attivazioneAccount.KO&quot; - error message"/>
         </NavigationFlow>
       </ErrorEvent>

@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="wv2#area1#area2#page11" name="Tipologia allegati" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="wv2#area1#area2#page11" name="Tipologia documenti" landmark="true">
   <ViewComponents>
     <List gr:x="0" gr:y="0" id="wv2#area1#area2#page11#lst3" checkable="false" distinct="false" pageSize="10">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls8"/>
@@ -21,7 +21,7 @@
         </OnSelectEvent>
       </Events>
     </List>
-    <ViewComponent gr:x="205" gr:y="0" id="wv2#area1#area2#page11#gctu8" name="New">
+    <ViewComponent gr:x="215" gr:y="0" id="wv2#area1#area2#page11#gctu8" name="New">
       <Events>
         <OnSelectEvent id="wv2#area1#area2#page11#gctu8#oslte15" name="Nuova tipologia">
           <NavigationFlow id="wv2#area1#area2#page11#gctu8#oslte15#nf37" to="wv2#area1#area2#page11#dpg1#frm9" automaticCoupling="true"/>

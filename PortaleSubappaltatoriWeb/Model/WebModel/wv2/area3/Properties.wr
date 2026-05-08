@@ -1,4 +1,4 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area3" name="Gestione Fornitori" gr:x="415" gr:y="845" landmark="true" default="wv2#area3#page18" landmarks="wv2#area3#page18">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area3" name="Gestione Fornitori" gr:x="345" gr:y="845" landmark="true" default="wv2#area3#page18" landmarks="wv2#area3#page18">
   <Action id="wv2#area3#act27p" gr:x="65" gr:y="320" actionServiceRes="PortaleSubappaltatoriDataservice$ada16o">
     <Events>
       <SuccessEvent id="wv2#area3#act27p#scce30p">
@@ -60,6 +60,10 @@
           <ParameterBinding id="wv2#area3#act38p#scce42p#nf87p#par256p" source="tlads0#ad8p#spd15p#pdp31p" target="{wv2#area3#page19p#frm14p#fld34p}value" name="Ragione Sociale - Ragione Sociale"/>
           <ParameterBinding id="wv2#area3#act38p#scce42p#nf87p#par257p" source="tlads0#ad8p#spd15p#pdp33p" target="{wv2#area3#page19p#frm14p#sfld10p}presel._be_att1" name="oid tenant - Tenant [oid] - Preselection"/>
           <ParameterBinding id="wv2#area3#act38p#scce42p#nf87p#par258p" source="tlads0#ad8p#spd15p#pdp36p" target="{wv2#area3#page19p#frm14p#sfld9p}presel._be_att45" name="Tipologia Azienda.oid - Tipologia Azienda [oid] - Preselection"/>
+          <ParameterBinding id="wv2#area3#act38p#scce42p#nf87p#par315p" source="tlads0#ad8p#spd15p#pdp34p" target="{wv2#area3#page19p#frm14p#fld61p}value" name="Attrezzature - Attrezzature"/>
+          <ParameterBinding id="wv2#area3#act38p#scce42p#nf87p#par316p" source="tlads0#ad8p#spd15p#pdp41p" target="{wv2#area3#page19p#frm14p#fld60p}value" name="Mezzi - Mezzi"/>
+          <ParameterBinding id="wv2#area3#act38p#scce42p#nf87p#par317p" source="tlads0#ad8p#spd15p#pdp37p" target="{wv2#area3#page19p#frm14p#fld62p}value" name="Sostanze chimiche - Prodotti e Sostanze chimiche"/>
+          <ParameterBinding id="wv2#area3#act38p#scce42p#nf87p#par321p" source="tlads0#ad8p#spd15p#pdp42p" target="{wv2#area3#page19p#frm14p#fld66p}value" name="Username - Username"/>
         </NavigationFlow>
       </SuccessEvent>
       <SuccessEvent id="wv2#area3#act38p#scce43p" definition="tlads0#ad8p#spd16p">

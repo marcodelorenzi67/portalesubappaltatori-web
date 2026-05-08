@@ -39,7 +39,7 @@
         </OnSelectEvent>
       </Events>
     </ViewComponent>
-    <List id="wv3#page9#lst14p" name="Allegati" gr:x="245" gr:y="20" checkable="false" distinct="false" pageSize="15">
+    <List id="wv3#page9#lst14p" name="Documenti richiesti" gr:x="200" gr:y="20" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
       <ConditionalExpression id="wv3#page9#lst14p#sc20p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv3#page9#lst14p#sc20p#rcond11p" name="Fornitore" predicate="in" implied="false">
@@ -50,6 +50,9 @@
         </AssociationRoleCondition>
         <AttributesCondition id="wv3#page9#lst14p#sc20p#acond9p" name="Corrente" predicate="eq" booleanOperator="or" implied="false" value="true">
           <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att35"/>
+        </AttributesCondition>
+        <AttributesCondition id="wv3#page9#lst14p#sc20p#acond12p" name="codice stato" predicate="neq" booleanOperator="or" implied="false" value="${statoAllegato.bozza}">
+          <AttributesConditionAttr classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statoallegatoCodice"/>
         </AttributesCondition>
       </ConditionalExpression>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att23"/>
@@ -70,7 +73,7 @@
         </OnSelectEvent>
       </Events>
     </List>
-    <List id="wv3#page9#lst16p" name="Storico allegati" gr:x="525" gr:y="225" checkable="false" distinct="false" pageSize="15">
+    <List id="wv3#page9#lst16p" name="Storico documenti" gr:x="525" gr:y="225" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
       <ConditionalExpression id="wv3#page9#lst16p#sc22p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv3#page9#lst16p#sc22p#rcond15p" name="Fornitore" predicate="in" implied="false">
@@ -120,7 +123,7 @@
       </Form>
     </ViewComponents>
   </DialogPage>
-  <DialogPage gr:x="445" gr:y="45" id="wv3#page9#dpg8p" name="Carica allegato">
+  <DialogPage gr:x="515" gr:y="40" id="wv3#page9#dpg8p" name="Carica allegato">
     <ViewComponents>
       <Form gr:x="0" gr:y="0" id="wv3#page9#dpg8p#frm22p" name="Allegato">
         <Field id="wv3#page9#dpg8p#frm22p#fld57p" type="blob" modifiable="true" name="Allegato" validationOrder="wv3#page9#dpg8p#frm22p#fld57p#mnd45p">

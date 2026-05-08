@@ -1,7 +1,6 @@
 <wr-page>
   <wr-content for="page-content">
-    <wd-button context="backEvent" iconText="arrow_back" color="primary"></wd-button>
-    <wd-card actions="main/frm3/oslte5">
+    <wd-card actions="main/frm3/oslte5" title="main">
       <wr-content for="content">
         <wd-grid>
           <wd-row>
@@ -28,6 +27,12 @@
       <wr-content for="action[oslte5]">
         <wd-button color="success"></wd-button>
       </wr-content>
+      <wr-content for="title[main]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
     </wd-card>
+  </wr-content>
+  <wr-content for="breadcrumb">
+    <wd-button context="backEvent" iconText="arrow_back"></wd-button>
   </wr-content>
 </wr-page>
