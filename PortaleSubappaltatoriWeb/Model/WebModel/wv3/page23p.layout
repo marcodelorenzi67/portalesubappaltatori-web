@@ -1,0 +1,124 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-card title="main">
+      <wr-content for="content">
+        <wd-grid>
+          <wd-row>
+            <wd-cell [width]="12">
+              <wd-card elevation="0">
+                <wr-content for="content">
+                  <wd-grid>
+                    <wd-row>
+                      <wd-cell [width]="3">
+                        <h2>
+                          Anagrafica Azienda
+                        </h2>
+                      </wd-cell>
+                    </wd-row>
+                    <wd-row>
+                      <wd-cell [width]="3">
+                        <span>
+                          <span class="header">
+                            {{ labelOf('main/dtl7p/data/_be_att7') | wrLocalize }}
+                          </span>
+                          <span class="value">
+                            {{ valueOf('main/dtl7p/data/_be_att7') }}
+                          </span>
+                        </span>
+                      </wd-cell>
+                      <wd-cell [width]="3">
+                        <span>
+                          <span class="header">
+                            {{ labelOf('main/dtl7p/data/_be_att8') | wrLocalize }}
+                          </span>
+                          <span class="value">
+                            {{ valueOf('main/dtl7p/data/_be_att8') }}
+                          </span>
+                        </span>
+                      </wd-cell>
+                      <wd-cell [width]="3">
+                        <span>
+                          <span class="header">
+                            {{ labelOf('main/dtl7p/data/_be_att72o') | wrLocalize }}
+                          </span>
+                          <span class="value">
+                            {{ valueOf('main/dtl7p/data/_be_att72o') }}
+                          </span>
+                        </span>
+                      </wd-cell>
+                      <wd-cell [width]="3">
+                        <span>
+                          <span class="header">
+                            {{ labelOf('main/dtl7p/data/_be_att66') | wrLocalize }}
+                          </span>
+                          <span class="value">
+                            {{ valueOf('main/dtl7p/data/_be_att66') }}
+                          </span>
+                        </span>
+                      </wd-cell>
+                    </wd-row>
+                    <wd-row>
+                      <wd-cell [width]="3">
+                        <h2>
+                          Anagrafica Referente
+                        </h2>
+                      </wd-cell>
+                    </wd-row>
+                    <wd-row>
+                      <wd-cell [width]="3">
+                        <span>
+                          <span class="header">
+                            {{ labelOf('main/dtl7p/data/_be_att9') | wrLocalize }}
+                          </span>
+                          <span class="value">
+                            {{ valueOf('main/myp4p/data/_be_PortaleSubappaltatoriDataservice$att3') }}
+                          </span>
+                        </span>
+                      </wd-cell>
+                      <wd-cell [width]="3">
+                        <span>
+                          <span class="header">
+                            {{ labelOf('main/dtl7p/data/_be_att10') | wrLocalize }}
+                          </span>
+                          <span class="value">
+                            {{ valueOf('main/myp4p/data/_be_PortaleSubappaltatoriDataservice$att4') }}
+                          </span>
+                        </span>
+                      </wd-cell>
+                      <wd-cell [width]="3">
+                        <span>
+                          <span class="header">
+                            {{ labelOf('main/dtl7p/data/_be_att12') | wrLocalize }}
+                          </span>
+                          <span class="value">
+                            {{ valueOf('main/myp4p/data/_be_PortaleSubappaltatoriDataservice$att5') }}
+                          </span>
+                        </span>
+                      </wd-cell>
+                      <wd-cell [width]="3">
+                        <span>
+                          <span class="header">
+                            {{ 'Username' | wrLocalize }}
+                          </span>
+                          <span class="value">
+                            {{ valueOf('main/myp4p/data/_identity__me_$userID') }}
+                          </span>
+                        </span>
+                      </wd-cell>
+                    </wd-row>
+                  </wd-grid>
+                </wr-content>
+              </wd-card>
+            </wd-cell>
+          </wd-row>
+        </wd-grid>
+      </wr-content>
+      <wr-content for="title[main]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+    </wd-card>
+  </wr-content>
+  <wr-content for="breadcrumb">
+    <wd-button context="backEvent" iconText="arrow_back"></wd-button>
+  </wr-content>
+</wr-page>

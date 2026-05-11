@@ -3,6 +3,7 @@
 <Bundle>
   <Entry key="attivazioneAccount.KO">Errore durante l'attivazione account, riprovare!</Entry>
   <Entry key="attivazioneAccount.OK">Utenza attivata con successo!</Entry>
+  <Entry key="attrezzature">Attrezzature</Entry>
   <Entry key="cognome">Cognome</Entry>
   <Entry key="cognomeReferente">Cognome Referente
 </Entry>  <Entry key="condiviso">Condiviso</Entry>
@@ -17,6 +18,7 @@
   <Entry key="macroTipologia">Macro Tipologia</Entry>
   <Entry key="message.otpInviato">Codice otp inviato, controllare la casella di posta</Entry>
   <Entry key="message.otpNonValido">OTP non valido riprovare.</Entry>
+  <Entry key="mezzi">Mezzi</Entry>
   <Entry key="nome">Nome</Entry>
   <Entry key="nomeReferente">Nome Referente
 </Entry>  <Entry key="note">Note</Entry>
@@ -25,7 +27,8 @@
   <Entry key="operazione.OK">Operazione eseguita con successo!</Entry>
   <Entry key="partitaIVA">Partita IVA
 </Entry>  <Entry key="patternNome">Pattern Nome</Entry>
-  <Entry key="ragioneSociale">Ragione Sociale
+  <Entry key="prodottiESostanzeChimiche">Prodotti e Sostanze chimiche
+</Entry>  <Entry key="ragioneSociale">Ragione Sociale
 </Entry>  <Entry key="ripristinoPsw.tokenInvalido ">Il token per ripristinare la password non &#232; piu valido. Ripetere procedura di "Password dimenticata"</Entry>
   <Entry key="ruoli">Ruoli</Entry>
   <Entry key="stato">Stato</Entry>
@@ -35,5 +38,6 @@
   <Entry key="tipoAzione">Azione</Entry>
   <Entry key="tipologia">Tipologia</Entry>
   <Entry key="tipologiaAzienda">Tipologia Azienda</Entry>
+  <Entry key="userID">Username</Entry>
   <Entry key="utente">Utente</Entry>
 </Bundle>

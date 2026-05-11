@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1665" gr:y="585" id="wv2#page17" name="Scegli Tenant">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1715" gr:y="595" id="wv2#page17" name="Scegli Tenant">
   <ViewComponents>
     <Form gr:x="0" gr:y="0" id="wv2#page17#frm10" name="Scegli Tenant">
       <SelectionField id="wv2#page17#frm10#sfld5" optionsDistinct="false" emptyOption="true" name="Tenant" validationOrder="wv2#page17#frm10#sfld5#mnd17">

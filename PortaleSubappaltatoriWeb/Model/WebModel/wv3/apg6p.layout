@@ -9,6 +9,7 @@
   <wr-content for="user">
     <wd-popover matchPopoverOverlayWidth iconText="person" [buttonText]="valueOf('main/dtl4p/data/_be_pdp97o') | wrLocalize" color="primary">
       <wd-menu-item context="main/gctu12p/oslte35p" iconText="logout"></wd-menu-item>
+      <wd-menu-item context="main/gctu12p/oslte76p" iconText="contacts"></wd-menu-item>
       <div class="version-info-container">
         <span class="grassetto">
           Versione:

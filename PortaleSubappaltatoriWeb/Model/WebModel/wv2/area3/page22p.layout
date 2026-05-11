@@ -65,41 +65,88 @@
                               </wd-row>
                               <wd-row>
                                 <wd-cell [width]="3">
-                                  <h2>
-                                    Anagrafica Referente
-                                  </h2>
+                                   <span>
+                                    <span class="header">
+                                      {{ labelOf('main/dtl6p/data/_be_att79o') | wrLocalize }}
+                                    </span>
+                                    <span class="value">
+                                      {{ valueOf('main/dtl6p/data/_be_att79o') == true ? 'Sì' : 'No' }} 
+                                    </span>
+                                  </span>
+                                </wd-cell>
+                                <wd-cell [width]="3">
+                                  <span>
+                                    <span class="header">
+                                      {{ labelOf('main/dtl6p/data/_be_att80o') | wrLocalize }}
+                                    </span>
+                                    <span class="value">
+                                      {{ valueOf('main/dtl6p/data/_be_att80o') == true ? 'Sì' : 'No' }} 
+                                    </span>
+                                  </span>
+                                </wd-cell>
+                                <wd-cell [width]="3">
+                                  <span>
+                                    <span class="header">
+                                      {{ labelOf('main/dtl6p/data/_be_att82o') | wrLocalize }}
+                                    </span>
+                                    <span class="value">
+                                      {{ valueOf('main/dtl6p/data/_be_att82o') == true ? 'Sì' : 'No' }} 
+                                    </span>
+                                  </span>
+                                </wd-cell>
+                                <wd-cell [width]="3">
                                 </wd-cell>
                               </wd-row>
                               <wd-row>
                                 <wd-cell [width]="3">
-                                  <span>
-                                    <span class="header">
-                                      {{ labelOf('main/dtl6p/data/_be_att9') | wrLocalize }}
-                                    </span>
-                                    <span class="value">
-                                      {{ valueOf('main/dtl6p/data/_be_att9') }}
-                                    </span>
-                                  </span>
+                                  <h2>
+                                    {{ 'Referenti' | wrLocalize }}
+                                  </h2>
                                 </wd-cell>
-                                <wd-cell [width]="3">
-                                  <span>
-                                    <span class="header">
-                                      {{ labelOf('main/dtl6p/data/_be_att10') | wrLocalize }}
-                                    </span>
-                                    <span class="value">
-                                      {{ valueOf('main/dtl6p/data/_be_att10') }}
-                                    </span>
-                                  </span>
-                                </wd-cell>
-                                <wd-cell [width]="3">
-                                  <span>
-                                    <span class="header">
-                                      {{ labelOf('main/dtl6p/data/_be_att12') | wrLocalize }}
-                                    </span>
-                                    <span class="value">
-                                      {{ valueOf('main/dtl6p/data/_be_att12') }}
-                                    </span>
-                                  </span>
+                              </wd-row>
+                              <wd-row>
+                                <wd-cell [width]="12">
+                                  <wd-data-grid elevation="0" cols="main/lst17p/data/_be_att3 | main/lst17p/data/_be_att4 | main/lst17p/data/_be_att5 | main/lst17p/data/_be_userName | main/lst17p/data/_be_att94o" colsOrder="_be_att3 _be_att4 _be_att5 _be_userName" [rows]="valueOf('main/lst17p/data')" paginator="main/lst17p/paging" events="main/lst17p/data/oslte80p | main/lst17p/data/oslte81p">
+                                    <wr-content for="header[_be_att3]">
+                                      {{ labelOf('.') | wrLocalize }}
+                                    </wr-content>
+                                    <wr-content for="data[_be_att3]">
+                                      {{ valueOf('.', row) }}
+                                    </wr-content>
+                                    <wr-content for="header[_be_att4]">
+                                      {{ labelOf('.') | wrLocalize }}
+                                    </wr-content>
+                                    <wr-content for="data[_be_att4]">
+                                      {{ valueOf('.', row) }}
+                                    </wr-content>
+                                    <wr-content for="header[_be_att5]">
+                                      {{ labelOf('.') | wrLocalize }}
+                                    </wr-content>
+                                    <wr-content for="data[_be_att5]">
+                                      {{ valueOf('.', row) }}
+                                    </wr-content>
+                                    <wr-content for="header[_be_userName]">
+                                      {{ labelOf('.') | wrLocalize }}
+                                    </wr-content>
+                                    <wr-content for="data[_be_userName]">
+                                      {{ valueOf('.', row) }}
+                                    </wr-content>
+                                    <wr-content for="header-actions">
+                                      <wd-button iconText="add" context="main/gctu14p/oslte78p" variant="mat-icon-button"></wd-button>
+                                    </wr-content>
+                                    <wr-content for="header[_be_att94o]">
+                                      {{ labelOf('.') | wrLocalize }}
+                                    </wr-content>
+                                    <wr-content for="data[_be_att94o]">
+                                      {{ valueOf('.', row) == true ? 'S&igrave;' : 'No' }}
+                                    </wr-content>
+                                    <wr-content for="event[oslte80p]">
+                                      <wd-button variant="mat-icon-button" color="success" iconText="check_circle" [disabled]="valueOf('/main/lst17p/data/_be_att94o', row)"></wd-button>
+                                    </wr-content>
+                                    <wr-content for="event[oslte81p]">
+                                      <wd-button variant="mat-icon-button" color="warn" iconText="cancel" [disabled]="!valueOf('/main/lst17p/data/_be_att94o', row)"></wd-button>
+                                    </wr-content>
+                                  </wd-data-grid>
                                 </wd-cell>
                               </wd-row>
                             </wd-grid>
@@ -123,35 +170,26 @@
                                 </wd-cell>
                               </wd-row>
                               <wd-row>
-                                <wd-cell [width]="3">
+                                <wd-cell [width]="4">
                                   <wd-input appearance="outline" context="main/frm20p/fld50p"></wd-input>
                                 </wd-cell>
-                                <wd-cell [width]="3">
+                                <wd-cell [width]="4">
                                   <wd-input context="main/frm20p/fld51p" appearance="outline"></wd-input>
                                 </wd-cell>
-                                <wd-cell [width]="3">
+                                <wd-cell [width]="4">
                                   <wd-select context="main/frm20p/sfld15p" appearance="outline"></wd-select>
                                 </wd-cell>
-                                <wd-cell [width]="3"></wd-cell>
                               </wd-row>
                               <wd-row>
-                                <wd-cell [width]="3">
-                                  <h2>
-                                    Anagrafica Referente
-                                  </h2>
+                                <wd-cell [width]="4">
+                                  <wd-toggle context="main/frm20p/fld63p"></wd-toggle>
                                 </wd-cell>
-                              </wd-row>
-                              <wd-row>
-                                <wd-cell [width]="3">
-                                  <wd-input appearance="outline" context="main/frm20p/fld49p"></wd-input>
+                                <wd-cell [width]="4">
+                                  <wd-toggle context="main/frm20p/fld64p"></wd-toggle>
                                 </wd-cell>
-                                <wd-cell [width]="3">
-                                  <wd-input appearance="outline" context="main/frm20p/fld52p"></wd-input>
+                                <wd-cell [width]="4">
+                                  <wd-toggle context="main/frm20p/fld65p"></wd-toggle>
                                 </wd-cell>
-                                <wd-cell [width]="3">
-                                  <wd-input appearance="outline" context="main/frm20p/fld53p"></wd-input>
-                                </wd-cell>
-                                <wd-cell [width]="3"></wd-cell>
                               </wd-row>
                             </wd-grid>
                           </wr-content>
@@ -224,41 +262,49 @@
                     </wd-row>
                     <wd-row>
                       <wd-cell [width]="12">
-                        <wd-data-grid elevation="0" cols="main/lst15p/data/_be_att23 | main/lst15p/data/_be_att24 | main/lst15p/data/_be_att88o | main/lst15p/data/_be_att89o | main/lst15p/data/_be_att25" [rows]="valueOf('main/lst15p/data')" title="main/lst15p" paginator="main/lst15p/paging" [useExcelLikeFilter]="true">
-                          <wr-content for="header[_be_att23]">
-                            {{ labelOf('.') | wrLocalize }}
-                          </wr-content>
-                          <wr-content for="data[_be_att23]">
-                            <wd-anchor type="file"></wd-anchor>
-                          </wr-content>
-                          <wr-content for="header[_be_att24]">
-                            {{ labelOf('.') | wrLocalize }}
-                          </wr-content>
-                          <wr-content for="data[_be_att24]">
-                            {{ valueOf('.', row) }}
-                          </wr-content>
-                          <wr-content for="header[_be_att88o]">
-                            {{ labelOf('.') | wrLocalize }}
-                          </wr-content>
-                          <wr-content for="data[_be_att88o]">
-                            {{ valueOf('.', row) }}
-                          </wr-content>
-                          <wr-content for="header[_be_att89o]">
-                            {{ labelOf('.') | wrLocalize }}
-                          </wr-content>
-                          <wr-content for="data[_be_att89o]">
-                            {{ valueOf('.', row) }}
-                          </wr-content>
-                          <wr-content for="header[_be_att25]">
-                            {{ labelOf('.') | wrLocalize }}
-                          </wr-content>
-                          <wr-content for="data[_be_att25]">
-                            {{ valueOf('.', row) }}
-                          </wr-content>
-                          <wr-content for="title[lst15p]">
-                            {{ labelOf('.') | wrLocalize }}
-                          </wr-content>
-                        </wd-data-grid>
+                        <mat-accordion>
+                          <mat-expansion-panel>
+                            <mat-expansion-panel-header>
+                              <mat-panel-title>
+                                {{ labelOf('main/lst15p') | wrLocalize }}
+                              </mat-panel-title>
+                            </mat-expansion-panel-header>
+                            <div>
+                              <wd-data-grid elevation="0" cols="main/lst15p/data/_be_att23 | main/lst15p/data/_be_att24 | main/lst15p/data/_be_att88o | main/lst15p/data/_be_att89o | main/lst15p/data/_be_att25" [rows]="valueOf('main/lst15p/data')" paginator="main/lst15p/paging" [useExcelLikeFilter]="true">
+                                <wr-content for="header[_be_att23]">
+                                  {{ labelOf('.') | wrLocalize }}
+                                </wr-content>
+                                <wr-content for="data[_be_att23]">
+                                  <wd-anchor type="file"></wd-anchor>
+                                </wr-content>
+                                <wr-content for="header[_be_att24]">
+                                  {{ labelOf('.') | wrLocalize }}
+                                </wr-content>
+                                <wr-content for="data[_be_att24]">
+                                  {{ valueOf('.', row) }}
+                                </wr-content>
+                                <wr-content for="header[_be_att88o]">
+                                  {{ labelOf('.') | wrLocalize }}
+                                </wr-content>
+                                <wr-content for="data[_be_att88o]">
+                                  {{ valueOf('.', row) }}
+                                </wr-content>
+                                <wr-content for="header[_be_att89o]">
+                                  {{ labelOf('.') | wrLocalize }}
+                                </wr-content>
+                                <wr-content for="data[_be_att89o]">
+                                  {{ valueOf('.', row) }}
+                                </wr-content>
+                                <wr-content for="header[_be_att25]">
+                                  {{ labelOf('.') | wrLocalize }}
+                                </wr-content>
+                                <wr-content for="data[_be_att25]">
+                                  {{ valueOf('.', row) }}
+                                </wr-content>
+                              </wd-data-grid>
+                            </div>
+                          </mat-expansion-panel>
+                        </mat-accordion>
                       </wd-cell>
                     </wd-row>
                   </wd-grid>
@@ -372,5 +418,34 @@
   </wr-content>
   <wr-content for="action[oslte64p]">
     <wd-button color="success" [confirm]="true"></wd-button>
+  </wr-content>
+</wd-dialog>
+<wd-dialog context="main/dpg9p" actions="frm23p/oslte79p">
+  <wr-content for="content">
+    <wd-card elevation="0">
+      <wr-content for="content">
+        <wd-grid>
+          <wd-row>
+            <wd-cell [width]="6">
+              <wd-input appearance="outline" context="frm23p/fld67p"></wd-input>
+            </wd-cell>
+            <wd-cell [width]="6">
+              <wd-input appearance="outline" context="frm23p/fld68p"></wd-input>
+            </wd-cell>
+          </wd-row>
+          <wd-row>
+            <wd-cell [width]="6">
+              <wd-input appearance="outline" context="frm23p/fld70p"></wd-input>
+            </wd-cell>
+            <wd-cell [width]="6">
+              <wd-input appearance="outline" context="frm23p/fld69p"></wd-input>
+            </wd-cell>
+          </wd-row>
+        </wd-grid>
+      </wr-content>
+    </wd-card>
+  </wr-content>
+  <wr-content for="action[oslte79p]">
+    <wd-button color="success"></wd-button>
   </wr-content>
 </wd-dialog>

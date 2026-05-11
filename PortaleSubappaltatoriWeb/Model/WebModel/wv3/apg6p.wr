@@ -1,4 +1,4 @@
-<AbstractPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv3#apg6p" name="Main Abstract Page" gr:x="1110" gr:y="-35">
+<AbstractPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv3#apg6p" name="Main Abstract Page" gr:x="1090" gr:y="-20">
   <ViewComponents>
     <Message id="wv3#apg6p#msg13p" name="ENV" gr:x="10" gr:y="120"/>
     <Message id="wv3#apg6p#msg14p" name="Success message" gr:x="0" gr:y="210">
@@ -30,6 +30,11 @@
         </OnSelectEvent>
         <OnSelectEvent id="wv3#apg6p#gctu12p#oslte36p" name="Cambia Tenant">
           <NavigationFlow id="wv3#apg6p#gctu12p#oslte36p#nf66p" to="wv3#apg6p#dpg3p#frm15p" automaticCoupling="true"/>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv3#apg6p#gctu12p#oslte76p" name="Il mio profilo">
+          <NavigationFlow id="wv3#apg6p#gctu12p#oslte76p#nf107p" to="wv3#page23p#dtl7p">
+            <ParameterBinding id="wv3#apg6p#gctu12p#oslte76p#nf107p#par323p" sourceParameter="wv3#prd10p" target="wv3#page23p#dtl7p#sc24p#kcond11p._be_att6" name="oid Fornitore - KeyCondition"/>
+          </NavigationFlow>
         </OnSelectEvent>
       </Events>
     </ViewComponent>

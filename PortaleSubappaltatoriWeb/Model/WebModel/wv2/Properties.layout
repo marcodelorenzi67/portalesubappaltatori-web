@@ -29,4 +29,11 @@
       </wr-content>
     </wd-menu>
   </wr-content>
+  <wr-content for="page-content">
+    <wd-card>
+      <wr-content for="content">
+        <wd-container></wd-container>
+      </wr-content>
+    </wd-card>
+  </wr-content>
 </wr-page>

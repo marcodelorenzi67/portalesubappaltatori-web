@@ -1,0 +1,18 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1090" gr:y="375" id="wv3#page23p" name="Il mio profilo">
+  <ViewComponents>
+    <Details id="wv3#page23p#dtl7p" name="Dati Anagrafici" gr:x="0" gr:y="0">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls2"/>
+      <ConditionalExpression id="wv3#page23p#dtl7p#sc24p" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="wv3#page23p#dtl7p#sc24p#kcond11p" name="KeyCondition" predicate="in" implied="false"/>
+      </ConditionalExpression>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att10"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att12"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att66"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att7"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att8"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att9"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att72o"/>
+    </Details>
+    <MyProfile gr:x="165" gr:y="15" id="wv3#page23p#myp4p"/>
+  </ViewComponents>
+</Page>

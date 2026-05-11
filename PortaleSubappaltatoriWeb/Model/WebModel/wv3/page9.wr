@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="270" gr:y="-15" id="wv3#page9" name="La mia Area Privata">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="270" gr:y="-20" id="wv3#page9" name="La mia Area Privata">
   <ViewComponents>
     <Details gr:x="30" gr:y="0" id="wv3#page9#dtl5p" name="Dati Anagrafici">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls2"/>
@@ -39,7 +39,7 @@
         </OnSelectEvent>
       </Events>
     </ViewComponent>
-    <List id="wv3#page9#lst14p" name="Documenti richiesti" gr:x="200" gr:y="20" checkable="false" distinct="false" pageSize="15">
+    <List id="wv3#page9#lst14p" name="Documenti richiesti" gr:x="200" gr:y="15" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
       <ConditionalExpression id="wv3#page9#lst14p#sc20p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv3#page9#lst14p#sc20p#rcond11p" name="Fornitore" predicate="in" implied="false">
