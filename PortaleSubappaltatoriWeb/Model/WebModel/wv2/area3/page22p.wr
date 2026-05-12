@@ -34,6 +34,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att79o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att80o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att82o"/>
+      <DataFlow id="wv2#area3#page22p#dtl6p#df47p" to="wv2#area3#page22p#lst18p" automaticCoupling="true"/>
     </Details>
     <List id="wv2#area3#page22p#lst11p" gr:x="40" gr:y="325" checkable="false" distinct="false">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls14o"/>
@@ -44,6 +45,8 @@
       </ConditionalExpression>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att74o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att75o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att95o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att96o"/>
     </List>
     <ViewComponent id="wv2#area3#page22p#gctu14p" name="BTN" gr:x="420" gr:y="405">
       <Events>
@@ -188,7 +191,7 @@
       <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statoallegatoCodice"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
     </List>
-    <List gr:x="270" gr:y="65" id="wv2#area3#page22p#lst17p" checkable="false" distinct="false" pageSize="5" name="Referenti">
+    <List gr:x="270" gr:y="65" id="wv2#area3#page22p#lst17p" checkable="false" distinct="false" pageSize="5" name="Referenti registrati">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$User"/>
       <ConditionalExpression id="wv2#area3#page22p#lst17p#sc25p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv2#area3#page22p#lst17p#sc25p#rcond17p" name="fornitore" predicate="in" implied="false">
@@ -217,6 +220,44 @@
             <ParameterBinding id="wv2#area3#page22p#lst17p#oslte81p#nf114p#par346p" sourceValue="false" target="wv2#area3#act46p.PortaleSubappaltatoriDataservice$pdp177o" name="&quot;false&quot; - Attivo"/>
             <ParameterBinding id="wv2#area3#page22p#lst17p#oslte81p#nf114p#par347p" source="data._be_userOID" target="wv2#area3#act46p.PortaleSubappaltatoriDataservice$pdp176o" name="oid - oid"/>
             <ParameterBinding id="wv2#area3#page22p#lst17p#oslte81p#nf114p#par348p" source="data._be_userName" target="wv2#area3#act46p.PortaleSubappaltatoriDataservice$pdp178o" name="userID - userID"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page22p#lst17p#oslte83p" name="Modifica" validate="true">
+          <NavigationFlow id="wv2#area3#page22p#lst17p#oslte83p#nf117p" to="wv2#area3#page22p#dpg9p#frm23p">
+            <ParameterBinding id="wv2#area3#page22p#lst17p#oslte83p#nf117p#par356p" source="data._be_att4" target="{wv2#area3#page22p#dpg9p#frm23p#fld68p}value" name="cognome - Cognome"/>
+            <ParameterBinding id="wv2#area3#page22p#lst17p#oslte83p#nf117p#par357p" source="data._be_att5" target="{wv2#area3#page22p#dpg9p#frm23p#fld69p}value" name="email - Email utente"/>
+            <ParameterBinding id="wv2#area3#page22p#lst17p#oslte83p#nf117p#par358p" sourceValue="false" target="{wv2#area3#page22p#dpg9p#frm23p#fld73p}value" name="&quot;false&quot; - Invitati"/>
+            <ParameterBinding id="wv2#area3#page22p#lst17p#oslte83p#nf117p#par359p" source="data._be_att3" target="{wv2#area3#page22p#dpg9p#frm23p#fld67p}value" name="nome - Nome"/>
+            <ParameterBinding id="wv2#area3#page22p#lst17p#oslte83p#nf117p#par360p" source="data._be_userOID" target="{wv2#area3#page22p#dpg9p#frm23p#fld71p}value" name="oid - oid"/>
+            <ParameterBinding id="wv2#area3#page22p#lst17p#oslte83p#nf117p#par361p" source="data._be_userName" target="{wv2#area3#page22p#dpg9p#frm23p#fld70p}value" name="userID - Username"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </List>
+    <List gr:x="435" gr:y="0" id="wv2#area3#page22p#lst18p" checkable="false" distinct="false" name="Referenti invitati" pageSize="5">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls4"/>
+      <ConditionalExpression id="wv2#area3#page22p#lst18p#sc27p" defaultPolicy="fill" booleanOperator="and">
+        <AssociationRoleCondition id="wv2#area3#page22p#lst18p#sc27p#rcond18p" name="fornitore" predicate="in" implied="false">
+          <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role7"/>
+        </AssociationRoleCondition>
+      </ConditionalExpression>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att18"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att19"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att20"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att92o"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att18" order="ascending"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att19" order="ascending"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att20" order="ascending"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att92o" order="ascending"/>
+      <Events>
+        <OnSelectEvent id="wv2#area3#page22p#lst18p#oslte82p" name="Modifica" validate="true">
+          <NavigationFlow id="wv2#area3#page22p#lst18p#oslte82p#nf116p" to="wv2#area3#page22p#dpg9p#frm23p">
+            <ParameterBinding id="wv2#area3#page22p#lst18p#oslte82p#nf116p#par350p" source="data._be_att19" target="{wv2#area3#page22p#dpg9p#frm23p#fld68p}value" name="cognome - Cognome"/>
+            <ParameterBinding id="wv2#area3#page22p#lst18p#oslte82p#nf116p#par351p" source="data._be_att92o" target="{wv2#area3#page22p#dpg9p#frm23p#fld69p}value" name="emailUtente - Email utente"/>
+            <ParameterBinding id="wv2#area3#page22p#lst18p#oslte82p#nf116p#par352p" sourceValue="true" target="{wv2#area3#page22p#dpg9p#frm23p#fld73p}value" name="&quot;true&quot; - Invitati"/>
+            <ParameterBinding id="wv2#area3#page22p#lst18p#oslte82p#nf116p#par353p" source="data._be_att18" target="{wv2#area3#page22p#dpg9p#frm23p#fld67p}value" name="nome - Nome"/>
+            <ParameterBinding id="wv2#area3#page22p#lst18p#oslte82p#nf116p#par354p" source="data._be_att20" target="{wv2#area3#page22p#dpg9p#frm23p#fld71p}value" name="username - oid"/>
+            <ParameterBinding id="wv2#area3#page22p#lst18p#oslte82p#nf116p#par355p" source="data._be_att20" target="{wv2#area3#page22p#dpg9p#frm23p#fld70p}value" name="username - Username"/>
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
@@ -333,7 +374,7 @@
             <EMailValidationRule id="wv2#area3#page22p#dpg9p#frm23p#fld69p#email7p" name="EMail"/>
           </VRules>
         </Field>
-        <Field id="wv2#area3#page22p#dpg9p#frm23p#fld70p" modifiable="true" name="Username" type="string" validationOrder="wv2#area3#page22p#dpg9p#frm23p#fld70p#clc2p">
+        <Field id="wv2#area3#page22p#dpg9p#frm23p#fld70p" modifiable="true" name="Username" type="string" validationOrder="wv2#area3#page22p#dpg9p#frm23p#fld70p#clc2p" disabled="= form.oid">
           <VRules>
             <CollectionValidationRule id="wv2#area3#page22p#dpg9p#frm23p#fld70p#clc2p" name="Collection" predicate="notIn" ignoreCase="true">
               <ValuesDataBinding classServiceRes="PortaleSubappaltatoriDataservice$User"/>
@@ -350,9 +391,12 @@
               <ParameterBinding id="wv2#area3#page22p#dpg9p#frm23p#oslte79p#nf110p#par331p" source="{wv2#area3#page22p#dpg9p#frm23p#fld67p}value" target="wv2#area3#act45p.PortaleSubappaltatoriDataservice$pdp174o" name="Nome - Nome"/>
               <ParameterBinding id="wv2#area3#page22p#dpg9p#frm23p#oslte79p#nf110p#par332p" source="{wv2#area3#page22p#dpg9p#frm23p#fld70p}value" target="wv2#area3#act45p.PortaleSubappaltatoriDataservice$pdp173o" name="Username - username"/>
               <ParameterBinding id="wv2#area3#page22p#dpg9p#frm23p#oslte79p#nf110p#par333p" sourceParameter="wv2#area3#page22p#prd13p" target="wv2#area3#act45p.PortaleSubappaltatoriDataservice$pdp172o" name="oid fornitore - oid Fornitore"/>
+              <ParameterBinding id="wv2#area3#page22p#dpg9p#frm23p#oslte79p#nf110p#par362p" source="{wv2#area3#page22p#dpg9p#frm23p#fld73p}value" target="wv2#area3#act45p.PortaleSubappaltatoriDataservice$pdp180o" name="Invitati - Invitati"/>
+              <ParameterBinding id="wv2#area3#page22p#dpg9p#frm23p#oslte79p#nf110p#par363p" source="{wv2#area3#page22p#dpg9p#frm23p#fld71p}value" target="wv2#area3#act45p.PortaleSubappaltatoriDataservice$pdp179o" name="oid - oid"/>
             </NavigationFlow>
           </OnSelectEvent>
         </Events>
+        <Field id="wv2#area3#page22p#dpg9p#frm23p#fld73p" type="boolean" modifiable="false" name="Invitati"/>
       </Form>
     </ViewComponents>
   </DialogPage>

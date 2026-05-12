@@ -31,6 +31,8 @@
       </ConditionalExpression>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att74o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att75o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att95o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att96o"/>
     </List>
     <ViewComponent gr:x="50" gr:y="280" id="wv3#page9#gctu13p" name="BTN">
       <Events>
