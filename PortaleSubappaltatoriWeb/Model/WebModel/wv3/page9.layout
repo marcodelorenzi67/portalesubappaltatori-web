@@ -59,7 +59,7 @@
                             <mat-panel-description></mat-panel-description>
                           </mat-expansion-panel-header>
                           <div>
-                          	<wd-data-grid elevation="0" cols="main/lst16p/data/_be_att23 | main/lst16p/data/_be_att24 | main/lst16p/data/_be_att88o | main/lst16p/data/_be_att89o | main/lst16p/data/_be_att87o | main/lst16p/data/_be_att25" [rows]="valueOf('main/lst16p/data')" paginator="main/lst16p/paging" [useExcelLikeFilter]="true">
+                          	<wd-data-grid elevation="0" cols="main/lst16p/data/_be_att23 | main/lst16p/data/_be_att24 | main/lst16p/data/_be_att88o | main/lst16p/data/_be_att89o | main/lst16p/data/_be_att87o | main/lst16p/data/_be_att25 | main/lst16p/data/_be_att99o" [rows]="valueOf('main/lst16p/data')" paginator="main/lst16p/paging" [useExcelLikeFilter]="true">
                             <wr-content for="header[_be_att23]">
                               {{ labelOf('.') | wrLocalize }}
                             </wr-content>
@@ -96,6 +96,12 @@
                             <wr-content for="data[_be_att25]">
                               {{ valueOf('.', row) }}
                             </wr-content>
+                            <wr-content for="header[_be_att99o]">
+                              {{ labelOf('.') | wrLocalize }}
+                            </wr-content>
+                            <wr-content for="data[_be_att99o]">
+                              {{ valueOf('.', row) | date:'wr-date' }}
+                            </wr-content>
                           </wd-data-grid>
                           </div>
                         </mat-expansion-panel>
@@ -108,7 +114,7 @@
                   <wd-grid>
                     <wd-row>
                       <wd-cell [width]="12">
-                        <wd-data-grid elevation="0" cols="main/lst9p/data/_be_att74o | main/lst9p/data/_be_att95o | main/lst9p/data/_be_att96o" [expandable]="true" [detailRow]="true" [rows]="valueOf('main/lst9p/data')">
+                        <wd-data-grid elevation="0" cols="main/lst9p/data/_be_att74o | main/lst9p/data/_be_att95o | main/lst9p/data/_be_att96o" [expandable]="true" [detailRow]="true" [rows]="valueOf('main/lst9p/data')" expandRowEvent="main/lst9p/data/oslte101p">
                           <wr-content for="header[_be_att74o]">
                             {{ labelOf('.') | wrLocalize }}
                           </wr-content>
@@ -193,12 +199,15 @@
   <wr-content for="content">
     <wd-card elevation="0">
       <wr-content for="content">
-        <wd-container elements="frm22p/fld57p | frm22p/fld58p">
+        <wd-container elements="frm22p/fld57p | frm22p/fld58p | frm22p/fld81p" elementsOrder="fld57p fld81p fld58p">
           <wr-content for="element[fld57p]">
             <wd-file-input></wd-file-input>
           </wr-content>
           <wr-content for="element[fld58p]">
             <wd-input type="text" [showLabel]="true" appearance="outline"></wd-input>
+          </wr-content>
+          <wr-content for="element[fld81p]">
+            <wd-datepicker appearance="outline"></wd-datepicker>
           </wr-content>
         </wd-container>
       </wr-content>

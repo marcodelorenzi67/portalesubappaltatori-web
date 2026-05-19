@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area3#page22p" name="Dettaglio Fornitore" gr:x="475" gr:y="500">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area3#page22p" name="Dettaglio Fornitore" gr:x="460" gr:y="715">
   <ViewComponents>
-    <Details id="wv2#area3#page22p#dtl6p" name="Dati Anagrafici" gr:x="70" gr:y="175">
+    <Details id="wv2#area3#page22p#dtl6p" name="Dati Anagrafici" gr:x="70" gr:y="200">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls2"/>
       <ConditionalExpression id="wv2#area3#page22p#dtl6p#sc16p" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="wv2#area3#page22p#dtl6p#sc16p#kcond9p" name="KeyCondition" predicate="in" implied="false"/>
@@ -36,7 +36,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att82o"/>
       <DataFlow id="wv2#area3#page22p#dtl6p#df47p" to="wv2#area3#page22p#lst18p" automaticCoupling="true"/>
     </Details>
-    <List id="wv2#area3#page22p#lst11p" gr:x="40" gr:y="325" checkable="false" distinct="false">
+    <List id="wv2#area3#page22p#lst11p" gr:x="40" gr:y="350" checkable="false" distinct="false">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls14o"/>
       <ConditionalExpression id="wv2#area3#page22p#lst11p#sc17p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv2#area3#page22p#lst11p#sc17p#rcond7p" name="Fornitore" predicate="in" implied="false">
@@ -48,7 +48,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att95o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att96o"/>
     </List>
-    <ViewComponent id="wv2#area3#page22p#gctu14p" name="BTN" gr:x="420" gr:y="405">
+    <ViewComponent id="wv2#area3#page22p#gctu14p" name="BTN" gr:x="420" gr:y="430">
       <Events>
         <OnSelectEvent id="wv2#area3#page22p#gctu14p#oslte43p" name="Nuova comunicazione" gr:pinned="true" gr:side="3" gr:pos="1">
           <NavigationFlow id="wv2#area3#page22p#gctu14p#oslte43p#nf74p" to="wv2#area3#page22p#dpg5p" automaticCoupling="true"/>
@@ -74,12 +74,12 @@
         </OnSelectEvent>
       </Events>
     </ViewComponent>
-    <ViewComponent gr:x="270" gr:y="290" id="wv2#area3#page22p#gctu15p" name="ViewComponent">
+    <ViewComponent gr:x="270" gr:y="315" id="wv2#area3#page22p#gctu15p" name="ViewComponent">
       <DataFlow id="wv2#area3#page22p#gctu15p#df34p" to="wv2#area3#page22p#dtl6p">
         <ParameterBinding id="wv2#area3#page22p#gctu15p#df34p#par191p" sourceParameter="wv2#area3#page22p#prd13p" target="wv2#area3#page22p#dtl6p#sc16p#kcond9p._be_att6" name="oid fornitore - KeyCondition"/>
       </DataFlow>
     </ViewComponent>
-    <Form id="wv2#area3#page22p#frm20p" name="Modifica" gr:x="295" gr:y="195">
+    <Form id="wv2#area3#page22p#frm20p" name="Modifica" gr:x="295" gr:y="220">
       <Field id="wv2#area3#page22p#frm20p#fld50p" name="Ragione Sociale" modifiable="true" type="string" validationOrder="wv2#area3#page22p#frm20p#fld50p#mnd39p">
         <VRules>
           <MandatoryValidationRule id="wv2#area3#page22p#frm20p#fld50p#mnd39p" name="Mandatory"/>
@@ -119,7 +119,7 @@
       <Field id="wv2#area3#page22p#frm20p#fld64p" name="Mezzi" modifiable="true" type="boolean"/>
       <Field id="wv2#area3#page22p#frm20p#fld65p" name="Prodotti e Sostanze chimiche" modifiable="true" type="boolean"/>
     </Form>
-    <List gr:x="570" gr:y="420" id="wv2#area3#page22p#lst12p" checkable="false" distinct="false" name="Documenti richiesti" pageSize="15">
+    <List gr:x="570" gr:y="445" id="wv2#area3#page22p#lst12p" checkable="false" distinct="false" name="Documenti richiesti" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
       <ConditionalExpression id="wv2#area3#page22p#lst12p#sc18p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv2#area3#page22p#lst12p#sc18p#rcond8p" name="Fornitore" predicate="in" implied="false">
@@ -145,9 +145,10 @@
           </NavigationFlow>
         </OnSelectEvent>
         <OnSelectEvent id="wv2#area3#page22p#lst12p#oslte62p" name="Approva" validate="true">
-          <NavigationFlow id="wv2#area3#page22p#lst12p#oslte62p#nf99p" to="wv2#area3#act43p">
-            <ParameterBinding id="wv2#area3#page22p#lst12p#oslte62p#nf99p#par285p" sourceValue="true" target="wv2#area3#act43p.PortaleSubappaltatoriDataservice$pdp143o" name="&quot;true&quot; - approva"/>
-            <ParameterBinding id="wv2#area3#page22p#lst12p#oslte62p#nf99p#par286p" source="data._be_att22" target="wv2#area3#act43p.PortaleSubappaltatoriDataservice$pdp140o" name="oid - oid"/>
+          <NavigationFlow id="wv2#area3#page22p#lst12p#oslte62p#nf99p" to="wv2#area3#page22p#dpg12p#frm27p">
+            <ParameterBinding id="wv2#area3#page22p#lst12p#oslte62p#nf99p#par394p" source="data._be_att22" target="{wv2#area3#page22p#dpg12p#frm27p#fld83p}value" name="oid - oid allegato"/>
+            <ParameterBinding id="wv2#area3#page22p#lst12p#oslte62p#nf99p#par395p" source="data._be_att99o" target="{wv2#area3#page22p#dpg12p#frm27p#fld84p}value" name="dataScadenza - Data scadenza"/>
+            <ParameterBinding id="wv2#area3#page22p#lst12p#oslte62p#nf99p#par396p" source="data._be_att24" target="{wv2#area3#page22p#dpg12p#frm27p#fld82p}value" name="descrizione - Descrizione"/>
           </NavigationFlow>
         </OnSelectEvent>
         <OnSelectEvent id="wv2#area3#page22p#lst12p#oslte63p" name="Rigetta" validate="true">
@@ -166,8 +167,9 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att89o"/>
       <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statoallegatoCodice"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
     </List>
-    <List id="wv2#area3#page22p#lst15p" name="Storico documenti" gr:x="355" gr:y="510" checkable="false" distinct="false" pageSize="15">
+    <List id="wv2#area3#page22p#lst15p" name="Storico documenti" gr:x="355" gr:y="535" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
       <ConditionalExpression id="wv2#area3#page22p#lst15p#sc21p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv2#area3#page22p#lst15p#sc21p#rcond13p" name="Fornitore" predicate="in" implied="false">
@@ -190,8 +192,9 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att89o"/>
       <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statoallegatoCodice"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
     </List>
-    <List gr:x="270" gr:y="65" id="wv2#area3#page22p#lst17p" checkable="false" distinct="false" pageSize="5" name="Referenti registrati">
+    <List gr:x="270" gr:y="90" id="wv2#area3#page22p#lst17p" checkable="false" distinct="false" pageSize="5" name="Referenti registrati">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$User"/>
       <ConditionalExpression id="wv2#area3#page22p#lst17p#sc25p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv2#area3#page22p#lst17p#sc25p#rcond17p" name="fornitore" predicate="in" implied="false">
@@ -234,7 +237,7 @@
         </OnSelectEvent>
       </Events>
     </List>
-    <List gr:x="435" gr:y="0" id="wv2#area3#page22p#lst18p" checkable="false" distinct="false" name="Referenti invitati" pageSize="5">
+    <List gr:x="435" gr:y="25" id="wv2#area3#page22p#lst18p" checkable="false" distinct="false" name="Referenti invitati" pageSize="5">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls4"/>
       <ConditionalExpression id="wv2#area3#page22p#lst18p#sc27p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv2#area3#page22p#lst18p#sc27p#rcond18p" name="fornitore" predicate="in" implied="false">
@@ -263,7 +266,7 @@
       </Events>
     </List>
   </ViewComponents>
-  <DialogPage id="wv2#area3#page22p#dpg5p" name="Inserisci comunicazione" gr:x="40" gr:y="445">
+  <DialogPage id="wv2#area3#page22p#dpg5p" name="Inserisci comunicazione" gr:x="40" gr:y="470">
     <ViewComponents>
       <Form id="wv2#area3#page22p#dpg5p#frm18p" name="Nuova comunicazione" gr:x="0" gr:y="0">
         <Field id="wv2#area3#page22p#dpg5p#frm18p#fld41p" name="Oggetto" type="string" modifiable="true" validationOrder="wv2#area3#page22p#dpg5p#frm18p#fld41p#mnd29p">
@@ -297,7 +300,7 @@
       <NavigationFlow id="wv2#area3#page22p#bke1p#nf85p" to="wv2#area3#page18" automaticCoupling="true"/>
     </BackEvent>
   </Events>
-  <DialogPage gr:x="485" gr:y="120" id="wv2#area3#page22p#dpg6p" name="Aggiungi tipo documento">
+  <DialogPage gr:x="485" gr:y="145" id="wv2#area3#page22p#dpg6p" name="Aggiungi tipo documento">
     <ViewComponents>
       <List gr:x="0" gr:y="0" id="wv2#area3#page22p#dpg6p#lst13p" checkable="true" distinct="false" pageSize="10">
         <Events>
@@ -334,7 +337,7 @@
       </ViewComponent>
     </ViewComponents>
   </DialogPage>
-  <DialogPage gr:x="775" gr:y="430" id="wv2#area3#page22p#dpg7p" name="Note Rigetto">
+  <DialogPage gr:x="775" gr:y="455" id="wv2#area3#page22p#dpg7p" name="Note Rigetto">
     <ViewComponents>
       <Form gr:x="0" gr:y="0" id="wv2#area3#page22p#dpg7p#frm21p" name="Nota">
         <Field id="wv2#area3#page22p#dpg7p#frm21p#fld55p" type="text" modifiable="true" name="Note rigetto" validationOrder="wv2#area3#page22p#dpg7p#frm21p#fld55p#mnd46p">
@@ -397,6 +400,25 @@
           </OnSelectEvent>
         </Events>
         <Field id="wv2#area3#page22p#dpg9p#frm23p#fld73p" type="boolean" modifiable="false" name="Invitati"/>
+      </Form>
+    </ViewComponents>
+  </DialogPage>
+  <DialogPage id="wv2#area3#page22p#dpg12p" name="Approva" gr:x="937" gr:y="649">
+    <ViewComponents>
+      <Form id="wv2#area3#page22p#dpg12p#frm27p" name="Nota" gr:x="0" gr:y="0">
+        <Field id="wv2#area3#page22p#dpg12p#frm27p#fld82p" name="Descrizione" type="string" modifiable="true"/>
+        <Field id="wv2#area3#page22p#dpg12p#frm27p#fld83p" name="oid allegato" type="integer" modifiable="false"/>
+        <Field id="wv2#area3#page22p#dpg12p#frm27p#fld84p" name="Data scadenza" type="date" modifiable="true"/>
+        <Events>
+          <OnSelectEvent id="wv2#area3#page22p#dpg12p#frm27p#oslte103p" name="Conferma" validate="true">
+            <NavigationFlow id="wv2#area3#page22p#dpg12p#frm27p#oslte103p#nf134p" to="wv2#area3#act43p">
+              <ParameterBinding id="wv2#area3#page22p#dpg12p#frm27p#oslte103p#nf134p#par397p" sourceValue="true" target="wv2#area3#act43p.PortaleSubappaltatoriDataservice$pdp143o" name="&quot;true&quot; - approva"/>
+              <ParameterBinding id="wv2#area3#page22p#dpg12p#frm27p#oslte103p#nf134p#par398p" source="{wv2#area3#page22p#dpg12p#frm27p#fld83p}value" target="wv2#area3#act43p.PortaleSubappaltatoriDataservice$pdp140o" name="oid allegato - oid"/>
+              <ParameterBinding id="wv2#area3#page22p#dpg12p#frm27p#oslte103p#nf134p#par399p" source="{wv2#area3#page22p#dpg12p#frm27p#fld84p}value" target="wv2#area3#act43p.PortaleSubappaltatoriDataservice$pdp187o" name="Data scadenza - Data scadenza"/>
+              <ParameterBinding id="wv2#area3#page22p#dpg12p#frm27p#oslte103p#nf134p#par400p" source="{wv2#area3#page22p#dpg12p#frm27p#fld82p}value" target="wv2#area3#act43p.PortaleSubappaltatoriDataservice$pdp188o" name="Descrizione - Descrizione"/>
+            </NavigationFlow>
+          </OnSelectEvent>
+        </Events>
       </Form>
     </ViewComponents>
   </DialogPage>

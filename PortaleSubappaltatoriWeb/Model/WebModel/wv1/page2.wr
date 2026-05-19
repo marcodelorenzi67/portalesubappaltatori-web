@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv1#page2" name="Cambio password scaduta" gr:x="460" gr:y="60" protected="true" roles="rl16">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv1#page2" name="Cambio password scaduta" gr:x="500" gr:y="60" protected="true" roles="rl16">
   <ViewComponents>
     <Form id="wv1#page2#frm1" name="Change password" gr:x="20" gr:y="95">
       <Events>

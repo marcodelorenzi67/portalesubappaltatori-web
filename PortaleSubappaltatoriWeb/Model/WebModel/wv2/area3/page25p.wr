@@ -1,0 +1,37 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1520" gr:y="0" id="wv2#area3#page25p" name="Comunicazioni" landmark="true">
+  <ViewComponents>
+    <List id="wv2#area3#page25p#lst21p" gr:x="0" gr:y="85" checkable="false" distinct="false" pageSize="10">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls14o"/>
+      <ConditionalExpression id="wv2#area3#page25p#lst21p#sc31p" defaultPolicy="fill" booleanOperator="and">
+        <AssociationRoleCondition id="wv2#area3#page25p#lst21p#sc31p#rcond26p" name="tenant" predicate="in" implied="false">
+          <AssociationRoleConditionRole classServiceRoleExpr="PortaleSubappaltatoriDataservice$role45o.PortaleSubappaltatoriDataservice$role9"/>
+        </AssociationRoleCondition>
+        <AttributesCondition id="wv2#area3#page25p#lst21p#sc31p#acond18p" name="letta" predicate="eq" booleanOperator="or" implied="false" value="false">
+          <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att98o"/>
+        </AttributesCondition>
+        <AttributesCondition id="wv2#area3#page25p#lst21p#sc31p#acond19p" name="backoffice" predicate="eq" booleanOperator="or" implied="false" value="false">
+          <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att76o"/>
+        </AttributesCondition>
+      </ConditionalExpression>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att74o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att75o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att95o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att96o"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att96o" order="descending"/>
+      <Events>
+        <OnSelectEvent id="wv2#area3#page25p#lst21p#oslte100p" name="Letta" validate="true">
+          <NavigationFlow id="wv2#area3#page25p#lst21p#oslte100p#nf130p" to="wv2#area3#act49p">
+            <ParameterBinding id="wv2#area3#page25p#lst21p#oslte100p#nf130p#par388p" sourceValue="true" target="wv2#area3#act49p.PortaleSubappaltatoriDataservice$pdp182o" name="&quot;true&quot; - Letta"/>
+            <ParameterBinding id="wv2#area3#page25p#lst21p#oslte100p#nf130p#par389p" source="data._be_att73o" target="wv2#area3#act49p.PortaleSubappaltatoriDataservice$pdp181o" name="oid - oid"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </List>
+    <ViewComponent id="wv2#area3#page25p#gctu18p" name="New" gr:x="0" gr:y="0">
+      <DataFlow id="wv2#area3#page25p#gctu18p#df50p" to="wv2#area3#page25p#lst21p">
+        <ParameterBinding id="wv2#area3#page25p#gctu18p#df50p#par387p" sourceParameter="wv2#prd8" target="wv2#area3#page25p#lst21p#sc31p#rcond26p._be_att1" name="Tenant - tenant [oid]"/>
+      </DataFlow>
+    </ViewComponent>
+    <ViewComponent gr:x="10" gr:y="240" id="wv2#area3#page25p#gctu19p" name="ViewComponent"/>
+  </ViewComponents>
+</Page>

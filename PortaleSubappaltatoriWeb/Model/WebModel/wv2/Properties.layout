@@ -18,8 +18,14 @@
         </wd-menu-item>
       </wr-content>
       <wr-content for="menu-item[area3]">
-        <wd-menu-item menuItem="." submenu="./{Landmark}*" [hasSubMenu]="true" color="primary">
+        <wd-menu-item menuItem="." [hasSubMenu]="true" color="primary" submenu="page24p | page18 | page25p" submenuOrder="page24p page18 page25p">
+          <wr-content for="menu-item[page24p]">
+            <wd-menu-item></wd-menu-item>
+          </wr-content>
           <wr-content for="menu-item[page18]">
+            <wd-menu-item></wd-menu-item>
+          </wr-content>
+          <wr-content for="menu-item[page25p]">
             <wd-menu-item></wd-menu-item>
           </wr-content>
         </wd-menu-item>
@@ -30,10 +36,5 @@
     </wd-menu>
   </wr-content>
   <wr-content for="page-content">
-    <wd-card>
-      <wr-content for="content">
-        <wd-container></wd-container>
-      </wr-content>
-    </wd-card>
   </wr-content>
 </wr-page>

@@ -1,0 +1,122 @@
+<wr-page>
+  <wr-content for="breadcrumb"></wr-content>
+  <wr-content for="page-content">
+    <wd-card title="main">
+      <wr-content for="content">
+        <wd-grid>
+          <wd-row>
+            <wd-cell [width]="12">
+              <wd-card elevation="0" actions="main/frm24p/oslte93p">
+                <wr-content for="content">
+                  <wd-grid>
+                    <wd-row>
+                      <wd-cell [width]="4">
+                        <wd-select context="main/frm24p/sfld18p" appearance="outline"></wd-select>
+                      </wd-cell>
+                      <wd-cell [width]="4">
+                        <wd-select context="main/frm24p/sfld17p" appearance="outline"></wd-select>
+                      </wd-cell>
+                      <wd-cell [width]="4">
+                        <wd-select context="main/frm24p/sfld19p" appearance="outline"></wd-select>
+                      </wd-cell>
+                    </wd-row>
+                    <wd-row>
+                      <wd-cell [width]="4">
+                        <wd-datepicker appearance="outline" context="main/frm24p/fld74p"></wd-datepicker>
+                      </wd-cell>
+                      <wd-cell [width]="4">
+                        <wd-datepicker appearance="outline" context="main/frm24p/fld75p"></wd-datepicker>
+                      </wd-cell>
+                    </wd-row>
+                  </wd-grid>
+                </wr-content>
+                <wr-content for="action[oslte93p]">
+                  <wd-button color="primary" iconText="search"></wd-button>
+                </wr-content>
+              </wd-card>
+            </wd-cell>
+          </wd-row>
+          <wd-row>
+            <wd-cell [width]="12">
+              <wd-data-grid elevation="0" cols="main/lst20p/data/_be_att23 | main/lst20p/data/_be_att24 | main/lst20p/data/_be_att97o | main/lst20p/data/_be_att88o | main/lst20p/data/_be_att89o | main/lst20p/data/_be_att36 | main/lst20p/data/_be_att99o" [rows]="valueOf('main/lst20p/data')" events="main/lst20p/data/oslte98p | main/lst20p/data/oslte96p | main/lst20p/data/oslte99p" paginator="main/lst20p/paging">
+                <wr-content for="header[_be_att23]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att23]">
+                  <wd-anchor type="file"></wd-anchor>
+                </wr-content>
+                <wr-content for="header[_be_att24]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att24]">
+                  {{ valueOf('.', row) }}
+                </wr-content>
+                <wr-content for="header[_be_att97o]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att97o]">
+                  {{ valueOf('.', row) }}
+                </wr-content>
+                <wr-content for="header[_be_att88o]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att88o]">
+                  {{ valueOf('.', row) }}
+                </wr-content>
+                <wr-content for="header[_be_att89o]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att89o]">
+                  {{ valueOf('.', row) }}
+                </wr-content>
+                <wr-content for="header[_be_att36]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att36]">
+                  {{ valueOf('.', row) | date:'wr-timestamp' }}
+                </wr-content>
+                <wr-content for="event[oslte98p]">
+                  <wd-button variant="mat-icon-button" color="success" iconText="check" [confirm]="true"></wd-button>
+                </wr-content>
+                <wr-content for="event[oslte96p]">
+                  <wd-button variant="mat-icon-button" color="accent" iconText="clear" [confirm]="true"></wd-button>
+                </wr-content>
+                <wr-content for="event[oslte99p]">
+                  <wd-button variant="mat-icon-button" color="primary" iconText="forward"></wd-button>
+                </wr-content>
+                <wr-content for="header[_be_att99o]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att99o]">
+                  {{ valueOf('.', row) | date:'wr-date' }}
+                </wr-content>
+              </wd-data-grid>
+            </wd-cell>
+          </wd-row>
+        </wd-grid>
+      </wr-content>
+      <wr-content for="title[main]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wr-page>
+<wd-dialog context="main/dpg13p" actions="frm28p/oslte105p">
+  <wr-content for="action[oslte105p]">
+    <wd-button color="success"></wd-button>
+  </wr-content>
+  <wr-content for="content">
+    <wd-card elevation="0">
+      <wr-content for="content">
+        <wd-container elements="frm28p/fld87p | frm28p/fld85p">
+          <wr-content for="element[fld87p]">
+            <wd-datepicker appearance="outline"></wd-datepicker>
+          </wr-content>
+          <wr-content for="element[fld85p]">
+            <wd-input type="text" [showLabel]="true" appearance="outline"></wd-input>
+          </wr-content>
+        </wd-container>
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wd-dialog>

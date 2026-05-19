@@ -1,7 +1,11 @@
 <WebView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="wv1" name="Public" home="wv1#page3" default="wv1#page1" login="wv1#page3" layout:pageTemplate="PortaleSubappaltatoriStyle/login">
-  <Action id="wv1#act1" gr:x="750" gr:y="205" definition="tlads0#ad1">
+  <Action id="wv1#act1" gr:x="250" gr:y="175" definition="tlads0#ad1">
     <Events>
-      <SuccessEvent id="wv1#act1#scce1" definition="tlads0#ad1#spd1"/>
+      <SuccessEvent id="wv1#act1#scce1" definition="tlads0#ad1#spd1">
+        <NavigationFlow id="wv1#act1#scce1#nf118p" to="wv1#page3">
+          <ParameterBinding id="wv1#act1#scce1#nf118p#par364p" sourceValue="operazione.OK" targetParameter="wv1#prd2" name="&quot;operazione.OK&quot; - success message"/>
+        </NavigationFlow>
+      </SuccessEvent>
       <ErrorEvent id="wv1#act1#erre1" definition="tlads0#ad1#epd1">
         <NavigationFlow id="wv1#act1#erre1#nf2" to="wv1#page2">
           <ParameterBinding id="wv1#act1#erre1#nf2#par38" source="tlads0#ad1#epd1#pdp3" targetParameter="wv1#prd3" name="Error Message - error message"/>

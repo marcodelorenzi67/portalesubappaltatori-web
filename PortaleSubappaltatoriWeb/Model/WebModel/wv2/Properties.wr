@@ -10,11 +10,11 @@
     <Parameter id="wv2#prd6" name="success message" type="string"/>
     <Parameter id="wv2#prd8" name="Tenant" type="integer"/>
   </Parameters>
-  <Action id="wv2#act25" gr:x="1740" gr:y="770" definition="tlads0#ad5">
+  <Action id="wv2#act25" gr:x="1840" gr:y="785" definition="tlads0#ad5">
     <Events>
       <ErrorEvent id="wv2#act25#erre36" definition="tlads0#ad5#epd10"/>
       <SuccessEvent id="wv2#act25#scce28" definition="tlads0#ad5#spd9">
-        <NavigationFlow id="wv2#act25#scce28#nf51" to="wv2#area3#page18">
+        <NavigationFlow id="wv2#act25#scce28#nf51" to="wv2#area3#page24p">
           <ParameterBinding id="wv2#act25#scce28#nf51#par119" source="tlads0#ad5#spd9#pdp21" targetParameter="wv2#prd8" name="Oid tenant - Tenant"/>
         </NavigationFlow>
       </SuccessEvent>

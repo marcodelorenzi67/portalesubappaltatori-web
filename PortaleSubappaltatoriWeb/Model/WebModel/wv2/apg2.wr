@@ -50,7 +50,7 @@
         </SelectionField>
         <Events>
           <OnSelectEvent id="wv2#apg2#dpg2#frm12#oslte29" name="Procedi" validate="true">
-            <NavigationFlow id="wv2#apg2#dpg2#frm12#oslte29#nf55" to="wv2#area3#page18">
+            <NavigationFlow id="wv2#apg2#dpg2#frm12#oslte29#nf55" to="wv2#area3#page24p">
               <ParameterBinding id="wv2#apg2#dpg2#frm12#oslte29#nf55#par121" source="{wv2#apg2#dpg2#frm12#sfld7}value._be_pdp67" targetParameter="wv2#prd8" name="Tenant [oid] - Tenant"/>
             </NavigationFlow>
           </OnSelectEvent>

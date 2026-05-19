@@ -48,4 +48,12 @@
       <ErrorEvent id="wv3#act44p#erre67p"/>
     </Events>
   </Action>
+  <Action id="wv3#act50p" gr:x="35" gr:y="315" actionServiceRes="PortaleSubappaltatoriDataservice$ad4o">
+    <Events>
+      <SuccessEvent id="wv3#act50p#scce59p">
+        <NavigationFlow id="wv3#act50p#scce59p#nf133p" to="wv3#page9#gctu13p" automaticCoupling="true"/>
+      </SuccessEvent>
+      <ErrorEvent id="wv3#act50p#erre81p"/>
+    </Events>
+  </Action>
 </WebView>

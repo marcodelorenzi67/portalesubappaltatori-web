@@ -1,4 +1,4 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area3" name="Gestione Fornitori" gr:x="345" gr:y="845" landmark="true" default="wv2#area3#page18" landmarks="wv2#area3#page18">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area3" name="Gestione Fornitori" gr:x="345" gr:y="890" landmark="true" default="wv2#area3#page24p" landmarks="wv2#area3#page18 wv2#area3#page24p wv2#area3#page25p">
   <Action id="wv2#area3#act27p" gr:x="65" gr:y="325" actionServiceRes="PortaleSubappaltatoriDataservice$ada16o">
     <Events>
       <SuccessEvent id="wv2#area3#act27p#scce30p">
@@ -38,7 +38,7 @@
       <ErrorEvent id="wv2#area3#act35p#erre51p"/>
     </Events>
   </Action>
-  <Action id="wv2#area3#act36p" gr:x="880" gr:y="395" actionServiceRes="PortaleSubappaltatoriDataservice$ada23o">
+  <Action id="wv2#area3#act36p" gr:x="735" gr:y="635" actionServiceRes="PortaleSubappaltatoriDataservice$ada23o">
     <Events>
       <SuccessEvent id="wv2#area3#act36p#scce40p">
         <NavigationFlow id="wv2#area3#act36p#scce40p#nf84p" to="wv2#area3#page22p">
@@ -75,7 +75,7 @@
       <ErrorEvent id="wv2#area3#act38p#erre55p" definition="tlads0#ad8p#epd13p"/>
     </Events>
   </Action>
-  <Action id="wv2#area3#act40p" gr:x="1085" gr:y="395" actionServiceRes="PortaleSubappaltatoriDataservice$ada24o">
+  <Action id="wv2#area3#act40p" gr:x="945" gr:y="620" actionServiceRes="PortaleSubappaltatoriDataservice$ada24o">
     <Events>
       <SuccessEvent id="wv2#area3#act40p#scce46p">
         <NavigationFlow id="wv2#area3#act40p#scce46p#nf91p" to="wv2#area3#page22p#lst12p">
@@ -87,7 +87,7 @@
       <ErrorEvent id="wv2#area3#act40p#erre59p"/>
     </Events>
   </Action>
-  <Action id="wv2#area3#act41p" gr:x="755" gr:y="1240" actionServiceRes="PortaleSubappaltatoriDataservice$ada25o">
+  <Action id="wv2#area3#act41p" gr:x="585" gr:y="1600" actionServiceRes="PortaleSubappaltatoriDataservice$ada25o">
     <Events>
       <SuccessEvent id="wv2#area3#act41p#scce47p">
         <NavigationFlow id="wv2#area3#act41p#scce47p#nf95p" to="wv2#area3#page22p#lst12p">
@@ -99,7 +99,7 @@
       <ErrorEvent id="wv2#area3#act41p#erre61p"/>
     </Events>
   </Action>
-  <Action id="wv2#area3#act42p" gr:x="970" gr:y="1240" actionServiceRes="PortaleSubappaltatoriDataservice$ada26o">
+  <Action id="wv2#area3#act42p" gr:x="835" gr:y="1600" actionServiceRes="PortaleSubappaltatoriDataservice$ada26o">
     <Events>
       <SuccessEvent id="wv2#area3#act42p#scce48p">
         <NavigationFlow id="wv2#area3#act42p#scce48p#nf97p" to="wv2#area3#page22p#lst12p">
@@ -110,7 +110,7 @@
       <ErrorEvent id="wv2#area3#act42p#erre63p"/>
     </Events>
   </Action>
-  <Action id="wv2#area3#act43p" gr:x="1235" gr:y="1240" actionServiceRes="PortaleSubappaltatoriDataservice$ad3o">
+  <Action id="wv2#area3#act43p" gr:x="1130" gr:y="1590" actionServiceRes="PortaleSubappaltatoriDataservice$ad3o">
     <Events>
       <SuccessEvent id="wv2#area3#act43p#scce49p">
         <NavigationFlow id="wv2#area3#act43p#scce49p#nf100p" to="wv2#area3#page22p#lst12p">
@@ -125,7 +125,7 @@
       <ErrorEvent id="wv2#area3#act43p#erre65p"/>
     </Events>
   </Action>
-  <Action id="wv2#area3#act45p" gr:x="205" gr:y="595" actionServiceRes="PortaleSubappaltatoriDataservice$ada28o">
+  <Action id="wv2#area3#act45p" gr:x="155" gr:y="595" actionServiceRes="PortaleSubappaltatoriDataservice$ada28o">
     <Events>
       <SuccessEvent id="wv2#area3#act45p#scce52p">
         <NavigationFlow id="wv2#area3#act45p#scce52p#nf111p" to="wv2#area3#page22p">
@@ -140,7 +140,7 @@
       </ErrorEvent>
     </Events>
   </Action>
-  <Action id="wv2#area3#act46p" gr:x="565" gr:y="425" actionServiceRes="PortaleSubappaltatoriDataservice$ada29o">
+  <Action id="wv2#area3#act46p" gr:x="500" gr:y="630" actionServiceRes="PortaleSubappaltatoriDataservice$ada29o">
     <Events>
       <SuccessEvent id="wv2#area3#act46p#scce53p">
         <NavigationFlow id="wv2#area3#act46p#scce53p#nf115p" to="wv2#area3#page22p#lst17p">
@@ -148,6 +148,24 @@
         </NavigationFlow>
       </SuccessEvent>
       <ErrorEvent id="wv2#area3#act46p#erre72p"/>
+    </Events>
+  </Action>
+  <Action id="wv2#area3#act48p" actionServiceRes="PortaleSubappaltatoriDataservice$ad3o" gr:x="1255" gr:y="535">
+    <Events>
+      <SuccessEvent id="wv2#area3#act48p#scce57p">
+        <NavigationFlow id="wv2#area3#act48p#scce57p#nf128p" to="wv2#area3#page24p">
+          <ParameterBinding id="wv2#area3#act48p#scce57p#nf128p#par384p" sourceValue="operazione.OK" targetParameter="wv2#prd6" name="&quot;operazione.OK&quot; - success message"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area3#act48p#erre77p"/>
+    </Events>
+  </Action>
+  <Action id="wv2#area3#act49p" gr:x="1560" gr:y="405" actionServiceRes="PortaleSubappaltatoriDataservice$ada30o">
+    <Events>
+      <SuccessEvent id="wv2#area3#act49p#scce58p">
+        <NavigationFlow id="wv2#area3#act49p#scce58p#nf131p" to="wv2#area3#page25p#gctu19p" automaticCoupling="true"/>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area3#act49p#erre79p"/>
     </Events>
   </Action>
 </Area>

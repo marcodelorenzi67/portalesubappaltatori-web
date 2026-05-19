@@ -33,6 +33,15 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att75o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att95o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att96o"/>
+      <Events>
+        <OnSelectEvent id="wv3#page9#lst9p#oslte101p" name="Letta" validate="true">
+          <NavigationFlow id="wv3#page9#lst9p#oslte101p#nf132p" to="wv3#act50p">
+            <ParameterBinding id="wv3#page9#lst9p#oslte101p#nf132p#par390p" sourceParameter="wv3#prd10p" target="wv3#act50p.PortaleSubappaltatoriDataservice$pdp185o" name="oid Fornitore - fornitore"/>
+            <ParameterBinding id="wv3#page9#lst9p#oslte101p#nf132p#par391p" sourceValue="true" target="wv3#act50p.PortaleSubappaltatoriDataservice$pdp184o" name="&quot;true&quot; - Letta"/>
+            <ParameterBinding id="wv3#page9#lst9p#oslte101p#nf132p#par392p" source="data._be_att73o" target="wv3#act50p.PortaleSubappaltatoriDataservice$pdp183o" name="oid - oid"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
     </List>
     <ViewComponent gr:x="50" gr:y="280" id="wv3#page9#gctu13p" name="BTN">
       <Events>
@@ -98,6 +107,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att89o"/>
       <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statoallegatoCodice"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
     </List>
   </ViewComponents>
   <DialogPage gr:x="225" gr:y="240" id="wv3#page9#dpg4p" name="Inserisci comunicazione">
@@ -142,9 +152,11 @@
               <ParameterBinding id="wv3#page9#dpg8p#frm22p#oslte71p#nf105p#par297p" source="{wv3#page9#dpg8p#frm22p#fld57p}value" target="wv3#act44p.PortaleSubappaltatoriDataservice$pdp146o" name="Allegato - Documento"/>
               <ParameterBinding id="wv3#page9#dpg8p#frm22p#oslte71p#nf105p#par298p" sourceParameter="wv3#prd10p" target="wv3#act44p.PortaleSubappaltatoriDataservice$pdp144o" name="oid Fornitore - fornitore"/>
               <ParameterBinding id="wv3#page9#dpg8p#frm22p#oslte71p#nf105p#par299p" source="{wv3#page9#dpg8p#frm22p#fld59p}value" target="wv3#act44p.PortaleSubappaltatoriDataservice$pdp147o" name="oid allegato - oid"/>
+              <ParameterBinding id="wv3#page9#dpg8p#frm22p#oslte71p#nf105p#par393p" source="{wv3#page9#dpg8p#frm22p#fld81p}value" target="wv3#act44p.PortaleSubappaltatoriDataservice$pdp186o" name="Data scadenza - Data scadenza"/>
             </NavigationFlow>
           </OnSelectEvent>
         </Events>
+        <Field id="wv3#page9#dpg8p#frm22p#fld81p" type="date" modifiable="true" name="Data scadenza"/>
       </Form>
     </ViewComponents>
   </DialogPage>

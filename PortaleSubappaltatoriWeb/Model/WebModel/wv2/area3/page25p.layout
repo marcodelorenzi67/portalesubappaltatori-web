@@ -1,0 +1,55 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-card title="main">
+      <wr-content for="content">
+        <wd-grid>
+          <wd-row>
+            <wd-cell [width]="12">
+              <wd-data-grid elevation="0" cols="main/lst21p/data/_be_att74o | main/lst21p/data/_be_att95o | main/lst21p/data/_be_att96o" [rows]="valueOf('main/lst21p/data')" [expandable]="true" [detailRow]="true" paginator="main/lst21p/paging" expandRowEvent="main/lst21p/data/oslte100p">
+                <wr-content for="header[_be_att74o]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att74o]">
+                  {{ valueOf('.', row) }}
+                </wr-content>
+                <wr-content for="header[_be_att95o]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att95o]">
+                  {{ valueOf('.', row) }}
+                </wr-content>
+                <wr-content for="header[_be_att96o]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att96o]">
+                  {{ valueOf('.', row) | date:'wr-timestamp' }}
+                </wr-content>
+                <wr-content for="detail">
+                  <wd-card elevation="0">
+                    <wr-content for="content">
+                      <wd-container elements="main/lst21p/data/_be_att75o">
+                        <wr-content for="element[_be_att75o]">
+                          <span>
+                            <span class="header">
+                              {{ labelOf('.') | wrLocalize }}
+                            </span>
+                            <span class="value">
+                              {{ valueOf('.', row) }}
+                            </span>
+                          </span>
+                        </wr-content>
+                      </wd-container>
+                    </wr-content>
+                  </wd-card>
+                </wr-content>
+              </wd-data-grid>
+            </wd-cell>
+          </wd-row>
+        </wd-grid>
+      </wr-content>
+      <wr-content for="title[main]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wr-page>
