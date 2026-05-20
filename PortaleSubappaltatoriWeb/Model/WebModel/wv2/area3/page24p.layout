@@ -38,7 +38,7 @@
           </wd-row>
           <wd-row>
             <wd-cell [width]="12">
-              <wd-data-grid elevation="0" cols="main/lst20p/data/_be_att23 | main/lst20p/data/_be_att24 | main/lst20p/data/_be_att97o | main/lst20p/data/_be_att88o | main/lst20p/data/_be_att89o | main/lst20p/data/_be_att36 | main/lst20p/data/_be_att99o" [rows]="valueOf('main/lst20p/data')" events="main/lst20p/data/oslte98p | main/lst20p/data/oslte96p | main/lst20p/data/oslte99p" paginator="main/lst20p/paging">
+              <wd-data-grid elevation="0" cols="main/lst20p/data/_be_att23 | main/lst20p/data/_be_att24 | main/lst20p/data/_be_att97o | main/lst20p/data/_be_att88o | main/lst20p/data/_be_att89o | main/lst20p/data/_be_att36 | main/lst20p/data/_be_att99o" [rows]="valueOf('main/lst20p/data')" events="main/lst20p/data/oslte98p | main/lst20p/data/oslte96p | main/lst20p/data/oslte99p | main/lst20p/data/oslte123p" paginator="main/lst20p/paging">
                 <wr-content for="header[_be_att23]">
                   {{ labelOf('.') | wrLocalize }}
                 </wr-content>
@@ -90,6 +90,9 @@
                 <wr-content for="data[_be_att99o]">
                   {{ valueOf('.', row) | date:'wr-date' }}
                 </wr-content>
+                <wr-content for="event[oslte123p]">
+                  <wd-button variant="mat-icon-button" color="primary" iconText="error_outline"></wd-button>
+                </wr-content>
               </wd-data-grid>
             </wd-cell>
           </wd-row>
@@ -118,5 +121,32 @@
         </wd-container>
       </wr-content>
     </wd-card>
+  </wr-content>
+</wd-dialog>
+<wd-dialog context="main/dpg20p" title=".">
+  <wr-content for="content">
+    <wd-data-grid cols="lst28p/data/_be_pdp202o | lst28p/data/_be_pdp201o | lst28p/data/_be_pdp198o" [rows]="valueOf('lst28p/data')" elevation="0" paginator="lst28p/paging">
+      <wr-content for="header[_be_pdp202o]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_pdp202o]">
+        {{ valueOf('.', row) }}
+      </wr-content>
+      <wr-content for="header[_be_pdp201o]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_pdp201o]">
+        {{ valueOf('.', row) | date:'wr-timestamp' }}
+      </wr-content>
+      <wr-content for="header[_be_pdp198o]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_pdp198o]">
+        {{ valueOf('.', row) }}
+      </wr-content>
+    </wd-data-grid>
+  </wr-content>
+  <wr-content for="title[dpg20p]">
+    {{ labelOf('.') | wrLocalize }}
   </wr-content>
 </wd-dialog>

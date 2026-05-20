@@ -1,0 +1,69 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-card title="main/frm31p" actions="main/frm31p/oslte117p">
+      <wr-content for="content">
+        <wd-grid>
+          <wd-row>
+            <wd-cell [width]="12">
+              <wd-card elevation="0">
+                <wr-content for="content">
+                  <wd-container elements="main/frm31p/fld92p | main/frm31p/fld91p" elementsOrder="fld91p fld92p">
+                    <wr-content for="element[fld92p]">
+                      <wd-textarea appearance="outline"></wd-textarea>
+                    </wr-content>
+                    <wr-content for="element[fld91p]">
+                      <wd-input type="text" [showLabel]="true" appearance="outline"></wd-input>
+                    </wr-content>
+                  </wd-container>
+                </wr-content>
+              </wd-card>
+            </wd-cell>
+          </wd-row>
+          <wd-row>
+            <wd-cell [width]="12">
+              <wd-data-grid elevation="0" cols="main/lst23p/data/_be_pdp190o" [rows]="valueOf('main/lst23p/data')" events="main/lst23p/data/oslte113p" paginator="main/lst23p/paging">
+                <wr-content for="header[_be_pdp190o]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_pdp190o]">
+                  <wd-anchor type="file"></wd-anchor>
+                </wr-content>
+                <wr-content for="event[oslte113p]">
+                  <wd-button variant="mat-icon-button" color="accent" iconText="clear" [confirm]="true"></wd-button>
+                </wr-content>
+                <wr-content for="header-actions">
+                  <wd-button context="main/frm31p/oslte112p" iconText="add" variant="mat-icon-button"></wd-button>
+                </wr-content>
+              </wd-data-grid>
+            </wd-cell>
+          </wd-row>
+        </wd-grid>
+      </wr-content>
+      <wr-content for="action[oslte117p]">
+        <wd-button color="success"></wd-button>
+      </wr-content>
+      <wr-content for="title[frm31p]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+    </wd-card>
+  </wr-content>
+  <wr-content for="breadcrumb">
+    <wd-button context="backEvent" iconText="arrow_back"></wd-button>
+  </wr-content>
+</wr-page>
+<wd-dialog context="main/dpg15p" actions="frm32p/oslte114p">
+  <wr-content for="content">
+    <wd-card elevation="0">
+      <wr-content for="content">
+        <wd-container elements="frm32p/fld93p">
+          <wr-content for="element[fld93p]">
+            <wd-file-input></wd-file-input>
+          </wr-content>
+        </wd-container>
+      </wr-content>
+    </wd-card>
+  </wr-content>
+  <wr-content for="action[oslte114p]">
+    <wd-button color="success"></wd-button>
+  </wr-content>
+</wd-dialog>

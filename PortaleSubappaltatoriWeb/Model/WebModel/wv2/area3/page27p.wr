@@ -1,0 +1,59 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area3#page27p" name="Inserisci comunicazione BO" gr:x="235" gr:y="1325">
+  <ViewComponents>
+    <Form id="wv2#area3#page27p#frm31p" name="Inserisci comunicazione" gr:x="10" gr:y="0">
+      <Field id="wv2#area3#page27p#frm31p#fld91p" name="Oggetto" type="string" modifiable="true" validationOrder="wv2#area3#page27p#frm31p#fld91p#mnd56p">
+        <VRules>
+          <MandatoryValidationRule id="wv2#area3#page27p#frm31p#fld91p#mnd56p" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Field id="wv2#area3#page27p#frm31p#fld92p" name="Note" type="text" modifiable="true" validationOrder="wv2#area3#page27p#frm31p#fld92p#mnd57p">
+        <VRules>
+          <MandatoryValidationRule id="wv2#area3#page27p#frm31p#fld92p#mnd57p" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Events>
+        <OnSelectEvent id="wv2#area3#page27p#frm31p#oslte112p" name="Aggiungi Documento" validate="true">
+          <NavigationFlow id="wv2#area3#page27p#frm31p#oslte112p#nf147p" to="wv2#area3#page27p#dpg15p#frm32p">
+            <ParameterBinding id="wv2#area3#page27p#frm31p#oslte112p#nf147p#par418p" name="NULL - Documento" sourceValue="$$NULL$$" target="{wv2#area3#page27p#dpg15p#frm32p#fld93p}value"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page27p#frm31p#oslte117p" name="Salva" validate="true">
+          <NavigationFlow id="wv2#area3#page27p#frm31p#oslte117p#nf152p" to="wv2#area3#act35p">
+            <ParameterBinding id="wv2#area3#page27p#frm31p#oslte117p#nf152p#par425p" source="{wv2#area3#page27p#frm31p#fld94p}value" target="wv2#area3#act35p.PortaleSubappaltatoriDataservice$pdp105o" name="oid fornitore - fornitore"/>
+            <ParameterBinding id="wv2#area3#page27p#frm31p#oslte117p#nf152p#par426p" source="{wv2#area3#page27p#frm31p#fld92p}value" target="wv2#area3#act35p.PortaleSubappaltatoriDataservice$pdp106o" name="Note - Note"/>
+            <ParameterBinding id="wv2#area3#page27p#frm31p#oslte117p#nf152p#par427p" source="{wv2#area3#page27p#frm31p#fld91p}value" target="wv2#area3#act35p.PortaleSubappaltatoriDataservice$pdp107o" name="Oggetto - Oggetto"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <Field id="wv2#area3#page27p#frm31p#fld94p" type="integer" modifiable="false" name="oid fornitore"/>
+    </Form>
+    <List id="wv2#area3#page27p#lst23p" gr:x="40" gr:y="280" checkable="false" distinct="false" pageSize="5">
+      <DataBinding actionServiceRes="PortaleSubappaltatoriDataservice$adf12o"/>
+      <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp190o"/>
+      <Events>
+        <OnSelectEvent id="wv2#area3#page27p#lst23p#oslte113p" name="Elimina" validate="true">
+          <NavigationFlow id="wv2#area3#page27p#lst23p#oslte113p#nf148p" to="wv2#area3#act54p">
+            <ParameterBinding id="wv2#area3#page27p#lst23p#oslte113p#nf148p#par419p" name="oid - oid" source="data._be_pdp189o" target="wv2#area3#act54p.PortaleSubappaltatoriDataservice$pdp191o"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </List>
+  </ViewComponents>
+  <DialogPage id="wv2#area3#page27p#dpg15p" name="Aggiungi documento" gr:x="0" gr:y="110">
+    <ViewComponents>
+      <Form id="wv2#area3#page27p#dpg15p#frm32p" name="Documento" gr:x="0" gr:y="0">
+        <Field id="wv2#area3#page27p#dpg15p#frm32p#fld93p" name="Documento" type="blob" modifiable="true"/>
+        <Events>
+          <OnSelectEvent id="wv2#area3#page27p#dpg15p#frm32p#oslte114p" name="Salva" validate="true">
+            <NavigationFlow id="wv2#area3#page27p#dpg15p#frm32p#oslte114p#nf149p" to="wv2#area3#act55p">
+              <ParameterBinding id="wv2#area3#page27p#dpg15p#frm32p#oslte114p#nf149p#par420p" name="Documento - Documento" source="{wv2#area3#page27p#dpg15p#frm32p#fld93p}value" target="wv2#area3#act55p.PortaleSubappaltatoriDataservice$pdp193o"/>
+            </NavigationFlow>
+          </OnSelectEvent>
+          <OnSelectEvent id="wv2#area3#page27p#dpg15p#frm32p#oslte115p" name="Annulla" validate="true">
+            <NavigationFlow id="wv2#area3#page27p#dpg15p#frm32p#oslte115p#nf150p" to="wv2#area3#page27p#frm31p" automaticCoupling="true" gr:bendpoints="33,-50,28,65"/>
+          </OnSelectEvent>
+        </Events>
+      </Form>
+    </ViewComponents>
+  </DialogPage>
+</Page>

@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="890" gr:y="0" id="wv2#area3#page24p" name="Documenti da approvare" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1010" gr:y="0" id="wv2#area3#page24p" name="Documenti da approvare" landmark="true">
   <ViewComponents>
     <List id="wv2#area3#page24p#lst20p" name="Documenti in valutazione" gr:x="0" gr:y="100" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
@@ -51,6 +51,9 @@
             <ParameterBinding id="wv2#area3#page24p#lst20p#oslte99p#nf129p#par385p" sourceValue="false" targetParameter="wv2#area3#page22p#prd14p" name="&quot;false&quot; - edit"/>
             <ParameterBinding id="wv2#area3#page24p#lst20p#oslte99p#nf129p#par386p" source="data._be_role11$_be_att6" targetParameter="wv2#area3#page22p#prd13p" name="oid - oid fornitore"/>
           </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page24p#lst20p#oslte123p" name="Dettaglio" validate="true">
+          <NavigationFlow id="wv2#area3#page24p#lst20p#oslte123p#nf160p" to="wv2#area3#page24p#dpg20p#dtl10p" automaticCoupling="true"/>
         </OnSelectEvent>
       </Events>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att23"/>
@@ -117,7 +120,7 @@
       </Form>
     </ViewComponents>
   </DialogPage>
-  <DialogPage id="wv2#area3#page24p#dpg13p" name="Approva" gr:x="395" gr:y="265">
+  <DialogPage id="wv2#area3#page24p#dpg13p" name="Approva" gr:x="375" gr:y="265">
     <ViewComponents>
       <Form id="wv2#area3#page24p#dpg13p#frm28p" name="Nota" gr:x="0" gr:y="0">
         <Field id="wv2#area3#page24p#dpg13p#frm28p#fld85p" name="Descrizione" type="string" modifiable="true"/>
@@ -134,6 +137,27 @@
           </OnSelectEvent>
         </Events>
       </Form>
+    </ViewComponents>
+  </DialogPage>
+  <DialogPage id="wv2#area3#page24p#dpg20p" name="Dettaglio documento" gr:x="65" gr:y="370">
+    <ViewComponents>
+      <List id="wv2#area3#page24p#dpg20p#lst28p" gr:x="0" gr:y="150" checkable="false" distinct="false" pageSize="5">
+        <DataBinding actionServiceRes="PortaleSubappaltatoriDataservice$adf13o"/>
+        <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp198o"/>
+        <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp199o"/>
+        <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp200o"/>
+        <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp201o"/>
+        <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp202o"/>
+      </List>
+      <Details id="wv2#area3#page24p#dpg20p#dtl10p" gr:x="15" gr:y="0">
+        <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
+        <ConditionalExpression id="wv2#area3#page24p#dpg20p#dtl10p#sc36p" defaultPolicy="fill" booleanOperator="and">
+          <KeyCondition id="wv2#area3#page24p#dpg20p#dtl10p#sc36p#kcond16p" name="KeyCondition14" predicate="in" implied="false"/>
+        </ConditionalExpression>
+        <DataFlow id="wv2#area3#page24p#dpg20p#dtl10p#df53p" to="wv2#area3#page24p#dpg20p#lst28p">
+          <ParameterBinding id="wv2#area3#page24p#dpg20p#dtl10p#df53p#par433p" name="oid - documentoOid [integer]" source="data._be_att22" target="_be_pdp197o"/>
+        </DataFlow>
+      </Details>
     </ViewComponents>
   </DialogPage>
 </Page>

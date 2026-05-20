@@ -1,0 +1,58 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="735" gr:y="655" id="wv3#page26p" name="Inserisci comunicazione">
+  <ViewComponents>
+    <Form id="wv3#page26p#frm29p" name="Nuova comunicazione" gr:x="10" gr:y="0">
+      <Field id="wv3#page26p#frm29p#fld88p" name="Oggetto" type="string" modifiable="true" validationOrder="wv3#page26p#frm29p#fld88p#mnd54p">
+        <VRules>
+          <MandatoryValidationRule id="wv3#page26p#frm29p#fld88p#mnd54p" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Field id="wv3#page26p#frm29p#fld89p" name="Note" type="text" modifiable="true" validationOrder="wv3#page26p#frm29p#fld89p#mnd55p">
+        <VRules>
+          <MandatoryValidationRule id="wv3#page26p#frm29p#fld89p#mnd55p" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Events>
+        <OnSelectEvent id="wv3#page26p#frm29p#oslte106p" name="Salva" validate="true">
+          <NavigationFlow id="wv3#page26p#frm29p#oslte106p#nf136p" to="wv3#act34p">
+            <ParameterBinding id="wv3#page26p#frm29p#oslte106p#nf136p#par408p" name="oid Fornitore - fornitore" target="wv3#act34p.PortaleSubappaltatoriDataservice$pdp101o" sourceParameter="wv3#prd10p"/>
+            <ParameterBinding id="wv3#page26p#frm29p#oslte106p#nf136p#par409p" name="Note - Note" source="{wv3#page26p#frm29p#fld89p}value" target="wv3#act34p.PortaleSubappaltatoriDataservice$pdp102o"/>
+            <ParameterBinding id="wv3#page26p#frm29p#oslte106p#nf136p#par410p" name="Oggetto - Oggetto" source="{wv3#page26p#frm29p#fld88p}value" target="wv3#act34p.PortaleSubappaltatoriDataservice$pdp104o"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv3#page26p#frm29p#oslte109p" name="Aggiungi Documento" validate="true">
+          <NavigationFlow id="wv3#page26p#frm29p#oslte109p#nf142p" to="wv3#page26p#dpg14p#frm30p">
+            <ParameterBinding id="wv3#page26p#frm29p#oslte109p#nf142p#par415p" sourceValue="$$NULL$$" target="{wv3#page26p#dpg14p#frm30p#fld90p}value" name="NULL - Documento"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </Form>
+    <List gr:x="40" gr:y="280" id="wv3#page26p#lst22p" checkable="false" distinct="false" pageSize="5">
+      <DataBinding actionServiceRes="PortaleSubappaltatoriDataservice$adf12o"/>
+      <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp190o"/>
+      <Events>
+        <OnSelectEvent id="wv3#page26p#lst22p#oslte107p" name="Elimina" validate="true">
+          <NavigationFlow id="wv3#page26p#lst22p#oslte107p#nf138p" to="wv3#act52p">
+            <ParameterBinding id="wv3#page26p#lst22p#oslte107p#nf138p#par411p" source="data._be_pdp189o" target="wv3#act52p.PortaleSubappaltatoriDataservice$pdp191o" name="oid - oid"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </List>
+  </ViewComponents>
+  <DialogPage gr:x="0" gr:y="110" id="wv3#page26p#dpg14p" name="Aggiungi documento">
+    <ViewComponents>
+      <Form gr:x="0" gr:y="0" id="wv3#page26p#dpg14p#frm30p" name="Documento">
+        <Field id="wv3#page26p#dpg14p#frm30p#fld90p" type="blob" modifiable="true" name="Documento"/>
+        <Events>
+          <OnSelectEvent id="wv3#page26p#dpg14p#frm30p#oslte108p" name="Salva" validate="true">
+            <NavigationFlow id="wv3#page26p#dpg14p#frm30p#oslte108p#nf141p" to="wv3#act53p">
+              <ParameterBinding id="wv3#page26p#dpg14p#frm30p#oslte108p#nf141p#par414p" source="{wv3#page26p#dpg14p#frm30p#fld90p}value" target="wv3#act53p.PortaleSubappaltatoriDataservice$pdp193o" name="Documento - Documento"/>
+            </NavigationFlow>
+          </OnSelectEvent>
+          <OnSelectEvent id="wv3#page26p#dpg14p#frm30p#oslte110p" name="Annulla" validate="true">
+            <NavigationFlow id="wv3#page26p#dpg14p#frm30p#oslte110p#nf143p" to="wv3#page26p#frm29p" automaticCoupling="true" gr:bendpoints="24,-42,19,73"/>
+          </OnSelectEvent>
+        </Events>
+      </Form>
+    </ViewComponents>
+  </DialogPage>
+</Page>

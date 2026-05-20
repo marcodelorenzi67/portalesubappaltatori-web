@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="540" gr:y="0" id="wv2#area3#page18" name="Elenco Fornitori" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="660" gr:y="0" id="wv2#area3#page18" name="Elenco Fornitori" landmark="true">
   <ViewComponents>
     <List gr:x="0" gr:y="110" id="wv2#area3#page18#lst8" checkable="false" distinct="false" pageSize="20">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls2"/>

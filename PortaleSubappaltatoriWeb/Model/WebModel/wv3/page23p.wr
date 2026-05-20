@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1090" gr:y="375" id="wv3#page23p" name="Il mio profilo">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1215" gr:y="375" id="wv3#page23p" name="Il mio profilo">
   <ViewComponents>
     <Details id="wv3#page23p#dtl7p" name="Dati Anagrafici" gr:x="0" gr:y="0">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls2"/>
