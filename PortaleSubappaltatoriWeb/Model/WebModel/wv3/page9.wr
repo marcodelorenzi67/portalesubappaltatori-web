@@ -56,11 +56,11 @@
           <NavigationFlow id="wv3#page9#gctu13p#oslte41p#nf71p" to="wv3#act51p" automaticCoupling="true"/>
         </OnSelectEvent>
         <OnSelectEvent id="wv3#page9#gctu13p#oslte136p" name="Nuovo Documento aggiuntivo">
-          <NavigationFlow id="wv3#page9#gctu13p#oslte136p#nf167p" to="wv3#page9#dpg21p" automaticCoupling="true"/>
+          <NavigationFlow id="wv3#page9#gctu13p#oslte136p#nf167p" to="wv3#page28p" automaticCoupling="true"/>
         </OnSelectEvent>
       </Events>
     </ViewComponent>
-    <List id="wv3#page9#lst14p" name="Documenti richiesti" gr:x="225" gr:y="15" checkable="false" distinct="false" pageSize="15">
+    <List id="wv3#page9#lst14p" name="Documenti richiesti" gr:x="225" gr:y="10" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
       <ConditionalExpression id="wv3#page9#lst14p#sc20p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv3#page9#lst14p#sc20p#rcond11p" name="Fornitore" predicate="in" implied="false">
@@ -135,7 +135,10 @@
         <AttributesCondition id="wv3#page9#lst30p#sc38p#acond25p" name="Corrente" predicate="eq" booleanOperator="or" implied="false" value="true">
           <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att35"/>
         </AttributesCondition>
-        <AttributesCondition id="wv3#page9#lst30p#sc38p#acond27p" name="cod macrotipologia" predicate="neq" booleanOperator="or" implied="false" value="${macroTipologia.aziendali}|${macroTipologia.personali}">
+        <AttributesCondition id="wv3#page9#lst30p#sc38p#acond27p" name="cod macrotipologia AZ" predicate="neq" booleanOperator="and" implied="false" value="${macroTipologia.aziendali}">
+          <AttributesConditionAttr classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role21.PortaleSubappaltatoriDataservice$role23.PortaleSubappaltatoriDataservice$att43" alias="macrocategoriaCodice"/>
+        </AttributesCondition>
+        <AttributesCondition id="wv3#page9#lst30p#sc38p#acond38p" name="cod macrotipologia PE" predicate="neq" booleanOperator="and" implied="false" value="${macroTipologia.personali}">
           <AttributesConditionAttr classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role21.PortaleSubappaltatoriDataservice$role23.PortaleSubappaltatoriDataservice$att43" alias="macrocategoriaCodice"/>
         </AttributesCondition>
       </ConditionalExpression>
@@ -150,6 +153,21 @@
       <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statoallegatoCodice"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
+      <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role21.PortaleSubappaltatoriDataservice$role23.PortaleSubappaltatoriDataservice$att43" alias="macrocategoriaCodice"/>
+      <Events>
+        <OnSelectEvent id="wv3#page9#lst30p#oslte143p" name="Invia" validate="true">
+          <NavigationFlow id="wv3#page9#lst30p#oslte143p#nf178p" to="wv3#act44p">
+            <ParameterBinding id="wv3#page9#lst30p#oslte143p#nf178p#par467p" sourceParameter="wv3#prd10p" target="wv3#act44p.PortaleSubappaltatoriDataservice$pdp144o" name="oid Fornitore - fornitore"/>
+            <ParameterBinding id="wv3#page9#lst30p#oslte143p#nf178p#par468p" source="data._be_att22" target="wv3#act44p.PortaleSubappaltatoriDataservice$pdp147o" name="oid - oid"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv3#page9#lst30p#oslte144p" name="Elimina" validate="true">
+          <NavigationFlow id="wv3#page9#lst30p#oslte144p#nf179p" to="wv3#act62p">
+            <ParameterBinding id="wv3#page9#lst30p#oslte144p#nf179p#par469p" sourceParameter="wv3#prd10p" target="wv3#act62p.PortaleSubappaltatoriDataservice$pdp214o" name="oid Fornitore - fornitore"/>
+            <ParameterBinding id="wv3#page9#lst30p#oslte144p#nf179p#par470p" source="data._be_att22" target="wv3#act62p.PortaleSubappaltatoriDataservice$pdp213o" name="oid - oid"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
     </List>
   </ViewComponents>
   <DialogPage gr:x="580" gr:y="40" id="wv3#page9#dpg8p" name="Carica allegato">
@@ -193,19 +211,30 @@
   <DialogPage gr:x="440" gr:y="415" id="wv3#page9#dpg21p" name="Documento Aggiuntivo">
     <ViewComponents>
       <Form gr:x="0" gr:y="0" id="wv3#page9#dpg21p#frm33p" name="Dati">
-        <SelectionField id="wv3#page9#dpg21p#frm33p#sfld20p" optionsDistinct="false" emptyOption="true" name="Macro categoria">
+        <SelectionField id="wv3#page9#dpg21p#frm33p#sfld20p" optionsDistinct="false" emptyOption="true" name="Macro categoria" validationOrder="wv3#page9#dpg21p#frm33p#sfld20p#mnd60p">
           <OptionsDataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls9"/>
           <OptionsConditionalExpression id="wv3#page9#dpg21p#frm33p#sfld20p#sc41p" defaultPolicy="fill" booleanOperator="and">
-            <AttributesCondition id="wv3#page9#dpg21p#frm33p#sfld20p#sc41p#acond32p" name="codice" predicate="neq" booleanOperator="or" implied="false" value="${macroTipologia.aziendali}|${macroTipologia.personali}">
+            <AttributesCondition id="wv3#page9#dpg21p#frm33p#sfld20p#sc41p#acond32p" name="codice AZ" predicate="neq" booleanOperator="and" implied="false" value="${macroTipologia.aziendali}">
               <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att43"/>
             </AttributesCondition>
             <AttributesCondition id="wv3#page9#dpg21p#frm33p#sfld20p#sc41p#acond33p" name="attivo" predicate="eq" booleanOperator="or" implied="false" value="true">
               <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att44"/>
             </AttributesCondition>
+            <AttributesCondition id="wv3#page9#dpg21p#frm33p#sfld20p#sc41p#acond37p" name="codice PE" predicate="neq" booleanOperator="and" implied="false" value="${macroTipologia.personali}">
+              <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att43"/>
+            </AttributesCondition>
           </OptionsConditionalExpression>
           <OptionsAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att42"/>
+          <Events>
+            <OnSelectEvent id="wv3#page9#dpg21p#frm33p#sfld20p#oslte141p" name="OnChangeMacroCategoria">
+              <NavigationFlow id="wv3#page9#dpg21p#frm33p#sfld20p#oslte141p#nf173p" to="wv3#page9#dpg21p#frm33p#sfld21p" automaticCoupling="true"/>
+            </OnSelectEvent>
+          </Events>
+          <VRules>
+            <MandatoryValidationRule id="wv3#page9#dpg21p#frm33p#sfld20p#mnd60p" name="Mandatory"/>
+          </VRules>
         </SelectionField>
-        <SelectionField id="wv3#page9#dpg21p#frm33p#sfld21p" name="Categoria" optionsDistinct="false" emptyOption="true">
+        <SelectionField id="wv3#page9#dpg21p#frm33p#sfld21p" name="Categoria" optionsDistinct="false" emptyOption="true" validationOrder="wv3#page9#dpg21p#frm33p#sfld21p#mnd58p">
           <OptionsDataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls18o"/>
           <OptionsAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att106o"/>
           <OptionsConditionalExpression id="wv3#page9#dpg21p#frm33p#sfld21p#sc43p" defaultPolicy="fill" booleanOperator="and">
@@ -213,14 +242,52 @@
               <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role53o"/>
             </AssociationRoleCondition>
           </OptionsConditionalExpression>
+          <VRules>
+            <MandatoryValidationRule id="wv3#page9#dpg21p#frm33p#sfld21p#mnd58p" name="Mandatory"/>
+          </VRules>
         </SelectionField>
         <Field id="wv3#page9#dpg21p#frm33p#fld95p" type="string" modifiable="true" name="Seriale"/>
         <Field id="wv3#page9#dpg21p#frm33p#fld96p" type="string" modifiable="true" name="Identificativo"/>
         <Field id="wv3#page9#dpg21p#frm33p#fld97p" type="string" modifiable="true" name="Modello"/>
         <Events>
-          <OnSelectEvent id="wv3#page9#dpg21p#frm33p#oslte137p" name="Conferma" validate="true" gr:pinned="true" gr:side="1" gr:pos="0"/>
+          <OnSelectEvent id="wv3#page9#dpg21p#frm33p#oslte137p" name="Conferma" validate="true" gr:pinned="true" gr:side="1" gr:pos="0">
+            <NavigationFlow id="wv3#page9#dpg21p#frm33p#oslte137p#nf176p" to="wv3#act61p">
+              <ParameterBinding id="wv3#page9#dpg21p#frm33p#oslte137p#nf176p#par458p" sourceParameter="wv3#prd10p" target="wv3#act61p.PortaleSubappaltatoriDataservice$pdp205o" name="oid Fornitore - Fornitore.oid"/>
+              <ParameterBinding id="wv3#page9#dpg21p#frm33p#oslte137p#nf176p#par459p" source="{wv3#page9#dpg21p#frm33p#fld96p}value" target="wv3#act61p.PortaleSubappaltatoriDataservice$pdp208o" name="Identificativo - Identificativo"/>
+              <ParameterBinding id="wv3#page9#dpg21p#frm33p#oslte137p#nf176p#par460p" sourceValue="false" target="wv3#act61p.PortaleSubappaltatoriDataservice$pdp206o" name="&quot;false&quot; - Mandatory"/>
+              <ParameterBinding id="wv3#page9#dpg21p#frm33p#oslte137p#nf176p#par461p" source="{wv3#page9#dpg21p#frm33p#fld97p}value" target="wv3#act61p.PortaleSubappaltatoriDataservice$pdp209o" name="Modello - Modello"/>
+              <ParameterBinding id="wv3#page9#dpg21p#frm33p#oslte137p#nf176p#par462p" source="{wv3#page9#dpg21p#frm33p#fld95p}value" target="wv3#act61p.PortaleSubappaltatoriDataservice$pdp211o" name="Seriale - Seriale"/>
+              <ParameterBinding id="wv3#page9#dpg21p#frm33p#oslte137p#nf176p#par463p" sourceParameter="wv3#prd9p" target="wv3#act61p.PortaleSubappaltatoriDataservice$pdp203o" name="Tenant - Tenant"/>
+              <ParameterBinding id="wv3#page9#dpg21p#frm33p#oslte137p#nf176p#par466p" source="{wv3#page9#dpg21p#frm33p#sfld21p}value._be_att105o" target="wv3#act61p.PortaleSubappaltatoriDataservice$pdp212o" name="Categoria [oid] - Categoria.oid(DocumentiToCategoria)"/>
+            </NavigationFlow>
+          </OnSelectEvent>
+          <OnSelectEvent id="wv3#page9#dpg21p#frm33p#oslte142p" name="OnChangeCategoria" validate="false">
+            <NavigationFlow id="wv3#page9#dpg21p#frm33p#oslte142p#nf174p" to="wv3#act60p">
+              <ParameterBinding id="wv3#page9#dpg21p#frm33p#oslte142p#nf174p#par453p" source="{wv3#page9#dpg21p#frm33p#sfld21p}value._be_att105o" target="wv3#act60p.tlads0#ad9p#ipd9p#pdp44p" name="Categoria [oid] - categoria oid"/>
+              <ParameterBinding id="wv3#page9#dpg21p#frm33p#oslte142p#nf174p#par454p" source="{wv3#page9#dpg21p#frm33p#sfld20p}value._be_att41" target="wv3#act60p.tlads0#ad9p#ipd9p#pdp43p" name="Macro categoria [oid] - macrocategoria oid"/>
+            </NavigationFlow>
+          </OnSelectEvent>
         </Events>
       </Form>
+      <MultipleForm gr:x="110" gr:y="5" id="wv3#page9#dpg21p#mfrm1p" checkable="false" minLength="0">
+        <MultipleFormRow id="wv3#page9#dpg21p#mfrm1p#mfrow1p">
+          <Field id="wv3#page9#dpg21p#mfrm1p#mfrow1p#fld101p" modifiable="true" name="Descrizione" type="string">
+            <VRules/>
+          </Field>
+          <Field id="wv3#page9#dpg21p#mfrm1p#mfrow1p#fld102p" modifiable="true" name="Documento" type="blob">
+            <VRules/>
+          </Field>
+          <Field id="wv3#page9#dpg21p#mfrm1p#mfrow1p#fld103p" modifiable="false" name="oid tipologia" type="integer"/>
+          <Field id="wv3#page9#dpg21p#mfrm1p#mfrow1p#fld104p" modifiable="false" name="Tipologia" type="string"/>
+          <Field id="wv3#page9#dpg21p#mfrm1p#mfrow1p#fld105p" type="date" modifiable="true" name="Data scadenza"/>
+        </MultipleFormRow>
+        <DataFlow id="wv3#page9#dpg21p#mfrm1p#df57p" to="wv3#act61p">
+          <ParameterBinding id="wv3#page9#dpg21p#mfrm1p#df57p#par479p" source="value.wv3#page9#dpg21p#mfrm1p#mfrow1p#fld105p" target="wv3#act61p.PortaleSubappaltatoriDataservice$pdp221o" name="Data scadenza [all rows] - Data scadenza"/>
+          <ParameterBinding id="wv3#page9#dpg21p#mfrm1p#df57p#par480p" source="value.wv3#page9#dpg21p#mfrm1p#mfrow1p#fld101p" target="wv3#act61p.PortaleSubappaltatoriDataservice$pdp210o" name="Descrizione [all rows] - Descrizione"/>
+          <ParameterBinding id="wv3#page9#dpg21p#mfrm1p#df57p#par481p" source="value.wv3#page9#dpg21p#mfrm1p#mfrow1p#fld102p" target="wv3#act61p.PortaleSubappaltatoriDataservice$pdp220o" name="Documento [all rows] - Documento"/>
+          <ParameterBinding id="wv3#page9#dpg21p#mfrm1p#df57p#par482p" source="value.wv3#page9#dpg21p#mfrm1p#mfrow1p#fld103p" target="wv3#act61p.PortaleSubappaltatoriDataservice$pdp204o" name="oid tipologia [all rows] - Tipologia Allegati.oid(AllegatiToTipologia Allegati)"/>
+        </DataFlow>
+      </MultipleForm>
     </ViewComponents>
   </DialogPage>
 </Page>

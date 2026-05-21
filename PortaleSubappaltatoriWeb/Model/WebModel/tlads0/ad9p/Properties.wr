@@ -1,0 +1,27 @@
+<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ad9p" name="OnChange categoria" defaultSuccessPortDefinition="tlads0#ad9p#spd17p" defaultErrorPortDefinition="tlads0#ad9p#epd14p">
+  <Operations/>
+  <InputPortDefinition id="tlads0#ad9p#ipd9p" gr:x="0" gr:y="30">
+    <SuccessFlow id="tlads0#ad9p#ipd9p#sf33p" to="tlads0#ad9p#act65p">
+      <ParameterBinding id="tlads0#ad9p#ipd9p#sf33p#par473p" source="tlads0#ad9p#ipd9p#pdp44p" target="tlads0#ad9p#act65p.PortaleSubappaltatoriDataservice$pdp217o" name="categoria oid - categoria [oid]"/>
+      <ParameterBinding id="tlads0#ad9p#ipd9p#sf33p#par474p" source="tlads0#ad9p#ipd9p#pdp43p" target="tlads0#ad9p#act65p.PortaleSubappaltatoriDataservice$pdp216o" name="macrocategoria oid - macrotipologia [oid]"/>
+    </SuccessFlow>
+    <PortDefinitionParameter id="tlads0#ad9p#ipd9p#pdp44p" name="categoria oid"/>
+    <PortDefinitionParameter id="tlads0#ad9p#ipd9p#pdp43p" name="macrocategoria oid"/>
+  </InputPortDefinition>
+  <SuccessPortDefinition id="tlads0#ad9p#spd17p" name="Success Port" gr:x="0" gr:y="30">
+    <PortDefinitionParameter id="tlads0#ad9p#spd17p#pdp48p" array="true" name="Descrizione tipologia"/>
+    <PortDefinitionParameter id="tlads0#ad9p#spd17p#pdp49p" array="true" name="oid tipologia"/>
+  </SuccessPortDefinition>
+  <ErrorPortDefinition id="tlads0#ad9p#epd14p" name="Error Port" gr:x="0" gr:y="300"/>
+  <Action id="tlads0#ad9p#act65p" actionServiceRes="PortaleSubappaltatoriDataservice$adf15o" gr:x="385" gr:y="150">
+    <Events>
+      <SuccessEvent id="tlads0#ad9p#act65p#scce77p">
+        <SuccessFlow id="tlads0#ad9p#act65p#scce77p#sf34p" to="tlads0#ad9p#spd17p">
+          <ParameterBinding id="tlads0#ad9p#act65p#scce77p#sf34p#par475p" source="PortaleSubappaltatoriDataservice$pdp218o" target="tlads0#ad9p#spd17p#pdp48p" name="Descrizione - Descrizione"/>
+          <ParameterBinding id="tlads0#ad9p#act65p#scce77p#sf34p#par476p" source="PortaleSubappaltatoriDataservice$pdp219o" target="tlads0#ad9p#spd17p#pdp49p" name="oid - oid"/>
+        </SuccessFlow>
+      </SuccessEvent>
+      <ErrorEvent id="tlads0#ad9p#act65p#erre110p"/>
+    </Events>
+  </Action>
+</ActionDefinition>

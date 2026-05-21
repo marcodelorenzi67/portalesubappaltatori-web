@@ -139,7 +139,7 @@
       </Form>
     </ViewComponents>
   </DialogPage>
-  <DialogPage id="wv2#area3#page24p#dpg20p" name="Dettaglio documento" gr:x="65" gr:y="370">
+  <DialogPage id="wv2#area3#page24p#dpg20p" name="Dettaglio documento" gr:x="70" gr:y="370">
     <ViewComponents>
       <List id="wv2#area3#page24p#dpg20p#lst28p" gr:x="0" gr:y="150" checkable="false" distinct="false" pageSize="5">
         <DataBinding actionServiceRes="PortaleSubappaltatoriDataservice$adf13o"/>

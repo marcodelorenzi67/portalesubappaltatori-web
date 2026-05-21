@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="735" gr:y="655" id="wv3#page26p" name="Inserisci comunicazione">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="730" gr:y="820" id="wv3#page26p" name="Inserisci comunicazione">
   <ViewComponents>
     <Form id="wv3#page26p#frm29p" name="Nuova comunicazione" gr:x="10" gr:y="0">
       <Field id="wv3#page26p#frm29p#fld88p" name="Oggetto" type="string" modifiable="true" validationOrder="wv3#page26p#frm29p#fld88p#mnd54p">

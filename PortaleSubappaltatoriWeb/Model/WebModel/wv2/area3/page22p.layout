@@ -20,6 +20,18 @@
                                     Anagrafica Azienda
                                   </h2>
                                 </wd-cell>
+                                <wd-cell [width]="3"></wd-cell>
+                                <wd-cell [width]="3"></wd-cell>
+                                <wd-cell [width]="3">
+                                  <wd-grid>
+                                    <wd-row>
+                                      <wd-cell [width]="6"></wd-cell>
+                                      <wd-cell [width]="6">
+                                        <wd-button context="main/gctu14p/oslte47p" iconText="border_color" color="accent" iconPosition="left"></wd-button>
+                                      </wd-cell>
+                                    </wd-row>
+                                  </wd-grid>
+                                </wd-cell>
                               </wd-row>
                               <wd-row>
                                 <wd-cell [width]="3">
@@ -191,9 +203,6 @@
                                 </wd-cell>
                               </wd-row>
                             </wd-grid>
-                          </wr-content>
-                          <wr-content for="header-actions">
-                            <wd-button context="main/gctu14p/oslte47p" iconText="border_color" color="accent"></wd-button>
                           </wr-content>
                         </wd-card>
                       </wd-cell>
@@ -371,7 +380,9 @@
                     </wd-row>
                   </wd-grid>
                 </mat-tab>
-                <mat-tab [label]="'Documentazione aggiuntiva' | wrLocalize"></mat-tab>
+                <mat-tab [label]="'Documentazione aggiuntiva' | wrLocalize">
+                  <wd-data-grid></wd-data-grid>
+                </mat-tab>
                 <mat-tab [label]="'Comunicazioni' | wrLocalize">
                   <wd-grid>
                     <wd-row>

@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area3#page22p" name="Dettaglio Fornitore" gr:x="565" gr:y="930">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area3#page22p" name="Dettaglio Fornitore" gr:x="615" gr:y="930">
   <ViewComponents>
     <Details id="wv2#area3#page22p#dtl6p" name="Dati Anagrafici" gr:x="85" gr:y="200">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls2"/>
@@ -14,7 +14,7 @@
         <ParameterBinding id="wv2#area3#page22p#dtl6p#df35p#par341p" source="data._be_att80o" target="{wv2#area3#page22p#frm20p#fld64p}value" name="mezzi - Mezzi"/>
         <ParameterBinding id="wv2#area3#page22p#dtl6p#df35p#par342p" source="data._be_att82o" target="{wv2#area3#page22p#frm20p#fld65p}value" name="prodottiESostanzeChimiche - Prodotti e Sostanze chimiche"/>
       </DataFlow>
-      <DataFlow id="wv2#area3#page22p#dtl6p#df39p" to="wv2#area3#page22p#lst12p">
+      <DataFlow id="wv2#area3#page22p#dtl6p#df39p" to="wv2#area3#page22p#lst12p" gr:bendpoints="214,158,-386,-117">
         <ParameterBinding id="wv2#area3#page22p#dtl6p#df39p#par260p" source="data._be_att6" target="wv2#area3#page22p#lst12p#sc18p#rcond8p._be_att6" name="oid - Fornitore [oid]"/>
         <ParameterBinding id="wv2#area3#page22p#dtl6p#df39p#par261p" sourceParameter="wv2#prd8" target="wv2#area3#page22p#lst12p#sc18p#rcond9p._be_att1" name="Tenant - Tenant [oid]"/>
       </DataFlow>
@@ -297,8 +297,14 @@
         <AttributesCondition id="wv2#area3#page22p#lst32p#sc40p#acond30p" name="Corrente" predicate="eq" booleanOperator="or" implied="false" value="true">
           <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att35"/>
         </AttributesCondition>
-        <AttributesCondition id="wv2#area3#page22p#lst32p#sc40p#acond31p" name="cod macrotipologia" predicate="neq" booleanOperator="or" implied="false" value="${macroTipologia.aziendali}|${macroTipologia.personali}">
+        <AttributesCondition id="wv2#area3#page22p#lst32p#sc40p#acond39p" name="cod macrotipologia AZ" predicate="neq" booleanOperator="and" implied="false" value="${macroTipologia.aziendali}">
           <AttributesConditionAttr classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role21.PortaleSubappaltatoriDataservice$role23.PortaleSubappaltatoriDataservice$att43" alias="macrocategoriaCodice"/>
+        </AttributesCondition>
+        <AttributesCondition id="wv2#area3#page22p#lst32p#sc40p#acond40p" name="cod macrotipologia PE" predicate="neq" booleanOperator="and" implied="false" value="${macroTipologia.personali}">
+          <AttributesConditionAttr classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role21.PortaleSubappaltatoriDataservice$role23.PortaleSubappaltatoriDataservice$att43" alias="macrocategoriaCodice"/>
+        </AttributesCondition>
+        <AttributesCondition id="wv2#area3#page22p#lst32p#sc40p#acond41p" name="codice stato" predicate="neq" booleanOperator="or" implied="false" value="${statoAllegato.bozza}">
+          <AttributesConditionAttr classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statoallegatoCodice"/>
         </AttributesCondition>
       </ConditionalExpression>
       <Events>
@@ -329,6 +335,9 @@
       <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statoallegatoCodice"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att107o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att108o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att109o"/>
     </List>
   </ViewComponents>
   <Parameters>

@@ -1,0 +1,11 @@
+{
+	"widgets": {
+		"WebDefault:dialog": {
+			"minWidth": {
+				"attributes": {
+					"[minWidth]": "800"
+				}
+			}
+		}
+	}
+}
