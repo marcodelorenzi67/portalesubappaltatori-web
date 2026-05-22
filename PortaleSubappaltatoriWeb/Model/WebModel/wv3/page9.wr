@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="245" gr:y="0" id="wv3#page9" name="La mia Area Privata">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="170" gr:y="10" id="wv3#page9" name="La mia Area Privata">
   <ViewComponents>
     <Details gr:x="55" gr:y="0" id="wv3#page9#dtl5p" name="Dati Anagrafici">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls2"/>
@@ -24,6 +24,11 @@
       <DataFlow id="wv3#page9#dtl5p#df54p" to="wv3#page9#lst30p">
         <ParameterBinding id="wv3#page9#dtl5p#df54p#par435p" name="oid - Fornitore [oid]" source="data._be_att6" target="wv3#page9#lst30p#sc38p#rcond31p._be_att6"/>
         <ParameterBinding id="wv3#page9#dtl5p#df54p#par436p" name="Tenant - Tenant [oid]" target="wv3#page9#lst30p#sc38p#rcond32p._be_att1" sourceParameter="wv3#prd9p"/>
+      </DataFlow>
+      <DataFlow id="wv3#page9#dtl5p#df69p" to="wv3#page9#lst35p" automaticCoupling="true"/>
+      <DataFlow id="wv3#page9#dtl5p#df70p" to="wv3#page9#lst36p">
+        <ParameterBinding id="wv3#page9#dtl5p#df70p#par565p" name="oid - Fornitore [oid]" source="data._be_att6" target="wv3#page9#lst36p#sc54p#rcond48p._be_att6"/>
+        <ParameterBinding id="wv3#page9#dtl5p#df70p#par566p" name="Tenant - Tenant [oid]" target="wv3#page9#lst36p#sc54p#rcond49p._be_att1" sourceParameter="wv3#prd9p"/>
       </DataFlow>
     </Details>
     <List gr:x="10" gr:y="150" id="wv3#page9#lst9p" checkable="false" distinct="false">
@@ -172,6 +177,63 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att108o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att109o"/>
     </List>
+    <List id="wv3#page9#lst35p" name="Personale" gr:x="765" gr:y="440" checkable="false" distinct="false" pageSize="15">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls20o"/>
+      <ConditionalExpression id="wv3#page9#lst35p#sc53p" defaultPolicy="fill" booleanOperator="and">
+        <AssociationRoleCondition id="wv3#page9#lst35p#sc53p#rcond47p" name="fornitore" predicate="in" implied="false">
+          <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role59o"/>
+        </AssociationRoleCondition>
+      </ConditionalExpression>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att114o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att115o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att116o"/>
+      <Events>
+        <OnSelectEvent id="wv3#page9#lst35p#oslte161p" name="Gestisci documenti" validate="true">
+          <NavigationFlow id="wv3#page9#lst35p#oslte161p#nf197p" to="wv3#page9#lst36p" automaticCoupling="true"/>
+        </OnSelectEvent>
+      </Events>
+    </List>
+    <List id="wv3#page9#lst36p" name="Documenti personale" gr:x="390" gr:y="455" checkable="false" distinct="false" pageSize="15">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
+      <ConditionalExpression id="wv3#page9#lst36p#sc54p" defaultPolicy="fill" booleanOperator="and">
+        <AssociationRoleCondition id="wv3#page9#lst36p#sc54p#rcond48p" name="Fornitore" predicate="in" implied="false">
+          <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role11"/>
+        </AssociationRoleCondition>
+        <AssociationRoleCondition id="wv3#page9#lst36p#sc54p#rcond49p" name="Tenant" predicate="in" implied="false">
+          <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role37"/>
+        </AssociationRoleCondition>
+        <AttributesCondition id="wv3#page9#lst36p#sc54p#acond47p" name="Corrente" predicate="eq" booleanOperator="or" implied="false" value="true">
+          <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att35"/>
+        </AttributesCondition>
+        <AttributesCondition id="wv3#page9#lst36p#sc54p#acond48p" name="codice stato" predicate="neq" booleanOperator="or" implied="false" value="${statoAllegato.bozza}">
+          <AttributesConditionAttr classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statoallegatoCodice"/>
+        </AttributesCondition>
+        <AttributesCondition id="wv3#page9#lst36p#sc54p#acond50p" name="cod macrotipologia" predicate="eq" booleanOperator="or" implied="false" value="${macroTipologia.personali}">
+          <AttributesConditionAttr classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role21.PortaleSubappaltatoriDataservice$role23.PortaleSubappaltatoriDataservice$att43" alias="macrocategoriaCodice"/>
+        </AttributesCondition>
+        <AssociationRoleCondition id="wv3#page9#lst36p#sc54p#rcond50p" name="personale" predicate="in" implied="false">
+          <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role61o"/>
+        </AssociationRoleCondition>
+      </ConditionalExpression>
+      <Events>
+        <OnSelectEvent id="wv3#page9#lst36p#oslte160p" name="Carica allegato" validate="true">
+          <NavigationFlow id="wv3#page9#lst36p#oslte160p#nf196p" to="wv3#page9#dpg8p#frm22p">
+            <ParameterBinding id="wv3#page9#lst36p#oslte160p#nf196p#par564p" name="oid - oid allegato" source="data._be_att22" target="{wv3#page9#dpg8p#frm22p#fld59p}value"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att23"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att24"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att25"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att35"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att36"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att87o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att88o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att89o"/>
+      <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statoallegatoCodice"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
+    </List>
   </ViewComponents>
   <DialogPage gr:x="580" gr:y="40" id="wv3#page9#dpg8p" name="Carica allegato">
     <ViewComponents>
@@ -211,7 +273,7 @@
       </List>
     </ViewComponents>
   </DialogPage>
-  <DialogPage gr:x="440" gr:y="415" id="wv3#page9#dpg21p" name="Documento Aggiuntivo">
+  <DialogPage gr:x="300" gr:y="685" id="wv3#page9#dpg21p" name="Documento Aggiuntivo">
     <ViewComponents>
       <Form gr:x="0" gr:y="0" id="wv3#page9#dpg21p#frm33p" name="Dati">
         <SelectionField id="wv3#page9#dpg21p#frm33p#sfld20p" optionsDistinct="false" emptyOption="true" name="Macro categoria" validationOrder="wv3#page9#dpg21p#frm33p#sfld20p#mnd60p">

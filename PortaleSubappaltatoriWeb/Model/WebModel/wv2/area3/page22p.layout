@@ -453,6 +453,107 @@
                     </wr-content>
                   </wd-data-grid>
                 </mat-tab>
+                <mat-tab [label]="'Personale' | wrLocalize">
+                  <wd-grid>
+                    <wd-row>
+                      <wd-cell [width]="6">
+                        <wd-data-grid elevation="0" cols="main/lst33p/data/_be_att114o | main/lst33p/data/_be_att115o | main/lst33p/data/_be_att116o" [rows]="valueOf('main/lst33p/data')" title="main/lst33p" paginator="main/lst33p/paging" events="main/lst33p/data/oslte155p | main/lst33p/data/oslte153p">
+                          <wr-content for="header[_be_att114o]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att114o]">
+                            {{ valueOf('.', row) }}
+                          </wr-content>
+                          <wr-content for="header[_be_att115o]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att115o]">
+                            {{ valueOf('.', row) }}
+                          </wr-content>
+                          <wr-content for="header[_be_att116o]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att116o]">
+                            {{ valueOf('.', row) }}
+                          </wr-content>
+                          <wr-content for="title[lst33p]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="event[oslte155p]">
+                            <wd-button variant="mat-icon-button" color="primary" iconText="create"></wd-button>
+                          </wr-content>
+                          <wr-content for="event[oslte153p]">
+                            <wd-button variant="mat-icon-button" color="primary" iconText="format_list_bulleted"></wd-button>
+                          </wr-content>
+                          <wr-content for="header-actions">
+                            <wd-button context="main/gctu14p/oslte154p" iconText="add" color="success"></wd-button>
+                          </wr-content>
+                        </wd-data-grid>
+                      </wd-cell>
+                      <wd-cell [width]="6" *ngIf="valueOf('/main/prd15p')">
+                        <wd-data-grid elevation="0" cols="main/lst34p/data/_be_att23 | main/lst34p/data/_be_att24 | main/lst34p/data/_be_att99o | main/lst34p/data/_be_att88o | main/lst34p/data/_be_att89o | main/lst34p/data/_be_att87o" [rows]="valueOf('main/lst34p/data')" title="main/lst34p" events="main/lst34p/data/oslte152p | main/lst34p/data/oslte151p | main/lst34p/data/oslte148p | main/lst34p/data/oslte149p | main/lst34p/data/oslte150p" paginator="main/lst34p/paging">
+                          <wr-content for="header[_be_att23]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att23]">
+                            <wd-anchor type="file"></wd-anchor>
+                          </wr-content>
+                          <wr-content for="header[_be_att24]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att24]">
+                            {{ valueOf('.', row) }}
+                          </wr-content>
+                          <wr-content for="header[_be_att99o]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att99o]">
+                            {{ valueOf('.', row) | date:'wr-date' }}
+                          </wr-content>
+                          <wr-content for="header[_be_att88o]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att88o]">
+                            {{ valueOf('.', row) }}
+                          </wr-content>
+                          <wr-content for="header[_be_att89o]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att89o]">
+                            {{ valueOf('.', row) }}
+                          </wr-content>
+                          <wr-content for="header[_be_att87o]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att87o]">
+                            {{ valueOf('.', row) }}
+                          </wr-content>
+                          <wr-content for="title[lst34p]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="header-actions">
+                            <wd-button context="main/gctu14p/oslte157p" color="success" iconText="add"></wd-button>
+                          </wr-content>
+                          <wr-content for="event[oslte152p]">
+                            <wd-button variant="mat-icon-button" color="primary" iconText="remove" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst34p/data/statoallegatoCodice', row) === 'B' &amp;&amp; !valueOf('/main/lst34p/data/_be_att90o', row)"></wd-button>
+                          </wr-content>
+                          <wr-content for="event[oslte151p]">
+                            <wd-button variant="mat-icon-button" color="primary" iconText="send" [disabled]="valueOf('/main/dtl6p/data/statoregistrazioneCodice') != 'R'" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst34p/data/statoallegatoCodice', row) === 'B'"></wd-button>
+                          </wr-content>
+                          <wr-content for="event[oslte148p]">
+                            <wd-button variant="mat-icon-button" color="success" iconText="check" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst34p/data/statoallegatoCodice', row) === 'V'"></wd-button>
+                          </wr-content>
+                          <wr-content for="event[oslte149p]">
+                            <wd-button variant="mat-icon-button" color="accent" iconText="clear" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst34p/data/statoallegatoCodice', row) === 'V'"></wd-button>
+                          </wr-content>
+                          <wr-content for="event[oslte150p]">
+                            <wd-button variant="mat-icon-button" color="primary" iconText="info_outline"></wd-button>
+                          </wr-content>
+                        </wd-data-grid>
+                      </wd-cell>
+                    </wd-row>
+                  </wd-grid>
+                </mat-tab>
                 <mat-tab [label]="'Comunicazioni' | wrLocalize">
                   <wd-grid>
                     <wd-row>
@@ -647,5 +748,27 @@
         </wd-cell>
       </wd-row>
     </wd-grid>
+  </wr-content>
+</wd-dialog>
+<wd-dialog context="main/dpg22p">
+  <wr-content for="content">
+    <wd-card elevation="0" actions="frm35p/oslte156p">
+      <wr-content for="content">
+        <wd-container elements="frm35p/fld116p | frm35p/fld115p | frm35p/fld114p">
+          <wr-content for="element[fld116p]">
+            <wd-input type="text" [showLabel]="true" appearance="outline"></wd-input>
+          </wr-content>
+          <wr-content for="element[fld115p]">
+            <wd-input type="text" [showLabel]="true" appearance="outline"></wd-input>
+          </wr-content>
+          <wr-content for="element[fld114p]">
+            <wd-input type="text" [showLabel]="true" appearance="outline"></wd-input>
+          </wr-content>
+        </wd-container>
+      </wr-content>
+      <wr-content for="action[oslte156p]">
+        <wd-button color="success"></wd-button>
+      </wr-content>
+    </wd-card>
   </wr-content>
 </wd-dialog>
