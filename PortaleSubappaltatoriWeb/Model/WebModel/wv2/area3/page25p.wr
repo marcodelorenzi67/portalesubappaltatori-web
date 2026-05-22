@@ -27,7 +27,7 @@
         </OnSelectEvent>
       </Events>
     </List>
-    <ViewComponent id="wv2#area3#page25p#gctu18p" name="New" gr:x="180" gr:y="160">
+    <ViewComponent id="wv2#area3#page25p#gctu18p" name="New" gr:x="180" gr:y="170">
       <DataFlow id="wv2#area3#page25p#gctu18p#df50p" to="wv2#area3#page25p#lst21p">
         <ParameterBinding id="wv2#area3#page25p#gctu18p#df50p#par387p" sourceParameter="wv2#prd8" target="wv2#area3#page25p#lst21p#sc31p#rcond26p._be_att1" name="Tenant - tenant [oid]"/>
       </DataFlow>

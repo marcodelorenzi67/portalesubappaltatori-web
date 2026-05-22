@@ -87,7 +87,7 @@
       <ErrorEvent id="wv2#area3#act40p#erre59p"/>
     </Events>
   </Action>
-  <Action id="wv2#area3#act43p" gr:x="1260" gr:y="1935" actionServiceRes="PortaleSubappaltatoriDataservice$ad3o">
+  <Action id="wv2#area3#act43p" gr:x="1260" gr:y="1925" actionServiceRes="PortaleSubappaltatoriDataservice$ad3o">
     <Events>
       <SuccessEvent id="wv2#area3#act43p#scce49p">
         <NavigationFlow id="wv2#area3#act43p#scce49p#nf100p" to="wv2#area3#page22p#lst12p">
@@ -97,6 +97,10 @@
         <DataFlow id="wv2#area3#act43p#scce49p#df43p" to="wv2#area3#page22p#lst15p">
           <ParameterBinding id="wv2#area3#act43p#scce49p#df43p#par303p" sourceParameter="wv2#area3#page22p#prd13p" target="wv2#area3#page22p#lst15p#sc21p#rcond13p._be_att6" name="oid fornitore - Fornitore [oid]"/>
           <ParameterBinding id="wv2#area3#act43p#scce49p#df43p#par304p" sourceParameter="wv2#prd8" target="wv2#area3#page22p#lst15p#sc21p#rcond14p._be_att1" name="Tenant - Tenant [oid]"/>
+        </DataFlow>
+        <DataFlow id="wv2#area3#act43p#scce49p#df61p" to="wv2#area3#page22p#lst32p">
+          <ParameterBinding id="wv2#area3#act43p#scce49p#df61p#par522p" sourceParameter="wv2#area3#page22p#prd13p" target="wv2#area3#page22p#lst32p#sc40p#rcond35p._be_att6" name="oid fornitore - Fornitore [oid]"/>
+          <ParameterBinding id="wv2#area3#act43p#scce49p#df61p#par523p" sourceParameter="wv2#prd8" target="wv2#area3#page22p#lst32p#sc40p#rcond36p._be_att1" name="Tenant - Tenant [oid]"/>
         </DataFlow>
       </SuccessEvent>
       <ErrorEvent id="wv2#area3#act43p#erre65p"/>
@@ -127,7 +131,7 @@
       <ErrorEvent id="wv2#area3#act46p#erre72p"/>
     </Events>
   </Action>
-  <Action id="wv2#area3#act48p" actionServiceRes="PortaleSubappaltatoriDataservice$ad3o" gr:x="1750" gr:y="705">
+  <Action id="wv2#area3#act48p" actionServiceRes="PortaleSubappaltatoriDataservice$ad3o" gr:x="1695" gr:y="685">
     <Events>
       <SuccessEvent id="wv2#area3#act48p#scce57p">
         <NavigationFlow id="wv2#area3#act48p#scce57p#nf128p" to="wv2#area3#page24p">
@@ -183,7 +187,7 @@
       <ErrorEvent id="wv2#area3#act57p#erre96p"/>
     </Events>
   </Action>
-  <Action id="wv2#area3#act58p" gr:x="965" gr:y="1940" actionServiceRes="PortaleSubappaltatoriDataservice$ada26o">
+  <Action id="wv2#area3#act58p" gr:x="965" gr:y="1925" actionServiceRes="PortaleSubappaltatoriDataservice$ada26o">
     <Events>
       <SuccessEvent id="wv2#area3#act58p#scce68p">
         <NavigationFlow id="wv2#area3#act58p#scce68p#nf170p" to="wv2#area3#page22p#lst12p">
@@ -194,7 +198,7 @@
       <ErrorEvent id="wv2#area3#act58p#erre99p"/>
     </Events>
   </Action>
-  <Action id="wv2#area3#act59p" gr:x="705" gr:y="1940" actionServiceRes="PortaleSubappaltatoriDataservice$ada25o">
+  <Action id="wv2#area3#act59p" gr:x="705" gr:y="1925" actionServiceRes="PortaleSubappaltatoriDataservice$ada25o">
     <Events>
       <SuccessEvent id="wv2#area3#act59p#scce69p">
         <NavigationFlow id="wv2#area3#act59p#scce69p#nf171p" to="wv2#area3#page22p#lst12p">

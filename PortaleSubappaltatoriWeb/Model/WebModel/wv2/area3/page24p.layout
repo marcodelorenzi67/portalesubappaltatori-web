@@ -150,3 +150,19 @@
     {{ labelOf('.') | wrLocalize }}
   </wr-content>
 </wd-dialog>
+<wd-dialog context="main/dpg11p" actions="frm26p/oslte97p">
+  <wr-content for="content">
+    <wd-card elevation="0">
+      <wr-content for="content">
+        <wd-container elements="frm26p/fld78p">
+          <wr-content for="element[fld78p]">
+            <wd-textarea appearance="outline"></wd-textarea>
+          </wr-content>
+        </wd-container>
+      </wr-content>
+    </wd-card>
+  </wr-content>
+  <wr-content for="action[oslte97p]">
+    <wd-button color="success"></wd-button>
+  </wr-content>
+</wd-dialog>

@@ -1,5 +1,5 @@
 <WebView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv3" name="Fornitori" home="wv3#act30p">
-  <Action id="wv3#act29p" definition="tlads0#ad3" gr:x="1440" gr:y="400">
+  <Action id="wv3#act29p" definition="tlads0#ad3" gr:x="1570" gr:y="410">
     <Events>
       <SuccessEvent id="wv3#act29p#scce32p" definition="tlads0#ad3#spd3"/>
       <ErrorEvent id="wv3#act29p#erre41p" definition="tlads0#ad3#epd5"/>
@@ -28,7 +28,7 @@
       </SuccessEvent>
     </Events>
   </Action>
-  <Action id="wv3#act34p" gr:x="225" gr:y="700" actionServiceRes="PortaleSubappaltatoriDataservice$ada21o">
+  <Action id="wv3#act34p" gr:x="225" gr:y="695" actionServiceRes="PortaleSubappaltatoriDataservice$ada21o">
     <Events>
       <SuccessEvent id="wv3#act34p#scce38p">
         <NavigationFlow id="wv3#act34p#scce38p#nf73p" to="wv3#page9#dtl5p">
@@ -56,7 +56,7 @@
       <ErrorEvent id="wv3#act50p#erre81p"/>
     </Events>
   </Action>
-  <Action id="wv3#act51p" gr:x="445" gr:y="700" actionServiceRes="PortaleSubappaltatoriDataservice$ada31o">
+  <Action id="wv3#act51p" gr:x="445" gr:y="695" actionServiceRes="PortaleSubappaltatoriDataservice$ada31o">
     <Events>
       <SuccessEvent id="wv3#act51p#scce60p">
         <NavigationFlow id="wv3#act51p#scce60p#nf137p" to="wv3#page26p" automaticCoupling="true"/>
@@ -84,30 +84,12 @@
       <ErrorEvent id="wv3#act53p#erre87p"/>
     </Events>
   </Action>
-  <Action id="wv3#act60p" gr:x="680" gr:y="730" definition="tlads0#ad9p">
+  <Action id="wv3#act60p" gr:x="680" gr:y="695" definition="tlads0#ad9p">
     <Events>
       <SuccessEvent id="wv3#act60p#scce70p" definition="tlads0#ad9p#spd17p">
-        <NavigationFlow id="wv3#act60p#scce70p#nf175p" to="wv3#page28p#frm34p"/>
-        <DataFlow id="wv3#act60p#scce70p#df56p" to="wv3#page9#dpg21p#mfrm1p">
-          <ParameterBinding id="wv3#act60p#scce70p#df56p#par477p" source="tlads0#ad9p#spd17p#pdp49p" target="value.wv3#page9#dpg21p#mfrm1p#mfrow1p#fld103p" name="oid tipologia - oid tipologia [all rows]"/>
-          <ParameterBinding id="wv3#act60p#scce70p#df56p#par478p" source="tlads0#ad9p#spd17p#pdp48p" target="value.wv3#page9#dpg21p#mfrm1p#mfrow1p#fld104p" name="Descrizione tipologia - Tipologia [all rows]"/>
-        </DataFlow>
-        <DataFlow id="wv3#act60p#scce70p#df59p" to="wv3#page28p#mfrm2p">
-          <ParameterBinding id="wv3#act60p#scce70p#df59p#par496p" name="oid tipologia - oid tipologia [all rows]" source="tlads0#ad9p#spd17p#pdp49p" target="value.wv3#page28p#mfrm2p#mfrow2p#fld111p"/>
-          <ParameterBinding id="wv3#act60p#scce70p#df59p#par497p" name="Descrizione tipologia - Tipologia [all rows]" source="tlads0#ad9p#spd17p#pdp48p" target="value.wv3#page28p#mfrm2p#mfrow2p#fld112p"/>
-        </DataFlow>
+        <NavigationFlow id="wv3#act60p#scce70p#nf175p" to="wv3#page9#dpg21p#frm33p"/>
       </SuccessEvent>
       <ErrorEvent id="wv3#act60p#erre101p" definition="tlads0#ad9p#epd14p"/>
-    </Events>
-  </Action>
-  <Action id="wv3#act61p" gr:x="1125" gr:y="655" actionServiceRes="PortaleSubappaltatoriDataservice$ad5o">
-    <Events>
-      <SuccessEvent id="wv3#act61p#scce71p">
-        <NavigationFlow id="wv3#act61p#scce71p#nf177p" to="wv3#page9#dtl5p">
-          <ParameterBinding id="wv3#act61p#scce71p#nf177p#par465p" source="PortaleSubappaltatoriDataservice$pdp207o" target="wv3#page9#dtl5p#sc14p#kcond8p._be_att6" name="Fornitore.oid - KeyCondition"/>
-        </NavigationFlow>
-      </SuccessEvent>
-      <ErrorEvent id="wv3#act61p#erre103p"/>
     </Events>
   </Action>
   <Action id="wv3#act62p" gr:x="-55" gr:y="550" actionServiceRes="PortaleSubappaltatoriDataservice$ad6o">
@@ -118,6 +100,16 @@
         </NavigationFlow>
       </SuccessEvent>
       <ErrorEvent id="wv3#act62p#erre105p"/>
+    </Events>
+  </Action>
+  <Action id="wv3#act68p" gr:x="910" gr:y="695" definition="tlads0#ad10p">
+    <Events>
+      <SuccessEvent id="wv3#act68p#scce81p" definition="tlads0#ad10p#spd18p">
+        <NavigationFlow id="wv3#act68p#scce81p#nf184p" to="wv3#page9#dtl5p">
+          <ParameterBinding id="wv3#act68p#scce81p#nf184p#par520p" name="Fornitore.oid - KeyCondition" source="tlads0#ad10p#spd18p#pdp61p" target="wv3#page9#dtl5p#sc14p#kcond8p._be_att6"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv3#act68p#erre114p" definition="tlads0#ad10p#epd15p"/>
     </Events>
   </Action>
 </WebView>

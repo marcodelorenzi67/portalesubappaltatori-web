@@ -1,0 +1,54 @@
+<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ad10p" name="Inserisci documentazione aggiuntiva" defaultSuccessPortDefinition="tlads0#ad10p#spd18p" defaultErrorPortDefinition="tlads0#ad10p#epd15p">
+  <Operations/>
+  <InputPortDefinition id="tlads0#ad10p#ipd10p" gr:x="0" gr:y="30">
+    <SuccessFlow id="tlads0#ad10p#ipd10p#sf35p" to="tlads0#ad10p#act66p">
+      <ParameterBinding id="tlads0#ad10p#ipd10p#sf35p#par508p" source="tlads0#ad10p#ipd10p#pdp59p" target="tlads0#ad10p#act66p.PortaleSubappaltatoriDataservice$pdp217o" name="Categoria.oid(DocumentiToCategoria) - categoria [oid]"/>
+      <ParameterBinding id="tlads0#ad10p#ipd10p#sf35p#par509p" source="tlads0#ad10p#ipd10p#pdp60p" target="tlads0#ad10p#act66p.PortaleSubappaltatoriDataservice$pdp216o" name="macrotipologia [oid] - macrotipologia [oid]"/>
+    </SuccessFlow>
+    <DataFlow id="tlads0#ad10p#ipd10p#df60p" to="tlads0#ad10p#act67p" gr:bendpoints="38.0 78.0">
+      <ParameterBinding id="tlads0#ad10p#ipd10p#df60p#par498p" source="tlads0#ad10p#ipd10p#pdp50p" target="tlads0#ad10p#act67p.PortaleSubappaltatoriDataservice$pdp203o" name="Tenant - Tenant"/>
+      <ParameterBinding id="tlads0#ad10p#ipd10p#df60p#par499p" source="tlads0#ad10p#ipd10p#pdp51p" target="tlads0#ad10p#act67p.PortaleSubappaltatoriDataservice$pdp210o" name="Descrizione - Descrizione"/>
+      <ParameterBinding id="tlads0#ad10p#ipd10p#df60p#par500p" source="tlads0#ad10p#ipd10p#pdp52p" target="tlads0#ad10p#act67p.PortaleSubappaltatoriDataservice$pdp221o" name="Data scadenza - Data scadenza"/>
+      <ParameterBinding id="tlads0#ad10p#ipd10p#df60p#par501p" source="tlads0#ad10p#ipd10p#pdp53p" target="tlads0#ad10p#act67p.PortaleSubappaltatoriDataservice$pdp209o" name="Modello - Modello"/>
+      <ParameterBinding id="tlads0#ad10p#ipd10p#df60p#par502p" source="tlads0#ad10p#ipd10p#pdp54p" target="tlads0#ad10p#act67p.PortaleSubappaltatoriDataservice$pdp211o" name="Seriale - Seriale"/>
+      <ParameterBinding id="tlads0#ad10p#ipd10p#df60p#par503p" source="tlads0#ad10p#ipd10p#pdp55p" target="tlads0#ad10p#act67p.PortaleSubappaltatoriDataservice$pdp205o" name="Fornitore.oid - Fornitore.oid"/>
+      <ParameterBinding id="tlads0#ad10p#ipd10p#df60p#par505p" source="tlads0#ad10p#ipd10p#pdp57p" target="tlads0#ad10p#act67p.PortaleSubappaltatoriDataservice$pdp208o" name="Identificativo - Identificativo"/>
+      <ParameterBinding id="tlads0#ad10p#ipd10p#df60p#par506p" source="tlads0#ad10p#ipd10p#pdp58p" target="tlads0#ad10p#act67p.PortaleSubappaltatoriDataservice$pdp206o" name="Mandatory - Mandatory"/>
+      <ParameterBinding id="tlads0#ad10p#ipd10p#df60p#par507p" source="tlads0#ad10p#ipd10p#pdp59p" target="tlads0#ad10p#act67p.PortaleSubappaltatoriDataservice$pdp212o" name="Categoria.oid(DocumentiToCategoria) - Categoria.oid(DocumentiToCategoria)"/>
+    </DataFlow>
+    <PortDefinitionParameter id="tlads0#ad10p#ipd10p#pdp50p" array="true" name="Tenant"/>
+    <PortDefinitionParameter id="tlads0#ad10p#ipd10p#pdp51p" array="true" name="Descrizione"/>
+    <PortDefinitionParameter id="tlads0#ad10p#ipd10p#pdp52p" array="true" name="Data scadenza"/>
+    <PortDefinitionParameter id="tlads0#ad10p#ipd10p#pdp53p" array="false" name="Modello"/>
+    <PortDefinitionParameter id="tlads0#ad10p#ipd10p#pdp54p" array="false" name="Seriale"/>
+    <PortDefinitionParameter id="tlads0#ad10p#ipd10p#pdp55p" array="false" name="Fornitore.oid"/>
+    <PortDefinitionParameter id="tlads0#ad10p#ipd10p#pdp57p" array="false" name="Identificativo"/>
+    <PortDefinitionParameter id="tlads0#ad10p#ipd10p#pdp58p" array="false" name="Mandatory"/>
+    <PortDefinitionParameter id="tlads0#ad10p#ipd10p#pdp59p" array="false" name="Categoria.oid(DocumentiToCategoria)"/>
+    <PortDefinitionParameter id="tlads0#ad10p#ipd10p#pdp60p" array="false" name="macrotipologia [oid]"/>
+  </InputPortDefinition>
+  <SuccessPortDefinition id="tlads0#ad10p#spd18p" name="Success Port" gr:x="0" gr:y="30">
+    <PortDefinitionParameter id="tlads0#ad10p#spd18p#pdp61p" array="false" name="Fornitore.oid"/>
+  </SuccessPortDefinition>
+  <ErrorPortDefinition id="tlads0#ad10p#epd15p" name="Error Port" gr:x="0" gr:y="130"/>
+  <Action id="tlads0#ad10p#act66p" actionServiceRes="PortaleSubappaltatoriDataservice$adf15o" gr:x="95" gr:y="25">
+    <Events>
+      <SuccessEvent id="tlads0#ad10p#act66p#scce79p">
+        <SuccessFlow id="tlads0#ad10p#act66p#scce79p#sf36p" to="tlads0#ad10p#act67p">
+          <ParameterBinding id="tlads0#ad10p#act66p#scce79p#sf36p#par510p" source="PortaleSubappaltatoriDataservice$pdp219o" target="tlads0#ad10p#act67p.PortaleSubappaltatoriDataservice$pdp204o" name="oid - Tipologia Allegati.oid(AllegatiToTipologia Allegati)"/>
+        </SuccessFlow>
+      </SuccessEvent>
+      <ErrorEvent id="tlads0#ad10p#act66p#erre112p"/>
+    </Events>
+  </Action>
+  <Action id="tlads0#ad10p#act67p" gr:x="305" gr:y="175" actionServiceRes="PortaleSubappaltatoriDataservice$ad5o">
+    <Events>
+      <SuccessEvent id="tlads0#ad10p#act67p#scce80p">
+        <SuccessFlow id="tlads0#ad10p#act67p#scce80p#sf37p" to="tlads0#ad10p#spd18p">
+          <ParameterBinding id="tlads0#ad10p#act67p#scce80p#sf37p#par519p" source="PortaleSubappaltatoriDataservice$pdp207o" target="tlads0#ad10p#spd18p#pdp61p" name="Fornitore.oid - Fornitore.oid"/>
+        </SuccessFlow>
+      </SuccessEvent>
+      <ErrorEvent id="tlads0#ad10p#act67p#erre113p"/>
+    </Events>
+  </Action>
+</ActionDefinition>

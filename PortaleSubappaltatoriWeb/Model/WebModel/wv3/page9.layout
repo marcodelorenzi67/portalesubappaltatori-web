@@ -122,7 +122,7 @@
                   <wd-grid>
                     <wd-row>
                       <wd-cell [width]="12">
-                        <wd-data-grid cols="main/lst30p/data/_be_att23 | main/lst30p/data/_be_att24 | main/lst30p/data/_be_att99o | main/lst30p/data/_be_att88o | main/lst30p/data/_be_att89o | main/lst30p/data/_be_att87o" [rows]="valueOf('main/lst30p/data')" paginator="main/lst30p/paging" elevation="0" title="main/lst30p" events="main/lst30p/data/oslte144p | main/lst30p/data/oslte143p">
+                        <wd-data-grid cols="main/lst30p/data/_be_att23 | main/lst30p/data/_be_att24 | main/lst30p/data/_be_att99o | main/lst30p/data/_be_att88o | main/lst30p/data/_be_att89o | main/lst30p/data/_be_att87o | main/lst30p/data/_be_att112o | main/lst30p/data/_be_att108o | main/lst30p/data/_be_att109o | main/lst30p/data/_be_att107o" [rows]="valueOf('main/lst30p/data')" paginator="main/lst30p/paging" elevation="0" title="main/lst30p" events="main/lst30p/data/oslte144p | main/lst30p/data/oslte143p" colsOrder="_be_att23 _be_att24 _be_att99o _be_att88o _be_att112o _be_att89o _be_att108o _be_att109o _be_att107o _be_att87o">
                           <wr-content for="header[_be_att23]">
                             {{ labelOf('.') | wrLocalize }}
                           </wr-content>
@@ -166,10 +166,34 @@
                             {{ labelOf('.') | wrLocalize }}
                           </wr-content>
                           <wr-content for="event[oslte144p]">
-                            <wd-button variant="mat-icon-button" color="primary" iconText="remove" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst14p/data/statoallegatoCodice', row) === 'B'"></wd-button>
+                            <wd-button variant="mat-icon-button" color="primary" iconText="remove" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst30p/data/statoallegatoCodice', row) === 'B'"></wd-button>
                           </wr-content>
                           <wr-content for="event[oslte143p]">
-                            <wd-button variant="mat-icon-button" color="primary" iconText="send" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst14p/data/statoallegatoCodice', row) === 'B'"></wd-button>
+                            <wd-button variant="mat-icon-button" color="primary" iconText="send" [visible]="valueOf('accessible') &amp;&amp; (valueOf('/main/lst30p/data/statoallegatoCodice', row) === 'B' || valueOf('/main/lst30p/data/statoallegatoCodice', row) === 'I')"></wd-button>
+                          </wr-content>
+                          <wr-content for="header[_be_att112o]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att112o]">
+                            {{ valueOf('.', row) }}
+                          </wr-content>
+                          <wr-content for="header[_be_att108o]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att108o]">
+                            {{ valueOf('.', row) }}
+                          </wr-content>
+                          <wr-content for="header[_be_att109o]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att109o]">
+                            {{ valueOf('.', row) }}
+                          </wr-content>
+                          <wr-content for="header[_be_att107o]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att107o]">
+                            {{ valueOf('.', row) }}
                           </wr-content>
                         </wd-data-grid>
                       </wd-cell>
@@ -273,9 +297,9 @@
     </wd-data-grid>
   </wr-content>
 </wd-dialog>
-<wd-dialog context="main/dpg21p" actions="frm33p/oslte137p" [minWidth]="800" [minHeight]="600">
+<wd-dialog context="main/dpg21p" [minWidth]="800">
   <wr-content for="content">
-    <wd-card elevation="0">
+    <wd-card elevation="0" actions="frm33p/oslte137p">
       <wr-content for="content">
         <wd-grid>
           <wd-row>
@@ -283,7 +307,7 @@
               <wd-select appearance="outline" context="frm33p/sfld20p" filterPredicate="begins with"></wd-select>
             </wd-cell>
             <wd-cell [width]="6">
-              <wd-select appearance="outline" context="frm33p/sfld21p" (wdChange)="throwEventOf('/main/dpg21p/frm33p/oslte142p')"></wd-select>
+              <wd-select appearance="outline" context="frm33p/sfld21p"></wd-select>
             </wd-cell>
           </wd-row>
           <wd-row>
@@ -297,41 +321,11 @@
               <wd-input context="frm33p/fld95p" appearance="outline"></wd-input>
             </wd-cell>
           </wd-row>
-          <wd-row>
-            <wd-cell [width]="12">
-              <wd-data-grid elevation="0" cols="mfrm1p/data/fld104p | mfrm1p/data/fld102p | mfrm1p/data/fld101p | mfrm1p/data/fld105p" [rows]="valueOf('mfrm1p/data')">
-                <wr-content for="header[fld104p]">
-                  {{ labelOf('.') | wrLocalize }}
-                </wr-content>
-                <wr-content for="data[fld104p]">
-                  {{ valueOf('./value',row) | wrLocalize }}
-                </wr-content>
-                <wr-content for="header[fld102p]">
-                  {{ labelOf('.') | wrLocalize }}
-                </wr-content>
-                <wr-content for="data[fld102p]">
-                  <wd-file-input [showLabel]="false"></wd-file-input>
-                </wr-content>
-                <wr-content for="header[fld101p]">
-                  {{ labelOf('.') | wrLocalize }}
-                </wr-content>
-                <wr-content for="data[fld101p]">
-                  <wd-input type="text" [showLabel]="false" appearance="fill"></wd-input>
-                </wr-content>
-                <wr-content for="header[fld105p]">
-                  {{ labelOf('.') | wrLocalize }}
-                </wr-content>
-                <wr-content for="data[fld105p]">
-                  <wd-datepicker></wd-datepicker>
-                </wr-content>
-              </wd-data-grid>
-            </wd-cell>
-          </wd-row>
         </wd-grid>
       </wr-content>
+      <wr-content for="action[oslte137p]">
+        <wd-button></wd-button>
+      </wr-content>
     </wd-card>
-  </wr-content>
-  <wr-content for="action[oslte137p]">
-    <wd-button color="success"></wd-button>
   </wr-content>
 </wd-dialog>

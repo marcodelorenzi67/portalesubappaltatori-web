@@ -338,6 +338,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att107o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att108o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att109o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att112o"/>
     </List>
   </ViewComponents>
   <Parameters>

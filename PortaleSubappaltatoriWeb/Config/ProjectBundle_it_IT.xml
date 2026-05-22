@@ -5,6 +5,7 @@
   <Entry key="attivazioneAccount.OK">Utenza attivata con successo!</Entry>
   <Entry key="attrezzature">Attrezzature</Entry>
   <Entry key="autore">Autore</Entry>
+  <Entry key="categoria">Categoria</Entry>
   <Entry key="cognome">Cognome</Entry>
   <Entry key="cognomeReferente">Cognome Referente
 </Entry>  <Entry key="condiviso">Condiviso</Entry>
@@ -18,12 +19,14 @@
   <Entry key="emailUtente">Email</Entry>
   <Entry key="fornitore">Fornitore</Entry>
   <Entry key="giorniDurata">Giorni Durata</Entry>
-  <Entry key="macrotipologia">Macrotipologia</Entry>
+  <Entry key="identificativo">Identificativo
+</Entry>  <Entry key="macrotipologia">Macrotipologia</Entry>
   <Entry key="macroTipologia">Macro Tipologia</Entry>
   <Entry key="message.otpInviato">Codice otp inviato, controllare la casella di posta</Entry>
   <Entry key="message.otpNonValido">OTP non valido riprovare.</Entry>
   <Entry key="mezzi">Mezzi</Entry>
-  <Entry key="nome">Nome</Entry>
+  <Entry key="modello">Modello
+</Entry>  <Entry key="nome">Nome</Entry>
   <Entry key="nomeReferente">Nome Referente
 </Entry>  <Entry key="note">Note</Entry>
   <Entry key="oggetto">Oggetto</Entry>
@@ -35,6 +38,7 @@
 </Entry>  <Entry key="ragioneSociale">Ragione Sociale
 </Entry>  <Entry key="ripristinoPsw.tokenInvalido ">Il token per ripristinare la password non &#232; piu valido. Ripetere procedura di "Password dimenticata"</Entry>
   <Entry key="ruoli">Ruoli</Entry>
+  <Entry key="seriale">Seriale</Entry>
   <Entry key="stato">Stato</Entry>
   <Entry key="statoRegistrazione">Stato Registrazione
 </Entry>  <Entry key="testEnv">Attenzione! Si sta navigando un ambiente di sviluppo</Entry>

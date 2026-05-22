@@ -635,8 +635,7 @@
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp210o" refModelId="mpkg6o#ad5o#ipd53o#pdp210o" pid="PortaleSubappaltatoriDataservice" serverProperty="descrizione" name="Descrizione" type="string" location="body" cardinality="N"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp211o" refModelId="mpkg6o#ad5o#ipd53o#pdp211o" pid="PortaleSubappaltatoriDataservice" serverProperty="seriale" name="Seriale" type="string" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp212o" refModelId="mpkg6o#ad5o#ipd53o#pdp212o" pid="PortaleSubappaltatoriDataservice" serverProperty="categoriaOidDocumentiToCategoria" name="Categoria.oid(DocumentiToCategoria)" type="integer" location="body" cardinality="1"/>
-      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp220o" refModelId="mpkg6o#ad5o#ipd53o#pdp220o" pid="PortaleSubappaltatoriDataservice" serverProperty="documento" name="Documento" type="blob" location="body" cardinality="N"/>
-      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp221o" refModelId="mpkg6o#ad5o#ipd53o#pdp221o" pid="PortaleSubappaltatoriDataservice" serverProperty="dataScadenza" name="Data scadenza" type="date" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp221o" refModelId="mpkg6o#ad5o#ipd53o#pdp221o" pid="PortaleSubappaltatoriDataservice" serverProperty="dataScadenza" name="Data scadenza" type="date" location="body" cardinality="N"/>
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp207o" refModelId="mpkg6o#ad5o#spd53o#pdp207o" pid="PortaleSubappaltatoriDataservice" serverProperty="fornitoreOid" name="Fornitore.oid" type="integer" location="body" cardinality="1"/>
     </srs:ActionService>
     <srs:ActionService ref="PortaleSubappaltatoriDataservice$ad6o" refModelId="mpkg6o#ad6o" pid="PortaleSubappaltatoriDataservice" name="Elimina documento Aggiuntivo" defaultSuccessPortDefinition="mpkg6o#ad6o#spd54o" defaultErrorPortDefinition="mpkg6o#ad6o#epd54o" serverResourceName="actions/eliminaDocumentoAggiuntivo" method="create">
@@ -875,6 +874,7 @@
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att107o" refModelId="cls5#att107o" pid="PortaleSubappaltatoriDataservice" serverProperty="seriale" name="Seriale" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att108o" refModelId="cls5#att108o" pid="PortaleSubappaltatoriDataservice" serverProperty="identificativo" name="Identificativo" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att109o" refModelId="cls5#att109o" pid="PortaleSubappaltatoriDataservice" serverProperty="modello" name="Modello" type="string"/>
+      <srs:Attribute ref="PortaleSubappaltatoriDataservice$att112o" refModelId="cls5#att112o" pid="PortaleSubappaltatoriDataservice" serverProperty="categoria" name="Categoria" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att22" refModelId="cls5#att22" pid="PortaleSubappaltatoriDataservice" serverProperty="oid" name="oid" type="integer" key="true"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att23" refModelId="cls5#att23" pid="PortaleSubappaltatoriDataservice" serverProperty="documento" name="Documento" type="blob" key="false"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att24" refModelId="cls5#att24" pid="PortaleSubappaltatoriDataservice" serverProperty="descrizione" name="Descrizione" type="string" key="false"/>
