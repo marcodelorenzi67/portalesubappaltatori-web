@@ -3,7 +3,7 @@
     <wd-image staticImage="assets/PortaleSubappaltatoriStyle/logo-gallli-italo.png"></wd-image>
   </wr-content>
   <wr-content for="menu">
-    <wd-menu menu="landmarks/area1 | landmarks/area4p | landmarks/area3/page24p | landmarks/area3/page18 | landmarks/area3/page25p" menuOrder="area1 page24p page18 page25p area4p">
+    <wd-menu menu="landmarks/area1 | landmarks/area4p | landmarks/area3/page24p | landmarks/area3/page18 | landmarks/area3/page25p" menuOrder="page24p page18 page25p area4p area1">
       <wr-content for="menu-item[area1]">
         <wd-menu-item menuItem="." [hasSubMenu]="true" color="primary" submenu="page4 | area2/page11 | area2/page12">
           <wr-content for="menu-item[page4]">

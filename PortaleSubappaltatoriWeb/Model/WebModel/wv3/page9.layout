@@ -56,66 +56,6 @@
                         </wd-data-grid>
                       </wd-cell>
                     </wd-row>
-                    <wd-row>
-                      <wd-cell [width]="12">
-                        <mat-accordion>
-                          <mat-expansion-panel>
-                            <mat-expansion-panel-header>
-                              <mat-panel-title>
-                                {{ labelOf('main/lst16p') | wrLocalize }}
-                              </mat-panel-title>
-                              <mat-panel-description></mat-panel-description>
-                            </mat-expansion-panel-header>
-                            <div>
-                              <wd-data-grid elevation="0" cols="main/lst16p/data/_be_att23 | main/lst16p/data/_be_att24 | main/lst16p/data/_be_att88o | main/lst16p/data/_be_att89o | main/lst16p/data/_be_att87o | main/lst16p/data/_be_att25 | main/lst16p/data/_be_att99o" [rows]="valueOf('main/lst16p/data')" paginator="main/lst16p/paging" [useExcelLikeFilter]="true" colsOrder="_be_att23 _be_att24 _be_att99o _be_att88o _be_att89o _be_att87o _be_att25">
-                                <wr-content for="header[_be_att23]">
-                                  {{ labelOf('.') | wrLocalize }}
-                                </wr-content>
-                                <wr-content for="data[_be_att23]">
-                                  <wd-anchor type="file"></wd-anchor>
-                                </wr-content>
-                                <wr-content for="header[_be_att24]">
-                                  {{ labelOf('.') | wrLocalize }}
-                                </wr-content>
-                                <wr-content for="data[_be_att24]">
-                                  {{ valueOf('.', row) }}
-                                </wr-content>
-                                <wr-content for="header[_be_att88o]">
-                                  {{ labelOf('.') | wrLocalize }}
-                                </wr-content>
-                                <wr-content for="data[_be_att88o]">
-                                  {{ valueOf('.', row) }}
-                                </wr-content>
-                                <wr-content for="header[_be_att89o]">
-                                  {{ labelOf('.') | wrLocalize }}
-                                </wr-content>
-                                <wr-content for="data[_be_att89o]">
-                                  {{ valueOf('.', row) }}
-                                </wr-content>
-                                <wr-content for="header[_be_att87o]">
-                                  {{ labelOf('.') | wrLocalize }}
-                                </wr-content>
-                                <wr-content for="data[_be_att87o]">
-                                  {{ valueOf('.', row) }}
-                                </wr-content>
-                                <wr-content for="header[_be_att25]">
-                                  {{ labelOf('.') | wrLocalize }}
-                                </wr-content>
-                                <wr-content for="data[_be_att25]">
-                                  {{ valueOf('.', row) }}
-                                </wr-content>
-                                <wr-content for="header[_be_att99o]">
-                                  {{ labelOf('.') | wrLocalize }}
-                                </wr-content>
-                                <wr-content for="data[_be_att99o]">
-                                  {{ valueOf('.', row) | date:'wr-date' }}
-                                </wr-content>
-                              </wd-data-grid>
-                            </div>
-                          </mat-expansion-panel>
-                        </mat-accordion>
-                      </wd-cell>
-                    </wd-row>
                   </wd-grid>
                 </mat-tab>
                 <mat-tab [label]="'Documentazione aggiuntiva' | wrLocalize">
@@ -231,8 +171,8 @@
                           </wr-content>
                         </wd-data-grid>
                       </wd-cell>
-                      <wd-cell [width]="6">
-                        <wd-data-grid cols="main/lst36p/data/_be_att23 | main/lst36p/data/_be_att24 | main/lst36p/data/_be_att99o | main/lst36p/data/_be_att88o | main/lst36p/data/_be_att89o | main/lst36p/data/_be_att87o" title="main/lst36p" [rows]="valueOf('main/lst36p/data')" elevation="0" events="main/lst36p/data/oslte160p">
+                      <wd-cell [width]="6" *ngIf="valueOf('/main/prd16p')">
+                        <wd-data-grid cols="main/lst36p/data/_be_att23 | main/lst36p/data/_be_att24 | main/lst36p/data/_be_att99o | main/lst36p/data/_be_att88o | main/lst36p/data/_be_att89o | main/lst36p/data/_be_att87o" title="main/lst36p" [rows]="valueOf('main/lst36p/data')" elevation="0" events="main/lst36p/data/oslte160p" paginator="main/lst36p/paging">
                           <wr-content for="header[_be_att23]">
                             {{ labelOf('.') | wrLocalize }}
                           </wr-content>
@@ -328,6 +268,58 @@
                             <wd-button variant="mat-icon-button" color="primary" iconText="attach_file"></wd-button>
                           </wr-content>
                         </wd-data-grid>
+                      </wd-cell>
+                    </wd-row>
+                  </wd-grid>
+                </mat-tab>
+                <mat-tab [label]="'Storico documenti' | wrLocalize">
+                  <wd-grid>
+                    <wd-row>
+                      <wd-cell [width]="12">
+                      	<wd-data-grid elevation="0" cols="main/lst16p/data/_be_att23 | main/lst16p/data/_be_att24 | main/lst16p/data/_be_att88o | main/lst16p/data/_be_att89o | main/lst16p/data/_be_att87o | main/lst16p/data/_be_att25 | main/lst16p/data/_be_att99o" [rows]="valueOf('main/lst16p/data')" paginator="main/lst16p/paging" [useExcelLikeFilter]="true" colsOrder="_be_att23 _be_att24 _be_att99o _be_att88o _be_att89o _be_att87o _be_att25">
+                                <wr-content for="header[_be_att23]">
+                                  {{ labelOf('.') | wrLocalize }}
+                                </wr-content>
+                                <wr-content for="data[_be_att23]">
+                                  <wd-anchor type="file"></wd-anchor>
+                                </wr-content>
+                                <wr-content for="header[_be_att24]">
+                                  {{ labelOf('.') | wrLocalize }}
+                                </wr-content>
+                                <wr-content for="data[_be_att24]">
+                                  {{ valueOf('.', row) }}
+                                </wr-content>
+                                <wr-content for="header[_be_att88o]">
+                                  {{ labelOf('.') | wrLocalize }}
+                                </wr-content>
+                                <wr-content for="data[_be_att88o]">
+                                  {{ valueOf('.', row) }}
+                                </wr-content>
+                                <wr-content for="header[_be_att89o]">
+                                  {{ labelOf('.') | wrLocalize }}
+                                </wr-content>
+                                <wr-content for="data[_be_att89o]">
+                                  {{ valueOf('.', row) }}
+                                </wr-content>
+                                <wr-content for="header[_be_att87o]">
+                                  {{ labelOf('.') | wrLocalize }}
+                                </wr-content>
+                                <wr-content for="data[_be_att87o]">
+                                  {{ valueOf('.', row) }}
+                                </wr-content>
+                                <wr-content for="header[_be_att25]">
+                                  {{ labelOf('.') | wrLocalize }}
+                                </wr-content>
+                                <wr-content for="data[_be_att25]">
+                                  {{ valueOf('.', row) }}
+                                </wr-content>
+                                <wr-content for="header[_be_att99o]">
+                                  {{ labelOf('.') | wrLocalize }}
+                                </wr-content>
+                                <wr-content for="data[_be_att99o]">
+                                  {{ valueOf('.', row) | date:'wr-date' }}
+                                </wr-content>
+                              </wd-data-grid>
                       </wd-cell>
                     </wd-row>
                   </wd-grid>

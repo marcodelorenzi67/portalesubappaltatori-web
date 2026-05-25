@@ -189,7 +189,11 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att116o"/>
       <Events>
         <OnSelectEvent id="wv3#page9#lst35p#oslte161p" name="Gestisci documenti" validate="true">
-          <NavigationFlow id="wv3#page9#lst35p#oslte161p#nf197p" to="wv3#page9#lst36p" automaticCoupling="true"/>
+          <NavigationFlow id="wv3#page9#lst35p#oslte161p#nf197p" to="wv3#page9#lst36p">
+            <ParameterBinding id="wv3#page9#lst35p#oslte161p#nf197p#par567p" source="data._be_role59o$_be_att6" target="wv3#page9#lst36p#sc54p#rcond48p._be_att6" name="personaleToFornitore - Fornitore [oid]"/>
+            <ParameterBinding id="wv3#page9#lst35p#oslte161p#nf197p#par568p" targetParameter="wv3#page9#prd16p" name="oid personale - oid personale" source="data._be_att113o"/>
+            <ParameterBinding id="wv3#page9#lst35p#oslte161p#nf197p#par569p" source="data._be_att113o" target="wv3#page9#lst36p#sc54p#rcond50p._be_att113o" name="oid - personale [oid]"/>
+          </NavigationFlow>
         </OnSelectEvent>
       </Events>
     </List>
@@ -235,7 +239,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
     </List>
   </ViewComponents>
-  <DialogPage gr:x="580" gr:y="40" id="wv3#page9#dpg8p" name="Carica allegato">
+  <DialogPage gr:x="580" gr:y="40" id="wv3#page9#dpg8p" name="Carica documento">
     <ViewComponents>
       <Form gr:x="0" gr:y="0" id="wv3#page9#dpg8p#frm22p" name="Allegato">
         <Field id="wv3#page9#dpg8p#frm22p#fld57p" type="blob" modifiable="true" name="Allegato" validationOrder="wv3#page9#dpg8p#frm22p#fld57p#mnd45p">
@@ -337,4 +341,7 @@
       </Form>
     </ViewComponents>
   </DialogPage>
+  <Parameters>
+    <Parameter id="wv3#page9#prd16p" name="oid personale" type="integer" preserve="false"/>
+  </Parameters>
 </Page>

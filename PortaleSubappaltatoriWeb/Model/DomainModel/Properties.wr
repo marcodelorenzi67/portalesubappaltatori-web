@@ -539,6 +539,9 @@
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp131o" refModelId="mpkg5o#ada24o#ipd35o#pdp131o" pid="PortaleSubappaltatoriDataservice" serverProperty="fornitoreOid" name="Fornitore.oid" type="integer" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp136o" refModelId="mpkg5o#ada24o#ipd35o#pdp136o" pid="PortaleSubappaltatoriDataservice" serverProperty="mandatory" name="Mandatory" type="boolean" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp227o" refModelId="mpkg5o#ada24o#ipd35o#pdp227o" pid="PortaleSubappaltatoriDataservice" serverProperty="personaleOidDocumentiToPersonale" name="Personale.oid(DocumentiToPersonale)" type="integer" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp233o" refModelId="mpkg5o#ada24o#ipd35o#pdp233o" pid="PortaleSubappaltatoriDataservice" serverProperty="documentoDaCompilare" name="Documento da compilare" type="boolean" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp234o" refModelId="mpkg5o#ada24o#ipd35o#pdp234o" pid="PortaleSubappaltatoriDataservice" serverProperty="documento" name="Documento" type="blob" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp235o" refModelId="mpkg5o#ada24o#ipd35o#pdp235o" pid="PortaleSubappaltatoriDataservice" serverProperty="modulo" name="modulo" type="boolean" location="body" cardinality="1"/>
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp134o" refModelId="mpkg5o#ada24o#spd35o#pdp134o" pid="PortaleSubappaltatoriDataservice" serverProperty="fornitoreOid" name="Fornitore.oid" type="integer" location="body" cardinality="1"/>
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp230o" refModelId="mpkg5o#ada24o#spd35o#pdp230o" pid="PortaleSubappaltatoriDataservice" serverProperty="personaleOidDocumentiToPersonale" name="Personale.oid(DocumentiToPersonale)" type="integer" location="body" cardinality="1"/>
     </srs:ActionService>
@@ -904,6 +907,8 @@
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att108o" refModelId="cls5#att108o" pid="PortaleSubappaltatoriDataservice" serverProperty="identificativo" name="Identificativo" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att109o" refModelId="cls5#att109o" pid="PortaleSubappaltatoriDataservice" serverProperty="modello" name="Modello" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att112o" refModelId="cls5#att112o" pid="PortaleSubappaltatoriDataservice" serverProperty="categoria" name="Categoria" type="string"/>
+      <srs:Attribute ref="PortaleSubappaltatoriDataservice$att118o" refModelId="cls5#att118o" pid="PortaleSubappaltatoriDataservice" serverProperty="documentoCompilato" name="Documento compilato" type="blob"/>
+      <srs:Attribute ref="PortaleSubappaltatoriDataservice$att119o" refModelId="cls5#att119o" pid="PortaleSubappaltatoriDataservice" serverProperty="documentoDaCompilare" name="Documento da compilare" type="boolean"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att22" refModelId="cls5#att22" pid="PortaleSubappaltatoriDataservice" serverProperty="oid" name="oid" type="integer" key="true"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att23" refModelId="cls5#att23" pid="PortaleSubappaltatoriDataservice" serverProperty="documento" name="Documento" type="blob" key="false"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att24" refModelId="cls5#att24" pid="PortaleSubappaltatoriDataservice" serverProperty="descrizione" name="Descrizione" type="string" key="false"/>
@@ -929,6 +934,7 @@
       <srs:ServiceScope name="Fornitore" method="read"/>
       <srs:ServiceScope name="Gestione" method="read"/>
       <srs:ServiceScope name="Responsabile" method="read"/>
+      <srs:Attribute ref="PortaleSubappaltatoriDataservice$att120o" refModelId="cls8#att120o" pid="PortaleSubappaltatoriDataservice" serverProperty="codice" name="Codice" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att37" refModelId="cls8#att37" pid="PortaleSubappaltatoriDataservice" serverProperty="oid" name="oid" type="integer" key="true"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att38" refModelId="cls8#att38" pid="PortaleSubappaltatoriDataservice" serverProperty="condiviso" name="Condiviso" type="boolean"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att39" refModelId="cls8#att39" pid="PortaleSubappaltatoriDataservice" serverProperty="giorniDurata" name="Giorni Durata" type="integer"/>

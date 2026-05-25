@@ -38,7 +38,7 @@
       <ErrorEvent id="wv3#act34p#erre49p"/>
     </Events>
   </Action>
-  <Action id="wv3#act44p" gr:x="730" gr:y="-95" actionServiceRes="PortaleSubappaltatoriDataservice$ada27o">
+  <Action id="wv3#act44p" gr:x="575" gr:y="-80" actionServiceRes="PortaleSubappaltatoriDataservice$ada27o">
     <Events>
       <SuccessEvent id="wv3#act44p#scce50p">
         <NavigationFlow id="wv3#act44p#scce50p#nf106p" to="wv3#page9#dtl5p">
@@ -74,7 +74,7 @@
       <ErrorEvent id="wv3#act52p#erre85p"/>
     </Events>
   </Action>
-  <Action id="wv3#act53p" gr:x="1050" gr:y="1250" actionServiceRes="PortaleSubappaltatoriDataservice$ada34o">
+  <Action id="wv3#act53p" gr:x="1050" gr:y="1275" actionServiceRes="PortaleSubappaltatoriDataservice$ada34o">
     <Events>
       <SuccessEvent id="wv3#act53p#scce62p">
         <NavigationFlow id="wv3#act53p#scce62p#nf140p" to="wv3#page26p#lst22p">

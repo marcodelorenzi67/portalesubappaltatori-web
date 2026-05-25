@@ -17,7 +17,7 @@
         <ParameterBinding id="wv2#apg2#gctu6#df11#par49" name="&quot;${env}&quot; - Shown Messages" sourceValue="${env}" target="messages"/>
       </DataFlow>
     </ViewComponent>
-    <Message id="wv2#apg2#msg12" name="Error message" gr:x="185" gr:y="180">
+    <Message id="wv2#apg2#msg12" name="Error message" gr:x="185" gr:y="170">
       <DataFlow id="wv2#apg2#msg12#df12" to="wv2#apg2#gctu6" gr:bendpoints="-52,-35,28,55">
         <ParameterBinding id="wv2#apg2#msg12#df12#par52" sourceValue="$$NULL$$" targetParameter="wv2#prd5" name="NULL - error message"/>
       </DataFlow>
