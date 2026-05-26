@@ -91,4 +91,11 @@
       </wd-row>
     </wd-grid>
   </wr-content>
+  <wr-content for="site-intro">
+    <div class="login-intro">
+      <div class="login-kicker">Portale fornitori</div>
+      <h1>Attivazione credenziale</h1>
+      <p>xxxxxxxxxxxx</p>
+    </div>
+  </wr-content>
 </wr-page>

@@ -3,12 +3,19 @@
     <wd-card elevation="3">
       <wr-content for="content">
         <form>
-            <wd-input context="main/frm2/fld4" type="text" [showLabel]="true" appearance="outline" floatLabel="auto" [showClearIcon]="false" [disableAutocompletion]="true"></wd-input>
-          	<wd-password appearance="outline" floatLabel="auto" [showEyeButton]="true" context="main/frm2/fld5"></wd-password>
-          	<wd-button context="model:main/frm2/oslte2" type="submit" color="accent"></wd-button>
+          <wd-input context="main/frm2/fld4" type="text" [showLabel]="true" appearance="outline" floatLabel="auto" [showClearIcon]="false" [disableAutocompletion]="true"></wd-input>
+          <wd-password appearance="outline" floatLabel="auto" [showEyeButton]="true" context="main/frm2/fld5"></wd-password>
+          <wd-button context="model:main/frm2/oslte2" type="submit" color="accent"></wd-button>
         </form>
-         <wd-button variant="mat-button" color="primary" context="main/frm2/oslte7" type="button"></wd-button>
+        <wd-button variant="mat-button" color="primary" context="main/frm2/oslte7" type="button"></wd-button>
       </wr-content>
     </wd-card>
+  </wr-content>
+  <wr-content for="site-intro">
+    <div class="login-intro">
+      <div class="login-kicker">Portale fornitori</div>
+      <h1>Area riservata</h1>
+      <p>Accedi con le tue credenziali per accedere ai servizi del portale</p>
+    </div>
   </wr-content>
 </wr-page>

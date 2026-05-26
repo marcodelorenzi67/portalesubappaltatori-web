@@ -12,4 +12,11 @@
       </wr-content>
     </wd-card>
   </wr-content>
+  <wr-content for="site-intro">
+    <div class="login-intro">
+      <div class="login-kicker">Portale fornitori</div>
+      <h1>Rinnovo password</h1>
+      <p>Aggiorna la password per accedere nuovamente alla tua area</p>
+    </div>
+  </wr-content>
 </wr-page>

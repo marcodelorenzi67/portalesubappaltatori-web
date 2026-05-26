@@ -8,9 +8,14 @@
         </form>
         <wd-button variant="mat-button" color="primary" context="main/frm8/oslte13" type="button"></wd-button>
       </wr-content>
-      <wr-content for="title[frm8]">
-        {{ labelOf('.') | wrLocalize }}
-      </wr-content>
+      <wr-content for="title[frm8]"></wr-content>
     </wd-card>
+  </wr-content>
+  <wr-content for="site-intro">
+    <div class="login-intro">
+      <div class="login-kicker">Portale fornitori</div>
+      <h1>Verifica la tua identità</h1>
+      <p>Abbiamo inviato un codice OTP al tuo indirizzo  e-mail, inseriscilo nel campo sottostante per completare la verifica.</p>
+    </div>
   </wr-content>
 </wr-page>
