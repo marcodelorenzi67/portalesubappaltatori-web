@@ -823,3 +823,12 @@
     </wd-card>
   </wr-content>
 </wd-dialog>
+<wd-dialog context="main/dpg23p">
+  <wr-content for="content">
+    <wd-card>
+      <wr-content for="content">
+        <wd-container></wd-container>
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wd-dialog>
