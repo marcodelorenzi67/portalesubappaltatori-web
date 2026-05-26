@@ -15,13 +15,15 @@
   <Entry key="dataScadenza">Data Scadenza</Entry>
   <Entry key="descrizione">Descrizione</Entry>
   <Entry key="documento">Documento</Entry>
+  <Entry key="documentoCompilato">Documento Compilato</Entry>
+  <Entry key="documentoDaCompilare">Documento da Compilare</Entry>
   <Entry key="email">Email</Entry>
   <Entry key="emailUtente">Email</Entry>
   <Entry key="fornitore">Fornitore</Entry>
   <Entry key="giorniDurata">Giorni Durata</Entry>
   <Entry key="identificativo">Identificativo
-</Entry>  <Entry key="macrotipologia">Macrotipologia</Entry>
-  <Entry key="macroTipologia">Macro Tipologia</Entry>
+</Entry>  <Entry key="macroTipologia">Macro Tipologia</Entry>
+  <Entry key="macrotipologia">Macrotipologia</Entry>
   <Entry key="message.otpInviato">Codice otp inviato, controllare la casella di posta</Entry>
   <Entry key="message.otpNonValido">OTP non valido riprovare.</Entry>
   <Entry key="mezzi">Mezzi</Entry>
@@ -29,6 +31,7 @@
 </Entry>  <Entry key="nome">Nome</Entry>
   <Entry key="nomeReferente">Nome Referente
 </Entry>  <Entry key="note">Note</Entry>
+  <Entry key="noteFornitore">Note Fornitore</Entry>
   <Entry key="oggetto">Oggetto</Entry>
   <Entry key="operazione.KO">Errore nell'esecuzione dell'operazione!</Entry>
   <Entry key="operazione.OK">Operazione eseguita con successo!</Entry>

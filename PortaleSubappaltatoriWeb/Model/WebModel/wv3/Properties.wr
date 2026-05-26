@@ -56,7 +56,7 @@
       <ErrorEvent id="wv3#act50p#erre81p"/>
     </Events>
   </Action>
-  <Action id="wv3#act51p" gr:x="200" gr:y="945" actionServiceRes="PortaleSubappaltatoriDataservice$ada31o">
+  <Action id="wv3#act51p" gr:x="225" gr:y="1020" actionServiceRes="PortaleSubappaltatoriDataservice$ada31o">
     <Events>
       <SuccessEvent id="wv3#act51p#scce60p">
         <NavigationFlow id="wv3#act51p#scce60p#nf137p" to="wv3#page26p" automaticCoupling="true"/>
@@ -84,7 +84,7 @@
       <ErrorEvent id="wv3#act53p#erre87p"/>
     </Events>
   </Action>
-  <Action id="wv3#act60p" gr:x="445" gr:y="955" definition="tlads0#ad9p">
+  <Action id="wv3#act60p" gr:x="460" gr:y="1025" definition="tlads0#ad9p">
     <Events>
       <SuccessEvent id="wv3#act60p#scce70p" definition="tlads0#ad9p#spd17p">
         <NavigationFlow id="wv3#act60p#scce70p#nf175p" to="wv3#page9#dpg21p#frm33p"/>
@@ -102,7 +102,7 @@
       <ErrorEvent id="wv3#act62p#erre105p"/>
     </Events>
   </Action>
-  <Action id="wv3#act68p" gr:x="685" gr:y="945" definition="tlads0#ad10p">
+  <Action id="wv3#act68p" gr:x="675" gr:y="1015" definition="tlads0#ad10p">
     <Events>
       <SuccessEvent id="wv3#act68p#scce81p" definition="tlads0#ad10p#spd18p">
         <NavigationFlow id="wv3#act68p#scce81p#nf184p" to="wv3#page9#dtl5p">
@@ -110,6 +110,22 @@
         </NavigationFlow>
       </SuccessEvent>
       <ErrorEvent id="wv3#act68p#erre114p" definition="tlads0#ad10p#epd15p"/>
+    </Events>
+  </Action>
+  <Action id="wv3#act71p" gr:x="1225" gr:y="870" definition="tlads0#ad11p">
+    <Events>
+      <SuccessEvent id="wv3#act71p#scce85p" definition="tlads0#ad11p#spd19p">
+        <NavigationFlow id="wv3#act71p#scce85p#nf208p" to="wv3#page9#dpg8p#frm22p">
+          <ParameterBinding id="wv3#act71p#scce85p#nf208p#par610p" source="tlads0#ad11p#spd19p#pdp64p" target="{wv3#page9#dpg8p#frm22p#fld59p}value" name="oid allegato - oid allegato"/>
+          <ParameterBinding id="wv3#act71p#scce85p#nf208p#par611p" sourceValue="true" target="{wv3#page9#dpg8p#frm22p#fld123p}value" name="&quot;true&quot; - modulo"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <SuccessEvent id="wv3#act71p#scce86p" definition="tlads0#ad11p#spd20p">
+        <NavigationFlow id="wv3#act71p#scce86p#nf207p" to="wv3#page9#dtl5p">
+          <ParameterBinding id="wv3#act71p#scce86p#nf207p#par609p" sourceParameter="wv3#prd10p" target="wv3#page9#dtl5p#sc14p#kcond8p._be_att6" name="oid Fornitore - KeyCondition"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv3#act71p#erre120p" definition="tlads0#ad11p#epd16p"/>
     </Events>
   </Action>
 </WebView>

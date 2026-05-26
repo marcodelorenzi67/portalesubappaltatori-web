@@ -175,6 +175,9 @@
         <AttributesCondition id="wv2#area3#page22p#lst12p#sc18p#acond20p" name="cod macrotipologia" predicate="eq" booleanOperator="or" implied="false" value="${macroTipologia.aziendali}">
           <AttributesConditionAttr classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role21.PortaleSubappaltatoriDataservice$role23.PortaleSubappaltatoriDataservice$att43" alias="macrocategoriaCodice"/>
         </AttributesCondition>
+        <AttributesCondition id="wv2#area3#page22p#lst12p#sc18p#acond58p" name="cod tipologia" predicate="neq" booleanOperator="and" implied="false" value="${tipologia.moduli}">
+          <AttributesConditionAttr classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role21.PortaleSubappaltatoriDataservice$att120o" alias="tipologiadocumentiCodice"/>
+        </AttributesCondition>
       </ConditionalExpression>
       <Events>
         <OnSelectEvent id="wv2#area3#page22p#lst12p#oslte62p" name="Approva" validate="true">
@@ -480,6 +483,7 @@
         <OnSelectEvent id="wv2#area3#page22p#lst37p#oslte163p" name="Rigetta" validate="true">
           <NavigationFlow id="wv2#area3#page22p#lst37p#oslte163p#nf199p" to="wv2#area3#page22p#dpg7p#frm21p">
             <ParameterBinding id="wv2#area3#page22p#lst37p#oslte163p#nf199p#par579p" name="oid - oid allegato" source="data._be_att22" target="{wv2#area3#page22p#dpg7p#frm21p#fld56p}value"/>
+            <ParameterBinding id="wv2#area3#page22p#lst37p#oslte163p#nf199p#par616p" sourceValue="true" target="{wv2#area3#page22p#dpg7p#frm21p#fld125p}value" name="&quot;true&quot; - modulo"/>
           </NavigationFlow>
         </OnSelectEvent>
         <OnSelectEvent id="wv2#area3#page22p#lst37p#oslte164p" name="Dettaglio" validate="true">
@@ -509,6 +513,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att118o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att119o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att121o"/>
     </List>
   </ViewComponents>
   <Parameters>
@@ -575,9 +580,11 @@
               <ParameterBinding id="wv2#area3#page22p#dpg7p#frm21p#oslte64p#nf102p#par290p" sourceValue="false" target="wv2#area3#act43p.PortaleSubappaltatoriDataservice$pdp143o" name="&quot;false&quot; - approva"/>
               <ParameterBinding id="wv2#area3#page22p#dpg7p#frm21p#oslte64p#nf102p#par291p" source="{wv2#area3#page22p#dpg7p#frm21p#fld55p}value" target="wv2#area3#act43p.PortaleSubappaltatoriDataservice$pdp142o" name="Note rigetto - note"/>
               <ParameterBinding id="wv2#area3#page22p#dpg7p#frm21p#oslte64p#nf102p#par292p" source="{wv2#area3#page22p#dpg7p#frm21p#fld56p}value" target="wv2#area3#act43p.PortaleSubappaltatoriDataservice$pdp140o" name="oid allegato - oid"/>
+              <ParameterBinding id="wv2#area3#page22p#dpg7p#frm21p#oslte64p#nf102p#par617p" source="{wv2#area3#page22p#dpg7p#frm21p#fld125p}value" target="wv2#area3#act43p.PortaleSubappaltatoriDataservice$pdp239o" name="modulo - modulo"/>
             </NavigationFlow>
           </OnSelectEvent>
         </Events>
+        <Field id="wv2#area3#page22p#dpg7p#frm21p#fld125p" type="boolean" modifiable="false" name="modulo"/>
       </Form>
     </ViewComponents>
   </DialogPage>
@@ -730,6 +737,7 @@
               <ParameterBinding id="wv2#area3#page22p#dpg23p#frm36p#oslte170p#nf205p#par593p" sourceValue="false" target="wv2#area3#act40p.PortaleSubappaltatoriDataservice$pdp136o" name="&quot;false&quot; - Mandatory"/>
               <ParameterBinding id="wv2#area3#page22p#dpg23p#frm36p#oslte170p#nf205p#par594p" sourceValue="true" target="wv2#area3#act40p.PortaleSubappaltatoriDataservice$pdp235o" name="&quot;true&quot; - modulo"/>
               <ParameterBinding id="wv2#area3#page22p#dpg23p#frm36p#oslte170p#nf205p#par595p" sourceParameter="wv2#prd8" target="wv2#area3#act40p.PortaleSubappaltatoriDataservice$pdp129o" name="Tenant - Tenant"/>
+              <ParameterBinding id="wv2#area3#page22p#dpg23p#frm36p#oslte170p#nf205p#par618p" source="{wv2#area3#page22p#dpg23p#frm36p#fld119p}value" target="wv2#area3#act40p.PortaleSubappaltatoriDataservice$pdp240o" name="Descrizione - Descrizione"/>
             </NavigationFlow>
           </OnSelectEvent>
         </Events>

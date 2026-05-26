@@ -27,7 +27,7 @@
                                     <wd-row>
                                       <wd-cell [width]="6"></wd-cell>
                                       <wd-cell [width]="6">
-                                        <wd-button context="main/gctu14p/oslte47p" iconText="border_color" color="accent" iconPosition="left"></wd-button>
+                                        
                                       </wd-cell>
                                     </wd-row>
                                   </wd-grid>
@@ -110,9 +110,7 @@
                               </wd-row>
                               <wd-row>
                                 <wd-cell [width]="3">
-                                  <h2>
-                                    {{ 'Referenti' | wrLocalize }}
-                                  </h2>
+                                  <wd-button context="main/gctu14p/oslte47p" iconText="border_color" color="accent" iconPosition="left"></wd-button>
                                 </wd-cell>
                               </wd-row>
                               <wd-row>
@@ -499,7 +497,7 @@
                   <wd-grid>
                     <wd-row>
                       <wd-cell [width]="12">
-                        <wd-data-grid elevation="0" cols="main/lst37p/data/_be_att23 | main/lst37p/data/_be_att24 | main/lst37p/data/_be_att118o | main/lst37p/data/_be_att119o | main/lst37p/data/_be_att87o" [rows]="valueOf('main/lst37p/data')" title="main/lst37p" events="main/lst37p/data/oslte162p | main/lst37p/data/oslte163p | main/lst37p/data/oslte164p | main/lst37p/data/oslte166p | main/lst37p/data/oslte165p" paginator="main/lst37p/paging" eventsOrder="oslte162p oslte163p oslte166p oslte165p oslte164p">
+                        <wd-data-grid elevation="0" cols="main/lst37p/data/_be_att23 | main/lst37p/data/_be_att24 | main/lst37p/data/_be_att118o | main/lst37p/data/_be_att119o | main/lst37p/data/_be_att87o | main/lst37p/data/_be_att121o" [rows]="valueOf('main/lst37p/data')" title="main/lst37p" events="main/lst37p/data/oslte162p | main/lst37p/data/oslte163p | main/lst37p/data/oslte164p | main/lst37p/data/oslte166p | main/lst37p/data/oslte165p" paginator="main/lst37p/paging" eventsOrder="oslte162p oslte163p oslte166p oslte165p oslte164p" colsOrder="_be_att23 _be_att24 _be_att118o _be_att121o _be_att119o _be_att87o">
                           <wr-content for="header[_be_att23]">
                             {{ labelOf('.') | wrLocalize }}
                           </wr-content>
@@ -522,7 +520,7 @@
                             {{ labelOf('.') | wrLocalize }}
                           </wr-content>
                           <wr-content for="data[_be_att119o]">
-                            {{ valueOf('.', row) | wrLocalize }}
+                            {{ valueOf('.', row) == true ? 'S&igrave;' : 'No' }}
                           </wr-content>
                           <wr-content for="header[_be_att87o]">
                             {{ labelOf('.') | wrLocalize }}
@@ -547,6 +545,15 @@
                           </wr-content>
                           <wr-content for="event[oslte165p]">
                             <wd-button variant="mat-icon-button" color="primary" [disabled]="valueOf('/main/dtl6p/data/statoregistrazioneCodice') != 'R'" iconText="send" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst37p/data/statoallegatoCodice', row) === 'B'"></wd-button>
+                          </wr-content>
+                          <wr-content for="header-actions">
+                            <wd-button context="main/gctu14p/oslte169p" iconText="add" color="success"></wd-button>
+                          </wr-content>
+                          <wr-content for="header[_be_att121o]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att121o]">
+                            {{ valueOf('.', row) }}
                           </wr-content>
                         </wd-data-grid>
                       </wd-cell>
@@ -823,12 +830,28 @@
     </wd-card>
   </wr-content>
 </wd-dialog>
-<wd-dialog context="main/dpg23p">
+<wd-dialog context="main/dpg23p" title=".">
   <wr-content for="content">
-    <wd-card>
+    <wd-card elevation="0" actions="frm36p/oslte170p">
       <wr-content for="content">
-        <wd-container></wd-container>
+        <wd-container elements="frm36p/fld118p | frm36p/fld119p | frm36p/fld122p">
+          <wr-content for="element[fld118p]">
+            <wd-file-input></wd-file-input>
+          </wr-content>
+          <wr-content for="element[fld119p]">
+            <wd-input type="text" [showLabel]="true" appearance="outline"></wd-input>
+          </wr-content>
+          <wr-content for="element[fld122p]">
+            <wd-toggle></wd-toggle>
+          </wr-content>
+        </wd-container>
+      </wr-content>
+      <wr-content for="action[oslte170p]">
+        <wd-button color="success" [confirm]="true"></wd-button>
       </wr-content>
     </wd-card>
+  </wr-content>
+  <wr-content for="title[dpg23p]">
+    {{ labelOf('.') | wrLocalize }}
   </wr-content>
 </wd-dialog>

@@ -1,0 +1,37 @@
+<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ad11p" name="Verifica documento da compilare" defaultSuccessPortDefinition="tlads0#ad11p#spd19p" defaultErrorPortDefinition="tlads0#ad11p#epd16p">
+  <Operations>
+    <Switch gr:x="410" gr:y="90" id="tlads0#ad11p#switch7p" name="da compilare">
+      <SuccessFlow id="tlads0#ad11p#switch7p#sf39p" to="tlads0#ad11p#spd19p" automaticCoupling="true" code="true"/>
+      <Case value="true"/>
+      <SuccessFlow id="tlads0#ad11p#switch7p#sf40p" to="tlads0#ad11p#act70p" automaticCoupling="true"/>
+    </Switch>
+  </Operations>
+  <InputPortDefinition id="tlads0#ad11p#ipd11p" gr:x="0" gr:y="30">
+    <SuccessFlow id="tlads0#ad11p#ipd11p#sf38p" to="tlads0#ad11p#switch7p">
+      <ParameterBinding id="tlads0#ad11p#ipd11p#sf38p#par602p" source="tlads0#ad11p#ipd11p#pdp63p" target="switch" name="da compilare - Switch"/>
+    </SuccessFlow>
+    <PortDefinitionParameter id="tlads0#ad11p#ipd11p#pdp62p" name="oid allegato" array="true"/>
+    <PortDefinitionParameter id="tlads0#ad11p#ipd11p#pdp63p" name="da compilare" array="true"/>
+    <DataFlow id="tlads0#ad11p#ipd11p#df79p" to="tlads0#ad11p#spd19p">
+      <ParameterBinding id="tlads0#ad11p#ipd11p#df79p#par603p" source="tlads0#ad11p#ipd11p#pdp62p" target="tlads0#ad11p#spd19p#pdp64p" name="oid allegato - oid allegato"/>
+    </DataFlow>
+    <DataFlow id="tlads0#ad11p#ipd11p#df80p" to="tlads0#ad11p#act70p" gr:bendpoints="19.0 99.0">
+      <ParameterBinding id="tlads0#ad11p#ipd11p#df80p#par604p" source="tlads0#ad11p#ipd11p#pdp62p" target="tlads0#ad11p#act70p.PortaleSubappaltatoriDataservice$pdp237o" name="oid allegato - documento oid"/>
+      <ParameterBinding id="tlads0#ad11p#ipd11p#df80p#par605p" source="tlads0#ad11p#ipd11p#pdp65p" target="tlads0#ad11p#act70p.PortaleSubappaltatoriDataservice$pdp236o" name="fornitore - fornitore"/>
+    </DataFlow>
+    <PortDefinitionParameter id="tlads0#ad11p#ipd11p#pdp65p" array="false" name="fornitore"/>
+  </InputPortDefinition>
+  <SuccessPortDefinition id="tlads0#ad11p#spd19p" name="Da compilare" gr:x="0" gr:y="25">
+    <PortDefinitionParameter id="tlads0#ad11p#spd19p#pdp64p" array="false" name="oid allegato"/>
+  </SuccessPortDefinition>
+  <ErrorPortDefinition id="tlads0#ad11p#epd16p" name="Error Port" gr:x="0" gr:y="300"/>
+  <SuccessPortDefinition id="tlads0#ad11p#spd20p" name="Presa visione" gr:x="720" gr:y="205"/>
+  <Action id="tlads0#ad11p#act70p" gr:x="415" gr:y="230" actionServiceRes="PortaleSubappaltatoriDataservice$ada37o">
+    <Events>
+      <SuccessEvent id="tlads0#ad11p#act70p#scce84p">
+        <SuccessFlow id="tlads0#ad11p#act70p#scce84p#sf41p" to="tlads0#ad11p#spd20p" automaticCoupling="true"/>
+      </SuccessEvent>
+      <ErrorEvent id="tlads0#ad11p#act70p#erre119p"/>
+    </Events>
+  </Action>
+</ActionDefinition>

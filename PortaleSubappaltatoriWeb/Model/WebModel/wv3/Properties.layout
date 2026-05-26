@@ -1,5 +1,5 @@
 <wr-page>
   <wr-content for="brand">
-    <wd-image staticImage="assets/PortaleSubappaltatoriStyle/logo-gallli-italo.png"></wd-image>
+    <wd-image staticImage="assets/PortaleSubappaltatoriStyle/logo-galli-italo.png"></wd-image>
   </wr-content>
 </wr-page>
