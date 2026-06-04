@@ -193,9 +193,6 @@
           <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role59o"/>
         </AssociationRoleCondition>
       </ConditionalExpression>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att114o"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att115o"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att116o"/>
       <Events>
         <OnSelectEvent id="wv3#page9#lst35p#oslte161p" name="Gestisci documenti" validate="true">
           <NavigationFlow id="wv3#page9#lst35p#oslte161p#nf197p" to="wv3#page9#lst36p">
@@ -205,6 +202,11 @@
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att114o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att115o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att116o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o" order="ascending"/>
     </List>
     <List id="wv3#page9#lst36p" name="Documenti personale" gr:x="390" gr:y="455" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
@@ -377,7 +379,7 @@
             <MandatoryValidationRule id="wv3#page9#dpg21p#frm33p#sfld21p#mnd58p" name="Mandatory"/>
           </VRules>
         </SelectionField>
-        <Field id="wv3#page9#dpg21p#frm33p#fld95p" type="string" modifiable="true" name="Seriale"/>
+        <Field id="wv3#page9#dpg21p#frm33p#fld95p" type="string" modifiable="true" name="Marca"/>
         <Field id="wv3#page9#dpg21p#frm33p#fld96p" type="string" modifiable="true" name="Identificativo"/>
         <Field id="wv3#page9#dpg21p#frm33p#fld97p" type="string" modifiable="true" name="Modello"/>
         <Events>

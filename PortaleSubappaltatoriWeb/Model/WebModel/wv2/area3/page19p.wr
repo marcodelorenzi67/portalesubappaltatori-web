@@ -51,9 +51,6 @@
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par135p" source="{wv2#area3#page19p#frm14p#fld34p}value" target="wv2#area3#act27p.PortaleSubappaltatoriDataservice$pdp74o" name="Ragione Sociale - Ragione Sociale"/>
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par136p" target="wv2#area3#act27p.PortaleSubappaltatoriDataservice$pdp77o" name="Tenant [oid] - tenant" sourceParameter="wv2#prd8"/>
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par146p" source="{wv2#area3#page19p#frm14p#sfld9p}value._be_att45" target="wv2#area3#act27p.PortaleSubappaltatoriDataservice$pdp88o" name="Tipologia Azienda - Tipologia Azienda oid"/>
-            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par312p" source="{wv2#area3#page19p#frm14p#fld61p}value" target="wv2#area3#act27p.PortaleSubappaltatoriDataservice$pdp156o" name="Attrezzature - Attrezzature"/>
-            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par313p" source="{wv2#area3#page19p#frm14p#fld60p}value" target="wv2#area3#act27p.PortaleSubappaltatoriDataservice$pdp157o" name="Mezzi - Mezzi"/>
-            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par314p" source="{wv2#area3#page19p#frm14p#fld62p}value" target="wv2#area3#act27p.PortaleSubappaltatoriDataservice$pdp158o" name="Prodotti e Sostanze chimiche - Prodotti e Sostanze chimiche"/>
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par319p" source="{wv2#area3#page19p#frm14p#fld66p}value" target="wv2#area3#act27p.PortaleSubappaltatoriDataservice$pdp166o" name="Username - Username"/>
           </NavigationFlow>
         </OnSelectEvent>
@@ -67,22 +64,10 @@
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par144p" source="{wv2#area3#page19p#frm14p#fld34p}value" target="wv2#area3#act28p.PortaleSubappaltatoriDataservice$pdp78o" name="Ragione Sociale - Ragione Sociale"/>
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par145p" target="wv2#area3#act28p.PortaleSubappaltatoriDataservice$pdp84o" name="Tenant [oid] - tenant" sourceParameter="wv2#prd8"/>
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par147p" source="{wv2#area3#page19p#frm14p#sfld9p}value._be_att45" target="wv2#area3#act28p.PortaleSubappaltatoriDataservice$pdp89o" name="Tipologia Azienda [oid] - Tipologia Azienda oid"/>
-            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par309p" source="{wv2#area3#page19p#frm14p#fld61p}value" target="wv2#area3#act28p.PortaleSubappaltatoriDataservice$pdp160o" name="Attrezzature - Attrezzature"/>
-            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par310p" source="{wv2#area3#page19p#frm14p#fld60p}value" target="wv2#area3#act28p.PortaleSubappaltatoriDataservice$pdp159o" name="Mezzi - Mezzi"/>
-            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par311p" source="{wv2#area3#page19p#frm14p#fld62p}value" target="wv2#area3#act28p.PortaleSubappaltatoriDataservice$pdp161o" name="Prodotti e Sostanze chimiche - Prodotti e Sostanze chimiche"/>
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par322p" source="{wv2#area3#page19p#frm14p#fld66p}value" target="wv2#area3#act28p.PortaleSubappaltatoriDataservice$pdp167o" name="Username - username"/>
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
-      <Field id="wv2#area3#page19p#frm14p#fld60p" modifiable="true" name="Mezzi" type="boolean">
-        <VRules/>
-      </Field>
-      <Field id="wv2#area3#page19p#frm14p#fld61p" modifiable="true" name="Attrezzature" type="boolean">
-        <VRules/>
-      </Field>
-      <Field id="wv2#area3#page19p#frm14p#fld62p" modifiable="true" name="Prodotti e Sostanze chimiche" type="boolean">
-        <VRules/>
-      </Field>
       <Field id="wv2#area3#page19p#frm14p#fld66p" type="string" modifiable="true" name="Username" validationOrder="wv2#area3#page19p#frm14p#fld66p#mnd47p wv2#area3#page19p#frm14p#fld66p#clc1p">
         <VRules>
           <MandatoryValidationRule id="wv2#area3#page19p#frm14p#fld66p#mnd47p" name="Mandatory"/>

@@ -205,6 +205,13 @@
             <ParameterBinding id="wv2#area3#page22p#lst12p#oslte139p#nf169p#par557p" source="data._be_att22" target="wv2#area3#act59p.PortaleSubappaltatoriDataservice$pdp135o" name="oid - oid"/>
           </NavigationFlow>
         </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page22p#lst12p#oslte174p" name="Cancella" validate="true">
+          <NavigationFlow id="wv2#area3#page22p#lst12p#oslte174p#nf212p" to="wv2#area3#page22p#dpg7p#frm21p">
+            <ParameterBinding id="wv2#area3#page22p#lst12p#oslte174p#nf212p#par623p" sourceValue="true" target="{wv2#area3#page22p#dpg7p#frm21p#fld127p}value" name="&quot;true&quot; - annulla"/>
+            <ParameterBinding id="wv2#area3#page22p#lst12p#oslte174p#nf212p#par626p" sourceValue="false" target="{wv2#area3#page22p#dpg7p#frm21p#fld125p}value" name="&quot;false&quot; - modulo"/>
+            <ParameterBinding id="wv2#area3#page22p#lst12p#oslte174p#nf212p#par627p" source="data._be_att22" target="{wv2#area3#page22p#dpg7p#frm21p#fld56p}value" name="oid - oid allegato"/>
+          </NavigationFlow>
+        </OnSelectEvent>
       </Events>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att23"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att24"/>
@@ -242,6 +249,11 @@
       <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statoallegatoCodice"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
+      <Events>
+        <OnSelectEvent id="wv2#area3#page22p#lst15p#oslte173p" name="Dettaglio" validate="true">
+          <NavigationFlow id="wv2#area3#page22p#lst15p#oslte173p#nf211p" to="wv2#area3#page22p#dpg18p#dtl8p" automaticCoupling="true"/>
+        </OnSelectEvent>
+      </Events>
     </List>
     <List gr:x="285" gr:y="90" id="wv2#area3#page22p#lst17p" checkable="false" distinct="false" pageSize="5" name="Referenti registrati">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$User"/>
@@ -254,11 +266,6 @@
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att4" order="ascending"/>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att5" order="ascending"/>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$userName" order="ascending"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att3"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att4"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att5"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$userName"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att94o"/>
       <Events>
         <OnSelectEvent id="wv2#area3#page22p#lst17p#oslte80p" name="Attiva" validate="true">
           <NavigationFlow id="wv2#area3#page22p#lst17p#oslte80p#nf113p" to="wv2#area3#act46p">
@@ -284,7 +291,19 @@
             <ParameterBinding id="wv2#area3#page22p#lst17p#oslte83p#nf117p#par361p" source="data._be_userName" target="{wv2#area3#page22p#dpg9p#frm23p#fld70p}value" name="userID - Username"/>
           </NavigationFlow>
         </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page22p#lst17p#oslte172p" name="Rendi referente principale" validate="true">
+          <NavigationFlow id="wv2#area3#page22p#lst17p#oslte172p#nf209p" to="wv2#area3#act72p">
+            <ParameterBinding id="wv2#area3#page22p#lst17p#oslte172p#nf209p#par620p" sourceParameter="wv2#area3#page22p#prd13p" target="wv2#area3#act72p.PortaleSubappaltatoriDataservice$pdp246o" name="oid fornitore - fornitore [oid]"/>
+            <ParameterBinding id="wv2#area3#page22p#lst17p#oslte172p#nf209p#par621p" source="data._be_userOID" target="wv2#area3#act72p.PortaleSubappaltatoriDataservice$pdp245o" name="oid - user oid"/>
+          </NavigationFlow>
+        </OnSelectEvent>
       </Events>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att3"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att4"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att5"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$userName"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att94o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att122o"/>
     </List>
     <List gr:x="450" gr:y="25" id="wv2#area3#page22p#lst18p" checkable="false" distinct="false" name="Referenti invitati" pageSize="5">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls4"/>
@@ -352,6 +371,13 @@
         <OnSelectEvent id="wv2#area3#page22p#lst32p#oslte135p" name="Dettaglio" validate="true">
           <NavigationFlow id="wv2#area3#page22p#lst32p#oslte135p#nf166p" to="wv2#area3#page22p#dpg18p#dtl8p" automaticCoupling="true"/>
         </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page22p#lst32p#oslte176p" name="Cancella" validate="true">
+          <NavigationFlow id="wv2#area3#page22p#lst32p#oslte176p#nf214p" to="wv2#area3#page22p#dpg7p#frm21p">
+            <ParameterBinding id="wv2#area3#page22p#lst32p#oslte176p#nf214p#par628p" sourceValue="true" target="{wv2#area3#page22p#dpg7p#frm21p#fld127p}value" name="&quot;true&quot; - annulla"/>
+            <ParameterBinding id="wv2#area3#page22p#lst32p#oslte176p#nf214p#par629p" sourceValue="false" target="{wv2#area3#page22p#dpg7p#frm21p#fld125p}value" name="&quot;false&quot; - modulo"/>
+            <ParameterBinding id="wv2#area3#page22p#lst32p#oslte176p#nf214p#par630p" source="data._be_att22" target="{wv2#area3#page22p#dpg7p#frm21p#fld56p}value" name="oid - oid allegato"/>
+          </NavigationFlow>
+        </OnSelectEvent>
       </Events>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att23"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att24"/>
@@ -376,9 +402,6 @@
           <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role59o"/>
         </AssociationRoleCondition>
       </ConditionalExpression>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att114o"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att115o"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att116o"/>
       <Events>
         <OnSelectEvent id="wv2#area3#page22p#lst33p#oslte153p" name="Gestisci documenti" validate="true">
           <NavigationFlow id="wv2#area3#page22p#lst33p#oslte153p#nf190p" to="wv2#area3#page22p#lst34p">
@@ -396,6 +419,11 @@
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att114o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att115o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att116o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o" order="ascending"/>
     </List>
     <List id="wv2#area3#page22p#lst34p" name="Documenti personale" gr:x="945" gr:y="580" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
@@ -443,6 +471,13 @@
             <ParameterBinding id="wv2#area3#page22p#lst34p#oslte152p#nf189p#par563p" sourceParameter="wv2#area3#page22p#prd15p" target="wv2#area3#act59p.PortaleSubappaltatoriDataservice$pdp231o" name="oid personale - oid personale"/>
           </NavigationFlow>
         </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page22p#lst34p#oslte177p" name="Cancella" validate="true">
+          <NavigationFlow id="wv2#area3#page22p#lst34p#oslte177p#nf215p" to="wv2#area3#page22p#dpg7p#frm21p">
+            <ParameterBinding id="wv2#area3#page22p#lst34p#oslte177p#nf215p#par631p" sourceValue="true" target="{wv2#area3#page22p#dpg7p#frm21p#fld127p}value" name="&quot;true&quot; - annulla"/>
+            <ParameterBinding id="wv2#area3#page22p#lst34p#oslte177p#nf215p#par632p" sourceValue="false" target="{wv2#area3#page22p#dpg7p#frm21p#fld125p}value" name="&quot;false&quot; - modulo"/>
+            <ParameterBinding id="wv2#area3#page22p#lst34p#oslte177p#nf215p#par633p" source="data._be_att22" target="{wv2#area3#page22p#dpg7p#frm21p#fld56p}value" name="oid - oid allegato"/>
+          </NavigationFlow>
+        </OnSelectEvent>
       </Events>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att23"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att24"/>
@@ -456,7 +491,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
     </List>
-    <List id="wv2#area3#page22p#lst37p" name="Moduli" gr:x="1115" gr:y="850" checkable="false" distinct="false" pageSize="15">
+    <List id="wv2#area3#page22p#lst37p" name="Moduli" gr:x="1115" gr:y="825" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
       <ConditionalExpression id="wv2#area3#page22p#lst37p#sc55p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv2#area3#page22p#lst37p#sc55p#rcond51p" name="Fornitore" predicate="in" implied="false">
@@ -565,10 +600,10 @@
       </ViewComponent>
     </ViewComponents>
   </DialogPage>
-  <DialogPage gr:x="840" gr:y="850" id="wv2#area3#page22p#dpg7p" name="Note Rigetto">
+  <DialogPage gr:x="840" gr:y="850" id="wv2#area3#page22p#dpg7p" name="Note">
     <ViewComponents>
       <Form gr:x="0" gr:y="0" id="wv2#area3#page22p#dpg7p#frm21p" name="Nota">
-        <Field id="wv2#area3#page22p#dpg7p#frm21p#fld55p" type="text" modifiable="true" name="Note rigetto" validationOrder="wv2#area3#page22p#dpg7p#frm21p#fld55p#mnd46p">
+        <Field id="wv2#area3#page22p#dpg7p#frm21p#fld55p" type="text" modifiable="true" name="Note" validationOrder="wv2#area3#page22p#dpg7p#frm21p#fld55p#mnd46p">
           <VRules>
             <MandatoryValidationRule id="wv2#area3#page22p#dpg7p#frm21p#fld55p#mnd46p" name="Mandatory"/>
           </VRules>
@@ -583,8 +618,15 @@
               <ParameterBinding id="wv2#area3#page22p#dpg7p#frm21p#oslte64p#nf102p#par617p" source="{wv2#area3#page22p#dpg7p#frm21p#fld125p}value" target="wv2#area3#act43p.PortaleSubappaltatoriDataservice$pdp239o" name="modulo - modulo"/>
             </NavigationFlow>
           </OnSelectEvent>
+          <OnSelectEvent id="wv2#area3#page22p#dpg7p#frm21p#oslte175p" name="Conferma cancellazione" validate="true">
+            <NavigationFlow id="wv2#area3#page22p#dpg7p#frm21p#oslte175p#nf213p" to="wv2#area3#act73p">
+              <ParameterBinding id="wv2#area3#page22p#dpg7p#frm21p#oslte175p#nf213p#par624p" source="{wv2#area3#page22p#dpg7p#frm21p#fld56p}value" target="wv2#area3#act73p.PortaleSubappaltatoriDataservice$pdp250o" name="oid allegato - oid documento"/>
+              <ParameterBinding id="wv2#area3#page22p#dpg7p#frm21p#oslte175p#nf213p#par625p" source="{wv2#area3#page22p#dpg7p#frm21p#fld55p}value" target="wv2#area3#act73p.PortaleSubappaltatoriDataservice$pdp251o" name="Note - Note"/>
+            </NavigationFlow>
+          </OnSelectEvent>
         </Events>
         <Field id="wv2#area3#page22p#dpg7p#frm21p#fld125p" type="boolean" modifiable="false" name="modulo"/>
+        <Field id="wv2#area3#page22p#dpg7p#frm21p#fld127p" type="boolean" modifiable="true" name="annulla"/>
       </Form>
     </ViewComponents>
   </DialogPage>
@@ -674,6 +716,9 @@
         <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp200o"/>
         <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp201o"/>
         <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp202o"/>
+        <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp247o"/>
+        <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp248o"/>
+        <SortAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp201o" order="ascending"/>
       </List>
       <Details gr:x="15" gr:y="0" id="wv2#area3#page22p#dpg18p#dtl8p">
         <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>

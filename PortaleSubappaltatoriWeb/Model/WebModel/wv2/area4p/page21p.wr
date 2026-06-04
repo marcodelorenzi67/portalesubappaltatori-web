@@ -2,11 +2,13 @@
   <ViewComponents>
     <List gr:x="0" gr:y="0" id="wv2#area4p#page21p#lst10p" checkable="false" distinct="false" pageSize="25">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls13o"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att69o" order="descending"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att69o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att70o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att77o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att78o"/>
-      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att69o" order="descending"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att124o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att125o"/>
     </List>
   </ViewComponents>
 </Page>

@@ -5,7 +5,7 @@
         <wd-cell [width]="12">
           <wd-card title="main">
             <wr-content for="content">
-              <wd-data-grid elevation="0" cols="main/lst3/data/_be_att64 | main/lst3/data/_be_att65 | main/lst3/data/_be_att40 | main/lst3/data/_be_att38" [rows]="valueOf('main/lst3/data')" events="main/lst3/data/oslte14" paginator="main/lst3/paging">
+              <wd-data-grid elevation="0" cols="main/lst3/data/_be_att64 | main/lst3/data/_be_att65 | main/lst3/data/_be_att40 | main/lst3/data/_be_att38 | main/lst3/data/_be_att39" [rows]="valueOf('main/lst3/data')" events="main/lst3/data/oslte14" paginator="main/lst3/paging" colsOrder="_be_att64 _be_att65 _be_att39 _be_att40 _be_att38">
                 <wr-content for="header[_be_att64]">
                   {{ labelOf('.') | wrLocalize }}
                 </wr-content>
@@ -35,6 +35,12 @@
                 </wr-content>
                 <wr-content for="header-actions">
                   <wd-button context="main/gctu8/oslte15" iconText="add"></wd-button>
+                </wr-content>
+                <wr-content for="header[_be_att39]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att39]">
+                  {{ valueOf('.', row) | number:'wr-integer' }}
                 </wr-content>
               </wd-data-grid>
             </wr-content>
@@ -70,7 +76,10 @@
                   <wd-cell [width]="6">
                     <wd-select appearance="outline" context="frm9/sfld4"></wd-select>
                   </wd-cell>
-                  <wd-cell [width]="6">
+                  <wd-cell [width]="3">
+                    <wd-input context="frm9/fld22" type="number" appearance="outline"></wd-input>
+                  </wd-cell>
+                  <wd-cell [width]="3">
                     <wd-toggle context="frm9/fld23"></wd-toggle>
                   </wd-cell>
                 </wd-row>

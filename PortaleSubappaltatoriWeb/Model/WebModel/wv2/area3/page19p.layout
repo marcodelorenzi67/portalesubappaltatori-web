@@ -19,13 +19,7 @@
                       <wd-cell [width]="4">
                         <wd-select appearance="outline" context="main/frm14p/sfld9p"></wd-select>
                       </wd-cell>
-                    </wd-row><wd-row><wd-cell [width]="4">
-                      <wd-toggle context="main/frm14p/fld61p"></wd-toggle>
-                    </wd-cell><wd-cell [width]="4">
-                      <wd-toggle context="main/frm14p/fld60p"></wd-toggle>
-                    </wd-cell><wd-cell [width]="4">
-                      <wd-toggle context="main/frm14p/fld62p"></wd-toggle>
-                    </wd-cell></wd-row>
+                    </wd-row>
                   </wd-grid>
                 </wr-content>
                 <wr-content for="title[frm14p]">

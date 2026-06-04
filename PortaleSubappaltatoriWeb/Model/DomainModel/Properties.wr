@@ -385,6 +385,7 @@
       <srs:ServiceScope name="Amministratore" method="create"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp165o" refModelId="mpkg1#ada1#ipd1#pdp165o" pid="PortaleSubappaltatoriDataservice" serverProperty="username" name="username" type="string" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp20" refModelId="mpkg1#ada1#ipd1#pdp20" pid="PortaleSubappaltatoriDataservice" serverProperty="oidRuoli" name="oid Ruoli" type="integer" location="body" cardinality="N"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp243o" refModelId="mpkg1#ada1#ipd1#pdp243o" pid="PortaleSubappaltatoriDataservice" serverProperty="principale" name="Principale" type="boolean" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp5" refModelId="mpkg1#ada1#ipd1#pdp5" pid="PortaleSubappaltatoriDataservice" serverProperty="email" name="Email" type="string" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp6" refModelId="mpkg1#ada1#ipd1#pdp6" pid="PortaleSubappaltatoriDataservice" serverProperty="cognome" name="Cognome" type="string" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp7" refModelId="mpkg1#ada1#ipd1#pdp7" pid="PortaleSubappaltatoriDataservice" serverProperty="nome" name="Nome" type="string" location="body" cardinality="1"/>
@@ -399,7 +400,7 @@
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp54" refModelId="mpkg1#ada11#ipd17#pdp54" pid="PortaleSubappaltatoriDataservice" serverProperty="descrizione" name="Descrizione" type="string" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp55" refModelId="mpkg1#ada11#ipd17#pdp55" pid="PortaleSubappaltatoriDataservice" serverProperty="oid" name="oid" type="integer" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp56" refModelId="mpkg1#ada11#ipd17#pdp56" pid="PortaleSubappaltatoriDataservice" serverProperty="condiviso" name="Condiviso" type="boolean" location="body" cardinality="1"/>
-      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp57" refModelId="mpkg1#ada11#ipd17#pdp57" pid="PortaleSubappaltatoriDataservice" serverProperty="giorniDurata" name="Giorni Durata" type="integer" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp57" refModelId="mpkg1#ada11#ipd17#pdp57" pid="PortaleSubappaltatoriDataservice" serverProperty="giorniAlert" name="Giorni Alert" type="integer" location="body" cardinality="1"/>
     </srs:ActionService>
     <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada12" refModelId="mpkg1#ada12" pid="PortaleSubappaltatoriDataservice" name="Aggiungi tipo documento a tipo azienda" defaultSuccessPortDefinition="mpkg1#ada12#spd18" defaultErrorPortDefinition="mpkg1#ada12#epd18" serverResourceName="actions/aggiungiTipoDocumentoATipoAzienda" method="create">
       <srs:ServiceScope name="Amministratore" method="create"/>
@@ -485,9 +486,6 @@
     <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada16o" refModelId="mpkg5o#ada16o" pid="PortaleSubappaltatoriDataservice" name="Salva Fornitore" defaultSuccessPortDefinition="mpkg5o#ada16o#spd24o" defaultErrorPortDefinition="mpkg5o#ada16o#epd24o" serverResourceName="actions/salvaFornitore" method="create">
       <srs:ServiceScope name="Gestione" method="create"/>
       <srs:ServiceScope name="Responsabile" method="create"/>
-      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp156o" refModelId="mpkg5o#ada16o#ipd24o#pdp156o" pid="PortaleSubappaltatoriDataservice" serverProperty="attrezzature" name="Attrezzature" type="boolean" location="body" cardinality="1"/>
-      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp157o" refModelId="mpkg5o#ada16o#ipd24o#pdp157o" pid="PortaleSubappaltatoriDataservice" serverProperty="mezzi" name="Mezzi" type="boolean" location="body" cardinality="1"/>
-      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp158o" refModelId="mpkg5o#ada16o#ipd24o#pdp158o" pid="PortaleSubappaltatoriDataservice" serverProperty="prodottiESostanzeChimiche" name="Prodotti e Sostanze chimiche" type="boolean" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp166o" refModelId="mpkg5o#ada16o#ipd24o#pdp166o" pid="PortaleSubappaltatoriDataservice" serverProperty="username" name="Username" type="string" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp71o" refModelId="mpkg5o#ada16o#ipd24o#pdp71o" pid="PortaleSubappaltatoriDataservice" serverProperty="nomeReferente" name="Nome Referente" type="string" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp72o" refModelId="mpkg5o#ada16o#ipd24o#pdp72o" pid="PortaleSubappaltatoriDataservice" serverProperty="partitaIVA" name="Partita IVA" type="string" location="body" cardinality="1"/>
@@ -503,9 +501,6 @@
       <srs:ServiceScope name="Amministratore" method="create"/>
       <srs:ServiceScope name="Gestione" method="create"/>
       <srs:ServiceScope name="Responsabile" method="create"/>
-      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp159o" refModelId="mpkg5o#ada18o#ipd26o#pdp159o" pid="PortaleSubappaltatoriDataservice" serverProperty="mezzi" name="Mezzi" type="boolean" location="body" cardinality="1"/>
-      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp160o" refModelId="mpkg5o#ada18o#ipd26o#pdp160o" pid="PortaleSubappaltatoriDataservice" serverProperty="attrezzature" name="Attrezzature" type="boolean" location="body" cardinality="1"/>
-      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp161o" refModelId="mpkg5o#ada18o#ipd26o#pdp161o" pid="PortaleSubappaltatoriDataservice" serverProperty="prodottiESostanzeChimiche" name="Prodotti e Sostanze chimiche" type="boolean" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp167o" refModelId="mpkg5o#ada18o#ipd26o#pdp167o" pid="PortaleSubappaltatoriDataservice" serverProperty="username" name="username" type="string" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp78o" refModelId="mpkg5o#ada18o#ipd26o#pdp78o" pid="PortaleSubappaltatoriDataservice" serverProperty="ragioneSociale" name="Ragione Sociale" type="string" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp79o" refModelId="mpkg5o#ada18o#ipd26o#pdp79o" pid="PortaleSubappaltatoriDataservice" serverProperty="nomeReferente" name="Nome Referente" type="string" location="body" cardinality="1"/>
@@ -594,6 +589,20 @@
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp226o" refModelId="mpkg5o#ada36o#ipd57o#pdp226o" pid="PortaleSubappaltatoriDataservice" serverProperty="fornitoreOidPersonaleToFornitore" name="Fornitore.oid(PersonaleToFornitore)" type="integer" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp228o" refModelId="mpkg5o#ada36o#ipd57o#pdp228o" pid="PortaleSubappaltatoriDataservice" serverProperty="tenant" name="Tenant" type="integer" location="body" cardinality="1"/>
     </srs:ActionService>
+    <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada38o" refModelId="mpkg5o#ada38o" pid="PortaleSubappaltatoriDataservice" name="Rendi referente principale" defaultSuccessPortDefinition="mpkg5o#ada38o#spd59o" defaultErrorPortDefinition="mpkg5o#ada38o#epd59o" serverResourceName="actions/rendiReferentePrincipale" method="create">
+      <srs:ServiceScope name="Amministratore" method="create"/>
+      <srs:ServiceScope name="Gestione" method="create"/>
+      <srs:ServiceScope name="Responsabile" method="create"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp245o" refModelId="mpkg5o#ada38o#ipd59o#pdp245o" pid="PortaleSubappaltatoriDataservice" serverProperty="userOid" name="user oid" type="integer" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp246o" refModelId="mpkg5o#ada38o#ipd59o#pdp246o" pid="PortaleSubappaltatoriDataservice" serverProperty="fornitoreOid" name="fornitore [oid]" type="integer" location="body" cardinality="1"/>
+    </srs:ActionService>
+    <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada39o" refModelId="mpkg5o#ada39o" pid="PortaleSubappaltatoriDataservice" name="Annulla documento" defaultSuccessPortDefinition="mpkg5o#ada39o#spd60o" defaultErrorPortDefinition="mpkg5o#ada39o#epd60o" serverResourceName="actions/annullaDocumento" method="create">
+      <srs:ServiceScope name="Amministratore" method="create"/>
+      <srs:ServiceScope name="Gestione" method="create"/>
+      <srs:ServiceScope name="Responsabile" method="create"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp250o" refModelId="mpkg5o#ada39o#ipd60o#pdp250o" pid="PortaleSubappaltatoriDataservice" serverProperty="oidDocumento" name="oid documento" type="integer" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp251o" refModelId="mpkg5o#ada39o#ipd60o#pdp251o" pid="PortaleSubappaltatoriDataservice" serverProperty="note" name="Note" type="text" location="body" cardinality="1"/>
+    </srs:ActionService>
     <srs:ActionService ref="PortaleSubappaltatoriDataservice$adf11o" refModelId="mpkg5o#adf11o" pid="PortaleSubappaltatoriDataservice" name="Get Tipologia documenti per fornitore" type="read" defaultSuccessPortDefinition="mpkg5o#adf11o#spd41o" defaultErrorPortDefinition="mpkg5o#adf11o#epd41o" serverResourceName="actions/getTipologiaDocumentiPerFornitore" method="read">
       <srs:ServiceScope name="Amministratore" method="read"/>
       <srs:ServiceScope name="Gestione" method="read"/>
@@ -619,6 +628,8 @@
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp200o" refModelId="mpkg5o#adf13o#spd51o#pdp200o" pid="PortaleSubappaltatoriDataservice" serverProperty="fornitore" name="Fornitore" type="string" location="body" cardinality="1"/>
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp201o" refModelId="mpkg5o#adf13o#spd51o#pdp201o" pid="PortaleSubappaltatoriDataservice" serverProperty="timestampLog" name="Timestamp log" type="timestamp" location="body" cardinality="1"/>
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp202o" refModelId="mpkg5o#adf13o#spd51o#pdp202o" pid="PortaleSubappaltatoriDataservice" serverProperty="utente" name="Utente" type="string" location="body" cardinality="1"/>
+      <srs:Output ref="PortaleSubappaltatoriDataservice$pdp247o" refModelId="mpkg5o#adf13o#spd51o#pdp247o" pid="PortaleSubappaltatoriDataservice" serverProperty="nome" name="Nome" type="string" location="body" cardinality="1"/>
+      <srs:Output ref="PortaleSubappaltatoriDataservice$pdp248o" refModelId="mpkg5o#adf13o#spd51o#pdp248o" pid="PortaleSubappaltatoriDataservice" serverProperty="cognome" name="Cognome" type="string" location="body" cardinality="1"/>
     </srs:ActionService>
     <srs:ActionService ref="PortaleSubappaltatoriDataservice$adf9o" refModelId="mpkg5o#adf9o" pid="PortaleSubappaltatoriDataservice" name="Get Fornitore" type="read" defaultSuccessPortDefinition="mpkg5o#adf9o#spd34o" defaultErrorPortDefinition="mpkg5o#adf9o#epd34o" serverResourceName="actions/getFornitore" method="read">
       <srs:ServiceScope name="Amministratore" method="read"/>
@@ -626,12 +637,9 @@
       <srs:ServiceScope name="Gestione" method="read"/>
       <srs:ServiceScope name="Responsabile" method="read"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp116o" refModelId="mpkg5o#adf9o#ipd34o#pdp116o" pid="PortaleSubappaltatoriDataservice" serverProperty="oid" name="Oid" type="integer" location="query" cardinality="N"/>
-      <srs:Output ref="PortaleSubappaltatoriDataservice$pdp117o" refModelId="mpkg5o#adf9o#spd34o#pdp117o" pid="PortaleSubappaltatoriDataservice" serverProperty="sostanzeChimiche" name="Sostanze chimiche" type="boolean" location="body" cardinality="1"/>
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp118o" refModelId="mpkg5o#adf9o#spd34o#pdp118o" pid="PortaleSubappaltatoriDataservice" serverProperty="nomeReferente" name="Nome Referente" type="string" location="body" cardinality="1"/>
-      <srs:Output ref="PortaleSubappaltatoriDataservice$pdp119o" refModelId="mpkg5o#adf9o#spd34o#pdp119o" pid="PortaleSubappaltatoriDataservice" serverProperty="attrezzature" name="Attrezzature" type="boolean" location="body" cardinality="1"/>
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp121o" refModelId="mpkg5o#adf9o#spd34o#pdp121o" pid="PortaleSubappaltatoriDataservice" serverProperty="ragioneSociale" name="Ragione Sociale" type="string" location="body" cardinality="1"/>
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp122o" refModelId="mpkg5o#adf9o#spd34o#pdp122o" pid="PortaleSubappaltatoriDataservice" serverProperty="partitaIVA" name="Partita IVA" type="string" location="body" cardinality="1"/>
-      <srs:Output ref="PortaleSubappaltatoriDataservice$pdp123o" refModelId="mpkg5o#adf9o#spd34o#pdp123o" pid="PortaleSubappaltatoriDataservice" serverProperty="mezzi" name="Mezzi" type="boolean" location="body" cardinality="1"/>
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp124o" refModelId="mpkg5o#adf9o#spd34o#pdp124o" pid="PortaleSubappaltatoriDataservice" serverProperty="cognomeReferente" name="Cognome Referente" type="string" location="body" cardinality="1"/>
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp125o" refModelId="mpkg5o#adf9o#spd34o#pdp125o" pid="PortaleSubappaltatoriDataservice" serverProperty="tipologiaAziendaOid" name="Tipologia Azienda.oid" type="integer" location="body" cardinality="1"/>
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp126o" refModelId="mpkg5o#adf9o#spd34o#pdp126o" pid="PortaleSubappaltatoriDataservice" serverProperty="email" name="Email" type="string" location="body" cardinality="1"/>
@@ -748,6 +756,7 @@
       <srs:ServiceScope name="Amministratore" method="read"/>
       <srs:ServiceScope name="Gestione" method="read"/>
       <srs:ServiceScope name="Responsabile" method="read"/>
+      <srs:Attribute ref="PortaleSubappaltatoriDataservice$att122o" refModelId="User#att122o" pid="PortaleSubappaltatoriDataservice" serverProperty="principale" name="Principale" type="boolean"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att3" refModelId="User#att3" pid="PortaleSubappaltatoriDataservice" serverProperty="nome" name="Nome" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att4" refModelId="User#att4" pid="PortaleSubappaltatoriDataservice" serverProperty="cognome" name="Cognome" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att49" refModelId="User#att49" pid="PortaleSubappaltatoriDataservice" serverProperty="backoffice" name="Backoffice" type="boolean"/>
@@ -790,6 +799,8 @@
     <srs:ClassService ref="PortaleSubappaltatoriDataservice$cls13o" refModelId="cls13o" pid="PortaleSubappaltatoriDataservice" serverResourceName="data/Log" name="Log">
       <srs:ServiceScope name="Amministratore" method="read"/>
       <srs:ServiceScope name="Responsabile" method="read"/>
+      <srs:Attribute ref="PortaleSubappaltatoriDataservice$att124o" refModelId="cls13o#att124o" pid="PortaleSubappaltatoriDataservice" serverProperty="nome" name="Nome" type="string"/>
+      <srs:Attribute ref="PortaleSubappaltatoriDataservice$att125o" refModelId="cls13o#att125o" pid="PortaleSubappaltatoriDataservice" serverProperty="cognome" name="Cognome" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att68o" refModelId="cls13o#att68o" pid="PortaleSubappaltatoriDataservice" serverProperty="oid" name="oid" type="integer" key="true"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att69o" refModelId="cls13o#att69o" pid="PortaleSubappaltatoriDataservice" serverProperty="timestampLog" name="Timestamp log" type="timestamp"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att70o" refModelId="cls13o#att70o" pid="PortaleSubappaltatoriDataservice" serverProperty="tipoAzione" name="Tipo azione" type="string"/>
@@ -874,6 +885,7 @@
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att114o" refModelId="cls20o#att114o" pid="PortaleSubappaltatoriDataservice" serverProperty="nome" name="Nome" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att115o" refModelId="cls20o#att115o" pid="PortaleSubappaltatoriDataservice" serverProperty="cognome" name="Cognome" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att116o" refModelId="cls20o#att116o" pid="PortaleSubappaltatoriDataservice" serverProperty="ruolo" name="Ruolo" type="string"/>
+      <srs:Attribute ref="PortaleSubappaltatoriDataservice$att126o" refModelId="cls20o#att126o" pid="PortaleSubappaltatoriDataservice" serverProperty="documentiDaCaricare" name="Documenti da caricare" type="boolean"/>
       <srs:Role ref="PortaleSubappaltatoriDataservice$role59o" refModelId="as30o#role59o" pid="PortaleSubappaltatoriDataservice" serverProperty="personaleToFornitore" name="PersonaleToFornitore" maxCard="1" maxCardInv="N" aRef="PortaleSubappaltatoriDataservice$as30o" tRef="PortaleSubappaltatoriDataservice$cls2"/>
       <srs:Role ref="PortaleSubappaltatoriDataservice$role62o" refModelId="as31o#role62o" pid="PortaleSubappaltatoriDataservice" serverProperty="personaleToDocumenti" name="PersonaleToDocumenti" maxCard="N" maxCardInv="1" aRef="PortaleSubappaltatoriDataservice$as31o" tRef="PortaleSubappaltatoriDataservice$cls5"/>
     </srs:ClassService>
@@ -896,6 +908,7 @@
       <srs:ServiceScope name="Consultazione" method="read"/>
       <srs:ServiceScope name="Gestione" method="read"/>
       <srs:ServiceScope name="Responsabile" method="read"/>
+      <srs:Attribute ref="PortaleSubappaltatoriDataservice$att123o" refModelId="cls4#att123o" pid="PortaleSubappaltatoriDataservice" serverProperty="principale" name="Principale" type="boolean"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att18" refModelId="cls4#att18" pid="PortaleSubappaltatoriDataservice" serverProperty="nome" name="Nome" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att19" refModelId="cls4#att19" pid="PortaleSubappaltatoriDataservice" serverProperty="cognome" name="Cognome" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att20" refModelId="cls4#att20" pid="PortaleSubappaltatoriDataservice" serverProperty="username" name="Username" type="string" key="true"/>
@@ -912,7 +925,7 @@
       <srs:ServiceScope name="Fornitore" method="read"/>
       <srs:ServiceScope name="Gestione" method="read"/>
       <srs:ServiceScope name="Responsabile" method="read"/>
-      <srs:Attribute ref="PortaleSubappaltatoriDataservice$att107o" refModelId="cls5#att107o" pid="PortaleSubappaltatoriDataservice" serverProperty="seriale" name="Seriale" type="string"/>
+      <srs:Attribute ref="PortaleSubappaltatoriDataservice$att107o" refModelId="cls5#att107o" pid="PortaleSubappaltatoriDataservice" serverProperty="marca" name="Marca" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att108o" refModelId="cls5#att108o" pid="PortaleSubappaltatoriDataservice" serverProperty="identificativo" name="Identificativo" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att109o" refModelId="cls5#att109o" pid="PortaleSubappaltatoriDataservice" serverProperty="modello" name="Modello" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att112o" refModelId="cls5#att112o" pid="PortaleSubappaltatoriDataservice" serverProperty="categoria" name="Categoria" type="string"/>
@@ -947,7 +960,7 @@
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att120o" refModelId="cls8#att120o" pid="PortaleSubappaltatoriDataservice" serverProperty="codice" name="Codice" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att37" refModelId="cls8#att37" pid="PortaleSubappaltatoriDataservice" serverProperty="oid" name="oid" type="integer" key="true"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att38" refModelId="cls8#att38" pid="PortaleSubappaltatoriDataservice" serverProperty="condiviso" name="Condiviso" type="boolean"/>
-      <srs:Attribute ref="PortaleSubappaltatoriDataservice$att39" refModelId="cls8#att39" pid="PortaleSubappaltatoriDataservice" serverProperty="giorniDurata" name="Giorni Durata" type="integer"/>
+      <srs:Attribute ref="PortaleSubappaltatoriDataservice$att39" refModelId="cls8#att39" pid="PortaleSubappaltatoriDataservice" serverProperty="giorniAlert" name="Giorni Alert" type="integer"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att40" refModelId="cls8#att40" pid="PortaleSubappaltatoriDataservice" serverProperty="patternNome" name="Pattern nome" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att64" refModelId="cls8#att64" pid="PortaleSubappaltatoriDataservice" serverProperty="descrizione" name="Descrizione" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att65" refModelId="cls8#att65" pid="PortaleSubappaltatoriDataservice" serverProperty="macrotipologia" name="Macrotipologia" type="string"/>
@@ -969,6 +982,7 @@
     </srs:ClassService>
     <srs:UserService ref="PortaleSubappaltatoriDataservice$UserService" refModelId="UserService" pid="PortaleSubappaltatoriDataservice" name="User" serverResourceName="User" userServiceOperationTypes="read">
       <srs:ServiceScope anonymous="true" method="read"/>
+      <srs:UserAttribute ref="PortaleSubappaltatoriDataservice$att122o" refModelId="User#att122o" pid="PortaleSubappaltatoriDataservice" serverProperty="principale" name="Principale" type="boolean"/>
       <srs:UserAttribute ref="PortaleSubappaltatoriDataservice$att3" refModelId="User#att3" pid="PortaleSubappaltatoriDataservice" serverProperty="nome" name="Nome" type="string"/>
       <srs:UserAttribute ref="PortaleSubappaltatoriDataservice$att4" refModelId="User#att4" pid="PortaleSubappaltatoriDataservice" serverProperty="cognome" name="Cognome" type="string"/>
       <srs:UserAttribute ref="PortaleSubappaltatoriDataservice$att49" refModelId="User#att49" pid="PortaleSubappaltatoriDataservice" serverProperty="backoffice" name="Backoffice" type="boolean"/>

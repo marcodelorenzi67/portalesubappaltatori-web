@@ -35,9 +35,7 @@
         <ConditionalExpression id="wv2#area1#area2#page11#dpg1#frm9#sc5" defaultPolicy="emptyAlwaysApplied" booleanOperator="and">
           <KeyCondition id="wv2#area1#area2#page11#dpg1#frm9#sc5#kcond3" name="KeyCondition3" predicate="in" implied="false"/>
         </ConditionalExpression>
-        <Field id="wv2#area1#area2#page11#dpg1#frm9#fld22" modifiable="true" name="Giorni Durata" type="integer">
-          <VRules/>
-        </Field>
+        <Field id="wv2#area1#area2#page11#dpg1#frm9#fld22" modifiable="true" name="Giorni Alert" type="integer"/>
         <Field id="wv2#area1#area2#page11#dpg1#frm9#fld23" modifiable="true" name="Condiviso" type="boolean">
           <VRules/>
         </Field>
