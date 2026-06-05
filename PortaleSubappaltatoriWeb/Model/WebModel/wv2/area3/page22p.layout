@@ -219,7 +219,7 @@
                   <wd-grid>
                     <wd-row>
                       <wd-cell [width]="12">
-                        <wd-data-grid elevation="0" cols="main/lst12p/data/_be_att23 | main/lst12p/data/_be_att24 | main/lst12p/data/_be_att88o | main/lst12p/data/_be_att89o | main/lst12p/data/_be_att87o | main/lst12p/data/_be_att99o" [rows]="valueOf('main/lst12p/data')" events="main/lst12p/data/oslte139p | main/lst12p/data/oslte138p | main/lst12p/data/oslte62p | main/lst12p/data/oslte63p | main/lst12p/data/oslte121p | main/lst12p/data/oslte174p" title="main/lst12p" paginator="main/lst12p/paging" [useExcelLikeFilter]="true" colsOrder="_be_att23 _be_att24 _be_att99o _be_att88o _be_att89o _be_att87o" eventsOrder="oslte139p oslte138p oslte62p oslte63p oslte174p oslte121p">
+                        <wd-data-grid elevation="0" cols="main/lst12p/data/_be_att23 | main/lst12p/data/_be_att24 | main/lst12p/data/_be_att88o | main/lst12p/data/_be_att89o | main/lst12p/data/_be_att87o | main/lst12p/data/_be_att99o" [rows]="valueOf('main/lst12p/data')" events="main/lst12p/data/oslte139p | main/lst12p/data/oslte138p | main/lst12p/data/oslte62p | main/lst12p/data/oslte63p | main/lst12p/data/oslte121p | main/lst12p/data/oslte174p | main/lst12p/data/oslte178p" title="main/lst12p" paginator="main/lst12p/paging" [useExcelLikeFilter]="true" colsOrder="_be_att23 _be_att24 _be_att99o _be_att88o _be_att89o _be_att87o" eventsOrder="oslte139p oslte138p oslte62p oslte63p oslte174p oslte178p oslte121p">
                           <wr-content for="header[_be_att23]">
                             {{ labelOf('.') | wrLocalize }}
                           </wr-content>
@@ -280,13 +280,16 @@
                           <wr-content for="event[oslte174p]">
                             <wd-button variant="mat-icon-button" color="primary" iconText="backspace" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst12p/data/statoallegatoCodice', row) === 'A'"></wd-button>
                           </wr-content>
+                          <wr-content for="event[oslte178p]">
+                            <wd-button variant="mat-icon-button" color="primary" iconText="account_balance" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst12p/data/statoallegatoCodice', row) === 'S' &amp;&amp; !valueOf('/main/lst12p/data/_be_att127o', row)"></wd-button>
+                          </wr-content>
                         </wd-data-grid>
                       </wd-cell>
                     </wd-row>
                   </wd-grid>
                 </mat-tab>
                 <mat-tab [label]="'Documentazione aggiuntiva' | wrLocalize">
-                  <wd-data-grid cols="main/lst32p/data/_be_att23 | main/lst32p/data/_be_att24 | main/lst32p/data/_be_att99o | main/lst32p/data/_be_att88o | main/lst32p/data/_be_att112o | main/lst32p/data/_be_att89o | main/lst32p/data/_be_att108o | main/lst32p/data/_be_att109o | main/lst32p/data/_be_att107o | main/lst32p/data/_be_att87o" [rows]="valueOf('main/lst32p/data')" elevation="0" events="main/lst32p/data/oslte133p | main/lst32p/data/oslte134p | main/lst32p/data/oslte135p | main/lst32p/data/oslte176p" title="main/lst32p" eventsOrder="oslte133p oslte134p oslte176p oslte135p">
+                  <wd-data-grid cols="main/lst32p/data/_be_att23 | main/lst32p/data/_be_att24 | main/lst32p/data/_be_att99o | main/lst32p/data/_be_att88o | main/lst32p/data/_be_att112o | main/lst32p/data/_be_att89o | main/lst32p/data/_be_att108o | main/lst32p/data/_be_att109o | main/lst32p/data/_be_att107o | main/lst32p/data/_be_att87o" [rows]="valueOf('main/lst32p/data')" elevation="0" events="main/lst32p/data/oslte133p | main/lst32p/data/oslte134p | main/lst32p/data/oslte135p | main/lst32p/data/oslte176p | main/lst32p/data/oslte179p" title="main/lst32p" eventsOrder="oslte133p oslte134p oslte176p oslte179p oslte135p">
                     <wr-content for="header[_be_att23]">
                       {{ labelOf('.') | wrLocalize }}
                     </wr-content>
@@ -362,6 +365,9 @@
                     <wr-content for="event[oslte176p]">
                       <wd-button variant="mat-icon-button" color="primary" iconText="backspace" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst32p/data/statoallegatoCodice', row) === 'A'"></wd-button>
                     </wr-content>
+                    <wr-content for="event[oslte179p]">
+                      <wd-button variant="mat-icon-button" color="primary" iconText="account_balance" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst32p/data/statoallegatoCodice', row) === 'S' &amp;&amp; !valueOf('/main/lst32p/data/_be_att127o', row)"></wd-button>
+                    </wr-content>
                   </wd-data-grid>
                 </mat-tab>
                 <mat-tab [label]="'Personale' | wrLocalize">
@@ -409,7 +415,7 @@
                         </wd-data-grid>
                       </wd-cell>
                       <wd-cell [width]="6" *ngIf="valueOf('/main/prd15p')">
-                        <wd-data-grid elevation="0" cols="main/lst34p/data/_be_att23 | main/lst34p/data/_be_att24 | main/lst34p/data/_be_att99o | main/lst34p/data/_be_att88o | main/lst34p/data/_be_att89o | main/lst34p/data/_be_att87o" [rows]="valueOf('main/lst34p/data')" title="main/lst34p" events="main/lst34p/data/oslte152p | main/lst34p/data/oslte151p | main/lst34p/data/oslte148p | main/lst34p/data/oslte149p | main/lst34p/data/oslte150p | main/lst34p/data/oslte177p" paginator="main/lst34p/paging" eventsOrder="oslte152p oslte151p oslte148p oslte149p oslte177p oslte150p">
+                        <wd-data-grid elevation="0" cols="main/lst34p/data/_be_att23 | main/lst34p/data/_be_att24 | main/lst34p/data/_be_att99o | main/lst34p/data/_be_att88o | main/lst34p/data/_be_att89o | main/lst34p/data/_be_att87o" [rows]="valueOf('main/lst34p/data')" title="main/lst34p" events="main/lst34p/data/oslte152p | main/lst34p/data/oslte151p | main/lst34p/data/oslte148p | main/lst34p/data/oslte149p | main/lst34p/data/oslte150p | main/lst34p/data/oslte177p | main/lst34p/data/oslte180p" paginator="main/lst34p/paging" eventsOrder="oslte152p oslte151p oslte148p oslte149p oslte177p oslte180p oslte150p">
                           <wr-content for="header[_be_att23]">
                             {{ labelOf('.') | wrLocalize }}
                           </wr-content>
@@ -469,6 +475,9 @@
                           </wr-content>
                           <wr-content for="event[oslte177p]">
                             <wd-button variant="mat-icon-button" color="primary" iconText="backspace" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst34p/data/statoallegatoCodice', row) === 'A'"></wd-button>
+                          </wr-content>
+                          <wr-content for="event[oslte180p]">
+                            <wd-button variant="mat-icon-button" color="primary" iconText="account_balance" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst34p/data/statoallegatoCodice', row) === 'S' &amp;&amp; !valueOf('/main/lst34p/data/_be_att127o', row)"></wd-button>
                           </wr-content>
                         </wd-data-grid>
                       </wd-cell>

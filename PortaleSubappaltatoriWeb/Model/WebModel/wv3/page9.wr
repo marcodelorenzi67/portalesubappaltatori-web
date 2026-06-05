@@ -59,7 +59,7 @@
         </OnSelectEvent>
       </Events>
     </List>
-    <ViewComponent gr:x="75" gr:y="280" id="wv3#page9#gctu13p" name="BTN">
+    <ViewComponent gr:x="35" gr:y="280" id="wv3#page9#gctu13p" name="BTN">
       <Events>
         <OnSelectEvent id="wv3#page9#gctu13p#oslte41p" name="Nuova comunicazione" gr:pinned="true" gr:side="1" gr:pos="0">
           <NavigationFlow id="wv3#page9#gctu13p#oslte41p#nf71p" to="wv3#act51p" automaticCoupling="true"/>

@@ -603,6 +603,12 @@
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp250o" refModelId="mpkg5o#ada39o#ipd60o#pdp250o" pid="PortaleSubappaltatoriDataservice" serverProperty="oidDocumento" name="oid documento" type="integer" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp251o" refModelId="mpkg5o#ada39o#ipd60o#pdp251o" pid="PortaleSubappaltatoriDataservice" serverProperty="note" name="Note" type="text" location="body" cardinality="1"/>
     </srs:ActionService>
+    <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada43o" refModelId="mpkg5o#ada43o" pid="PortaleSubappaltatoriDataservice" name="Storicizza scaduto" defaultSuccessPortDefinition="mpkg5o#ada43o#spd64o" defaultErrorPortDefinition="mpkg5o#ada43o#epd64o" serverResourceName="actions/storicizzaScaduto" method="create">
+      <srs:ServiceScope name="Amministratore" method="create"/>
+      <srs:ServiceScope name="Gestione" method="create"/>
+      <srs:ServiceScope name="Responsabile" method="create"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp254o" refModelId="mpkg5o#ada43o#ipd64o#pdp254o" pid="PortaleSubappaltatoriDataservice" serverProperty="oid" name="oid" type="integer" location="body" cardinality="1"/>
+    </srs:ActionService>
     <srs:ActionService ref="PortaleSubappaltatoriDataservice$adf11o" refModelId="mpkg5o#adf11o" pid="PortaleSubappaltatoriDataservice" name="Get Tipologia documenti per fornitore" type="read" defaultSuccessPortDefinition="mpkg5o#adf11o#spd41o" defaultErrorPortDefinition="mpkg5o#adf11o#epd41o" serverResourceName="actions/getTipologiaDocumentiPerFornitore" method="read">
       <srs:ServiceScope name="Amministratore" method="read"/>
       <srs:ServiceScope name="Gestione" method="read"/>
@@ -630,6 +636,15 @@
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp202o" refModelId="mpkg5o#adf13o#spd51o#pdp202o" pid="PortaleSubappaltatoriDataservice" serverProperty="utente" name="Utente" type="string" location="body" cardinality="1"/>
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp247o" refModelId="mpkg5o#adf13o#spd51o#pdp247o" pid="PortaleSubappaltatoriDataservice" serverProperty="nome" name="Nome" type="string" location="body" cardinality="1"/>
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp248o" refModelId="mpkg5o#adf13o#spd51o#pdp248o" pid="PortaleSubappaltatoriDataservice" serverProperty="cognome" name="Cognome" type="string" location="body" cardinality="1"/>
+    </srs:ActionService>
+    <srs:ActionService ref="PortaleSubappaltatoriDataservice$adf16o" refModelId="mpkg5o#adf16o" pid="PortaleSubappaltatoriDataservice" name="Calcola date mese" type="read" defaultSuccessPortDefinition="mpkg5o#adf16o#spd65o" defaultErrorPortDefinition="mpkg5o#adf16o#epd65o" serverResourceName="actions/calcolaDateMese" method="read">
+      <srs:ServiceScope name="Amministratore" method="read"/>
+      <srs:ServiceScope name="Consultazione" method="read"/>
+      <srs:ServiceScope name="Gestione" method="read"/>
+      <srs:ServiceScope name="Responsabile" method="read"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp257o" refModelId="mpkg5o#adf16o#ipd65o#pdp257o" pid="PortaleSubappaltatoriDataservice" serverProperty="trigger" name="trigger" type="boolean" location="query" cardinality="1"/>
+      <srs:Output ref="PortaleSubappaltatoriDataservice$pdp255o" refModelId="mpkg5o#adf16o#spd65o#pdp255o" pid="PortaleSubappaltatoriDataservice" serverProperty="ultimoGiorno" name="ultimoGiorno" type="date" location="body" cardinality="1"/>
+      <srs:Output ref="PortaleSubappaltatoriDataservice$pdp256o" refModelId="mpkg5o#adf16o#spd65o#pdp256o" pid="PortaleSubappaltatoriDataservice" serverProperty="primoGiorno" name="primoGiorno" type="date" location="body" cardinality="1"/>
     </srs:ActionService>
     <srs:ActionService ref="PortaleSubappaltatoriDataservice$adf9o" refModelId="mpkg5o#adf9o" pid="PortaleSubappaltatoriDataservice" name="Get Fornitore" type="read" defaultSuccessPortDefinition="mpkg5o#adf9o#spd34o" defaultErrorPortDefinition="mpkg5o#adf9o#epd34o" serverResourceName="actions/getFornitore" method="read">
       <srs:ServiceScope name="Amministratore" method="read"/>
@@ -932,6 +947,7 @@
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att118o" refModelId="cls5#att118o" pid="PortaleSubappaltatoriDataservice" serverProperty="documentoCompilato" name="Documento compilato" type="blob"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att119o" refModelId="cls5#att119o" pid="PortaleSubappaltatoriDataservice" serverProperty="documentoDaCompilare" name="Documento da compilare" type="boolean"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att121o" refModelId="cls5#att121o" pid="PortaleSubappaltatoriDataservice" serverProperty="noteFornitore" name="Note fornitore" type="string"/>
+      <srs:Attribute ref="PortaleSubappaltatoriDataservice$att127o" refModelId="cls5#att127o" pid="PortaleSubappaltatoriDataservice" serverProperty="dataAlert" name="Data Alert" type="date"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att22" refModelId="cls5#att22" pid="PortaleSubappaltatoriDataservice" serverProperty="oid" name="oid" type="integer" key="true"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att23" refModelId="cls5#att23" pid="PortaleSubappaltatoriDataservice" serverProperty="documento" name="Documento" type="blob" key="false"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att24" refModelId="cls5#att24" pid="PortaleSubappaltatoriDataservice" serverProperty="descrizione" name="Descrizione" type="string" key="false"/>
