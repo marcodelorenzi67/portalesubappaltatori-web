@@ -1,0 +1,130 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-card title="main">
+      <wr-content for="content">
+        <wd-grid>
+          <wd-row>
+            <wd-cell [width]="12">
+              <wd-card elevation="0" actions="main/frm37p/oslte190p">
+                <wr-content for="content">
+                  <wd-grid>
+                    <wd-row>
+                      <wd-cell [width]="4">
+                        <wd-select appearance="outline" context="main/frm37p/sfld27p"></wd-select>
+                      </wd-cell>
+                      <wd-cell [width]="4">
+                        <wd-select context="main/frm37p/sfld28p" appearance="outline"></wd-select>
+                      </wd-cell>
+                      <wd-cell [width]="4">
+                        <wd-select appearance="outline" context="main/frm37p/sfld26p"></wd-select>
+                      </wd-cell>
+                    </wd-row>
+                    <wd-row>
+                      <wd-cell [width]="4">
+                        <wd-datepicker appearance="outline" context="main/frm37p/fld128p"></wd-datepicker>
+                      </wd-cell>
+                      <wd-cell [width]="4">
+                        <wd-datepicker context="main/frm37p/fld129p" appearance="outline"></wd-datepicker>
+                      </wd-cell>
+                      <wd-cell [width]="4"></wd-cell>
+                    </wd-row>
+                  </wd-grid>
+                </wr-content>
+                <wr-content for="action[oslte190p]">
+                  <wd-button color="primary" iconText="search"></wd-button>
+                </wr-content>
+              </wd-card>
+            </wd-cell>
+          </wd-row>
+          <wd-row>
+            <wd-cell [width]="12">
+              <wd-data-grid elevation="0" cols="main/lst41p/data/_be_att23 | main/lst41p/data/_be_att24 | main/lst41p/data/_be_att97o | main/lst41p/data/_be_att88o | main/lst41p/data/_be_att89o | main/lst41p/data/_be_att99o | main/lst41p/data/_be_att87o" [rows]="valueOf('main/lst41p/data')" events="main/lst41p/data/oslte192p | main/lst41p/data/oslte191p | main/lst41p/data/oslte193p" eventsOrder="oslte191p oslte192p oslte193p">
+                <wr-content for="header[_be_att23]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att23]">
+                  <wd-anchor type="file"></wd-anchor>
+                </wr-content>
+                <wr-content for="header[_be_att24]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att24]">
+                  {{ valueOf('.', row) }}
+                </wr-content>
+                <wr-content for="header[_be_att97o]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att97o]">
+                  {{ valueOf('.', row) }}
+                </wr-content>
+                <wr-content for="header[_be_att88o]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att88o]">
+                  {{ valueOf('.', row) }}
+                </wr-content>
+                <wr-content for="header[_be_att89o]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att89o]">
+                  {{ valueOf('.', row) }}
+                </wr-content>
+                <wr-content for="header[_be_att99o]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att99o]">
+                  {{ valueOf('.', row) | date:'wr-date' }}
+                </wr-content>
+                <wr-content for="header[_be_att87o]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att87o]">
+                  {{ valueOf('.', row) }}
+                </wr-content>
+                <wr-content for="event[oslte192p]">
+                  <wd-button variant="mat-icon-button" color="primary" iconText="forward"></wd-button>
+                </wr-content>
+                <wr-content for="event[oslte191p]">
+                  <wd-button variant="mat-icon-button" color="primary" iconText="account_balance" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst41p/data/statoallegatoCodice', row) === 'S' &amp;&amp; !valueOf('/main/lst41p/data/_be_att127o', row)"></wd-button>
+                </wr-content>
+                <wr-content for="event[oslte193p]">
+                  <wd-button variant="mat-icon-button" color="primary" iconText="error_outline"></wd-button>
+                </wr-content>
+              </wd-data-grid>
+            </wd-cell>
+          </wd-row>
+        </wd-grid>
+      </wr-content>
+      <wr-content for="title[main]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wr-page>
+<wd-dialog context="main/dpg24p" title=".">
+  <wr-content for="content">
+    <wd-data-grid cols="lst42p/data/_be_pdp202o | lst42p/data/_be_pdp201o | lst42p/data/_be_pdp198o" [rows]="valueOf('lst42p/data')" elevation="0" paginator="lst42p/paging">
+      <wr-content for="header[_be_pdp202o]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_pdp202o]">
+        {{ valueOf('.', row) }}
+      </wr-content>
+      <wr-content for="header[_be_pdp201o]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_pdp201o]">
+        {{ valueOf('.', row) | date:'wr-timestamp' }}
+      </wr-content>
+      <wr-content for="header[_be_pdp198o]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_pdp198o]">
+        {{ valueOf('.', row) }}
+      </wr-content>
+    </wd-data-grid>
+  </wr-content>
+  <wr-content for="title[dpg24p]">
+    {{ labelOf('.') | wrLocalize }}
+  </wr-content>
+</wd-dialog>

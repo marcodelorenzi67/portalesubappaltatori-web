@@ -28,18 +28,6 @@
           <AttributesConditionAttr classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statodocumentoCodice"/>
         </AttributesCondition>
       </ConditionalExpression>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att23"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att24"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att25"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att35"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att36"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att87o"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att88o"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att89o"/>
-      <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statoallegatoCodice"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att97o"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o" order="ascending"/>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
       <Events>
@@ -60,6 +48,19 @@
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att23"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att24"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att25"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att35"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att36"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att87o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att88o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att89o"/>
+      <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statoallegatoCodice"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att97o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att127o"/>
     </List>
     <ViewComponent id="wv2#area3#page29p#gctu20p" name="New" gr:x="25" gr:y="5">
       <DataFlow id="wv2#area3#page29p#gctu20p#df90p" to="wv2#area3#page29p#lst41p">
@@ -101,6 +102,10 @@
       <DataFlow id="wv2#area3#page29p#dtl11p#df91p" to="wv2#area3#page29p#lst41p">
         <ParameterBinding id="wv2#area3#page29p#dtl11p#df91p#par665p" source="data._be_pdp255o" target="wv2#area3#page29p#lst41p#sc58p#acond66p" name="ultimoGiorno - Data A"/>
         <ParameterBinding id="wv2#area3#page29p#dtl11p#df91p#par666p" source="data._be_pdp256o" target="wv2#area3#page29p#lst41p#sc58p#acond65p" name="primoGiorno - Data da"/>
+      </DataFlow>
+      <DataFlow id="wv2#area3#page29p#dtl11p#df93p" to="wv2#area3#page29p#frm37p">
+        <ParameterBinding id="wv2#area3#page29p#dtl11p#df93p#par677p" source="data._be_pdp255o" target="{wv2#area3#page29p#frm37p#fld129p}value" name="ultimoGiorno - Data A"/>
+        <ParameterBinding id="wv2#area3#page29p#dtl11p#df93p#par678p" source="data._be_pdp256o" target="{wv2#area3#page29p#frm37p#fld128p}value" name="primoGiorno - Data Da"/>
       </DataFlow>
     </Details>
   </ViewComponents>
