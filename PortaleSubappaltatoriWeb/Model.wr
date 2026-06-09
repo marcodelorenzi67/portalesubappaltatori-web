@@ -33,4 +33,6 @@
   <BundleKey name="ripristinoPsw.tokenInvalido "/>
   <BundleKey name="message.otpInviato"/>
   <BundleKey name="message.otpNonValido"/>
+  <BundleKey name="message.fornitorePresente"/>
+  <BundleKey name="message.fornitoreTenant"/>
 </WebProject>

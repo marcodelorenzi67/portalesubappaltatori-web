@@ -109,7 +109,7 @@
       </DataFlow>
     </Details>
   </ViewComponents>
-  <DialogPage id="wv2#area3#page29p#dpg24p" name="Dettaglio documento" gr:x="355" gr:y="404">
+  <DialogPage id="wv2#area3#page29p#dpg24p" name="Dettaglio documento" gr:x="100" gr:y="430">
     <ViewComponents>
       <List id="wv2#area3#page29p#dpg24p#lst42p" gr:x="0" gr:y="150" checkable="false" distinct="false" pageSize="5">
         <DataBinding actionServiceRes="PortaleSubappaltatoriDataservice$adf13o"/>

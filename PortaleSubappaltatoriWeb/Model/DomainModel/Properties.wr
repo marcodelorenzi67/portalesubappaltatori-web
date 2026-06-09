@@ -618,6 +618,15 @@
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp260o" refModelId="mpkg5o#ada44o#ipd67o#pdp260o" pid="PortaleSubappaltatoriDataservice" serverProperty="fornitoreOid" name="fornitore [oid]" type="integer" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp261o" refModelId="mpkg5o#ada44o#ipd67o#pdp261o" pid="PortaleSubappaltatoriDataservice" serverProperty="tenantOid" name="tenant [oid]" type="integer" location="body" cardinality="1"/>
     </srs:ActionService>
+    <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada45o" refModelId="mpkg5o#ada45o" pid="PortaleSubappaltatoriDataservice" name="Verifica se fornitore esiste gia" defaultSuccessPortDefinition="mpkg5o#ada45o#spd69o" defaultErrorPortDefinition="mpkg5o#ada45o#epd69o" serverResourceName="actions/verificaSeFornitoreEsisteGia" method="create">
+      <srs:ServiceScope name="Amministratore" method="create"/>
+      <srs:ServiceScope name="Gestione" method="create"/>
+      <srs:ServiceScope name="Responsabile" method="create"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp265o" refModelId="mpkg5o#ada45o#ipd69o#pdp265o" pid="PortaleSubappaltatoriDataservice" serverProperty="PIVA" name="PIVA" type="string" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp266o" refModelId="mpkg5o#ada45o#ipd69o#pdp266o" pid="PortaleSubappaltatoriDataservice" serverProperty="tenantOid" name="tenant [oid]" type="integer" location="body" cardinality="1"/>
+      <srs:Output ref="PortaleSubappaltatoriDataservice$pdp267o" refModelId="mpkg5o#ada45o#spd69o#pdp267o" pid="PortaleSubappaltatoriDataservice" serverProperty="presente" name="presente" type="boolean" location="body" cardinality="1"/>
+      <srs:Output ref="PortaleSubappaltatoriDataservice$pdp268o" refModelId="mpkg5o#ada45o#spd69o#pdp268o" pid="PortaleSubappaltatoriDataservice" serverProperty="altroTenant" name="altro tenant" type="boolean" location="body" cardinality="1"/>
+    </srs:ActionService>
     <srs:ActionService ref="PortaleSubappaltatoriDataservice$adf11o" refModelId="mpkg5o#adf11o" pid="PortaleSubappaltatoriDataservice" name="Get Tipologia documenti per fornitore" type="read" defaultSuccessPortDefinition="mpkg5o#adf11o#spd41o" defaultErrorPortDefinition="mpkg5o#adf11o#epd41o" serverResourceName="actions/getTipologiaDocumentiPerFornitore" method="read">
       <srs:ServiceScope name="Amministratore" method="read"/>
       <srs:ServiceScope name="Gestione" method="read"/>

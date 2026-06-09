@@ -1,0 +1,65 @@
+<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ad12p" name="Salva fornitore client" defaultSuccessPortDefinition="tlads0#ad12p#spd21p" defaultErrorPortDefinition="tlads0#ad12p#epd17p">
+  <Operations>
+    <Switch gr:x="480" gr:y="235" id="tlads0#ad12p#switch8p" name="presente">
+      <Case value="true"/>
+      <SuccessFlow id="tlads0#ad12p#switch8p#sf47p" to="tlads0#ad12p#switch9p" automaticCoupling="true" code="true"/>
+      <SuccessFlow id="tlads0#ad12p#switch8p#sf48p" to="tlads0#ad12p#act80p" automaticCoupling="true"/>
+    </Switch>
+    <Switch gr:x="730" gr:y="235" id="tlads0#ad12p#switch9p" name="altro tenant">
+      <Case value="true"/>
+      <SuccessFlow id="tlads0#ad12p#switch9p#sf49p" to="tlads0#ad12p#spd22p" automaticCoupling="true" code="true"/>
+      <SuccessFlow id="tlads0#ad12p#switch9p#sf50p" to="tlads0#ad12p#spd23p" automaticCoupling="true"/>
+    </Switch>
+  </Operations>
+  <InputPortDefinition id="tlads0#ad12p#ipd12p" gr:x="0" gr:y="30">
+    <PortDefinitionParameter id="tlads0#ad12p#ipd12p#pdp66p" array="false" name="Tipologia Azienda oid"/>
+    <PortDefinitionParameter id="tlads0#ad12p#ipd12p#pdp67p" array="false" name="Nome Referente"/>
+    <PortDefinitionParameter id="tlads0#ad12p#ipd12p#pdp68p" array="false" name="Ragione Sociale"/>
+    <PortDefinitionParameter id="tlads0#ad12p#ipd12p#pdp69p" array="false" name="Username"/>
+    <PortDefinitionParameter id="tlads0#ad12p#ipd12p#pdp70p" array="false" name="Partita IVA"/>
+    <PortDefinitionParameter id="tlads0#ad12p#ipd12p#pdp71p" array="false" name="Cognome Referente"/>
+    <PortDefinitionParameter id="tlads0#ad12p#ipd12p#pdp72p" array="false" name="Email"/>
+    <PortDefinitionParameter id="tlads0#ad12p#ipd12p#pdp73p" array="false" name="oid"/>
+    <PortDefinitionParameter id="tlads0#ad12p#ipd12p#pdp74p" array="true" name="tenant"/>
+    <DataFlow id="tlads0#ad12p#ipd12p#df99p" to="tlads0#ad12p#act80p" gr:bendpoints="7.0 174.0">
+      <ParameterBinding id="tlads0#ad12p#ipd12p#df99p#par716p" name="Cognome Referente - Cognome Referente" source="tlads0#ad12p#ipd12p#pdp71p" target="tlads0#ad12p#act80p.PortaleSubappaltatoriDataservice$pdp75o"/>
+      <ParameterBinding id="tlads0#ad12p#ipd12p#df99p#par717p" name="Email - Email" source="tlads0#ad12p#ipd12p#pdp72p" target="tlads0#ad12p#act80p.PortaleSubappaltatoriDataservice$pdp76o"/>
+      <ParameterBinding id="tlads0#ad12p#ipd12p#df99p#par718p" name="Nome Referente - Nome Referente" source="tlads0#ad12p#ipd12p#pdp67p" target="tlads0#ad12p#act80p.PortaleSubappaltatoriDataservice$pdp71o"/>
+      <ParameterBinding id="tlads0#ad12p#ipd12p#df99p#par719p" name="Ragione Sociale - Ragione Sociale" source="tlads0#ad12p#ipd12p#pdp68p" target="tlads0#ad12p#act80p.PortaleSubappaltatoriDataservice$pdp74o"/>
+      <ParameterBinding id="tlads0#ad12p#ipd12p#df99p#par720p" name="Tipologia Azienda oid - Tipologia Azienda oid" source="tlads0#ad12p#ipd12p#pdp66p" target="tlads0#ad12p#act80p.PortaleSubappaltatoriDataservice$pdp88o"/>
+      <ParameterBinding id="tlads0#ad12p#ipd12p#df99p#par721p" name="Partita IVA - Partita IVA" source="tlads0#ad12p#ipd12p#pdp70p" target="tlads0#ad12p#act80p.PortaleSubappaltatoriDataservice$pdp72o"/>
+      <ParameterBinding id="tlads0#ad12p#ipd12p#df99p#par722p" name="oid - oid" source="tlads0#ad12p#ipd12p#pdp73p" target="tlads0#ad12p#act80p.PortaleSubappaltatoriDataservice$pdp73o"/>
+      <ParameterBinding id="tlads0#ad12p#ipd12p#df99p#par723p" name="tenant - tenant" source="tlads0#ad12p#ipd12p#pdp74p" target="tlads0#ad12p#act80p.PortaleSubappaltatoriDataservice$pdp77o"/>
+      <ParameterBinding id="tlads0#ad12p#ipd12p#df99p#par724p" name="Username - Username" source="tlads0#ad12p#ipd12p#pdp69p" target="tlads0#ad12p#act80p.PortaleSubappaltatoriDataservice$pdp166o"/>
+    </DataFlow>
+    <SuccessFlow id="tlads0#ad12p#ipd12p#sf45p" to="tlads0#ad12p#act81p">
+      <ParameterBinding id="tlads0#ad12p#ipd12p#sf45p#par725p" source="tlads0#ad12p#ipd12p#pdp70p" target="tlads0#ad12p#act81p.PortaleSubappaltatoriDataservice$pdp265o" name="Partita IVA - PIVA"/>
+      <ParameterBinding id="tlads0#ad12p#ipd12p#sf45p#par726p" source="tlads0#ad12p#ipd12p#pdp74p" target="tlads0#ad12p#act81p.PortaleSubappaltatoriDataservice$pdp266o" name="tenant - tenant [oid]"/>
+    </SuccessFlow>
+  </InputPortDefinition>
+  <SuccessPortDefinition id="tlads0#ad12p#spd21p" name="Success Port" gr:x="0" gr:y="445"/>
+  <ErrorPortDefinition id="tlads0#ad12p#epd17p" name="Error Port" gr:x="0" gr:y="90"/>
+  <Action id="tlads0#ad12p#act80p" gr:x="670" gr:y="375" actionServiceRes="PortaleSubappaltatoriDataservice$ada16o">
+    <Events>
+      <SuccessEvent id="tlads0#ad12p#act80p#scce96p">
+        <SuccessFlow id="tlads0#ad12p#act80p#scce96p#sf44p" to="tlads0#ad12p#spd21p" automaticCoupling="true"/>
+      </SuccessEvent>
+      <ErrorEvent id="tlads0#ad12p#act80p#erre137p"/>
+    </Events>
+  </Action>
+  <Action id="tlads0#ad12p#act81p" gr:x="435" gr:y="45" actionServiceRes="PortaleSubappaltatoriDataservice$ada45o">
+    <Events>
+      <SuccessEvent id="tlads0#ad12p#act81p#scce97p">
+        <SuccessFlow id="tlads0#ad12p#act81p#scce97p#sf46p" to="tlads0#ad12p#switch8p">
+          <ParameterBinding id="tlads0#ad12p#act81p#scce97p#sf46p#par727p" source="PortaleSubappaltatoriDataservice$pdp267o" target="switch" name="presente - Switch"/>
+        </SuccessFlow>
+        <DataFlow id="tlads0#ad12p#act81p#scce97p#df100p" to="tlads0#ad12p#switch9p">
+          <ParameterBinding id="tlads0#ad12p#act81p#scce97p#df100p#par728p" source="PortaleSubappaltatoriDataservice$pdp268o" target="switch" name="altro tenant - Switch"/>
+        </DataFlow>
+      </SuccessEvent>
+      <ErrorEvent id="tlads0#ad12p#act81p#erre138p"/>
+    </Events>
+  </Action>
+  <SuccessPortDefinition id="tlads0#ad12p#spd22p" name="altro tenant" gr:x="0" gr:y="185"/>
+  <SuccessPortDefinition id="tlads0#ad12p#spd23p" name="presente" gr:x="0" gr:y="315"/>
+</ActionDefinition>

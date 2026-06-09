@@ -105,4 +105,7 @@
       </wd-row>
     </wd-grid>
   </wr-content>
+  <wr-content for="breadcrumb">
+    <wd-alert [messages]="valueOf('main/msg16p/messages')" [localized]="true" color="success"></wd-alert>
+  </wr-content>
 </wr-page>

@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area3#page22p" name="Dettaglio Fornitore" gr:x="615" gr:y="930">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area3#page22p" name="Dettaglio Fornitore" gr:x="605" gr:y="930">
   <ViewComponents>
     <Details id="wv2#area3#page22p#dtl6p" name="Dati Anagrafici" gr:x="85" gr:y="200">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls2"/>
@@ -598,6 +598,9 @@
         </AttributesCondition>
         <AttributesCondition id="wv2#area3#page22p#lst44p#sc61p#acond75p" name="condiviso" predicate="eq" booleanOperator="or" implied="false" value="true">
           <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att128o"/>
+        </AttributesCondition>
+        <AttributesCondition id="wv2#area3#page22p#lst44p#sc61p#acond80p" name="codice stato" predicate="eq" booleanOperator="or" implied="false" value="${statoAllegato.approvato}">
+          <AttributesConditionAttr classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statodocumentoCodice"/>
         </AttributesCondition>
       </ConditionalExpression>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att23"/>
