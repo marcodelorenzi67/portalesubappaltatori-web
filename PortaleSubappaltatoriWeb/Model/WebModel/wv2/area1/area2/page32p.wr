@@ -29,7 +29,7 @@
           <NavigationFlow id="wv2#area1#area2#page32p#lst48p#oslte218p#nf263p" to="wv2#area1#area2#page32p#dpg28p#lst50p">
             <ParameterBinding id="wv2#area1#area2#page32p#lst48p#oslte218p#nf263p#par838p" source="data._be_role23$_be_att41" target="wv2#area1#area2#page32p#dpg28p#lst50p#sc74p#rcond75p._be_att41" name="tipologiaDocumentiToMacroTipologia - macrotipo [oid]"/>
             <ParameterBinding id="wv2#area1#area2#page32p#lst48p#oslte218p#nf263p#par839p" source="data._be_att37" targetParameter="wv2#area1#area2#page32p#prd18p" name="oid - tipologia"/>
-            <ParameterBinding id="wv2#area1#area2#page32p#lst48p#oslte218p#nf263p#par840p" source="data._be_att37" target="wv2#area1#area2#page32p#dpg28p#lst50p#sc74p#rcond76p._be_att37" name="oid - tipologia [oid]"/>
+            <ParameterBinding id="wv2#area1#area2#page32p#lst48p#oslte218p#nf263p#par850p" source="data._be_att37" target="wv2#area1#area2#page32p#dpg28p#lst50p#sc74p#rcond77p._be_att37" name="oid - tipo [oid]"/>
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
@@ -113,7 +113,7 @@
           <AssociationRoleCondition id="wv2#area1#area2#page32p#dpg28p#lst50p#sc74p#rcond75p" name="macrotipo" predicate="in" implied="false">
             <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role53o"/>
           </AssociationRoleCondition>
-          <AssociationRoleCondition id="wv2#area1#area2#page32p#dpg28p#lst50p#sc74p#rcond76p" name="tipologia" predicate="notIn" implied="false">
+          <AssociationRoleCondition id="wv2#area1#area2#page32p#dpg28p#lst50p#sc74p#rcond77p" name="tipo" predicate="notIn" implied="false">
             <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role56o"/>
           </AssociationRoleCondition>
         </ConditionalExpression>
@@ -125,6 +125,8 @@
             </NavigationFlow>
           </OnSelectEvent>
         </Events>
+        <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att106o"/>
+        <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att174o"/>
       </List>
     </ViewComponents>
   </DialogPage>

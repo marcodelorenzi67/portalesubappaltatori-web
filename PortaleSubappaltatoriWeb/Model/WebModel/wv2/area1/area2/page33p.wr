@@ -39,6 +39,14 @@
           </VRules>
           <OptionsDataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls9"/>
           <OptionsAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att42"/>
+          <OptionsConditionalExpression id="wv2#area1#area2#page33p#dpg29p#frm41p#sfld34p#sc76p" defaultPolicy="fill" booleanOperator="and">
+            <AttributesCondition id="wv2#area1#area2#page33p#dpg29p#frm41p#sfld34p#sc76p#acond90p" name="cod" predicate="neq" booleanOperator="and" implied="false" value="${macroTipologia.aziendali}">
+              <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att43"/>
+            </AttributesCondition>
+            <AttributesCondition id="wv2#area1#area2#page33p#dpg29p#frm41p#sfld34p#sc76p#acond91p" name="cod" predicate="neq" booleanOperator="and" implied="false" value="${macroTipologia.personali}">
+              <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att43"/>
+            </AttributesCondition>
+          </OptionsConditionalExpression>
         </SelectionField>
         <Events>
           <OnSelectEvent id="wv2#area1#area2#page33p#dpg29p#frm41p#oslte221p" name="Salva" validate="true">

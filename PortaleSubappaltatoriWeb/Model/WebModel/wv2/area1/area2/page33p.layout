@@ -21,6 +21,9 @@
                 <wr-content for="event[oslte220p]">
                   <wd-button variant="mat-icon-button" color="primary" iconText="create"></wd-button>
                 </wr-content>
+                <wr-content for="header-actions">
+                  <wd-button context="main/gctu25p/oslte222p" iconText="add"></wd-button>
+                </wr-content>
               </wd-data-grid>
             </wd-cell>
           </wd-row>

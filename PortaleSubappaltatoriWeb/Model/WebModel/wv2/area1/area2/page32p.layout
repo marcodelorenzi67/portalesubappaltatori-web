@@ -115,7 +115,7 @@
     {{ labelOf('.') | wrLocalize }}
   </wr-content>
   <wr-content for="content">
-    <wd-data-grid cols="/main/lst49p/data/_be_att106o" [rows]="valueOf('/main/lst49p/data')" events="lst50p/data/oslte219p" elevation="0" paginator="lst50p/paging">
+    <wd-data-grid cols="lst50p/data/_be_att106o | lst50p/data/_be_att174o" [rows]="valueOf('lst50p/data')" events="lst50p/data/oslte219p" elevation="0" paginator="lst50p/paging">
       <wr-content for="header[_be_att106o]">
         {{ labelOf('.') | wrLocalize }}
       </wr-content>
@@ -124,6 +124,12 @@
       </wr-content>
       <wr-content for="event[oslte219p]">
         <wd-button variant="mat-icon-button" color="primary" iconText="add"></wd-button>
+      </wr-content>
+      <wr-content for="header[_be_att174o]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="data[_be_att174o]">
+        {{ valueOf('.', row) }}
       </wr-content>
     </wd-data-grid>
   </wr-content>
