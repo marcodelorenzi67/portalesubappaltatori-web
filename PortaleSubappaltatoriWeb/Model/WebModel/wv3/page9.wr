@@ -195,10 +195,9 @@
       </ConditionalExpression>
       <Events>
         <OnSelectEvent id="wv3#page9#lst35p#oslte161p" name="Gestisci documenti" validate="true">
-          <NavigationFlow id="wv3#page9#lst35p#oslte161p#nf197p" to="wv3#page9#lst36p">
-            <ParameterBinding id="wv3#page9#lst35p#oslte161p#nf197p#par567p" source="data._be_role59o$_be_att6" target="wv3#page9#lst36p#sc54p#rcond48p._be_att6" name="personaleToFornitore - Fornitore [oid]"/>
+          <NavigationFlow id="wv3#page9#lst35p#oslte161p#nf197p" to="wv3#page9#dtl17p">
             <ParameterBinding id="wv3#page9#lst35p#oslte161p#nf197p#par568p" targetParameter="wv3#page9#prd16p" name="oid personale - oid personale" source="data._be_att113o"/>
-            <ParameterBinding id="wv3#page9#lst35p#oslte161p#nf197p#par569p" source="data._be_att113o" target="wv3#page9#lst36p#sc54p#rcond50p._be_att113o" name="oid - personale [oid]"/>
+            <ParameterBinding id="wv3#page9#lst35p#oslte161p#nf197p#par800p" source="data._be_att113o" target="wv3#page9#dtl17p#sc67p#kcond22p._be_att113o" name="oid - KeyCondition21"/>
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
@@ -208,7 +207,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o"/>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o" order="ascending"/>
     </List>
-    <List id="wv3#page9#lst36p" name="Documenti personale" gr:x="390" gr:y="455" checkable="false" distinct="false" pageSize="15">
+    <List id="wv3#page9#lst36p" name="Documenti personale di: " gr:x="390" gr:y="455" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
       <ConditionalExpression id="wv3#page9#lst36p#sc54p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv3#page9#lst36p#sc54p#rcond48p" name="Fornitore" predicate="in" implied="false">
@@ -293,6 +292,19 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att119o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att121o"/>
     </List>
+    <Details id="wv3#page9#dtl17p" gr:x="765" gr:y="585">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls20o"/>
+      <ConditionalExpression id="wv3#page9#dtl17p#sc67p" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="wv3#page9#dtl17p#sc67p#kcond22p" name="KeyCondition21" predicate="in" implied="false"/>
+      </ConditionalExpression>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att114o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att115o"/>
+      <DataFlow id="wv3#page9#dtl17p#df105p" to="wv3#page9#lst36p">
+        <ParameterBinding id="wv3#page9#dtl17p#df105p#par797p" source="data._be_role59o$_be_att6" target="wv3#page9#lst36p#sc54p#rcond48p._be_att6" name="personaleToFornitore - Fornitore [oid]"/>
+        <ParameterBinding id="wv3#page9#dtl17p#df105p#par798p" source="data._be_att113o" target="wv3#page9#lst36p#sc54p#rcond50p._be_att113o" name="oid - personale [oid]"/>
+        <ParameterBinding id="wv3#page9#dtl17p#df105p#par799p" sourceParameter="wv3#prd9p" target="wv3#page9#lst36p#sc54p#rcond49p._be_att1" name="Tenant - Tenant [oid]"/>
+      </DataFlow>
+    </Details>
   </ViewComponents>
   <DialogPage gr:x="580" gr:y="40" id="wv3#page9#dpg8p" name="Carica documento">
     <ViewComponents>

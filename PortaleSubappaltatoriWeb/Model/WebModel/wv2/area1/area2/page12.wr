@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="355" gr:y="0" id="wv2#area1#area2#page12" name="Tipologie azienda" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="705" gr:y="565" id="wv2#area1#area2#page12" name="Tipologie azienda" landmark="true">
   <ViewComponents>
     <List gr:x="0" gr:y="0" id="wv2#area1#area2#page12#lst4" checkable="false" distinct="false">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls10"/>

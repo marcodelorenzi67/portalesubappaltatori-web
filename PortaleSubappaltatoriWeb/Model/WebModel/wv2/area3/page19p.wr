@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="310" gr:y="385" id="wv2#area3#page19p" name="Nuovo Fornitore">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="320" gr:y="385" id="wv2#area3#page19p" name="Nuovo Fornitore">
   <ViewComponents>
     <Form gr:x="100" gr:y="0" id="wv2#area3#page19p#frm14p" name="Dati Referente">
       <Field id="wv2#area3#page19p#frm14p#fld33p" modifiable="true" name="Nome Referente" type="string" validationOrder="wv2#area3#page19p#frm14p#fld33p#mnd22p">
@@ -52,6 +52,7 @@
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par735p" sourceParameter="wv2#prd8" target="wv2#area3#act82p.tlads0#ad12p#ipd12p#pdp74p" name="Tenant - tenant"/>
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par736p" source="{wv2#area3#page19p#frm14p#sfld9p}value._be_att45" target="wv2#area3#act82p.tlads0#ad12p#ipd12p#pdp66p" name="Tipologia Azienda [oid] - Tipologia Azienda oid"/>
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par737p" source="{wv2#area3#page19p#frm14p#fld66p}value" target="wv2#area3#act82p.tlads0#ad12p#ipd12p#pdp69p" name="Username - Username"/>
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par788p" source="{wv2#area3#page19p#frm14p#fld137p}value" target="wv2#area3#act82p.tlads0#ad12p#ipd12p#pdp86p" name="azienda_omnia - Azienda oid"/>
           </NavigationFlow>
         </OnSelectEvent>
         <OnSelectEvent id="wv2#area3#page19p#frm14p#oslte33p" name="Invita Fornitore" validate="true">
@@ -65,6 +66,7 @@
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par770p" sourceParameter="wv2#prd8" target="wv2#area3#act85p.tlads0#ad13p#ipd13p#pdp83p" name="Tenant - tenant"/>
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par771p" source="{wv2#area3#page19p#frm14p#sfld9p}value._be_att45" target="wv2#area3#act85p.tlads0#ad13p#ipd13p#pdp75p" name="Tipologia Azienda [oid] - Tipologia Azienda oid"/>
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par772p" source="{wv2#area3#page19p#frm14p#fld66p}value" target="wv2#area3#act85p.tlads0#ad13p#ipd13p#pdp78p" name="Username - Username"/>
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par790p" source="{wv2#area3#page19p#frm14p#fld137p}value" target="wv2#area3#act85p.tlads0#ad13p#ipd13p#pdp87p" name="azienda_omnia - Azienda oid"/>
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
@@ -77,6 +79,7 @@
           </CollectionValidationRule>
         </VRules>
       </Field>
+      <Field id="wv2#area3#page19p#frm14p#fld137p" type="integer" modifiable="true" name="azienda_omnia"/>
     </Form>
     <ViewComponent gr:x="0" gr:y="10" id="wv2#area3#page19p#gctu22p" name="v"/>
   </ViewComponents>

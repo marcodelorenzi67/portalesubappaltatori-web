@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="655" gr:y="0" id="wv2#area3#page18" name="Elenco Fornitori" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="665" gr:y="0" id="wv2#area3#page18" name="Elenco Fornitori" landmark="true">
   <ViewComponents>
     <List gr:x="0" gr:y="110" id="wv2#area3#page18#lst8" checkable="false" distinct="false" pageSize="20">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls2"/>
@@ -84,6 +84,9 @@
       <Events>
         <OnSelectEvent id="wv2#area3#page18#gctu10p#oslte31p" name="Aggiungi Fornitore" gr:pinned="true" gr:side="2" gr:pos="1">
           <NavigationFlow id="wv2#area3#page18#gctu10p#oslte31p#nf57p" to="wv2#area3#page19p" automaticCoupling="true"/>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page18#gctu10p#oslte210p" name="Importa da Omnia">
+          <NavigationFlow id="wv2#area3#page18#gctu10p#oslte210p#nf250p" to="wv2#area3#page31p" automaticCoupling="true"/>
         </OnSelectEvent>
       </Events>
       <DataFlow id="wv2#area3#page18#gctu10p#df21p" to="wv2#area3#page18#lst8">

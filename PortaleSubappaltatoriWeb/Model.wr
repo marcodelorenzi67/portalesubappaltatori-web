@@ -35,4 +35,6 @@
   <BundleKey name="message.otpNonValido"/>
   <BundleKey name="message.fornitorePresente"/>
   <BundleKey name="message.fornitoreTenant"/>
+  <BundleKey name="message.Aziendapresente"/>
+  <BundleKey name="message.aziendaTenant"/>
 </WebProject>

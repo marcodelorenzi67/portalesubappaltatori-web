@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1985" gr:y="0" id="wv2#area3#page29p" name="Scadenziario" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1995" gr:y="0" id="wv2#area3#page29p" name="Scadenziario" landmark="true">
   <ViewComponents>
     <List id="wv2#area3#page29p#lst41p" name="Documenti in scadenza" gr:x="0" gr:y="135" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>

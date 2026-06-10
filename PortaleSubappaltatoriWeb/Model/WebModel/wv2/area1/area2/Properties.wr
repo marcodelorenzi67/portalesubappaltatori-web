@@ -1,5 +1,5 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="580" gr:y="0" id="wv2#area1#area2" name="Tabelle di governo" landmark="true" default="wv2#area1#area2#page11" landmarks="wv2#area1#area2#page11 wv2#area1#area2#page12">
-  <Action id="wv2#area1#area2#act20" gr:x="10" gr:y="385" actionServiceRes="PortaleSubappaltatoriDataservice$ada11">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="640" gr:y="0" id="wv2#area1#area2" name="Tabelle di governo" landmark="true" default="wv2#area1#area2#page11" landmarks="wv2#area1#area2#page11 wv2#area1#area2#page12 wv2#area1#area2#page32p wv2#area1#area2#page33p">
+  <Action id="wv2#area1#area2#act20" gr:x="15" gr:y="1010" actionServiceRes="PortaleSubappaltatoriDataservice$ada11">
     <Events>
       <SuccessEvent id="wv2#area1#area2#act20#scce22">
         <NavigationFlow id="wv2#area1#area2#act20#scce22#nf39" to="wv2#area1#area2#page11">
@@ -9,7 +9,7 @@
       <ErrorEvent id="wv2#area1#area2#act20#erre29"/>
     </Events>
   </Action>
-  <Action id="wv2#area1#area2#act21" gr:x="635" gr:y="65" actionServiceRes="PortaleSubappaltatoriDataservice$ada12">
+  <Action id="wv2#area1#area2#act21" gr:x="955" gr:y="675" actionServiceRes="PortaleSubappaltatoriDataservice$ada12">
     <Events>
       <SuccessEvent id="wv2#area1#area2#act21#scce24">
         <NavigationFlow id="wv2#area1#area2#act21#scce24#nf44" to="wv2#area1#area2#page16">
@@ -19,7 +19,7 @@
       <ErrorEvent id="wv2#area1#area2#act21#erre32"/>
     </Events>
   </Action>
-  <Action id="wv2#area1#area2#act22" gr:x="370" gr:y="495" actionServiceRes="PortaleSubappaltatoriDataservice$ad1">
+  <Action id="wv2#area1#area2#act22" gr:x="375" gr:y="1120" actionServiceRes="PortaleSubappaltatoriDataservice$ad1">
     <Events>
       <SuccessEvent id="wv2#area1#area2#act22#scce25">
         <NavigationFlow id="wv2#area1#area2#act22#scce25#nf46" to="wv2#area1#area2#page16">
@@ -27,6 +27,48 @@
         </NavigationFlow>
       </SuccessEvent>
       <ErrorEvent id="wv2#area1#area2#act22#erre34"/>
+    </Events>
+  </Action>
+  <Action id="wv2#area1#area2#act88p" actionServiceRes="PortaleSubappaltatoriDataservice$ada11" gr:x="30" gr:y="445">
+    <Events>
+      <SuccessEvent id="wv2#area1#area2#act88p#scce110p">
+        <NavigationFlow id="wv2#area1#area2#act88p#scce110p#nf259p" to="wv2#area1#area2#page32p">
+          <ParameterBinding id="wv2#area1#area2#act88p#scce110p#nf259p#par829p" name="&quot;operazione.OK&quot; - success message" sourceValue="operazione.OK" targetParameter="wv2#prd6"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area1#area2#act88p#erre149p"/>
+    </Events>
+  </Action>
+  <Action id="wv2#area1#area2#act89p" gr:x="840" gr:y="140" actionServiceRes="PortaleSubappaltatoriDataservice$ada48o">
+    <Events>
+      <SuccessEvent id="wv2#area1#area2#act89p#scce111p">
+        <NavigationFlow id="wv2#area1#area2#act89p#scce111p#nf262p" to="wv2#area1#area2#page32p#lst49p">
+          <ParameterBinding id="wv2#area1#area2#act89p#scce111p#nf262p#par834p" source="PortaleSubappaltatoriDataservice$pdp282o" targetParameter="wv2#area1#area2#page32p#prd18p" name="oid Tipologia Documenti - tipologia"/>
+          <ParameterBinding id="wv2#area1#area2#act89p#scce111p#nf262p#par835p" source="PortaleSubappaltatoriDataservice$pdp282o" target="wv2#area1#area2#page32p#lst49p#sc73p#rcond74p._be_att37" name="oid Tipologia Documenti - tipologia [oid]"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area1#area2#act89p#erre151p"/>
+    </Events>
+  </Action>
+  <Action id="wv2#area1#area2#act90p" gr:x="780" gr:y="285" actionServiceRes="PortaleSubappaltatoriDataservice$ada49o">
+    <Events>
+      <SuccessEvent id="wv2#area1#area2#act90p#scce112p">
+        <NavigationFlow id="wv2#area1#area2#act90p#scce112p#nf265p" to="wv2#area1#area2#page32p#lst49p">
+          <ParameterBinding id="wv2#area1#area2#act90p#scce112p#nf265p#par841p" source="PortaleSubappaltatoriDataservice$pdp285o" targetParameter="wv2#area1#area2#page32p#prd18p" name="oid Tipologia Documenti - tipologia"/>
+          <ParameterBinding id="wv2#area1#area2#act90p#scce112p#nf265p#par842p" source="PortaleSubappaltatoriDataservice$pdp285o" target="wv2#area1#area2#page32p#lst49p#sc73p#rcond74p._be_att37" name="oid Tipologia Documenti - tipologia [oid]"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area1#area2#act90p#erre153p"/>
+    </Events>
+  </Action>
+  <Action id="wv2#area1#area2#act91p" gr:x="1195" gr:y="440" actionServiceRes="PortaleSubappaltatoriDataservice$ad7o">
+    <Events>
+      <SuccessEvent id="wv2#area1#area2#act91p#scce113p">
+        <NavigationFlow id="wv2#area1#area2#act91p#scce113p#nf268p" to="wv2#area1#area2#page33p">
+          <ParameterBinding id="wv2#area1#area2#act91p#scce113p#nf268p#par849p" sourceValue="operazione.OK" targetParameter="wv2#prd6" name="&quot;operazione.OK&quot; - success message"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area1#area2#act91p#erre155p"/>
     </Events>
   </Action>
 </Area>

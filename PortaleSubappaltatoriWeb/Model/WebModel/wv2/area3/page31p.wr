@@ -1,0 +1,41 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="20" gr:y="235" id="wv2#area3#page31p" name="Importa da Omnia">
+  <ViewComponents>
+    <List gr:x="0" gr:y="105" id="wv2#area3#page31p#lst47p" checkable="false" distinct="false" pageSize="15">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls21o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att130o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att131o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att134o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att144o"/>
+      <ConditionalExpression id="wv2#area3#page31p#lst47p#sc65p" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="wv2#area3#page31p#lst47p#sc65p#acond81p" name="subappaltatore" predicate="eq" booleanOperator="or" implied="false" value="true">
+          <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att142o"/>
+        </AttributesCondition>
+      </ConditionalExpression>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att131o" order="ascending"/>
+      <Events>
+        <OnSelectEvent id="wv2#area3#page31p#lst47p#oslte212p" name="Importa" validate="true">
+          <NavigationFlow id="wv2#area3#page31p#lst47p#oslte212p#nf252p" to="wv2#area3#act87p">
+            <ParameterBinding id="wv2#area3#page31p#lst47p#oslte212p#nf252p#par808p" source="data._be_att130o" target="wv2#area3#act87p.tlads0#ad14p#ipd14p#pdp88p" name="oid - azienda [oid]"/>
+            <ParameterBinding id="wv2#area3#page31p#lst47p#oslte212p#nf252p#par809p" source="data._be_att134o" target="wv2#area3#act87p.tlads0#ad14p#ipd14p#pdp92p" name="email - email"/>
+            <ParameterBinding id="wv2#area3#page31p#lst47p#oslte212p#nf252p#par810p" source="data._be_att131o" target="wv2#area3#act87p.tlads0#ad14p#ipd14p#pdp90p" name="ragioneSociale - ragione sociale"/>
+            <ParameterBinding id="wv2#area3#page31p#lst47p#oslte212p#nf252p#par811p" sourceParameter="wv2#prd8" target="wv2#area3#act87p.tlads0#ad14p#ipd14p#pdp89p" name="Tenant - tenant [oid]"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </List>
+    <ViewComponent id="wv2#area3#page31p#gctu23p" name="New" gr:x="5" gr:y="5"/>
+    <Form gr:x="105" gr:y="0" id="wv2#area3#page31p#frm39p" name="Cerca">
+      <Field id="wv2#area3#page31p#frm39p#fld133p" type="string" modifiable="true" name="Ragione sociale"/>
+      <Field id="wv2#area3#page31p#frm39p#fld134p" name="Email" type="string" modifiable="true"/>
+      <Field id="wv2#area3#page31p#frm39p#fld135p" name="Categoria" type="string" modifiable="true"/>
+      <Events>
+        <OnSelectEvent id="wv2#area3#page31p#frm39p#oslte209p" name="Cerca" validate="true">
+          <NavigationFlow id="wv2#area3#page31p#frm39p#oslte209p#nf249p" to="wv2#area3#page31p#lst47p" automaticCoupling="true"/>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page31p#frm39p#oslte211p" name="Tutti" validate="true" gr:pinned="true" gr:side="0" gr:pos="1">
+          <NavigationFlow id="wv2#area3#page31p#frm39p#oslte211p#nf251p" to="wv2#area3#page31p" automaticCoupling="true"/>
+        </OnSelectEvent>
+      </Events>
+    </Form>
+  </ViewComponents>
+</Page>

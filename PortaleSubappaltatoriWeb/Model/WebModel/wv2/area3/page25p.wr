@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1645" gr:y="0" id="wv2#area3#page25p" name="Comunicazioni" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1655" gr:y="0" id="wv2#area3#page25p" name="Comunicazioni" landmark="true">
   <ViewComponents>
     <List id="wv2#area3#page25p#lst21p" gr:x="0" gr:y="0" checkable="false" distinct="false" pageSize="10">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls14o"/>

@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area1#area2#page16" name="Gestisci tipologia documenti per tipo azienda" gr:x="355" gr:y="175">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area1#area2#page16" name="Gestisci tipologia documenti per tipo azienda" gr:x="605" gr:y="790">
   <ViewComponents>
     <List id="wv2#area1#area2#page16#lst6" gr:x="0" gr:y="0" checkable="true" distinct="false" pageSize="10" name="Tipologia documenti azienda">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls8"/>

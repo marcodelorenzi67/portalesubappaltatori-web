@@ -1,0 +1,67 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-card title="main">
+      <wr-content for="content">
+        <wd-grid>
+          <wd-row>
+            <wd-cell [width]="12">
+              <wd-card elevation="0" actions="main/frm39p/oslte209p | main/frm39p/oslte211p">
+                <wr-content for="content">
+                  <wd-grid>
+                    <wd-row>
+                      <wd-cell [width]="4">
+                        <wd-input appearance="outline" context="main/frm39p/fld133p"></wd-input>
+                      </wd-cell>
+                      <wd-cell [width]="4">
+                        <wd-input appearance="outline" context="main/frm39p/fld134p"></wd-input>
+                      </wd-cell>
+                      <wd-cell [width]="4">
+                        <wd-input appearance="outline" context="main/frm39p/fld135p"></wd-input>
+                      </wd-cell>
+                    </wd-row>
+                  </wd-grid>
+                </wr-content>
+                <wr-content for="action[oslte209p]">
+                  <wd-button color="primary" iconText="search"></wd-button>
+                </wr-content>
+                <wr-content for="action[oslte211p]">
+                  <wd-button></wd-button>
+                </wr-content>
+              </wd-card>
+            </wd-cell>
+          </wd-row><wd-row><wd-cell [width]="12">
+            <wd-data-grid elevation="0" cols="main/lst47p/data/_be_att131o | main/lst47p/data/_be_att134o | main/lst47p/data/_be_att144o" [rows]="valueOf('main/lst47p/data')" paginator="main/lst47p/paging" events="main/lst47p/data/oslte212p">
+              <wr-content for="header[_be_att131o]">
+                {{ labelOf('.') | wrLocalize }}
+              </wr-content>
+              <wr-content for="data[_be_att131o]">
+                {{ valueOf('.', row) }}
+              </wr-content>
+              <wr-content for="header[_be_att134o]">
+                {{ labelOf('.') | wrLocalize }}
+              </wr-content>
+              <wr-content for="data[_be_att134o]">
+                {{ valueOf('.', row) }}
+              </wr-content>
+              <wr-content for="header[_be_att144o]">
+                {{ labelOf('.') | wrLocalize }}
+              </wr-content>
+              <wr-content for="data[_be_att144o]">
+                {{ valueOf('.', row) }}
+              </wr-content>
+              <wr-content for="event[oslte212p]">
+                <wd-button variant="mat-button" color="primary" [confirm]="true"></wd-button>
+              </wr-content>
+            </wd-data-grid>
+          </wd-cell></wd-row>
+        </wd-grid>
+      </wr-content>
+      <wr-content for="title[main]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+    </wd-card>
+  </wr-content>
+  <wr-content for="breadcrumb">
+    <wd-button context="backEvent" iconText="arrow_back"></wd-button>
+  </wr-content>
+</wr-page>

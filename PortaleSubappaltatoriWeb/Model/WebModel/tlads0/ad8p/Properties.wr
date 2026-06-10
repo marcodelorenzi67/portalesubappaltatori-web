@@ -30,6 +30,8 @@
     <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp39p" array="false" name="Nome Referente"/>
     <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp40p" array="false" name="Partita IVA"/>
     <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp42p" array="false" name="Username"/>
+    <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp84p" array="false" name="Importato"/>
+    <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp85p" array="false" name="Azienda omnia oid"/>
   </SuccessPortDefinition>
   <ErrorPortDefinition id="tlads0#ad8p#epd13p" name="Error Port" gr:x="0" gr:y="495"/>
   <SuccessPortDefinition id="tlads0#ad8p#spd16p" name="Modifica" gr:x="0" gr:y="380">
@@ -48,6 +50,8 @@
           <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par248p" source="PortaleSubappaltatoriDataservice$pdp118o" target="tlads0#ad8p#spd15p#pdp39p" name="Nome Referente - Nome Referente"/>
           <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par249p" source="PortaleSubappaltatoriDataservice$pdp122o" target="tlads0#ad8p#spd15p#pdp40p" name="Partita IVA - Partita IVA"/>
           <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par320p" source="PortaleSubappaltatoriDataservice$pdp168o" target="tlads0#ad8p#spd15p#pdp42p" name="Username - Username"/>
+          <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par784p" source="PortaleSubappaltatoriDataservice$pdp270o" target="tlads0#ad8p#spd15p#pdp84p" name="Importato - Importato"/>
+          <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par785p" source="PortaleSubappaltatoriDataservice$pdp271o" target="tlads0#ad8p#spd15p#pdp85p" name="Azienda omnia oid - Azienda omnia oid"/>
         </SuccessFlow>
       </SuccessEvent>
       <ErrorEvent id="tlads0#ad8p#act39p#erre57p"/>

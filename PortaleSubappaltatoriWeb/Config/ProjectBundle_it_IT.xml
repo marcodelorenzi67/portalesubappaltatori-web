@@ -28,6 +28,8 @@
 </Entry>  <Entry key="macroTipologia">Macro Tipologia</Entry>
   <Entry key="macrotipologia">Macrotipologia</Entry>
   <Entry key="marca">Marca</Entry>
+  <Entry key="message.Aziendapresente">Esiste gi&#224; un fornitore per l'azienda che si sta provando ad importare</Entry>
+  <Entry key="message.aziendaTenant">L'azienda scelta corrisponde a quella di un fornitore gi&#224; presente in un altro Tenant. Il fornitore &#232; stato aggiunto anche al tenant corrente</Entry>
   <Entry key="message.fornitorePresente">Il fornitore che si sta provando ad inserire presenta una partita IVA gi&#224; presente a sistema per questo Tenant</Entry>
   <Entry key="message.fornitoreTenant">La partita IVA inserita corrisponde a quella di un fornitore gi&#224; presente in un altro Tenant. Il fornitore &#232; stato aggiunto anche al tenant corrente</Entry>
   <Entry key="message.otpInviato">Codice otp inviato, controllare la casella di posta</Entry>

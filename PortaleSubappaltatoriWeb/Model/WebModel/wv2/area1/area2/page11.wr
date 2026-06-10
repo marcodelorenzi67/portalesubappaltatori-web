@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="wv2#area1#area2#page11" name="Tipologia documenti" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="5" gr:y="525" id="wv2#area1#area2#page11" name="Tipologia documenti Aziendali e Personali" landmark="true">
   <ViewComponents>
-    <List gr:x="0" gr:y="0" id="wv2#area1#area2#page11#lst3" checkable="false" distinct="false" pageSize="10">
+    <List gr:x="140" gr:y="0" id="wv2#area1#area2#page11#lst3" checkable="false" distinct="false" pageSize="10">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls8"/>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att37" order="ascending"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att38"/>
@@ -20,8 +20,13 @@
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
+      <ConditionalExpression id="wv2#area1#area2#page11#lst3#sc68p" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="wv2#area1#area2#page11#lst3#sc68p#acond84p" name="codice macro" predicate="eq" booleanOperator="or" implied="false" value="${macroTipologia.aziendali}|${macroTipologia.personali}">
+          <AttributesConditionAttr classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role23.PortaleSubappaltatoriDataservice$att43" alias="macrocategoriaCodice"/>
+        </AttributesCondition>
+      </ConditionalExpression>
     </List>
-    <ViewComponent gr:x="215" gr:y="0" id="wv2#area1#area2#page11#gctu8" name="New">
+    <ViewComponent gr:x="0" gr:y="10" id="wv2#area1#area2#page11#gctu8" name="New">
       <Events>
         <OnSelectEvent id="wv2#area1#area2#page11#gctu8#oslte15" name="Nuova tipologia">
           <NavigationFlow id="wv2#area1#area2#page11#gctu8#oslte15#nf37" to="wv2#area1#area2#page11#dpg1#frm9" automaticCoupling="true"/>
@@ -29,12 +34,9 @@
       </Events>
     </ViewComponent>
   </ViewComponents>
-  <DialogPage gr:x="0" gr:y="115" id="wv2#area1#area2#page11#dpg1" name="Modifica tipologia allegati">
+  <DialogPage gr:x="35" gr:y="195" id="wv2#area1#area2#page11#dpg1" name="Modifica tipologia allegati">
     <ViewComponents>
       <Form gr:x="0" gr:y="0" id="wv2#area1#area2#page11#dpg1#frm9" name="Modifica">
-        <ConditionalExpression id="wv2#area1#area2#page11#dpg1#frm9#sc5" defaultPolicy="emptyAlwaysApplied" booleanOperator="and">
-          <KeyCondition id="wv2#area1#area2#page11#dpg1#frm9#sc5#kcond3" name="KeyCondition3" predicate="in" implied="false"/>
-        </ConditionalExpression>
         <Field id="wv2#area1#area2#page11#dpg1#frm9#fld22" modifiable="true" name="Giorni Alert" type="integer"/>
         <Field id="wv2#area1#area2#page11#dpg1#frm9#fld23" modifiable="true" name="Condiviso" type="boolean">
           <VRules/>
@@ -49,9 +51,13 @@
           <VRules/>
         </Field>
         <SelectionField id="wv2#area1#area2#page11#dpg1#frm9#sfld4" name="Macro-tipologia">
-          <VRules/>
           <OptionsDataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls9"/>
           <OptionsAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att42"/>
+          <OptionsConditionalExpression id="wv2#area1#area2#page11#dpg1#frm9#sfld4#sc69p" defaultPolicy="fill" booleanOperator="and">
+            <AttributesCondition id="wv2#area1#area2#page11#dpg1#frm9#sfld4#sc69p#acond85p" name="cod" predicate="eq" booleanOperator="or" implied="false" value="${macroTipologia.aziendali}|${macroTipologia.personali}">
+              <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att43"/>
+            </AttributesCondition>
+          </OptionsConditionalExpression>
         </SelectionField>
         <Events>
           <OnSelectEvent id="wv2#area1#area2#page11#dpg1#frm9#oslte16" name="Salva" validate="true">

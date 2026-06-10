@@ -1,0 +1,53 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-card title="main">
+      <wr-content for="content">
+        <wd-grid>
+          <wd-row>
+            <wd-cell [width]="12">
+              <wd-data-grid elevation="0" cols="main/lst51p/data/_be_att106o | main/lst51p/data/_be_att174o" events="main/lst51p/data/oslte220p" [rows]="valueOf('main/lst51p/data')" paginator="main/lst51p/paging" [useExcelLikeFilter]="true">
+                <wr-content for="header[_be_att106o]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att106o]">
+                  {{ valueOf('.', row) }}
+                </wr-content>
+                <wr-content for="header[_be_att174o]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att174o]">
+                  {{ valueOf('.', row) }}
+                </wr-content>
+                <wr-content for="event[oslte220p]">
+                  <wd-button variant="mat-icon-button" color="primary" iconText="create"></wd-button>
+                </wr-content>
+              </wd-data-grid>
+            </wd-cell>
+          </wd-row>
+        </wd-grid>
+      </wr-content>
+      <wr-content for="title[main]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wr-page>
+<wd-dialog context="main/dpg29p" [minWidth]="800">
+  <wr-content for="content">
+    <wd-card elevation="0" actions="frm41p/oslte221p">
+      <wr-content for="content">
+        <wd-container elements="frm41p/fld143p | frm41p/sfld34p">
+          <wr-content for="element[fld143p]">
+            <wd-input type="text" [showLabel]="true" appearance="outline"></wd-input>
+          </wr-content>
+          <wr-content for="element[sfld34p]">
+            <wd-select appearance="outline"></wd-select>
+          </wr-content>
+        </wd-container>
+      </wr-content>
+      <wr-content for="action[oslte221p]">
+        <wd-button color="success"></wd-button>
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wd-dialog>

@@ -1,0 +1,55 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1175" gr:y="55" id="wv2#area1#area2#page33p" name="Categorie" landmark="true">
+  <ViewComponents>
+    <List gr:x="0" gr:y="0" id="wv2#area1#area2#page33p#lst51p" checkable="false" distinct="false" pageSize="10">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls18o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att106o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att174o"/>
+      <Events>
+        <OnSelectEvent id="wv2#area1#area2#page33p#lst51p#oslte220p" name="Modifica" validate="true">
+          <NavigationFlow id="wv2#area1#area2#page33p#lst51p#oslte220p#nf266p" to="wv2#area1#area2#page33p#dpg29p#frm41p">
+            <ParameterBinding id="wv2#area1#area2#page33p#lst51p#oslte220p#nf266p#par843p" source="data._be_att106o" target="{wv2#area1#area2#page33p#dpg29p#frm41p#fld143p}value" name="descrizione - Descrizione"/>
+            <ParameterBinding id="wv2#area1#area2#page33p#lst51p#oslte220p#nf266p#par844p" source="data._be_att105o" target="{wv2#area1#area2#page33p#dpg29p#frm41p#fld144p}value" name="oid - oid"/>
+            <ParameterBinding id="wv2#area1#area2#page33p#lst51p#oslte220p#nf266p#par845p" source="data._be_role53o$_be_att41" target="{wv2#area1#area2#page33p#dpg29p#frm41p#sfld34p}presel._be_att41" name="categoriaToMacroTipologia - Macro Categoria [oid] - Preselection"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </List>
+    <ViewComponent gr:x="165" gr:y="25" id="wv2#area1#area2#page33p#gctu25p" name="new">
+      <Events>
+        <OnSelectEvent id="wv2#area1#area2#page33p#gctu25p#oslte222p" name="Nuova Categoria">
+          <NavigationFlow id="wv2#area1#area2#page33p#gctu25p#oslte222p#nf269p" to="wv2#area1#area2#page33p#dpg29p" automaticCoupling="true"/>
+        </OnSelectEvent>
+      </Events>
+    </ViewComponent>
+  </ViewComponents>
+  <DialogPage gr:x="10" gr:y="120" id="wv2#area1#area2#page33p#dpg29p" name="Modifica categoria">
+    <ViewComponents>
+      <Form gr:x="0" gr:y="0" id="wv2#area1#area2#page33p#dpg29p#frm41p" name="dati">
+        <Field id="wv2#area1#area2#page33p#dpg29p#frm41p#fld143p" modifiable="true" name="Descrizione" type="string" validationOrder="wv2#area1#area2#page33p#dpg29p#frm41p#fld143p#mnd66p">
+          <VRules>
+            <MandatoryValidationRule id="wv2#area1#area2#page33p#dpg29p#frm41p#fld143p#mnd66p" name="Mandatory"/>
+          </VRules>
+        </Field>
+        <Field id="wv2#area1#area2#page33p#dpg29p#frm41p#fld144p" modifiable="true" name="oid" type="integer">
+          <VRules/>
+        </Field>
+        <SelectionField id="wv2#area1#area2#page33p#dpg29p#frm41p#sfld34p" name="Macro Categoria" validationOrder="wv2#area1#area2#page33p#dpg29p#frm41p#sfld34p#mnd67p">
+          <VRules>
+            <MandatoryValidationRule id="wv2#area1#area2#page33p#dpg29p#frm41p#sfld34p#mnd67p" name="Mandatory"/>
+          </VRules>
+          <OptionsDataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls9"/>
+          <OptionsAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att42"/>
+        </SelectionField>
+        <Events>
+          <OnSelectEvent id="wv2#area1#area2#page33p#dpg29p#frm41p#oslte221p" name="Salva" validate="true">
+            <NavigationFlow id="wv2#area1#area2#page33p#dpg29p#frm41p#oslte221p#nf267p" to="wv2#area1#area2#act91p">
+              <ParameterBinding id="wv2#area1#area2#page33p#dpg29p#frm41p#oslte221p#nf267p#par846p" source="{wv2#area1#area2#page33p#dpg29p#frm41p#fld143p}value" target="wv2#area1#area2#act91p.PortaleSubappaltatoriDataservice$pdp288o" name="Descrizione - Descrizione"/>
+              <ParameterBinding id="wv2#area1#area2#page33p#dpg29p#frm41p#oslte221p#nf267p#par847p" source="{wv2#area1#area2#page33p#dpg29p#frm41p#sfld34p}value._be_att41" target="wv2#area1#area2#act91p.PortaleSubappaltatoriDataservice$pdp286o" name="Macro Categoria [oid] - Macro-tipologia oid"/>
+              <ParameterBinding id="wv2#area1#area2#page33p#dpg29p#frm41p#oslte221p#nf267p#par848p" source="{wv2#area1#area2#page33p#dpg29p#frm41p#fld144p}value" target="wv2#area1#area2#act91p.PortaleSubappaltatoriDataservice$pdp289o" name="oid - oid"/>
+            </NavigationFlow>
+          </OnSelectEvent>
+        </Events>
+      </Form>
+    </ViewComponents>
+  </DialogPage>
+</Page>

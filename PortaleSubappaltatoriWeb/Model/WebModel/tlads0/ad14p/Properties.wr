@@ -1,0 +1,50 @@
+<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ad14p" name="Verifica azienda client" defaultSuccessPortDefinition="tlads0#ad14p#spd29p" defaultErrorPortDefinition="tlads0#ad14p#epd19p">
+  <Operations>
+    <Switch gr:x="500" gr:y="225" id="tlads0#ad14p#switch14p" name="presente">
+      <Case value="true"/>
+      <SuccessFlow id="tlads0#ad14p#switch14p#sf66p" to="tlads0#ad14p#switch15p" automaticCoupling="true" code="true"/>
+      <SuccessFlow id="tlads0#ad14p#switch14p#sf69p" to="tlads0#ad14p#spd29p" automaticCoupling="true"/>
+    </Switch>
+    <Switch gr:x="805" gr:y="220" id="tlads0#ad14p#switch15p" name="tenant">
+      <Case value="true"/>
+      <SuccessFlow id="tlads0#ad14p#switch15p#sf67p" to="tlads0#ad14p#spd27p" automaticCoupling="true" code="true"/>
+      <SuccessFlow id="tlads0#ad14p#switch15p#sf68p" to="tlads0#ad14p#spd28p" automaticCoupling="true"/>
+    </Switch>
+  </Operations>
+  <InputPortDefinition id="tlads0#ad14p#ipd14p" gr:x="0" gr:y="30">
+    <SuccessFlow id="tlads0#ad14p#ipd14p#sf64p" to="tlads0#ad14p#act86p">
+      <ParameterBinding id="tlads0#ad14p#ipd14p#sf64p#par801p" source="tlads0#ad14p#ipd14p#pdp88p" target="tlads0#ad14p#act86p.PortaleSubappaltatoriDataservice$pdp274o" name="azienda [oid] - azienda [oid]"/>
+      <ParameterBinding id="tlads0#ad14p#ipd14p#sf64p#par802p" source="tlads0#ad14p#ipd14p#pdp89p" target="tlads0#ad14p#act86p.PortaleSubappaltatoriDataservice$pdp275o" name="tenant [oid] - tenant [oid]"/>
+    </SuccessFlow>
+    <PortDefinitionParameter id="tlads0#ad14p#ipd14p#pdp88p" array="false" name="azienda [oid]"/>
+    <PortDefinitionParameter id="tlads0#ad14p#ipd14p#pdp89p" array="false" name="tenant [oid]"/>
+    <DataFlow id="tlads0#ad14p#ipd14p#df107p" to="tlads0#ad14p#spd29p" gr:bendpoints="5.0 165.0">
+      <ParameterBinding id="tlads0#ad14p#ipd14p#df107p#par805p" source="tlads0#ad14p#ipd14p#pdp90p" target="tlads0#ad14p#spd29p#pdp93p" name="ragione sociale - ragione sociale"/>
+      <ParameterBinding id="tlads0#ad14p#ipd14p#df107p#par806p" source="tlads0#ad14p#ipd14p#pdp92p" target="tlads0#ad14p#spd29p#pdp94p" name="email - email"/>
+      <ParameterBinding id="tlads0#ad14p#ipd14p#df107p#par807p" source="tlads0#ad14p#ipd14p#pdp88p" target="tlads0#ad14p#spd29p#pdp95p" name="azienda [oid] - azienda [oid]"/>
+    </DataFlow>
+    <PortDefinitionParameter id="tlads0#ad14p#ipd14p#pdp92p" name="email"/>
+    <PortDefinitionParameter id="tlads0#ad14p#ipd14p#pdp90p" name="ragione sociale"/>
+  </InputPortDefinition>
+  <SuccessPortDefinition id="tlads0#ad14p#spd27p" name="altro tenant" gr:x="0" gr:y="205"/>
+  <ErrorPortDefinition id="tlads0#ad14p#epd19p" name="Error Port" gr:x="0" gr:y="510"/>
+  <Action id="tlads0#ad14p#act86p" gr:x="185" gr:y="85" actionServiceRes="PortaleSubappaltatoriDataservice$ada46o">
+    <Events>
+      <SuccessEvent id="tlads0#ad14p#act86p#scce106p">
+        <SuccessFlow id="tlads0#ad14p#act86p#scce106p#sf65p" to="tlads0#ad14p#switch14p">
+          <ParameterBinding id="tlads0#ad14p#act86p#scce106p#sf65p#par803p" source="PortaleSubappaltatoriDataservice$pdp276o" target="switch" name="presente - Switch"/>
+        </SuccessFlow>
+        <DataFlow id="tlads0#ad14p#act86p#scce106p#df106p" to="tlads0#ad14p#switch15p">
+          <ParameterBinding id="tlads0#ad14p#act86p#scce106p#df106p#par804p" source="PortaleSubappaltatoriDataservice$pdp277o" target="switch" name="altro tenant - Switch"/>
+        </DataFlow>
+      </SuccessEvent>
+      <ErrorEvent id="tlads0#ad14p#act86p#erre146p"/>
+    </Events>
+  </Action>
+  <SuccessPortDefinition id="tlads0#ad14p#spd28p" name="presente" gr:x="1015" gr:y="95"/>
+  <SuccessPortDefinition id="tlads0#ad14p#spd29p" name="Success Port" gr:x="990" gr:y="350">
+    <PortDefinitionParameter id="tlads0#ad14p#spd29p#pdp93p" array="false" name="ragione sociale"/>
+    <PortDefinitionParameter id="tlads0#ad14p#spd29p#pdp94p" array="false" name="email"/>
+    <PortDefinitionParameter id="tlads0#ad14p#spd29p#pdp95p" array="false" name="azienda [oid]"/>
+  </SuccessPortDefinition>
+</ActionDefinition>

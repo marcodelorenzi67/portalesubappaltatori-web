@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1010" gr:y="0" id="wv2#area3#page24p" name="Documenti da approvare" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1020" gr:y="0" id="wv2#area3#page24p" name="Documenti da approvare" landmark="true">
   <ViewComponents>
     <List id="wv2#area3#page24p#lst20p" name="Documenti in valutazione" gr:x="0" gr:y="100" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>

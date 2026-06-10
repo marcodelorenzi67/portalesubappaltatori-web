@@ -85,6 +85,7 @@
                       </wr-content>
                       <wr-content for="header-actions">
                         <wd-button context="main/gctu10p/oslte31p" iconText="add"></wd-button>
+                        <wd-button context="main/gctu10p/oslte210p" iconText="playlist_add"></wd-button>
                       </wr-content>
                       <wr-content for="event[oslte34p]">
                         <wd-button variant="mat-icon-button" color="primary" iconText="edit"></wd-button>

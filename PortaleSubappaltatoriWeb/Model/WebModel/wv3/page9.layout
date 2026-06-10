@@ -217,7 +217,7 @@
                             {{ valueOf('.', row) }}
                           </wr-content>
                           <wr-content for="title[lst36p]">
-                            {{ labelOf('.') | wrLocalize }}
+                            {{ labelOf('.') | wrLocalize }} {{ valueOf('/main/dtl17p/data/_be_att114o') }} {{' '}} {{ valueOf('/main/dtl17p/data/_be_att115o') }}
                           </wr-content>
                           <wr-content for="event[oslte160p]">
                             <wd-button variant="mat-icon-button" color="accent" iconText="description" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst36p/data/statoallegatoCodice', row) === 'I'"></wd-button>

@@ -9,6 +9,7 @@
         <wd-button variant="mat-button" color="primary" context="main/frm8/oslte13" type="button"></wd-button>
       </wr-content>
       <wr-content for="title[frm8]"></wr-content>
+      <wr-content for="action[oslte12]"></wr-content>
     </wd-card>
   </wr-content>
   <wr-content for="site-intro">

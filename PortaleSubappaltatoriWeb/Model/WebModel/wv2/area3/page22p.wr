@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area3#page22p" name="Dettaglio Fornitore" gr:x="605" gr:y="930">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area3#page22p" name="Dettaglio Fornitore" gr:x="615" gr:y="930">
   <ViewComponents>
     <Details id="wv2#area3#page22p#dtl6p" name="Dati Anagrafici" gr:x="85" gr:y="200">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls2"/>
@@ -426,10 +426,9 @@
       </ConditionalExpression>
       <Events>
         <OnSelectEvent id="wv2#area3#page22p#lst33p#oslte153p" name="Gestisci documenti" validate="true">
-          <NavigationFlow id="wv2#area3#page22p#lst33p#oslte153p#nf190p" to="wv2#area3#page22p#lst34p">
-            <ParameterBinding id="wv2#area3#page22p#lst33p#oslte153p#nf190p#par545p" source="data._be_role59o$_be_att6" target="wv2#area3#page22p#lst34p#sc51p#rcond44p._be_att6" name="personaleToFornitore - Fornitore [oid]"/>
+          <NavigationFlow id="wv2#area3#page22p#lst33p#oslte153p#nf190p" to="wv2#area3#page22p#dtl16p">
             <ParameterBinding id="wv2#area3#page22p#lst33p#oslte153p#nf190p#par546p" source="data._be_att113o" targetParameter="wv2#area3#page22p#prd15p" name="oid - oid personale"/>
-            <ParameterBinding id="wv2#area3#page22p#lst33p#oslte153p#nf190p#par547p" source="data._be_att113o" target="wv2#area3#page22p#lst34p#sc51p#rcond46p._be_att113o" name="oid - personale [oid]"/>
+            <ParameterBinding id="wv2#area3#page22p#lst33p#oslte153p#nf190p#par793p" source="data._be_att113o" target="wv2#area3#page22p#dtl16p#sc66p#kcond21p._be_att113o" name="oid - KeyCondition21"/>
           </NavigationFlow>
         </OnSelectEvent>
         <OnSelectEvent id="wv2#area3#page22p#lst33p#oslte155p" name="Modifica" validate="true">
@@ -629,6 +628,19 @@
     <Details gr:x="680" gr:y="0" id="wv2#area3#page22p#dtl13p">
       <DataBinding actionServiceRes="PortaleSubappaltatoriDataservice$adf18o"/>
       <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp263o"/>
+    </Details>
+    <Details gr:x="955" gr:y="460" id="wv2#area3#page22p#dtl16p">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls20o"/>
+      <ConditionalExpression id="wv2#area3#page22p#dtl16p#sc66p" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="wv2#area3#page22p#dtl16p#sc66p#kcond21p" name="KeyCondition21" predicate="in" implied="false"/>
+      </ConditionalExpression>
+      <DataFlow id="wv2#area3#page22p#dtl16p#df104p" to="wv2#area3#page22p#lst34p">
+        <ParameterBinding id="wv2#area3#page22p#dtl16p#df104p#par794p" source="data._be_role59o$_be_att6" target="wv2#area3#page22p#lst34p#sc51p#rcond44p._be_att6" name="personaleToFornitore - Fornitore [oid]"/>
+        <ParameterBinding id="wv2#area3#page22p#dtl16p#df104p#par795p" source="data._be_att113o" target="wv2#area3#page22p#lst34p#sc51p#rcond46p._be_att113o" name="oid - personale [oid]"/>
+        <ParameterBinding id="wv2#area3#page22p#dtl16p#df104p#par796p" sourceParameter="wv2#prd8" target="wv2#area3#page22p#lst34p#sc51p#rcond45p._be_att1" name="Tenant - Tenant [oid]"/>
+      </DataFlow>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att114o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att115o"/>
     </Details>
   </ViewComponents>
   <Parameters>

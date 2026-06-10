@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area3#page30p" name="Ricerca Avanzata" landmark="true" gr:x="2480" gr:y="0">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area3#page30p" name="Ricerca Avanzata" landmark="true" gr:x="2490" gr:y="0">
   <ViewComponents>
     <List id="wv2#area3#page30p#lst45p" name="Documenti" gr:x="0" gr:y="100" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
