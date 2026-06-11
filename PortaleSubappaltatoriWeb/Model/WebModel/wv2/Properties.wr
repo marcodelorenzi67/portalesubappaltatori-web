@@ -1,5 +1,5 @@
 <WebView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2" name="BackOffice" protected="true" roles="rl6 rl7 rl8 rl9" home="wv2#act25" landmarks="wv2#area1 wv2#area3 wv2#area4p">
-  <Action id="wv2#act14" gr:x="2565" gr:y="480" definition="tlads0#ad3">
+  <Action id="wv2#act14" gr:x="2645" gr:y="475" definition="tlads0#ad3">
     <Events>
       <SuccessEvent id="wv2#act14#scce13" definition="tlads0#ad3#spd3"/>
       <ErrorEvent id="wv2#act14#erre17" definition="tlads0#ad3#epd5"/>
@@ -9,6 +9,7 @@
     <Parameter id="wv2#prd5" name="error message" type="string"/>
     <Parameter id="wv2#prd6" name="success message" type="string"/>
     <Parameter id="wv2#prd8" name="Tenant" type="integer"/>
+    <Parameter id="wv2#prd19p" name="omnia" type="boolean"/>
   </Parameters>
   <Action id="wv2#act25" gr:x="2450" gr:y="735" definition="tlads0#ad5">
     <Events>
@@ -16,11 +17,22 @@
       <SuccessEvent id="wv2#act25#scce28" definition="tlads0#ad5#spd9">
         <NavigationFlow id="wv2#act25#scce28#nf51" to="wv2#area3#page24p">
           <ParameterBinding id="wv2#act25#scce28#nf51#par119" source="tlads0#ad5#spd9#pdp21" targetParameter="wv2#prd8" name="Oid tenant - Tenant"/>
+          <ParameterBinding id="wv2#act25#scce28#nf51#par867p" source="tlads0#ad5#spd9#pdp96p" targetParameter="wv2#prd19p" name="omnia - omnia"/>
         </NavigationFlow>
       </SuccessEvent>
       <SuccessEvent id="wv2#act25#scce29" definition="tlads0#ad5#spd10">
         <NavigationFlow id="wv2#act25#scce29#nf49" to="wv2#page17#frm10" automaticCoupling="true"/>
       </SuccessEvent>
+    </Events>
+  </Action>
+  <Action id="wv2#act95p" gr:x="2115" gr:y="800" actionServiceRes="PortaleSubappaltatoriDataservice$adf19o">
+    <Events>
+      <SuccessEvent id="wv2#act95p#scce117p">
+        <NavigationFlow id="wv2#act95p#scce117p#nf278p" to="wv2#area3#page24p">
+          <ParameterBinding id="wv2#act95p#scce117p#nf278p#par869p" source="PortaleSubappaltatoriDataservice$pdp295o" targetParameter="wv2#prd19p" name="Omnia - omnia"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#act95p#erre163p"/>
     </Events>
   </Action>
 </WebView>

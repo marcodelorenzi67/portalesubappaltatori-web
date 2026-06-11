@@ -282,7 +282,7 @@
                             <wd-button variant="mat-icon-button" color="primary" iconText="backspace" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst12p/data/statoallegatoCodice', row) === 'A'"></wd-button>
                           </wr-content>
                           <wr-content for="event[oslte178p]">
-                            <wd-button variant="mat-icon-button" color="primary" iconText="account_balance" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst12p/data/statoallegatoCodice', row) === 'S' &amp;&amp; !valueOf('/main/lst12p/data/_be_att127o', row)"></wd-button>
+                            <wd-button variant="mat-icon-button" color="primary" iconText="account_balance" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst12p/data/statoallegatoCodice', row) === 'S' &amp;&amp; !valueOf('/main/lst12p/data/_be_att127o', row)" [confirm]="true"></wd-button>
                           </wr-content>
                         </wd-data-grid>
                       </wd-cell>
@@ -412,7 +412,7 @@
                       <wd-button variant="mat-icon-button" color="primary" iconText="backspace" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst32p/data/statoallegatoCodice', row) === 'A'"></wd-button>
                     </wr-content>
                     <wr-content for="event[oslte179p]">
-                      <wd-button variant="mat-icon-button" color="primary" iconText="account_balance" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst32p/data/statoallegatoCodice', row) === 'S' &amp;&amp; !valueOf('/main/lst32p/data/_be_att127o', row)"></wd-button>
+                      <wd-button variant="mat-icon-button" color="primary" iconText="account_balance" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst32p/data/statoallegatoCodice', row) === 'S' &amp;&amp; !valueOf('/main/lst32p/data/_be_att127o', row)" [confirm]="true"></wd-button>
                     </wr-content>
                   </wd-data-grid>
                 </mat-tab>
@@ -450,6 +450,7 @@
                           </wr-content>
                           <wr-content for="header-actions">
                             <wd-button context="main/gctu14p/oslte154p" iconText="add" color="success"></wd-button>
+                            <wd-button context="main/gctu14p/oslte227p" iconText="file_download" color="warning" [confirm]="true"></wd-button>
                           </wr-content>
                           <wr-content for="header[_be_att126o]">
                             {{ labelOf('.') | wrLocalize }}
@@ -523,7 +524,7 @@
                             <wd-button variant="mat-icon-button" color="primary" iconText="backspace" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst34p/data/statoallegatoCodice', row) === 'A'"></wd-button>
                           </wr-content>
                           <wr-content for="event[oslte180p]">
-                            <wd-button variant="mat-icon-button" color="primary" iconText="account_balance" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst34p/data/statoallegatoCodice', row) === 'S' &amp;&amp; !valueOf('/main/lst34p/data/_be_att127o', row)"></wd-button>
+                            <wd-button variant="mat-icon-button" color="primary" iconText="account_balance" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst34p/data/statoallegatoCodice', row) === 'S' &amp;&amp; !valueOf('/main/lst34p/data/_be_att127o', row)" [confirm]="true"></wd-button>
                           </wr-content>
                         </wd-data-grid>
                       </wd-cell>

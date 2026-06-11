@@ -309,6 +309,11 @@
           <ParameterBinding id="wv2#area3#act78p#scce94p#nf235p#par686p" sourceParameter="wv2#area3#page22p#prd13p" target="wv2#area3#page22p#lst12p#sc18p#rcond8p._be_att6" name="oid fornitore - Fornitore [oid]"/>
           <ParameterBinding id="wv2#area3#act78p#scce94p#nf235p#par687p" sourceParameter="wv2#prd8" target="wv2#area3#page22p#lst12p#sc18p#rcond9p._be_att1" name="Tenant - Tenant [oid]"/>
         </NavigationFlow>
+        <DataFlow id="wv2#area3#act78p#scce94p#df108p" to="wv2#area3#page22p#lst34p">
+          <ParameterBinding id="wv2#area3#act78p#scce94p#df108p#par851p" sourceParameter="wv2#area3#page22p#prd13p" target="wv2#area3#page22p#lst34p#sc51p#rcond44p._be_att6" name="oid fornitore - Fornitore [oid]"/>
+          <ParameterBinding id="wv2#area3#act78p#scce94p#df108p#par852p" sourceParameter="wv2#area3#page22p#prd15p" target="wv2#area3#page22p#lst34p#sc51p#rcond46p._be_att113o" name="oid personale - personale [oid]"/>
+          <ParameterBinding id="wv2#area3#act78p#scce94p#df108p#par853p" sourceParameter="wv2#prd8" target="wv2#area3#page22p#lst34p#sc51p#rcond45p._be_att1" name="Tenant - Tenant [oid]"/>
+        </DataFlow>
       </SuccessEvent>
       <ErrorEvent id="wv2#area3#act78p#erre135p"/>
     </Events>
@@ -381,6 +386,16 @@
         </NavigationFlow>
       </SuccessEvent>
       <ErrorEvent id="wv2#area3#act87p#erre147p" definition="tlads0#ad14p#epd19p"/>
+    </Events>
+  </Action>
+  <Action id="wv2#area3#act94p" gr:x="355" gr:y="1845" actionServiceRes="PortaleSubappaltatoriDataservice$ada52o">
+    <Events>
+      <SuccessEvent id="wv2#area3#act94p#scce116p">
+        <NavigationFlow id="wv2#area3#act94p#scce116p#nf277p" to="wv2#area3#page22p#lst33p">
+          <ParameterBinding id="wv2#area3#act94p#scce116p#nf277p#par865p" sourceParameter="wv2#area3#page22p#prd13p" target="wv2#area3#page22p#lst33p#sc50p#rcond43p._be_att6" name="oid fornitore - fornitore [oid]"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area3#act94p#erre161p"/>
     </Events>
   </Action>
 </Area>

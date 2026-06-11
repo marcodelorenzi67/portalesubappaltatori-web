@@ -123,6 +123,11 @@
             <ParameterBinding id="wv2#area3#page22p#gctu14p#oslte201p#nf233p#par681p" sourceValue="true" targetParameter="wv2#area3#page22p#prd17p" name="&quot;true&quot; - doc condivisi"/>
           </NavigationFlow>
         </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page22p#gctu14p#oslte227p" name="Aggiorna personale">
+          <NavigationFlow id="wv2#area3#page22p#gctu14p#oslte227p#nf276p" to="wv2#area3#act94p">
+            <ParameterBinding id="wv2#area3#page22p#gctu14p#oslte227p#nf276p#par864p" sourceParameter="wv2#area3#page22p#prd13p" target="wv2#area3#act94p.PortaleSubappaltatoriDataservice$pdp292o" name="oid fornitore - fornitore [oid]"/>
+          </NavigationFlow>
+        </OnSelectEvent>
       </Events>
     </ViewComponent>
     <ViewComponent gr:x="285" gr:y="315" id="wv2#area3#page22p#gctu15p" name="ViewComponent">
@@ -579,7 +584,7 @@
     </List>
     <List id="wv2#area3#page22p#lst44p" name="Documenti Condivisi" gr:x="1370" gr:y="800" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
-      <ConditionalExpression id="wv2#area3#page22p#lst44p#sc61p" defaultPolicy="fill" booleanOperator="and">
+      <ConditionalExpression id="wv2#area3#page22p#lst44p#sc61p" defaultPolicy="fill" booleanOperator="and" expression="IFNULLFALSE(wv2#area3#page22p#lst44p#sc61p#rcond65p) AND IFNULLFALSE(wv2#area3#page22p#lst44p#sc61p#acond72p) AND IFNULLFALSE(wv2#area3#page22p#lst44p#sc61p#acond73p) AND IFNULLFALSE(wv2#area3#page22p#lst44p#sc61p#acond74p) AND IFNULLFALSE(wv2#area3#page22p#lst44p#sc61p#acond75p) AND IFNULLFALSE(wv2#area3#page22p#lst44p#sc61p#acond80p) AND IFNULLFALSE(wv2#area3#page22p#lst44p#sc61p#rcond66p)">
         <AssociationRoleCondition id="wv2#area3#page22p#lst44p#sc61p#rcond65p" name="Fornitore" predicate="in" implied="false">
           <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role11"/>
         </AssociationRoleCondition>

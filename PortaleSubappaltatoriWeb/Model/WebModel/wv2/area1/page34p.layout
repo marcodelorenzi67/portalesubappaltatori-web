@@ -1,0 +1,18 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-card title="main" actions="main/gctu26p/oslte225p | main/gctu26p/oslte226p">
+      <wr-content for="content">
+        <wd-container></wd-container>
+      </wr-content>
+      <wr-content for="title[main]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="action[oslte225p]">
+        <wd-button color="primary"></wd-button>
+      </wr-content>
+      <wr-content for="action[oslte226p]">
+        <wd-button color="accent"></wd-button>
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wr-page>

@@ -11,6 +11,7 @@
   </InputPortDefinition>
   <SuccessPortDefinition id="tlads0#ad5#spd9" name="Singolo Tenant" gr:x="0" gr:y="30">
     <PortDefinitionParameter id="tlads0#ad5#spd9#pdp21" array="false" name="Oid tenant"/>
+    <PortDefinitionParameter id="tlads0#ad5#spd9#pdp96p" array="false" name="omnia"/>
   </SuccessPortDefinition>
   <ErrorPortDefinition id="tlads0#ad5#epd10" name="Error Port" gr:x="0" gr:y="300"/>
   <Action id="tlads0#ad5#act26" gr:x="370" gr:y="110" actionServiceRes="PortaleSubappaltatoriDataservice$ada13">
@@ -21,6 +22,7 @@
         </SuccessFlow>
         <DataFlow id="tlads0#ad5#act26#scce26#df20" to="tlads0#ad5#spd9" gr:bendpoints="26.0 -64.0">
           <ParameterBinding id="tlads0#ad5#act26#scce26#df20#par117" source="PortaleSubappaltatoriDataservice$pdp65" target="tlads0#ad5#spd9#pdp21" name="Oid tenant - Oid tenant"/>
+          <ParameterBinding id="tlads0#ad5#act26#scce26#df20#par866p" source="PortaleSubappaltatoriDataservice$pdp293o" target="tlads0#ad5#spd9#pdp96p" name="omnia - omnia"/>
         </DataFlow>
       </SuccessEvent>
       <ErrorEvent id="tlads0#ad5#act26#erre35"/>

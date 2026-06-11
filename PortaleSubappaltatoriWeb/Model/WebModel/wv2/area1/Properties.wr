@@ -1,5 +1,5 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area1" name="Amministrazione" gr:x="-90" gr:y="-540" protected="true" roles="rl8" default="wv2#area1#page4" landmarks="wv2#area1#area2 wv2#area1#page4" landmark="true">
-  <Action id="wv2#area1#act4" gr:x="10" gr:y="820" actionServiceRes="PortaleSubappaltatoriDataservice$ada1">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area1" name="Amministrazione" gr:x="-185" gr:y="-540" protected="true" roles="rl8" default="wv2#area1#page4" landmarks="wv2#area1#area2 wv2#area1#page4 wv2#area1#page34p" landmark="true">
+  <Action id="wv2#area1#act4" gr:x="105" gr:y="820" actionServiceRes="PortaleSubappaltatoriDataservice$ada1">
     <Events>
       <SuccessEvent id="wv2#area1#act4#scce4">
         <NavigationFlow id="wv2#area1#act4#scce4#nf12" to="wv2#area1#page4">
@@ -11,6 +11,26 @@
           <ParameterBinding id="wv2#area1#act4#erre7#nf27#par54" sourceValue="operazione.KO" targetParameter="wv2#prd5" name="&quot;operazione.KO&quot; - error message"/>
         </NavigationFlow>
       </ErrorEvent>
+    </Events>
+  </Action>
+  <Action id="wv2#area1#act92p" gr:x="90" gr:y="280" actionServiceRes="PortaleSubappaltatoriDataservice$ada51o">
+    <Events>
+      <SuccessEvent id="wv2#area1#act92p#scce114p">
+        <NavigationFlow id="wv2#area1#act92p#scce114p#nf274p" to="wv2#area1#page34p">
+          <ParameterBinding id="wv2#area1#act92p#scce114p#nf274p#par862p" sourceValue="operazione.OK" targetParameter="wv2#prd6" name="&quot;oper&quot; - success message"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area1#act92p#erre158p"/>
+    </Events>
+  </Action>
+  <Action id="wv2#area1#act93p" gr:x="430" gr:y="320" actionServiceRes="PortaleSubappaltatoriDataservice$ad8o">
+    <Events>
+      <SuccessEvent id="wv2#area1#act93p#scce115p">
+        <NavigationFlow id="wv2#area1#act93p#scce115p#nf275p" to="wv2#area1#page34p">
+          <ParameterBinding id="wv2#area1#act93p#scce115p#nf275p#par863p" sourceValue="operazione.OK" targetParameter="wv2#prd6" name="&quot;operazione.OK&quot; - success message"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area1#act93p#erre159p"/>
     </Events>
   </Action>
 </Area>

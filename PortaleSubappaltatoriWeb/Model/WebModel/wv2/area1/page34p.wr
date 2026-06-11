@@ -1,0 +1,14 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="275" gr:y="105" id="wv2#area1#page34p" name="Avvia job" landmark="true">
+  <ViewComponents>
+    <ViewComponent gr:x="0" gr:y="0" id="wv2#area1#page34p#gctu26p" name="BTN">
+      <Events>
+        <OnSelectEvent id="wv2#area1#page34p#gctu26p#oslte225p" name="Alert">
+          <NavigationFlow id="wv2#area1#page34p#gctu26p#oslte225p#nf272p" to="wv2#area1#act92p" automaticCoupling="true"/>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv2#area1#page34p#gctu26p#oslte226p" name="Scaduti">
+          <NavigationFlow id="wv2#area1#page34p#gctu26p#oslte226p#nf273p" to="wv2#area1#act93p" automaticCoupling="true"/>
+        </OnSelectEvent>
+      </Events>
+    </ViewComponent>
+  </ViewComponents>
+</Page>

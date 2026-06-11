@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="210" gr:y="620" id="wv2#area1#page4" name="Gestione utenti interni" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="305" gr:y="620" id="wv2#area1#page4" name="Gestione utenti interni" landmark="true">
   <ViewComponents>
     <List gr:x="0" gr:y="0" id="wv2#area1#page4#lst1" checkable="false" distinct="false" name="Utenti registrati" pageSize="5">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$User"/>
