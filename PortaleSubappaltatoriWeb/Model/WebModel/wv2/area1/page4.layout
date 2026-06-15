@@ -44,7 +44,7 @@
                 </wd-row>
                 <wd-row>
                   <wd-cell [width]="12">
-                    <wd-data-grid cols="main/lst1/data/_be_att3 | main/lst1/data/_be_att4 | main/lst1/data/_be_att5" [rows]="valueOf('main/lst1/data')" title="main/lst1" paginator="main/lst1/paging" [useExcelLikeFilter]="true" elevation="0">
+                    <wd-data-grid cols="main/lst1/data/_be_att3 | main/lst1/data/_be_att4 | main/lst1/data/_be_att5 | main/lst1/data/_be_att94o" [rows]="valueOf('main/lst1/data')" title="main/lst1" paginator="main/lst1/paging" [useExcelLikeFilter]="true" elevation="0" events="main/lst1/data/oslte228p">
                       <wr-content for="title[lst1]">
                         {{ labelOf('.') | wrLocalize }}
                       </wr-content>
@@ -65,6 +65,15 @@
                       </wr-content>
                       <wr-content for="data[_be_att5]">
                         {{ valueOf('.', row) }}
+                      </wr-content>
+                      <wr-content for="event[oslte228p]">
+                        <wd-button variant="mat-icon-button" color="primary" iconText="create"></wd-button>
+                      </wr-content>
+                      <wr-content for="header[_be_att94o]">
+                        {{ labelOf('.') | wrLocalize }}
+                      </wr-content>
+                      <wr-content for="data[_be_att94o]">
+                        {{ valueOf('.', row) == true ? 'Sì' : 'No' }}
                       </wr-content>
                     </wd-data-grid>
                   </wd-cell>

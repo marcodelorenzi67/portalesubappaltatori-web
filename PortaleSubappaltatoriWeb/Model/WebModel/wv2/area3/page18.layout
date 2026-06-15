@@ -46,7 +46,7 @@
                 </wd-row>
                 <wd-row>
                   <wd-cell [width]="12">
-                    <wd-data-grid elevation="0" cols="main/lst8/data/_be_att7 | main/lst8/data/_be_att8 | main/lst8/data/_be_att9 | main/lst8/data/_be_att10 | main/lst8/data/_be_att12 | main/lst8/data/_be_att66" [rows]="valueOf('main/lst8/data')" events="main/lst8/data/oslte34p | main/lst8/data/oslte45p">
+                    <wd-data-grid *ngIf="valueOf('/parameters/prd8') === 2" elevation="0" cols="main/lst8/data/_be_att7 | main/lst8/data/_be_att8 | main/lst8/data/_be_att9 | main/lst8/data/_be_att10 | main/lst8/data/_be_att12 | main/lst8/data/_be_att66 | main/lst8/data/_be_att178o | main/lst8/data/_be_att180o" [rows]="valueOf('main/lst8/data')" events="main/lst8/data/oslte34p | main/lst8/data/oslte45p" paginator="main/lst8/paging">
                       <wr-content for="header[_be_att7]">
                         {{ labelOf('.') | wrLocalize }}
                       </wr-content>
@@ -85,13 +85,89 @@
                       </wr-content>
                       <wr-content for="header-actions">
                         <wd-button context="main/gctu10p/oslte31p" iconText="add"></wd-button>
-                        <wd-button context="main/gctu10p/oslte210p" iconText="playlist_add"></wd-button>
+                        <wd-button context="main/gctu10p/oslte210p" iconText="playlist_add" [visible]="valueOf('accessible') &amp;&amp; valueOf('/parameters/prd19p')"></wd-button>
                       </wr-content>
                       <wr-content for="event[oslte34p]">
                         <wd-button variant="mat-icon-button" color="primary" iconText="edit"></wd-button>
                       </wr-content>
                       <wr-content for="event[oslte45p]">
                         <wd-button variant="mat-icon-button" color="primary" iconText="info_outline" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst8/data/statoregistrazioneCodice', row) != 'B'"></wd-button>
+                      </wr-content>
+                      <wr-content for="header[_be_att178o]">
+                        {{ labelOf('.') | wrLocalize }}
+                      </wr-content>
+                      <wr-content for="data[_be_att178o]">
+                        <wd-icon iconText="lens" *ngIf="valueOf('.', row)" style="color: #f05050;"></wd-icon>
+                        <wd-icon iconText="lens" *ngIf="!valueOf('.', row)" style="color: #27c24c;"></wd-icon>
+                      </wr-content>
+                      <wr-content for="header[_be_att180o]">
+                        {{ labelOf('.') | wrLocalize }}
+                      </wr-content>
+                      <wr-content for="data[_be_att180o]">
+                        <wd-icon iconText="lens" *ngIf="valueOf('.', row)" style="color: #f05050;"></wd-icon>
+                        <wd-icon iconText="lens" *ngIf="!valueOf('.', row)" style="color: #27c24c;"></wd-icon>
+                      </wr-content>
+                    </wd-data-grid>
+                    <wd-data-grid *ngIf="valueOf('/parameters/prd8') === 1" elevation="0" cols="main/lst8/data/_be_att7 | main/lst8/data/_be_att8 | main/lst8/data/_be_att9 | main/lst8/data/_be_att10 | main/lst8/data/_be_att12 | main/lst8/data/_be_att66 | main/lst8/data/_be_att177o | main/lst8/data/_be_att179o" [rows]="valueOf('main/lst8/data')" events="main/lst8/data/oslte34p | main/lst8/data/oslte45p" paginator="main/lst8/paging">
+                      <wr-content for="header[_be_att7]">
+                        {{ labelOf('.') | wrLocalize }}
+                      </wr-content>
+                      <wr-content for="data[_be_att7]">
+                        {{ valueOf('.', row) }}
+                      </wr-content>
+                      <wr-content for="header[_be_att8]">
+                        {{ labelOf('.') | wrLocalize }}
+                      </wr-content>
+                      <wr-content for="data[_be_att8]">
+                        {{ valueOf('.', row) }}
+                      </wr-content>
+                      <wr-content for="header[_be_att9]">
+                        {{ labelOf('.') | wrLocalize }}
+                      </wr-content>
+                      <wr-content for="data[_be_att9]">
+                        {{ valueOf('.', row) }}
+                      </wr-content>
+                      <wr-content for="header[_be_att10]">
+                        {{ labelOf('.') | wrLocalize }}
+                      </wr-content>
+                      <wr-content for="data[_be_att10]">
+                        {{ valueOf('.', row) }}
+                      </wr-content>
+                      <wr-content for="header[_be_att12]">
+                        {{ labelOf('.') | wrLocalize }}
+                      </wr-content>
+                      <wr-content for="data[_be_att12]">
+                        {{ valueOf('.', row) }}
+                      </wr-content>
+                      <wr-content for="header[_be_att66]">
+                        {{ labelOf('.') | wrLocalize }}
+                      </wr-content>
+                      <wr-content for="data[_be_att66]">
+                        {{ valueOf('.', row) }}
+                      </wr-content>
+                      <wr-content for="header-actions">
+                        <wd-button context="main/gctu10p/oslte31p" iconText="add"></wd-button>
+                        <wd-button context="main/gctu10p/oslte210p" iconText="playlist_add" [visible]="valueOf('accessible') &amp;&amp; valueOf('/parameters/prd19p')"></wd-button>
+                      </wr-content>
+                      <wr-content for="event[oslte34p]">
+                        <wd-button variant="mat-icon-button" color="primary" iconText="edit"></wd-button>
+                      </wr-content>
+                      <wr-content for="event[oslte45p]">
+                        <wd-button variant="mat-icon-button" color="primary" iconText="info_outline" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst8/data/statoregistrazioneCodice', row) != 'B'"></wd-button>
+                      </wr-content>
+                      <wr-content for="header[_be_att177o]">
+                        {{ labelOf('.') | wrLocalize }}
+                      </wr-content>
+                      <wr-content for="data[_be_att177o]">
+                        <wd-icon iconText="lens" *ngIf="valueOf('.', row)" style="color: #f05050;"></wd-icon>
+                        <wd-icon iconText="lens" *ngIf="!valueOf('.', row)" style="color: #27c24c;"></wd-icon>
+                      </wr-content>
+                      <wr-content for="header[_be_att179o]">
+                        {{ labelOf('.') | wrLocalize }}
+                      </wr-content>
+                      <wr-content for="data[_be_att179o]">
+                        <wd-icon iconText="lens" *ngIf="valueOf('.', row)" style="color: #f05050;"></wd-icon>
+                        <wd-icon iconText="lens" *ngIf="!valueOf('.', row)" style="color: #27c24c;"></wd-icon>
                       </wr-content>
                     </wd-data-grid>
                   </wd-cell>

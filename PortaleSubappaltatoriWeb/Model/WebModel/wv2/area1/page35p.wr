@@ -1,0 +1,77 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="965" id="wv2#area1#page35p" name="Dettaglio utente">
+  <ViewComponents>
+    <Details gr:x="0" gr:y="0" id="wv2#area1#page35p#dtl18p">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$User"/>
+      <ConditionalExpression id="wv2#area1#page35p#dtl18p#sc78p" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="wv2#area1#page35p#dtl18p#sc78p#kcond25p" name="KeyCondition25" predicate="in" implied="false"/>
+      </ConditionalExpression>
+      <DataFlow id="wv2#area1#page35p#dtl18p#df110p" to="wv2#area1#page35p#lst53p" automaticCoupling="true"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att3"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att4"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$userName"/>
+      <DataFlow id="wv2#area1#page35p#dtl18p#df111p" to="wv2#area1#act96p">
+        <ParameterBinding id="wv2#area1#page35p#dtl18p#df111p#par879p" source="data._be_userName" target="wv2#area1#act96p.PortaleSubappaltatoriDataservice$pdp300o" name="userID - user"/>
+      </DataFlow>
+      <DataFlow id="wv2#area1#page35p#dtl18p#df112p" to="wv2#area1#page35p#frm42p">
+        <ParameterBinding id="wv2#area1#page35p#dtl18p#df112p#par882p" source="data._be_att4" target="{wv2#area1#page35p#frm42p#fld146p}value" name="cognome - Cognome"/>
+        <ParameterBinding id="wv2#area1#page35p#dtl18p#df112p#par883p" source="data._be_att3" target="{wv2#area1#page35p#frm42p#fld145p}value" name="nome - Nome"/>
+      </DataFlow>
+    </Details>
+    <ViewComponent gr:x="10" gr:y="145" id="wv2#area1#page35p#gctu27p" name="propaga">
+      <DataFlow id="wv2#area1#page35p#gctu27p#df109p" to="wv2#area1#page35p#dtl18p">
+        <ParameterBinding id="wv2#area1#page35p#gctu27p#df109p#par873p" sourceParameter="wv2#area1#page35p#prd20p" target="wv2#area1#page35p#dtl18p#sc78p#kcond25p._be_userOID" name="user oid - KeyCondition25"/>
+      </DataFlow>
+    </ViewComponent>
+    <ViewComponent gr:x="170" gr:y="5" id="wv2#area1#page35p#gctu28p" name="BTN">
+      <Events>
+        <OnSelectEvent id="wv2#area1#page35p#gctu28p#oslte229p" name="Modifica">
+          <NavigationFlow id="wv2#area1#page35p#gctu28p#oslte229p#nf280p" to="wv2#area1#page35p#gctu29p">
+            <ParameterBinding id="wv2#area1#page35p#gctu28p#oslte229p#nf280p#par874p" sourceValue="true" targetParameter="wv2#area1#page35p#prd21p" name="&quot;true&quot; - edit"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv2#area1#page35p#gctu28p#oslte230p" name="Annulla modifica">
+          <NavigationFlow id="wv2#area1#page35p#gctu28p#oslte230p#nf281p" to="wv2#area1#page35p#gctu29p">
+            <ParameterBinding id="wv2#area1#page35p#gctu28p#oslte230p#nf281p#par875p" sourceValue="false" targetParameter="wv2#area1#page35p#prd21p" name="&quot;false&quot; - edit"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </ViewComponent>
+    <ViewComponent gr:x="140" gr:y="105" id="wv2#area1#page35p#gctu29p" name="ViewComponent"/>
+    <List gr:x="130" gr:y="200" id="wv2#area1#page35p#lst53p" checkable="false" distinct="false">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls12"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att60"/>
+      <ConditionalExpression id="wv2#area1#page35p#lst53p#sc79p" defaultPolicy="fill" booleanOperator="and">
+        <AssociationRoleCondition id="wv2#area1#page35p#lst53p#sc79p#rcond81p" name="user" predicate="in" implied="false">
+          <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role2p"/>
+        </AssociationRoleCondition>
+      </ConditionalExpression>
+      <Events>
+        <OnSelectEvent id="wv2#area1#page35p#lst53p#oslte231p" name="Rimuovi" validate="true">
+          <NavigationFlow id="wv2#area1#page35p#lst53p#oslte231p#nf282p" to="wv2#area1#act96p">
+            <ParameterBinding id="wv2#area1#page35p#lst53p#oslte231p#nf282p#par876p" source="data._be_att59" target="wv2#area1#act96p.PortaleSubappaltatoriDataservice$pdp298o" name="oid - oid Ruolo"/>
+            <ParameterBinding id="wv2#area1#page35p#lst53p#oslte231p#nf282p#par877p" sourceParameter="wv2#area1#page35p#prd20p" target="wv2#area1#act96p.PortaleSubappaltatoriDataservice$pdp299o" name="user oid - oid User"/>
+            <ParameterBinding id="wv2#area1#page35p#lst53p#oslte231p#nf282p#par878p" source="data._be_att60" target="wv2#area1#act96p.PortaleSubappaltatoriDataservice$pdp301o" name="descrizione - scope"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </List>
+    <Form gr:x="10" gr:y="255" id="wv2#area1#page35p#frm42p" name="Modifica">
+      <Field id="wv2#area1#page35p#frm42p#fld145p" type="string" modifiable="true" name="Nome"/>
+      <Field id="wv2#area1#page35p#frm42p#fld146p" name="Cognome" type="string" modifiable="true"/>
+      <Events>
+        <OnSelectEvent id="wv2#area1#page35p#frm42p#oslte232p" name="Salva" validate="true">
+          <NavigationFlow id="wv2#area1#page35p#frm42p#oslte232p#nf285p" to="wv2#area1#act97p">
+            <ParameterBinding id="wv2#area1#page35p#frm42p#oslte232p#nf285p#par884p" source="{wv2#area1#page35p#frm42p#fld146p}value" target="wv2#area1#act97p.PortaleSubappaltatoriDataservice$pdp304o" name="Cognome - Cognome"/>
+            <ParameterBinding id="wv2#area1#page35p#frm42p#oslte232p#nf285p#par885p" source="{wv2#area1#page35p#frm42p#fld145p}value" target="wv2#area1#act97p.PortaleSubappaltatoriDataservice$pdp302o" name="Nome - Nome"/>
+            <ParameterBinding id="wv2#area1#page35p#frm42p#oslte232p#nf285p#par886p" sourceParameter="wv2#area1#page35p#prd20p" target="wv2#area1#act97p.PortaleSubappaltatoriDataservice$pdp303o" name="user oid - oid"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <SelectionField id="wv2#area1#page35p#frm42p#sfld35p" optionsDistinct="false" emptyOption="true"/>
+    </Form>
+  </ViewComponents>
+  <Parameters>
+    <Parameter id="wv2#area1#page35p#prd20p" name="user oid" type="integer"/>
+    <Parameter id="wv2#area1#page35p#prd21p" name="edit" type="boolean"/>
+  </Parameters>
+</Page>

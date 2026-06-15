@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="275" gr:y="105" id="wv2#area1#page34p" name="Avvia job" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="350" gr:y="105" id="wv2#area1#page34p" name="Avvia job" landmark="true">
   <ViewComponents>
     <ViewComponent gr:x="0" gr:y="0" id="wv2#area1#page34p#gctu26p" name="BTN">
       <Events>

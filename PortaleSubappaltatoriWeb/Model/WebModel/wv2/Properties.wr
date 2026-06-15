@@ -29,7 +29,7 @@
       </SuccessEvent>
     </Events>
   </Action>
-  <Action id="wv2#act95p" gr:x="2115" gr:y="800" actionServiceRes="PortaleSubappaltatoriDataservice$adf19o">
+  <Action id="wv2#act95p" gr:x="2145" gr:y="805" actionServiceRes="PortaleSubappaltatoriDataservice$adf19o">
     <Events>
       <SuccessEvent id="wv2#act95p#scce117p">
         <NavigationFlow id="wv2#act95p#scce117p#nf278p" to="wv2#area3#page24p">

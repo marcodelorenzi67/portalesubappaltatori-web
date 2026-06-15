@@ -1,4 +1,4 @@
-<WebView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv3" name="Fornitori" home="wv3#act30p">
+<WebView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv3" name="Fornitori" home="wv3#act30p" protected="true" roles="rl10">
   <Action id="wv3#act29p" definition="tlads0#ad3" gr:x="1570" gr:y="410">
     <Events>
       <SuccessEvent id="wv3#act29p#scce32p" definition="tlads0#ad3#spd3"/>

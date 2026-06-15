@@ -1,10 +1,10 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="370" gr:y="935" id="wv2#area1#page5" name="Nuovo utente interno">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="510" gr:y="980" id="wv2#area1#page5" name="Nuovo utente interno">
   <ViewComponents>
     <Form gr:x="0" gr:y="0" id="wv2#area1#page5#frm3" name="Nuovo utente">
       <Field id="wv2#area1#page5#frm3#fld7" modifiable="true" name="Cognome" type="string">
         <VRules/>
       </Field>
-      <Field id="wv2#area1#page5#frm3#fld8" modifiable="true" name="Email" type="string" validationOrder="wv2#area1#page5#frm3#fld8#mnd7 wv2#area1#page5#frm3#fld8#email3p">
+      <Field id="wv2#area1#page5#frm3#fld8" modifiable="true" name="Email" type="string" validationOrder="wv2#area1#page5#frm3#fld8#mnd7 wv2#area1#page5#frm3#fld8#email3p" disabled="= form.edit">
         <VRules>
           <MandatoryValidationRule id="wv2#area1#page5#frm3#fld8#mnd7" name="Mandatory"/>
           <EMailValidationRule id="wv2#area1#page5#frm3#fld8#email3p" name="EMail"/>
@@ -31,17 +31,36 @@
       </SelectionField>
       <Events>
         <OnSelectEvent id="wv2#area1#page5#frm3#oslte5" name="Invita" validate="true">
-          <NavigationFlow id="wv2#area1#page5#frm3#oslte5#nf11" to="wv2#area1#act4">
-            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par20" source="{wv2#area1#page5#frm3#fld7}value" target="wv2#area1#act4.PortaleSubappaltatoriDataservice$pdp6" name="Cognome - Cognome"/>
-            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par21" source="{wv2#area1#page5#frm3#fld8}value" target="wv2#area1#act4.PortaleSubappaltatoriDataservice$pdp5" name="Email - Email"/>
-            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par22" source="{wv2#area1#page5#frm3#fld9}value" target="wv2#area1#act4.PortaleSubappaltatoriDataservice$pdp7" name="Nome - Nome"/>
-            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par23" source="{wv2#area1#page5#frm3#sfld1}value._be_att1" target="wv2#area1#act4.PortaleSubappaltatoriDataservice$pdp8" name="Tenant [oid] - tenant"/>
-            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par25" source="{wv2#area1#page5#frm3#sfld2}value._be_att59" target="wv2#area1#act4.PortaleSubappaltatoriDataservice$pdp20" name="Ruoli [oid] - oid Ruoli"/>
-            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par138p" sourceValue="true" target="wv2#area1#act4.PortaleSubappaltatoriDataservice$pdp85o" name="&quot;true&quot; - Backoffice"/>
-            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par318p" source="{wv2#area1#page5#frm3#fld8}value" target="wv2#area1#act4.PortaleSubappaltatoriDataservice$pdp165o" name="Email - username"/>
+          <NavigationFlow id="wv2#area1#page5#frm3#oslte5#nf11" to="wv2#area1#act101p">
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par928p" sourceValue="true" target="wv2#area1#act101p.tlads0#ad15p#ipd15p#pdp110p" name="&quot;true&quot; - Backoffice"/>
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par929p" source="{wv2#area1#page5#frm3#fld7}value" target="wv2#area1#act101p.tlads0#ad15p#ipd15p#pdp101p" name="Cognome - Cognome"/>
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par930p" source="{wv2#area1#page5#frm3#fld8}value" target="wv2#area1#act101p.tlads0#ad15p#ipd15p#pdp109p" name="Email - Email"/>
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par931p" source="{wv2#area1#page5#frm3#fld9}value" target="wv2#area1#act101p.tlads0#ad15p#ipd15p#pdp100p" name="Nome - Nome"/>
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par932p" source="{wv2#area1#page5#frm3#fld147p}value" target="wv2#area1#act101p.tlads0#ad15p#ipd15p#pdp99p" name="oid - oid"/>
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par933p" source="{wv2#area1#page5#frm3#sfld2}value._be_att59" target="wv2#area1#act101p.tlads0#ad15p#ipd15p#pdp98p" name="Ruoli [oid] - oid Ruoli"/>
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par934p" source="{wv2#area1#page5#frm3#sfld1}value._be_att1" target="wv2#area1#act101p.tlads0#ad15p#ipd15p#pdp97p" name="Tenant [oid] - oid Tenant"/>
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte5#nf11#par935p" source="{wv2#area1#page5#frm3#fld149p}value" target="wv2#area1#act101p.tlads0#ad15p#ipd15p#pdp102p" name="Attivo - Attivo"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv2#area1#page5#frm3#oslte233p" name="Salva" validate="true">
+          <NavigationFlow id="wv2#area1#page5#frm3#oslte233p#nf291p" to="wv2#area1#act101p">
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte233p#nf291p#par939p" source="{wv2#area1#page5#frm3#fld149p}value" target="wv2#area1#act101p.tlads0#ad15p#ipd15p#pdp102p" name="Attivo - Attivo"/>
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte233p#nf291p#par940p" sourceValue="true" target="wv2#area1#act101p.tlads0#ad15p#ipd15p#pdp110p" name="&quot;true&quot; - Backoffice"/>
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte233p#nf291p#par941p" source="{wv2#area1#page5#frm3#fld7}value" target="wv2#area1#act101p.tlads0#ad15p#ipd15p#pdp101p" name="Cognome - Cognome"/>
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte233p#nf291p#par942p" source="{wv2#area1#page5#frm3#fld8}value" target="wv2#area1#act101p.tlads0#ad15p#ipd15p#pdp109p" name="Email - Email"/>
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte233p#nf291p#par943p" source="{wv2#area1#page5#frm3#fld9}value" target="wv2#area1#act101p.tlads0#ad15p#ipd15p#pdp100p" name="Nome - Nome"/>
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte233p#nf291p#par944p" source="{wv2#area1#page5#frm3#fld147p}value" target="wv2#area1#act101p.tlads0#ad15p#ipd15p#pdp99p" name="oid - oid"/>
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte233p#nf291p#par945p" source="{wv2#area1#page5#frm3#sfld2}value._be_att59" target="wv2#area1#act101p.tlads0#ad15p#ipd15p#pdp98p" name="Ruoli [oid] - oid Ruoli"/>
+            <ParameterBinding id="wv2#area1#page5#frm3#oslte233p#nf291p#par946p" source="{wv2#area1#page5#frm3#sfld1}value._be_att1" target="wv2#area1#act101p.tlads0#ad15p#ipd15p#pdp97p" name="Tenant [oid] - oid Tenant"/>
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
+      <ConditionalExpression id="wv2#area1#page5#frm3#sc80p" defaultPolicy="emptyAlwaysApplied" booleanOperator="and">
+        <KeyCondition id="wv2#area1#page5#frm3#sc80p#kcond26p" name="KeyCondition26" predicate="in" implied="false"/>
+      </ConditionalExpression>
+      <Field id="wv2#area1#page5#frm3#fld147p" type="integer" modifiable="true" name="oid"/>
+      <Field id="wv2#area1#page5#frm3#fld148p" type="boolean" modifiable="true" name="edit"/>
+      <Field id="wv2#area1#page5#frm3#fld149p" type="boolean" modifiable="true" name="Attivo"/>
     </Form>
   </ViewComponents>
 </Page>

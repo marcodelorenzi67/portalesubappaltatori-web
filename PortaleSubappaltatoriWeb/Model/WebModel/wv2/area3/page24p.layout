@@ -76,10 +76,10 @@
                   {{ valueOf('.', row) | date:'wr-timestamp' }}
                 </wr-content>
                 <wr-content for="event[oslte98p]">
-                  <wd-button variant="mat-icon-button" color="success" iconText="check" [confirm]="true"></wd-button>
+                  <wd-button variant="mat-icon-button" color="success" iconText="check" [confirm]="true" [visible]="valueOf('accessible') &amp;&amp; !valueOf('/parameters/prd1j')"></wd-button>
                 </wr-content>
                 <wr-content for="event[oslte96p]">
-                  <wd-button variant="mat-icon-button" color="accent" iconText="clear" [confirm]="true"></wd-button>
+                  <wd-button variant="mat-icon-button" color="accent" iconText="clear" [confirm]="true" [visible]="valueOf('accessible') &amp;&amp; !valueOf('/parameters/prd1j')"></wd-button>
                 </wr-content>
                 <wr-content for="event[oslte99p]">
                   <wd-button variant="mat-icon-button" color="primary" iconText="forward"></wd-button>

@@ -1,22 +1,32 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="305" gr:y="620" id="wv2#area1#page4" name="Gestione utenti interni" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="325" gr:y="620" id="wv2#area1#page4" name="Gestione utenti interni" landmark="true">
   <ViewComponents>
     <List gr:x="0" gr:y="0" id="wv2#area1#page4#lst1" checkable="false" distinct="false" name="Utenti registrati" pageSize="5">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$User"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att3"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att4"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att5"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$userName"/>
       <ConditionalExpression id="wv2#area1#page4#lst1#sc1" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="wv2#area1#page4#lst1#sc1#acond1" name="Backoffice" predicate="eq" booleanOperator="or" implied="false" value="true">
           <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att49"/>
         </AttributesCondition>
       </ConditionalExpression>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$userName" order="descending"/>
+      <Events>
+        <OnSelectEvent id="wv2#area1#page4#lst1#oslte228p" name="Modifica" validate="true">
+          <NavigationFlow id="wv2#area1#page4#lst1#oslte228p#nf279p" to="wv2#area1#act98p">
+            <ParameterBinding id="wv2#area1#page4#lst1#oslte228p#nf279p#par899p" source="data._be_userOID" target="wv2#area1#act98p.PortaleSubappaltatoriDataservice$pdp310o" name="oid - user oid"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att3"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att4"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att5"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$userName"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att94o"/>
     </List>
     <ViewComponent gr:x="180" gr:y="140" id="wv2#area1#page4#gctu2" name="btn">
       <Events>
         <OnSelectEvent id="wv2#area1#page4#gctu2#oslte4" name="Nuovo utente">
-          <NavigationFlow id="wv2#area1#page4#gctu2#oslte4#nf10" to="wv2#area1#page5" automaticCoupling="true"/>
+          <NavigationFlow id="wv2#area1#page4#gctu2#oslte4#nf10" to="wv2#area1#page5#frm3">
+            <ParameterBinding id="wv2#area1#page4#gctu2#oslte4#nf10#par906p" sourceValue="false" target="{wv2#area1#page5#frm3#fld148p}value" name="&quot;false&quot; - edit"/>
+          </NavigationFlow>
         </OnSelectEvent>
       </Events>
     </ViewComponent>

@@ -15,6 +15,9 @@
   <Entry key="dataScadenza">Data Scadenza</Entry>
   <Entry key="descrizione">Descrizione</Entry>
   <Entry key="documentiDaCaricare">Documenti da Caricare</Entry>
+  <Entry key="documentiDaCaricarePersonale">Documenti da Caricare Personale</Entry>
+  <Entry key="documentiDaCaricarePersonaleT2">Documenti da Caricare Personale</Entry>
+  <Entry key="documentiDaCaricareT2">Documenti da Caricare</Entry>
   <Entry key="documento">Documento</Entry>
   <Entry key="documentoCompilato">Documento Compilato</Entry>
   <Entry key="documentoDaCaricare">Documento da Caricare</Entry>

@@ -1,6 +1,6 @@
 <wr-page>
   <wr-content for="page-content">
-    <wd-card actions="main/frm3/oslte5" title="main">
+    <wd-card actions="main/frm3/oslte5 | main/frm3/oslte233p" title="main">
       <wr-content for="content">
         <wd-grid>
           <wd-row>
@@ -22,13 +22,22 @@
               <wd-select-multiple appearance="outline" context="main/frm3/sfld1"></wd-select-multiple>
             </wd-cell>
           </wd-row>
+          <wd-row>
+            <wd-cell [width]="6" *ngIf="valueOf('/main/frm3/fld148p/value')">
+              <wd-toggle context="main/frm3/fld149p"></wd-toggle>
+            </wd-cell>
+            <wd-cell [width]="6"></wd-cell>
+          </wd-row>
         </wd-grid>
       </wr-content>
       <wr-content for="action[oslte5]">
-        <wd-button color="success"></wd-button>
+        <wd-button color="success" [visible]="valueOf('accessible') &amp;&amp; !valueOf('/main/frm3/fld148p/value')"></wd-button>
       </wr-content>
       <wr-content for="title[main]">
         {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+      <wr-content for="action[oslte233p]">
+        <wd-button color="success" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/frm3/fld148p/value')"></wd-button>
       </wr-content>
     </wd-card>
   </wr-content>

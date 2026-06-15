@@ -23,17 +23,6 @@
         <ParameterBinding id="wv2#area3#page22p#dtl6p#df42p#par302p" sourceParameter="wv2#prd8" target="wv2#area3#page22p#lst15p#sc21p#rcond14p._be_att1" name="Tenant - Tenant [oid]"/>
       </DataFlow>
       <DataFlow id="wv2#area3#page22p#dtl6p#df46p" to="wv2#area3#page22p#lst17p" automaticCoupling="true"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att10"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att12"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att66"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att7"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att8"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att9"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att72o"/>
-      <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role5.PortaleSubappaltatoriDataservice$att15" alias="statoregistrazioneCodice"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att79o"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att80o"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att82o"/>
       <DataFlow id="wv2#area3#page22p#dtl6p#df47p" to="wv2#area3#page22p#lst18p" automaticCoupling="true"/>
       <DataFlow id="wv2#area3#page22p#dtl6p#df55p" to="wv2#area3#page22p#lst32p">
         <ParameterBinding id="wv2#area3#page22p#dtl6p#df55p#par444p" name="oid - Fornitore [oid]" source="data._be_att6" target="wv2#area3#page22p#lst32p#sc40p#rcond35p._be_att6"/>
@@ -51,6 +40,18 @@
       <DataFlow id="wv2#area3#page22p#dtl6p#df94p" to="wv2#area3#page22p#dtl13p">
         <ParameterBinding id="wv2#area3#page22p#dtl6p#df94p#par688p" target="_be_pdp262o" name="oid fornitore - fornitoreOid [integer]" source="data._be_att6"/>
       </DataFlow>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att10"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att12"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att66"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att7"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att8"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att9"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att72o"/>
+      <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role5.PortaleSubappaltatoriDataservice$att15" alias="statoregistrazioneCodice"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att79o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att80o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att82o"/>
+      <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role67o.PortaleSubappaltatoriDataservice$att130o" alias="aziendaOid"/>
     </Details>
     <List id="wv2#area3#page22p#lst11p" gr:x="55" gr:y="350" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls14o"/>
@@ -448,11 +449,12 @@
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o" order="ascending"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att114o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att115o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att116o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o"/>
-      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o" order="ascending"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att176o"/>
     </List>
     <List id="wv2#area3#page22p#lst34p" name="Documenti personale" gr:x="940" gr:y="605" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>

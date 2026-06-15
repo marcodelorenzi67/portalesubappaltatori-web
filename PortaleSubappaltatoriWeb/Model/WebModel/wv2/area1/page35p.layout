@@ -1,0 +1,83 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-card title="main">
+      <wr-content for="content">
+        <wd-grid>
+          <wd-row *ngIf="!valueOf('/main/prd21p')">
+            <wd-cell [width]="12">
+              <wd-card elevation="0" actions="main/gctu28p/oslte229p">
+                <wr-content for="content">
+                  <wd-grid>
+                    <wd-row>
+                      <wd-cell [width]="4">
+                        <span>
+                          <span class="header">
+                            {{ labelOf('main/dtl18p/data/_be_att3') | wrLocalize }}
+                          </span>
+                          <span class="value">
+                            {{ valueOf('main/dtl18p/data/_be_att3') }}
+                          </span>
+                        </span>
+                      </wd-cell>
+                      <wd-cell [width]="4">
+                        <span>
+                          <span class="header">
+                            {{ labelOf('main/dtl18p/data/_be_att4') | wrLocalize }}
+                          </span>
+                          <span class="value">
+                            {{ valueOf('main/dtl18p/data/_be_att4') }}
+                          </span>
+                        </span>
+                      </wd-cell>
+                      <wd-cell [width]="4">
+                        <span>
+                          <span class="header">
+                            {{ labelOf('main/dtl18p/data/_be_userName') | wrLocalize }}
+                          </span>
+                          <span class="value">
+                            {{ valueOf('main/dtl18p/data/_be_userName') }}
+                          </span>
+                        </span>
+                      </wd-cell>
+                    </wd-row>
+                  </wd-grid>
+                </wr-content>
+                <wr-content for="action[oslte229p]">
+                  <wd-button color="accent" iconText="border_color"></wd-button>
+                </wr-content>
+              </wd-card>
+            </wd-cell>
+          </wd-row><wd-row><wd-cell [width]="12">
+            <wd-card elevation="0" title="main/frm42p">
+              <wr-content for="content">
+                <wd-grid>
+                  <wd-row>
+                    <wd-cell [width]="6"><wd-input type="text" [showLabel]="true" context="main/frm42p/fld145p"></wd-input></wd-cell>
+                    <wd-cell [width]="6"><wd-input type="text" [showLabel]="true"></wd-input></wd-cell>
+                  </wd-row>
+                </wd-grid>
+                <wd-container elements="main/frm42p/fld145p | main/frm42p/fld146p" orientation="horizontal">
+                  <wr-content for="element[fld145p]">
+                    <wd-input type="text" [showLabel]="true"></wd-input>
+                  </wr-content>
+                  <wr-content for="element[fld146p]">
+                    <wd-input type="text" [showLabel]="true"></wd-input>
+                  </wr-content>
+                </wd-container>
+              </wr-content>
+              <wr-content for="title[frm42p]">
+                {{ labelOf('.') | wrLocalize }}
+              </wr-content>
+            </wd-card>
+          </wd-cell></wd-row>
+        </wd-grid>
+      </wr-content>
+      <wr-content for="title[main]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+    </wd-card>
+  </wr-content>
+  <wr-content for="breadcrumb">
+    <wd-button context="backEvent" iconText="arrow_back"></wd-button>
+  </wr-content>
+</wr-page>

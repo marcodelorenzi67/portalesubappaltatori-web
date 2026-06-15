@@ -1,4 +1,4 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="735" gr:y="0" id="wv2#area1#area2" name="Tabelle di governo" landmark="true" default="wv2#area1#area2#page11" landmarks="wv2#area1#area2#page11 wv2#area1#area2#page12 wv2#area1#area2#page32p wv2#area1#area2#page33p">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="810" gr:y="0" id="wv2#area1#area2" name="Tabelle di governo" landmark="true" default="wv2#area1#area2#page11" landmarks="wv2#area1#area2#page11 wv2#area1#area2#page12 wv2#area1#area2#page32p wv2#area1#area2#page33p">
   <Action id="wv2#area1#area2#act20" gr:x="15" gr:y="1010" actionServiceRes="PortaleSubappaltatoriDataservice$ada11">
     <Events>
       <SuccessEvent id="wv2#area1#area2#act20#scce22">

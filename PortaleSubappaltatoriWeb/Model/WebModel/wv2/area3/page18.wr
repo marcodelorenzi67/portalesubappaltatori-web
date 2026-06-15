@@ -46,6 +46,10 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att9"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att66"/>
       <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role5.PortaleSubappaltatoriDataservice$att15" alias="statoregistrazioneCodice"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att177o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att178o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att179o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att180o"/>
     </List>
     <Form gr:x="105" gr:y="0" id="wv2#area3#page18#frm13" name="Cerca">
       <Field id="wv2#area3#page18#frm13#fld27" modifiable="true" name="Nome Referente" type="string">

@@ -1,0 +1,56 @@
+<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ad15p" name="Crea/modifica utente interno" defaultSuccessPortDefinition="tlads0#ad15p#spd30p" defaultErrorPortDefinition="tlads0#ad15p#epd20p">
+  <Operations>
+    <Switch gr:x="470" gr:y="95" id="tlads0#ad15p#switch16p" name="oid">
+      <SuccessFlow id="tlads0#ad15p#switch16p#sf72p" to="tlads0#ad15p#act99p" automaticCoupling="true"/>
+      <SuccessFlow id="tlads0#ad15p#switch16p#sf73p" to="tlads0#ad15p#act100p" automaticCoupling="true" code="&lt;EMPTY&gt;"/>
+    </Switch>
+  </Operations>
+  <InputPortDefinition id="tlads0#ad15p#ipd15p" gr:x="0" gr:y="30">
+    <SuccessFlow id="tlads0#ad15p#ipd15p#sf71p" to="tlads0#ad15p#switch16p">
+      <ParameterBinding id="tlads0#ad15p#ipd15p#sf71p#par914p" source="tlads0#ad15p#ipd15p#pdp99p" target="switch" name="oid - Switch"/>
+    </SuccessFlow>
+    <DataFlow id="tlads0#ad15p#ipd15p#df113p" to="tlads0#ad15p#act99p">
+      <ParameterBinding id="tlads0#ad15p#ipd15p#df113p#par908p" source="tlads0#ad15p#ipd15p#pdp97p" target="tlads0#ad15p#act99p.PortaleSubappaltatoriDataservice$pdp320o" name="oid Tenant - oid Tenant"/>
+      <ParameterBinding id="tlads0#ad15p#ipd15p#df113p#par909p" source="tlads0#ad15p#ipd15p#pdp98p" target="tlads0#ad15p#act99p.PortaleSubappaltatoriDataservice$pdp321o" name="oid Ruoli - oid Ruoli"/>
+      <ParameterBinding id="tlads0#ad15p#ipd15p#df113p#par910p" source="tlads0#ad15p#ipd15p#pdp99p" target="tlads0#ad15p#act99p.PortaleSubappaltatoriDataservice$pdp303o" name="oid - oid"/>
+      <ParameterBinding id="tlads0#ad15p#ipd15p#df113p#par911p" source="tlads0#ad15p#ipd15p#pdp100p" target="tlads0#ad15p#act99p.PortaleSubappaltatoriDataservice$pdp302o" name="Nome - Nome"/>
+      <ParameterBinding id="tlads0#ad15p#ipd15p#df113p#par912p" source="tlads0#ad15p#ipd15p#pdp101p" target="tlads0#ad15p#act99p.PortaleSubappaltatoriDataservice$pdp304o" name="Cognome - Cognome"/>
+      <ParameterBinding id="tlads0#ad15p#ipd15p#df113p#par913p" source="tlads0#ad15p#ipd15p#pdp102p" target="tlads0#ad15p#act99p.PortaleSubappaltatoriDataservice$pdp319o" name="Attivo - Attivo"/>
+    </DataFlow>
+    <PortDefinitionParameter id="tlads0#ad15p#ipd15p#pdp97p" array="true" name="oid Tenant"/>
+    <PortDefinitionParameter id="tlads0#ad15p#ipd15p#pdp98p" array="true" name="oid Ruoli"/>
+    <PortDefinitionParameter id="tlads0#ad15p#ipd15p#pdp99p" array="false" name="oid"/>
+    <PortDefinitionParameter id="tlads0#ad15p#ipd15p#pdp100p" array="false" name="Nome"/>
+    <PortDefinitionParameter id="tlads0#ad15p#ipd15p#pdp101p" array="false" name="Cognome"/>
+    <PortDefinitionParameter id="tlads0#ad15p#ipd15p#pdp102p" array="false" name="Attivo"/>
+    <DataFlow id="tlads0#ad15p#ipd15p#df114p" to="tlads0#ad15p#act100p">
+      <ParameterBinding id="tlads0#ad15p#ipd15p#df114p#par921p" source="tlads0#ad15p#ipd15p#pdp101p" target="tlads0#ad15p#act100p.PortaleSubappaltatoriDataservice$pdp6" name="Cognome - Cognome"/>
+      <ParameterBinding id="tlads0#ad15p#ipd15p#df114p#par922p" source="tlads0#ad15p#ipd15p#pdp100p" target="tlads0#ad15p#act100p.PortaleSubappaltatoriDataservice$pdp7" name="Nome - Nome"/>
+      <ParameterBinding id="tlads0#ad15p#ipd15p#df114p#par923p" source="tlads0#ad15p#ipd15p#pdp98p" target="tlads0#ad15p#act100p.PortaleSubappaltatoriDataservice$pdp20" name="oid Ruoli - oid Ruoli"/>
+      <ParameterBinding id="tlads0#ad15p#ipd15p#df114p#par924p" source="tlads0#ad15p#ipd15p#pdp97p" target="tlads0#ad15p#act100p.PortaleSubappaltatoriDataservice$pdp8" name="oid Tenant - tenant"/>
+      <ParameterBinding id="tlads0#ad15p#ipd15p#df114p#par925p" source="tlads0#ad15p#ipd15p#pdp109p" target="tlads0#ad15p#act100p.PortaleSubappaltatoriDataservice$pdp5" name="Email - Email"/>
+      <ParameterBinding id="tlads0#ad15p#ipd15p#df114p#par926p" source="tlads0#ad15p#ipd15p#pdp109p" target="tlads0#ad15p#act100p.PortaleSubappaltatoriDataservice$pdp165o" name="Email - username"/>
+      <ParameterBinding id="tlads0#ad15p#ipd15p#df114p#par927p" source="tlads0#ad15p#ipd15p#pdp110p" target="tlads0#ad15p#act100p.PortaleSubappaltatoriDataservice$pdp85o" name="Backoffice - Backoffice"/>
+    </DataFlow>
+    <PortDefinitionParameter id="tlads0#ad15p#ipd15p#pdp109p" array="false" name="Email"/>
+    <PortDefinitionParameter id="tlads0#ad15p#ipd15p#pdp110p" array="false" name="Backoffice"/>
+  </InputPortDefinition>
+  <SuccessPortDefinition id="tlads0#ad15p#spd30p" name="Success Port" gr:x="0" gr:y="30"/>
+  <ErrorPortDefinition id="tlads0#ad15p#epd20p" name="Error Port" gr:x="0" gr:y="300"/>
+  <Action id="tlads0#ad15p#act99p" gr:x="600" gr:y="250" actionServiceRes="PortaleSubappaltatoriDataservice$ada54o">
+    <Events>
+      <SuccessEvent id="tlads0#ad15p#act99p#scce121p">
+        <SuccessFlow id="tlads0#ad15p#act99p#scce121p#sf75p" to="tlads0#ad15p#spd30p" automaticCoupling="true"/>
+      </SuccessEvent>
+      <ErrorEvent id="tlads0#ad15p#act99p#erre170p"/>
+    </Events>
+  </Action>
+  <Action id="tlads0#ad15p#act100p" gr:x="615" gr:y="80" actionServiceRes="PortaleSubappaltatoriDataservice$ada1">
+    <Events>
+      <SuccessEvent id="tlads0#ad15p#act100p#scce122p">
+        <SuccessFlow id="tlads0#ad15p#act100p#scce122p#sf74p" to="tlads0#ad15p#spd30p" automaticCoupling="true"/>
+      </SuccessEvent>
+      <ErrorEvent id="tlads0#ad15p#act100p#erre171p"/>
+    </Events>
+  </Action>
+</ActionDefinition>
