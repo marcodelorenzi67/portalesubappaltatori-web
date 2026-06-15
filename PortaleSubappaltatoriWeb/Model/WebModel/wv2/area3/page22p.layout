@@ -75,7 +75,7 @@
                               </wd-row>
                               <wd-row>
                                 <wd-cell [width]="3">
-                                  <wd-button context="main/gctu14p/oslte47p" iconText="border_color" color="accent" iconPosition="left"></wd-button>
+                                  <wd-button context="main/gctu14p/oslte47p" iconText="border_color" color="accent" iconPosition="left" *ngIf="valueOf('/main/msg2j/messages') &amp;&amp; valueOf('/main/msg2j/messages')[0] != 'true'"></wd-button>
                                 </wd-cell>
                               </wd-row>
                               <wd-row>

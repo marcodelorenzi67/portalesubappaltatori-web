@@ -1,4 +1,4 @@
-<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ad8p" name="Smista modifica fornitore" defaultSuccessPortDefinition="tlads0#ad8p#spd15p" defaultErrorPortDefinition="tlads0#ad8p#epd13p">
+<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ad8p" name="Smista modifica fornitore" defaultSuccessPortDefinition="tlads0#ad8p#spd15p" defaultErrorPortDefinition="tlads0#ad8p#epd13p" protected="true" roles="rl8 rl9 rl6">
   <Operations>
     <Switch gr:x="430" gr:y="115" id="tlads0#ad8p#switch6p" name="stato">
       <SuccessFlow id="tlads0#ad8p#switch6p#sf30p" to="tlads0#ad8p#act39p" automaticCoupling="true" code="In Bozza"/>

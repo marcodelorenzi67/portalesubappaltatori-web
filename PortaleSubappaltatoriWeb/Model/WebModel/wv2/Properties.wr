@@ -10,6 +10,7 @@
     <Parameter id="wv2#prd6" name="success message" type="string"/>
     <Parameter id="wv2#prd8" name="Tenant" type="integer"/>
     <Parameter id="wv2#prd19p" name="omnia" type="boolean"/>
+    <Parameter id="wv2#prd1j" name="lettura" type="boolean"/>
   </Parameters>
   <Action id="wv2#act25" gr:x="2450" gr:y="735" definition="tlads0#ad5">
     <Events>
@@ -18,10 +19,13 @@
         <NavigationFlow id="wv2#act25#scce28#nf51" to="wv2#area3#page24p">
           <ParameterBinding id="wv2#act25#scce28#nf51#par119" source="tlads0#ad5#spd9#pdp21" targetParameter="wv2#prd8" name="Oid tenant - Tenant"/>
           <ParameterBinding id="wv2#act25#scce28#nf51#par867p" source="tlads0#ad5#spd9#pdp96p" targetParameter="wv2#prd19p" name="omnia - omnia"/>
+          <ParameterBinding id="wv2#act25#scce28#nf51#par4j" source="tlads0#ad5#spd9#pdp1j" targetParameter="wv2#prd1j" name="lettura - lettura"/>
         </NavigationFlow>
       </SuccessEvent>
       <SuccessEvent id="wv2#act25#scce29" definition="tlads0#ad5#spd10">
-        <NavigationFlow id="wv2#act25#scce29#nf49" to="wv2#page17#frm10" automaticCoupling="true"/>
+        <NavigationFlow id="wv2#act25#scce29#nf49" to="wv2#page17#frm10">
+          <ParameterBinding id="wv2#act25#scce29#nf49#par5j" source="tlads0#ad5#spd10#pdp2j" targetParameter="wv2#prd1j" name="lettura - lettura"/>
+        </NavigationFlow>
       </SuccessEvent>
     </Events>
   </Action>

@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="320" gr:y="385" id="wv2#area3#page19p" name="Nuovo Fornitore">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="320" gr:y="385" id="wv2#area3#page19p" name="Nuovo Fornitore" protected="true" roles="rl8 rl9 rl6">
   <ViewComponents>
     <Form gr:x="100" gr:y="0" id="wv2#area3#page19p#frm14p" name="Dati Referente">
       <Field id="wv2#area3#page19p#frm14p#fld33p" modifiable="true" name="Nome Referente" type="string" validationOrder="wv2#area3#page19p#frm14p#fld33p#mnd22p">

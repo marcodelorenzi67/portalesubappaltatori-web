@@ -129,6 +129,9 @@
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
+      <DataFlow id="wv2#area3#page22p#gctu14p#df3j" to="wv2#area3#page22p#msg2j">
+        <ParameterBinding id="wv2#area3#page22p#gctu14p#df3j#par8j" sourceParameter="wv2#prd1j" target="messages" name="lettura - Shown Messages"/>
+      </DataFlow>
     </ViewComponent>
     <ViewComponent gr:x="285" gr:y="315" id="wv2#area3#page22p#gctu15p" name="ViewComponent">
       <DataFlow id="wv2#area3#page22p#gctu15p#df34p" to="wv2#area3#page22p#dtl6p">
@@ -647,6 +650,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att114o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att115o"/>
     </Details>
+    <Message id="wv2#area3#page22p#msg2j" name="lettura" gr:x="280" gr:y="620"/>
   </ViewComponents>
   <Parameters>
     <Parameter id="wv2#area3#page22p#prd13p" name="oid fornitore" type="integer" preserve="true"/>
