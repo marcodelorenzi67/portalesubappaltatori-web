@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1175" gr:y="55" id="wv2#area1#area2#page33p" name="Categorie" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1175" gr:y="55" id="wv2#area1#area2#page33p" name="Categorie per documenti aggiuntivi" landmark="true">
   <ViewComponents>
     <List gr:x="0" gr:y="0" id="wv2#area1#area2#page33p#lst51p" checkable="false" distinct="false" pageSize="10">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls18o"/>

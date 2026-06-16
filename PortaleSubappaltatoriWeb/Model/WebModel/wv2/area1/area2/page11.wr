@@ -34,9 +34,9 @@
       </Events>
     </ViewComponent>
   </ViewComponents>
-  <DialogPage gr:x="35" gr:y="195" id="wv2#area1#area2#page11#dpg1" name="Modifica tipologia allegati">
+  <DialogPage gr:x="35" gr:y="190" id="wv2#area1#area2#page11#dpg1" name="Modifica tipologia allegati">
     <ViewComponents>
-      <Form gr:x="0" gr:y="0" id="wv2#area1#area2#page11#dpg1#frm9" name="Modifica">
+      <Form gr:x="0" gr:y="5" id="wv2#area1#area2#page11#dpg1#frm9" name="Modifica">
         <Field id="wv2#area1#area2#page11#dpg1#frm9#fld22" modifiable="true" name="Giorni Alert" type="integer"/>
         <Field id="wv2#area1#area2#page11#dpg1#frm9#fld23" modifiable="true" name="Condiviso" type="boolean">
           <VRules/>
@@ -72,6 +72,9 @@
           </OnSelectEvent>
         </Events>
       </Form>
+      <Message id="wv2#area1#area2#page11#dpg1#msg17p" name="Message 3" gr:x="140" gr:y="0">
+        <Message xml:space="preserve">pattern-message</Message>
+      </Message>
     </ViewComponents>
   </DialogPage>
 </Page>

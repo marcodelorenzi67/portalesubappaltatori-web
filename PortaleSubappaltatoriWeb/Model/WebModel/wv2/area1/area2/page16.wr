@@ -22,7 +22,7 @@
       </DataFlow>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att37" order="ascending"/>
     </List>
-    <List id="wv2#area1#area2#page16#lst7" gr:x="280" gr:y="0" checkable="true" distinct="false" pageSize="10" name="Tipologia allegati">
+    <List id="wv2#area1#area2#page16#lst7" gr:x="310" gr:y="0" checkable="true" distinct="false" pageSize="10" name="Tipologia allegati">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls8"/>
       <ConditionalExpression id="wv2#area1#area2#page16#lst7#sc8" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv2#area1#area2#page16#lst7#sc8#rcond3" name="tipo azienda" predicate="notIn" implied="false">

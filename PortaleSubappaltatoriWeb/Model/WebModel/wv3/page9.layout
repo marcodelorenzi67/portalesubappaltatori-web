@@ -461,7 +461,7 @@
         </wd-grid>
       </wr-content>
       <wr-content for="action[oslte137p]">
-        <wd-button></wd-button>
+        <wd-button color="success"></wd-button>
       </wr-content>
     </wd-card>
   </wr-content>
