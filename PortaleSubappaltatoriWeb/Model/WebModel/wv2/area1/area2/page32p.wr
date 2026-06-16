@@ -100,6 +100,9 @@
           </OnSelectEvent>
         </Events>
       </Form>
+      <Message gr:x="105" gr:y="15" id="wv2#area1#area2#page32p#dpg27p#msg3j" name="Message 3">
+        <Message xml:space="preserve">pattern-message</Message>
+      </Message>
     </ViewComponents>
   </DialogPage>
   <Parameters>

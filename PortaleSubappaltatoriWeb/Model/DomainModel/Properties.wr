@@ -419,6 +419,17 @@
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp59" refModelId="mpkg1#ada12#ipd18#pdp59" pid="PortaleSubappaltatoriDataservice" serverProperty="oidTipologiaAllegati" name="oid Tipologia Allegati" type="integer" location="body" cardinality="N"/>
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp62" refModelId="mpkg1#ada12#spd18#pdp62" pid="PortaleSubappaltatoriDataservice" serverProperty="oidTipologiaAzienda" name="oid Tipologia Azienda" type="integer" location="body" cardinality="1"/>
     </srs:ActionService>
+    <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada2p" refModelId="mpkg1#ada2p" pid="PortaleSubappaltatoriDataservice" name="Modifica tenant" defaultSuccessPortDefinition="mpkg1#ada2p#spd2p" defaultErrorPortDefinition="mpkg1#ada2p#epd2p" serverResourceName="actions/modificaTenant" method="create">
+      <srs:ServiceScope name="Amministratore" method="create"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp3p" refModelId="mpkg1#ada2p#ipd2p#pdp3p" pid="PortaleSubappaltatoriDataservice" serverProperty="omnia" name="Omnia" type="boolean" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp4p" refModelId="mpkg1#ada2p#ipd2p#pdp4p" pid="PortaleSubappaltatoriDataservice" serverProperty="nome" name="Nome" type="string" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp5p" refModelId="mpkg1#ada2p#ipd2p#pdp5p" pid="PortaleSubappaltatoriDataservice" serverProperty="tenant" name="Tenant" type="integer" location="body" cardinality="1"/>
+    </srs:ActionService>
+    <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada3p" refModelId="mpkg1#ada3p" pid="PortaleSubappaltatoriDataservice" name="Modifica Stato" defaultSuccessPortDefinition="mpkg1#ada3p#spd3p" defaultErrorPortDefinition="mpkg1#ada3p#epd3p" serverResourceName="actions/modificaStato" method="create">
+      <srs:ServiceScope name="Amministratore" method="create"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp6p" refModelId="mpkg1#ada3p#ipd3p#pdp6p" pid="PortaleSubappaltatoriDataservice" serverProperty="stato" name="Stato" type="integer" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp7p" refModelId="mpkg1#ada3p#ipd3p#pdp7p" pid="PortaleSubappaltatoriDataservice" serverProperty="descrizione" name="Descrizione" type="string" location="body" cardinality="1"/>
+    </srs:ActionService>
     <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada48o" refModelId="mpkg1#ada48o" pid="PortaleSubappaltatoriDataservice" name="Rimuovi categoria da tipologia" defaultSuccessPortDefinition="mpkg1#ada48o#spd72o" defaultErrorPortDefinition="mpkg1#ada48o#epd72o" serverResourceName="actions/rimuoviCategoriaDaTipologia" method="create">
       <srs:ServiceScope name="Amministratore" method="create"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp280o" refModelId="mpkg1#ada48o#ipd72o#pdp280o" pid="PortaleSubappaltatoriDataservice" serverProperty="oidTipologiaDocumenti" name="oid Tipologia Documenti" type="integer" location="body" cardinality="1"/>
@@ -1124,6 +1135,9 @@
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att25" refModelId="cls5#att25" pid="PortaleSubappaltatoriDataservice" serverProperty="note" name="Note" type="text" key="false"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att35" refModelId="cls5#att35" pid="PortaleSubappaltatoriDataservice" serverProperty="corrente" name="Corrente" type="boolean" key="false"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att36" refModelId="cls5#att36" pid="PortaleSubappaltatoriDataservice" serverProperty="createdAt" name="Created At" type="timestamp" key="false"/>
+      <srs:Attribute ref="PortaleSubappaltatoriDataservice$att3p" refModelId="cls5#att3p" pid="PortaleSubappaltatoriDataservice" serverProperty="nomePersonale" name="Nome personale" type="string"/>
+      <srs:Attribute ref="PortaleSubappaltatoriDataservice$att4p" refModelId="cls5#att4p" pid="PortaleSubappaltatoriDataservice" serverProperty="cognomePersonale" name="Cognome personale" type="string"/>
+      <srs:Attribute ref="PortaleSubappaltatoriDataservice$att5p" refModelId="cls5#att5p" pid="PortaleSubappaltatoriDataservice" serverProperty="patternFile" name="Pattern file" type="string"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att87o" refModelId="cls5#att87o" pid="PortaleSubappaltatoriDataservice" serverProperty="stato" name="Stato" type="string" key="false"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att88o" refModelId="cls5#att88o" pid="PortaleSubappaltatoriDataservice" serverProperty="tipologia" name="Tipologia" type="string" key="false"/>
       <srs:Attribute ref="PortaleSubappaltatoriDataservice$att89o" refModelId="cls5#att89o" pid="PortaleSubappaltatoriDataservice" serverProperty="macroTipologia" name="Macro tipologia" type="string" key="false"/>

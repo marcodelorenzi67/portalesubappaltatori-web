@@ -1,5 +1,5 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area1" name="Amministrazione" gr:x="-270" gr:y="-555" protected="true" roles="rl8" default="wv2#area1#page4" landmarks="wv2#area1#area2 wv2#area1#page4 wv2#area1#page34p" landmark="true">
-  <Action id="wv2#area1#act4" gr:x="40" gr:y="850" actionServiceRes="PortaleSubappaltatoriDataservice$ada1">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area1" name="Amministrazione" gr:x="-455" gr:y="-1320" protected="true" roles="rl8" default="wv2#area1#page4" landmarks="wv2#area1#area2 wv2#area1#page4 wv2#area1#page34p" landmark="true">
+  <Action id="wv2#area1#act4" gr:x="40" gr:y="1140" actionServiceRes="PortaleSubappaltatoriDataservice$ada1">
     <Events>
       <SuccessEvent id="wv2#area1#act4#scce4">
         <NavigationFlow id="wv2#area1#act4#scce4#nf12" to="wv2#area1#page4">
@@ -13,7 +13,7 @@
       </ErrorEvent>
     </Events>
   </Action>
-  <Action id="wv2#area1#act92p" gr:x="165" gr:y="280" actionServiceRes="PortaleSubappaltatoriDataservice$ada51o">
+  <Action id="wv2#area1#act92p" gr:x="165" gr:y="570" actionServiceRes="PortaleSubappaltatoriDataservice$ada51o">
     <Events>
       <SuccessEvent id="wv2#area1#act92p#scce114p">
         <NavigationFlow id="wv2#area1#act92p#scce114p#nf274p" to="wv2#area1#page34p">
@@ -23,7 +23,7 @@
       <ErrorEvent id="wv2#area1#act92p#erre158p"/>
     </Events>
   </Action>
-  <Action id="wv2#area1#act93p" gr:x="505" gr:y="320" actionServiceRes="PortaleSubappaltatoriDataservice$ad8o">
+  <Action id="wv2#area1#act93p" gr:x="505" gr:y="610" actionServiceRes="PortaleSubappaltatoriDataservice$ad8o">
     <Events>
       <SuccessEvent id="wv2#area1#act93p#scce115p">
         <NavigationFlow id="wv2#area1#act93p#scce115p#nf275p" to="wv2#area1#page34p">
@@ -33,7 +33,7 @@
       <ErrorEvent id="wv2#area1#act93p#erre159p"/>
     </Events>
   </Action>
-  <Action id="wv2#area1#act96p" gr:x="460" gr:y="1235" actionServiceRes="PortaleSubappaltatoriDataservice$ada53o">
+  <Action id="wv2#area1#act96p" gr:x="460" gr:y="1525" actionServiceRes="PortaleSubappaltatoriDataservice$ada53o">
     <Events>
       <SuccessEvent id="wv2#area1#act96p#scce118p">
         <NavigationFlow id="wv2#area1#act96p#scce118p#nf283p" to="wv2#area1#page35p">
@@ -49,7 +49,7 @@
       </ErrorEvent>
     </Events>
   </Action>
-  <Action id="wv2#area1#act97p" gr:x="475" gr:y="1145" actionServiceRes="PortaleSubappaltatoriDataservice$ada54o">
+  <Action id="wv2#area1#act97p" gr:x="475" gr:y="1435" actionServiceRes="PortaleSubappaltatoriDataservice$ada54o">
     <Events>
       <SuccessEvent id="wv2#area1#act97p#scce119p">
         <NavigationFlow id="wv2#area1#act97p#scce119p#nf286p" to="wv2#area1#page35p">
@@ -65,7 +65,7 @@
       </ErrorEvent>
     </Events>
   </Action>
-  <Action id="wv2#area1#act98p" gr:x="655" gr:y="790" actionServiceRes="PortaleSubappaltatoriDataservice$adf20o">
+  <Action id="wv2#area1#act98p" gr:x="655" gr:y="1080" actionServiceRes="PortaleSubappaltatoriDataservice$adf20o">
     <Events>
       <SuccessEvent id="wv2#area1#act98p#scce120p">
         <NavigationFlow id="wv2#area1#act98p#scce120p#nf288p" to="wv2#area1#page5#frm3">
@@ -82,7 +82,7 @@
       <ErrorEvent id="wv2#area1#act98p#erre169p"/>
     </Events>
   </Action>
-  <Action id="wv2#area1#act101p" gr:x="5" gr:y="740" definition="tlads0#ad15p">
+  <Action id="wv2#area1#act101p" gr:x="5" gr:y="1030" definition="tlads0#ad15p">
     <Events>
       <SuccessEvent id="wv2#area1#act101p#scce123p" definition="tlads0#ad15p#spd30p">
         <NavigationFlow id="wv2#area1#act101p#scce123p#nf289p" to="wv2#area1#page4">

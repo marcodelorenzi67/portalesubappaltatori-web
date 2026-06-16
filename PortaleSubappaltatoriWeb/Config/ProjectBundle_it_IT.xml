@@ -24,11 +24,16 @@
   <Entry key="documentoDaCompilare">Documento da Compilare</Entry>
   <Entry key="email">Email</Entry>
   <Entry key="emailUtente">Email</Entry>
+  <Entry key="false">No</Entry>
   <Entry key="fornitore">Fornitore</Entry>
   <Entry key="giorniAlert">Giorni Alert</Entry>
   <Entry key="giorniDurata">Giorni Durata</Entry>
   <Entry key="identificativo">Identificativo
-</Entry>  <Entry key="macroTipologia">Macro Tipologia</Entry>
+</Entry>  <Entry key="Macro categoria">Macrocategoria</Entry>
+  <Entry key="Macro Categoria">Macrocategoria</Entry>
+  <Entry key="Macro-tipologia">Macrotipologia</Entry>
+  <Entry key="macroCategoria">Macrocategoria</Entry>
+  <Entry key="macroTipologia">Macrotipologia</Entry>
   <Entry key="macrotipologia">Macrotipologia</Entry>
   <Entry key="marca">Marca</Entry>
   <Entry key="message.Aziendapresente">Esiste gi&#224; un fornitore per l'azienda che si sta provando ad importare</Entry>
@@ -47,6 +52,10 @@
   <Entry key="operazione.KO">Errore nell'esecuzione dell'operazione!</Entry>
   <Entry key="operazione.OK">Operazione eseguita con successo!</Entry>
   <Entry key="partitaIVA">Partita IVA
+</Entry>  <Entry key="pattern-message">Nel campo pattern &#232; possibile indicare le seguenti chiavi
+##azienda##
+##nome##
+##cognome##
 </Entry>  <Entry key="patternNome">Pattern Nome</Entry>
   <Entry key="prodottiESostanzeChimiche">Prodotti e Sostanze chimiche
 </Entry>  <Entry key="ragioneSociale">Ragione Sociale
@@ -60,6 +69,7 @@
   <Entry key="tipoAzione">Azione</Entry>
   <Entry key="tipologia">Tipologia</Entry>
   <Entry key="tipologiaAzienda">Tipologia Azienda</Entry>
+  <Entry key="true">Si</Entry>
   <Entry key="userID">Username</Entry>
   <Entry key="username">Username</Entry>
   <Entry key="utente">Utente</Entry>

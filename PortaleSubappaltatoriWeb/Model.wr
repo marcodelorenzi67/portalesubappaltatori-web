@@ -37,4 +37,7 @@
   <BundleKey name="message.fornitoreTenant"/>
   <BundleKey name="message.Aziendapresente"/>
   <BundleKey name="message.aziendaTenant"/>
+  <BundleKey name="false"/>
+  <BundleKey name="true"/>
+  <BundleKey name="pattern-message"/>
 </WebProject>

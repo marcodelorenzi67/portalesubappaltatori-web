@@ -53,15 +53,12 @@
     </wd-grid>
   </wr-content>
 </wr-page>
-<wd-dialog actions="frm9/oslte16" context="main/dpg1">
-  <wr-content for="action[oslte16]">
-    <wd-button color="success" iconText="save"></wd-button>
-  </wr-content>
+<wd-dialog context="main/dpg1">
   <wr-content for="content">
     <wd-grid>
       <wd-row>
         <wd-cell [width]="12">
-          <wd-card elevation="0">
+          <wd-card elevation="0" actions="frm9/oslte16">
             <wr-content for="content">
               <wd-grid>
                 <wd-row>
@@ -84,6 +81,9 @@
                   </wd-cell>
                 </wd-row>
               </wd-grid>
+            </wr-content>
+            <wr-content for="action[oslte16]">
+              <wd-button color="success"></wd-button>
             </wr-content>
           </wd-card>
         </wd-cell>

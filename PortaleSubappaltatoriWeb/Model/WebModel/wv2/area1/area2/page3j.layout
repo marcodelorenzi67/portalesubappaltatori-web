@@ -1,0 +1,44 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-card title="main">
+      <wr-content for="content">
+        <wd-grid>
+          <wd-row>
+            <wd-cell [width]="12">
+              <wd-data-grid cols="main/lst2j/data/_be_att84o" [rows]="valueOf('main/lst2j/data')" events="main/lst2j/data/oslte4j">
+                <wr-content for="header[_be_att84o]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att84o]">
+                  {{ valueOf('.', row) }}
+                </wr-content>
+                <wr-content for="event[oslte4j]">
+                  <wd-button variant="mat-icon-button" color="primary" iconText="create"></wd-button>
+                </wr-content>
+              </wd-data-grid>
+            </wd-cell>
+          </wd-row>
+        </wd-grid>
+      </wr-content>
+      <wr-content for="title[main]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wr-page>
+<wd-dialog context="main/dpg2j">
+  <wr-content for="content">
+    <wd-card actions="frm3j/oslte5j" elevation="0">
+      <wr-content for="content">
+        <wd-container elements="frm3j/fld5j">
+          <wr-content for="element[fld5j]">
+            <wd-input type="text" [showLabel]="true" appearance="outline"></wd-input>
+          </wr-content>
+        </wd-container>
+      </wr-content>
+      <wr-content for="action[oslte5j]">
+        <wd-button color="success"></wd-button>
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wd-dialog>

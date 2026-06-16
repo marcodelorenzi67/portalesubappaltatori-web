@@ -82,12 +82,15 @@
         <wd-cell [width]="12">
           <wd-card elevation="0">
             <wr-content for="content">
+              <wd-alert [messages]="valueOf('msg3j/messages')" [localized]="true"></wd-alert>
               <wd-grid>
                 <wd-row>
                   <wd-cell [width]="6">
                     <wd-input type="text" [showLabel]="true" appearance="outline" context="frm40p/fld141p"></wd-input>
                   </wd-cell>
-                  <wd-cell [width]="6">
+                </wd-row>
+                <wd-row>
+                  <wd-cell [width]="12">
                     <wd-input type="text" [showLabel]="true" appearance="outline" context="frm40p/fld142p"></wd-input>
                   </wd-cell>
                 </wd-row>

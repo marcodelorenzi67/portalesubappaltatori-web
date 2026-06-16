@@ -305,6 +305,11 @@
         <ParameterBinding id="wv3#page9#dtl17p#df105p#par799p" sourceParameter="wv3#prd9p" target="wv3#page9#lst36p#sc54p#rcond49p._be_att1" name="Tenant - Tenant [oid]"/>
       </DataFlow>
     </Details>
+    <ViewComponent gr:x="495" gr:y="5" id="wv3#page9#gctu1j" name="ViewComponent 1">
+      <DataFlow id="wv3#page9#gctu1j#df4j" to="wv3#page9#dtl5p">
+        <ParameterBinding id="wv3#page9#gctu1j#df4j#par15j" sourceParameter="wv3#prd10p" target="wv3#page9#dtl5p#sc14p#kcond8p._be_att6" name="oid Fornitore - KeyCondition"/>
+      </DataFlow>
+    </ViewComponent>
   </ViewComponents>
   <DialogPage gr:x="580" gr:y="40" id="wv3#page9#dpg8p" name="Carica documento">
     <ViewComponents>

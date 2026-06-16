@@ -1,0 +1,44 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="910" gr:y="1145" id="wv2#area1#area2#page2j" name="Gestione Tenant" landmark="true">
+  <ViewComponents>
+    <List gr:x="0" gr:y="50" id="wv2#area1#area2#page2j#lst1j" checkable="false" distinct="false" name="Elenco Tenant">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls1"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att2"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att175o"/>
+      <Events>
+        <OnSelectEvent id="wv2#area1#area2#page2j#lst1j#oslte2j" name="Modifica" validate="true">
+          <NavigationFlow id="wv2#area1#area2#page2j#lst1j#oslte2j#nf2j" to="wv2#area1#area2#page2j#dpg1j#frm2j">
+            <ParameterBinding id="wv2#area1#area2#page2j#lst1j#oslte2j#nf2j#par9j" source="data._be_att1" target="wv2#area1#area2#page2j#dpg1j#frm2j#sc1j#kcond1j._be_att1" name="oid - KeyCondition1"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att2" order="ascending"/>
+    </List>
+  </ViewComponents>
+  <DialogPage gr:x="165" gr:y="0" id="wv2#area1#area2#page2j#dpg1j" name="Modifica Tenant">
+    <ViewComponents>
+      <Form gr:x="0" gr:y="0" id="wv2#area1#area2#page2j#dpg1j#frm2j" name="Tenant">
+        <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls1"/>
+        <ConditionalExpression id="wv2#area1#area2#page2j#dpg1j#frm2j#sc1j" defaultPolicy="emptyAlwaysApplied" booleanOperator="and">
+          <KeyCondition id="wv2#area1#area2#page2j#dpg1j#frm2j#sc1j#kcond1j" name="KeyCondition1" predicate="in" implied="false"/>
+        </ConditionalExpression>
+        <Field id="wv2#area1#area2#page2j#dpg1j#frm2j#fld3j" modifiable="true" name="Nome" type="string">
+          <VRules/>
+          <ValueAttribute classServiceAttribute="PortaleSubappaltatoriDataservice$att2"/>
+        </Field>
+        <Field id="wv2#area1#area2#page2j#dpg1j#frm2j#fld4j" modifiable="true" name="Omnia" type="boolean">
+          <VRules/>
+          <ValueAttribute classServiceAttribute="PortaleSubappaltatoriDataservice$att175o"/>
+        </Field>
+        <Events>
+          <OnSelectEvent id="wv2#area1#area2#page2j#dpg1j#frm2j#oslte3j" name="Salva" validate="true">
+            <NavigationFlow id="wv2#area1#area2#page2j#dpg1j#frm2j#oslte3j#nf3j" to="wv2#area1#area2#act2j">
+              <ParameterBinding id="wv2#area1#area2#page2j#dpg1j#frm2j#oslte3j#nf3j#par10j" source="{wv2#area1#area2#page2j#dpg1j#frm2j#fld3j}value" target="wv2#area1#area2#act2j.PortaleSubappaltatoriDataservice$pdp4p" name="Nome - Nome"/>
+              <ParameterBinding id="wv2#area1#area2#page2j#dpg1j#frm2j#oslte3j#nf3j#par11j" source="{wv2#area1#area2#page2j#dpg1j#frm2j#fld4j}value" target="wv2#area1#area2#act2j.PortaleSubappaltatoriDataservice$pdp3p" name="Omnia - Omnia"/>
+              <ParameterBinding id="wv2#area1#area2#page2j#dpg1j#frm2j#oslte3j#nf3j#par12j" source="key._be_att1" target="wv2#area1#area2#act2j.PortaleSubappaltatoriDataservice$pdp5p" name="Key [oid] - Tenant"/>
+            </NavigationFlow>
+          </OnSelectEvent>
+        </Events>
+      </Form>
+    </ViewComponents>
+  </DialogPage>
+</Page>

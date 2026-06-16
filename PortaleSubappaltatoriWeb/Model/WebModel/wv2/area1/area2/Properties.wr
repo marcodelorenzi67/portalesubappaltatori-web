@@ -1,4 +1,4 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="810" gr:y="0" id="wv2#area1#area2" name="Tabelle di governo" landmark="true" default="wv2#area1#area2#page11" landmarks="wv2#area1#area2#page11 wv2#area1#area2#page12 wv2#area1#area2#page32p wv2#area1#area2#page33p">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="740" gr:y="0" id="wv2#area1#area2" name="Tabelle di governo" landmark="true" default="wv2#area1#area2#page11" landmarks="wv2#area1#area2#page11 wv2#area1#area2#page12 wv2#area1#area2#page32p wv2#area1#area2#page33p wv2#area1#area2#page2j wv2#area1#area2#page3j">
   <Action id="wv2#area1#area2#act20" gr:x="15" gr:y="1010" actionServiceRes="PortaleSubappaltatoriDataservice$ada11">
     <Events>
       <SuccessEvent id="wv2#area1#area2#act20#scce22">
@@ -69,6 +69,30 @@
         </NavigationFlow>
       </SuccessEvent>
       <ErrorEvent id="wv2#area1#area2#act91p#erre155p"/>
+    </Events>
+  </Action>
+  <Action id="wv2#area1#area2#act2j" gr:x="1330" gr:y="1195" actionServiceRes="PortaleSubappaltatoriDataservice$ada2p">
+    <Events>
+      <SuccessEvent id="wv2#area1#area2#act2j#scce2j" gr:pinned="true" gr:side="7" gr:pos="0">
+        <NavigationFlow id="wv2#area1#area2#act2j#scce2j#nf4j" to="wv2#area1#area2#page2j#lst1j" gr:bendpoints="-121,-100,234,-145">
+          <ParameterBinding id="wv2#area1#area2#act2j#scce2j#nf4j#par13j" sourceValue="1" target="page" name="&quot;1&quot; - Page"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area1#area2#act2j#erre4j" gr:pinned="true" gr:side="4" gr:pos="3">
+        <NavigationFlow id="wv2#area1#area2#act2j#erre4j#nf5j" to="wv2#area1#area2#page2j" automaticCoupling="true" gr:bendpoints="5,72,245,47"/>
+      </ErrorEvent>
+    </Events>
+  </Action>
+  <Action id="wv2#area1#area2#act3j" gr:x="1640" gr:y="1140" actionServiceRes="PortaleSubappaltatoriDataservice$ada3p">
+    <Events>
+      <SuccessEvent id="wv2#area1#area2#act3j#scce3j">
+        <NavigationFlow id="wv2#area1#area2#act3j#scce3j#nf8j" to="wv2#area1#area2#page3j#lst2j">
+          <ParameterBinding id="wv2#area1#area2#act3j#scce3j#nf8j#par14j" sourceValue="1" target="page" name="&quot;1&quot; - Page"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area1#area2#act3j#erre6j" gr:pinned="true" gr:side="0" gr:pos="5">
+        <NavigationFlow id="wv2#area1#area2#act3j#erre6j#nf9j" to="wv2#area1#area2#page3j" automaticCoupling="true"/>
+      </ErrorEvent>
     </Events>
   </Action>
 </Area>

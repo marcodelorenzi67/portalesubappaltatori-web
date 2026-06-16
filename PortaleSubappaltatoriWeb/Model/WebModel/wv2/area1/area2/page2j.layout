@@ -1,0 +1,53 @@
+<wr-page>
+  <wr-content for="page-content">
+    <wd-card title="main">
+      <wr-content for="content">
+        <wd-grid>
+          <wd-row>
+            <wd-cell [width]="12">
+              <wd-data-grid cols="main/lst1j/data/_be_att2 | main/lst1j/data/_be_att175o" [rows]="valueOf('main/lst1j/data')" events="main/lst1j/data/oslte2j">
+                <wr-content for="header[_be_att2]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att2]">
+                  {{ valueOf('.', row) }}
+                </wr-content>
+                <wr-content for="header[_be_att175o]">
+                  {{ labelOf('.') | wrLocalize }}
+                </wr-content>
+                <wr-content for="data[_be_att175o]">
+                  {{ valueOf('.', row) | wrLocalize }}
+                </wr-content>
+                <wr-content for="event[oslte2j]">
+                  <wd-button variant="mat-icon-button" color="primary" iconText="create"></wd-button>
+                </wr-content>
+              </wd-data-grid>
+            </wd-cell>
+          </wd-row>
+        </wd-grid>
+      </wr-content>
+      <wr-content for="title[main]">
+        {{ labelOf('.') | wrLocalize }}
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wr-page>
+<wd-dialog context="main/dpg1j">
+  <wr-content for="content">
+    <wd-card actions="frm2j/oslte3j" elevation="0">
+      <wr-content for="content">
+        <wd-container elements="frm2j/fld3j | frm2j/fld4j">
+          <wr-content for="element[fld3j]">
+            <wd-input type="text" [showLabel]="true" appearance="outline"></wd-input>
+          </wr-content>
+          <wr-content for="element[fld4j]">
+            <wd-toggle></wd-toggle>
+          </wr-content>
+        </wd-container>
+      </wr-content>
+      <wr-content for="action[oslte3j]">
+        <wd-button color="success"></wd-button>
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wd-dialog>
