@@ -75,6 +75,7 @@
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att73o" order="descending"/>
     </List>
     <ViewComponent id="wv2#area3#page22p#gctu14p" name="BTN" gr:x="405" gr:y="455">
       <Events>
@@ -236,6 +237,13 @@
             <ParameterBinding id="wv2#area3#page22p#lst12p#oslte178p#nf219p#par644p" source="data._be_att22" target="wv2#area3#act76p.PortaleSubappaltatoriDataservice$pdp254o" name="oid - oid"/>
           </NavigationFlow>
         </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page22p#lst12p#oslte235p" name="Invia sollecito" validate="true">
+          <NavigationFlow id="wv2#area3#page22p#lst12p#oslte235p#nf295p" to="wv2#area3#act103p">
+            <ParameterBinding id="wv2#area3#page22p#lst12p#oslte235p#nf295p#par953p" source="data._be_att22" target="wv2#area3#act103p.PortaleSubappaltatoriDataservice$pdp322o" name="oid - documento [oid]"/>
+            <ParameterBinding id="wv2#area3#page22p#lst12p#oslte235p#nf295p#par954p" source="data._be_att88o" target="wv2#area3#act103p.PortaleSubappaltatoriDataservice$pdp323o" name="tipologia - tipologiaDocumento"/>
+            <ParameterBinding id="wv2#area3#page22p#lst12p#oslte235p#nf295p#par955p" sourceValue="${msg.docDaInserire}" target="wv2#area3#act103p.PortaleSubappaltatoriDataservice$pdp324o" name="&quot;${msg.docDaInserire}&quot; - codice messaggio"/>
+          </NavigationFlow>
+        </OnSelectEvent>
       </Events>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att23"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att24"/>
@@ -249,6 +257,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att127o"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
     </List>
     <List id="wv2#area3#page22p#lst15p" name="Storico documenti" gr:x="370" gr:y="565" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
@@ -279,6 +288,7 @@
           <NavigationFlow id="wv2#area3#page22p#lst15p#oslte173p#nf211p" to="wv2#area3#page22p#dpg18p#dtl8p" automaticCoupling="true"/>
         </OnSelectEvent>
       </Events>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="descending"/>
     </List>
     <List gr:x="285" gr:y="90" id="wv2#area3#page22p#lst17p" checkable="false" distinct="false" pageSize="5" name="Referenti registrati">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$User"/>
@@ -408,6 +418,13 @@
             <ParameterBinding id="wv2#area3#page22p#lst32p#oslte179p#nf221p#par656p" source="data._be_att22" target="wv2#area3#act76p.PortaleSubappaltatoriDataservice$pdp254o" name="oid - oid"/>
           </NavigationFlow>
         </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page22p#lst32p#oslte237p" name="Invia sollecito" validate="true">
+          <NavigationFlow id="wv2#area3#page22p#lst32p#oslte237p#nf297p" to="wv2#area3#act103p">
+            <ParameterBinding id="wv2#area3#page22p#lst32p#oslte237p#nf297p#par959p" sourceValue="${msg.docDaInserire}" target="wv2#area3#act103p.PortaleSubappaltatoriDataservice$pdp324o" name="&quot;${msg.docDaInserire}&quot; - codice messaggio"/>
+            <ParameterBinding id="wv2#area3#page22p#lst32p#oslte237p#nf297p#par960p" source="data._be_att22" target="wv2#area3#act103p.PortaleSubappaltatoriDataservice$pdp322o" name="oid - documento [oid]"/>
+            <ParameterBinding id="wv2#area3#page22p#lst32p#oslte237p#nf297p#par961p" source="data._be_att88o" target="wv2#area3#act103p.PortaleSubappaltatoriDataservice$pdp323o" name="tipologia - tipologiaDocumento"/>
+          </NavigationFlow>
+        </OnSelectEvent>
       </Events>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att23"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att24"/>
@@ -425,6 +442,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att109o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att112o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att127o"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
     </List>
     <List gr:x="1145" gr:y="425" id="wv2#area3#page22p#lst33p" checkable="false" distinct="false" pageSize="15" name="Personale">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls20o"/>
@@ -449,12 +467,12 @@
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
-      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o" order="ascending"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att114o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att115o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att116o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att176o"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o" order="descending"/>
     </List>
     <List id="wv2#area3#page22p#lst34p" name="Documenti personale" gr:x="940" gr:y="605" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
@@ -514,6 +532,13 @@
             <ParameterBinding id="wv2#area3#page22p#lst34p#oslte180p#nf222p#par655p" source="data._be_att22" target="wv2#area3#act76p.PortaleSubappaltatoriDataservice$pdp254o" name="oid - oid"/>
           </NavigationFlow>
         </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page22p#lst34p#oslte236p" name="Invia sollecito" validate="true">
+          <NavigationFlow id="wv2#area3#page22p#lst34p#oslte236p#nf296p" to="wv2#area3#act103p">
+            <ParameterBinding id="wv2#area3#page22p#lst34p#oslte236p#nf296p#par956p" sourceValue="${msg.docDaInserire}" target="wv2#area3#act103p.PortaleSubappaltatoriDataservice$pdp324o" name="&quot;${msg.docDaInserire}&quot; - codice messaggio"/>
+            <ParameterBinding id="wv2#area3#page22p#lst34p#oslte236p#nf296p#par957p" source="data._be_att22" target="wv2#area3#act103p.PortaleSubappaltatoriDataservice$pdp322o" name="oid - documento [oid]"/>
+            <ParameterBinding id="wv2#area3#page22p#lst34p#oslte236p#nf296p#par958p" source="data._be_att88o" target="wv2#area3#act103p.PortaleSubappaltatoriDataservice$pdp323o" name="tipologia - tipologiaDocumento"/>
+          </NavigationFlow>
+        </OnSelectEvent>
       </Events>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att23"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att24"/>
@@ -527,6 +552,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att127o"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
     </List>
     <List id="wv2#area3#page22p#lst37p" name="Moduli" gr:x="1025" gr:y="840" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
@@ -586,6 +612,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att118o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att119o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att121o"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
     </List>
     <List id="wv2#area3#page22p#lst44p" name="Documenti Condivisi" gr:x="1370" gr:y="800" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
@@ -634,6 +661,7 @@
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
     </List>
     <Details gr:x="680" gr:y="0" id="wv2#area3#page22p#dtl13p">
       <DataBinding actionServiceRes="PortaleSubappaltatoriDataservice$adf18o"/>

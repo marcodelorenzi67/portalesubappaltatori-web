@@ -297,12 +297,14 @@
   <Action id="wv2#area3#act77p" actionServiceRes="PortaleSubappaltatoriDataservice$ada43o" gr:x="2330" gr:y="850">
     <Events>
       <SuccessEvent id="wv2#area3#act77p#scce93p">
-        <NavigationFlow id="wv2#area3#act77p#scce93p#nf230p" to="wv2#area3#page29p" automaticCoupling="true"/>
+        <NavigationFlow id="wv2#area3#act77p#scce93p#nf230p" to="wv2#area3#page29p">
+          <ParameterBinding id="wv2#area3#act77p#scce93p#nf230p#par947p" sourceValue="operazione.OK" targetParameter="wv2#prd6" name="&quot;operazione.OK&quot; - success message"/>
+        </NavigationFlow>
       </SuccessEvent>
       <ErrorEvent id="wv2#area3#act77p#erre133p"/>
     </Events>
   </Action>
-  <Action id="wv2#area3#act78p" gr:x="2100" gr:y="2060" actionServiceRes="PortaleSubappaltatoriDataservice$ada44o">
+  <Action id="wv2#area3#act78p" gr:x="2270" gr:y="2040" actionServiceRes="PortaleSubappaltatoriDataservice$ada44o">
     <Events>
       <SuccessEvent id="wv2#area3#act78p#scce94p">
         <NavigationFlow id="wv2#area3#act78p#scce94p#nf235p" to="wv2#area3#page22p#lst12p">
@@ -396,6 +398,34 @@
         </NavigationFlow>
       </SuccessEvent>
       <ErrorEvent id="wv2#area3#act94p#erre161p"/>
+    </Events>
+  </Action>
+  <Action id="wv2#area3#act102p" gr:x="1825" gr:y="840" actionServiceRes="PortaleSubappaltatoriDataservice$ada55o">
+    <Events>
+      <SuccessEvent id="wv2#area3#act102p#scce124p">
+        <NavigationFlow id="wv2#area3#act102p#scce124p#nf293p" to="wv2#area3#page29p">
+          <ParameterBinding id="wv2#area3#act102p#scce124p#nf293p#par948p" sourceValue="operazione.OK" targetParameter="wv2#prd6" name="&quot;operazione.OK&quot; - success message"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area3#act102p#erre174p">
+        <NavigationFlow id="wv2#area3#act102p#erre174p#nf294p" to="wv2#area3#page29p">
+          <ParameterBinding id="wv2#area3#act102p#erre174p#nf294p#par949p" sourceValue="operazione.KO" targetParameter="wv2#prd5" name="&quot;operazione.KO&quot; - error message"/>
+        </NavigationFlow>
+      </ErrorEvent>
+    </Events>
+  </Action>
+  <Action id="wv2#area3#act103p" actionServiceRes="PortaleSubappaltatoriDataservice$ada55o" gr:x="1975" gr:y="2080">
+    <Events>
+      <SuccessEvent id="wv2#area3#act103p#scce128p">
+        <NavigationFlow id="wv2#area3#act103p#scce128p#nf298p" to="wv2#area3#page22p">
+          <ParameterBinding id="wv2#area3#act103p#scce128p#nf298p#par962p" sourceValue="operazione.OK" targetParameter="wv2#prd6" name="&quot;operazione.OK&quot; - success message"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area3#act103p#erre179p">
+        <NavigationFlow id="wv2#area3#act103p#erre179p#nf299p" to="wv2#area3#page22p">
+          <ParameterBinding id="wv2#area3#act103p#erre179p#nf299p#par963p" sourceValue="operazione.KO" targetParameter="wv2#prd5" name="&quot;operazione.KO&quot; - error message"/>
+        </NavigationFlow>
+      </ErrorEvent>
     </Events>
   </Action>
 </Area>

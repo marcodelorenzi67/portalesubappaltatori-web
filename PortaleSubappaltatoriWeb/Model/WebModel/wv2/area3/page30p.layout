@@ -82,7 +82,15 @@
                   {{ labelOf('.') | wrLocalize }}
                 </wr-content>
                 <wr-content for="data[_be_att99o]">
+                  <span *ngIf="valueOf('/main/lst45p/data/statoallegatoCodice', row) === 'S'" class="allegato-scaduto">
                   {{ valueOf('.', row) | date:'wr-date' }}
+                  </span>
+                  <span *ngIf="valueOf('/main/lst45p/data/statoallegatoCodice', row) === 'IS'" class="allegato-inScadenza">
+                  {{ valueOf('.', row) | date:'wr-date' }}
+                  </span>
+                  <span *ngIf="valueOf('/main/lst45p/data/statoallegatoCodice', row) != 'IS' && valueOf('/main/lst45p/data/statoallegatoCodice', row) != 'S'">
+                  {{ valueOf('.', row) | date:'wr-date' }}
+                  </span>
                 </wr-content>
                 <wr-content for="header[_be_att87o]">
                   {{ labelOf('.') | wrLocalize }}

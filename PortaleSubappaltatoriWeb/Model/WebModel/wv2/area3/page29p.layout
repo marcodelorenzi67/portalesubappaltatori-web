@@ -38,7 +38,7 @@
           </wd-row>
           <wd-row>
             <wd-cell [width]="12">
-              <wd-data-grid elevation="0" cols="main/lst41p/data/_be_att23 | main/lst41p/data/_be_att24 | main/lst41p/data/_be_att97o | main/lst41p/data/_be_att88o | main/lst41p/data/_be_att89o | main/lst41p/data/_be_att99o | main/lst41p/data/_be_att87o" [rows]="valueOf('main/lst41p/data')" events="main/lst41p/data/oslte192p | main/lst41p/data/oslte191p | main/lst41p/data/oslte193p" eventsOrder="oslte191p oslte192p oslte193p" paginator="main/lst41p/paging">
+              <wd-data-grid elevation="0" cols="main/lst41p/data/_be_att23 | main/lst41p/data/_be_att24 | main/lst41p/data/_be_att97o | main/lst41p/data/_be_att88o | main/lst41p/data/_be_att89o | main/lst41p/data/_be_att99o | main/lst41p/data/_be_att87o" [rows]="valueOf('main/lst41p/data')" events="main/lst41p/data/oslte192p | main/lst41p/data/oslte191p | main/lst41p/data/oslte193p | main/lst41p/data/oslte234p" eventsOrder="oslte191p oslte234p oslte192p oslte193p" paginator="main/lst41p/paging">
                 <wr-content for="header[_be_att23]">
                   {{ labelOf('.') | wrLocalize }}
                 </wr-content>
@@ -73,7 +73,15 @@
                   {{ labelOf('.') | wrLocalize }}
                 </wr-content>
                 <wr-content for="data[_be_att99o]">
-                  {{ valueOf('.', row) | date:'wr-date' }}
+                  <span *ngIf="valueOf('/main/lst41p/data/statoallegatoCodice', row) === 'S'" class="allegato-scaduto">
+                    {{ valueOf('.', row) | date:'wr-date' }}
+                  </span>
+                  <span *ngIf="valueOf('/main/lst41p/data/statoallegatoCodice', row) === 'IS'" class="allegato-inScadenza">
+                    {{ valueOf('.', row) | date:'wr-date' }}
+                  </span>
+                  <span *ngIf="valueOf('/main/lst41p/data/statoallegatoCodice', row) != 'IS' &amp;&amp; valueOf('/main/lst41p/data/statoallegatoCodice', row) != 'S'">
+                    {{ valueOf('.', row) | date:'wr-date' }}
+                  </span>
                 </wr-content>
                 <wr-content for="header[_be_att87o]">
                   {{ labelOf('.') | wrLocalize }}
@@ -89,6 +97,9 @@
                 </wr-content>
                 <wr-content for="event[oslte193p]">
                   <wd-button variant="mat-icon-button" color="primary" iconText="error_outline"></wd-button>
+                </wr-content>
+                <wr-content for="event[oslte234p]">
+                  <wd-button variant="mat-icon-button" color="primary" iconText="mail_outline" [visible]="valueOf('accessible') &amp;&amp; (valueOf('/main/lst41p/data/statoallegatoCodice', row) === 'S' || valueOf('/main/lst41p/data/statoallegatoCodice', row) === 'IS') &amp;&amp; valueOf('/main/lst41p/data/_be_att127o', row)"></wd-button>
                 </wr-content>
               </wd-data-grid>
             </wd-cell>

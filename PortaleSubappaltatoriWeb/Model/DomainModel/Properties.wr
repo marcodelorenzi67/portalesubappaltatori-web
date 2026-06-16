@@ -710,6 +710,14 @@
       <srs:ServiceScope name="Responsabile" method="create"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp292o" refModelId="mpkg5o#ada52o#ipd78o#pdp292o" pid="PortaleSubappaltatoriDataservice" serverProperty="fornitoreOid" name="fornitore [oid]" type="integer" location="body" cardinality="1"/>
     </srs:ActionService>
+    <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada55o" refModelId="mpkg5o#ada55o" pid="PortaleSubappaltatoriDataservice" name="Sollecito documento" defaultSuccessPortDefinition="mpkg5o#ada55o#spd83o" defaultErrorPortDefinition="mpkg5o#ada55o#epd83o" serverResourceName="actions/sollecitoDocumento" method="create">
+      <srs:ServiceScope name="Amministratore" method="create"/>
+      <srs:ServiceScope name="Gestione" method="create"/>
+      <srs:ServiceScope name="Responsabile" method="create"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp322o" refModelId="mpkg5o#ada55o#ipd83o#pdp322o" pid="PortaleSubappaltatoriDataservice" serverProperty="documentoOid" name="documento [oid]" type="integer" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp323o" refModelId="mpkg5o#ada55o#ipd83o#pdp323o" pid="PortaleSubappaltatoriDataservice" serverProperty="tipologiaDocumento" name="tipologiaDocumento" type="string" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp324o" refModelId="mpkg5o#ada55o#ipd83o#pdp324o" pid="PortaleSubappaltatoriDataservice" serverProperty="codiceMessaggio" name="codice messaggio" type="string" location="body" cardinality="1"/>
+    </srs:ActionService>
     <srs:ActionService ref="PortaleSubappaltatoriDataservice$adf11o" refModelId="mpkg5o#adf11o" pid="PortaleSubappaltatoriDataservice" name="Get Tipologia documenti per fornitore" type="read" defaultSuccessPortDefinition="mpkg5o#adf11o#spd41o" defaultErrorPortDefinition="mpkg5o#adf11o#epd41o" serverResourceName="actions/getTipologiaDocumentiPerFornitore" method="read">
       <srs:ServiceScope name="Amministratore" method="read"/>
       <srs:ServiceScope name="Gestione" method="read"/>

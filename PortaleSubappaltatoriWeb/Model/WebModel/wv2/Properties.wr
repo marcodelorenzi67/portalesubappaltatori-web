@@ -1,5 +1,5 @@
 <WebView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2" name="BackOffice" protected="true" roles="rl6 rl7 rl8 rl9" home="wv2#act25" landmarks="wv2#area1 wv2#area3 wv2#area4p">
-  <Action id="wv2#act14" gr:x="2645" gr:y="475" definition="tlads0#ad3">
+  <Action id="wv2#act14" gr:x="2625" gr:y="435" definition="tlads0#ad3">
     <Events>
       <SuccessEvent id="wv2#act14#scce13" definition="tlads0#ad3#spd3"/>
       <ErrorEvent id="wv2#act14#erre17" definition="tlads0#ad3#epd5"/>

@@ -47,6 +47,13 @@
             <ParameterBinding id="wv2#area3#page29p#lst41p#oslte193p#nf232p#par676p" source="data._be_att22" target="wv2#area3#page29p#dpg24p#dtl12p#sc59p#kcond19p._be_att22" name="oid - KeyCondition14"/>
           </NavigationFlow>
         </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page29p#lst41p#oslte234p" name="Invia sollecito" validate="true">
+          <NavigationFlow id="wv2#area3#page29p#lst41p#oslte234p#nf292p" to="wv2#area3#act102p">
+            <ParameterBinding id="wv2#area3#page29p#lst41p#oslte234p#nf292p#par950p" source="data._be_att22" target="wv2#area3#act102p.PortaleSubappaltatoriDataservice$pdp322o" name="oid - documento [oid]"/>
+            <ParameterBinding id="wv2#area3#page29p#lst41p#oslte234p#nf292p#par951p" source="data._be_att88o" target="wv2#area3#act102p.PortaleSubappaltatoriDataservice$pdp323o" name="tipologia - tipologiaDocumento"/>
+            <ParameterBinding id="wv2#area3#page29p#lst41p#oslte234p#nf292p#par952p" sourceValue="${msg.docInScadenza}" target="wv2#area3#act102p.PortaleSubappaltatoriDataservice$pdp324o" name="&quot;${msg.docInScadenza}&quot; - codice messaggio"/>
+          </NavigationFlow>
+        </OnSelectEvent>
       </Events>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att23"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att24"/>
