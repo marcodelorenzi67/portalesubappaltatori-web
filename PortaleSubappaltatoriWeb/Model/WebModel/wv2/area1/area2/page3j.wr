@@ -24,7 +24,10 @@
         </Field>
         <Events>
           <OnSelectEvent id="wv2#area1#area2#page3j#dpg2j#frm3j#oslte5j" name="Salva" validate="true">
-            <NavigationFlow id="wv2#area1#area2#page3j#dpg2j#frm3j#oslte5j#nf7j" to="wv2#area1#area2#act3j" automaticCoupling="true"/>
+            <NavigationFlow id="wv2#area1#area2#page3j#dpg2j#frm3j#oslte5j#nf7j" to="wv2#area1#area2#act3j">
+              <ParameterBinding id="wv2#area1#area2#page3j#dpg2j#frm3j#oslte5j#nf7j#par16j" source="{wv2#area1#area2#page3j#dpg2j#frm3j#fld5j}value" target="wv2#area1#area2#act3j.PortaleSubappaltatoriDataservice$pdp7p" name="Descrizione - Descrizione"/>
+              <ParameterBinding id="wv2#area1#area2#page3j#dpg2j#frm3j#oslte5j#nf7j#par17j" source="key._be_att83o" target="wv2#area1#area2#act3j.PortaleSubappaltatoriDataservice$pdp6p" name="Key [oid] - Stato"/>
+            </NavigationFlow>
           </OnSelectEvent>
         </Events>
       </Form>
