@@ -40,4 +40,10 @@
   <BundleKey name="false"/>
   <BundleKey name="true"/>
   <BundleKey name="pattern-message"/>
+  <BundleKey name="Are you sure you want to do this?"/>
+  <BundleKey name="Confirm"/>
+  <BundleKey name="Yes"/>
+  <BundleKey name="File Name"/>
+  <BundleKey name="Choose"/>
+  <BundleKey name="Choose File"/>
 </WebProject>

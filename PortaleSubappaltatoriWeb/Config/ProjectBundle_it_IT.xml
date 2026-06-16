@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle>
+  <Entry key="Are you sure you want to do this?">Sei sicuro di continuare?</Entry>
   <Entry key="attivazioneAccount.KO">Errore durante l'attivazione account, riprovare!</Entry>
   <Entry key="attivazioneAccount.OK">Utenza attivata con successo!</Entry>
   <Entry key="attrezzature">Attrezzature</Entry>
   <Entry key="autore">Autore</Entry>
   <Entry key="categoria">Categoria</Entry>
+  <Entry key="Choose">Seleziona</Entry>
+  <Entry key="Choose File">Seleziona</Entry>
   <Entry key="cognome">Cognome</Entry>
   <Entry key="cognomeReferente">Cognome Referente
 </Entry>  <Entry key="condiviso">Condiviso</Entry>
+  <Entry key="Confirm">Conferma azione</Entry>
   <Entry key="corrente">Corrente</Entry>
   <Entry key="creataIl">Creata il</Entry>
   <Entry key="createdAt">Creato il</Entry>
@@ -25,6 +29,7 @@
   <Entry key="email">Email</Entry>
   <Entry key="emailUtente">Email</Entry>
   <Entry key="false">No</Entry>
+  <Entry key="File Name">Nome File</Entry>
   <Entry key="fornitore">Fornitore</Entry>
   <Entry key="giorniAlert">Giorni Alert</Entry>
   <Entry key="giorniDurata">Giorni Durata</Entry>
@@ -73,4 +78,5 @@
   <Entry key="userID">Username</Entry>
   <Entry key="username">Username</Entry>
   <Entry key="utente">Utente</Entry>
+  <Entry key="Yes">Si</Entry>
 </Bundle>
