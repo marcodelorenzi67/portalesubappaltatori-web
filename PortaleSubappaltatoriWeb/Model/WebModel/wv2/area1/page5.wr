@@ -21,7 +21,7 @@
         <OptionsAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att2"/>
         <OptionsSortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att2" order="ascending"/>
       </SelectionField>
-      <SelectionField id="wv2#area1#page5#frm3#sfld2" optionsDistinct="false" emptyOption="true" name="Ruoli" multiselection="true" validationOrder="wv2#area1#page5#frm3#sfld2#mnd14">
+      <SelectionField id="wv2#area1#page5#frm3#sfld2" optionsDistinct="false" emptyOption="false" name="Ruoli" multiselection="true" validationOrder="wv2#area1#page5#frm3#sfld2#mnd14">
         <OptionsDataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls12"/>
         <OptionsAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att60"/>
         <OptionsSortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att60" order="ascending"/>
