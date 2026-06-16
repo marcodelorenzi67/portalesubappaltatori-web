@@ -1,7 +1,7 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="70" gr:y="395" id="wv1#page10" name="Verifica OTP">
   <ViewComponents>
     <Form gr:x="0" gr:y="0" id="wv1#page10#frm8" name="Inserisci OTP">
-      <Field id="wv1#page10#frm8#fld19" type="string" modifiable="true" name="OTP" validationOrder="wv1#page10#frm8#fld19#mnd15">
+      <Field id="wv1#page10#frm8#fld19" type="integer" modifiable="true" name="Codice OTP" validationOrder="wv1#page10#frm8#fld19#mnd15">
         <VRules>
           <MandatoryValidationRule id="wv1#page10#frm8#fld19#mnd15" name="Mandatory"/>
         </VRules>

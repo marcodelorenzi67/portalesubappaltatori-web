@@ -764,7 +764,7 @@
     </wd-card>
   </wr-content>
 </wr-page>
-<wd-dialog context="main/dpg6p">
+<wd-dialog context="main/dpg6p" panelClass="dialog-height">
   <wr-content for="content">
     <wd-data-grid elevation="0" cols="lst13p/data/_be_pdp151o | lst13p/data/_be_pdp150o" checkField="lst13p/data/_checked" events="lst13p/data/oslte57p" paginator="lst13p/paging" [useExcelLikeFilter]="true" color="primary" [rows]="valueOf('lst13p/data')" headerColor="primary">
       <wr-content for="event[oslte57p]">
