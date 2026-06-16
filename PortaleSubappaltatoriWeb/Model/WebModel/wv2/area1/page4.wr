@@ -41,6 +41,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att19"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att20"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att62"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att20" order="descending"/>
     </List>
   </ViewComponents>
 </Page>

@@ -36,6 +36,7 @@
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
+      <SortAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp189o" order="ascending"/>
     </List>
   </ViewComponents>
   <DialogPage gr:x="0" gr:y="110" id="wv3#page26p#dpg14p" name="Aggiungi documento">

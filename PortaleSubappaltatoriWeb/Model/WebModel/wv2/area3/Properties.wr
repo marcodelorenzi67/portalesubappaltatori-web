@@ -68,7 +68,7 @@
       <ErrorEvent id="wv2#area3#act40p#erre59p"/>
     </Events>
   </Action>
-  <Action id="wv2#area3#act43p" gr:x="1195" gr:y="2060" actionServiceRes="PortaleSubappaltatoriDataservice$ad3o">
+  <Action id="wv2#area3#act43p" gr:x="1195" gr:y="2050" actionServiceRes="PortaleSubappaltatoriDataservice$ad3o">
     <Events>
       <SuccessEvent id="wv2#area3#act43p#scce49p">
         <NavigationFlow id="wv2#area3#act43p#scce49p#nf100p" to="wv2#area3#page22p#lst12p">
@@ -159,7 +159,7 @@
       <ErrorEvent id="wv2#area3#act55p#erre92p"/>
     </Events>
   </Action>
-  <Action id="wv2#area3#act56p" actionServiceRes="PortaleSubappaltatoriDataservice$ada31o" gr:x="10" gr:y="1290">
+  <Action id="wv2#area3#act56p" actionServiceRes="PortaleSubappaltatoriDataservice$ada31o" gr:x="15" gr:y="1385">
     <Events>
       <SuccessEvent id="wv2#area3#act56p#scce65p">
         <NavigationFlow id="wv2#area3#act56p#scce65p#nf146p" to="wv2#area3#page27p#frm31p">
@@ -177,7 +177,7 @@
       <ErrorEvent id="wv2#area3#act57p#erre96p"/>
     </Events>
   </Action>
-  <Action id="wv2#area3#act58p" gr:x="900" gr:y="2060" actionServiceRes="PortaleSubappaltatoriDataservice$ada26o">
+  <Action id="wv2#area3#act58p" gr:x="900" gr:y="2050" actionServiceRes="PortaleSubappaltatoriDataservice$ada26o">
     <Events>
       <SuccessEvent id="wv2#area3#act58p#scce68p">
         <NavigationFlow id="wv2#area3#act58p#scce68p#nf170p" to="wv2#area3#page22p#lst12p">
@@ -243,7 +243,7 @@
       <ErrorEvent id="wv2#area3#act72p#erre122p"/>
     </Events>
   </Action>
-  <Action id="wv2#area3#act73p" gr:x="1470" gr:y="2060" actionServiceRes="PortaleSubappaltatoriDataservice$ada39o">
+  <Action id="wv2#area3#act73p" gr:x="1470" gr:y="2050" actionServiceRes="PortaleSubappaltatoriDataservice$ada39o">
     <Events>
       <SuccessEvent id="wv2#area3#act73p#scce88p">
         <NavigationFlow id="wv2#area3#act73p#scce88p#nf216p" to="wv2#area3#page22p#lst12p">
@@ -267,7 +267,7 @@
       <ErrorEvent id="wv2#area3#act73p#erre124p"/>
     </Events>
   </Action>
-  <Action id="wv2#area3#act76p" gr:x="1720" gr:y="2055" actionServiceRes="PortaleSubappaltatoriDataservice$ada43o">
+  <Action id="wv2#area3#act76p" gr:x="1720" gr:y="2050" actionServiceRes="PortaleSubappaltatoriDataservice$ada43o">
     <Events>
       <SuccessEvent id="wv2#area3#act76p#scce91p">
         <NavigationFlow id="wv2#area3#act76p#scce91p#nf220p" to="wv2#area3#page22p#lst12p">
@@ -304,7 +304,7 @@
       <ErrorEvent id="wv2#area3#act77p#erre133p"/>
     </Events>
   </Action>
-  <Action id="wv2#area3#act78p" gr:x="2270" gr:y="2040" actionServiceRes="PortaleSubappaltatoriDataservice$ada44o">
+  <Action id="wv2#area3#act78p" gr:x="2200" gr:y="2050" actionServiceRes="PortaleSubappaltatoriDataservice$ada44o">
     <Events>
       <SuccessEvent id="wv2#area3#act78p#scce94p">
         <NavigationFlow id="wv2#area3#act78p#scce94p#nf235p" to="wv2#area3#page22p#lst12p">
@@ -414,14 +414,14 @@
       </ErrorEvent>
     </Events>
   </Action>
-  <Action id="wv2#area3#act103p" actionServiceRes="PortaleSubappaltatoriDataservice$ada55o" gr:x="1975" gr:y="2080">
+  <Action id="wv2#area3#act103p" actionServiceRes="PortaleSubappaltatoriDataservice$ada55o" gr:x="1975" gr:y="2050">
     <Events>
-      <SuccessEvent id="wv2#area3#act103p#scce128p">
+      <SuccessEvent id="wv2#area3#act103p#scce128p" gr:pinned="true" gr:side="0" gr:pos="0">
         <NavigationFlow id="wv2#area3#act103p#scce128p#nf298p" to="wv2#area3#page22p">
           <ParameterBinding id="wv2#area3#act103p#scce128p#nf298p#par962p" sourceValue="operazione.OK" targetParameter="wv2#prd6" name="&quot;operazione.OK&quot; - success message"/>
         </NavigationFlow>
       </SuccessEvent>
-      <ErrorEvent id="wv2#area3#act103p#erre179p">
+      <ErrorEvent id="wv2#area3#act103p#erre179p" gr:pinned="true" gr:side="6" gr:pos="0">
         <NavigationFlow id="wv2#area3#act103p#erre179p#nf299p" to="wv2#area3#page22p">
           <ParameterBinding id="wv2#area3#act103p#erre179p#nf299p#par963p" sourceValue="operazione.KO" targetParameter="wv2#prd5" name="&quot;operazione.KO&quot; - error message"/>
         </NavigationFlow>

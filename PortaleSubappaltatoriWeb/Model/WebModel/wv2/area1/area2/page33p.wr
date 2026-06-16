@@ -13,6 +13,7 @@
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att105o" order="ascending"/>
     </List>
     <ViewComponent gr:x="165" gr:y="25" id="wv2#area1#area2#page33p#gctu25p" name="new">
       <Events>

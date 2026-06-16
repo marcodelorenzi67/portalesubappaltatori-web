@@ -58,6 +58,7 @@
           <NavigationFlow id="wv3#page9#lst9p#oslte119p#nf155p" to="wv3#page9#dpg17p#lst25p" automaticCoupling="true"/>
         </OnSelectEvent>
       </Events>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att73o" order="ascending"/>
     </List>
     <ViewComponent gr:x="35" gr:y="280" id="wv3#page9#gctu13p" name="BTN">
       <Events>
@@ -110,6 +111,7 @@
       <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statoallegatoCodice"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
     </List>
     <List id="wv3#page9#lst16p" name="Storico documenti" gr:x="600" gr:y="215" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
@@ -135,6 +137,7 @@
       <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statoallegatoCodice"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="descending"/>
     </List>
     <List id="wv3#page9#lst30p" name="Documenti Aggiuntivi" gr:x="0" gr:y="415" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
@@ -185,6 +188,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att107o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att108o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att109o"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
     </List>
     <List id="wv3#page9#lst35p" name="Personale" gr:x="765" gr:y="440" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls20o"/>
@@ -248,6 +252,7 @@
       <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statoallegatoCodice"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
     </List>
     <List id="wv3#page9#lst38p" name="Moduli" gr:x="645" gr:y="725" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
@@ -291,6 +296,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att118o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att119o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att121o"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
     </List>
     <Details id="wv3#page9#dtl17p" gr:x="765" gr:y="585">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls20o"/>
@@ -355,6 +361,7 @@
           </AssociationRoleCondition>
         </ConditionalExpression>
         <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att101o"/>
+        <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att100o" order="ascending"/>
       </List>
     </ViewComponents>
   </DialogPage>

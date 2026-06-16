@@ -52,6 +52,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att80o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att82o"/>
       <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role67o.PortaleSubappaltatoriDataservice$att130o" alias="aziendaOid"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att181o"/>
     </Details>
     <List id="wv2#area3#page22p#lst11p" gr:x="55" gr:y="350" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls14o"/>
@@ -717,6 +718,7 @@
         <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp153o"/>
         <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp154o"/>
         <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp155o"/>
+        <SortAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp155o" order="ascending"/>
       </List>
       <ViewComponent gr:x="150" gr:y="125" id="wv2#area3#page22p#dpg6p#gctu16p" name="BTN">
         <Events>
@@ -836,6 +838,7 @@
           </AssociationRoleCondition>
         </ConditionalExpression>
         <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att101o"/>
+        <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att100o" order="ascending"/>
       </List>
     </ViewComponents>
   </DialogPage>

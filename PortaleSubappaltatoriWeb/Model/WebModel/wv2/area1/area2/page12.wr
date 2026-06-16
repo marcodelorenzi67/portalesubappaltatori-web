@@ -10,6 +10,7 @@
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att45" order="ascending"/>
     </List>
   </ViewComponents>
 </Page>

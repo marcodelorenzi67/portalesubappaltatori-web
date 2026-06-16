@@ -125,6 +125,7 @@
         <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp200o"/>
         <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp201o"/>
         <DisplayAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp202o"/>
+        <SortAttributes actionServiceOutput="PortaleSubappaltatoriDataservice$pdp199o" order="ascending"/>
       </List>
       <Details id="wv2#area3#page29p#dpg24p#dtl12p" gr:x="15" gr:y="0">
         <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>

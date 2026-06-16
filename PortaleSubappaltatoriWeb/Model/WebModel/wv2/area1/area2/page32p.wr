@@ -65,6 +65,7 @@
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att105o" order="ascending"/>
     </List>
   </ViewComponents>
   <DialogPage id="wv2#area1#area2#page32p#dpg27p" name="Modifica tipologia allegati" gr:x="10" gr:y="145">
@@ -130,6 +131,7 @@
         </Events>
         <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att106o"/>
         <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att174o"/>
+        <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att105o" order="ascending"/>
       </List>
     </ViewComponents>
   </DialogPage>

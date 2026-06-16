@@ -50,6 +50,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att178o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att179o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att180o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att181o"/>
     </List>
     <Form gr:x="105" gr:y="0" id="wv2#area3#page18#frm13" name="Cerca">
       <Field id="wv2#area3#page18#frm13#fld27" modifiable="true" name="Nome Referente" type="string">

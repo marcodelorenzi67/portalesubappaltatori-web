@@ -54,6 +54,7 @@
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att59" order="ascending"/>
     </List>
     <Form gr:x="10" gr:y="255" id="wv2#area1#page35p#frm42p" name="Modifica">
       <Field id="wv2#area1#page35p#frm42p#fld145p" type="string" modifiable="true" name="Nome"/>
