@@ -37,7 +37,12 @@
   <DialogPage gr:x="35" gr:y="190" id="wv2#area1#area2#page11#dpg1" name="Modifica tipologia allegati">
     <ViewComponents>
       <Form gr:x="0" gr:y="5" id="wv2#area1#area2#page11#dpg1#frm9" name="Modifica">
-        <Field id="wv2#area1#area2#page11#dpg1#frm9#fld22" modifiable="true" name="Giorni Alert" type="integer"/>
+        <Field id="wv2#area1#area2#page11#dpg1#frm9#fld22" modifiable="true" name="Giorni Alert" type="integer" validationOrder="wv2#area1#area2#page11#dpg1#frm9#fld22#cmp7p wv2#area1#area2#page11#dpg1#frm9#fld22#mnd68p">
+          <VRules>
+            <CompareValidationRule id="wv2#area1#area2#page11#dpg1#frm9#fld22#cmp7p" name="Compare" predicate="gteq" value="0"/>
+            <MandatoryValidationRule id="wv2#area1#area2#page11#dpg1#frm9#fld22#mnd68p" name="Mandatory"/>
+          </VRules>
+        </Field>
         <Field id="wv2#area1#area2#page11#dpg1#frm9#fld23" modifiable="true" name="Condiviso" type="boolean">
           <VRules/>
         </Field>

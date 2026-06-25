@@ -71,7 +71,7 @@
       <ErrorEvent id="wv2#area1#area2#act91p#erre155p"/>
     </Events>
   </Action>
-  <Action id="wv2#area1#area2#act2j" gr:x="1330" gr:y="1195" actionServiceRes="PortaleSubappaltatoriDataservice$ada2p">
+  <Action id="wv2#area1#area2#act2j" gr:x="1380" gr:y="1200" actionServiceRes="PortaleSubappaltatoriDataservice$ada2p">
     <Events>
       <SuccessEvent id="wv2#area1#area2#act2j#scce2j" gr:pinned="true" gr:side="7" gr:pos="0">
         <NavigationFlow id="wv2#area1#area2#act2j#scce2j#nf4j" to="wv2#area1#area2#page2j#lst1j" gr:bendpoints="-121,-100,234,-145">

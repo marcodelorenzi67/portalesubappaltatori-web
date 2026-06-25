@@ -8,7 +8,7 @@
             <ParameterBinding id="wv1#page3#frm2#oslte2#nf6#par56" source="{wv1#page3#frm2#fld4}value" target="wv1#act15.PortaleSubappaltatoriDataservice$pdp41" name="Email - userID"/>
           </NavigationFlow>
         </OnSelectEvent>
-        <OnSelectEvent id="wv1#page3#frm2#oslte7" name="Password dimenticata" validate="true" gr:pinned="true" gr:side="1" gr:pos="1">
+        <OnSelectEvent id="wv1#page3#frm2#oslte7" name="Password dimenticata" validate="false" gr:pinned="true" gr:side="1" gr:pos="1">
           <NavigationFlow id="wv1#page3#frm2#oslte7#nf20" to="wv1#page7#frm6">
             <ParameterBinding id="wv1#page3#frm2#oslte7#nf20#par39" source="{wv1#page3#frm2#fld4}value" target="{wv1#page7#frm6#fld16}value" name="Email - Inserisci email"/>
           </NavigationFlow>

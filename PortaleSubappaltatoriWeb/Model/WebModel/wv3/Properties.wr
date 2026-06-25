@@ -38,7 +38,7 @@
       <ErrorEvent id="wv3#act34p#erre49p"/>
     </Events>
   </Action>
-  <Action id="wv3#act44p" gr:x="575" gr:y="-80" actionServiceRes="PortaleSubappaltatoriDataservice$ada27o">
+  <Action id="wv3#act44p" gr:x="580" gr:y="-165" actionServiceRes="PortaleSubappaltatoriDataservice$ada27o">
     <Events>
       <SuccessEvent id="wv3#act44p#scce50p">
         <NavigationFlow id="wv3#act44p#scce50p#nf106p" to="wv3#page9#dtl5p">

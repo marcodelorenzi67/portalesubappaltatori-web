@@ -71,7 +71,12 @@
   <DialogPage id="wv2#area1#area2#page32p#dpg27p" name="Modifica tipologia allegati" gr:x="10" gr:y="145">
     <ViewComponents>
       <Form id="wv2#area1#area2#page32p#dpg27p#frm40p" name="Modifica" gr:x="0" gr:y="0">
-        <Field id="wv2#area1#area2#page32p#dpg27p#frm40p#fld138p" name="Giorni Alert" modifiable="true" type="integer"/>
+        <Field id="wv2#area1#area2#page32p#dpg27p#frm40p#fld138p" name="Giorni Alert" modifiable="true" type="integer" validationOrder="wv2#area1#area2#page32p#dpg27p#frm40p#fld138p#cmp6p wv2#area1#area2#page32p#dpg27p#frm40p#fld138p#mnd69p">
+          <VRules>
+            <CompareValidationRule id="wv2#area1#area2#page32p#dpg27p#frm40p#fld138p#cmp6p" name="Compare" predicate="gteq" value="0"/>
+            <MandatoryValidationRule id="wv2#area1#area2#page32p#dpg27p#frm40p#fld138p#mnd69p" name="Mandatory"/>
+          </VRules>
+        </Field>
         <Field id="wv2#area1#area2#page32p#dpg27p#frm40p#fld139p" name="Condiviso" modifiable="true" type="boolean"/>
         <Field id="wv2#area1#area2#page32p#dpg27p#frm40p#fld140p" name="oid" modifiable="true" type="integer"/>
         <Field id="wv2#area1#area2#page32p#dpg27p#frm40p#fld141p" name="Descrizione" modifiable="true" type="string"/>
@@ -101,7 +106,7 @@
           </OnSelectEvent>
         </Events>
       </Form>
-      <Message gr:x="105" gr:y="15" id="wv2#area1#area2#page32p#dpg27p#msg3j" name="Message 3">
+      <Message gr:x="130" gr:y="5" id="wv2#area1#area2#page32p#dpg27p#msg3j" name="Message 3">
         <Message xml:space="preserve">pattern-message</Message>
       </Message>
     </ViewComponents>

@@ -28,6 +28,9 @@
         <AssociationRoleCondition id="wv2#area1#area2#page16#lst7#sc8#rcond3" name="tipo azienda" predicate="notIn" implied="false">
           <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role28"/>
         </AssociationRoleCondition>
+        <AttributesCondition id="wv2#area1#area2#page16#lst7#sc8#acond99p" predicate="eq" booleanOperator="or" implied="false" name="Macrotipologia" value="${macroTipologia.aziendali}|${macroTipologia.personali}">
+          <AttributesConditionAttr classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role23.PortaleSubappaltatoriDataservice$att43" alias="macrocategoriaCodice"/>
+        </AttributesCondition>
       </ConditionalExpression>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att64"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att65"/>

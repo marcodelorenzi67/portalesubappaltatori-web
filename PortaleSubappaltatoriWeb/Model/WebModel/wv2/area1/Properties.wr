@@ -65,7 +65,7 @@
       </ErrorEvent>
     </Events>
   </Action>
-  <Action id="wv2#area1#act98p" gr:x="655" gr:y="1080" actionServiceRes="PortaleSubappaltatoriDataservice$adf20o">
+  <Action id="wv2#area1#act98p" gr:x="580" gr:y="800" actionServiceRes="PortaleSubappaltatoriDataservice$adf20o">
     <Events>
       <SuccessEvent id="wv2#area1#act98p#scce120p">
         <NavigationFlow id="wv2#area1#act98p#scce120p#nf288p" to="wv2#area1#page5#frm3">

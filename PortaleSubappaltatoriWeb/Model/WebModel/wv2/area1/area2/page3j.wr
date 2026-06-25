@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1340" gr:y="810" id="wv2#area1#area2#page3j" name="Gestione Stati" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1390" gr:y="795" id="wv2#area1#area2#page3j" name="Gestione Stati" landmark="true">
   <ViewComponents>
     <List gr:x="0" gr:y="0" id="wv2#area1#area2#page3j#lst2j" checkable="false" distinct="false" name="Elenco Stati">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls15o"/>
