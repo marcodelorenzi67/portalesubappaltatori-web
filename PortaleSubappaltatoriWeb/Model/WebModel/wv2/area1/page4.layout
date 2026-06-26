@@ -8,7 +8,7 @@
               <wd-grid>
                 <wd-row>
                   <wd-cell [width]="12">
-                    <wd-data-grid cols="main/lst2/data/_be_att18 | main/lst2/data/_be_att19 | main/lst2/data/_be_att20 | main/lst2/data/_be_att62" [rows]="valueOf('main/lst2/data')" title="main/lst2" paginator="main/lst2/paging" elevation="0">
+                    <wd-data-grid cols="main/lst2/data/_be_att18 | main/lst2/data/_be_att19 | main/lst2/data/_be_att20 | main/lst2/data/_be_att62" [rows]="valueOf('main/lst2/data')" title="main/lst2" paginator="main/lst2/paging" elevation="0" events="main/lst2/data/oslte238p">
                       <wr-content for="header[_be_att18]">
                         {{ labelOf('.') | wrLocalize }}
                       </wr-content>
@@ -38,6 +38,9 @@
                       </wr-content>
                       <wr-content for="data[_be_att62]">
                         {{ valueOf('.', row) }}
+                      </wr-content>
+                      <wr-content for="event[oslte238p]">
+                        <wd-button variant="mat-icon-button" color="primary" iconText="mail_outline"></wd-button>
                       </wr-content>
                     </wd-data-grid>
                   </wd-cell>

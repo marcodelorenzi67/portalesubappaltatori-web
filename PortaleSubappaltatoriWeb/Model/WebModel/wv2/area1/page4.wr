@@ -42,6 +42,13 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att20"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att62"/>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att20" order="descending"/>
+      <Events>
+        <OnSelectEvent id="wv2#area1#page4#lst2#oslte238p" name="Invia invito" validate="true">
+          <NavigationFlow id="wv2#area1#page4#lst2#oslte238p#nf300p" to="wv2#area1#act104p">
+            <ParameterBinding id="wv2#area1#page4#lst2#oslte238p#nf300p#par964p" source="data._be_att20" target="wv2#area1#act104p.PortaleSubappaltatoriDataservice$pdp325o" name="username - Username"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
     </List>
   </ViewComponents>
 </Page>

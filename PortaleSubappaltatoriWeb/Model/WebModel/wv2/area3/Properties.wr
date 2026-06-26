@@ -428,4 +428,14 @@
       </ErrorEvent>
     </Events>
   </Action>
+  <Action id="wv2#area3#act106p" actionServiceRes="PortaleSubappaltatoriDataservice$ada56o" gr:x="345" gr:y="940">
+    <Events>
+      <SuccessEvent id="wv2#area3#act106p#scce133p">
+        <NavigationFlow id="wv2#area3#act106p#scce133p#nf304p" to="wv2#area3#page22p">
+          <ParameterBinding id="wv2#area3#act106p#scce133p#nf304p#par967p" sourceValue="operazione.OK" targetParameter="wv2#prd6" name="&quot;operazione.OK&quot; - success message"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area3#act106p#erre186p"/>
+    </Events>
+  </Action>
 </Area>

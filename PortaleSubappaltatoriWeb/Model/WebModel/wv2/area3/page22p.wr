@@ -367,6 +367,11 @@
             <ParameterBinding id="wv2#area3#page22p#lst18p#oslte82p#nf116p#par355p" source="data._be_att20" target="{wv2#area3#page22p#dpg9p#frm23p#fld70p}value" name="username - Username"/>
           </NavigationFlow>
         </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page22p#lst18p#oslte240p" name="Invia invito" validate="true">
+          <NavigationFlow id="wv2#area3#page22p#lst18p#oslte240p#nf303p" to="wv2#area3#act106p">
+            <ParameterBinding id="wv2#area3#page22p#lst18p#oslte240p#nf303p#par966p" source="data._be_att20" target="wv2#area3#act106p.PortaleSubappaltatoriDataservice$pdp325o" name="username - Username"/>
+          </NavigationFlow>
+        </OnSelectEvent>
       </Events>
     </List>
     <List id="wv2#area3#page22p#lst32p" name="Documenti aggiuntivi" gr:x="105" gr:y="740" checkable="false" distinct="false" pageSize="15">

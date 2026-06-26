@@ -140,7 +140,7 @@
                               </wd-row>
                               <wd-row>
                                 <wd-cell [width]="12">
-                                  <wd-data-grid cols="main/lst18p/data/_be_att18 | main/lst18p/data/_be_att19 | main/lst18p/data/_be_att92o | main/lst18p/data/_be_att20" [rows]="valueOf('main/lst18p/data')" elevation="0" title="main/lst18p" events="main/lst18p/data/oslte82p" paginator="main/lst18p/paging" [useExcelLikeFilter]="true">
+                                  <wd-data-grid cols="main/lst18p/data/_be_att18 | main/lst18p/data/_be_att19 | main/lst18p/data/_be_att92o | main/lst18p/data/_be_att20" [rows]="valueOf('main/lst18p/data')" elevation="0" title="main/lst18p" events="main/lst18p/data/oslte82p | main/lst18p/data/oslte240p" paginator="main/lst18p/paging" [useExcelLikeFilter]="true">
                                     <wr-content for="header[_be_att18]">
                                       {{ labelOf('.') | wrLocalize }}
                                     </wr-content>
@@ -170,6 +170,9 @@
                                     </wr-content>
                                     <wr-content for="event[oslte82p]">
                                       <wd-button variant="mat-icon-button" color="primary" iconText="edit" [visible]="valueOf('accessible') &amp;&amp; !valueOf('/parameters/prd1j')"></wd-button>
+                                    </wr-content>
+                                    <wr-content for="event[oslte240p]">
+                                      <wd-button variant="mat-icon-button" color="primary" iconText="mail_outline"></wd-button>
                                     </wr-content>
                                   </wd-data-grid>
                                 </wd-cell>

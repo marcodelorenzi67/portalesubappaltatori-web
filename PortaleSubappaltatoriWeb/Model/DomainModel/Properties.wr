@@ -465,6 +465,12 @@
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp305o" refModelId="mpkg1#ada54o#spd81o#pdp305o" pid="PortaleSubappaltatoriDataservice" serverProperty="oid" name="oid" type="integer" location="body" cardinality="1"/>
       <srs:Error ref="PortaleSubappaltatoriDataservice$pdp308o" refModelId="mpkg1#ada54o#epd81o#pdp308o" pid="PortaleSubappaltatoriDataservice" serverProperty="oid" name="oid" type="integer" location="body" cardinality="1"/>
     </srs:ActionService>
+    <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada56o" refModelId="mpkg1#ada56o" pid="PortaleSubappaltatoriDataservice" name="Reinvio mail invito" defaultSuccessPortDefinition="mpkg1#ada56o#spd84o" defaultErrorPortDefinition="mpkg1#ada56o#epd84o" serverResourceName="actions/reinvioMailInvito" method="create">
+      <srs:ServiceScope name="Amministratore" method="create"/>
+      <srs:ServiceScope name="Gestione" method="create"/>
+      <srs:ServiceScope name="Responsabile" method="create"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp325o" refModelId="mpkg1#ada56o#ipd84o#pdp325o" pid="PortaleSubappaltatoriDataservice" serverProperty="username" name="Username" type="string" location="body" cardinality="1"/>
+    </srs:ActionService>
     <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada10" refModelId="mpkg3#ada10" pid="PortaleSubappaltatoriDataservice" name="Verifica OTP" defaultSuccessPortDefinition="mpkg3#ada10#spd16" defaultErrorPortDefinition="mpkg3#ada10#epd16" serverResourceName="actions/verificaOTP" method="create">
       <srs:ServiceScope anonymous="true" method="create"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp46" refModelId="mpkg3#ada10#ipd16#pdp46" pid="PortaleSubappaltatoriDataservice" serverProperty="userID" name="userID" type="string" location="body" cardinality="1"/>
