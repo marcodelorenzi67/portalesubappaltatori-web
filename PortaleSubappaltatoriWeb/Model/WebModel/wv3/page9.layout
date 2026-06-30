@@ -144,7 +144,7 @@
                   <wd-grid>
                     <wd-row>
                       <wd-cell [width]="6">
-                        <wd-data-grid cols="main/lst35p/data/_be_att114o | main/lst35p/data/_be_att115o | main/lst35p/data/_be_att116o | main/lst35p/data/_be_att126o" [rows]="valueOf('main/lst35p/data')" title="main/lst35p" elevation="0" paginator="main/lst35p/paging" events="main/lst35p/data/oslte161p" colsOrder="_be_att114o _be_att115o _be_att116o _be_att126o">
+                        <wd-data-grid *ngIf="valueOf('/parameters/prd9p') === 1" cols="main/lst35p/data/_be_att114o | main/lst35p/data/_be_att115o | main/lst35p/data/_be_att116o | main/lst35p/data/_be_att126o" [rows]="valueOf('main/lst35p/data')" title="main/lst35p" elevation="0" paginator="main/lst35p/paging" events="main/lst35p/data/oslte161p" colsOrder="_be_att115o _be_att114o _be_att116o _be_att126o">
                           <wr-content for="header[_be_att114o]">
                             {{ labelOf('.') | wrLocalize }}
                           </wr-content>
@@ -173,8 +173,41 @@
                             {{ labelOf('.') | wrLocalize }}
                           </wr-content>
                           <wr-content for="data[_be_att126o]">
-                            <wd-icon iconText="lens" *ngIf="valueOf('.', row)" style="color: #27c24c;"></wd-icon>
-                            <wd-icon iconText="lens" *ngIf="!valueOf('.', row)" style="color: #f05050;"></wd-icon>
+                            <wd-icon iconText="lens" *ngIf="!valueOf('.', row)" style="color: #27c24c;"></wd-icon>
+                            <wd-icon iconText="lens" *ngIf="valueOf('.', row)" style="color: #f05050;"></wd-icon>
+                          </wr-content>
+                        </wd-data-grid>
+                        <wd-data-grid *ngIf="valueOf('/parameters/prd9p') === 2" cols="main/lst35p/data/_be_att114o | main/lst35p/data/_be_att115o | main/lst35p/data/_be_att116o | main/lst35p/data/_be_att176o" [rows]="valueOf('main/lst35p/data')" title="main/lst35p" elevation="0" paginator="main/lst35p/paging" events="main/lst35p/data/oslte161p" colsOrder="_be_att115o _be_att114o _be_att116o _be_att126o">
+                          <wr-content for="header[_be_att114o]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att114o]">
+                            {{ valueOf('.', row) }}
+                          </wr-content>
+                          <wr-content for="header[_be_att115o]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att115o]">
+                            {{ valueOf('.', row) }}
+                          </wr-content>
+                          <wr-content for="header[_be_att116o]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att116o]">
+                            {{ valueOf('.', row) }}
+                          </wr-content>
+                          <wr-content for="title[lst35p]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="event[oslte161p]">
+                            <wd-button variant="mat-icon-button" color="primary" iconText="format_list_bulleted"></wd-button>
+                          </wr-content>
+                          <wr-content for="header[_be_att176o]">
+                            {{ labelOf('.') | wrLocalize }}
+                          </wr-content>
+                          <wr-content for="data[_be_att176o]">
+                            <wd-icon iconText="lens" *ngIf="!valueOf('.', row)" style="color: #27c24c;"></wd-icon>
+                            <wd-icon iconText="lens" *ngIf="valueOf('.', row)" style="color: #f05050;"></wd-icon>
                           </wr-content>
                         </wd-data-grid>
                       </wd-cell>

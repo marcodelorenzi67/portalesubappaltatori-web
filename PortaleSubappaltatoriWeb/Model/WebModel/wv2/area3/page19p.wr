@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="320" gr:y="385" id="wv2#area3#page19p" name="Nuovo Fornitore" protected="true" roles="rl8 rl9 rl6">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="370" gr:y="385" id="wv2#area3#page19p" name="Nuovo Fornitore" protected="true" roles="rl8 rl9 rl6">
   <ViewComponents>
     <Form gr:x="100" gr:y="0" id="wv2#area3#page19p#frm14p" name="Dati Referente">
       <Field id="wv2#area3#page19p#frm14p#fld33p" modifiable="true" name="Nome Referente" type="string" validationOrder="wv2#area3#page19p#frm14p#fld33p#mnd22p">
@@ -53,6 +53,7 @@
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par736p" source="{wv2#area3#page19p#frm14p#sfld9p}value._be_att45" target="wv2#area3#act82p.tlads0#ad12p#ipd12p#pdp66p" name="Tipologia Azienda [oid] - Tipologia Azienda oid"/>
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par737p" source="{wv2#area3#page19p#frm14p#fld66p}value" target="wv2#area3#act82p.tlads0#ad12p#ipd12p#pdp69p" name="Username - Username"/>
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par788p" source="{wv2#area3#page19p#frm14p#fld137p}value" target="wv2#area3#act82p.tlads0#ad12p#ipd12p#pdp86p" name="azienda_omnia - Azienda oid"/>
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte32p#nf58p#par974p" source="{wv2#area3#page19p#frm14p#fld150p}value" target="wv2#area3#act82p.tlads0#ad12p#ipd12p#pdp112p" name="Alias - Alias"/>
           </NavigationFlow>
         </OnSelectEvent>
         <OnSelectEvent id="wv2#area3#page19p#frm14p#oslte33p" name="Invita Fornitore" validate="true">
@@ -67,6 +68,7 @@
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par771p" source="{wv2#area3#page19p#frm14p#sfld9p}value._be_att45" target="wv2#area3#act85p.tlads0#ad13p#ipd13p#pdp75p" name="Tipologia Azienda [oid] - Tipologia Azienda oid"/>
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par772p" source="{wv2#area3#page19p#frm14p#fld66p}value" target="wv2#area3#act85p.tlads0#ad13p#ipd13p#pdp78p" name="Username - Username"/>
             <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par790p" source="{wv2#area3#page19p#frm14p#fld137p}value" target="wv2#area3#act85p.tlads0#ad13p#ipd13p#pdp87p" name="azienda_omnia - Azienda oid"/>
+            <ParameterBinding id="wv2#area3#page19p#frm14p#oslte33p#nf61p#par972p" source="{wv2#area3#page19p#frm14p#fld150p}value" target="wv2#area3#act85p.tlads0#ad13p#ipd13p#pdp111p" name="Alias - Alias"/>
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
@@ -80,6 +82,12 @@
         </VRules>
       </Field>
       <Field id="wv2#area3#page19p#frm14p#fld137p" type="integer" modifiable="true" name="azienda_omnia"/>
+      <Field id="wv2#area3#page19p#frm14p#fld150p" type="string" modifiable="true" name="Alias" validationOrder="wv2#area3#page19p#frm14p#fld150p#vl2p wv2#area3#page19p#frm14p#fld150p#mnd70p">
+        <VRules>
+          <ValueLengthValidationRule id="wv2#area3#page19p#frm14p#fld150p#vl2p" name="Value Length" predicate="max" value="15"/>
+          <MandatoryValidationRule id="wv2#area3#page19p#frm14p#fld150p#mnd70p" name="Mandatory"/>
+        </VRules>
+      </Field>
     </Form>
     <ViewComponent gr:x="0" gr:y="10" id="wv2#area3#page19p#gctu22p" name="v"/>
   </ViewComponents>

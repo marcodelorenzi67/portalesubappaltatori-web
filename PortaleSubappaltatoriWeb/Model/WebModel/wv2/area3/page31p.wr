@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="20" gr:y="235" id="wv2#area3#page31p" name="Importa da Omnia" protected="true" roles="rl8 rl9 rl6">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="240" id="wv2#area3#page31p" name="Importa da Omnia" protected="true" roles="rl8 rl9 rl6">
   <ViewComponents>
-    <List gr:x="0" gr:y="105" id="wv2#area3#page31p#lst47p" checkable="false" distinct="false" pageSize="15">
+    <List gr:x="0" gr:y="100" id="wv2#area3#page31p#lst47p" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls21o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att130o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att131o"/>
@@ -9,6 +9,15 @@
       <ConditionalExpression id="wv2#area3#page31p#lst47p#sc65p" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="wv2#area3#page31p#lst47p#sc65p#acond81p" name="subappaltatore" predicate="eq" booleanOperator="or" implied="false" value="true">
           <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att142o"/>
+        </AttributesCondition>
+        <AttributesCondition id="wv2#area3#page31p#lst47p#sc65p#acond100p" name="email" predicate="contains" booleanOperator="or" implied="true" ignoreCase="true">
+          <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att134o"/>
+        </AttributesCondition>
+        <AttributesCondition id="wv2#area3#page31p#lst47p#sc65p#acond101p" name="Ragione sociale" predicate="contains" booleanOperator="or" implied="true" ignoreCase="true">
+          <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att131o"/>
+        </AttributesCondition>
+        <AttributesCondition id="wv2#area3#page31p#lst47p#sc65p#acond102p" name="categoria" predicate="contains" booleanOperator="or" implied="true" ignoreCase="true">
+          <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att144o"/>
         </AttributesCondition>
       </ConditionalExpression>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att131o" order="ascending"/>
@@ -23,14 +32,18 @@
         </OnSelectEvent>
       </Events>
     </List>
-    <ViewComponent id="wv2#area3#page31p#gctu23p" name="New" gr:x="5" gr:y="5"/>
-    <Form gr:x="105" gr:y="0" id="wv2#area3#page31p#frm39p" name="Cerca">
+    <ViewComponent id="wv2#area3#page31p#gctu23p" name="New" gr:x="10" gr:y="5"/>
+    <Form gr:x="110" gr:y="0" id="wv2#area3#page31p#frm39p" name="Cerca">
       <Field id="wv2#area3#page31p#frm39p#fld133p" type="string" modifiable="true" name="Ragione sociale"/>
       <Field id="wv2#area3#page31p#frm39p#fld134p" name="Email" type="string" modifiable="true"/>
       <Field id="wv2#area3#page31p#frm39p#fld135p" name="Categoria" type="string" modifiable="true"/>
       <Events>
         <OnSelectEvent id="wv2#area3#page31p#frm39p#oslte209p" name="Cerca" validate="true">
-          <NavigationFlow id="wv2#area3#page31p#frm39p#oslte209p#nf249p" to="wv2#area3#page31p#lst47p" automaticCoupling="true"/>
+          <NavigationFlow id="wv2#area3#page31p#frm39p#oslte209p#nf249p" to="wv2#area3#page31p#lst47p">
+            <ParameterBinding id="wv2#area3#page31p#frm39p#oslte209p#nf249p#par968p" source="{wv2#area3#page31p#frm39p#fld134p}value" target="wv2#area3#page31p#lst47p#sc65p#acond100p" name="Ragione sociale - Ragione sociale"/>
+            <ParameterBinding id="wv2#area3#page31p#frm39p#oslte209p#nf249p#par969p" source="{wv2#area3#page31p#frm39p#fld133p}value" target="wv2#area3#page31p#lst47p#sc65p#acond101p" name="Ragione sociale - Ragione sociale"/>
+            <ParameterBinding id="wv2#area3#page31p#frm39p#oslte209p#nf249p#par970p" source="{wv2#area3#page31p#frm39p#fld135p}value" target="wv2#area3#page31p#lst47p#sc65p#acond102p" name="Categoria - categoria"/>
+          </NavigationFlow>
         </OnSelectEvent>
         <OnSelectEvent id="wv2#area3#page31p#frm39p#oslte211p" name="Tutti" validate="true" gr:pinned="true" gr:side="0" gr:pos="1">
           <NavigationFlow id="wv2#area3#page31p#frm39p#oslte211p#nf251p" to="wv2#area3#page31p" automaticCoupling="true"/>

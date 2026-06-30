@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="665" gr:y="0" id="wv2#area3#page18" name="Elenco Fornitori" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="715" gr:y="0" id="wv2#area3#page18" name="Elenco Fornitori" landmark="true">
   <ViewComponents>
     <List gr:x="0" gr:y="110" id="wv2#area3#page18#lst8" checkable="false" distinct="false" pageSize="20">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls2"/>
@@ -39,6 +39,7 @@
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att7" order="ascending"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att10"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att12"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att7"/>
@@ -51,6 +52,8 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att179o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att180o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att181o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att186o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att187o"/>
     </List>
     <Form gr:x="105" gr:y="0" id="wv2#area3#page18#frm13" name="Cerca">
       <Field id="wv2#area3#page18#frm13#fld27" modifiable="true" name="Nome Referente" type="string">

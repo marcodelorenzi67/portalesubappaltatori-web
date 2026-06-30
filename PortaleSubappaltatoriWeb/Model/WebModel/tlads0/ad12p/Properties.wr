@@ -36,6 +36,7 @@
       <ParameterBinding id="tlads0#ad12p#ipd12p#df99p#par723p" name="tenant - tenant" source="tlads0#ad12p#ipd12p#pdp74p" target="tlads0#ad12p#act80p.PortaleSubappaltatoriDataservice$pdp77o"/>
       <ParameterBinding id="tlads0#ad12p#ipd12p#df99p#par724p" name="Username - Username" source="tlads0#ad12p#ipd12p#pdp69p" target="tlads0#ad12p#act80p.PortaleSubappaltatoriDataservice$pdp166o"/>
       <ParameterBinding id="tlads0#ad12p#ipd12p#df99p#par787p" source="tlads0#ad12p#ipd12p#pdp86p" target="tlads0#ad12p#act80p.PortaleSubappaltatoriDataservice$pdp269o" name="Azienda oid - Azienda oid"/>
+      <ParameterBinding id="tlads0#ad12p#ipd12p#df99p#par973p" source="tlads0#ad12p#ipd12p#pdp112p" target="tlads0#ad12p#act80p.PortaleSubappaltatoriDataservice$pdp326o" name="Alias - Alias"/>
     </DataFlow>
     <PortDefinitionParameter id="tlads0#ad12p#ipd12p#pdp86p" array="false" name="Azienda oid"/>
     <DataFlow id="tlads0#ad12p#ipd12p#sf45p" to="tlads0#ad12p#act81p" gr:bendpoints="96,-75,-104,-75">
@@ -45,6 +46,7 @@
     <SuccessFlow id="tlads0#ad12p#ipd12p#sf58p" to="tlads0#ad12p#switch12p">
       <ParameterBinding id="tlads0#ad12p#ipd12p#sf58p#par791p" source="tlads0#ad12p#ipd12p#pdp73p" target="switch" name="oid - Switch"/>
     </SuccessFlow>
+    <PortDefinitionParameter id="tlads0#ad12p#ipd12p#pdp112p" array="false" name="Alias"/>
   </InputPortDefinition>
   <SuccessPortDefinition id="tlads0#ad12p#spd21p" name="Success Port" gr:x="0" gr:y="445"/>
   <ErrorPortDefinition id="tlads0#ad12p#epd17p" name="Error Port" gr:x="0" gr:y="90"/>

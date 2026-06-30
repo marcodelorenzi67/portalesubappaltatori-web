@@ -61,7 +61,7 @@
       <ErrorEvent id="wv2#area1#area2#act90p#erre153p"/>
     </Events>
   </Action>
-  <Action id="wv2#area1#area2#act91p" gr:x="1195" gr:y="440" actionServiceRes="PortaleSubappaltatoriDataservice$ad7o">
+  <Action id="wv2#area1#area2#act91p" gr:x="845" gr:y="430" actionServiceRes="PortaleSubappaltatoriDataservice$ad7o">
     <Events>
       <SuccessEvent id="wv2#area1#area2#act91p#scce113p">
         <NavigationFlow id="wv2#area1#area2#act91p#scce113p#nf268p" to="wv2#area1#area2#page33p">
@@ -93,6 +93,28 @@
       <ErrorEvent id="wv2#area1#area2#act3j#erre6j" gr:pinned="true" gr:side="0" gr:pos="5">
         <NavigationFlow id="wv2#area1#area2#act3j#erre6j#nf9j" to="wv2#area1#area2#page3j" automaticCoupling="true"/>
       </ErrorEvent>
+    </Events>
+  </Action>
+  <Action id="wv2#area1#area2#act107p" actionServiceRes="PortaleSubappaltatoriDataservice$ada48o" gr:x="1185" gr:y="535">
+    <Events>
+      <SuccessEvent id="wv2#area1#area2#act107p#scce135p">
+        <NavigationFlow id="wv2#area1#area2#act107p#scce135p#nf308p" to="wv2#area1#area2#page33p#lst54p">
+          <ParameterBinding id="wv2#area1#area2#act107p#scce135p#nf308p#par990p" source="PortaleSubappaltatoriDataservice$pdp330o" targetParameter="wv2#area1#area2#page33p#prd22p" name="oid Categoria - categoria"/>
+          <ParameterBinding id="wv2#area1#area2#act107p#scce135p#nf308p#par991p" source="PortaleSubappaltatoriDataservice$pdp330o" target="wv2#area1#area2#page33p#lst54p#sc81p#rcond82p._be_att105o" name="oid Categoria - cateogoria [oid]"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area1#area2#act107p#erre189p"/>
+    </Events>
+  </Action>
+  <Action id="wv2#area1#area2#act108p" actionServiceRes="PortaleSubappaltatoriDataservice$ada49o" gr:x="1590" gr:y="545">
+    <Events>
+      <SuccessEvent id="wv2#area1#area2#act108p#scce137p">
+        <NavigationFlow id="wv2#area1#area2#act108p#scce137p#nf310p" to="wv2#area1#area2#page33p#lst54p">
+          <ParameterBinding id="wv2#area1#area2#act108p#scce137p#nf310p#par994p" source="PortaleSubappaltatoriDataservice$pdp331o" targetParameter="wv2#area1#area2#page33p#prd22p" name="oid Categoria - categoria"/>
+          <ParameterBinding id="wv2#area1#area2#act108p#scce137p#nf310p#par995p" source="PortaleSubappaltatoriDataservice$pdp331o" target="wv2#area1#area2#page33p#lst54p#sc81p#rcond82p._be_att105o" name="oid Categoria - cateogoria [oid]"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area1#area2#act108p#erre192p"/>
     </Events>
   </Action>
 </Area>

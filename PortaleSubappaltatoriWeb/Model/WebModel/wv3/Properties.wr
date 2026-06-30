@@ -6,7 +6,7 @@
     </Events>
   </Action>
   <Parameters>
-    <Parameter id="wv3#prd9p" name="Tenant" type="string"/>
+    <Parameter id="wv3#prd9p" name="Tenant" type="integer"/>
     <Parameter id="wv3#prd10p" name="oid Fornitore" type="integer"/>
     <Parameter id="wv3#prd11p" name="error message" type="string"/>
     <Parameter id="wv3#prd12p" name="success message" type="string"/>

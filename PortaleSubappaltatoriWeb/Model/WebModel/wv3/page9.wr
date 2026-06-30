@@ -52,6 +52,7 @@
             <ParameterBinding id="wv3#page9#lst9p#oslte101p#nf132p#par390p" sourceParameter="wv3#prd10p" target="wv3#act50p.PortaleSubappaltatoriDataservice$pdp185o" name="oid Fornitore - fornitore"/>
             <ParameterBinding id="wv3#page9#lst9p#oslte101p#nf132p#par391p" sourceValue="true" target="wv3#act50p.PortaleSubappaltatoriDataservice$pdp184o" name="&quot;true&quot; - Letta"/>
             <ParameterBinding id="wv3#page9#lst9p#oslte101p#nf132p#par392p" source="data._be_att73o" target="wv3#act50p.PortaleSubappaltatoriDataservice$pdp183o" name="oid - oid"/>
+            <ParameterBinding id="wv3#page9#lst9p#oslte101p#nf132p#par982p" source="data._be_att184o" target="wv3#act50p.PortaleSubappaltatoriDataservice$pdp329o" name="lettaIl - lettaIl"/>
           </NavigationFlow>
         </OnSelectEvent>
         <OnSelectEvent id="wv3#page9#lst9p#oslte119p" name="Documenti" validate="true">
@@ -192,10 +193,16 @@
     </List>
     <List id="wv3#page9#lst35p" name="Personale" gr:x="765" gr:y="525" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls20o"/>
-      <ConditionalExpression id="wv3#page9#lst35p#sc53p" defaultPolicy="fill" booleanOperator="and">
+      <ConditionalExpression id="wv3#page9#lst35p#sc53p" defaultPolicy="fill" booleanOperator="and" expression="wv3#page9#lst35p#sc53p#rcond47p AND ( wv3#page9#lst35p#sc53p#acond105p OR wv3#page9#lst35p#sc53p#acond106p )">
         <AssociationRoleCondition id="wv3#page9#lst35p#sc53p#rcond47p" name="fornitore" predicate="in" implied="false">
           <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role59o"/>
         </AssociationRoleCondition>
+        <AttributesCondition id="wv3#page9#lst35p#sc53p#acond105p" name="InForza null" predicate="null" booleanOperator="or" implied="false" value="true">
+          <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att185o"/>
+        </AttributesCondition>
+        <AttributesCondition id="wv3#page9#lst35p#sc53p#acond106p" name="InForza true" predicate="eq" booleanOperator="or" implied="false" value="true">
+          <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att185o"/>
+        </AttributesCondition>
       </ConditionalExpression>
       <Events>
         <OnSelectEvent id="wv3#page9#lst35p#oslte161p" name="Gestisci documenti" validate="true">
@@ -205,11 +212,13 @@
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o" order="descending"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att115o" order="ascending"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att114o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att115o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att116o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o"/>
-      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o" order="ascending"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att176o"/>
     </List>
     <List id="wv3#page9#lst36p" name="Documenti personale di: " gr:x="390" gr:y="540" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
@@ -298,7 +307,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att121o"/>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
     </List>
-    <Details id="wv3#page9#dtl17p" gr:x="765" gr:y="670">
+    <Details id="wv3#page9#dtl17p" gr:x="770" gr:y="720">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls20o"/>
       <ConditionalExpression id="wv3#page9#dtl17p#sc67p" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="wv3#page9#dtl17p#sc67p#kcond22p" name="KeyCondition21" predicate="in" implied="false"/>

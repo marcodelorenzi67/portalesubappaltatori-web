@@ -10,13 +10,16 @@
                 <wr-content for="content">
                   <wd-grid>
                     <wd-row>
-                      <wd-cell [width]="4">
+                      <wd-cell [width]="3">
                         <wd-input appearance="outline" context="main/frm14p/fld34p"></wd-input>
                       </wd-cell>
-                      <wd-cell [width]="4">
+                      <wd-cell [width]="3">
+                       	<wd-input appearance="outline" context="main/frm14p/fld150p"></wd-input>
+                      </wd-cell>
+                      <wd-cell [width]="3">
                         <wd-input appearance="outline" context="main/frm14p/fld35p"></wd-input>
                       </wd-cell>
-                      <wd-cell [width]="4">
+                      <wd-cell [width]="3">
                         <wd-select appearance="outline" context="main/frm14p/sfld9p"></wd-select>
                       </wd-cell>
                     </wd-row>

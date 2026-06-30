@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1175" gr:y="55" id="wv2#area1#area2#page33p" name="Categorie per documenti aggiuntivi" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1175" gr:y="15" id="wv2#area1#area2#page33p" name="Categorie per documenti aggiuntivi" landmark="true">
   <ViewComponents>
-    <List gr:x="0" gr:y="0" id="wv2#area1#area2#page33p#lst51p" checkable="false" distinct="false" pageSize="10">
+    <List gr:x="0" gr:y="25" id="wv2#area1#area2#page33p#lst51p" checkable="false" distinct="false" pageSize="10">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls18o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att106o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att174o"/>
@@ -12,18 +12,59 @@
             <ParameterBinding id="wv2#area1#area2#page33p#lst51p#oslte220p#nf266p#par845p" source="data._be_role53o$_be_att41" target="{wv2#area1#area2#page33p#dpg29p#frm41p#sfld34p}presel._be_att41" name="categoriaToMacroTipologia - Macro Categoria [oid] - Preselection"/>
           </NavigationFlow>
         </OnSelectEvent>
+        <OnSelectEvent id="wv2#area1#area2#page33p#lst51p#oslte244p" name="Tipologie" validate="true">
+          <NavigationFlow id="wv2#area1#area2#page33p#lst51p#oslte244p#nf305p" to="wv2#area1#area2#page33p#lst54p">
+            <ParameterBinding id="wv2#area1#area2#page33p#lst51p#oslte244p#nf305p#par983p" targetParameter="wv2#area1#area2#page33p#prd22p" name="categoria - categoria" source="data._be_att105o"/>
+            <ParameterBinding id="wv2#area1#area2#page33p#lst51p#oslte244p#nf305p#par984p" source="data._be_att105o" target="wv2#area1#area2#page33p#lst54p#sc81p#rcond82p._be_att105o" name="oid - cateogoria [oid]"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv2#area1#area2#page33p#lst51p#oslte245p" name="Aggiungi Tipologia" validate="true">
+          <NavigationFlow id="wv2#area1#area2#page33p#lst51p#oslte245p#nf306p" to="wv2#area1#area2#page33p#dpg30p#lst55p">
+            <ParameterBinding id="wv2#area1#area2#page33p#lst51p#oslte245p#nf306p#par985p" source="data._be_att105o" targetParameter="wv2#area1#area2#page33p#prd22p" name="oid - categoria"/>
+            <ParameterBinding id="wv2#area1#area2#page33p#lst51p#oslte245p#nf306p#par986p" source="data._be_att105o" target="wv2#area1#area2#page33p#dpg30p#lst55p#sc82p#rcond85p._be_att105o" name="oid - cateogoria [oid]"/>
+            <ParameterBinding id="wv2#area1#area2#page33p#lst51p#oslte245p#nf306p#par987p" source="data._be_role53o$_be_att41" target="wv2#area1#area2#page33p#dpg30p#lst55p#sc82p#rcond84p._be_att41" name="categoriaToMacroTipologia - macrotipologia [oid]"/>
+          </NavigationFlow>
+        </OnSelectEvent>
       </Events>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att105o" order="ascending"/>
     </List>
-    <ViewComponent gr:x="165" gr:y="25" id="wv2#area1#area2#page33p#gctu25p" name="new">
+    <ViewComponent gr:x="0" gr:y="340" id="wv2#area1#area2#page33p#gctu25p" name="new">
       <Events>
         <OnSelectEvent id="wv2#area1#area2#page33p#gctu25p#oslte222p" name="Nuova Categoria">
           <NavigationFlow id="wv2#area1#area2#page33p#gctu25p#oslte222p#nf269p" to="wv2#area1#area2#page33p#dpg29p" automaticCoupling="true"/>
         </OnSelectEvent>
       </Events>
     </ViewComponent>
+    <List id="wv2#area1#area2#page33p#lst54p" gr:x="210" gr:y="0" checkable="false" distinct="false" pageSize="10">
+      <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls8"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att37" order="ascending"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att38"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att39"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att40"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att64"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att65"/>
+      <ConditionalExpression id="wv2#area1#area2#page33p#lst54p#sc81p" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="wv2#area1#area2#page33p#lst54p#sc81p#acond107p" name="codice macro" predicate="neq" booleanOperator="and" implied="false" value="${macroTipologia.aziendali}">
+          <AttributesConditionAttr classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role23.PortaleSubappaltatoriDataservice$att43" alias="macrocategoriaCodice"/>
+        </AttributesCondition>
+        <AttributesCondition id="wv2#area1#area2#page33p#lst54p#sc81p#acond108p" name="codice macro" predicate="neq" booleanOperator="and" implied="false" value="${macroTipologia.personali}">
+          <AttributesConditionAttr classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role23.PortaleSubappaltatoriDataservice$att43" alias="macrocategoriaCodice"/>
+        </AttributesCondition>
+        <AssociationRoleCondition id="wv2#area1#area2#page33p#lst54p#sc81p#rcond82p" name="cateogoria" predicate="in" implied="false">
+          <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role55o"/>
+        </AssociationRoleCondition>
+      </ConditionalExpression>
+      <Events>
+        <OnSelectEvent id="wv2#area1#area2#page33p#lst54p#oslte246p" name="Rimuovi" validate="true">
+          <NavigationFlow id="wv2#area1#area2#page33p#lst54p#oslte246p#nf307p" to="wv2#area1#area2#act107p">
+            <ParameterBinding id="wv2#area1#area2#page33p#lst54p#oslte246p#nf307p#par988p" sourceParameter="wv2#area1#area2#page33p#prd22p" target="wv2#area1#area2#act107p.PortaleSubappaltatoriDataservice$pdp281o" name="categoria - oid Categoria"/>
+            <ParameterBinding id="wv2#area1#area2#page33p#lst54p#oslte246p#nf307p#par989p" source="data._be_att37" target="wv2#area1#area2#act107p.PortaleSubappaltatoriDataservice$pdp280o" name="oid - oid Tipologia Documenti"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+      </Events>
+    </List>
   </ViewComponents>
-  <DialogPage gr:x="10" gr:y="120" id="wv2#area1#area2#page33p#dpg29p" name="Modifica categoria">
+  <DialogPage gr:x="10" gr:y="160" id="wv2#area1#area2#page33p#dpg29p" name="Modifica categoria">
     <ViewComponents>
       <Form gr:x="0" gr:y="0" id="wv2#area1#area2#page33p#dpg29p#frm41p" name="dati">
         <Field id="wv2#area1#area2#page33p#dpg29p#frm41p#fld143p" modifiable="true" name="Descrizione" type="string" validationOrder="wv2#area1#area2#page33p#dpg29p#frm41p#fld143p#mnd66p">
@@ -59,6 +100,44 @@
           </OnSelectEvent>
         </Events>
       </Form>
+    </ViewComponents>
+  </DialogPage>
+  <Parameters>
+    <Parameter id="wv2#area1#area2#page33p#prd22p" name="categoria" type="integer"/>
+  </Parameters>
+  <DialogPage gr:x="395" gr:y="180" id="wv2#area1#area2#page33p#dpg30p" name="Aggiungi Tipologia">
+    <ViewComponents>
+      <List id="wv2#area1#area2#page33p#dpg30p#lst55p" gr:x="0" gr:y="0" checkable="false" distinct="false" pageSize="10">
+        <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls8"/>
+        <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att37" order="ascending"/>
+        <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att38"/>
+        <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att39"/>
+        <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att40"/>
+        <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att64"/>
+        <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att65"/>
+        <ConditionalExpression id="wv2#area1#area2#page33p#dpg30p#lst55p#sc82p" defaultPolicy="fill" booleanOperator="and">
+          <AttributesCondition id="wv2#area1#area2#page33p#dpg30p#lst55p#sc82p#acond109p" name="codice macro" predicate="neq" booleanOperator="and" implied="false" value="${macroTipologia.aziendali}">
+            <AttributesConditionAttr classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role23.PortaleSubappaltatoriDataservice$att43" alias="macrocategoriaCodice"/>
+          </AttributesCondition>
+          <AttributesCondition id="wv2#area1#area2#page33p#dpg30p#lst55p#sc82p#acond110p" name="codice macro" predicate="neq" booleanOperator="and" implied="false" value="${macroTipologia.personali}">
+            <AttributesConditionAttr classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role23.PortaleSubappaltatoriDataservice$att43" alias="macrocategoriaCodice"/>
+          </AttributesCondition>
+          <AssociationRoleCondition id="wv2#area1#area2#page33p#dpg30p#lst55p#sc82p#rcond84p" predicate="in" implied="false" name="macrotipologia">
+            <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role23"/>
+          </AssociationRoleCondition>
+          <AssociationRoleCondition id="wv2#area1#area2#page33p#dpg30p#lst55p#sc82p#rcond85p" name="cateogoria" predicate="notIn" implied="false">
+            <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role55o"/>
+          </AssociationRoleCondition>
+        </ConditionalExpression>
+        <Events>
+          <OnSelectEvent id="wv2#area1#area2#page33p#dpg30p#lst55p#oslte247p" name="Aggiungi" validate="true">
+            <NavigationFlow id="wv2#area1#area2#page33p#dpg30p#lst55p#oslte247p#nf309p" to="wv2#area1#area2#act108p">
+              <ParameterBinding id="wv2#area1#area2#page33p#dpg30p#lst55p#oslte247p#nf309p#par992p" sourceParameter="wv2#area1#area2#page33p#prd22p" target="wv2#area1#area2#act108p.PortaleSubappaltatoriDataservice$pdp283o" name="categoria - oid Categoria"/>
+              <ParameterBinding id="wv2#area1#area2#page33p#dpg30p#lst55p#oslte247p#nf309p#par993p" source="data._be_att37" target="wv2#area1#area2#act108p.PortaleSubappaltatoriDataservice$pdp284o" name="oid - oid Tipologia Documenti"/>
+            </NavigationFlow>
+          </OnSelectEvent>
+        </Events>
+      </List>
     </ViewComponents>
   </DialogPage>
 </Page>

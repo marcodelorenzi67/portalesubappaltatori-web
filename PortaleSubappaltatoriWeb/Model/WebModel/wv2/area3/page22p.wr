@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area3#page22p" name="Dettaglio Fornitore" gr:x="615" gr:y="930">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="wv2#area3#page22p" name="Dettaglio Fornitore" gr:x="665" gr:y="930">
   <ViewComponents>
     <Details id="wv2#area3#page22p#dtl6p" name="Dati Anagrafici" gr:x="85" gr:y="200">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls2"/>
@@ -61,10 +61,6 @@
           <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role45o"/>
         </AssociationRoleCondition>
       </ConditionalExpression>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att74o"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att75o"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att95o"/>
-      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att96o"/>
       <Events>
         <OnSelectEvent id="wv2#area3#page22p#lst11p#oslte118p" name="Documenti" validate="true">
           <NavigationFlow id="wv2#area3#page22p#lst11p#oslte118p#nf154p" to="wv2#area3#page22p#dpg16p#lst24p" automaticCoupling="true"/>
@@ -77,6 +73,11 @@
         </OnSelectEvent>
       </Events>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att73o" order="descending"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att74o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att75o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att95o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att96o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att184o"/>
     </List>
     <ViewComponent id="wv2#area3#page22p#gctu14p" name="BTN" gr:x="405" gr:y="455">
       <Events>
@@ -452,10 +453,16 @@
     </List>
     <List gr:x="1145" gr:y="425" id="wv2#area3#page22p#lst33p" checkable="false" distinct="false" pageSize="15" name="Personale">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls20o"/>
-      <ConditionalExpression id="wv2#area3#page22p#lst33p#sc50p" defaultPolicy="fill" booleanOperator="and">
+      <ConditionalExpression id="wv2#area3#page22p#lst33p#sc50p" defaultPolicy="fill" booleanOperator="and" expression="wv2#area3#page22p#lst33p#sc50p#rcond43p AND ( wv2#area3#page22p#lst33p#sc50p#acond103p OR wv2#area3#page22p#lst33p#sc50p#acond104p )">
         <AssociationRoleCondition id="wv2#area3#page22p#lst33p#sc50p#rcond43p" name="fornitore" predicate="in" implied="false">
           <AssociationRoleConditionRole classServiceRole="PortaleSubappaltatoriDataservice$role59o"/>
         </AssociationRoleCondition>
+        <AttributesCondition id="wv2#area3#page22p#lst33p#sc50p#acond103p" name="InForza true" predicate="eq" booleanOperator="or" implied="false" value="true">
+          <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att185o"/>
+        </AttributesCondition>
+        <AttributesCondition id="wv2#area3#page22p#lst33p#sc50p#acond104p" name="InForza null" predicate="null" booleanOperator="or" implied="false" value="true">
+          <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att185o"/>
+        </AttributesCondition>
       </ConditionalExpression>
       <Events>
         <OnSelectEvent id="wv2#area3#page22p#lst33p#oslte153p" name="Gestisci documenti" validate="true">
@@ -479,6 +486,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att176o"/>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o" order="descending"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att115o" order="ascending"/>
     </List>
     <List id="wv2#area3#page22p#lst34p" name="Documenti personale" gr:x="940" gr:y="605" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>

@@ -18,6 +18,12 @@
   <Entry key="createdAt">Creato il</Entry>
   <Entry key="dataScadenza">Data Scadenza</Entry>
   <Entry key="descrizione">Descrizione</Entry>
+  <Entry key="docAziendali">Doc Aziendali</Entry>
+  <Entry key="docAziendaliT2">Doc Aziendali</Entry>
+  <Entry key="docDaRichiedere">Doc da Richiedere</Entry>
+  <Entry key="docDaRichiedereT2">Doc da Richiedere</Entry>
+  <Entry key="docPersonale">Doc Personale</Entry>
+  <Entry key="docPersonaleT2">Doc Personale</Entry>
   <Entry key="documentiDaCaricare">Documenti da Caricare</Entry>
   <Entry key="documentiDaCaricarePersonale">Documenti da Caricare Personale</Entry>
   <Entry key="documentiDaCaricarePersonaleT2">Documenti da Caricare Personale</Entry>
@@ -34,7 +40,8 @@
   <Entry key="giorniAlert">Giorni Alert</Entry>
   <Entry key="giorniDurata">Giorni Durata</Entry>
   <Entry key="identificativo">Identificativo
-</Entry>  <Entry key="Macro categoria">Macrocategoria</Entry>
+</Entry>  <Entry key="lettaIl">Letta il</Entry>
+  <Entry key="Macro categoria">Macrocategoria</Entry>
   <Entry key="Macro Categoria">Macrocategoria</Entry>
   <Entry key="Macro-tipologia">Macrotipologia</Entry>
   <Entry key="macroCategoria">Macrocategoria</Entry>

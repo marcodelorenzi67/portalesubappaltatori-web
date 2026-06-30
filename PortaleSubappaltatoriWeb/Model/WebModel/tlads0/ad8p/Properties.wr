@@ -32,6 +32,7 @@
     <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp42p" array="false" name="Username"/>
     <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp84p" array="false" name="Importato"/>
     <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp85p" array="false" name="Azienda omnia oid"/>
+    <PortDefinitionParameter id="tlads0#ad8p#spd15p#pdp113p" array="false" name="Alias"/>
   </SuccessPortDefinition>
   <ErrorPortDefinition id="tlads0#ad8p#epd13p" name="Error Port" gr:x="0" gr:y="495"/>
   <SuccessPortDefinition id="tlads0#ad8p#spd16p" name="Modifica" gr:x="0" gr:y="380">
@@ -52,6 +53,7 @@
           <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par320p" source="PortaleSubappaltatoriDataservice$pdp168o" target="tlads0#ad8p#spd15p#pdp42p" name="Username - Username"/>
           <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par784p" source="PortaleSubappaltatoriDataservice$pdp270o" target="tlads0#ad8p#spd15p#pdp84p" name="Importato - Importato"/>
           <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par785p" source="PortaleSubappaltatoriDataservice$pdp271o" target="tlads0#ad8p#spd15p#pdp85p" name="Azienda omnia oid - Azienda omnia oid"/>
+          <ParameterBinding id="tlads0#ad8p#act39p#scce45p#sf32p#par975p" source="PortaleSubappaltatoriDataservice$pdp328o" target="tlads0#ad8p#spd15p#pdp113p" name="Alias - Alias"/>
         </SuccessFlow>
       </SuccessEvent>
       <ErrorEvent id="tlads0#ad8p#act39p#erre57p"/>
