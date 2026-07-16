@@ -82,6 +82,7 @@
   <Entry key="tipoAzione">Azione</Entry>
   <Entry key="tipologia">Tipologia</Entry>
   <Entry key="tipologiaAzienda">Tipologia Azienda</Entry>
+  <Entry key="tipologiaDocumento">Tipologia Documento</Entry>
   <Entry key="true">Si</Entry>
   <Entry key="userID">Username</Entry>
   <Entry key="username">Username</Entry>

@@ -227,7 +227,7 @@
             <ParameterBinding id="wv2#area3#page22p#lst12p#oslte139p#nf169p#par557p" source="data._be_att22" target="wv2#area3#act59p.PortaleSubappaltatoriDataservice$pdp135o" name="oid - oid"/>
           </NavigationFlow>
         </OnSelectEvent>
-        <OnSelectEvent id="wv2#area3#page22p#lst12p#oslte174p" name="Cancella" validate="true">
+        <OnSelectEvent id="wv2#area3#page22p#lst12p#oslte174p" name="Archivia" validate="true">
           <NavigationFlow id="wv2#area3#page22p#lst12p#oslte174p#nf212p" to="wv2#area3#page22p#dpg7p#frm21p">
             <ParameterBinding id="wv2#area3#page22p#lst12p#oslte174p#nf212p#par623p" sourceValue="true" target="{wv2#area3#page22p#dpg7p#frm21p#fld127p}value" name="&quot;true&quot; - annulla"/>
             <ParameterBinding id="wv2#area3#page22p#lst12p#oslte174p#nf212p#par626p" sourceValue="false" target="{wv2#area3#page22p#dpg7p#frm21p#fld125p}value" name="&quot;false&quot; - modulo"/>
@@ -244,6 +244,14 @@
             <ParameterBinding id="wv2#area3#page22p#lst12p#oslte235p#nf295p#par953p" source="data._be_att22" target="wv2#area3#act103p.PortaleSubappaltatoriDataservice$pdp322o" name="oid - documento [oid]"/>
             <ParameterBinding id="wv2#area3#page22p#lst12p#oslte235p#nf295p#par954p" source="data._be_att88o" target="wv2#area3#act103p.PortaleSubappaltatoriDataservice$pdp323o" name="tipologia - tipologiaDocumento"/>
             <ParameterBinding id="wv2#area3#page22p#lst12p#oslte235p#nf295p#par955p" sourceValue="${msg.docDaInserire}" target="wv2#area3#act103p.PortaleSubappaltatoriDataservice$pdp324o" name="&quot;${msg.docDaInserire}&quot; - codice messaggio"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page22p#lst12p#oslte250p" name="Carica Documento" validate="true">
+          <NavigationFlow id="wv2#area3#page22p#lst12p#oslte250p#nf313p" to="wv2#area3#page22p#dpg31p#frm43p">
+            <ParameterBinding id="wv2#area3#page22p#lst12p#oslte250p#nf313p#par1006p" source="data._be_att99o" target="{wv2#area3#page22p#dpg31p#frm43p#fld154p}value" name="dataScadenza - Data scadenza"/>
+            <ParameterBinding id="wv2#area3#page22p#lst12p#oslte250p#nf313p#par1007p" source="data._be_att24" target="{wv2#area3#page22p#dpg31p#frm43p#fld152p}value" name="descrizione - Descrizione"/>
+            <ParameterBinding id="wv2#area3#page22p#lst12p#oslte250p#nf313p#par1008p" source="data._be_att22" target="{wv2#area3#page22p#dpg31p#frm43p#fld153p}value" name="oid - oid allegato"/>
+            <ParameterBinding id="wv2#area3#page22p#lst12p#oslte250p#nf313p#par1012p" source="data._be_att88o" target="{wv2#area3#page22p#dpg31p#frm43p#fld158p}value" name="tipologia - Tipologia"/>
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
@@ -413,7 +421,7 @@
         <OnSelectEvent id="wv2#area3#page22p#lst32p#oslte135p" name="Dettaglio" validate="true">
           <NavigationFlow id="wv2#area3#page22p#lst32p#oslte135p#nf166p" to="wv2#area3#page22p#dpg18p#dtl8p" automaticCoupling="true"/>
         </OnSelectEvent>
-        <OnSelectEvent id="wv2#area3#page22p#lst32p#oslte176p" name="Cancella" validate="true">
+        <OnSelectEvent id="wv2#area3#page22p#lst32p#oslte176p" name="Archivia" validate="true">
           <NavigationFlow id="wv2#area3#page22p#lst32p#oslte176p#nf214p" to="wv2#area3#page22p#dpg7p#frm21p">
             <ParameterBinding id="wv2#area3#page22p#lst32p#oslte176p#nf214p#par628p" sourceValue="true" target="{wv2#area3#page22p#dpg7p#frm21p#fld127p}value" name="&quot;true&quot; - annulla"/>
             <ParameterBinding id="wv2#area3#page22p#lst32p#oslte176p#nf214p#par629p" sourceValue="false" target="{wv2#area3#page22p#dpg7p#frm21p#fld125p}value" name="&quot;false&quot; - modulo"/>
@@ -534,7 +542,7 @@
             <ParameterBinding id="wv2#area3#page22p#lst34p#oslte152p#nf189p#par563p" sourceParameter="wv2#area3#page22p#prd15p" target="wv2#area3#act59p.PortaleSubappaltatoriDataservice$pdp231o" name="oid personale - oid personale"/>
           </NavigationFlow>
         </OnSelectEvent>
-        <OnSelectEvent id="wv2#area3#page22p#lst34p#oslte177p" name="Cancella" validate="true">
+        <OnSelectEvent id="wv2#area3#page22p#lst34p#oslte177p" name="Archivia" validate="true">
           <NavigationFlow id="wv2#area3#page22p#lst34p#oslte177p#nf215p" to="wv2#area3#page22p#dpg7p#frm21p">
             <ParameterBinding id="wv2#area3#page22p#lst34p#oslte177p#nf215p#par631p" sourceValue="true" target="{wv2#area3#page22p#dpg7p#frm21p#fld127p}value" name="&quot;true&quot; - annulla"/>
             <ParameterBinding id="wv2#area3#page22p#lst34p#oslte177p#nf215p#par632p" sourceValue="false" target="{wv2#area3#page22p#dpg7p#frm21p#fld125p}value" name="&quot;false&quot; - modulo"/>
@@ -551,6 +559,13 @@
             <ParameterBinding id="wv2#area3#page22p#lst34p#oslte236p#nf296p#par956p" sourceValue="${msg.docDaInserire}" target="wv2#area3#act103p.PortaleSubappaltatoriDataservice$pdp324o" name="&quot;${msg.docDaInserire}&quot; - codice messaggio"/>
             <ParameterBinding id="wv2#area3#page22p#lst34p#oslte236p#nf296p#par957p" source="data._be_att22" target="wv2#area3#act103p.PortaleSubappaltatoriDataservice$pdp322o" name="oid - documento [oid]"/>
             <ParameterBinding id="wv2#area3#page22p#lst34p#oslte236p#nf296p#par958p" source="data._be_att88o" target="wv2#area3#act103p.PortaleSubappaltatoriDataservice$pdp323o" name="tipologia - tipologiaDocumento"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page22p#lst34p#oslte251p" name="Carica documento" validate="true">
+          <NavigationFlow id="wv2#area3#page22p#lst34p#oslte251p#nf314p" to="wv2#area3#page22p#dpg31p#frm43p">
+            <ParameterBinding id="wv2#area3#page22p#lst34p#oslte251p#nf314p#par1009p" source="data._be_att99o" target="{wv2#area3#page22p#dpg31p#frm43p#fld154p}value" name="dataScadenza - Data scadenza"/>
+            <ParameterBinding id="wv2#area3#page22p#lst34p#oslte251p#nf314p#par1010p" source="data._be_att24" target="{wv2#area3#page22p#dpg31p#frm43p#fld152p}value" name="descrizione - Descrizione"/>
+            <ParameterBinding id="wv2#area3#page22p#lst34p#oslte251p#nf314p#par1011p" source="data._be_att22" target="{wv2#area3#page22p#dpg31p#frm43p#fld153p}value" name="oid - oid allegato"/>
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
@@ -910,7 +925,7 @@
       </Form>
     </ViewComponents>
   </DialogPage>
-  <DialogPage id="wv2#area3#page22p#dpg23p" name="Carica documento" gr:x="1390" gr:y="615">
+  <DialogPage id="wv2#area3#page22p#dpg23p" name="Carica modulo" gr:x="1390" gr:y="615">
     <ViewComponents>
       <Form id="wv2#area3#page22p#dpg23p#frm36p" name="Allegato" gr:x="0" gr:y="0">
         <Field id="wv2#area3#page22p#dpg23p#frm36p#fld118p" name="Documento" type="blob" modifiable="true" validationOrder="wv2#area3#page22p#dpg23p#frm36p#fld118p#mnd64p">
@@ -934,6 +949,32 @@
             </NavigationFlow>
           </OnSelectEvent>
         </Events>
+      </Form>
+    </ViewComponents>
+  </DialogPage>
+  <DialogPage id="wv2#area3#page22p#dpg31p" name="Carica documento" gr:x="1355" gr:y="190">
+    <ViewComponents>
+      <Form id="wv2#area3#page22p#dpg31p#frm43p" name="Allegato" gr:x="0" gr:y="0">
+        <Field id="wv2#area3#page22p#dpg31p#frm43p#fld151p" name="Documento" type="blob" modifiable="true" validationOrder="wv2#area3#page22p#dpg31p#frm43p#fld151p#mnd71p">
+          <VRules>
+            <MandatoryValidationRule id="wv2#area3#page22p#dpg31p#frm43p#fld151p#mnd71p" name="Mandatory" predicate="eq" value="false"/>
+          </VRules>
+        </Field>
+        <Field id="wv2#area3#page22p#dpg31p#frm43p#fld152p" name="Descrizione" type="string" modifiable="true"/>
+        <Field id="wv2#area3#page22p#dpg31p#frm43p#fld153p" name="oid allegato" type="integer" modifiable="false"/>
+        <Field id="wv2#area3#page22p#dpg31p#frm43p#fld154p" name="Data scadenza" type="date" modifiable="true"/>
+        <Events>
+          <OnSelectEvent id="wv2#area3#page22p#dpg31p#frm43p#oslte249p" name="Conferma" validate="true">
+            <NavigationFlow id="wv2#area3#page22p#dpg31p#frm43p#oslte249p#nf311p" to="wv2#area3#act109p">
+              <ParameterBinding id="wv2#area3#page22p#dpg31p#frm43p#oslte249p#nf311p#par996p" source="{wv2#area3#page22p#dpg31p#frm43p#fld154p}value" target="wv2#area3#act109p.PortaleSubappaltatoriDataservice$pdp336o" name="Data scadenza - Data scadenza"/>
+              <ParameterBinding id="wv2#area3#page22p#dpg31p#frm43p#oslte249p#nf311p#par997p" source="{wv2#area3#page22p#dpg31p#frm43p#fld152p}value" target="wv2#area3#act109p.PortaleSubappaltatoriDataservice$pdp333o" name="Descrizione - Descrizione"/>
+              <ParameterBinding id="wv2#area3#page22p#dpg31p#frm43p#oslte249p#nf311p#par998p" source="{wv2#area3#page22p#dpg31p#frm43p#fld151p}value" target="wv2#area3#act109p.PortaleSubappaltatoriDataservice$pdp334o" name="Documento - Documento"/>
+              <ParameterBinding id="wv2#area3#page22p#dpg31p#frm43p#oslte249p#nf311p#par999p" sourceParameter="wv2#area3#page22p#prd13p" target="wv2#area3#act109p.PortaleSubappaltatoriDataservice$pdp332o" name="oid fornitore - fornitore"/>
+              <ParameterBinding id="wv2#area3#page22p#dpg31p#frm43p#oslte249p#nf311p#par1000p" source="{wv2#area3#page22p#dpg31p#frm43p#fld153p}value" target="wv2#area3#act109p.PortaleSubappaltatoriDataservice$pdp335o" name="oid allegato - oid"/>
+            </NavigationFlow>
+          </OnSelectEvent>
+        </Events>
+        <Field id="wv2#area3#page22p#dpg31p#frm43p#fld158p" type="string" modifiable="false" name="Tipologia"/>
       </Form>
     </ViewComponents>
   </DialogPage>
