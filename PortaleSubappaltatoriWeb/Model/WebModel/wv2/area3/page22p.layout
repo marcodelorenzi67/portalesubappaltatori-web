@@ -222,7 +222,7 @@
                   <wd-grid>
                     <wd-row>
                       <wd-cell [width]="12">
-                        <wd-data-grid elevation="0" cols="main/lst12p/data/_be_att23 | main/lst12p/data/_be_att24 | main/lst12p/data/_be_att88o | main/lst12p/data/_be_att89o | main/lst12p/data/_be_att87o | main/lst12p/data/_be_att99o" [rows]="valueOf('main/lst12p/data')" events="main/lst12p/data/oslte139p | main/lst12p/data/oslte138p | main/lst12p/data/oslte62p | main/lst12p/data/oslte63p | main/lst12p/data/oslte121p | main/lst12p/data/oslte174p | main/lst12p/data/oslte178p | main/lst12p/data/oslte235p | main/lst12p/data/oslte250p" title="main/lst12p" paginator="main/lst12p/paging" [useExcelLikeFilter]="true" colsOrder="_be_att23 _be_att24 _be_att99o _be_att88o _be_att89o _be_att87o" eventsOrder="oslte139p oslte138p oslte250p oslte235p oslte62p oslte63p oslte174p oslte178p oslte121p">
+                        <wd-data-grid elevation="0" cols="main/lst12p/data/_be_att23 | main/lst12p/data/_be_att24 | main/lst12p/data/_be_att88o | main/lst12p/data/_be_att89o | main/lst12p/data/_be_att87o | main/lst12p/data/_be_att99o" [rows]="valueOf('main/lst12p/data')" events="main/lst12p/data/oslte139p | main/lst12p/data/oslte138p | main/lst12p/data/oslte62p | main/lst12p/data/oslte63p | main/lst12p/data/oslte121p | main/lst12p/data/oslte174p | main/lst12p/data/oslte178p | main/lst12p/data/oslte235p | main/lst12p/data/oslte250p" title="main/lst12p" paginator="main/lst12p/paging" [useExcelLikeFilter]="true" colsOrder="_be_att23 _be_att24 _be_att99o _be_att88o _be_att89o _be_att87o" eventsOrder="oslte139p oslte138p oslte250p oslte235p oslte62p oslte63p oslte174p oslte178p oslte121p" checkField="main/lst12p/data/_checked">
                           <wr-content for="header[_be_att23]">
                             {{ labelOf('.') | wrLocalize }}
                           </wr-content>
@@ -255,6 +255,7 @@
                           </wr-content>
                           <wr-content for="header-actions">
                             <wd-button context="main/gctu14p/oslte56p" color="success" iconText="add"></wd-button>
+                            <wd-button context="main/gctu14p/oslte8p" color="primary" iconText="send" [confirm]="true"></wd-button>
                             <wd-button context="main/gctu14p/oslte201p" color="warning" iconText="compare_arrows" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/dtl13p/data/_be_pdp263o')"></wd-button>
                           </wr-content>
                           <wr-content for="event[oslte139p]">
@@ -533,7 +534,7 @@
                         </wd-data-grid>
                       </wd-cell>
                       <wd-cell [width]="6" *ngIf="valueOf('/main/prd15p')">
-                        <wd-data-grid elevation="0" cols="main/lst34p/data/_be_att23 | main/lst34p/data/_be_att24 | main/lst34p/data/_be_att99o | main/lst34p/data/_be_att88o | main/lst34p/data/_be_att89o | main/lst34p/data/_be_att87o" [rows]="valueOf('main/lst34p/data')" title="main/lst34p" events="main/lst34p/data/oslte152p | main/lst34p/data/oslte151p | main/lst34p/data/oslte148p | main/lst34p/data/oslte149p | main/lst34p/data/oslte150p | main/lst34p/data/oslte177p | main/lst34p/data/oslte180p | main/lst34p/data/oslte236p | main/lst34p/data/oslte251p" paginator="main/lst34p/paging" eventsOrder="oslte152p oslte151p oslte251p oslte236p oslte148p oslte149p oslte177p oslte180p oslte150p">
+                        <wd-data-grid elevation="0" cols="main/lst34p/data/_be_att23 | main/lst34p/data/_be_att24 | main/lst34p/data/_be_att99o | main/lst34p/data/_be_att88o | main/lst34p/data/_be_att89o | main/lst34p/data/_be_att87o" [rows]="valueOf('main/lst34p/data')" title="main/lst34p" events="main/lst34p/data/oslte152p | main/lst34p/data/oslte151p | main/lst34p/data/oslte148p | main/lst34p/data/oslte149p | main/lst34p/data/oslte150p | main/lst34p/data/oslte177p | main/lst34p/data/oslte180p | main/lst34p/data/oslte236p | main/lst34p/data/oslte251p" paginator="main/lst34p/paging" eventsOrder="oslte152p oslte151p oslte251p oslte236p oslte148p oslte149p oslte177p oslte180p oslte150p" checkField="main/lst34p/data/_checked">
                           <wr-content for="header[_be_att23]">
                             {{ labelOf('.') | wrLocalize }}
                           </wr-content>
@@ -583,6 +584,7 @@
                           </wr-content>
                           <wr-content for="header-actions">
                             <wd-button context="main/gctu14p/oslte157p" color="success" iconText="add" [visible]="valueOf('accessible') &amp;&amp; !valueOf('/parameters/prd1j')"></wd-button>
+                            <wd-button context="main/gctu14p/oslte4p" color="primary" iconText="send" [confirm]="true"></wd-button>
                           </wr-content>
                           <wr-content for="event[oslte152p]">
                             <wd-button variant="mat-icon-button" color="primary" iconText="remove" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst34p/data/statoallegatoCodice', row) === 'B'"></wd-button>
@@ -620,7 +622,7 @@
                   <wd-grid>
                     <wd-row>
                       <wd-cell [width]="12">
-                        <wd-data-grid elevation="0" cols="main/lst37p/data/_be_att23 | main/lst37p/data/_be_att24 | main/lst37p/data/_be_att118o | main/lst37p/data/_be_att119o | main/lst37p/data/_be_att87o | main/lst37p/data/_be_att121o" [rows]="valueOf('main/lst37p/data')" title="main/lst37p" events="main/lst37p/data/oslte162p | main/lst37p/data/oslte163p | main/lst37p/data/oslte164p | main/lst37p/data/oslte166p | main/lst37p/data/oslte165p" paginator="main/lst37p/paging" eventsOrder="oslte162p oslte163p oslte166p oslte165p oslte164p" colsOrder="_be_att23 _be_att24 _be_att118o _be_att121o _be_att119o _be_att87o">
+                        <wd-data-grid elevation="0" cols="main/lst37p/data/_be_att23 | main/lst37p/data/_be_att24 | main/lst37p/data/_be_att118o | main/lst37p/data/_be_att119o | main/lst37p/data/_be_att87o | main/lst37p/data/_be_att121o" [rows]="valueOf('main/lst37p/data')" title="main/lst37p" events="main/lst37p/data/oslte162p | main/lst37p/data/oslte163p | main/lst37p/data/oslte164p | main/lst37p/data/oslte166p | main/lst37p/data/oslte165p" paginator="main/lst37p/paging" eventsOrder="oslte162p oslte163p oslte166p oslte165p oslte164p" colsOrder="_be_att23 _be_att24 _be_att118o _be_att121o _be_att119o _be_att87o" checkField="main/lst37p/data/_checked">
                           <wr-content for="header[_be_att23]">
                             {{ labelOf('.') | wrLocalize }}
                           </wr-content>
@@ -671,6 +673,7 @@
                           </wr-content>
                           <wr-content for="header-actions">
                             <wd-button context="main/gctu14p/oslte169p" iconText="add" color="success"></wd-button>
+                            <wd-button context="main/gctu14p/oslte12p" color="primary" iconText="send" [confirm]="true"></wd-button>
                           </wr-content>
                           <wr-content for="header[_be_att121o]">
                             {{ labelOf('.') | wrLocalize }}
@@ -979,6 +982,7 @@
 </wd-dialog>
 <wd-dialog context="main/dpg23p" title=".">
   <wr-content for="content">
+    <wd-alert [messages]="valueOf('msg3p/messages')"></wd-alert>
     <wd-card elevation="0" actions="frm36p/oslte170p">
       <wr-content for="content">
         <wd-container elements="frm36p/fld118p | frm36p/fld119p | frm36p/fld122p">
@@ -1010,6 +1014,7 @@
     <wd-button color="success"></wd-button>
   </wr-content>
   <wr-content for="content">
+    <wd-alert [messages]="valueOf('msg2p/messages')"></wd-alert>
     <wd-card elevation="0">
       <wr-content for="content">
         <wd-container elements="frm43p/fld151p | frm43p/fld154p | frm43p/fld152p">

@@ -5,7 +5,7 @@
         <wd-cell [width]="12">
           <wd-card title="main">
             <wr-content for="content">
-              <wd-data-grid elevation="0" cols="main/lst3/data/_be_att64 | main/lst3/data/_be_att65 | main/lst3/data/_be_att40 | main/lst3/data/_be_att38 | main/lst3/data/_be_att39" [rows]="valueOf('main/lst3/data')" events="main/lst3/data/oslte14" paginator="main/lst3/paging" colsOrder="_be_att64 _be_att65 _be_att39 _be_att40 _be_att38">
+              <wd-data-grid elevation="0" cols="main/lst3/data/_be_att64 | main/lst3/data/_be_att65 | main/lst3/data/_be_att40 | main/lst3/data/_be_att38 | main/lst3/data/_be_att39" [rows]="valueOf('main/lst3/data')" events="main/lst3/data/oslte14" paginator="main/lst3/paging" colsOrder="_be_att64 _be_att65 _be_att39 _be_att40 _be_att38" [useExcelLikeFilter]="true">
                 <wr-content for="header[_be_att64]">
                   {{ labelOf('.') | wrLocalize }}
                 </wr-content>

@@ -93,7 +93,7 @@
   </wr-content>
   <wr-content for="site-intro">
     <div class="login-intro">
-      <div class="login-kicker">Portale fornitori</div>
+      <div class="login-kicker">Portale subappaltatori</div>
       <h1>Attivazione credenziale</h1>
       <p>Completa l'attivazione della tua utenza</p>
     </div>

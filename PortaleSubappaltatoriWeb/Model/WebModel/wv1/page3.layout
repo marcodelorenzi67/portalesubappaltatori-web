@@ -13,7 +13,7 @@
   </wr-content>
   <wr-content for="site-intro">
     <div class="login-intro">
-      <div class="login-kicker">Portale fornitori</div>
+      <div class="login-kicker">Portale subappaltatori</div>
       <h1>Area riservata</h1>
       <p>Accedi con le tue credenziali per accedere ai servizi del portale</p>
     </div>

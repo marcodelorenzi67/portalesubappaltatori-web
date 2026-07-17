@@ -427,10 +427,11 @@
     </wd-card>
   </wr-content>
 </wr-page>
-<wd-dialog context="main/dpg8p">
+<wd-dialog context="main/dpg8p" title="frm22p/fld1p/value">
   <wr-content for="content">
     <wd-card elevation="0" actions="frm22p/oslte71p">
       <wr-content for="content">
+        <wd-alert [messages]="valueOf('msg1p/messages')"></wd-alert>
         <wd-container elements="frm22p/fld57p | frm22p/fld58p | frm22p/fld81p | frm22p/fld124p | frm22p/fld126p" elementsOrder="fld57p fld124p fld81p fld58p">
           <wr-content for="element[fld57p]">
             <wd-file-input *ngIf="!valueOf('/main/dpg8p/frm22p/fld123p/value')"></wd-file-input>
@@ -453,6 +454,9 @@
         <wd-button color="success"></wd-button>
       </wr-content>
     </wd-card>
+  </wr-content>
+  <wr-content for="title[value]">
+    {{ valueOf('/main/dpg8p/frm22p/fld1p/value') | wrLocalize }}
   </wr-content>
 </wd-dialog>
 <wd-dialog context="main/dpg17p">

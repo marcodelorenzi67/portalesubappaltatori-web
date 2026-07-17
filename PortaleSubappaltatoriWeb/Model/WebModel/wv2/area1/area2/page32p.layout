@@ -5,7 +5,7 @@
         <wd-cell [width]="12">
           <wd-card title="main">
             <wr-content for="content">
-              <wd-data-grid elevation="0" cols="main/lst48p/data/_be_att64 | main/lst48p/data/_be_att65 | main/lst48p/data/_be_att40 | main/lst48p/data/_be_att38 | main/lst48p/data/_be_att39" [rows]="valueOf('main/lst48p/data')" events="main/lst48p/data/oslte213p | main/lst48p/data/oslte218p" paginator="main/lst48p/paging" colsOrder="_be_att64 _be_att65 _be_att39 _be_att40 _be_att38" [expandable]="true" [detailRow]="true" expandRowEvent="main/lst48p/data/oslte216p">
+              <wd-data-grid elevation="0" cols="main/lst48p/data/_be_att64 | main/lst48p/data/_be_att65 | main/lst48p/data/_be_att40 | main/lst48p/data/_be_att38 | main/lst48p/data/_be_att39" [rows]="valueOf('main/lst48p/data')" events="main/lst48p/data/oslte213p | main/lst48p/data/oslte218p" paginator="main/lst48p/paging" colsOrder="_be_att64 _be_att65 _be_att39 _be_att40 _be_att38" [expandable]="true" [detailRow]="true" expandRowEvent="main/lst48p/data/oslte216p" [useExcelLikeFilter]="true">
                 <wr-content for="header[_be_att64]">
                   {{ labelOf('.') | wrLocalize }}
                 </wr-content>

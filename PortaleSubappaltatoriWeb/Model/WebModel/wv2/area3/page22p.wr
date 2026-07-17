@@ -79,7 +79,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att96o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att184o"/>
     </List>
-    <ViewComponent id="wv2#area3#page22p#gctu14p" name="BTN" gr:x="405" gr:y="455">
+    <ViewComponent id="wv2#area3#page22p#gctu14p" name="BTN" gr:x="380" gr:y="455">
       <Events>
         <OnSelectEvent id="wv2#area3#page22p#gctu14p#oslte43p" name="Nuova comunicazione" gr:pinned="true" gr:side="3" gr:pos="1">
           <NavigationFlow id="wv2#area3#page22p#gctu14p#oslte43p#nf74p" to="wv2#area3#act56p">
@@ -132,6 +132,15 @@
             <ParameterBinding id="wv2#area3#page22p#gctu14p#oslte227p#nf276p#par864p" sourceParameter="wv2#area3#page22p#prd13p" target="wv2#area3#act94p.PortaleSubappaltatoriDataservice$pdp292o" name="oid fornitore - fornitore [oid]"/>
           </NavigationFlow>
         </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page22p#gctu14p#oslte4p" name="Invia selezionati">
+          <NavigationFlow id="wv2#area3#page22p#gctu14p#oslte4p#nf5p" to="wv2#area3#act1p" automaticCoupling="true"/>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page22p#gctu14p#oslte8p" name="Invia selezionati">
+          <NavigationFlow id="wv2#area3#page22p#gctu14p#oslte8p#nf10p" to="wv2#area3#act2p" automaticCoupling="true"/>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv2#area3#page22p#gctu14p#oslte12p" name="Invia selezionati">
+          <NavigationFlow id="wv2#area3#page22p#gctu14p#oslte12p#nf15p" to="wv2#area3#act3p" automaticCoupling="true"/>
+        </OnSelectEvent>
       </Events>
       <DataFlow id="wv2#area3#page22p#gctu14p#df3j" to="wv2#area3#page22p#msg2j">
         <ParameterBinding id="wv2#area3#page22p#gctu14p#df3j#par8j" sourceParameter="wv2#prd1j" target="messages" name="lettura - Shown Messages"/>
@@ -182,7 +191,7 @@
       <Field id="wv2#area3#page22p#frm20p#fld64p" name="Mezzi" modifiable="true" type="boolean"/>
       <Field id="wv2#area3#page22p#frm20p#fld65p" name="Prodotti e Sostanze chimiche" modifiable="true" type="boolean"/>
     </Form>
-    <List gr:x="585" gr:y="445" id="wv2#area3#page22p#lst12p" checkable="false" distinct="false" name="Documenti richiesti" pageSize="15">
+    <List gr:x="585" gr:y="445" id="wv2#area3#page22p#lst12p" checkable="true" distinct="false" name="Documenti richiesti" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
       <ConditionalExpression id="wv2#area3#page22p#lst12p#sc18p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv2#area3#page22p#lst12p#sc18p#rcond8p" name="Fornitore" predicate="in" implied="false">
@@ -268,6 +277,12 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att127o"/>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
+      <DataFlow id="wv2#area3#page22p#lst12p#df1p" to="wv2#area3#act58p" gr:bendpoints="-189,322,176,-248">
+        <ParameterBinding id="wv2#area3#page22p#lst12p#df1p#par5p" source="checkedKeys" target="wv2#area3#act58p.PortaleSubappaltatoriDataservice$pdp137o" name="Checked Keys - oid"/>
+      </DataFlow>
+      <DataFlow id="wv2#area3#page22p#lst12p#df15p" to="wv2#area3#act2p" gr:bendpoints="-189,322,176,-248">
+        <ParameterBinding id="wv2#area3#page22p#lst12p#df15p#par33p" name="Checked Keys - oid" source="checkedKeys" target="wv2#area3#act2p.PortaleSubappaltatoriDataservice$pdp137o"/>
+      </DataFlow>
     </List>
     <List id="wv2#area3#page22p#lst15p" name="Storico documenti" gr:x="370" gr:y="565" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
@@ -496,7 +511,7 @@
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o" order="descending"/>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att115o" order="ascending"/>
     </List>
-    <List id="wv2#area3#page22p#lst34p" name="Documenti personale" gr:x="940" gr:y="605" checkable="false" distinct="false" pageSize="15">
+    <List id="wv2#area3#page22p#lst34p" name="Documenti personale" gr:x="940" gr:y="605" checkable="true" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
       <ConditionalExpression id="wv2#area3#page22p#lst34p#sc51p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv2#area3#page22p#lst34p#sc51p#rcond44p" name="Fornitore" predicate="in" implied="false">
@@ -566,6 +581,7 @@
             <ParameterBinding id="wv2#area3#page22p#lst34p#oslte251p#nf314p#par1009p" source="data._be_att99o" target="{wv2#area3#page22p#dpg31p#frm43p#fld154p}value" name="dataScadenza - Data scadenza"/>
             <ParameterBinding id="wv2#area3#page22p#lst34p#oslte251p#nf314p#par1010p" source="data._be_att24" target="{wv2#area3#page22p#dpg31p#frm43p#fld152p}value" name="descrizione - Descrizione"/>
             <ParameterBinding id="wv2#area3#page22p#lst34p#oslte251p#nf314p#par1011p" source="data._be_att22" target="{wv2#area3#page22p#dpg31p#frm43p#fld153p}value" name="oid - oid allegato"/>
+            <ParameterBinding id="wv2#area3#page22p#lst34p#oslte251p#nf314p#par4p" source="data._be_att88o" target="{wv2#area3#page22p#dpg31p#frm43p#fld158p}value" name="tipologia - Tipologia"/>
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
@@ -582,8 +598,14 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att127o"/>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
+      <DataFlow id="wv2#area3#page22p#lst34p#df2p" to="wv2#area3#act58p" gr:bendpoints="-404,246,316,-164">
+        <ParameterBinding id="wv2#area3#page22p#lst34p#df2p#par6p" source="checkedKeys" target="wv2#area3#act58p.PortaleSubappaltatoriDataservice$pdp137o" name="Checked Keys - oid"/>
+      </DataFlow>
+      <DataFlow id="wv2#area3#page22p#lst34p#df9p" to="wv2#area3#act1p" gr:bendpoints="-404,246,316,-164">
+        <ParameterBinding id="wv2#area3#page22p#lst34p#df9p#par21p" name="Checked Keys - oid" source="checkedKeys" target="wv2#area3#act1p.PortaleSubappaltatoriDataservice$pdp137o"/>
+      </DataFlow>
     </List>
-    <List id="wv2#area3#page22p#lst37p" name="Moduli" gr:x="1025" gr:y="840" checkable="false" distinct="false" pageSize="15">
+    <List id="wv2#area3#page22p#lst37p" name="Moduli" gr:x="1025" gr:y="840" checkable="true" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
       <ConditionalExpression id="wv2#area3#page22p#lst37p#sc55p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv2#area3#page22p#lst37p#sc55p#rcond51p" name="Fornitore" predicate="in" implied="false">
@@ -642,6 +664,12 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att119o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att121o"/>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
+      <DataFlow id="wv2#area3#page22p#lst37p#df3p" to="wv2#area3#act58p" gr:bendpoints="-405,110,385,-75">
+        <ParameterBinding id="wv2#area3#page22p#lst37p#df3p#par7p" source="checkedKeys" target="wv2#area3#act58p.PortaleSubappaltatoriDataservice$pdp137o" name="Checked Keys - oid"/>
+      </DataFlow>
+      <DataFlow id="wv2#area3#page22p#lst37p#df19p" to="wv2#area3#act3p" gr:bendpoints="-405,110,385,-75">
+        <ParameterBinding id="wv2#area3#page22p#lst37p#df19p#par44p" name="Checked Keys - oid" source="checkedKeys" target="wv2#area3#act3p.PortaleSubappaltatoriDataservice$pdp137o"/>
+      </DataFlow>
     </List>
     <List id="wv2#area3#page22p#lst44p" name="Documenti Condivisi" gr:x="1370" gr:y="800" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
@@ -928,9 +956,10 @@
   <DialogPage id="wv2#area3#page22p#dpg23p" name="Carica modulo" gr:x="1390" gr:y="615">
     <ViewComponents>
       <Form id="wv2#area3#page22p#dpg23p#frm36p" name="Allegato" gr:x="0" gr:y="0">
-        <Field id="wv2#area3#page22p#dpg23p#frm36p#fld118p" name="Documento" type="blob" modifiable="true" validationOrder="wv2#area3#page22p#dpg23p#frm36p#fld118p#mnd64p">
+        <Field id="wv2#area3#page22p#dpg23p#frm36p#fld118p" name="Documento" type="blob" modifiable="true" validationOrder="wv2#area3#page22p#dpg23p#frm36p#fld118p#mnd64p wv2#area3#page22p#dpg23p#frm36p#fld118p#vl3p">
           <VRules>
             <MandatoryValidationRule id="wv2#area3#page22p#dpg23p#frm36p#fld118p#mnd64p" name="Mandatory"/>
+            <ValueLengthValidationRule id="wv2#area3#page22p#dpg23p#frm36p#fld118p#vl3p" name="Value Length" predicate="max" value="12MB"/>
           </VRules>
         </Field>
         <Field id="wv2#area3#page22p#dpg23p#frm36p#fld119p" name="Descrizione" type="string" modifiable="true"/>
@@ -950,14 +979,18 @@
           </OnSelectEvent>
         </Events>
       </Form>
+      <Message id="wv2#area3#page22p#dpg23p#msg3p" name="Alert" gr:x="120" gr:y="0">
+        <Message xml:space="preserve">I formati consentiti sono .pdf .jpg .png .doc .docx. La dimensione massima del file &#232; 12MB</Message>
+      </Message>
     </ViewComponents>
   </DialogPage>
   <DialogPage id="wv2#area3#page22p#dpg31p" name="Carica documento" gr:x="1355" gr:y="190">
     <ViewComponents>
       <Form id="wv2#area3#page22p#dpg31p#frm43p" name="Allegato" gr:x="0" gr:y="0">
-        <Field id="wv2#area3#page22p#dpg31p#frm43p#fld151p" name="Documento" type="blob" modifiable="true" validationOrder="wv2#area3#page22p#dpg31p#frm43p#fld151p#mnd71p">
+        <Field id="wv2#area3#page22p#dpg31p#frm43p#fld151p" name="Documento" type="blob" modifiable="true" validationOrder="wv2#area3#page22p#dpg31p#frm43p#fld151p#mnd71p wv2#area3#page22p#dpg31p#frm43p#fld151p#vl1p">
           <VRules>
             <MandatoryValidationRule id="wv2#area3#page22p#dpg31p#frm43p#fld151p#mnd71p" name="Mandatory" predicate="eq" value="false"/>
+            <ValueLengthValidationRule id="wv2#area3#page22p#dpg31p#frm43p#fld151p#vl1p" name="Value Length" predicate="max" value="12MB"/>
           </VRules>
         </Field>
         <Field id="wv2#area3#page22p#dpg31p#frm43p#fld152p" name="Descrizione" type="string" modifiable="true"/>
@@ -976,6 +1009,9 @@
         </Events>
         <Field id="wv2#area3#page22p#dpg31p#frm43p#fld158p" type="string" modifiable="false" name="Tipologia"/>
       </Form>
+      <Message id="wv2#area3#page22p#dpg31p#msg2p" name="Alert" gr:x="125" gr:y="0">
+        <Message xml:space="preserve">I formati consentiti sono .pdf .jpg .png .doc .docx. La dimensione massima del file &#232; 12MB</Message>
+      </Message>
     </ViewComponents>
   </DialogPage>
 </Page>

@@ -22,7 +22,7 @@
   </wr-content>
   <wr-content for="site-intro">
     <div class="login-intro">
-      <div class="login-kicker">Portale fornitori</div>
+      <div class="login-kicker">Portale subappaltatori</div>
       <h1>Password dimenticata</h1>
       <p>Inserisci il tuo username. Ti invieremo un’email con le istruzioni per completare il recupero della password.</p>
     </div>

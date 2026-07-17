@@ -1,5 +1,6 @@
 <wr-page>
   <wr-content for="brand">
-    <wd-image staticImage="assets/PortaleSubappaltatoriStyle/logo-galli-italo.png"></wd-image>
+   <wd-image *ngIf="valueOf('/parameters/prd9p') === 1" staticImage="assets/PortaleSubappaltatoriStyle/logo-galli-italo-old.png"></wd-image>
+   <wd-image *ngIf="valueOf('/parameters/prd9p') === 2" staticImage="assets/PortaleSubappaltatoriStyle/socotis-logo.png"></wd-image>
   </wr-content>
 </wr-page>

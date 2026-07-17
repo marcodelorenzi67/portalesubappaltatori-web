@@ -1,6 +1,7 @@
 <wr-page>
   <wr-content for="brand">
-    <wd-image staticImage="assets/PortaleSubappaltatoriStyle/logo-galli-italo.png"></wd-image>
+    <wd-image *ngIf="valueOf('/parameters/prd8') === 1" staticImage="assets/PortaleSubappaltatoriStyle/logo-galli-italo-old.png"></wd-image>
+    <wd-image *ngIf="valueOf('/parameters/prd8') === 2" staticImage="assets/PortaleSubappaltatoriStyle/socotis-logo.png"></wd-image>
   </wr-content>
   <wr-content for="menu">
     <wd-menu menu="landmarks/area1 | landmarks/area4p | landmarks/area3/page24p | landmarks/area3/page18 | landmarks/area3/page25p | landmarks/area3/page29p | landmarks/area3/page30p" menuOrder="page24p page18 page25p page29p page30p area4p area1">

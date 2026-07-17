@@ -462,4 +462,73 @@
       <ErrorEvent id="wv2#area3#act109p#erre194p"/>
     </Events>
   </Action>
+  <Action id="wv2#area3#act1p" actionServiceRes="PortaleSubappaltatoriDataservice$ada26o" gr:x="1275" gr:y="2175" name="Invio massivo doc personale a fornitore">
+    <Events>
+      <SuccessEvent id="wv2#area3#act1p#scce1p">
+        <NavigationFlow id="wv2#area3#act1p#scce1p#nf1p" to="wv2#area3#page22p#lst12p">
+          <ParameterBinding id="wv2#area3#act1p#scce1p#nf1p#par8p" name="oid fornitore - Fornitore [oid]" target="wv2#area3#page22p#lst12p#sc18p#rcond8p._be_att6" sourceParameter="wv2#area3#page22p#prd13p"/>
+          <ParameterBinding id="wv2#area3#act1p#scce1p#nf1p#par9p" name="Tenant - Tenant [oid]" target="wv2#area3#page22p#lst12p#sc18p#rcond9p._be_att1" sourceParameter="wv2#prd8"/>
+        </NavigationFlow>
+        <DataFlow id="wv2#area3#act1p#scce1p#df4p" to="wv2#area3#page22p#lst34p">
+          <ParameterBinding id="wv2#area3#act1p#scce1p#df4p#par10p" name="oid fornitore - Fornitore [oid]" target="wv2#area3#page22p#lst34p#sc51p#rcond44p._be_att6" sourceParameter="wv2#area3#page22p#prd13p"/>
+          <ParameterBinding id="wv2#area3#act1p#scce1p#df4p#par11p" name="oid personale - personale [oid]" target="wv2#area3#page22p#lst34p#sc51p#rcond46p._be_att113o" sourceParameter="wv2#area3#page22p#prd15p"/>
+          <ParameterBinding id="wv2#area3#act1p#scce1p#df4p#par12p" name="Tenant - Tenant [oid]" target="wv2#area3#page22p#lst34p#sc51p#rcond45p._be_att1" sourceParameter="wv2#prd8"/>
+        </DataFlow>
+        <DataFlow id="wv2#area3#act1p#scce1p#df5p" to="wv2#area3#page22p#lst37p">
+          <ParameterBinding id="wv2#area3#act1p#scce1p#df5p#par13p" name="oid fornitore - Fornitore [oid]" target="wv2#area3#page22p#lst37p#sc55p#rcond51p._be_att6" sourceParameter="wv2#area3#page22p#prd13p"/>
+          <ParameterBinding id="wv2#area3#act1p#scce1p#df5p#par14p" name="Tenant - Tenant [oid]" target="wv2#area3#page22p#lst37p#sc55p#rcond52p._be_att1" sourceParameter="wv2#prd8"/>
+        </DataFlow>
+        <DataFlow id="wv2#area3#act1p#scce1p#df6p" to="wv2#area3#page22p#lst33p">
+          <ParameterBinding id="wv2#area3#act1p#scce1p#df6p#par15p" name="oid fornitore - fornitore [oid]" target="wv2#area3#page22p#lst33p#sc50p#rcond43p._be_att6" sourceParameter="wv2#area3#page22p#prd13p"/>
+        </DataFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area3#act1p#erre2p"/>
+    </Events>
+  </Action>
+  <Action id="wv2#area3#act2p" actionServiceRes="PortaleSubappaltatoriDataservice$ada26o" gr:x="965" gr:y="2190" name="Invio massivo doc sub a fornitore">
+    <Events>
+      <SuccessEvent id="wv2#area3#act2p#scce2p">
+        <NavigationFlow id="wv2#area3#act2p#scce2p#nf6p" to="wv2#area3#page22p#lst12p">
+          <ParameterBinding id="wv2#area3#act2p#scce2p#nf6p#par22p" name="oid fornitore - Fornitore [oid]" target="wv2#area3#page22p#lst12p#sc18p#rcond8p._be_att6" sourceParameter="wv2#area3#page22p#prd13p"/>
+          <ParameterBinding id="wv2#area3#act2p#scce2p#nf6p#par23p" name="Tenant - Tenant [oid]" target="wv2#area3#page22p#lst12p#sc18p#rcond9p._be_att1" sourceParameter="wv2#prd8"/>
+        </NavigationFlow>
+        <DataFlow id="wv2#area3#act2p#scce2p#df10p" to="wv2#area3#page22p#lst34p">
+          <ParameterBinding id="wv2#area3#act2p#scce2p#df10p#par24p" name="oid fornitore - Fornitore [oid]" target="wv2#area3#page22p#lst34p#sc51p#rcond44p._be_att6" sourceParameter="wv2#area3#page22p#prd13p"/>
+          <ParameterBinding id="wv2#area3#act2p#scce2p#df10p#par25p" name="oid personale - personale [oid]" target="wv2#area3#page22p#lst34p#sc51p#rcond46p._be_att113o" sourceParameter="wv2#area3#page22p#prd15p"/>
+          <ParameterBinding id="wv2#area3#act2p#scce2p#df10p#par26p" name="Tenant - Tenant [oid]" target="wv2#area3#page22p#lst34p#sc51p#rcond45p._be_att1" sourceParameter="wv2#prd8"/>
+        </DataFlow>
+        <DataFlow id="wv2#area3#act2p#scce2p#df11p" to="wv2#area3#page22p#lst37p">
+          <ParameterBinding id="wv2#area3#act2p#scce2p#df11p#par27p" name="oid fornitore - Fornitore [oid]" target="wv2#area3#page22p#lst37p#sc55p#rcond51p._be_att6" sourceParameter="wv2#area3#page22p#prd13p"/>
+          <ParameterBinding id="wv2#area3#act2p#scce2p#df11p#par28p" name="Tenant - Tenant [oid]" target="wv2#area3#page22p#lst37p#sc55p#rcond52p._be_att1" sourceParameter="wv2#prd8"/>
+        </DataFlow>
+        <DataFlow id="wv2#area3#act2p#scce2p#df12p" to="wv2#area3#page22p#lst33p">
+          <ParameterBinding id="wv2#area3#act2p#scce2p#df12p#par29p" name="oid fornitore - fornitore [oid]" target="wv2#area3#page22p#lst33p#sc50p#rcond43p._be_att6" sourceParameter="wv2#area3#page22p#prd13p"/>
+        </DataFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area3#act2p#erre4p"/>
+    </Events>
+  </Action>
+  <Action id="wv2#area3#act3p" actionServiceRes="PortaleSubappaltatoriDataservice$ada26o" gr:x="1570" gr:y="2180" name="Invio massivo moduli a fornitore">
+    <Events>
+      <SuccessEvent id="wv2#area3#act3p#scce3p">
+        <NavigationFlow id="wv2#area3#act3p#scce3p#nf11p" to="wv2#area3#page22p#lst12p">
+          <ParameterBinding id="wv2#area3#act3p#scce3p#nf11p#par36p" name="oid fornitore - Fornitore [oid]" target="wv2#area3#page22p#lst12p#sc18p#rcond8p._be_att6" sourceParameter="wv2#area3#page22p#prd13p"/>
+          <ParameterBinding id="wv2#area3#act3p#scce3p#nf11p#par37p" name="Tenant - Tenant [oid]" target="wv2#area3#page22p#lst12p#sc18p#rcond9p._be_att1" sourceParameter="wv2#prd8"/>
+        </NavigationFlow>
+        <DataFlow id="wv2#area3#act3p#scce3p#df16p" to="wv2#area3#page22p#lst34p">
+          <ParameterBinding id="wv2#area3#act3p#scce3p#df16p#par38p" name="oid fornitore - Fornitore [oid]" target="wv2#area3#page22p#lst34p#sc51p#rcond44p._be_att6" sourceParameter="wv2#area3#page22p#prd13p"/>
+          <ParameterBinding id="wv2#area3#act3p#scce3p#df16p#par39p" name="oid personale - personale [oid]" target="wv2#area3#page22p#lst34p#sc51p#rcond46p._be_att113o" sourceParameter="wv2#area3#page22p#prd15p"/>
+          <ParameterBinding id="wv2#area3#act3p#scce3p#df16p#par40p" name="Tenant - Tenant [oid]" target="wv2#area3#page22p#lst34p#sc51p#rcond45p._be_att1" sourceParameter="wv2#prd8"/>
+        </DataFlow>
+        <DataFlow id="wv2#area3#act3p#scce3p#df17p" to="wv2#area3#page22p#lst37p">
+          <ParameterBinding id="wv2#area3#act3p#scce3p#df17p#par41p" name="oid fornitore - Fornitore [oid]" target="wv2#area3#page22p#lst37p#sc55p#rcond51p._be_att6" sourceParameter="wv2#area3#page22p#prd13p"/>
+          <ParameterBinding id="wv2#area3#act3p#scce3p#df17p#par42p" name="Tenant - Tenant [oid]" target="wv2#area3#page22p#lst37p#sc55p#rcond52p._be_att1" sourceParameter="wv2#prd8"/>
+        </DataFlow>
+        <DataFlow id="wv2#area3#act3p#scce3p#df18p" to="wv2#area3#page22p#lst33p">
+          <ParameterBinding id="wv2#area3#act3p#scce3p#df18p#par43p" name="oid fornitore - fornitore [oid]" target="wv2#area3#page22p#lst33p#sc50p#rcond43p._be_att6" sourceParameter="wv2#area3#page22p#prd13p"/>
+        </DataFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv2#area3#act3p#erre6p"/>
+    </Events>
+  </Action>
 </Area>

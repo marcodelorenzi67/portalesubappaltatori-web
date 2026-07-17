@@ -98,6 +98,7 @@
           <NavigationFlow id="wv3#page9#lst14p#oslte70p#nf104p" to="wv3#page9#dpg8p#frm22p">
             <ParameterBinding id="wv3#page9#lst14p#oslte70p#nf104p#par295p" source="data._be_att22" target="{wv3#page9#dpg8p#frm22p#fld59p}value" name="oid - oid allegato"/>
             <ParameterBinding id="wv3#page9#lst14p#oslte70p#nf104p#par612p" sourceValue="false" target="{wv3#page9#dpg8p#frm22p#fld123p}value" name="&quot;false&quot; - modulo"/>
+            <ParameterBinding id="wv3#page9#lst14p#oslte70p#nf104p#par1p" source="data._be_att88o" target="{wv3#page9#dpg8p#frm22p#fld1p}value" name="tipologia - Tipologia"/>
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
@@ -164,6 +165,7 @@
           <NavigationFlow id="wv3#page9#lst30p#oslte143p#nf178p" to="wv3#page9#dpg8p#frm22p">
             <ParameterBinding id="wv3#page9#lst30p#oslte143p#nf178p#par521p" source="data._be_att22" target="{wv3#page9#dpg8p#frm22p#fld59p}value" name="oid - oid allegato"/>
             <ParameterBinding id="wv3#page9#lst30p#oslte143p#nf178p#par613p" sourceValue="false" target="{wv3#page9#dpg8p#frm22p#fld123p}value" name="&quot;false&quot; - modulo"/>
+            <ParameterBinding id="wv3#page9#lst30p#oslte143p#nf178p#par3p" source="data._be_att88o" target="{wv3#page9#dpg8p#frm22p#fld1p}value" name="tipologia - Tipologia"/>
           </NavigationFlow>
         </OnSelectEvent>
         <OnSelectEvent id="wv3#page9#lst30p#oslte144p" name="Elimina" validate="true">
@@ -247,6 +249,7 @@
           <NavigationFlow id="wv3#page9#lst36p#oslte160p#nf196p" to="wv3#page9#dpg8p#frm22p">
             <ParameterBinding id="wv3#page9#lst36p#oslte160p#nf196p#par564p" name="oid - oid allegato" source="data._be_att22" target="{wv3#page9#dpg8p#frm22p#fld59p}value"/>
             <ParameterBinding id="wv3#page9#lst36p#oslte160p#nf196p#par614p" sourceValue="false" target="{wv3#page9#dpg8p#frm22p#fld123p}value" name="&quot;false&quot; - modulo"/>
+            <ParameterBinding id="wv3#page9#lst36p#oslte160p#nf196p#par2p" source="data._be_att88o" target="{wv3#page9#dpg8p#frm22p#fld1p}value" name="tipologia - Tipologia"/>
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
@@ -329,9 +332,10 @@
   <DialogPage gr:x="580" gr:y="125" id="wv3#page9#dpg8p" name="Carica documento">
     <ViewComponents>
       <Form gr:x="0" gr:y="0" id="wv3#page9#dpg8p#frm22p" name="Allegato">
-        <Field id="wv3#page9#dpg8p#frm22p#fld57p" type="blob" modifiable="true" name="Documento" validationOrder="wv3#page9#dpg8p#frm22p#fld57p#mnd45p">
+        <Field id="wv3#page9#dpg8p#frm22p#fld57p" type="blob" modifiable="true" name="Documento" validationOrder="wv3#page9#dpg8p#frm22p#fld57p#mnd45p wv3#page9#dpg8p#frm22p#fld57p#vl4p">
           <VRules>
             <MandatoryValidationRule id="wv3#page9#dpg8p#frm22p#fld57p#mnd45p" name="Mandatory" companionElement="wv3#page9#dpg8p#frm22p#fld123p" predicate="eq" value="false"/>
+            <ValueLengthValidationRule id="wv3#page9#dpg8p#frm22p#fld57p#vl4p" name="Value Length" predicate="max" value="12MB"/>
           </VRules>
         </Field>
         <Field id="wv3#page9#dpg8p#frm22p#fld58p" type="string" modifiable="true" name="Descrizione"/>
@@ -351,13 +355,18 @@
         </Events>
         <Field id="wv3#page9#dpg8p#frm22p#fld81p" type="date" modifiable="true" name="Data scadenza"/>
         <Field id="wv3#page9#dpg8p#frm22p#fld123p" type="boolean" modifiable="true" name="modulo"/>
-        <Field id="wv3#page9#dpg8p#frm22p#fld124p" name="Documento aggiuntivo" type="blob" modifiable="true" validationOrder="wv3#page9#dpg8p#frm22p#fld124p#mnd65p">
+        <Field id="wv3#page9#dpg8p#frm22p#fld124p" name="Documento aggiuntivo" type="blob" modifiable="true" validationOrder="wv3#page9#dpg8p#frm22p#fld124p#mnd65p wv3#page9#dpg8p#frm22p#fld124p#vl5p">
           <VRules>
             <MandatoryValidationRule id="wv3#page9#dpg8p#frm22p#fld124p#mnd65p" name="Mandatory" companionElement="wv3#page9#dpg8p#frm22p#fld123p" predicate="eq" value="true"/>
+            <ValueLengthValidationRule id="wv3#page9#dpg8p#frm22p#fld124p#vl5p" name="Value Length" predicate="max" value="12MB"/>
           </VRules>
         </Field>
         <Field id="wv3#page9#dpg8p#frm22p#fld126p" name="Note" type="string" modifiable="true"/>
+        <Field id="wv3#page9#dpg8p#frm22p#fld1p" name="Tipologia" type="string" modifiable="false"/>
       </Form>
+      <Message gr:x="140" gr:y="5" id="wv3#page9#dpg8p#msg1p" name="Alert">
+        <Message xml:space="preserve">I formati consentiti sono .pdf .jpg .png .doc .docx. La dimensione massima del file &#232; 12MB</Message>
+      </Message>
     </ViewComponents>
   </DialogPage>
   <DialogPage id="wv3#page9#dpg17p" name="Documenti Comunicazione" gr:x="230" gr:y="320">
