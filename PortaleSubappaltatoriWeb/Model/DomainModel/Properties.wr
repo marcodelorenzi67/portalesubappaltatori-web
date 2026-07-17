@@ -617,6 +617,7 @@
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp162o" refModelId="mpkg5o#ada23o#ipd33o#pdp162o" pid="PortaleSubappaltatoriDataservice" serverProperty="attrezzature" name="Attrezzature" type="boolean" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp163o" refModelId="mpkg5o#ada23o#ipd33o#pdp163o" pid="PortaleSubappaltatoriDataservice" serverProperty="prodottiESostanzeChimiche" name="Prodotti e Sostanze chimiche" type="boolean" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp164o" refModelId="mpkg5o#ada23o#ipd33o#pdp164o" pid="PortaleSubappaltatoriDataservice" serverProperty="mezzi" name="Mezzi" type="boolean" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp1o" refModelId="mpkg5o#ada23o#ipd33o#pdp1o" pid="PortaleSubappaltatoriDataservice" serverProperty="alias" name="Alias" type="string" location="body" cardinality="1"/>
     </srs:ActionService>
     <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada24o" refModelId="mpkg5o#ada24o" pid="PortaleSubappaltatoriDataservice" name="Crea documenti per fornitore" defaultSuccessPortDefinition="mpkg5o#ada24o#spd35o" defaultErrorPortDefinition="mpkg5o#ada24o#epd35o" serverResourceName="actions/creaDocumentiPerFornitore" method="create">
       <srs:ServiceScope name="Amministratore" method="create"/>

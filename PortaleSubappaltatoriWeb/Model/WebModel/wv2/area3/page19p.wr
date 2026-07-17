@@ -11,9 +11,10 @@
           <MandatoryValidationRule id="wv2#area3#page19p#frm14p#fld34p#mnd20p" name="Mandatory"/>
         </VRules>
       </Field>
-      <Field id="wv2#area3#page19p#frm14p#fld35p" modifiable="true" name="Partita IVA" type="string" validationOrder="wv2#area3#page19p#frm14p#fld35p#mnd21p">
+      <Field id="wv2#area3#page19p#frm14p#fld35p" modifiable="true" name="Partita IVA" type="string" validationOrder="wv2#area3#page19p#frm14p#fld35p#mnd21p wv2#area3#page19p#frm14p#fld35p#regex1p">
         <VRules>
           <MandatoryValidationRule id="wv2#area3#page19p#frm14p#fld35p#mnd21p" name="Mandatory"/>
+          <RegularExpressionValidationRule id="wv2#area3#page19p#frm14p#fld35p#regex1p" name="Regular Expression" regex="^[0-9]{11}$"/>
         </VRules>
       </Field>
       <Field id="wv2#area3#page19p#frm14p#fld36p" modifiable="true" name="Cognome Referente" type="string" validationOrder="wv2#area3#page19p#frm14p#fld36p#mnd24p">

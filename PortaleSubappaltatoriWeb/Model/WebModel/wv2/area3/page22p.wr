@@ -13,6 +13,7 @@
         <ParameterBinding id="wv2#area3#page22p#dtl6p#df35p#par340p" source="data._be_att79o" target="{wv2#area3#page22p#frm20p#fld63p}value" name="attrezzature - Attrezzature"/>
         <ParameterBinding id="wv2#area3#page22p#dtl6p#df35p#par341p" source="data._be_att80o" target="{wv2#area3#page22p#frm20p#fld64p}value" name="mezzi - Mezzi"/>
         <ParameterBinding id="wv2#area3#page22p#dtl6p#df35p#par342p" source="data._be_att82o" target="{wv2#area3#page22p#frm20p#fld65p}value" name="prodottiESostanzeChimiche - Prodotti e Sostanze chimiche"/>
+        <ParameterBinding id="wv2#area3#page22p#dtl6p#df35p#par50p" source="data._be_att182o" target="{wv2#area3#page22p#frm20p#fld2p}value" name="alias - Alias"/>
       </DataFlow>
       <DataFlow id="wv2#area3#page22p#dtl6p#df39p" to="wv2#area3#page22p#lst12p" gr:bendpoints="214,158,-386,-117">
         <ParameterBinding id="wv2#area3#page22p#dtl6p#df39p#par260p" source="data._be_att6" target="wv2#area3#page22p#lst12p#sc18p#rcond8p._be_att6" name="oid - Fornitore [oid]"/>
@@ -53,6 +54,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att82o"/>
       <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role67o.PortaleSubappaltatoriDataservice$att130o" alias="aziendaOid"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att181o"/>
+      <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att182o"/>
     </Details>
     <List id="wv2#area3#page22p#lst11p" gr:x="55" gr:y="350" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls14o"/>
@@ -157,9 +159,10 @@
           <MandatoryValidationRule id="wv2#area3#page22p#frm20p#fld50p#mnd39p" name="Mandatory"/>
         </VRules>
       </Field>
-      <Field id="wv2#area3#page22p#frm20p#fld51p" name="Partita IVA" modifiable="true" type="string" validationOrder="wv2#area3#page22p#frm20p#fld51p#mnd40p">
+      <Field id="wv2#area3#page22p#frm20p#fld51p" name="Partita IVA" modifiable="true" type="string" validationOrder="wv2#area3#page22p#frm20p#fld51p#mnd40p wv2#area3#page22p#frm20p#fld51p#regex2p">
         <VRules>
           <MandatoryValidationRule id="wv2#area3#page22p#frm20p#fld51p#mnd40p" name="Mandatory"/>
+          <RegularExpressionValidationRule id="wv2#area3#page22p#frm20p#fld51p#regex2p" name="Regular Expression" regex="^[0-9]{11}$"/>
         </VRules>
       </Field>
       <SelectionField id="wv2#area3#page22p#frm20p#sfld15p" name="Tipologia Azienda" optionsDistinct="false" emptyOption="true" validationOrder="wv2#area3#page22p#frm20p#sfld15p#mnd43p">
@@ -184,12 +187,14 @@
             <ParameterBinding id="wv2#area3#page22p#frm20p#oslte54p#nf83p#par337p" source="{wv2#area3#page22p#frm20p#fld63p}value" target="wv2#area3#act36p.PortaleSubappaltatoriDataservice$pdp162o" name="Attrezzature - Attrezzature"/>
             <ParameterBinding id="wv2#area3#page22p#frm20p#oslte54p#nf83p#par338p" source="{wv2#area3#page22p#frm20p#fld64p}value" target="wv2#area3#act36p.PortaleSubappaltatoriDataservice$pdp164o" name="Mezzi - Mezzi"/>
             <ParameterBinding id="wv2#area3#page22p#frm20p#oslte54p#nf83p#par339p" source="{wv2#area3#page22p#frm20p#fld65p}value" target="wv2#area3#act36p.PortaleSubappaltatoriDataservice$pdp163o" name="Prodotti e Sostanze chimiche - Prodotti e Sostanze chimiche"/>
+            <ParameterBinding id="wv2#area3#page22p#frm20p#oslte54p#nf83p#par51p" source="{wv2#area3#page22p#frm20p#fld2p}value" target="wv2#area3#act36p.PortaleSubappaltatoriDataservice$pdp1o" name="Alias - Alias"/>
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
       <Field id="wv2#area3#page22p#frm20p#fld63p" name="Attrezzature" modifiable="true" type="boolean"/>
       <Field id="wv2#area3#page22p#frm20p#fld64p" name="Mezzi" modifiable="true" type="boolean"/>
       <Field id="wv2#area3#page22p#frm20p#fld65p" name="Prodotti e Sostanze chimiche" modifiable="true" type="boolean"/>
+      <Field id="wv2#area3#page22p#frm20p#fld2p" type="string" modifiable="true" name="Alias"/>
     </Form>
     <List gr:x="585" gr:y="445" id="wv2#area3#page22p#lst12p" checkable="true" distinct="false" name="Documenti richiesti" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>

@@ -75,6 +75,27 @@
                               </wd-row>
                               <wd-row>
                                 <wd-cell [width]="3">
+                                  <span>
+                                    <span class="header">
+                                      {{ labelOf('main/dtl6p/data/_be_att182o') | wrLocalize }}
+                                    </span>
+                                    <span class="value">
+                                      {{ valueOf('main/dtl6p/data/_be_att182o') }}
+                                    </span>
+                                  </span>
+                                </wd-cell>
+                                <wd-cell [width]="3">
+                                  
+                                </wd-cell>
+                                <wd-cell [width]="3">
+                                  
+                                </wd-cell>
+                                <wd-cell [width]="3">
+                                  
+                                </wd-cell>
+                              </wd-row>
+                              <wd-row>
+                                <wd-cell [width]="3">
                                   <wd-button context="main/gctu14p/oslte47p" iconText="border_color" color="accent" iconPosition="left" *ngIf="valueOf('/main/msg2j/messages') &amp;&amp; valueOf('/main/msg2j/messages')[0] != 'true'" [visible]="valueOf('accessible') &amp;&amp; !valueOf('/parameters/prd1j') &amp;&amp; valueOf('/main/dtl6p/data/_be_att181o') === valueOf('/parameters/prd8')"></wd-button>
                                 </wd-cell>
                               </wd-row>
@@ -195,13 +216,16 @@
                                 </wd-cell>
                               </wd-row>
                               <wd-row>
-                                <wd-cell [width]="4">
+                                <wd-cell [width]="3">
                                   <wd-input appearance="outline" context="main/frm20p/fld50p"></wd-input>
                                 </wd-cell>
-                                <wd-cell [width]="4">
+                                <wd-cell [width]="3">
+                                  <wd-input context="main/frm20p/fld2p" appearance="outline"></wd-input>
+                                </wd-cell>
+                                <wd-cell [width]="3">
                                   <wd-input context="main/frm20p/fld51p" appearance="outline"></wd-input>
                                 </wd-cell>
-                                <wd-cell [width]="4">
+                                <wd-cell [width]="3">
                                   <wd-select context="main/frm20p/sfld15p" appearance="outline"></wd-select>
                                 </wd-cell>
                               </wd-row>

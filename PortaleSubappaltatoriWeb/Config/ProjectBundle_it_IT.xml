@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle>
+  <Entry key="alias">Alias</Entry>
   <Entry key="Are you sure you want to do this?">Sei sicuro di continuare?</Entry>
   <Entry key="attivazioneAccount.KO">Errore durante l'attivazione account, riprovare!</Entry>
   <Entry key="attivazioneAccount.OK">Utenza attivata con successo!</Entry>
