@@ -507,9 +507,6 @@
     <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada9" refModelId="mpkg3#ada9" pid="PortaleSubappaltatoriDataservice" name="Invia OTP" defaultSuccessPortDefinition="mpkg3#ada9#spd15" defaultErrorPortDefinition="mpkg3#ada9#epd15" serverResourceName="actions/inviaOTP" method="create">
       <srs:ServiceScope anonymous="true" method="create"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp41" refModelId="mpkg3#ada9#ipd15#pdp41" pid="PortaleSubappaltatoriDataservice" serverProperty="userID" name="userID" type="string" location="body" cardinality="1"/>
-      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp42" refModelId="mpkg3#ada9#ipd15#pdp42" pid="PortaleSubappaltatoriDataservice" serverProperty="password" name="password" type="string" location="body" cardinality="1"/>
-      <srs:Output ref="PortaleSubappaltatoriDataservice$pdp44" refModelId="mpkg3#ada9#spd15#pdp44" pid="PortaleSubappaltatoriDataservice" serverProperty="userID" name="userID" type="string" location="body" cardinality="1"/>
-      <srs:Output ref="PortaleSubappaltatoriDataservice$pdp45" refModelId="mpkg3#ada9#spd15#pdp45" pid="PortaleSubappaltatoriDataservice" serverProperty="password" name="password" type="string" location="body" cardinality="1"/>
     </srs:ActionService>
     <srs:ActionService ref="PortaleSubappaltatoriDataservice$adf2" refModelId="mpkg3#adf2" pid="PortaleSubappaltatoriDataservice" name="Get utente invitato" type="read" defaultSuccessPortDefinition="mpkg3#adf2#spd5" defaultErrorPortDefinition="mpkg3#adf2#epd5" serverResourceName="actions/getUtenteInvitato" method="read">
       <srs:ServiceScope anonymous="true" method="read"/>
@@ -850,6 +847,11 @@
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp213o" refModelId="mpkg6o#ad6o#ipd54o#pdp213o" pid="PortaleSubappaltatoriDataservice" serverProperty="oid" name="oid" type="integer" location="body" cardinality="1"/>
       <srs:Input ref="PortaleSubappaltatoriDataservice$pdp214o" refModelId="mpkg6o#ad6o#ipd54o#pdp214o" pid="PortaleSubappaltatoriDataservice" serverProperty="fornitore" name="fornitore" type="integer" location="body" cardinality="1"/>
       <srs:Output ref="PortaleSubappaltatoriDataservice$pdp215o" refModelId="mpkg6o#ad6o#spd54o#pdp215o" pid="PortaleSubappaltatoriDataservice" serverProperty="fornitore" name="fornitore" type="integer" location="body" cardinality="1"/>
+    </srs:ActionService>
+    <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada1o" refModelId="mpkg6o#ada1o" pid="PortaleSubappaltatoriDataservice" name="Elimina documento fornitore" defaultSuccessPortDefinition="mpkg6o#ada1o#spd1o" defaultErrorPortDefinition="mpkg6o#ada1o#epd1o" serverResourceName="actions/eliminaDocumentoFornitore" method="create">
+      <srs:ServiceScope name="Fornitore" method="create"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp2o" refModelId="mpkg6o#ada1o#ipd1o#pdp2o" pid="PortaleSubappaltatoriDataservice" serverProperty="fornitore" name="fornitore" type="integer" location="body" cardinality="1"/>
+      <srs:Input ref="PortaleSubappaltatoriDataservice$pdp3o" refModelId="mpkg6o#ada1o#ipd1o#pdp3o" pid="PortaleSubappaltatoriDataservice" serverProperty="oidDocumento" name="oid documento" type="integer" location="body" cardinality="1"/>
     </srs:ActionService>
     <srs:ActionService ref="PortaleSubappaltatoriDataservice$ada21o" refModelId="mpkg6o#ada21o" pid="PortaleSubappaltatoriDataservice" name="Invia comunicazione" defaultSuccessPortDefinition="mpkg6o#ada21o#spd30o" defaultErrorPortDefinition="mpkg6o#ada21o#epd30o" serverResourceName="actions/inviaComunicazione" method="create">
       <srs:ServiceScope name="Fornitore" method="create"/>

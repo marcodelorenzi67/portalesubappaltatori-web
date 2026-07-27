@@ -278,7 +278,7 @@
                             {{ valueOf('.', row) }}
                           </wr-content>
                           <wr-content for="header-actions">
-                            <wd-button context="main/gctu14p/oslte56p" color="success" iconText="add"></wd-button>
+                            <wd-button context="main/gctu14p/oslte56p" color="success" iconText="add" [visible]="valueOf('accessible') &amp;&amp; !valueOf('/parameters/prd1j')"></wd-button>
                             <wd-button context="main/gctu14p/oslte8p" color="primary" iconText="send" [confirm]="true"></wd-button>
                             <wd-button context="main/gctu14p/oslte201p" color="warning" iconText="compare_arrows" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/dtl13p/data/_be_pdp263o')"></wd-button>
                           </wr-content>
@@ -315,7 +315,7 @@
                             <wd-button variant="mat-icon-button" color="primary" iconText="info_outline"></wd-button>
                           </wr-content>
                           <wr-content for="event[oslte174p]">
-                            <wd-button variant="mat-icon-button" color="primary" iconText="backspace" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst12p/data/statoallegatoCodice', row) === 'A' &amp;&amp; !valueOf('/parameters/prd1j')"></wd-button>
+                            <wd-button variant="mat-icon-button" color="primary" iconText="backspace" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst12p/data/statoallegatoCodice', row) === 'A' &amp;&amp; !valueOf('/parameters/prd1j')" [confirm]="false"></wd-button>
                           </wr-content>
                           <wr-content for="event[oslte178p]">
                             <wd-button variant="mat-icon-button" color="primary" iconText="account_balance" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst12p/data/statoallegatoCodice', row) === 'S' &amp;&amp; !valueOf('/main/lst12p/data/_be_att127o', row)" [confirm]="true"></wd-button>
@@ -324,7 +324,7 @@
                             <wd-button variant="mat-icon-button" color="primary" iconText="mail_outline" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst12p/data/statoallegatoCodice', row) === 'I'"></wd-button>
                           </wr-content>
                           <wr-content for="event[oslte250p]">
-                            <wd-button variant="mat-icon-button" color="accent" iconText="description" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst12p/data/statoallegatoCodice', row) === 'B'"></wd-button>
+                            <wd-button variant="mat-icon-button" color="accent" iconText="description" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst12p/data/statoallegatoCodice', row) === 'B' &amp;&amp; !valueOf('/parameters/prd1j')"></wd-button>
                           </wr-content>
                         </wd-data-grid>
                       </wd-cell>
@@ -462,7 +462,7 @@
                       {{ labelOf('.') | wrLocalize }}
                     </wr-content>
                     <wr-content for="event[oslte176p]">
-                      <wd-button variant="mat-icon-button" color="primary" iconText="backspace" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst32p/data/statoallegatoCodice', row) === 'A' &amp;&amp; !valueOf('/parameters/prd1j')"></wd-button>
+                      <wd-button variant="mat-icon-button" color="primary" iconText="backspace" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst32p/data/statoallegatoCodice', row) === 'A' &amp;&amp; !valueOf('/parameters/prd1j')" [confirm]="false"></wd-button>
                     </wr-content>
                     <wr-content for="event[oslte179p]">
                       <wd-button variant="mat-icon-button" color="primary" iconText="account_balance" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst32p/data/statoallegatoCodice', row) === 'S' &amp;&amp; !valueOf('/main/lst32p/data/_be_att127o', row)" [confirm]="true"></wd-button>
@@ -499,7 +499,7 @@
                             {{ labelOf('.') | wrLocalize }}
                           </wr-content>
                           <wr-content for="event[oslte155p]">
-                            <wd-button variant="mat-icon-button" color="primary" iconText="create" [visible]="valueOf('accessible') &amp;&amp; !valueOf('/parameters/prd1j') &amp;&amp; valueOf('/main/dtl6p/data/_be_att181o') === valueOf('/parameters/prd8')"></wd-button>
+                            <wd-button variant="mat-icon-button" color="primary" iconText="create" [visible]="valueOf('accessible') &amp;&amp; !valueOf('/parameters/prd1j') &amp;&amp; valueOf('/main/dtl6p/data/_be_att181o') === valueOf('/parameters/prd8') && !valueOf('/main/dtl6p/data/aziendaOid')"></wd-button>
                           </wr-content>
                           <wr-content for="event[oslte153p]">
                             <wd-button variant="mat-icon-button" color="primary" iconText="format_list_bulleted"></wd-button>
@@ -539,7 +539,7 @@
                             {{ labelOf('.') | wrLocalize }}
                           </wr-content>
                           <wr-content for="event[oslte155p]">
-                            <wd-button variant="mat-icon-button" color="primary" iconText="create" [visible]="valueOf('accessible') &amp;&amp; !valueOf('/parameters/prd1j') &amp;&amp; valueOf('/main/dtl6p/data/_be_att181o') === valueOf('/parameters/prd8')"></wd-button>
+                            <wd-button variant="mat-icon-button" color="primary" iconText="create" [visible]="valueOf('accessible') &amp;&amp; !valueOf('/parameters/prd1j') &amp;&amp; valueOf('/main/dtl6p/data/_be_att181o') === valueOf('/parameters/prd8') &amp;&amp; !valueOf('/parameters/prd19p') &amp;&amp; !valueOf('/main/dtl6p/data/aziendaOid')"></wd-button>
                           </wr-content>
                           <wr-content for="event[oslte153p]">
                             <wd-button variant="mat-icon-button" color="primary" iconText="format_list_bulleted"></wd-button>
@@ -626,7 +626,7 @@
                             <wd-button variant="mat-icon-button" color="primary" iconText="info_outline"></wd-button>
                           </wr-content>
                           <wr-content for="event[oslte177p]">
-                            <wd-button variant="mat-icon-button" color="primary" iconText="backspace" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst34p/data/statoallegatoCodice', row) === 'A' &amp;&amp; !valueOf('/parameters/prd1j')"></wd-button>
+                            <wd-button variant="mat-icon-button" color="primary" iconText="backspace" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst34p/data/statoallegatoCodice', row) === 'A' &amp;&amp; !valueOf('/parameters/prd1j')" [confirm]="false"></wd-button>
                           </wr-content>
                           <wr-content for="event[oslte180p]">
                             <wd-button variant="mat-icon-button" color="primary" iconText="account_balance" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst34p/data/statoallegatoCodice', row) === 'S' &amp;&amp; !valueOf('/main/lst34p/data/_be_att127o', row)" [confirm]="true"></wd-button>

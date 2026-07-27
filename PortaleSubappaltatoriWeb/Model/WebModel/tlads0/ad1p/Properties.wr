@@ -1,0 +1,27 @@
+<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ad1p" name="Invia OTP client" defaultSuccessPortDefinition="tlads0#ad1p#spd1p" defaultErrorPortDefinition="tlads0#ad1p#epd1p">
+  <Operations/>
+  <InputPortDefinition id="tlads0#ad1p#ipd1p" gr:x="0" gr:y="30">
+    <SuccessFlow id="tlads0#ad1p#ipd1p#sf1p" to="tlads0#ad1p#act5p">
+      <ParameterBinding id="tlads0#ad1p#ipd1p#sf1p#par54p" source="tlads0#ad1p#ipd1p#pdp3p" target="tlads0#ad1p#act5p.PortaleSubappaltatoriDataservice$pdp41" name="userID - userID"/>
+    </SuccessFlow>
+    <DataFlow id="tlads0#ad1p#ipd1p#df28p" to="tlads0#ad1p#spd1p">
+      <ParameterBinding id="tlads0#ad1p#ipd1p#df28p#par55p" source="tlads0#ad1p#ipd1p#pdp4p" target="tlads0#ad1p#spd1p#pdp1p" name="password - password"/>
+      <ParameterBinding id="tlads0#ad1p#ipd1p#df28p#par56p" source="tlads0#ad1p#ipd1p#pdp3p" target="tlads0#ad1p#spd1p#pdp2p" name="userID - userID"/>
+    </DataFlow>
+    <PortDefinitionParameter id="tlads0#ad1p#ipd1p#pdp3p" array="false" name="userID"/>
+    <PortDefinitionParameter id="tlads0#ad1p#ipd1p#pdp4p" array="false" name="password"/>
+  </InputPortDefinition>
+  <SuccessPortDefinition id="tlads0#ad1p#spd1p" name="Success Port" gr:x="0" gr:y="30">
+    <PortDefinitionParameter id="tlads0#ad1p#spd1p#pdp1p" array="false" name="password"/>
+    <PortDefinitionParameter id="tlads0#ad1p#spd1p#pdp2p" array="false" name="userID"/>
+  </SuccessPortDefinition>
+  <ErrorPortDefinition id="tlads0#ad1p#epd1p" name="Error Port" gr:x="0" gr:y="300"/>
+  <Action id="tlads0#ad1p#act5p" gr:x="420" gr:y="95" actionServiceRes="PortaleSubappaltatoriDataservice$ada9">
+    <Events>
+      <SuccessEvent id="tlads0#ad1p#act5p#scce6p">
+        <SuccessFlow id="tlads0#ad1p#act5p#scce6p#sf2p" to="tlads0#ad1p#spd1p" automaticCoupling="true"/>
+      </SuccessEvent>
+      <ErrorEvent id="tlads0#ad1p#act5p#erre9p"/>
+    </Events>
+  </Action>
+</ActionDefinition>

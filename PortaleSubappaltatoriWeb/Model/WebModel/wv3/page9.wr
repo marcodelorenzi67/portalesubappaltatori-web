@@ -101,6 +101,12 @@
             <ParameterBinding id="wv3#page9#lst14p#oslte70p#nf104p#par1p" source="data._be_att88o" target="{wv3#page9#dpg8p#frm22p#fld1p}value" name="tipologia - Tipologia"/>
           </NavigationFlow>
         </OnSelectEvent>
+        <OnSelectEvent id="wv3#page9#lst14p#oslte13p" name="Elimina documento" validate="true">
+          <NavigationFlow id="wv3#page9#lst14p#oslte13p#nf18p" to="wv3#act6p">
+            <ParameterBinding id="wv3#page9#lst14p#oslte13p#nf18p#par66p" sourceParameter="wv3#prd10p" target="wv3#act6p.PortaleSubappaltatoriDataservice$pdp2o" name="oid Fornitore - fornitore"/>
+            <ParameterBinding id="wv3#page9#lst14p#oslte13p#nf18p#par67p" source="data._be_att22" target="wv3#act6p.PortaleSubappaltatoriDataservice$pdp3o" name="oid - oid documento"/>
+          </NavigationFlow>
+        </OnSelectEvent>
       </Events>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att23"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att24"/>
@@ -250,6 +256,12 @@
             <ParameterBinding id="wv3#page9#lst36p#oslte160p#nf196p#par564p" name="oid - oid allegato" source="data._be_att22" target="{wv3#page9#dpg8p#frm22p#fld59p}value"/>
             <ParameterBinding id="wv3#page9#lst36p#oslte160p#nf196p#par614p" sourceValue="false" target="{wv3#page9#dpg8p#frm22p#fld123p}value" name="&quot;false&quot; - modulo"/>
             <ParameterBinding id="wv3#page9#lst36p#oslte160p#nf196p#par2p" source="data._be_att88o" target="{wv3#page9#dpg8p#frm22p#fld1p}value" name="tipologia - Tipologia"/>
+          </NavigationFlow>
+        </OnSelectEvent>
+        <OnSelectEvent id="wv3#page9#lst36p#oslte14p" name="Elimina documento" validate="true">
+          <NavigationFlow id="wv3#page9#lst36p#oslte14p#nf20p" to="wv3#act6p">
+            <ParameterBinding id="wv3#page9#lst36p#oslte14p#nf20p#par68p" sourceParameter="wv3#prd10p" target="wv3#act6p.PortaleSubappaltatoriDataservice$pdp2o" name="oid Fornitore - fornitore"/>
+            <ParameterBinding id="wv3#page9#lst36p#oslte14p#nf20p#par69p" source="data._be_att22" target="wv3#act6p.PortaleSubappaltatoriDataservice$pdp3o" name="oid - oid documento"/>
           </NavigationFlow>
         </OnSelectEvent>
       </Events>

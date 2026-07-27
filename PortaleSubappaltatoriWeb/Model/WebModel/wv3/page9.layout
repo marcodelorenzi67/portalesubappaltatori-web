@@ -10,7 +10,7 @@
                   <wd-grid>
                     <wd-row>
                       <wd-cell [width]="12">
-                        <wd-data-grid elevation="0" cols="main/lst14p/data/_be_att23 | main/lst14p/data/_be_att24 | main/lst14p/data/_be_att88o | main/lst14p/data/_be_att89o | main/lst14p/data/_be_att87o | main/lst14p/data/_be_att99o" [rows]="valueOf('main/lst14p/data')" title="main/lst14p" events="main/lst14p/data/oslte70p" [useExcelLikeFilter]="true" paginator="main/lst14p/paging" colsOrder="_be_att23 _be_att24 _be_att99o _be_att88o _be_att89o _be_att87o">
+                        <wd-data-grid elevation="0" cols="main/lst14p/data/_be_att23 | main/lst14p/data/_be_att24 | main/lst14p/data/_be_att88o | main/lst14p/data/_be_att89o | main/lst14p/data/_be_att87o | main/lst14p/data/_be_att99o" [rows]="valueOf('main/lst14p/data')" title="main/lst14p" events="main/lst14p/data/oslte70p | main/lst14p/data/oslte13p" [useExcelLikeFilter]="true" paginator="main/lst14p/paging" colsOrder="_be_att23 _be_att24 _be_att99o _be_att88o _be_att89o _be_att87o" eventsOrder="oslte13p oslte70p">
                           <wr-content for="header[_be_att23]">
                             {{ labelOf('.') | wrLocalize }}
                           </wr-content>
@@ -52,6 +52,9 @@
                           </wr-content>
                           <wr-content for="data[_be_att99o]">
                             {{ valueOf('.', row) | date:'wr-date' }}
+                          </wr-content>
+                          <wr-content for="event[oslte13p]">
+                            <wd-button variant="mat-icon-button" color="primary" iconText="clear" [confirm]="true" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst14p/data/statoallegatoCodice', row) === 'V'"></wd-button>
                           </wr-content>
                         </wd-data-grid>
                       </wd-cell>
@@ -212,7 +215,7 @@
                         </wd-data-grid>
                       </wd-cell>
                       <wd-cell [width]="6" *ngIf="valueOf('/main/prd16p')">
-                        <wd-data-grid cols="main/lst36p/data/_be_att23 | main/lst36p/data/_be_att24 | main/lst36p/data/_be_att99o | main/lst36p/data/_be_att88o | main/lst36p/data/_be_att89o | main/lst36p/data/_be_att87o" title="main/lst36p" [rows]="valueOf('main/lst36p/data')" elevation="0" events="main/lst36p/data/oslte160p" paginator="main/lst36p/paging">
+                        <wd-data-grid cols="main/lst36p/data/_be_att23 | main/lst36p/data/_be_att24 | main/lst36p/data/_be_att99o | main/lst36p/data/_be_att88o | main/lst36p/data/_be_att89o | main/lst36p/data/_be_att87o" title="main/lst36p" [rows]="valueOf('main/lst36p/data')" elevation="0" events="main/lst36p/data/oslte160p | main/lst36p/data/oslte14p" paginator="main/lst36p/paging" eventsOrder="oslte14p oslte160p">
                           <wr-content for="header[_be_att23]">
                             {{ labelOf('.') | wrLocalize }}
                           </wr-content>
@@ -254,6 +257,9 @@
                           </wr-content>
                           <wr-content for="event[oslte160p]">
                             <wd-button variant="mat-icon-button" color="accent" iconText="description" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst36p/data/statoallegatoCodice', row) === 'I'"></wd-button>
+                          </wr-content>
+                          <wr-content for="event[oslte14p]">
+                            <wd-button variant="mat-icon-button" color="primary" iconText="clear" [confirm]="true" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst36p/data/statoallegatoCodice', row) === 'V'"></wd-button>
                           </wr-content>
                         </wd-data-grid>
                       </wd-cell>

@@ -55,22 +55,6 @@
       </SuccessEvent>
     </Events>
   </Action>
-  <Action id="wv1#act15" gr:x="95" gr:y="285" actionServiceRes="PortaleSubappaltatoriDataservice$ada9">
-    <Events>
-      <SuccessEvent id="wv1#act15#scce14">
-        <NavigationFlow id="wv1#act15#scce14#nf28" to="wv1#page10#frm8">
-          <ParameterBinding id="wv1#act15#scce14#nf28#par57" source="PortaleSubappaltatoriDataservice$pdp45" target="{wv1#page10#frm8#fld21}value" name="password - password"/>
-          <ParameterBinding id="wv1#act15#scce14#nf28#par58" source="PortaleSubappaltatoriDataservice$pdp44" target="{wv1#page10#frm8#fld20}value" name="userID - username"/>
-          <ParameterBinding id="wv1#act15#scce14#nf28#par61" sourceValue="message.otpInviato" targetParameter="wv1#prd2" name="&quot;message.otpInviato&quot; - success message"/>
-        </NavigationFlow>
-      </SuccessEvent>
-      <ErrorEvent id="wv1#act15#erre19">
-        <NavigationFlow id="wv1#act15#erre19#nf35" to="wv1#page3#gctu4">
-          <ParameterBinding id="wv1#act15#erre19#nf35#par87" sourceValue="BAD_CREDENTIALS " targetParameter="wv1#prd3" name="&quot;BAD_CREDENTIALS &quot; - error message"/>
-        </NavigationFlow>
-      </ErrorEvent>
-    </Events>
-  </Action>
   <Action id="wv1#act18" gr:x="310" gr:y="530" definition="tlads0#ad4">
     <Events>
       <SuccessEvent id="wv1#act18#scce17" definition="tlads0#ad4#spd6">
@@ -100,6 +84,22 @@
       </ErrorEvent>
       <SuccessEvent id="wv1#act18#scce20" definition="tlads0#ad4#spd7"/>
       <SuccessEvent id="wv1#act18#scce21" definition="tlads0#ad4#spd8"/>
+    </Events>
+  </Action>
+  <Action id="wv1#act4p" gr:x="65" gr:y="310" definition="tlads0#ad1p">
+    <Events>
+      <SuccessEvent id="wv1#act4p#scce4p" definition="tlads0#ad1p#spd1p">
+        <NavigationFlow id="wv1#act4p#scce4p#nf16p" to="wv1#page10#frm8">
+          <ParameterBinding id="wv1#act4p#scce4p#nf16p#par59p" source="tlads0#ad1p#spd1p#pdp1p" target="{wv1#page10#frm8#fld21}value" name="password - password"/>
+          <ParameterBinding id="wv1#act4p#scce4p#nf16p#par60p" sourceValue="message.otpInviato" targetParameter="wv1#prd2" name="&quot;message.otpInviato&quot; - success message"/>
+          <ParameterBinding id="wv1#act4p#scce4p#nf16p#par61p" source="tlads0#ad1p#spd1p#pdp2p" target="{wv1#page10#frm8#fld20}value" name="userID - username"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv1#act4p#erre7p" definition="tlads0#ad1p#epd1p">
+        <NavigationFlow id="wv1#act4p#erre7p#nf17p" to="wv1#page3#gctu4">
+          <ParameterBinding id="wv1#act4p#erre7p#nf17p#par62p" name="&quot;BAD_CREDENTIALS &quot; - error message" sourceValue="BAD_CREDENTIALS " targetParameter="wv1#prd3"/>
+        </NavigationFlow>
+      </ErrorEvent>
     </Events>
   </Action>
 </WebView>

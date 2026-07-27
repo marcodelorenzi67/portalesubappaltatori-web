@@ -128,4 +128,14 @@
       <ErrorEvent id="wv3#act71p#erre120p" definition="tlads0#ad11p#epd16p"/>
     </Events>
   </Action>
+  <Action id="wv3#act6p" gr:x="270" gr:y="-155" actionServiceRes="PortaleSubappaltatoriDataservice$ada1o">
+    <Events>
+      <SuccessEvent id="wv3#act6p#scce9p">
+        <NavigationFlow id="wv3#act6p#scce9p#nf19p" to="wv3#page9#dtl5p">
+          <ParameterBinding id="wv3#act6p#scce9p#nf19p#par65p" sourceParameter="wv3#prd10p" target="wv3#page9#dtl5p#sc14p#kcond8p._be_att6" name="oid Fornitore - KeyCondition"/>
+        </NavigationFlow>
+      </SuccessEvent>
+      <ErrorEvent id="wv3#act6p#erre14p"/>
+    </Events>
+  </Action>
 </WebView>

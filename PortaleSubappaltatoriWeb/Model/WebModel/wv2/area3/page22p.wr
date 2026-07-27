@@ -813,7 +813,7 @@
               <ParameterBinding id="wv2#area3#page22p#dpg7p#frm21p#oslte64p#nf102p#par617p" source="{wv2#area3#page22p#dpg7p#frm21p#fld125p}value" target="wv2#area3#act43p.PortaleSubappaltatoriDataservice$pdp239o" name="modulo - modulo"/>
             </NavigationFlow>
           </OnSelectEvent>
-          <OnSelectEvent id="wv2#area3#page22p#dpg7p#frm21p#oslte175p" name="Conferma cancellazione" validate="true">
+          <OnSelectEvent id="wv2#area3#page22p#dpg7p#frm21p#oslte175p" name="Conferma archiviazione" validate="true">
             <NavigationFlow id="wv2#area3#page22p#dpg7p#frm21p#oslte175p#nf213p" to="wv2#area3#act73p">
               <ParameterBinding id="wv2#area3#page22p#dpg7p#frm21p#oslte175p#nf213p#par624p" source="{wv2#area3#page22p#dpg7p#frm21p#fld56p}value" target="wv2#area3#act73p.PortaleSubappaltatoriDataservice$pdp250o" name="oid allegato - oid documento"/>
               <ParameterBinding id="wv2#area3#page22p#dpg7p#frm21p#oslte175p#nf213p#par625p" source="{wv2#area3#page22p#dpg7p#frm21p#fld55p}value" target="wv2#area3#act73p.PortaleSubappaltatoriDataservice$pdp251o" name="Note - Note"/>

@@ -17,9 +17,9 @@
           </NavigationFlow>
         </OnSelectEvent>
         <OnSelectEvent id="wv1#page10#frm8#oslte13" name="Invia di nuovo" validate="false" gr:pinned="true" gr:side="3" gr:pos="0">
-          <NavigationFlow id="wv1#page10#frm8#oslte13#nf29" to="wv1#act15">
-            <ParameterBinding id="wv1#page10#frm8#oslte13#nf29#par59" source="{wv1#page10#frm8#fld21}value" target="wv1#act15.PortaleSubappaltatoriDataservice$pdp42" name="password - password"/>
-            <ParameterBinding id="wv1#page10#frm8#oslte13#nf29#par60" source="{wv1#page10#frm8#fld20}value" target="wv1#act15.PortaleSubappaltatoriDataservice$pdp41" name="username - userID"/>
+          <NavigationFlow id="wv1#page10#frm8#oslte13#nf29" to="wv1#act4p">
+            <ParameterBinding id="wv1#page10#frm8#oslte13#nf29#par63p" source="{wv1#page10#frm8#fld21}value" target="wv1#act4p.tlads0#ad1p#ipd1p#pdp4p" name="password - password"/>
+            <ParameterBinding id="wv1#page10#frm8#oslte13#nf29#par64p" source="{wv1#page10#frm8#fld20}value" target="wv1#act4p.tlads0#ad1p#ipd1p#pdp3p" name="username - userID"/>
           </NavigationFlow>
         </OnSelectEvent>
       </Events>
