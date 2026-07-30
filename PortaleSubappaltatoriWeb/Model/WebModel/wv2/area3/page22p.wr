@@ -196,7 +196,7 @@
       <Field id="wv2#area3#page22p#frm20p#fld65p" name="Prodotti e Sostanze chimiche" modifiable="true" type="boolean"/>
       <Field id="wv2#area3#page22p#frm20p#fld2p" type="string" modifiable="true" name="Alias"/>
     </Form>
-    <List gr:x="585" gr:y="445" id="wv2#area3#page22p#lst12p" checkable="true" distinct="false" name="Documenti richiesti" pageSize="15">
+    <List gr:x="585" gr:y="445" id="wv2#area3#page22p#lst12p" checkable="true" distinct="false" name="Documenti richiesti" pageSize="15" dynamicSort="true">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
       <ConditionalExpression id="wv2#area3#page22p#lst12p#sc18p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv2#area3#page22p#lst12p#sc18p#rcond8p" name="Fornitore" predicate="in" implied="false">
@@ -281,13 +281,15 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att127o"/>
-      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
       <DataFlow id="wv2#area3#page22p#lst12p#df1p" to="wv2#area3#act58p" gr:bendpoints="-189,322,176,-248">
         <ParameterBinding id="wv2#area3#page22p#lst12p#df1p#par5p" source="checkedKeys" target="wv2#area3#act58p.PortaleSubappaltatoriDataservice$pdp137o" name="Checked Keys - oid"/>
       </DataFlow>
       <DataFlow id="wv2#area3#page22p#lst12p#df15p" to="wv2#area3#act2p" gr:bendpoints="-189,322,176,-248">
         <ParameterBinding id="wv2#area3#page22p#lst12p#df15p#par33p" name="Checked Keys - oid" source="checkedKeys" target="wv2#area3#act2p.PortaleSubappaltatoriDataservice$pdp137o"/>
       </DataFlow>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o" order="ascending"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att88o" order="ascending"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
     </List>
     <List id="wv2#area3#page22p#lst15p" name="Storico documenti" gr:x="370" gr:y="565" checkable="false" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
@@ -403,7 +405,7 @@
         </OnSelectEvent>
       </Events>
     </List>
-    <List id="wv2#area3#page22p#lst32p" name="Documenti aggiuntivi" gr:x="105" gr:y="740" checkable="false" distinct="false" pageSize="15">
+    <List id="wv2#area3#page22p#lst32p" name="Documenti aggiuntivi" gr:x="105" gr:y="740" checkable="false" distinct="false" pageSize="15" dynamicSort="true">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
       <ConditionalExpression id="wv2#area3#page22p#lst32p#sc40p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv2#area3#page22p#lst32p#sc40p#rcond35p" name="Fornitore" predicate="in" implied="false">
@@ -477,6 +479,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att109o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att112o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att127o"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o" order="ascending"/>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
     </List>
     <List gr:x="1145" gr:y="425" id="wv2#area3#page22p#lst33p" checkable="false" distinct="false" pageSize="15" name="Personale">
@@ -516,7 +519,7 @@
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o" order="descending"/>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att115o" order="ascending"/>
     </List>
-    <List id="wv2#area3#page22p#lst34p" name="Documenti personale" gr:x="940" gr:y="605" checkable="true" distinct="false" pageSize="15">
+    <List id="wv2#area3#page22p#lst34p" name="Documenti personale" gr:x="940" gr:y="605" checkable="true" distinct="false" pageSize="15" dynamicSort="true">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
       <ConditionalExpression id="wv2#area3#page22p#lst34p#sc51p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv2#area3#page22p#lst34p#sc51p#rcond44p" name="Fornitore" predicate="in" implied="false">
@@ -602,13 +605,15 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att127o"/>
-      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
       <DataFlow id="wv2#area3#page22p#lst34p#df2p" to="wv2#area3#act58p" gr:bendpoints="-404,246,316,-164">
         <ParameterBinding id="wv2#area3#page22p#lst34p#df2p#par6p" source="checkedKeys" target="wv2#area3#act58p.PortaleSubappaltatoriDataservice$pdp137o" name="Checked Keys - oid"/>
       </DataFlow>
       <DataFlow id="wv2#area3#page22p#lst34p#df9p" to="wv2#area3#act1p" gr:bendpoints="-404,246,316,-164">
         <ParameterBinding id="wv2#area3#page22p#lst34p#df9p#par21p" name="Checked Keys - oid" source="checkedKeys" target="wv2#area3#act1p.PortaleSubappaltatoriDataservice$pdp137o"/>
       </DataFlow>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o" order="ascending"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att88o" order="ascending"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
     </List>
     <List id="wv2#area3#page22p#lst37p" name="Moduli" gr:x="1025" gr:y="840" checkable="true" distinct="false" pageSize="15">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>

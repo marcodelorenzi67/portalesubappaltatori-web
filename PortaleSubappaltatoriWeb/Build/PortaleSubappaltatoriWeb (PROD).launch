@@ -9,7 +9,7 @@
     <stringAttribute key="main.appId" value="PortaleSubappaltatoriWeb"/>
     <stringAttribute key="main.appName" value="PortaleSubappaltatoriWeb"/>
     <stringAttribute key="main.appSecret" value="ckFocmh5dHlGblpkR1EyVUFTWU1WTnhXanBRN2ppTEE="/>
-    <stringAttribute key="main.appVersion" value="1.0.0"/>
+    <stringAttribute key="main.appVersion" value="1.0.1"/>
     <stringAttribute key="main.buildMode" value="release"/>
     <stringAttribute key="model.general.outputPath" value="${webclientapps_loc}/${project_name}"/>
     <mapAttribute key="tasks.task0">

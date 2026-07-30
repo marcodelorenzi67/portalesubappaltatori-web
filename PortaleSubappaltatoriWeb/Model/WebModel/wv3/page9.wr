@@ -71,7 +71,7 @@
         </OnSelectEvent>
       </Events>
     </ViewComponent>
-    <List id="wv3#page9#lst14p" name="Documenti richiesti" gr:x="225" gr:y="95" checkable="false" distinct="false" pageSize="15">
+    <List id="wv3#page9#lst14p" name="Documenti richiesti" gr:x="225" gr:y="95" checkable="false" distinct="false" pageSize="15" dynamicSort="true">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
       <ConditionalExpression id="wv3#page9#lst14p#sc20p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv3#page9#lst14p#sc20p#rcond11p" name="Fornitore" predicate="in" implied="false">
@@ -119,6 +119,8 @@
       <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statoallegatoCodice"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o" order="ascending"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att88o" order="ascending"/>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
     </List>
     <List id="wv3#page9#lst16p" name="Storico documenti" gr:x="600" gr:y="300" checkable="false" distinct="false" pageSize="15">
@@ -147,7 +149,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="descending"/>
     </List>
-    <List id="wv3#page9#lst30p" name="Documenti Aggiuntivi" gr:x="0" gr:y="500" checkable="false" distinct="false" pageSize="15">
+    <List id="wv3#page9#lst30p" name="Documenti Aggiuntivi" gr:x="0" gr:y="500" checkable="false" distinct="false" pageSize="15" dynamicSort="true">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
       <ConditionalExpression id="wv3#page9#lst30p#sc38p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv3#page9#lst30p#sc38p#rcond31p" name="Fornitore" predicate="in" implied="false">
@@ -197,6 +199,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att107o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att108o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att109o"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o" order="ascending"/>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
     </List>
     <List id="wv3#page9#lst35p" name="Personale" gr:x="765" gr:y="525" checkable="false" distinct="false" pageSize="15">
@@ -228,7 +231,7 @@
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att126o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att176o"/>
     </List>
-    <List id="wv3#page9#lst36p" name="Documenti personale di: " gr:x="390" gr:y="540" checkable="false" distinct="false" pageSize="15">
+    <List id="wv3#page9#lst36p" name="Documenti personale di: " gr:x="390" gr:y="540" checkable="false" distinct="false" pageSize="15" dynamicSort="true">
       <DataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls5"/>
       <ConditionalExpression id="wv3#page9#lst36p#sc54p" defaultPolicy="fill" booleanOperator="and">
         <AssociationRoleCondition id="wv3#page9#lst36p#sc54p#rcond48p" name="Fornitore" predicate="in" implied="false">
@@ -276,6 +279,8 @@
       <DisplayAttributes classServiceAttributeExpr="PortaleSubappaltatoriDataservice$role47o.PortaleSubappaltatoriDataservice$att85o" alias="statoallegatoCodice"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att90o"/>
       <DisplayAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att99o" order="ascending"/>
+      <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att88o" order="ascending"/>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att22" order="ascending"/>
     </List>
     <List id="wv3#page9#lst38p" name="Moduli" gr:x="645" gr:y="810" checkable="false" distinct="false" pageSize="15">
@@ -432,6 +437,7 @@
           <VRules>
             <MandatoryValidationRule id="wv3#page9#dpg21p#frm33p#sfld21p#mnd58p" name="Mandatory"/>
           </VRules>
+          <OptionsSortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att106o" order="ascending"/>
         </SelectionField>
         <Field id="wv3#page9#dpg21p#frm33p#fld95p" type="string" modifiable="true" name="Marca"/>
         <Field id="wv3#page9#dpg21p#frm33p#fld96p" type="string" modifiable="true" name="Identificativo"/>
