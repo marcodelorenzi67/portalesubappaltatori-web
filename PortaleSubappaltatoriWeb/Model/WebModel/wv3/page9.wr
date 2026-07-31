@@ -403,7 +403,7 @@
   <DialogPage gr:x="300" gr:y="770" id="wv3#page9#dpg21p" name="Documento Aggiuntivo">
     <ViewComponents>
       <Form gr:x="0" gr:y="0" id="wv3#page9#dpg21p#frm33p" name="Dati">
-        <SelectionField id="wv3#page9#dpg21p#frm33p#sfld20p" optionsDistinct="false" emptyOption="true" name="Macro categoria" validationOrder="wv3#page9#dpg21p#frm33p#sfld20p#mnd60p">
+        <SelectionField id="wv3#page9#dpg21p#frm33p#sfld20p" optionsDistinct="false" emptyOption="false" name="Macro categoria" validationOrder="wv3#page9#dpg21p#frm33p#sfld20p#mnd60p">
           <OptionsDataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls9"/>
           <OptionsConditionalExpression id="wv3#page9#dpg21p#frm33p#sfld20p#sc41p" defaultPolicy="fill" booleanOperator="and">
             <AttributesCondition id="wv3#page9#dpg21p#frm33p#sfld20p#sc41p#acond32p" name="codice AZ" predicate="neq" booleanOperator="and" implied="false" value="${macroTipologia.aziendali}">
@@ -425,8 +425,9 @@
           <VRules>
             <MandatoryValidationRule id="wv3#page9#dpg21p#frm33p#sfld20p#mnd60p" name="Mandatory"/>
           </VRules>
+          <OptionsSortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att42" order="ascending"/>
         </SelectionField>
-        <SelectionField id="wv3#page9#dpg21p#frm33p#sfld21p" name="Categoria" optionsDistinct="false" emptyOption="true" validationOrder="wv3#page9#dpg21p#frm33p#sfld21p#mnd58p">
+        <SelectionField id="wv3#page9#dpg21p#frm33p#sfld21p" name="Categoria" optionsDistinct="false" emptyOption="false" validationOrder="wv3#page9#dpg21p#frm33p#sfld21p#mnd58p">
           <OptionsDataBinding classServiceRes="PortaleSubappaltatoriDataservice$cls18o"/>
           <OptionsAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att106o"/>
           <OptionsConditionalExpression id="wv3#page9#dpg21p#frm33p#sfld21p#sc43p" defaultPolicy="fill" booleanOperator="and">

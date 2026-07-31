@@ -19,8 +19,8 @@
         <AttributesCondition id="wv2#area3#page31p#lst47p#sc65p#acond102p" name="categoria" predicate="contains" booleanOperator="or" implied="true" ignoreCase="true">
           <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att144o"/>
         </AttributesCondition>
-        <AttributesCondition id="wv2#area3#page31p#lst47p#sc65p#acond1p" name="oid fornitore" predicate="eq" booleanOperator="or" implied="false" value="0">
-          <AttributesConditionAttr classServiceAttributeExpr="count(PortaleSubappaltatoriDataservice$role68o.PortaleSubappaltatoriDataservice$att6)" aggregateWith="count" alias="fornitoreOidAvg"/>
+        <AttributesCondition id="wv2#area3#page31p#lst47p#sc65p#acond1p" name="importata" predicate="eq" booleanOperator="or" implied="false" value="false">
+          <AttributesConditionAttr classServiceAttribute="PortaleSubappaltatoriDataservice$att1o"/>
         </AttributesCondition>
       </ConditionalExpression>
       <SortAttributes classServiceAttribute="PortaleSubappaltatoriDataservice$att131o" order="ascending"/>

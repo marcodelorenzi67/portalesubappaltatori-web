@@ -380,7 +380,7 @@
                   </wd-grid>
                 </mat-tab>
                 <mat-tab [label]="'Documentazione aggiuntiva' | wrLocalize">
-                  <wd-data-grid cols="main/lst32p/data/_be_att23 | main/lst32p/data/_be_att24 | main/lst32p/data/_be_att99o | main/lst32p/data/_be_att88o | main/lst32p/data/_be_att112o | main/lst32p/data/_be_att89o | main/lst32p/data/_be_att108o | main/lst32p/data/_be_att109o | main/lst32p/data/_be_att107o | main/lst32p/data/_be_att87o" [rows]="valueOf('main/lst32p/data')" elevation="0" events="main/lst32p/data/oslte133p | main/lst32p/data/oslte134p | main/lst32p/data/oslte135p | main/lst32p/data/oslte176p | main/lst32p/data/oslte179p | main/lst32p/data/oslte237p" title="main/lst32p" eventsOrder="oslte237p oslte133p oslte134p oslte176p oslte179p oslte135p">
+                  <wd-data-grid cols="main/lst32p/data/_be_att23 | main/lst32p/data/_be_att24 | main/lst32p/data/_be_att99o | main/lst32p/data/_be_att88o | main/lst32p/data/_be_att112o | main/lst32p/data/_be_att89o | main/lst32p/data/_be_att108o | main/lst32p/data/_be_att109o | main/lst32p/data/_be_att107o | main/lst32p/data/_be_att87o" [rows]="valueOf('main/lst32p/data')" elevation="0" events="main/lst32p/data/oslte133p | main/lst32p/data/oslte134p | main/lst32p/data/oslte135p | main/lst32p/data/oslte176p | main/lst32p/data/oslte179p | main/lst32p/data/oslte237p | main/lst32p/data/oslte20p | main/lst32p/data/oslte21p" title="main/lst32p" eventsOrder="oslte21p oslte20p oslte237p oslte133p oslte134p oslte176p oslte179p oslte135p">
                     <wr-content for="header[_be_att23]">
                       {{ labelOf('.') | wrLocalize }}
                     </wr-content>
@@ -469,6 +469,15 @@
                     </wr-content>
                     <wr-content for="event[oslte237p]">
                       <wd-button variant="mat-icon-button" color="primary" iconText="mail_outline" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst32p/data/statoallegatoCodice', row) === 'I'"></wd-button>
+                    </wr-content>
+                    <wr-content for="header-actions">
+                      <wd-button context="main/gctu14p/oslte19p" iconText="add" color="success"></wd-button>
+                    </wr-content>
+                    <wr-content for="event[oslte20p]">
+                      <wd-button variant="mat-icon-button" color="accent" iconText="description" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst32p/data/statoallegatoCodice', row) === 'B'"></wd-button>
+                    </wr-content>
+                    <wr-content for="event[oslte21p]">
+                      <wd-button variant="mat-icon-button" color="primary" iconText="remove" [visible]="valueOf('accessible') &amp;&amp; valueOf('/main/lst32p/data/statoallegatoCodice', row) === 'B'"></wd-button>
                     </wr-content>
                   </wd-data-grid>
                 </mat-tab>
@@ -1052,6 +1061,38 @@
             <wd-input type="text" [showLabel]="true" appearance="outline"></wd-input>
           </wr-content>
         </wd-container>
+      </wr-content>
+    </wd-card>
+  </wr-content>
+</wd-dialog>
+<wd-dialog context="main/dpg1p" [minWidth]="800">
+  <wr-content for="content">
+    <wd-card elevation="0" actions="frm1p/oslte16p">
+      <wr-content for="content">
+        <wd-grid>
+          <wd-row>
+            <wd-cell [width]="6">
+              <wd-select appearance="outline" context="frm1p/sfld1p" filterPredicate="begins with"></wd-select>
+            </wd-cell>
+            <wd-cell [width]="6">
+              <wd-select appearance="outline" context="frm1p/sfld2p"></wd-select>
+            </wd-cell>
+          </wd-row>
+          <wd-row>
+            <wd-cell [width]="4">
+              <wd-input context="frm1p/fld4p" appearance="outline"></wd-input>
+            </wd-cell>
+            <wd-cell [width]="4">
+              <wd-input context="frm1p/fld5p" appearance="outline"></wd-input>
+            </wd-cell>
+            <wd-cell [width]="4">
+              <wd-input context="frm1p/fld3p" appearance="outline"></wd-input>
+            </wd-cell>
+          </wd-row>
+        </wd-grid>
+      </wr-content>
+      <wr-content for="action[oslte16p]">
+        <wd-button color="success"></wd-button>
       </wr-content>
     </wd-card>
   </wr-content>

@@ -1,0 +1,54 @@
+<ActionDefinition xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="tlads0#ad2p" name="Inserisci documentazione aggiuntiva BO" defaultSuccessPortDefinition="tlads0#ad2p#spd2p" defaultErrorPortDefinition="tlads0#ad2p#epd2p">
+  <Operations/>
+  <InputPortDefinition id="tlads0#ad2p#ipd2p" gr:x="0" gr:y="30">
+    <SuccessFlow id="tlads0#ad2p#ipd2p#sf3p" to="tlads0#ad2p#act11p">
+      <ParameterBinding id="tlads0#ad2p#ipd2p#sf3p#par101p" name="Categoria.oid(DocumentiToCategoria) - categoria [oid]" source="tlads0#ad2p#ipd2p#pdp13p" target="tlads0#ad2p#act11p.PortaleSubappaltatoriDataservice$pdp217o"/>
+      <ParameterBinding id="tlads0#ad2p#ipd2p#sf3p#par102p" name="macrotipologia [oid] - macrotipologia [oid]" source="tlads0#ad2p#ipd2p#pdp14p" target="tlads0#ad2p#act11p.PortaleSubappaltatoriDataservice$pdp216o"/>
+    </SuccessFlow>
+    <DataFlow id="tlads0#ad2p#ipd2p#df48p" to="tlads0#ad2p#act12p" gr:bendpoints="38.0 78.0">
+      <ParameterBinding id="tlads0#ad2p#ipd2p#df48p#par114p" source="tlads0#ad2p#ipd2p#pdp13p" target="tlads0#ad2p#act12p.PortaleSubappaltatoriDataservice$pdp12o" name="Categoria.oid(DocumentiToCategoria) - Categoria.oid(DocumentiToCategoria)"/>
+      <ParameterBinding id="tlads0#ad2p#ipd2p#df48p#par115p" source="tlads0#ad2p#ipd2p#pdp7p" target="tlads0#ad2p#act12p.PortaleSubappaltatoriDataservice$pdp13o" name="Data scadenza - Data scadenza"/>
+      <ParameterBinding id="tlads0#ad2p#ipd2p#df48p#par116p" source="tlads0#ad2p#ipd2p#pdp6p" target="tlads0#ad2p#act12p.PortaleSubappaltatoriDataservice$pdp10o" name="Descrizione - Descrizione"/>
+      <ParameterBinding id="tlads0#ad2p#ipd2p#df48p#par117p" source="tlads0#ad2p#ipd2p#pdp10p" target="tlads0#ad2p#act12p.PortaleSubappaltatoriDataservice$pdp6o" name="Fornitore.oid - Fornitore.oid"/>
+      <ParameterBinding id="tlads0#ad2p#ipd2p#df48p#par118p" source="tlads0#ad2p#ipd2p#pdp11p" target="tlads0#ad2p#act12p.PortaleSubappaltatoriDataservice$pdp8o" name="Identificativo - Identificativo"/>
+      <ParameterBinding id="tlads0#ad2p#ipd2p#df48p#par119p" source="tlads0#ad2p#ipd2p#pdp12p" target="tlads0#ad2p#act12p.PortaleSubappaltatoriDataservice$pdp7o" name="Mandatory - Mandatory"/>
+      <ParameterBinding id="tlads0#ad2p#ipd2p#df48p#par120p" source="tlads0#ad2p#ipd2p#pdp8p" target="tlads0#ad2p#act12p.PortaleSubappaltatoriDataservice$pdp9o" name="Modello - Modello"/>
+      <ParameterBinding id="tlads0#ad2p#ipd2p#df48p#par121p" source="tlads0#ad2p#ipd2p#pdp9p" target="tlads0#ad2p#act12p.PortaleSubappaltatoriDataservice$pdp11o" name="Seriale - Seriale"/>
+      <ParameterBinding id="tlads0#ad2p#ipd2p#df48p#par122p" source="tlads0#ad2p#ipd2p#pdp5p" target="tlads0#ad2p#act12p.PortaleSubappaltatoriDataservice$pdp4o" name="Tenant - Tenant"/>
+    </DataFlow>
+    <PortDefinitionParameter id="tlads0#ad2p#ipd2p#pdp5p" name="Tenant" array="true"/>
+    <PortDefinitionParameter id="tlads0#ad2p#ipd2p#pdp6p" name="Descrizione" array="true"/>
+    <PortDefinitionParameter id="tlads0#ad2p#ipd2p#pdp7p" name="Data scadenza" array="true"/>
+    <PortDefinitionParameter id="tlads0#ad2p#ipd2p#pdp8p" name="Modello" array="false"/>
+    <PortDefinitionParameter id="tlads0#ad2p#ipd2p#pdp9p" name="Seriale" array="false"/>
+    <PortDefinitionParameter id="tlads0#ad2p#ipd2p#pdp10p" name="Fornitore.oid" array="false"/>
+    <PortDefinitionParameter id="tlads0#ad2p#ipd2p#pdp11p" name="Identificativo" array="false"/>
+    <PortDefinitionParameter id="tlads0#ad2p#ipd2p#pdp12p" name="Mandatory" array="false"/>
+    <PortDefinitionParameter id="tlads0#ad2p#ipd2p#pdp13p" name="Categoria.oid(DocumentiToCategoria)" array="false"/>
+    <PortDefinitionParameter id="tlads0#ad2p#ipd2p#pdp14p" name="macrotipologia [oid]" array="false"/>
+  </InputPortDefinition>
+  <SuccessPortDefinition id="tlads0#ad2p#spd2p" name="Success Port" gr:x="0" gr:y="30">
+    <PortDefinitionParameter id="tlads0#ad2p#spd2p#pdp15p" name="Fornitore.oid" array="false"/>
+  </SuccessPortDefinition>
+  <ErrorPortDefinition id="tlads0#ad2p#epd2p" name="Error Port" gr:x="0" gr:y="130"/>
+  <Action id="tlads0#ad2p#act11p" actionServiceRes="PortaleSubappaltatoriDataservice$adf15o" gr:x="95" gr:y="25">
+    <Events>
+      <SuccessEvent id="tlads0#ad2p#act11p#scce14p">
+        <SuccessFlow id="tlads0#ad2p#act11p#scce14p#sf4p" to="tlads0#ad2p#act12p">
+          <ParameterBinding id="tlads0#ad2p#act11p#scce14p#sf4p#par123p" source="PortaleSubappaltatoriDataservice$pdp219o" target="tlads0#ad2p#act12p.PortaleSubappaltatoriDataservice$pdp5o" name="oid - Tipologia Allegati.oid(AllegatiToTipologia Allegati)"/>
+        </SuccessFlow>
+      </SuccessEvent>
+      <ErrorEvent id="tlads0#ad2p#act11p#erre21p"/>
+    </Events>
+  </Action>
+  <Action id="tlads0#ad2p#act12p" actionServiceRes="PortaleSubappaltatoriDataservice$ad1o" gr:x="305" gr:y="175">
+    <Events>
+      <SuccessEvent id="tlads0#ad2p#act12p#scce15p">
+        <SuccessFlow id="tlads0#ad2p#act12p#scce15p#sf5p" to="tlads0#ad2p#spd2p">
+          <ParameterBinding id="tlads0#ad2p#act12p#scce15p#sf5p#par113p" name="Fornitore.oid - Fornitore.oid" source="PortaleSubappaltatoriDataservice$pdp14o" target="tlads0#ad2p#spd2p#pdp15p"/>
+        </SuccessFlow>
+      </SuccessEvent>
+      <ErrorEvent id="tlads0#ad2p#act12p#erre23p"/>
+    </Events>
+  </Action>
+</ActionDefinition>
